@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Docente — Carmen Chalas | Colegio Reformado la Esperanza</title>
+<style>
+  :root {
+    --primary: #1a5276;
+    --secondary: #2e86c1;
+    --accent: #f39c12;
+    --success: #27ae60;
+    --danger: #e74c3c;
+    --warning: #f39c12;
+    --light: #f4f6f9;
+    --dark: #1a252f;
+    --card-bg: #ffffff;
+    --border: #e0e6ed;
+    --text: #2c3e50;
+    --text-light: #7f8c8d;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+    --radius: 16px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a5276 0%, #2e86c1 60%, #1abc9c 100%);
+    color: white;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(26,82,118,0.3);
+  }
+
+  .header-inner {
+    max-width: 1400px;
+    margin: auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .logo-circle {
+    width: 54px; height: 54px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+    border: 2px solid rgba(255,255,255,0.4);
+  }
+
+  .header-text h1 {
+    font-size: clamp(16px, 3vw, 22px);
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+
+  .header-text p {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+
+  .header-right {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .header-right .date {
+    font-size: 13px;
+    opacity: 0.85;
+  }
+
+  .header-right .badge {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    margin-top: 6px;
+    display: inline-block;
+  }
+
+  /* NAV TABS */
+  .nav-tabs {
+    background: var(--primary);
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+  }
+  .nav-tabs::-webkit-scrollbar { display: none; }
+
+  .nav-tab {
+    padding: 13px 22px;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    display: flex; align-items: center; gap: 7px;
+  }
+
+  .nav-tab:hover { color: white; background: rgba(255,255,255,0.08); }
+  .nav-tab.active {
+    color: white;
+    border-bottom-color: var(--accent);
+    background: rgba(255,255,255,0.1);
+  }
+
+  /* MAIN */
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+  }
+
+  /* SECTION */
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* STATS ROW */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .stat-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 22px 20px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--secondary);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: transform 0.2s;
+  }
+  .stat-card:hover { transform: translateY(-3px); }
+  .stat-card.green { border-left-color: var(--success); }
+  .stat-card.orange { border-left-color: var(--accent); }
+  .stat-card.red { border-left-color: var(--danger); }
+  .stat-card.blue { border-left-color: var(--secondary); }
+
+  .stat-icon {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .stat-card.green .stat-icon { background: #eafaf1; }
+  .stat-card.orange .stat-icon { background: #fef9e7; }
+  .stat-card.red .stat-icon { background: #fdf2f2; }
+  .stat-card.blue .stat-icon { background: #eaf4fb; }
+
+  .stat-info .number {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--dark);
+  }
+  .stat-info .label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+  .stat-info .sub {
+    font-size: 11px;
+    color: var(--text-light);
+    margin-top: 2px;
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 22px;
+    overflow: hidden;
+  }
+
+  .card-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-body { padding: 20px 22px; }
+
+  /* GRID 2 */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+  }
+
+  /* TABLE */
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th {
+    background: var(--light);
+    padding: 11px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbff; }
+
+  /* BADGES */
+  .badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+  }
+  .badge-success { background: #eafaf1; color: #1e8449; }
+  .badge-warning { background: #fef9e7; color: #b7770d; }
+  .badge-danger { background: #fdf2f2; color: #c0392b; }
+  .badge-info { background: #eaf4fb; color: #1a5276; }
+  .badge-primary { background: #eaf4fb; color: var(--primary); }
+
+  /* PROGRESS */
+  .progress-bar {
+    background: var(--border);
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  .progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.6s ease;
+  }
+  .fill-green { background: linear-gradient(90deg, #27ae60, #1abc9c); }
+  .fill-blue { background: linear-gradient(90deg, #2e86c1, #5dade2); }
+  .fill-orange { background: linear-gradient(90deg, #f39c12, #f5cba7); }
+  .fill-red { background: linear-gradient(90deg, #e74c3c, #f1948a); }
+
+  /* STUDENT ROW */
+  .student-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .student-row:last-child { border-bottom: none; }
+
+  .avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+    color: white;
+  }
+
+  .student-info .name { font-size: 14px; font-weight: 600; }
+  .student-info .detail { font-size: 12px; color: var(--text-light); }
+
+  .score {
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 700;
+    min-width: 44px;
+    text-align: right;
+  }
+
+  /* ALERT */
+  .alert {
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13.5px;
+  }
+  .alert-warning { background: #fef9e7; border-left: 4px solid var(--warning); }
+  .alert-danger { background: #fdf2f2; border-left: 4px solid var(--danger); }
+  .alert-success { background: #eafaf1; border-left: 4px solid var(--success); }
+  .alert-info { background: #eaf4fb; border-left: 4px solid var(--secondary); }
+  .alert-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+  .alert-text strong { display: block; margin-bottom: 2px; font-size: 13px; }
+  .alert-text span { color: var(--text-light); font-size: 12px; }
+
+  /* CALENDAR */
+  .cal-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 0;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .cal-item:last-child { border-bottom: none; }
+  .cal-date {
+    width: 46px; height: 46px;
+    border-radius: 12px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .cal-date .day { font-size: 18px; font-weight: 800; line-height: 1; }
+  .cal-date .month { font-size: 10px; font-weight: 600; text-transform: uppercase; opacity: 0.8; }
+  .cal-info .title { font-size: 13.5px; font-weight: 600; }
+  .cal-info .desc { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+
+  /* DONUT */
+  .donut-wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .donut-chart {
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(var(--success) 0% 88%, var(--danger) 88% 95%, var(--warning) 95% 100%);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .donut-hole {
+    width: 80px; height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .donut-hole .pct { font-size: 20px; font-weight: 800; color: var(--success); }
+  .donut-hole .lbl { font-size: 9px; color: var(--text-light); font-weight: 600; }
+  .legend-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; margin-bottom: 8px;
+  }
+  .legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+
+  /* PLAN STATUS */
+  .plan-item {
+    background: var(--light);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .plan-item-left .week { font-size: 13px; font-weight: 600; }
+  .plan-item-left .period { font-size: 11px; color: var(--text-light); margin-top: 2px; }
+
+  /* HORARIO */
+  .horario-table th { background: var(--primary); color: white; }
+  .horario-table td { text-align: center; font-size: 12.5px; }
+  .period-block {
+    background: #eaf4fb;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  .period-block.alt { background: #eafaf1; color: #1e8449; }
+  .period-block.break { background: #fef9e7; color: #b7770d; font-style: italic; }
+
+  /* RANKING */
+  .rank-num {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .rank-1 { background: #fef3cd; color: #856404; }
+  .rank-2 { background: #e2e3e5; color: #383d41; }
+  .rank-3 { background: #fde5d4; color: #7d3c01; }
+  .rank-other { background: var(--light); color: var(--text-light); }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--text-light);
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .main { padding: 16px 12px 50px; }
+    .header-inner { padding: 14px 16px; }
+    .card-body { padding: 16px; }
+    .card-header { padding: 14px 16px; }
+    .stat-card { padding: 16px; }
+    .stat-info .number { font-size: 24px; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .header-right { display: none; }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: var(--light); border-radius: 20px;
+    padding: 5px 12px; font-size: 12px; font-weight: 500;
+    color: var(--text); border: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="logo-circle">🏫</div>
+    <div class="header-text">
+      <h1>Panel Docente — Carmen Chalas</h1>
+      <p>Colegio Reformado la Esperanza · Nivel Inicial · Año Escolar 2025–2026</p>
+    </div>
+    <div class="header-right">
+      <div class="date">📅 Viernes, 19 de junio de 2026</div>
+      <div class="badge">🟢 Sistema activo · Delega IA</div>
+    </div>
+  </div>
+  <div class="nav-tabs">
+    <div class="nav-tab active" onclick="showSection('resumen')">📊 Resumen</div>
+    <div class="nav-tab" onclick="showSection('estudiantes')">👧 Estudiantes</div>
+    <div class="nav-tab" onclick="showSection('calificaciones')">📝 Calificaciones</div>
+    <div class="nav-tab" onclick="showSection('asistencia')">✅ Asistencia</div>
+    <div class="nav-tab" onclick="showSection('planificaciones')">📋 Planificaciones</div>
+    <div class="nav-tab" onclick="showSection('horario')">🕐 Horario</div>
+    <div class="nav-tab" onclick="showSection('calendario')">📅 Calendario</div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- ===== RESUMEN ===== -->
+  <div class="section active" id="resumen">
+
+    <div class="stats-grid">
+      <div class="stat-card green">
+        <div class="stat-icon">👧</div>
+        <div class="stat-info">
+          <div class="number">24</div>
+          <div class="label">Total Estudiantes</div>
+          <div class="sub">Sección Inicial A</div>
+        </div>
+      </div>
+      <div class="stat-card blue">
+        <div class="stat-icon">✅</div>
+        <div class="stat-info">
+          <div class="number">91%</div>
+          <div class="label">Asistencia Promedio</div>
+          <div class="sub">Este mes</div>
+        </div>
+      </div>
+      <div class="stat-card orange">
+        <div class="stat-icon">📊</div>
+        <div class="stat-info">
+          <div class="number">86.4</div>
+          <div class="label">Promedio Académico</div>
+          <div class="sub">2do Trimestre</div>
+        </div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-icon">⚠️</div>
+        <div class="stat-info">
+          <div class="number">3</div>
+          <div class="label">Estudiantes en Riesgo</div>
+          <div class="sub">Requieren atención</div>
+        </div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-icon">📋</div>
+        <div class="stat-info">
+          <div class="number">18/20</div>
+          <div class="label">Planificaciones</div>
+          <div class="sub">Entregadas este año</div>
+        </div>
+      </div>
+      <div class="stat-card blue">
+        <div class="stat-icon">📅</div>
+        <div class="stat-info">
+          <div class="number">2do</div>
+          <div class="label">Trimestre Actual</div>
+          <div class="sub">Semana 28 de 38</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+
+      <!-- Asistencia donut -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">✅ Asistencia del Mes</div>
+          <span class="chip">Junio 2026</span>
+        </div>
+        <div class="card-body">
+          <div class="donut-wrap">
+            <div class="donut-chart">
+              <div class="donut-hole">
+                <div class="pct">91%</div>
+                <div class="lbl">ASIST.</div>
+              </div>
+            </div>
+            <div>
+              <div class="legend-item"><div class="legend-dot" style="background:#27ae60"></div> Presentes: 22 estudiantes</div>
+              <div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Ausentes frecuentes: 2</div>
+              <div class="legend-item"><div class="legend-dot" style="background:#f39c12"></div> Tardanzas: 1</div>
+              <div style="margin-top:12px; font-size:12px; color: var(--text-light)">Total clases registradas: 18</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alertas -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🔔 Alertas y Pendientes</div>
+        </div>
+        <div class="card-body">
+          <div class="alert alert-danger">
+            <div class="alert-icon">🔴</div>
+            <div class="alert-text">
+              <strong>Estudiante en riesgo académico</strong>
+              <span>José Ramírez — promedio 58.3 (por debajo del mínimo)</span>
+            </div>
+          </div>
+          <div class="alert alert-warning">
+            <div class="alert-icon">🟡</div>
+            <div class="alert-text">
+              <strong>2 planificaciones pendientes de subir</strong>
+              <span>Semanas 26 y 27 aún sin registrar en el sistema</span>
+            </div>
+          </div>
+          <div class="alert alert-warning">
+            <div class="alert-icon">🟡</div>
+            <div class="alert-text">
+              <strong>Ausentismo elevado</strong>
+              <span>Sofía Herrera — 6 ausencias este mes (25%)</span>
+            </div>
+          </div>
+          <div class="alert alert-info">
+            <div class="alert-icon">📋</div>
+            <div class="alert-text">
+              <strong>Examen del 2do trimestre</strong>
+              <span>Programado para el 27 de junio — 8 días restantes</span>
+            </div>
+          </div>
+          <div class="alert alert-success">
+            <div class="alert-icon">🟢</div>
+            <div class="alert-text">
+              <strong>Calificaciones actualizadas</strong>
+              <span>Participación y trabajos del mes registrados ✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Top estudiantes -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">🏆 Estudiantes Destacados</div>
+        <span class="badge badge-success">2do Trimestre</span>
+      </div>
+      <div class="card-body">
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:12px">
+          <div class="student-row">
+            <div class="rank-num rank-1">🥇</div>
+            <div class="avatar" style="background:#f39c12">AM</div>
+            <div class="student-info"><div class="name">Ana Martínez</div><div class="detail">Participación excepcional</div></div>
+            <div class="score" style="color:#27ae60">96</div>
+          </div>
+          <div class="student-row">
+            <div class="rank-num rank-2">🥈</div>
+            <div class="avatar" style="background:#2e86c1">LR</div>
+            <div class="student-info"><div class="name">Luisa Rodríguez</div><div class="detail">Excelente comprensión</div></div>
+            <div class="score" style="color:#2e86c1">94</div>
+          </div>
+          <div class="student-row">
+            <div class="rank-num rank-3">🥉</div>
+            <div class="avatar" style="background:#1abc9c">CP</div>
+            <div class="student-info"><div class="name">Carlos Peña</div><div class="detail">Destacado en matemáticas</div></div>
+            <div class="score" style="color:#1abc9c">91</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== ESTUDIANTES ===== -->
+  <div class="section" id="estudiantes">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">👧 Lista de Estudiantes — Inicial A</div>
+        <span class="chip">24 estudiantes · 2025–2026</span>
+      </div>
+      <div class="card-body">
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>#</th><th>Nombre Completo</th><th>Edad</th><th>Tutor</th><th>Teléfono</th><th>Estado</th>
+            </tr>
+            <tr><td>01</td><td><b>Ana Martínez</b></td><td>5</td><td>Rosa Martínez</td><td>809-555-0101</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>02</td><td><b>Luisa Rodríguez</b></td><td>5</td><td>Carmen Rodríguez</td><td>809-555-0102</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>03</td><td><b>Carlos Peña</b></td><td>4</td><td>Juan Peña</td><td>809-555-0103</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>04</td><td><b>María González</b></td><td>5</td><td>Pedro González</td><td>809-555-0104</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>05</td><td><b>José Ramírez</b></td><td>5</td><td>Luis Ramírez</td><td>809-555-0105</td><td><span class="badge badge-danger">En riesgo</span></td></tr>
+            <tr><td>06</td><td><b>Sofía Herrera</b></td><td>4</td><td>Elena Herrera</td><td>809-555-0106</td><td><span class="badge badge-warning">Ausentismo</span></td></tr>
+            <tr><td>07</td><td><b>Pedro Jiménez</b></td><td>5</td><td>Antonio Jiménez</td><td>809-555-0107</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>08</td><td><b>Valentina Cruz</b></td><td>4</td><td>Sandra Cruz</td><td>809-555-0108</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>09</td><td><b>Miguel Torres</b></td><td>5</td><td>Roberto Torres</td><td>809-555-0109</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>10</td><td><b>Isabella Vargas</b></td><td>5</td><td>Diana Vargas</td><td>809-555-0110</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>11</td><td><b>Mateo Santos</b></td><td>4</td><td>Felipe Santos</td><td>809-555-0111</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>12</td><td><b>Camila Flores</b></td><td>5</td><td>Patricia Flores</td><td>809-555-0112</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>13</td><td><b>Samuel Reyes</b></td><td>5</td><td>Andrés Reyes</td><td>809-555-0113</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>14</td><td><b>Gabriela Moreno</b></td><td>4</td><td>Isabel Moreno</td><td>809-555-0114</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>15</td><td><b>Diego Castillo</b></td><td>5</td><td>Marco Castillo</td><td>809-555-0115</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>16</td><td><b>Natalia Romero</b></td><td>5</td><td>Claudia Romero</td><td>809-555-0116</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>17</td><td><b>Sebastián Medina</b></td><td>4</td><td>Jorge Medina</td><td>809-555-0117</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>18</td><td><b>Daniela Suárez</b></td><td>5</td><td>Miriam Suárez</td><td>809-555-0118</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>19</td><td><b>Alejandro Vega</b></td><td>5</td><td>Héctor Vega</td><td>809-555-0119</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>20</td><td><b>Valeria Núñez</b></td><td>4</td><td>Gloria Núñez</td><td>809-555-0120</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>21</td><td><b>Emilio Parra</b></td><td>5</td><td>Ricardo Parra</td><td>809-555-0121</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>22</td><td><b>Renata Delgado</b></td><td>5</td><td>Alicia Delgado</td><td>809-555-0122</td><td><span class="badge badge-success">Activa</span></td></tr>
+            <tr><td>23</td><td><b>Andrés Molina</b></td><td>4</td><td>Tomás Molina</td><td>809-555-0123</td><td><span class="badge badge-success">Activo</span></td></tr>
+            <tr><td>24</td><td><b>Paula Guerrero</b></td><td>5</td><td>Beatriz Guerrero</td><td>809-555-0124</td><td><span class="badge badge-success">Activa</span></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CALIFICACIONES ===== -->
+  <div class="section" id="calificaciones">
+    <div class="stats-grid">
+      <div class="stat-card green"><div class="stat-icon">📈</div><div class="stat-info"><div class="number">86.4</div><div class="label">Promedio General</div></div></div>
+      <div class="stat-card blue"><div class="stat-icon">🏆</div><div class="stat-info"><div class="number">8</div><div class="label">Estudiantes Excelentes</div><div class="sub">90-100 puntos</div></div></div>
+      <div class="stat-card orange"><div class="stat-icon">📊</div><div class="stat-info"><div class="number">13</div><div class="label">Aprobados</div><div class="sub">70-89 puntos</div></div></div>
+      <div class="stat-card red"><div class="stat-icon">⚠️</div><div class="stat-info"><div class="number">3</div><div class="label">En Riesgo</div><div class="sub">Menos de 70</div></div></div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">📝 Calificaciones — 2do Trimestre</div>
+        <span class="chip">Escala 0–100</span>
+      </div>
+      <div class="card-body">
+        <div class="table-wrap">
+          <table>
+            <tr><th>#</th><th>Estudiante</th><th>Participación (30%)</th><th>Trabajos (30%)</th><th>Examen (40%)</th><th>Final</th><th>Estado</th></tr>
+            <tr><td>1</td><td><b>Ana Martínez</b></td><td>30</td><td>28</td><td>38</td><td><b style="color:#27ae60">96</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td>2</td><td><b>Luisa Rodríguez</b></td><td>28</td><td>29</td><td>37</td><td><b style="color:#27ae60">94</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td>3</td><td><b>Carlos Peña</b></td><td>27</td><td>28</td><td>36</td><td><b style="color:#27ae60">91</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td>4</td><td><b>María González</b></td><td>26</td><td>27</td><td>36</td><td><b style="color:#27ae60">89</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>5</td><td><b>José Ramírez</b></td><td>15</td><td>18</td><td>25</td><td><b style="color:#e74c3c">58</b></td><td><span class="badge badge-danger">En riesgo</span></td></tr>
+            <tr><td>6</td><td><b>Sofía Herrera</b></td><td>20</td><td>22</td><td>28</td><td><b style="color:#f39c12">70</b></td><td><span class="badge badge-warning">Mínimo</span></td></tr>
+            <tr><td>7</td><td><b>Pedro Jiménez</b></td><td>25</td><td>26</td><td>33</td><td><b style="color:#2e86c1">84</b></td><td><span class="badge badge-info">Muy Bueno</span></td></tr>
+            <tr><td>8</td><td><b>Valentina Cruz</b></td><td>27</td><td>25</td><td>35</td><td><b style="color:#27ae60">87</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>9</td><td><b>Miguel Torres</b></td><td>24</td><td>25</td><td>34</td><td><b style="color:#2e86c1">83</b></td><td><span class="badge badge-info">Muy Bueno</span></td></tr>
+            <tr><td>10</td><td><b>Isabella Vargas</b></td><td>26</td><td>27</td><td>35</td><td><b style="color:#27ae60">88</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>11</td><td><b>Mateo Santos</b></td><td>23</td><td>24</td><td>32</td><td><b style="color:#2e86c1">79</b></td><td><span class="badge badge-info">Bueno</span></td></tr>
+            <tr><td>12</td><td><b>Camila Flores</b></td><td>25</td><td>26</td><td>34</td><td><b style="color:#27ae60">85</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>13</td><td><b>Samuel Reyes</b></td><td>22</td><td>23</td><td>30</td><td><b style="color:#2e86c1">75</b></td><td><span class="badge badge-info">Bueno</span></td></tr>
+            <tr><td>14</td><td><b>Gabriela Moreno</b></td><td>26</td><td>25</td><td>34</td><td><b style="color:#27ae60">85</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>15</td><td><b>Diego Castillo</b></td><td>24</td><td>24</td><td>33</td><td><b style="color:#2e86c1">81</b></td><td><span class="badge badge-info">Muy Bueno</span></td></tr>
+            <tr><td>16</td><td><b>Natalia Romero</b></td><td>27</td><td>27</td><td>36</td><td><b style="color:#27ae60">90</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td>17</td><td><b>Sebastián Medina</b></td><td>18</td><td>20</td><td>26</td><td><b style="color:#f39c12">64</b></td><td><span class="badge badge-danger">En riesgo</span></td></tr>
+            <tr><td>18</td><td><b>Daniela Suárez</b></td><td>25</td><td>26</td><td>35</td><td><b style="color:#27ae60">86</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>19</td><td><b>Alejandro Vega</b></td><td>23</td><td>25</td><td>33</td><td><b style="color:#2e86c1">81</b></td><td><span class="badge badge-info">Muy Bueno</span></td></tr>
+            <tr><td>20</td><td><b>Valeria Núñez</b></td><td>26</td><td>26</td><td>35</td><td><b style="color:#27ae60">87</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>21</td><td><b>Emilio Parra</b></td><td>19</td><td>21</td><td>27</td><td><b style="color:#f39c12">67</b></td><td><span class="badge badge-danger">En riesgo</span></td></tr>
+            <tr><td>22</td><td><b>Renata Delgado</b></td><td>25</td><td>27</td><td>35</td><td><b style="color:#27ae60">87</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+            <tr><td>23</td><td><b>Andrés Molina</b></td><td>24</td><td>23</td><td>31</td><td><b style="color:#2e86c1">78</b></td><td><span class="badge badge-info">Bueno</span></td></tr>
+            <tr><td>24</td><td><b>Paula Guerrero</b></td><td>26</td><td>25</td><td>34</td><td><b style="color:#27ae60">85</b></td><td><span class="badge badge-success">Muy Bueno</span></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-title">📊 Distribución de Calificaciones</div></div>
+      <div class="card-body">
+        <div style="display:grid; gap:12px">
+          <div><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px"><span>🟢 Excelente (90–100)</span><span><b>8 estudiantes (33%)</b></span></div><div class="progress-bar"><div class="progress-fill fill-green" style="width:33%"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px"><span>🔵 Muy Bueno (80–89)</span><span><b>9 estudiantes (38%)</b></span></div><div class="progress-bar"><div class="progress-fill fill-blue" style="width:38%"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px"><span>🟡 Bueno (70–79)</span><span><b>4 estudiantes (17%)</b></span></div><div class="progress-bar"><div class="progress-fill fill-orange" style="width:17%"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px"><span>🔴 En riesgo (0–69)</span><span><b>3 estudiantes (12%)</b></span></div><div class="progress-bar"><div class="progress-fill fill-red" style="width:12%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ASISTENCIA ===== -->
+  <div class="section" id="asistencia">
+    <div class="stats-grid">
+      <div class="stat-card green"><div class="stat-icon">✅</div><div class="stat-info"><div class="number">91%</div><div class="label">Asistencia General</div></div></div>
+      <div class="stat-card blue"><div class="stat-icon">📅</div><div class="stat-info"><div class="number">18</div><div class="label">Días Registrados</div><div class="sub">Junio 2026</div></div></div>
+      <div class="stat-card orange"><div class="stat-icon">⏰</div><div class="stat-info"><div class="number">4</div><div class="label">Tardanzas</div></div></div>
+      <div class="stat-card red"><div class="stat-icon">❌</div><div class="stat-info"><div class="number">2</div><div class="label">Ausentismo crítico</div></div></div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-title">✅ Registro de Asistencia — Junio 2026</div><span class="chip">18 días hábiles</span></div>
+      <div class="card-body">
+        <div class="table-wrap">
+          <table>
+            <tr><th>Estudiante</th><th>Presentes</th><th>Ausentes</th><th>Tardanzas</th><th>% Asistencia</th><th>Estado</th></tr>
+            <tr><td><b>Ana Martínez</b></td><td>18</td><td>0</td><td>0</td><td><b style="color:#27ae60">100%</b></td><td><span class="badge badge-success">Perfecto</span></td></tr>
+            <tr><td><b>Luisa Rodríguez</b></td><td>17</td><td>1</td><td>0</td><td><b style="color:#27ae60">94%</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td><b>Carlos Peña</b></td><td>17</td><td>0</td><td>1</td><td><b style="color:#27ae60">94%</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td><b>María González</b></td><td>16</td><td>2</td><td>0</td><td><b style="color:#2e86c1">89%</b></td><td><span class="badge badge-info">Bueno</span></td></tr>
+            <tr><td><b>José Ramírez</b></td><td>15</td><td>3</td><td>0</td><td><b style="color:#f39c12">83%</b></td><td><span class="badge badge-warning">Regular</span></td></tr>
+            <tr><td><b>Sofía Herrera</b></td><td>12</td><td>6</td><td>0</td><td><b style="color:#e74c3c">67%</b></td><td><span class="badge badge-danger">Crítico</span></td></tr>
+            <tr><td><b>Pedro Jiménez</b></td><td>17</td><td>1</td><td>0</td><td><b style="color:#27ae60">94%</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td><b>Valentina Cruz</b></td><td>18</td><td>0</td><td>0</td><td><b style="color:#27ae60">100%</b></td><td><span class="badge badge-success">Perfecto</span></td></tr>
+            <tr><td><b>Miguel Torres</b></td><td>16</td><td>1</td><td>1</td><td><b style="color:#27ae60">89%</b></td><td><span class="badge badge-success">Bueno</span></td></tr>
+            <tr><td><b>Isabella Vargas</b></td><td>17</td><td>1</td><td>0</td><td><b style="color:#27ae60">94%</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+            <tr><td><b>Mateo Santos</b></td><td>13</td><td>5</td><td>0</td><td><b style="color:#e74c3c">72%</b></td><td><span class="badge badge-danger">Crítico</span></td></tr>
+            <tr><td><b>Camila Flores</b></td><td>17</td><td>0</td><td>1</td><td><b style="color:#27ae60">94%</b></td><td><span class="badge badge-success">Excelente</span></td></tr>
+          </table>
+        </div>
+        <div style="margin-top:14px; padding:12px; background:var(--light); border-radius:10px; font-size:12px; color:var(--text-light)">
+          📌 Mostrando 12 de 24 estudiantes. Los demás mantienen asistencia ≥88%.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PLANIFICACIONES ===== -->
+  <div class="section" id="planificaciones">
+    <div class="stats-grid">
+      <div class="stat-card green"><div class="stat-icon">✅</div><div class="stat-info"><div class="number">18</div><div class="label">Entregadas</div></div></div>
+      <div class="stat-card red"><div class="stat-icon">❌</div><div class="stat-info"><div class="number">2</div><div class="label">Pendientes</div></div></div>
+      <div class="stat-card blue"><div class="stat-icon">📋</div><div class="stat-info"><div class="number">20</div><div class="label">Total esperadas</div></div></div>
+      <div class="stat-card orange"><div class="stat-icon">📊</div><div class="stat-info"><div class="number">90%</div><div class="label">Cumplimiento</div></div></div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-title">📋 Estado de Planificaciones — 2025–2026</div></div>
+      <div class="card-body">
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 1 — 19 al 23 ago</div><div class="period">1er Trimestre</div></div><span class="badge badge-success">✅ Aprobada</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 2 — 26 al 30 ago</div><div class="period">1er Trimestre</div></div><span class="badge badge-success">✅ Aprobada</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 3 — 2 al 6 sep</div><div class="period">1er Trimestre</div></div><span class="badge badge-success">✅ Aprobada</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 4 — 9 al 13 sep</div><div class="period">1er Trimestre</div></div><span class="badge badge-success">✅ Aprobada</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 5 — 16 al 20 sep</div><div class="period">1er Trimestre</div></div><span class="badge badge-success">✅ Aprobada</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 10 — 4 al 8 nov</div><div class="period">1er Trimestre</div></div><span class="badge badge-success">✅ Aprobada</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 15 — 13 al 17 ene</div><div class="period">2do Trimestre</div></div><span class="badge badge-success">✅ Aprobada</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 20 — 17 al 21 feb</div><div class="period">2do Trimestre</div></div><span class="badge badge-info">📝 En revisión</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 26 — 1 al 5 jun</div><div class="period">2do Trimestre</div></div><span class="badge badge-danger">❌ Pendiente</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 27 — 8 al 12 jun</div><div class="period">2do Trimestre</div></div><span class="badge badge-danger">❌ Pendiente</span></div>
+        <div class="plan-item"><div class="plan-item-left"><div class="week">Semana 28 — 15 al 19 jun</div><div class="period">2do Trimestre · Actual</div></div><span class="badge badge-warning">⏳ En proceso</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HORARIO ===== -->
+  <div class="section" id="horario">
+    <div class="card">
+      <div class="card-header"><div class="card-title">🕐 Horario Semanal — Carmen Chalas</div><span class="chip">Inicial A · Jornada Matutina</span></div>
+      <div class="card-body">
+        <div class="table-wrap">
+          <table class="horario-table">
+            <tr><th>Hora</th><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr>
+            <tr><td><b>7:30–8:15</b></td><td><div class="period-block">Com. Oral</div></td><td><div class="period-block alt">Matemática</div></td><td><div class="period-block">Com. Oral</div></td><td><div class="period-block alt">Matemática</div></td><td><div class="period-block">Com. Oral</div></td></tr>
+            <tr><td><b>8:15–9:00</b></td><td><div class="period-block alt">Matemática</div></td><td><div class="period-block">Entorno S/N</div></td><td><div class="period-block alt">Matemática</div></td><td><div class="period-block">Entorno S/N</div></td><td><div class="period-block alt">Matemática</div></td></tr>
+            <tr><td><b>9:00–9:45</b></td><td><div class="period-block">Entorno S/N</div></td><td><div class="period-block">Com. Oral</div></td><td><div class="period-block">Ed. Artística</div></td><td><div class="period-block">Com. Oral</div></td><td><div class="period-block">Entorno S/N</div></td></tr>
+            <tr><td style="background:#fef9e7"><b>9:45–10:00</b></td><td colspan="5"><div class="period-block break" style="text-align:center">☕ Recreo</div></td></tr>
+            <tr><td><b>10:00–10:45</b></td><td><div class="period-block alt">Ed. Física</div></td><td><div class="period-block">Ed. Artística</div></td><td><div class="period-block">Com. Oral</div></td><td><div class="period-block alt">Ed. Física</div></td><td><div class="period-block">Ed. Artística</div></td></tr>
+            <tr><td><b>10:45–11:30</b></td><td><div class="period-block">Com. Oral</div></td><td><div class="period-block alt">Ed. Física</div></td><td><div class="period-block alt">Matemática</div></td><td><div class="period-block">Ed. Artística</div></td><td><div class="period-block alt">Ed. Física</div></td></tr>
+            <tr><td><b>11:30–12:15</b></td><td><div class="period-block alt">Matemática</div></td><td><div class="period-block">Entorno S/N</div></td><td><div class="period-block">Entorno S/N</div></td><td><div class="period-block">Com. Oral</div></td><td><div class="period-block">Entorno S/N</div></td></tr>
+          </table>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <span class="chip" style="background:#eaf4fb;border-color:#2e86c1;color:#1a5276">🔵 Comunicación Oral</span>
+          <span class="chip" style="background:#eafaf1;border-color:#27ae60;color:#1e8449">🟢 Matemática</span>
+          <span class="chip" style="background:#fef9e7;border-color:#f39c12;color:#b7770d">🟡 Entorno Social/Natural</span>
+          <span class="chip">🎨 Ed. Artística</span>
+          <span class="chip">🏃 Ed. Física</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CALENDARIO ===== -->
+  <div class="section" id="calendario">
+    <div class="card">
+      <div class="card-header"><div class="card-title">📅 Calendario Escolar — Próximas Fechas</div><span class="chip">2025–2026</span></div>
+      <div class="card-body">
+        <div class="cal-item">
+          <div class="cal-date" style="background:#fdf2f2;color:#e74c3c"><div class="day">20</div><div class="month">JUN</div></div>
+          <div class="cal-info"><div class="title">Entrega de planificaciones semanas 26 y 27</div><div class="desc">⚠️ Pendiente — Última oportunidad antes del examen</div></div>
+          <span class="badge badge-danger">Urgente</span>
+        </div>
+        <div class="cal-item">
+          <div class="cal-date" style="background:#eafaf1;color:#27ae60"><div class="day">23</div><div class="month">JUN</div></div>
+          <div class="cal-info"><div class="title">Entrega planificación semana 28</div><div class="desc">Planificación del período de cierre trimestral</div></div>
+          <span class="badge badge-warning">Próximo</span>
+        </div>
+        <div class="cal-item">
+          <div class="cal-date" style="background:#eaf4fb;color:#2e86c1"><div class="day">27</div><div class="month">JUN</div></div>
+          <div class="cal-info"><div class="title">Examen del 2do Trimestre — Inicial A</div><div class="desc">Evaluación sumativa · Áreas: Com. Oral, Matemática, Entorno</div></div>
+          <span class="badge badge-info">8 días</span>
+        </div>
+        <div class="cal-item">
+          <div class="cal-date" style="background:#fef9e7;color:#f39c12"><div class="day">30</div><div class="month">JUN</div></div>
+          <div class="cal-info"><div class="title">Entrega de calificaciones finales del 2do trimestre</div><div class="desc">Fecha límite para registro de notas en el sistema</div></div>
+          <span class="badge badge-warning">11 días</span>
+        </div>
+        <div class="cal-item">
+          <div class="cal-date" style="background:#f5f5f5;color:#7f8c8d"><div class="day">04</div><div class="month">JUL</div></div>
+          <div class="cal-info"><div class="title">Inicio del receso entre trimestres</div><div class="desc">Receso de verano — Docentes en plan de refuerzo</div></div>
+          <span class="badge badge-primary">15 días</span>
+        </div>
+        <div class="cal-item">
+          <div class="cal-date" style="background:#eafaf1;color:#27ae60"><div class="day">13</div><div class="month">AGO</div></div>
+          <div class="cal-info"><div class="title">Inicio del 3er Trimestre 2025–2026</div><div class="desc">Regreso a clases — Inicio de semana 1 del 3er trimestre</div></div>
+          <span class="badge badge-success">55 días</span>
+        </div>
+        <div class="cal-item">
+          <div class="cal-date" style="background:#eaf4fb;color:#2e86c1"><div class="day">05</div><div class="month">JUN</div></div>
+          <div class="cal-info"><div class="title">Acto de Clausura — Año Escolar 2025–2026</div><div class="desc">Ceremonia de cierre y entrega de calificaciones finales a padres</div></div>
+          <span class="badge badge-info">2027</span>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-title">📌 Días Feriados y No Laborables</div></div>
+      <div class="card-body">
+        <div class="table-wrap">
+          <table>
+            <tr><th>Fecha</th><th>Descripción</th><th>Tipo</th></tr>
+            <tr><td>16 ago 2026</td><td>Día de la Restauración</td><td><span class="badge badge-danger">Feriado Nacional</span></td></tr>
+            <tr><td>24 sep 2026</td><td>Día de la Merced</td><td><span class="badge badge-danger">Feriado Nacional</span></td></tr>
+            <tr><td>6 nov 2026</td><td>Día de la Constitución</td><td><span class="badge badge-danger">Feriado Nacional</span></td></tr>
+            <tr><td>25 dic 2026</td><td>Navidad</td><td><span class="badge badge-danger">Feriado Nacional</span></td></tr>
+            <tr><td>1 ene 2027</td><td>Año Nuevo</td><td><span class="badge badge-danger">Feriado Nacional</span></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Desarrollado por <b>DGtech</b> · Asistente Escolar <b>Delega IA</b> · Colegio Reformado la Esperanza · 2025–2026
+</div>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.closest('.nav-tab').classList.add('active');
+}
+</script>
+
+</body>
+</html>

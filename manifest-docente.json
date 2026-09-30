@@ -1,0 +1,14 @@
+{
+  "name": "Planificación Docente Nivel Inicial RD",
+  "short_name": "Planificación",
+  "description": "Planificación docente para Nivel Inicial alineada al currículo MINERD · República Dominicana",
+  "start_url": "./plan-docente-inicial.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#eef2fa",
+  "theme_color": "#0033A0",
+  "icons": [
+    { "src": "icon-graduacion.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

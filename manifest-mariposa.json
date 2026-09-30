@@ -1,0 +1,14 @@
+{
+  "name": "Planificación La Mariposa · CRE",
+  "short_name": "La Mariposa",
+  "description": "Planificación docente Nivel Inicial alineada al currículo MINERD · Colegio Reformado la Esperanza",
+  "start_url": "./plan-docente-mariposa.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f0fa",
+  "theme_color": "#7c3aed",
+  "icons": [
+    { "src": "icon-mariposa.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

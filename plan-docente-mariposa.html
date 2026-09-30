@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#7c3aed">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="La Mariposa">
+<link rel="manifest" href="manifest-mariposa.json">
+<link rel="icon" href="icon-mariposa.svg" type="image/svg+xml">
+<title>Planificación Docente · La Mariposa 🦋 | Colegio Reformado la Esperanza</title>
+<style>
+:root{
+  --violeta:#7c3aed; --violeta-osc:#5b21b6; --rosa:#ec4899; --teal:#14b8a6;
+  --verde:#10b981; --ambar:#f59e0b; --rojo:#ef4444; --azul:#3b82f6;
+  --tinta:#31233e; --tinta-suave:#6d5c7e;
+  --glass:rgba(255,255,255,.72); --glass-2:rgba(255,255,255,.55);
+  --radio:20px; --sombra:0 8px 28px rgba(91,33,182,.14);
+  --nav-h:64px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--tinta);
+  background:#f4f0fa;
+  background-image:
+    radial-gradient(1100px 520px at 15% -8%, rgba(236,72,153,.16), transparent 60%),
+    radial-gradient(900px 520px at 110% 12%, rgba(20,184,166,.14), transparent 60%),
+    radial-gradient(700px 420px at 50% 115%, rgba(124,58,237,.12), transparent 60%);
+  background-attachment:fixed;
+  -webkit-font-smoothing:antialiased;
+  overscroll-behavior-y:none;
+}
+#app{max-width:520px;margin:0 auto;min-height:100%;padding-bottom:calc(var(--nav-h) + 30px + env(safe-area-inset-bottom));}
+
+/* ---------- HEADER GLASS ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  display:flex;align-items:center;gap:12px;
+  padding:calc(12px + env(safe-area-inset-top)) 16px 12px;
+  background:rgba(244,240,250,.78);
+  -webkit-backdrop-filter:blur(18px) saturate(1.4);backdrop-filter:blur(18px) saturate(1.4);
+  border-bottom:1px solid rgba(124,58,237,.10);
+}
+.topbar .logo{width:40px;height:40px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;
+  background:linear-gradient(135deg,var(--violeta),var(--rosa));box-shadow:0 4px 14px rgba(124,58,237,.35)}
+.topbar .tt{flex:1;min-width:0}
+.topbar .tt h1{font-size:16px;font-weight:800;letter-spacing:-.2px;color:var(--violeta-osc);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar .tt p{font-size:11px;color:var(--tinta-suave);margin-top:1px}
+.btn-atras{
+  border:none;background:rgba(255,255,255,.9);color:var(--violeta-osc);font-weight:700;font-size:13px;
+  padding:9px 14px;border-radius:14px;display:none;align-items:center;gap:6px;box-shadow:0 2px 10px rgba(91,33,182,.15);cursor:pointer;
+}
+.btn-atras.visible{display:inline-flex}
+
+/* ---------- SCREENS ---------- */
+.screen{display:none;padding:16px 14px 8px;animation:fadeUp .28s ease}
+.screen.visible{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- CARDS / GLASS ---------- */
+.card{
+  background:var(--glass);
+  -webkit-backdrop-filter:blur(16px) saturate(1.3);backdrop-filter:blur(16px) saturate(1.3);
+  border:1px solid rgba(255,255,255,.85);border-radius:var(--radio);
+  box-shadow:var(--sombra);
+  padding:16px;margin-bottom:14px;
+}
+.card h2{font-size:15px;font-weight:800;color:var(--violeta-osc);display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.card h3{font-size:14px;font-weight:800;color:var(--violeta-osc);margin:12px 0 6px}
+.muted{color:var(--tinta-suave);font-size:12.5px;line-height:1.5}
+.chip{
+  display:inline-flex;align-items:center;gap:5px;background:rgba(124,58,237,.10);color:var(--violeta-osc);
+  border-radius:999px;padding:5px 11px;font-size:11.5px;font-weight:700;margin:3px 4px 3px 0;
+}
+.chip.rosa{background:rgba(236,72,153,.12);color:#be185d}
+.chip.teal{background:rgba(20,184,166,.13);color:#0f766e}
+.chip.ambar{background:rgba(245,158,11,.15);color:#b45309}
+.chip.verde{background:rgba(16,185,129,.13);color:#047857}
+.chip.gris{background:rgba(109,92,126,.10);color:var(--tinta-suave)}
+.sep{
+  text-align:center;font-size:11px;font-weight:800;letter-spacing:2px;color:var(--tinta-suave);
+  margin:16px 0 10px;text-transform:uppercase;position:relative;
+}
+.sep::before,.sep::after{content:"";position:absolute;top:50%;width:26%;height:1.5px;background:linear-gradient(90deg,transparent,rgba(124,58,237,.35))}
+.sep::before{left:0}
+.sep::after{right:0;transform:rotate(180deg)}
+
+/* ---------- HERO ---------- */
+.hero{
+  border-radius:24px;padding:20px 18px;color:#fff;margin-bottom:14px;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#7c3aed 0%,#a855f7 45%,#ec4899 100%);
+  box-shadow:0 12px 30px rgba(124,58,237,.35);
+}
+.hero::after{content:"🦋";position:absolute;font-size:110px;right:-18px;bottom:-30px;opacity:.18;transform:rotate(-12deg)}
+.hero h2{font-size:19px;font-weight:800;margin-bottom:4px}
+.hero p{font-size:12.5px;opacity:.92;line-height:1.5}
+.hero .row{display:flex;gap:18px;align-items:center;margin-top:14px;position:relative;z-index:1}
+.hero .ringbox{text-align:center}
+.hero .ringbox small{display:block;font-size:10px;margin-top:3px;font-weight:700;opacity:.9}
+
+/* ---------- LISTA MESES / SEMANAS ---------- */
+.item{
+  background:var(--glass);border:1px solid rgba(255,255,255,.85);border-radius:18px;box-shadow:var(--sombra);
+  padding:14px 14px;display:flex;align-items:center;gap:12px;margin-bottom:11px;cursor:pointer;
+  transition:transform .15s ease;
+}
+.item:active{transform:scale(.98)}
+.item .ic{width:46px;height:46px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;
+  background:linear-gradient(135deg,rgba(124,58,237,.15),rgba(236,72,153,.15))}
+.item .tx{flex:1;min-width:0}
+.item .tx b{display:block;font-size:13.5px;color:var(--violeta-osc);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .tx span{font-size:11.5px;color:var(--tinta-suave);display:block;margin-top:2px}
+.item .rg{flex-shrink:0}
+.hoy-badge{background:#fff;color:var(--rosa);font-size:9.5px;font-weight:800;padding:3px 8px;border-radius:999px;box-shadow:0 2px 8px rgba(236,72,153,.3)}
+
+/* ---------- CLASE ---------- */
+.clase-head{display:flex;align-items:center;gap:14px}
+.clase-head .tit{flex:1}
+.clase-head .tit h2{font-size:17px;color:var(--violeta-osc);line-height:1.25}
+.clase-head .tit p{font-size:12px;color:var(--tinta-suave);margin-top:3px}
+.momento{
+  background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.9);border-radius:18px;
+  box-shadow:0 6px 18px rgba(91,33,182,.10);padding:14px;margin-bottom:12px;
+}
+.momento .m-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.momento .m-num{width:30px;height:30px;border-radius:11px;background:linear-gradient(135deg,var(--violeta),var(--rosa));color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.momento .m-head b{font-size:14px;color:var(--violeta-osc)}
+.momento .m-head .dur{margin-left:auto;font-size:11px;font-weight:700;color:var(--violeta-osc);background:rgba(124,58,237,.10);padding:4px 10px;border-radius:999px}
+.momento .prop{font-size:12.5px;color:var(--tinta-suave);font-style:italic;margin-bottom:8px}
+.momento ol{margin-left:20px}
+.momento ol li{font-size:13px;line-height:1.55;margin-bottom:5px}
+.nota{
+  background:linear-gradient(135deg,rgba(245,158,11,.14),rgba(236,72,153,.10));
+  border-left:4px solid var(--ambar);border-radius:12px;padding:12px 14px;font-size:12.5px;line-height:1.55;color:#7c4a03;
+}
+.nota b{display:block;font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px;color:#b45309}
+
+/* ---------- TEMPORIZADOR ---------- */
+.timer-wrap{display:flex;align-items:center;gap:16px;margin-top:12px;flex-wrap:wrap}
+.timer-ring{position:relative;width:96px;height:96px;flex-shrink:0}
+.timer-ring svg{transform:rotate(-90deg)}
+.timer-ring .t-txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;color:var(--violeta-osc)}
+.timer-ring .t-txt b{font-size:18px}
+.timer-ring .t-txt small{font-size:9px;color:var(--tinta-suave);font-weight:700}
+.timer-ctrl{flex:1;min-width:150px}
+.timer-durs{display:flex;gap:6px;margin-bottom:10px}
+.dur-btn{border:none;background:rgba(124,58,237,.10);color:var(--violeta-osc);font-weight:700;font-size:12px;padding:6px 12px;border-radius:999px;cursor:pointer}
+.dur-btn.sel{background:linear-gradient(135deg,var(--violeta),var(--rosa));color:#fff}
+.timer-btns{display:flex;gap:8px}
+.btn-soft{border:none;background:rgba(255,255,255,.9);color:var(--violeta-osc);font-weight:800;font-size:13px;padding:10px 16px;border-radius:14px;cursor:pointer;box-shadow:0 3px 10px rgba(91,33,182,.12);flex:1}
+.btn-soft:active{transform:scale(.96)}
+.timer-corriendo{outline:2px solid rgba(236,72,153,.5);outline-offset:2px}
+
+/* ---------- ALUMNOS / ASISTENCIA ---------- */
+.tabs{display:flex;background:rgba(124,58,237,.08);border-radius:16px;padding:5px;margin-bottom:14px}
+.tab{flex:1;text-align:center;padding:10px 6px;font-size:13px;font-weight:700;color:var(--tinta-suave);border-radius:12px;cursor:pointer;transition:all .2s}
+.tab.sel{background:#fff;color:var(--violeta-osc);box-shadow:0 3px 10px rgba(91,33,182,.15)}
+.alumno{
+  display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.85);
+  border:1px solid rgba(255,255,255,.9);border-radius:16px;padding:9px 10px;margin-bottom:8px;
+}
+.alumno .an{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,rgba(124,58,237,.16),rgba(236,72,153,.16));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:var(--violeta-osc);flex-shrink:0}
+.alumno .anx{flex:1;font-size:13.5px;font-weight:700}
+.seg{display:flex;border-radius:12px;overflow:hidden;border:1.5px solid rgba(124,58,237,.25)}
+.seg button{border:none;padding:8px 10px;font-size:10.5px;font-weight:800;background:#fff;color:var(--tinta-suave);cursor:pointer;min-width:56px}
+.seg button.selP{background:var(--verde);color:#fff}
+.seg button.selA{background:var(--rojo);color:#fff}
+.seg button.selL{background:var(--verde);color:#fff}
+.seg button.selEP{background:var(--ambar);color:#fff}
+.seg button+button{border-left:1.5px solid rgba(124,58,237,.25)}
+textarea.obs{
+  width:100%;min-height:96px;border:1.5px solid rgba(124,58,237,.25);border-radius:16px;padding:12px;font-size:13px;
+  font-family:inherit;color:var(--tinta);background:rgba(255,255,255,.9);resize:vertical;outline:none;
+}
+textarea.obs:focus{border-color:var(--violeta);box-shadow:0 0 0 3px rgba(124,58,237,.12)}
+
+/* ---------- DESCARGAS ---------- */
+.dl{
+  display:flex;align-items:center;justify-content:center;gap:9px;width:100%;border:none;cursor:pointer;
+  padding:14px 16px;border-radius:16px;font-size:13.5px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,#7c3aed,#a855f7);box-shadow:0 6px 18px rgba(124,58,237,.35);margin-top:10px;
+}
+.dl:active{transform:scale(.98)}
+.dl.alt{background:linear-gradient(135deg,#0d9488,#14b8a6);box-shadow:0 6px 18px rgba(20,184,166,.32)}
+.dl.alt2{background:linear-gradient(135deg,#e11d48,#ec4899);box-shadow:0 6px 18px rgba(236,72,153,.32)}
+.dl:disabled{opacity:.55}
+.dl-grande{padding:16px;font-size:14.5px;border-radius:18px}
+
+/* ---------- CICLO ---------- */
+.ciclo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ciclo-card{
+  background:var(--glass);border:1px solid rgba(255,255,255,.85);border-radius:18px;box-shadow:var(--sombra);
+  padding:16px 12px;text-align:center;
+}
+.ciclo-card .em{font-size:38px;margin-bottom:6px;filter:drop-shadow(0 4px 8px rgba(124,58,237,.25))}
+.ciclo-card b{font-size:13px;color:var(--violeta-osc);display:block;margin-bottom:3px}
+.ciclo-card span{font-size:11px;color:var(--tinta-suave);line-height:1.4;display:block}
+.ciclo-card.activo{border:2px solid var(--rosa);box-shadow:0 0 0 4px rgba(236,72,153,.12),var(--sombra)}
+
+/* ---------- INFO ---------- */
+.inp{
+  width:100%;border:1.5px solid rgba(124,58,237,.25);border-radius:14px;padding:11px 13px;font-size:13.5px;
+  font-family:inherit;background:rgba(255,255,255,.9);color:var(--tinta);outline:none;margin-bottom:10px;
+}
+.inp:focus{border-color:var(--violeta);box-shadow:0 0 0 3px rgba(124,58,237,.12)}
+.lbl{font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--tinta-suave);margin-bottom:5px;display:block}
+.stat-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px dashed rgba(124,58,237,.15);font-size:13px}
+.stat-row:last-child{border-bottom:none}
+.punto{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:7px}
+
+/* ---------- NAV ---------- */
+.nav{
+  position:fixed;bottom:0;left:0;right:0;z-index:60;
+  max-width:520px;margin:0 auto;
+  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.82);
+  -webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);
+  border-top:1px solid rgba(124,58,237,.10);
+  display:flex;justify-content:space-around;
+}
+.nav button{
+  border:none;background:transparent;display:flex;flex-direction:column;align-items:center;gap:3px;
+  font-size:10.5px;font-weight:700;color:var(--tinta-suave);padding:7px 12px;border-radius:14px;cursor:pointer;flex:1;max-width:110px;
+  transition:all .2s;
+}
+.nav button .nico{font-size:20px;line-height:1;transition:transform .2s}
+.nav button.sel{color:var(--violeta-osc);background:rgba(124,58,237,.10)}
+.nav button.sel .nico{transform:scale(1.18) translateY(-1px)}
+.nav button.sel.mariposa{color:var(--rosa);background:rgba(236,72,153,.12)}
+
+/* ---------- TOAST ---------- */
+#toast{
+  position:fixed;bottom:calc(var(--nav-h) + 26px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%) translateY(20px);
+  background:rgba(49,35,62,.92);color:#fff;font-size:12.5px;font-weight:700;padding:10px 18px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:all .3s;z-index:99;white-space:nowrap;max-width:88vw;overflow:hidden;text-overflow:ellipsis;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.vacio{text-align:center;color:var(--tinta-suave);font-size:12.5px;padding:26px 10px}
+h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1px;text-transform:uppercase;margin:6px 2px 10px}
+table.anual{width:100%;border-collapse:collapse;font-size:12.5px}
+table.anual td{padding:9px 8px;border-bottom:1px solid rgba(124,58,237,.10)}
+table.anual td:first-child{font-weight:800;color:var(--violeta-osc);white-space:nowrap}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="topbar">
+    <button class="btn-atras" id="btnAtras" onclick="volver()">‹ Volver atrás</button>
+    <div class="logo">🦋</div>
+    <div class="tt">
+      <h1 id="tituloApp">Planificación La Mariposa</h1>
+      <p id="subtituloApp">Nivel Inicial · Colegio Reformado la Esperanza</p>
+    </div>
+  </div>
+
+  <div class="screen" id="scr-anio"></div>
+  <div class="screen" id="scr-mes"></div>
+  <div class="screen" id="scr-mes-detalle"></div>
+  <div class="screen" id="scr-semanas"></div>
+  <div class="screen" id="scr-clase"></div>
+  <div class="screen" id="scr-ciclo"></div>
+  <div class="screen" id="scr-info"></div>
+
+  <nav class="nav" id="nav">
+    <button data-scr="anio" onclick="irA('anio')"><span class="nico">📆</span>Año</button>
+    <button data-scr="mes" onclick="irA('mes')"><span class="nico">📅</span>Mes</button>
+    <button data-scr="semanas" onclick="irA('semanas')"><span class="nico">🗓️</span>Semanas</button>
+    <button data-scr="ciclo" onclick="irA('ciclo')" class="mariposa"><span class="nico">🦋</span>Ciclo</button>
+    <button data-scr="info" onclick="irA('info')"><span class="nico">ℹ️</span>Info</button>
+  </nav>
+</div>
+<div id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="app-mariposa.js"></script>
+<script>
+if('serviceWorker' in navigator && location.protocol==='https:'){
+  navigator.serviceWorker.register('sw-mariposa.js').catch(()=>{});
+}
+</script>
+</body>
+</html>

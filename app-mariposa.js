@@ -613,7 +613,8 @@ function renderMesDetalle(mesId){
   <div class="sep">Semanas · más reciente arriba</div>`;
   semanasInv.forEach(s=>{
     const pctW = Math.round(s.dias.reduce((a,d)=>a+pctDia(d.id,"asis"),0)/s.dias.length);
-    html += `<div class="item" onclick="irA('clase'); abrirSemana(${s.numero})">
+    const ultimoDia = s.dias[s.dias.length-1];
+    html += `<div class="item" onclick="abrirClase('${ultimoDia.id}')">
       <div class="ic">🐛</div>
       <div class="tx"><b>Semana ${s.numero} · ${esc(s.tema)}</b><span>${esc(s.fechas)} · ${s.dias.length} clases diarias</span></div>
       <div class="rg">${ring(pctW,46,6,"#14b8a6")}</div>

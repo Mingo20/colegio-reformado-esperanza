@@ -1,6 +1,7 @@
 /* ============================================================
-   PLANIFICACIÓN DOCENTE · NIVEL INICIAL RD
-   App multi-docente · Currículo MINERD · República Dominicana
+   PLANIFICACIÓN DOCENTE · RD
+   App multi-docente multi-nivel (Inicial, Primaria, Secundaria)
+   Currículo MINERD · República Dominicana
    Colegio Reformado la Esperanza · DGtech · Delega IA
    ============================================================ */
 
@@ -16,7 +17,6 @@ function ic(nombre, s=18, color="currentColor"){
     descarga:  '<path d="M12 3v12"/><polyline points="7 11 12 16 17 11"/><path d="M4 20h16"/>',
     objetivo:  '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/>',
     reloj:     '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',
-    libro:     '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
     etiqueta:  '<path d="M20 12l-8 8-9-9V4h7l10 8z"/><circle cx="7.5" cy="7.5" r="1" fill="currentColor"/>',
     nota:      '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/>',
     usuarios:  '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
@@ -27,13 +27,13 @@ function ic(nombre, s=18, color="currentColor"){
     bombilla:  '<path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3h6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/>',
     lista:     '<line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="3.5" cy="6" r="1" fill="currentColor"/><circle cx="3.5" cy="12" r="1" fill="currentColor"/><circle cx="3.5" cy="18" r="1" fill="currentColor"/>',
     calendario:'<rect x="3" y="4" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/>',
-    ciclo:     '<path d="M21 12a9 9 0 1 1-2.6-6.4"/><polyline points="21 3 21 9 15 9"/>',
-    info:      '<circle cx="12" cy="12" r="9"/><line x1="12" y1="16" x2="12" y2="12"/><circle cx="12" cy="8" r="0.5" fill="currentColor"/>',
     plan:      '<path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M6 10.5V15c0 1.7 3 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 8v5"/>',
-    cerrar:    '<line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/>',
+    campana:   '<path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/>',
+    tendencia: '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+    boletin:   '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/>',
     salir:     '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>',
   };
-  return `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths[nombre]||paths.info}</svg>`;
+  return `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths[nombre]||paths.objetivo}</svg>`;
 }
 
 /* ---------- COMPETENCIAS FUNDAMENTALES (MINERD) ---------- */
@@ -47,8 +47,18 @@ const COMPETENCIAS = [
   { n:"Habilidades para la vida", d:"Toma decisiones y actúa con autonomía en situaciones cotidianas." },
 ];
 
-/* ---------- PLAN ANUAL SUGERIDO (MINERD · calendario RD) ---------- */
-const PLAN_ANUAL = [
+/* ---------- GRADOS Y JORNADAS POR NIVEL ---------- */
+const GRADOS_POR_NIVEL = {
+  Inicial:   ["Maternal","3 años","4 años","5 años"],
+  Primaria:  ["1ro","2ro","3ro","4ro","5ro","6to"],
+  Secundaria:["1ro","2ro","3ro","4ro","5ro","6to"],
+};
+const JORNADAS = ["Matutina","Vespertina","Nocturna","Jornada Extendida"];
+const MESES_ES = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+const PERIODOS = ["1er Trimestre","2do Trimestre","3er Trimestre"];
+
+/* ---------- PLANES ANUALES SUGERIDOS POR NIVEL (MINERD) ---------- */
+const PLAN_ANUAL_INICIAL = [
   { mes:"Agosto 2026", trimestre:"1er Trimestre", tema:"Mi escuela y yo", enfoque:"Adaptación escolar, hábitos y rutinas, normas de convivencia.", contenidos:"Mi salón · Mi maestra · Mis compañeros · Rutinas del día", evaluacion:"Observación directa del proceso de adaptación." },
   { mes:"Septiembre 2026", trimestre:"1er Trimestre", tema:"La Mariposa", enfoque:"El ciclo de vida de la mariposa: descubrimiento, indagación y metamorfosis.", contenidos:"Características · Ciclo de vida · Cuidado de la naturaleza", evaluacion:"Evaluación lúdica por estaciones · Registro diario de logros." },
   { mes:"Octubre 2026", trimestre:"1er Trimestre", tema:"Mi cuerpo y mis sentidos", enfoque:"Identificación de partes del cuerpo y los cinco sentidos.", contenidos:"Mi cuerpo · Los sentidos · Higiene y autocuidado", evaluacion:"Circuitos de experimentación sensorial." },
@@ -61,6 +71,38 @@ const PLAN_ANUAL = [
   { mes:"Mayo 2027", trimestre:"3er Trimestre", tema:"Los alimentos saludables", enfoque:"Alimentación balanceada y hábitos de salud.", contenidos:"Frutas · Verduras · El desayuno · La lonchera", evaluacion:"Mercadito saludable." },
   { mes:"Junio 2027", trimestre:"Cierre de año", tema:"El mar y sus criaturas · Cierre", enfoque:"Vida marina y recapitulación del año escolar.", contenidos:"El mar · Peces · Playa limpia · Repaso general", evaluacion:"Evaluación final lúdica y acto de clausura." },
 ];
+const PLAN_ANUAL_PRIMARIA = [
+  { mes:"Agosto 2026", trimestre:"1er Trimestre", tema:"Convivencia y organización escolar", enfoque:"Normas de convivencia, rutinas y organización del aula.", contenidos:"Acuerdos de convivencia · Rutinas · Valores", evaluacion:"Sociograma y registro anecdótico." },
+  { mes:"Septiembre 2026", trimestre:"1er Trimestre", tema:"La naturaleza y sus seres vivos", enfoque:"Indagación científica del entorno natural.", contenidos:"Ecosistemas · Cadenas alimenticias · Cuidado ambiental", evaluacion:"Proyecto de ciencias por equipos." },
+  { mes:"Octubre 2026", trimestre:"1er Trimestre", tema:"Mi cuerpo, mi salud", enfoque:"Anatomía básica, higiene y alimentación saludable.", contenidos:"Partes del cuerpo · Hábitos de higiene · Alimentación", evaluacion:"Cartel informativo y exposición." },
+  { mes:"Noviembre 2026", trimestre:"Cierre 1er T.", tema:"Mi comunidad dominicana", enfoque:"Instituciones, oficios y servicios de la comunidad.", contenidos:"Instituciones · Oficios · Símbolos patrios", evaluacion:"Maqueta de la comunidad y presentación oral." },
+  { mes:"Diciembre 2026", trimestre:"2do Trimestre", tema:"Cultura e identidad dominicana", enfoque:"Tradiciones, música y festividades del país.", contenidos:"Navidad dominicana · Merengue · Comidas típicas", evaluacion:"Festival cultural escolar." },
+  { mes:"Enero 2027", trimestre:"2do Trimestre", tema:"El clima y el medio ambiente", enfoque:"Fenómenos atmosféricos y cuidado del planeta.", contenidos:"El clima · El agua · Reciclaje", evaluacion:"Experimento guiado con informe." },
+  { mes:"Febrero 2027", trimestre:"2do Trimestre", tema:"Patria y ciudadanía", enfoque:"Símbolos patrios, efemérides y democracia.", contenidos:"27 de Febrero · Duarte · Democracia", evaluacion:"Debate guiado y periódico mural." },
+  { mes:"Marzo 2027", trimestre:"3er Trimestre", tema:"Las plantas y la agricultura", enfoque:"Partes de la planta y agricultura dominicana.", contenidos:"La planta · La agricultura · Productos del campo", evaluacion:"Huerto escolar con registro de observación." },
+  { mes:"Abril 2027", trimestre:"3er Trimestre", tema:"Tecnología e información", enfoque:"Uso responsable de la tecnología y búsqueda de información.", contenidos:"Medios digitales · Búsqueda segura · Presentaciones", evaluacion:"Presentación digital por equipos." },
+  { mes:"Mayo 2027", trimestre:"3er Trimestre", tema:"Alimentación y vida saludable", enfoque:"Nutrición, deporte y bienestar.", contenidos:"Grupos alimenticios · Deporte · Descanso", evaluacion:"Feria de vida saludable." },
+  { mes:"Junio 2027", trimestre:"Cierre de año", tema:"República Dominicana: proyecto integrador", enfoque:"Síntesis de aprendizajes del año con proyecto final.", contenidos:"Repaso general · Proyecto integrador", evaluacion:"Exposición final y portafolio." },
+];
+const PLAN_ANUAL_SECUNDARIA = [
+  { mes:"Agosto 2026", trimestre:"1er Trimestre", tema:"Proyecto de aula y convivencia", enfoque:"Acuerdos de convivencia y metodología de proyectos.", contenidos:"Normas · Trabajo colaborativo · Pensamiento crítico", evaluacion:"Diagnóstico inicial y contrato de aula." },
+  { mes:"Septiembre 2026", trimestre:"1er Trimestre", tema:"Ciencia e indagación", enfoque:"Método científico aplicado a problemas del entorno.", contenidos:"Método científico · Experimentos · Informes", evaluacion:"Informe de laboratorio por equipos." },
+  { mes:"Octubre 2026", trimestre:"1er Trimestre", tema:"Salud integral e identidad", enfoque:"Adolescencia, salud y desarrollo personal.", contenidos:"Cambios en la adolescencia · Salud emocional · Hábitos", evaluacion:"Portafolio personal reflexivo." },
+  { mes:"Noviembre 2026", trimestre:"Cierre 1er T.", tema:"Comunidad, democracia y participación", enfoque:"Ciudadanía activa y problemáticas comunitarias.", contenidos:"Democracia · Participación · Proyectos comunitarios", evaluacion:"Debate formal y ensayo argumentativo." },
+  { mes:"Diciembre 2026", trimestre:"2do Trimestre", tema:"Cultura dominicana y patrimonio", enfoque:"Identidad nacional, música, arte y patrimonio.", contenidos:"Patrimonio · Arte dominicano · Tradiciones", evaluacion:"Exposición museográfica del aula." },
+  { mes:"Enero 2027", trimestre:"2do Trimestre", tema:"Medio ambiente y sostenibilidad", enfoque:"Problemáticas ambientales y desarrollo sostenible.", contenidos:"Cambio climático · Energías renovables · Basura cero", evaluacion:"Campaña ambiental con evidencias." },
+  { mes:"Febrero 2027", trimestre:"2do Trimestre", tema:"Patria, memoria y ciudadanía", enfoque:"Efemérides patrias y construcción de la democracia dominicana.", contenidos:"Independencia · Restauración · Ciudadanía", evaluacion:"Ensayo y foro histórico." },
+  { mes:"Marzo 2027", trimestre:"3er Trimestre", tema:"Género, derechos e igualdad", enfoque:"Derechos humanos, equidad e igualdad de oportunidades.", contenidos:"Derechos humanos · Equidad · Respeto", evaluacion:"Proyecto de sensibilización." },
+  { mes:"Abril 2027", trimestre:"3er Trimestre", tema:"Tecnología, medios y sociedad", enfoque:"Alfabetización mediática y ciudadanía digital.", contenidos:"Medios · Redes sociales · Ética digital", evaluacion:"Producción audiovisual crítica." },
+  { mes:"Mayo 2027", trimestre:"3er Trimestre", tema:"Economía y emprendimiento", enfoque:"Educación financiera y proyectos emprendedores.", contenidos:"Ahorro · Presupuesto · Proyecto de negocio", evaluacion:"Ferias de emprendimiento." },
+  { mes:"Junio 2027", trimestre:"Cierre de año", tema:"Proyecto integrador de cierre", enfoque:"Síntesis interdisciplinaria del año escolar.", contenidos:"Integración de áreas · Socialización", evaluacion:"Defensa de proyectos y evaluación final." },
+];
+const PLANES_ANUALES = {
+  "Inicial":    { titulo:"Plan Anual Inicial",    descripcion:"Unidades temáticas con enfoque lúdico, situaciones de aprendizaje y evaluación formativa.", temas: PLAN_ANUAL_INICIAL },
+  "Primaria":   { titulo:"Plan Anual Primaria",   descripcion:"Unidades que desarrollan competencias fundamentales con proyectos y trabajo colaborativo.", temas: PLAN_ANUAL_PRIMARIA },
+  "Secundaria": { titulo:"Plan Anual Secundaria", descripcion:"Unidades basadas en proyectos, pensamiento crítico y participación ciudadana.", temas: PLAN_ANUAL_SECUNDARIA },
+};
+const NIVELES = ["Inicial","Primaria","Secundaria"];
 
 const PLAN_MARIPOSA = {
   id:"sep-2026",
@@ -400,10 +442,15 @@ const PLAN_MARIPOSA = {
 
 
 /* ---------- ESTADO LOCAL (LocalStorage) ---------- */
-const LS_KEY = "plan_docente_rd_v1";
+const LS_KEY = "plan_docente_rd_v2";
 function cargarEstado(){
   try{ const d = JSON.parse(localStorage.getItem(LS_KEY)); if(d) return d; }catch(e){}
-  return { docente:{id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",alumnos:24}, asistencia:{}, evaluacion:{}, obs:{}, cola:[], lastSync:null, planesCache:{}, listaPlanes:null };
+  return {
+    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturas:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er Trimestre" },
+    asistencia:{}, evaluacion:{}, obs:{}, calificaciones:{},
+    cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
+    notificaciones:[], vistosPlanes:0,
+  };
 }
 let S = cargarEstado();
 function guardar(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(S)); }catch(e){} }
@@ -441,10 +488,10 @@ function ring(pct, size, stroke, color, label){
   </svg>`;
 }
 function planActivo(){
-  // plan cuyo detalle está en cache (último abierto) o el primero de la lista / biblioteca
   const ids = Object.keys(S.planesCache);
   if(ids.length) return S.planesCache[ids[ids.length-1]];
-  return PLAN_MARIPOSA;
+  if(S.docente.nivel === "Inicial") return PLAN_MARIPOSA;
+  return { titulo:"Sin plan activo", mes:"", tema:"", nivel:S.docente.nivel, descripcion:"", competencias:[], areas:[], semanas:[] };
 }
 async function obtenerPlan(id){
   if(!id || id.startsWith("local-")) return PLAN_MARIPOSA;
@@ -455,9 +502,7 @@ async function obtenerPlan(id){
   }catch(e){}
   return null;
 }
-function todasClases(plan){
-  const arr=[]; (plan.semanas||[]).forEach(s=>s.dias.forEach(d=>arr.push(d))); return arr;
-}
+function todasClases(plan){ const arr=[]; (plan.semanas||[]).forEach(s=>s.dias.forEach(d=>arr.push(d))); return arr; }
 function clasePorId(plan, id){ return todasClases(plan).find(d=>d.id===id); }
 function pctDia(claseId, tipo){
   const N = S.docente.alumnos;
@@ -473,27 +518,77 @@ function pctMes(plan, tipo){
   let sum=0; clases.forEach(c=>sum+=pctDia(c.id,tipo));
   return Math.round(sum/clases.length);
 }
+function semestreDe(mes){
+  if(/enero|febrero|marzo|abril|mayo|junio/i.test(mes||"")) return "2do";
+  return "1er";
+}
+function minsDe(txt){
+  const m = String(txt||"").match(/(\d+)\s*(min|minuto|hora|h)/i);
+  if(!m) return null;
+  const v = +m[1];
+  return /h/i.test(m[2])? v*60 : v;
+}
+function notaFinalDe(p,t,e){
+  p = Math.max(0,Math.min(100,+p||0)); t = Math.max(0,Math.min(100,+t||0)); e = Math.max(0,Math.min(100,+e||0));
+  return Math.round(p*0.3 + t*0.3 + e*0.4);
+}
+function escalaDe(n){ return n>=90?"L":(n>=70?"EP":"I"); }
+function escalaTexto(k){ return k==="L"?"Logrado":(k==="EP"?"En proceso":"Insuficiente"); }
+
+/* ---------- NOTIFICACIONES ---------- */
+function actualizarCampana(){
+  const n = S.notificaciones.filter(x=>!x.leida).length;
+  const b = $("badgeNotif");
+  if(b){ b.textContent = n>99? "99+" : String(n); b.classList.toggle("visible", n>0); }
+}
+function pushNotif(texto, icono){
+  if(S.notificaciones.some(x=>x.texto===texto)) return;
+  S.notificaciones.unshift({ id: Date.now()+"-"+Math.random().toString(36).slice(2,6), texto, icono: icono||"campana", fecha: new Date().toISOString(), leida:false });
+  if(S.notificaciones.length>60) S.notificaciones.pop();
+  guardar(); actualizarCampana();
+}
+function generarNotificaciones(){
+  if(!S.docente.id) return;
+  if(S.cola.length) pushNotif("Tienes "+S.cola.length+" registro(s) pendiente(s) de sincronización.","refrescar");
+  const plan = planActivo();
+  const claseHoy = todasClases(plan).find(d=>d.id===HOY);
+  if(claseHoy){
+    const reg = S.asistencia[HOY]||{};
+    if(Object.keys(reg).length===0) pushNotif("Recuerda registrar la asistencia de la clase de hoy.","calendario");
+  }
+  const num = (S.listaPlanes||[]).length;
+  if(S.vistosPlanes>0 && num > S.vistosPlanes) pushNotif("Hay planes nuevos disponibles en Planificación Mensual.","plan");
+  S.vistosPlanes = num;
+  guardar(); actualizarCampana();
+}
 
 /* ---------- SINCRONIZACIÓN ---------- */
 function metaClase(claseId){
+  const esFecha = /^\d{4}-\d{2}-\d{2}$/.test(claseId||"");
   const plan = planActivo();
-  const d = clasePorId(plan, claseId) || {id:claseId, etiqueta:"", titulo:""};
+  const d = esFecha? clasePorId(plan, claseId) : null;
+  const nivel = S.docente.nivel || "Inicial";
   return {
     docente_id: S.docente.id || "",
     docente_nombre: S.docente.nombre || "Docente",
     colegio: S.docente.colegio || "",
     distrito: S.docente.distrito || "",
-    nivel: S.docente.nivel || "Inicial",
-    asignatura: "Nivel Inicial" + (plan.tema? " · "+plan.tema : ""),
-    grado: S.docente.grado || S.docente.nivel,
+    nivel,
+    asignatura: (S.docente.asignaturas || nivel) + (plan.tema? " · "+plan.tema : ""),
+    grado: S.docente.grado || nivel,
     seccion: S.docente.seccion || "A",
-    fecha: claseId,
-    clase_id: claseId,
-    clase_titulo: (d.etiqueta? d.etiqueta+" · ":"") + (d.titulo||""),
+    fecha: esFecha? claseId : HOY,
+    clase_id: esFecha? claseId : "",
+    clase_titulo: esFecha? ((d&&d.etiqueta? d.etiqueta+" · ":"")+(d?d.titulo||"":"")) : ("Calificaciones "+claseId),
     anio_escolar: ANIO_ESCOLAR,
   };
 }
 function encolar(tipo, claseId, item, texto){
+  // deduplicar en cola por tipo+clase+alumno (se queda el último valor)
+  if(item){
+    const i = S.cola.findIndex(p=>p.tipo===tipo && p.claseId===claseId && p.item && p.item.alumno===item.alumno);
+    if(i>=0) S.cola.splice(i,1);
+  }
   S.cola.push({ tipo, claseId, item: item||null, texto: texto||null });
   guardar();
   programarFlush();
@@ -508,13 +603,17 @@ async function flush(){
     const k = p.tipo+"|"+p.claseId;
     if(!grupos[k]) grupos[k] = { tipo:p.tipo, claseId:p.claseId, items:[], texto:null };
     if(p.tipo==="observacion"){ grupos[k].texto = p.texto; }
-    else if(p.item){ grupos[k].items.push(p.item); }
+    else if(p.item){
+      const ex = grupos[k].items.findIndex(x=>x.alumno===p.item.alumno);
+      if(ex>=0) grupos[k].items[ex] = p.item; else grupos[k].items.push(p.item);
+    }
   });
   let enviados = 0;
   for(const k of Object.keys(grupos)){
     const g = grupos[k];
     const body = { tipo:g.tipo, ...metaClase(g.claseId) };
     if(g.tipo==="observacion"){ body.observacion = g.texto||""; }
+    else if(g.tipo==="calificaciones"){ body.periodo = g.claseId; body.items = g.items; }
     else { body.items = g.items; }
     try{
       const r = await fetch(SYNC_URL, { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(body) });
@@ -528,18 +627,21 @@ async function flush(){
   }
   window._flushing = false;
   if(S.cola.length) programarFlush();
+  actualizarCampana();
   if($("scr-info").classList.contains("visible")) renderInfo();
 }
-document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && S.docente.id) flush(); });
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && S.docente.id){ flush(); generarNotificaciones(); } });
 
 /* ---------- NAVEGACIÓN ---------- */
 let navStack = [];
 const TITULOS = {
-  anio:["Plan Anual "+ANIO_ESCOLAR, "Calendario escolar MINERD · 3 trimestres"],
-  mes:["Planificación Mensual","Planes disponibles para tu nivel"],
-  semanas:["Semanas del año escolar","Organizadas de más reciente a más antigua"],
-  ciclo:["Ciclo de la unidad","El hilo conductor del plan activo"],
+  anio:["Planes Anuales","Elige el plan anual de tu nivel educativo"],
+  "anio-detalle":["Planes Anuales","Detalle completo del plan"],
+  mes:["Planificación Mensual","Planes disponibles organizados por semestre"],
+  semanas:["Semanas del mes en curso","Solo las semanas del mes actual"],
+  progreso:["Progreso y Calificaciones","Registra notas y visualiza el avance de tus alumnos"],
   info:["Información y Ajustes","Tu perfil y sincronización"],
+  notificaciones:["Notificaciones","Avisos de tu app docente"],
   "mes-detalle":["Planificación Mensual","Detalle completo del plan"],
   clase:["Clase del día","Lista para enseñar"],
   onboarding:["Bienvenida","Regístrate para comenzar"],
@@ -557,28 +659,33 @@ function mostrar(scr, arg){
   $("nav").classList.toggle("oculto", !registrado || esOnb);
   $("topbar").style.display = esOnb? "none":"flex";
   document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("sel", b.dataset.scr===scr));
-  const esNivel1 = ["anio","mes","semanas","ciclo","info"].includes(scr);
+  const esNivel1 = ["anio","mes","semanas","progreso","info"].includes(scr);
   $("btnAtras").classList.toggle("visible", registrado && !esNivel1);
-  const [t, s] = TITULOS[scr]||["Planificación Docente",""];
+  $("btnCampana").classList.toggle("visible", registrado && !esOnb);
+  actualizarCampana();
+  let [t, s] = TITULOS[scr]||["Planificación Docente",""];
+  if(scr==="anio-detalle" && arg) t = "Plan Anual · "+arg;
   $("tituloApp").textContent = t; $("subtituloApp").textContent = s;
   if(scr==="onboarding") renderOnboarding();
   if(scr==="anio") renderAnio();
+  if(scr==="anio-detalle") renderAnioDetalle(arg);
   if(scr==="mes") renderMes();
   if(scr==="mes-detalle") renderMesDetalle(arg);
   if(scr==="semanas") renderSemanas();
   if(scr==="clase") renderClase(arg);
-  if(scr==="ciclo") renderCiclo();
+  if(scr==="progreso") renderProgreso();
+  if(scr==="notificaciones") renderNotificaciones();
   if(scr==="info") renderInfo();
   window.scrollTo({top:0});
 }
 
-/* ---------- ONBOARDING ---------- */
+/* ---------- ONBOARDING (multi-nivel) ---------- */
 function renderOnboarding(){
   $("scr-onboarding").innerHTML = `
   <div class="onb-hero">
     ${ic("logo",64,"#fff")}
-    <h2>Planificación Docente</h2>
-    <p>Nivel Inicial · Currículo MINERD · República Dominicana.<br>Regístrate para acceder a tus planes, asistencia y evaluaciones.</p>
+    <h2>Planificación Docente RD</h2>
+    <p>Docentes de Inicial, Primaria y Secundaria.<br>Currículo MINERD · La app se adapta a tu nivel.</p>
   </div>
   <div class="card">
     <h2>${ic("usuarios")} Regístrate</h2>
@@ -589,20 +696,26 @@ function renderOnboarding(){
     <label class="lbl">Tu nombre completo</label>
     <input class="inp" id="onbNombre" placeholder="Ej: María Pérez">
     <label class="lbl">Nivel que impartes</label>
-    <select class="inp" id="onbNivel">
+    <select class="inp" id="onbNivel" onchange="filtrarGrados()">
       <option value="Inicial" selected>Inicial</option>
       <option value="Primaria">Primaria</option>
       <option value="Secundaria">Secundaria</option>
     </select>
     <label class="lbl">Grado que impartes</label>
-    <select class="inp" id="onbGrado">
-      <option value="Maternal">Maternal</option>
-      <option value="3 años">Sala de 3 años</option>
-      <option value="4 años">Sala de 4 años</option>
-      <option value="5 años">Sala de 5 años</option>
-    </select>
+    <select class="inp" id="onbGrado"></select>
+    <div id="filaAsignaturas" style="display:none">
+      <label class="lbl">Asignaturas que impartes</label>
+      <input class="inp" id="onbAsignaturas" placeholder="Ej: Lengua Española, Matemática">
+    </div>
     <label class="lbl">Sección</label>
     <input class="inp" id="onbSeccion" placeholder="Ej: A" value="A">
+    <label class="lbl">Jornada del centro educativo</label>
+    <select class="inp" id="onbJornada">
+      <option value="Matutina" selected>Matutina</option>
+      <option value="Vespertina">Vespertina</option>
+      <option value="Nocturna">Nocturna</option>
+      <option value="Jornada Extendida">Jornada Extendida</option>
+    </select>
     <button class="dl grande" onclick="registrarDocente()">Crear mi cuenta</button>
   </div>
   <div class="card">
@@ -611,6 +724,12 @@ function renderOnboarding(){
     <input class="inp" id="onbCodigo" placeholder="Tu código (ej: AB3K9Z)" style="text-transform:uppercase;letter-spacing:3px;text-align:center;font-weight:800">
     <button class="dl alt" onclick="entrarConCodigo()">Entrar con mi código</button>
   </div>`;
+  filtrarGrados();
+}
+function filtrarGrados(){
+  const nivel = $("onbNivel").value;
+  $("onbGrado").innerHTML = GRADOS_POR_NIVEL[nivel].map(g=>`<option value="${esc(g)}">${esc(g)}${nivel!=="Inicial"? " ("+nivel+")":""}</option>`).join("");
+  $("filaAsignaturas").style.display = nivel==="Inicial"? "none":"";
 }
 async function registrarDocente(){
   const colegio = $("onbColegio").value.trim();
@@ -619,14 +738,17 @@ async function registrarDocente(){
   const nivel = $("onbNivel").value;
   const grado = $("onbGrado").value;
   const seccion = $("onbSeccion").value.trim() || "A";
+  const jornada = $("onbJornada").value;
+  const asignaturas = $("onbAsignaturas")? ($("onbAsignaturas").value.trim()||"") : "";
   if(!colegio || !distrito || !nombre){ toast("Completa colegio, distrito y tu nombre"); return; }
   toast("Registrando...");
   try{
-    const r = await apiAccion("onboarding", { colegio, distrito, nombre, nivel, grado, seccion });
+    const r = await apiAccion("onboarding", { colegio, distrito, nombre, nivel, grado, seccion, jornada, asignaturas });
     if(!r.success){ toast("Error: "+(r.error||"intenta de nuevo")); return; }
-    S.docente = { id:r.id, codigo:r.codigo, nombre, colegio, distrito, nivel, grado, seccion, alumnos:S.docente.alumnos };
+    S.docente = { ...S.docente, id:r.id, codigo:r.codigo, nombre, colegio, distrito, nivel, grado, seccion, jornada, asignaturas };
     guardar();
     await cargarPlanes();
+    generarNotificaciones();
     toast("¡Bienvenida/o, "+nombre.split(" ")[0]+"! Tu código: "+r.codigo);
     irA("mes");
   }catch(e){ toast("Sin conexión. Verifica tu internet e intenta de nuevo."); }
@@ -642,25 +764,28 @@ async function entrarConCodigo(){
     S.docente.nombre = p.nombre_completo; S.docente.colegio = p.colegio;
     S.docente.distrito = p.distrito; S.docente.nivel = p.nivel; S.docente.grado = p.grado;
     S.docente.seccion = p.seccion || "A";
+    S.docente.jornada = p.jornada || "";
+    S.docente.asignaturas = p.asignaturas || "";
+    S.docente.duracionMin = +p.duracion_min || 0;
     guardar();
     await cargarPlanes();
+    generarNotificaciones();
     toast("¡Hola de nuevo, "+S.docente.nombre.split(" ")[0]+"!");
     irA("mes");
   }catch(e){ toast("Sin conexión a internet"); }
 }
 
-/* ---------- RENDER: AÑO ---------- */
+/* ---------- RENDER: AÑO (lista de planes anuales) ---------- */
 function renderAnio(){
   const plan = planActivo();
-  const nc = todasClases(plan).length || 1;
   let html = `
   <div class="hero">
-    <h2>Plan Anual ${ANIO_ESCOLAR}</h2>
-    <p>Planificación sugerida alineada al currículo MINERD. Año escolar: agosto 2026 – junio 2027 · 3 trimestres.</p>
+    <h2>Planes Anuales ${ANIO_ESCOLAR}</h2>
+    <p>Elige el plan anual de tu nivel educativo. Cada plan sigue el calendario escolar MINERD: agosto 2026 – junio 2027, en 3 trimestres.</p>
     <div class="row">
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#fff")}<small>Asistencia</small></div>
       <div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
-      <div class="ringbox">${ring(Math.round(Object.keys(S.obs).length/nc*100),56,7,"#fff",""+Object.keys(S.obs).length)}<small>Notas</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff","11")}<small>Unidades</small></div>
     </div>
   </div>
   <div class="card">
@@ -668,15 +793,40 @@ function renderAnio(){
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
     <div class="stat-row"><span>Distrito</span><b>${esc(S.docente.distrito)}</b></div>
     <div class="stat-row"><span>Nivel / Grado</span><b>${esc(S.docente.nivel)} · ${esc(S.docente.grado)}</b></div>
-    <div class="stat-row"><span>Sección / Alumnos</span><b>${esc(S.docente.seccion)} · ${S.docente.alumnos}</b></div>
+    <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
   </div>
-  <h2 class="mini">Calendario por trimestre (MINERD)</h2>`;
+  <h2 class="mini">Elige tu plan anual</h2>`;
+  NIVELES.forEach(nv=>{
+    const info = PLANES_ANUALES[nv];
+    const esMio = S.docente.nivel===nv;
+    html += `<div class="item" onclick="irA('anio-detalle','${nv}')">
+      <div class="ic">${ic("plan")}</div>
+      <div class="tx"><b>${esc(info.titulo)} ${ANIO_ESCOLAR}</b><span>${esc(info.descripcion)}</span></div>
+      ${esMio?'<span class="hoy-badge">TU NIVEL</span>':""}
+    </div>`;
+  });
+  $("scr-anio").innerHTML = html;
+}
+
+/* ---------- RENDER: AÑO DETALLE ---------- */
+function renderAnioDetalle(nivel){
+  const info = PLANES_ANUALES[nivel] || PLANES_ANUALES.Inicial;
+  let html = `
+  <div class="hero">
+    <h2>${esc(info.titulo)} ${ANIO_ESCOLAR}</h2>
+    <p>Nivel ${esc(nivel)} · ${esc(info.descripcion)}</p>
+    <p style="margin-top:8px">Docente: ${esc(S.docente.nombre)} · ${esc(S.docente.colegio)} · Sección ${esc(S.docente.seccion)}</p>
+  </div>`;
   let trimestreAnt = "";
-  PLAN_ANUAL.forEach(m=>{
+  info.temas.forEach(m=>{
     if(m.trimestre!==trimestreAnt){ trimestreAnt=m.trimestre; html+=`<div class="sep">${m.trimestre}</div>`; }
     html += `<div class="item" style="cursor:default">
       <div class="ic">${ic("calendario")}</div>
       <div class="tx"><b>${esc(m.mes)} · ${esc(m.tema)}</b><span>${esc(m.contenidos)}</span></div>
+    </div>
+    <div class="card" style="padding:12px 14px;margin-top:-6px">
+      <p style="font-size:12.5px"><b style="color:var(--azul)">Enfoque:</b> <span class="muted">${esc(m.enfoque)}</span></p>
+      <p style="font-size:12.5px;margin-top:4px"><b style="color:var(--rojo)">Evaluación:</b> <span class="muted">${esc(m.evaluacion)}</span></p>
     </div>`;
   });
   html += `
@@ -684,16 +834,16 @@ function renderAnio(){
     <h2>${ic("objetivo")} Competencias fundamentales (MINERD)</h2>
     ${COMPETENCIAS.map((c,i)=>`<p style="font-size:12.5px;margin-bottom:8px"><b style="color:var(--azul)">${i+1}. ${esc(c.n)}:</b> <span class="muted">${esc(c.d)}</span></p>`).join("")}
   </div>
-  <button class="dl grande" onclick="descargarPlanAnualDocx()">${ic("descarga")} Descargar plan anual (Word .docx)</button>
+  <button class="dl grande" onclick="descargarPlanAnualDocx('${esc(nivel)}')">${ic("descarga")} Descargar plan anual en Word</button>
   <div style="height:14px"></div>`;
-  $("scr-anio").innerHTML = html;
+  $("scr-anio-detalle").innerHTML = html;
 }
 
-/* ---------- RENDER: MES ---------- */
+/* ---------- RENDER: MES (por semestres) ---------- */
 function renderMes(){
   let html = `<div class="hero">
     <h2>Planes Mensuales</h2>
-    <p>Planes de tu nivel disponibles en la biblioteca. Pide planes nuevos a Delega por WhatsApp y aparecerán aquí.</p>
+    <p>Planes de tu nivel (${esc(S.docente.nivel)}) organizados por semestre escolar. Pide planes nuevos a Delega por WhatsApp y aparecerán aquí.</p>
   </div>
   <div style="display:flex;justify-content:flex-end;margin-bottom:4px">
     <button class="btn-soft" style="flex:0 0 auto;padding:8px 14px" onclick="refrescarPlanes()">${ic("refrescar")} Actualizar</button>
@@ -702,21 +852,30 @@ function renderMes(){
   if(S.listaPlanes && S.listaPlanes.length){
     planes = S.listaPlanes.map(p=>({ id:p.id, titulo:p.titulo, mes:p.mes, tema:p.tema, nSem:p.semanas||0, propio:p.propio }));
   }
-  // plan de biblioteca incluido en la app
-  planes.push({ id:"local-mariposa", titulo:PLAN_MARIPOSA.titulo, mes:PLAN_MARIPOSA.mes, tema:PLAN_MARIPOSA.tema, nSem:(PLAN_MARIPOSA.semanas||[]).length, propio:false });
-  // deduplicar por título
+  if(S.docente.nivel==="Inicial"){
+    planes.push({ id:"local-mariposa", titulo:PLAN_MARIPOSA.titulo, mes:PLAN_MARIPOSA.mes, tema:PLAN_MARIPOSA.tema, nSem:(PLAN_MARIPOSA.semanas||[]).length, propio:false });
+  }
   const vistos = new Set();
   planes = planes.filter(p=>{ if(vistos.has(p.titulo)) return false; vistos.add(p.titulo); return true; });
-  html += `<div class="sep">Más reciente primero</div>`;
-  planes.forEach(p=>{
-    const esLocal = p.id.startsWith("local-");
-    const chip = p.propio? '<span class="hoy-badge">PARA TI</span>' : `<span class="chip gris">${esLocal?"Biblioteca":"En línea"}</span>`;
-    html += `<div class="item" onclick="abrirPlan('${p.id}')">
-      <div class="ic">${ic("lista")}</div>
-      <div class="tx"><b>${esc(p.titulo)}</b><span>${esc(p.mes)} · ${p.nSem} semanas${p.tema? " · Tema: "+esc(p.tema):""}</span></div>
-      ${chip}
-    </div>`;
-  });
+
+  const sem1 = planes.filter(p=>semestreDe(p.mes)==="1er");
+  const sem2 = planes.filter(p=>semestreDe(p.mes)==="2do");
+  const pintarPlanes = (lista)=>{
+    lista.forEach(p=>{
+      const esLocal = p.id.startsWith("local-");
+      const chip = p.propio? '<span class="hoy-badge">PARA TI</span>' : `<span class="chip gris">${esLocal?"Biblioteca":"En línea"}</span>`;
+      html += `<div class="item" onclick="abrirPlan('${p.id}')">
+        <div class="ic">${ic("lista")}</div>
+        <div class="tx"><b>${esc(p.titulo)}</b><span>${esc(p.mes)} · ${p.nSem} semanas${p.tema? " · Tema: "+esc(p.tema):""}</span></div>
+        ${chip}
+      </div>`;
+    });
+    if(!lista.length) html += `<p class="vacio">Aún no hay planes publicados para este semestre.</p>`;
+  };
+  html += `<div class="sep">1er Semestre · Agosto a Diciembre</div>`;
+  pintarPlanes(sem1);
+  html += `<div class="sep">2do Semestre · Enero a Junio</div>`;
+  pintarPlanes(sem2);
   html += `<div class="card">
     <h2>${ic("bombilla")} ¿Necesitas un plan nuevo?</h2>
     <p class="muted">Escribe a Delega, tu asistente escolar, por WhatsApp y pide el plan mensual del tema que estás trabajando. Se crea alineado al currículo MINERD y aparece aquí automáticamente al presionar Actualizar.</p>
@@ -726,6 +885,7 @@ function renderMes(){
 async function refrescarPlanes(){
   toast("Buscando planes nuevos...");
   await cargarPlanes();
+  generarNotificaciones();
   renderMes();
   toast("Planes actualizados");
 }
@@ -755,7 +915,7 @@ function renderMesDetalle(plan){
   <div class="card">
     <h2>${ic("objetivo")} Competencias del plan</h2>
     ${(plan.competencias||[]).length? (plan.competencias||[]).map(c=>`<span class="chip">${esc(c.n||c)}</span>`).join("") : COMPETENCIAS.slice(0,5).map(c=>`<span class="chip">${esc(c.n)}</span>`).join("")}
-    ${(plan.areas||[]).length? `<h3>Áreas curriculares (MINERD Inicial)</h3>`+(plan.areas||[]).map(a=>`<span class="chip roja">${esc(a)}</span>`).join("") : ""}
+    ${(plan.areas||[]).length? `<h3>Áreas curriculares</h3>`+(plan.areas||[]).map(a=>`<span class="chip roja">${esc(a)}</span>`).join("") : ""}
   </div>
   <div class="sep">Semanas · más reciente arriba</div>`;
   semanasInv.forEach(s=>{
@@ -782,14 +942,24 @@ function renderMesDetalle(plan){
   $("scr-mes-detalle").innerHTML = html;
 }
 
-/* ---------- RENDER: SEMANAS ---------- */
-async function renderSemanas(){
+/* ---------- RENDER: SEMANAS (solo mes en curso) ---------- */
+function renderSemanas(){
   const plan = planAbierto || planActivo();
-  let html = `<div class="hero"><h2>Semanas del año escolar</h2><p>Organizadas de más reciente a más antigua, con el mes identificado.</p></div>`;
-  const semanasInv = [...(plan.semanas||[])].reverse();
-  html += `<div class="sep">${esc(plan.mes)}</div>`;
+  const ahora = new Date();
+  const pref = ahora.getFullYear()+"-"+String(ahora.getMonth()+1).padStart(2,"0");
+  const nombreMes = MESES_ES[ahora.getMonth()]+" "+ahora.getFullYear();
+  const semanasAct = (plan.semanas||[]).filter(s=>(s.dias||[]).some(d=>d.id && String(d.id).startsWith(pref)));
+  let html = `<div class="hero"><h2>Semanas de ${esc(nombreMes)}</h2>
+  <p>Se muestran únicamente las semanas del mes en curso${plan.tema? " del plan "+esc(plan.tema):""}.</p></div>`;
+  if(!semanasAct.length){
+    html += `<div class="card"><h2>${ic("calendario")} Sin clases este mes</h2>
+    <p class="muted">El plan activo (${esc(plan.titulo)}) no tiene clases diarias programadas en ${esc(nombreMes)}. Puedes abrir otro plan desde Planificación Mensual o pedirle a Delega un plan para este mes.</p></div>`;
+  }
+  const semanasInv = [...semanasAct].reverse();
+  html += `<div class="sep">${esc(nombreMes)}</div>`;
   semanasInv.forEach(s=>{
-    const dias = s.dias||[];
+    const dias = s.dias.filter(d=>d.id && String(d.id).startsWith(pref));
+    if(!dias.length) return;
     const actual = dias.some(d=>d.id===HOY);
     const pctW = dias.length? Math.round(dias.reduce((a,d)=>a+pctDia(d.id,"asis"),0)/dias.length):0;
     html += `<div class="card" style="padding:13px">
@@ -813,12 +983,22 @@ async function abrirClase(claseId){
 }
 
 /* ---------- RENDER: CLASE ---------- */
+function duracionAjustada(m, baseTotal){
+  const claseMin = +S.docente.duracionMin || 0;
+  if(!claseMin || !baseTotal) return m.duracion;
+  const b = minsDe(m.duracion);
+  if(!b) return m.duracion;
+  const factor = claseMin / baseTotal;
+  return "~"+Math.max(2, Math.round(b*factor))+" min";
+}
 function renderClase(claseId){
   const plan = planAbierto || planActivo();
   const d = clasePorId(plan, claseId);
   if(!d){ irA("mes"); return; }
   const s = (plan.semanas||[]).find(w=>w.dias.some(x=>x.id===claseId));
   const pctA = pctDia(claseId,"asis"), pctE = pctDia(claseId,"eval");
+  const momentos = d.momentos||[];
+  const baseTotal = momentos.reduce((a,m)=>a+(minsDe(m.duracion)||0),0);
   let html = `
   <div class="card">
     <div class="clase-head">
@@ -837,10 +1017,11 @@ function renderClase(claseId){
     ${(d.desempenos||[]).map(x=>`<p style="font-size:13px;margin-bottom:6px">✓ ${esc(x)}</p>`).join("")}
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip">${esc(c.n)}</span>`).join("")}</div>
   </div>
+  ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Tus momentos están ajustados a una clase de ${S.docente.duracionMin} minutos (cámbialo en Info).</p>`:""}
   <h2 class="mini">Momentos de la clase · paso a paso</h2>
-  ${(d.momentos||[]).map((m,i)=>`
+  ${momentos.map((m,i)=>`
     <div class="momento">
-      <div class="m-head"><div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b><span class="dur">${ic("reloj",12)} ${esc(m.duracion)}</span></div>
+      <div class="m-head"><div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b><span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))}</span></div>
       <p class="prop">Propósito: ${esc(m.proposito)}</p>
       <ol>${(m.pasos||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ol>
       ${i===0? temporizadorHTML() : ""}
@@ -1007,43 +1188,131 @@ function beep(){
 }
 function initTimer(){ T={dur:300,resta:300,corriendo:false,iv:null}; }
 
-/* ---------- RENDER: CICLO ---------- */
-function renderCiclo(){
+/* ---------- RENDER: PROGRESO (calificaciones y avance) ---------- */
+function califs(){
+  const p = S.docente.periodo;
+  if(!S.calificaciones[p]) S.calificaciones[p] = {};
+  return S.calificaciones[p];
+}
+function notaDe(n){
+  const c = califs()[n];
+  if(!c) return null;
+  return notaFinalDe(c.p, c.t, c.e);
+}
+function promedioGrupo(){
+  let sum=0, cuenta=0;
+  for(let i=1;i<=S.docente.alumnos;i++){
+    const nf = notaDe(i);
+    if(nf!==null){ sum+=nf; cuenta++; }
+  }
+  return cuenta? Math.round(sum/cuenta) : 0;
+}
+function renderProgreso(){
   const plan = planAbierto || planActivo();
-  const c = plan.ciclo;
+  const N = S.docente.alumnos;
+  const prom = promedioGrupo();
   let html = `
   <div class="hero">
-    <h2>Ciclo de la unidad</h2>
-    <p>${esc(plan.tema)} · ${esc(plan.mes)}. El hilo conductor que guía cada semana del plan.</p>
+    <h2>Progreso del grupo</h2>
+    <p>Calificaciones de tus alumnos · Promedio del grupo en ${esc(S.docente.periodo)}</p>
     <div class="row">
-      <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#fff")}<small>Progreso</small></div>
-      <div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
+      <div class="ringbox">${ring(prom,56,7,"#fff")}<small>Promedio</small></div>
+      <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
+      <div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logros</small></div>
     </div>
-  </div>`;
-  if(c && c.etapas && c.etapas.length){
-    html += `<div class="card" style="padding:13px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-      ${c.etapas.map((e,i)=>`<div class="ciclo-card" style="border:1.5px solid rgba(0,51,160,.18);border-radius:16px;padding:14px 10px;text-align:center;background:rgba(255,255,255,.7)">
-        <div style="width:38px;height:38px;margin:0 auto 8px;border-radius:12px;background:linear-gradient(135deg,rgba(0,51,160,.14),rgba(206,17,38,.12));display:flex;align-items:center;justify-content:center">${ic("ciclo",20,"#0033A0")}</div>
-        <b style="font-size:13px;color:var(--azul-osc)">${esc(e.n)}</b>
-        <p class="muted" style="margin-top:3px">${esc(e.d)}</p>
-        <span class="chip" style="margin-top:6px">${esc(e.sem||"")}</span>
-      </div>`).join("")}
-    </div></div>`;
-  } else {
-    html += `<div class="card"><h2>${ic("info")} Sin ciclo definido</h2>
-    <p class="muted">Este plan no define etapas de ciclo todavía. Pide a Delega que agregue el ciclo de tu unidad.</p></div>`;
+  </div>
+  <div class="card">
+    <h2>${ic("boletin")} Período y escala MINERD</h2>
+    <label class="lbl">Período</label>
+    <select class="inp" id="selPeriodo" onchange="cambiarPeriodo()">
+      ${PERIODOS.map(p=>`<option value="${esc(p)}" ${p===S.docente.periodo?"selected":""}>${esc(p)}</option>`).join("")}
+    </select>
+    <p class="muted">Nota final = Participación 30% + Trabajos 30% + Examen 40%. Escala: L ≥ 90 (Logrado) · EP 70–89 (En proceso) · I < 70.</p>
+  </div>
+  <h2 class="mini">Calificaciones por alumno</h2>`;
+  for(let i=1;i<=N;i++){
+    const c = califs()[i]||{};
+    const nf = notaDe(i);
+    const esc2 = nf===null? "—" : escalaDe(nf);
+    const color = nf===null? "#94a3b8" : (nf>=70? "#0033A0" : "#CE1126");
+    html += `<div class="alumno" style="flex-wrap:wrap">
+      <div class="an">${i}</div>
+      <div class="anx" style="flex:1;min-width:0">
+        <b>Alumno ${i}</b>
+        <div class="prog-inputs" style="margin-top:5px">
+          <label>Part.<input type="number" min="0" max="100" inputmode="numeric" id="calP_${i}" value="${c.p!==undefined?esc(c.p):""}" oninput="guardarCalif(${i})"></label>
+          <label>Trab.<input type="number" min="0" max="100" inputmode="numeric" id="calT_${i}" value="${c.t!==undefined?esc(c.t):""}" oninput="guardarCalif(${i})"></label>
+          <label>Examen<input type="number" min="0" max="100" inputmode="numeric" id="calE_${i}" value="${c.e!==undefined?esc(c.e):""}" oninput="guardarCalif(${i})"></label>
+        </div>
+      </div>
+      <div class="rg" style="text-align:center">
+        ${ring(nf===null?0:nf,50,6,color, nf===null? "—" : String(nf))}
+        <span class="escala ${esc2}" style="display:${nf===null?"none":""}">${esc(escalaTexto(esc2))}</span>
+      </div>
+      <button class="btn-mini" title="Reporte individual" onclick="descargarBoletinIndividual(${i})">${ic("descarga",15)}</button>
+    </div>`;
   }
-  html += `<div class="card">
-    <h2>${ic("objetivo")} Competencias del ciclo</h2>
-    ${COMPETENCIAS.slice(0,3).map(c2=>`<span class="chip">${esc(c2.n)}</span>`).join("")}
-  </div>`;
-  $("scr-ciclo").innerHTML = html;
+  html += `
+  <button class="dl grande" onclick="descargarBoletinGrupo()">${ic("descarga")} Descargar boletín del grupo en PDF</button>
+  <div style="height:14px"></div>`;
+  $("scr-progreso").innerHTML = html;
+}
+function cambiarPeriodo(){
+  S.docente.periodo = $("selPeriodo").value;
+  guardar();
+  renderProgreso();
+}
+function guardarCalif(n){
+  const c = califs();
+  const p = $("calP_"+n).value, t = $("calT_"+n).value, e = $("calE_"+n).value;
+  if(p==="" && t==="" && e===""){ delete c[n]; }
+  else {
+    c[n] = { p: p===""?0:+p, t: t===""?0:+t, e: e===""?0:+e };
+  }
+  guardar();
+  const nf = notaDe(n);
+  encolar("calificaciones", S.docente.periodo, { alumno:"Alumno "+n, participacion: c[n]?c[n].p:0, trabajos: c[n]?c[n].t:0, examen: c[n]?c[n].e:0, final: nf===null?0:nf });
+  clearTimeout(window._calT);
+  window._calT = setTimeout(()=>{
+    if($("scr-progreso").classList.contains("visible")) renderProgreso();
+    toast("Calificación de Alumno "+n+" sincronizada");
+  }, 900);
+}
+
+/* ---------- RENDER: NOTIFICACIONES ---------- */
+function renderNotificaciones(){
+  let html = `<div class="hero"><h2>Notificaciones</h2>
+  <p>Avisos importantes de tu app docente. Se marcan como leídas al abrirlas.</p></div>`;
+  if(!S.notificaciones.length){
+    html += `<p class="vacio">No tienes notificaciones por ahora. 💙</p>`;
+  }
+  S.notificaciones.forEach(n=>{
+    const fecha = new Date(n.fecha).toLocaleString("es-DO");
+    html += `<div class="notif ${n.leida?"leida":"no-leida"}">
+      <div class="n-ic">${ic(n.icono||"campana",17)}</div>
+      <div class="n-tx">${esc(n.texto)}<small>${esc(fecha)}</small></div>
+    </div>`;
+  });
+  if(S.notificaciones.length){
+    html += `<button class="dl alt" onclick="borrarNotificaciones()">Borrar todas las notificaciones</button>`;
+  }
+  $("scr-notificaciones").innerHTML = html;
+  setTimeout(()=>{
+    S.notificaciones.forEach(n=>n.leida = true);
+    guardar(); actualizarCampana();
+  }, 600);
+}
+function borrarNotificaciones(){
+  S.notificaciones = [];
+  guardar(); actualizarCampana();
+  renderNotificaciones();
 }
 
 /* ---------- RENDER: INFO ---------- */
 function renderInfo(){
   const pend = S.cola.length;
   const ult = S.lastSync? new Date(S.lastSync).toLocaleString("es-DO") : "Aún no sincroniza";
+  const durH = Math.floor((S.docente.duracionMin||0)/60), durM = (S.docente.duracionMin||0)%60;
   $("scr-info").innerHTML = `
   <div class="hero"><h2>Tu perfil docente</h2>
     <p>${esc(S.docente.nombre)} · ${esc(S.docente.colegio)}</p></div>
@@ -1054,9 +1323,31 @@ function renderInfo(){
     <div class="stat-row"><span>Distrito</span><b>${esc(S.docente.distrito)}</b></div>
     <div class="stat-row"><span>Nivel / Grado</span><b>${esc(S.docente.nivel)} · ${esc(S.docente.grado)}</b></div>
     <div class="stat-row"><span>Sección / Alumnos</span><b>${esc(S.docente.seccion)} · ${S.docente.alumnos}</b></div>
+    <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
+    <div class="stat-row"><span>Asignaturas</span><b>${esc(S.docente.asignaturas||"—")}</b></div>
     <div class="codigo-box"><span class="muted" style="font-weight:800;letter-spacing:1px">TU CÓDIGO</span>
       <div class="cod">${esc(S.docente.codigo)}</div>
       <p class="muted">Úsalo para entrar desde otro dispositivo</p></div>
+  </div>
+  <div class="card">
+    <h2>${ic("reloj")} Duración de mis clases</h2>
+    <p class="muted" style="margin-bottom:10px">Define cuánto dura tu clase. La app reparte los minutos de cada momento de la clase de forma proporcional.</p>
+    <div style="display:flex;gap:8px;align-items:center">
+      <input class="inp" id="inpDurH" type="number" min="0" max="8" placeholder="horas" value="${durH}" style="text-align:center">
+      <span style="font-weight:800;color:var(--tinta-suave)">h</span>
+      <input class="inp" id="inpDurM" type="number" min="0" max="59" placeholder="minutos" value="${durM}" style="text-align:center">
+      <span style="font-weight:800;color:var(--tinta-suave)">min</span>
+    </div>
+    <button class="dl" onclick="guardarDuracion()">Guardar duración</button>
+  </div>
+  <div class="card">
+    <h2>${ic("calendario")} Mi jornada</h2>
+    <label class="lbl">Tipo de centro educativo</label>
+    <select class="inp" id="inpJornada">
+      <option value="">Selecciona tu jornada…</option>
+      ${JORNADAS.map(j=>`<option value="${esc(j)}" ${j===S.docente.jornada?"selected":""}>${esc(j)}</option>`).join("")}
+    </select>
+    <button class="dl" onclick="guardarJornada()">Guardar jornada</button>
   </div>
   <div class="card">
     <h2>${ic("usuarios")} Cantidad de alumnos</h2>
@@ -1064,35 +1355,53 @@ function renderInfo(){
     <button class="dl" onclick="guardarAlumnos()">Guardar</button>
   </div>
   <div class="card">
-    <h2>${ic("ciclo")} Sincronización automática</h2>
+    <h2>${ic("refrescar")} Sincronización automática</h2>
     <div class="stat-row"><span><span class="punto" style="background:${pend?"#f59e0b":"#10b981"}"></span>Estado</span><b>${pend? pend+" pendiente(s) en cola":"Todo sincronizado"}</b></div>
     <div class="stat-row"><span>Última sincronización</span><b>${esc(ult)}</b></div>
     <div class="stat-row"><span>Destino</span><b>Función Deno · Dirección escolar</b></div>
     <button class="dl" onclick="flush(); toast('Sincronizando...')">${ic("refrescar")} Sincronizar ahora</button>
   </div>
   <div class="card">
-    <h2>${ic("info")} Alineación curricular</h2>
-    <p class="muted">Contenido basado en el currículo vigente del MINERD para Nivel Inicial: enfoque por competencias fundamentales, situaciones de aprendizaje lúdicas y evaluación formativa diaria. Calendario escolar dominicano: agosto – junio, 3 trimestres.</p>
+    <h2>${ic("plan")} Alineación curricular</h2>
+    <p class="muted">Contenido basado en el currículo vigente del MINERD para los niveles Inicial, Primaria y Secundaria: enfoque por competencias fundamentales, situaciones de aprendizaje y evaluación formativa. Calendario escolar dominicano: agosto – junio, 3 trimestres. La app se adapta a tu nivel: ${esc(S.docente.nivel)}.</p>
   </div>
   <div class="card">
     <h2>${ic("salir")} Zona delicada</h2>
     <button class="dl alt" onclick="borrarTodo()">Borrar datos locales</button>
     <button class="dl alt" style="margin-top:8px" onclick="cerrarSesion()">Cerrar sesión en este dispositivo</button>
   </div>
-  <p class="vacio">Planificación Docente Nivel Inicial RD · Delega IA · DGtech · 2026</p>`;
+  <p class="vacio">Planificación Docente RD · Delega IA · DGtech · 2026</p>`;
+}
+function guardarDuracion(){
+  const h = Math.max(0, Math.min(8, parseInt($("inpDurH").value)||0));
+  const m = Math.max(0, Math.min(59, parseInt($("inpDurM").value)||0));
+  const total = h*60 + m;
+  if(total<15){ toast("Define al menos 15 minutos de clase"); return; }
+  S.docente.duracionMin = total;
+  guardar();
+  apiAccion("actualizar-perfil", { id:S.docente.id, duracion_min: total }).catch(()=>{});
+  toast("Clases de "+(h?h+"h ":"")+m+"min · momentos reajustados");
+  renderInfo();
+}
+function guardarJornada(){
+  S.docente.jornada = $("inpJornada").value;
+  guardar();
+  apiAccion("actualizar-perfil", { id:S.docente.id, jornada: S.docente.jornada }).catch(()=>{});
+  toast(S.docente.jornada? "Jornada guardada: "+S.docente.jornada : "Jornada vacía");
+  renderInfo();
 }
 function guardarAlumnos(){
   S.docente.alumnos = Math.max(1, Math.min(60, parseInt($("inpAlumnos").value)||24));
   guardar(); toast("Cantidad de alumnos guardada"); renderInfo();
 }
 function borrarTodo(){
-  if(!confirm("¿Borrar asistencias, evaluaciones y observaciones guardadas en este dispositivo?")) return;
-  S.asistencia={}; S.evaluacion={}; S.obs={}; guardar();
+  if(!confirm("¿Borrar asistencias, evaluaciones, calificaciones y observaciones guardadas en este dispositivo?")) return;
+  S.asistencia={}; S.evaluacion={}; S.obs={}; S.calificaciones={}; guardar();
   toast("Datos locales borrados"); renderInfo();
 }
 function cerrarSesion(){
   if(!confirm("¿Cerrar sesión? Necesitarás tu código para volver a entrar.")) return;
-  S.docente = { id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",alumnos:24 };
+  S.docente = { id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturas:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er Trimestre" };
   S.planesCache = {};
   guardar();
   navStack = [];
@@ -1112,30 +1421,31 @@ async function docxDe(blob, nombre){
   document.body.appendChild(a); a.click();
   setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 400);
 }
-async function descargarPlanAnualDocx(){
+async function descargarPlanAnualDocx(nivel){
   try{
+    const info = PLANES_ANUALES[nivel] || PLANES_ANUALES.Inicial;
     const D = docx;
-    const filas = PLAN_ANUAL.map(m=> new D.TableRow({ children:[
+    const filas = info.temas.map(m=> new D.TableRow({ children:[
       new D.TableCell({ children:[new D.Paragraph({children:[new D.TextRun({text:m.mes, bold:true})]})]}),
       new D.TableCell({ children:[new D.Paragraph({children:[new D.TextRun({text:m.tema})]})]}),
       new D.TableCell({ children:[new D.Paragraph({children:[new D.TextRun({text:m.trimestre})]})]}),
     ]}));
     const doc = new D.Document({ sections:[{ children:[
       new D.Paragraph({ text:S.docente.colegio||"Colegio", heading:D.HeadingLevel.HEADING_1, alignment:D.AlignmentType.CENTER }),
-      new D.Paragraph({ text:"Plan Anual Docente "+ANIO_ESCOLAR+" · Nivel Inicial · Currículo MINERD", alignment:D.AlignmentType.CENTER }),
-      new D.Paragraph({ text:"Docente: "+S.docente.nombre+" · Distrito "+S.docente.distrito+" · Grado "+S.docente.grado, alignment:D.AlignmentType.CENTER }),
+      new D.Paragraph({ text:info.titulo+" "+ANIO_ESCOLAR+" · Nivel "+nivel+" · Currículo MINERD", alignment:D.AlignmentType.CENTER }),
+      new D.Paragraph({ text:"Docente: "+S.docente.nombre+" · Distrito "+S.docente.distrito+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion, alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:"Año escolar: agosto 2026 – junio 2027 · 3 trimestres", alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:"", spacing:{after:200} }),
       new D.Table({ width:{size:100, type:D.WidthType.PERCENTAGE}, rows:[ docxCabecera(D,["Mes","Tema","Trimestre"]), ...filas ]}),
       new D.Paragraph({ text:"Competencias fundamentales (MINERD)", spacing:{before:300}, heading:D.HeadingLevel.HEADING_2 }),
       ...COMPETENCIAS.map(c=>new D.Paragraph({ text:"• "+c.n+": "+c.d })),
-      new D.Paragraph({ text:"Enfoques por mes", spacing:{before:300}, heading:D.HeadingLevel.HEADING_2 }),
-      ...PLAN_ANUAL.map(m=>new D.Paragraph({ spacing:{before:120}, children:[
+      new D.Paragraph({ text:"Enfoques y evaluación por mes", spacing:{before:300}, heading:D.HeadingLevel.HEADING_2 }),
+      ...info.temas.map(m=>new D.Paragraph({ spacing:{before:120}, children:[
         new D.TextRun({ text:m.mes+" — "+m.tema, bold:true, break:0 }),
         new D.TextRun({ text:" Enfoque: "+m.enfoque+" | Evaluación: "+m.evaluacion })
       ]})),
     ]}]});
-    await docxDe(await D.Packer.toBlob(doc), "plan-anual-"+ANIO_ESCOLAR+".docx");
+    await docxDe(await D.Packer.toBlob(doc), "plan-anual-"+nivel.toLowerCase()+"-"+ANIO_ESCOLAR+".docx");
     toast("Plan anual descargado");
   }catch(e){ toast("Se necesita conexión para descargar"); }
 }
@@ -1171,17 +1481,19 @@ async function descargarPlanDiarioDocx(claseId){
     const d = clasePorId(plan, claseId);
     const s = (plan.semanas||[]).find(w=>w.dias.some(x=>x.id===claseId));
     const D = docx;
+    const momentos = d.momentos||[];
+    const baseTotal = momentos.reduce((a,m)=>a+(minsDe(m.duracion)||0),0);
     const children = [
       new D.Paragraph({ text:S.docente.colegio||"Colegio", heading:D.HeadingLevel.HEADING_1, alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:d.etiqueta+" · "+d.titulo, heading:D.HeadingLevel.HEADING_2, alignment:D.AlignmentType.CENTER }),
-      new D.Paragraph({ text:plan.mes+" · Semana "+(s?s.numero:"")+": "+(s?s.tema:"")+" · Nivel Inicial · Sección "+S.docente.seccion, alignment:D.AlignmentType.CENTER }),
+      new D.Paragraph({ text:plan.mes+" · Semana "+(s?s.numero:"")+": "+(s?s.tema:"")+" · Nivel "+S.docente.nivel+" · Sección "+S.docente.seccion, alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:"Docente: "+(S.docente.nombre||"—"), alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ spacing:{before:200}, heading:D.HeadingLevel.HEADING_2, text:"Desempeños de la clase" }),
       ...(d.desempenos||[]).map(x=>new D.Paragraph({ text:"• "+x })),
       new D.Paragraph({ spacing:{before:200}, heading:D.HeadingLevel.HEADING_2, text:"Momentos de la clase" }),
     ];
-    (d.momentos||[]).forEach(m=>{
-      children.push(new D.Paragraph({ spacing:{before:200}, children:[ new D.TextRun({ text:m.nombre+" ("+m.duracion+")", bold:true }) ]}));
+    momentos.forEach(m=>{
+      children.push(new D.Paragraph({ spacing:{before:200}, children:[ new D.TextRun({ text:m.nombre+" ("+duracionAjustada(m, baseTotal)+")", bold:true }) ]}));
       children.push(new D.Paragraph({ children:[ new D.TextRun({ text:"Propósito: "+m.proposito, italics:true }) ]}));
       (m.pasos||[]).forEach(p=>children.push(new D.Paragraph({ text:"  "+p, bullet:{level:0} })));
     });
@@ -1225,7 +1537,7 @@ function descargarEvaluacionPdf(claseId){
     doc.setTextColor(255); doc.setFontSize(15); doc.text(S.docente.colegio||"Colegio", 105, 15, {align:"center"});
     doc.setFontSize(10); doc.text("Evaluación de logros · "+d.etiqueta+" · "+d.titulo, 105, 22, {align:"center"});
     doc.setTextColor(60); doc.setFontSize(9);
-    doc.text(plan.mes+" · Nivel Inicial · Grado "+S.docente.grado+" · Sección "+S.docente.seccion+" · Docente: "+(S.docente.nombre||"—"), 105, 38, {align:"center"});
+    doc.text(plan.mes+" · Nivel "+S.docente.nivel+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion+" · Docente: "+(S.docente.nombre||"—"), 105, 38, {align:"center"});
     let y = 50;
     const reg = S.evaluacion[claseId]||{};
     for(let i=1;i<=N;i++){
@@ -1252,10 +1564,96 @@ function descargarEvaluacionPdf(claseId){
   }catch(e){ toast("Se necesita conexión para descargar"); }
 }
 
+/* ---------- BOLETINES PDF (Progreso) ---------- */
+function cabeceraPdf(doc, titulo, subtitulo){
+  doc.setFillColor(0,51,160); doc.rect(0,0,210,30,"F");
+  doc.setFillColor(206,17,38); doc.rect(0,0,210,5,"F");
+  doc.setTextColor(255); doc.setFontSize(14);
+  doc.text(String(S.docente.colegio||"Colegio").slice(0,48), 105, 13, {align:"center"});
+  doc.setFontSize(10); doc.text(titulo, 105, 21, {align:"center"});
+  doc.setTextColor(60); doc.setFontSize(8.5);
+  doc.text(subtitulo, 105, 37, {align:"center"});
+}
+function descargarBoletinGrupo(){
+  try{
+    const N = S.docente.alumnos;
+    const doc = new jspdf.jsPDF();
+    cabeceraPdf(doc, "Boletín de calificaciones · "+S.docente.periodo,
+      "Nivel "+S.docente.nivel+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion+" · Docente: "+(S.docente.nombre||"—")+" · "+ANIO_ESCOLAR);
+    let y = 48;
+    doc.setFillColor(0,51,160); doc.rect(14, y-5, 182, 7, "F");
+    doc.setTextColor(255); doc.setFontSize(8.5);
+    doc.text("Alumno", 17, y); doc.text("Part.", 95, y); doc.text("Trab.", 118, y);
+    doc.text("Examen", 141, y); doc.text("Final", 165, y); doc.text("Escala", 182, y);
+    y += 10;
+    for(let i=1;i<=N;i++){
+      if(y>280){ doc.addPage(); y=25; }
+      const c = califs()[i]||{};
+      const nf = notaDe(i);
+      const esc2 = nf===null? "—" : escalaDe(nf);
+      doc.setTextColor(nf===null?120:(nf>=70?0:206), nf===null?120:(nf>=70?51:17), nf===null?120:(nf>=70?160:38));
+      doc.setFontSize(9.5);
+      doc.text("Alumno "+String(i).padStart(2,"0"), 17, y);
+      doc.text(c.p!==undefined? String(c.p):"—", 98, y);
+      doc.text(c.t!==undefined? String(c.t):"—", 121, y);
+      doc.text(c.e!==undefined? String(c.e):"—", 144, y);
+      doc.setFontSize(10.5); doc.setFont(undefined,"bold");
+      doc.text(nf===null? "—": String(nf), 166, y);
+      doc.setFontSize(9); doc.setFont(undefined,"normal");
+      doc.text(esc2, 184, y);
+      y += 8;
+    }
+    y += 4;
+    const prom = promedioGrupo();
+    doc.setFontSize(11); doc.setTextColor(0,51,160); doc.setFont(undefined,"bold");
+    doc.text("Promedio del grupo: "+prom+"/100 · "+(prom>=90?"Logrado":(prom>=70?"En proceso":"Insuficiente")), 14, Math.min(y,288));
+    doc.setFontSize(8); doc.setTextColor(120); doc.setFont(undefined,"normal");
+    doc.text("Escala MINERD: L = Logrado (90-100) · EP = En proceso (70-89) · I = Insuficiente (<70). Final = Part. 30% + Trab. 30% + Examen 40%.", 14, Math.min(y+5,292), {maxWidth:182});
+    doc.save("boletin-grupo-"+S.docente.periodo.replace(/ /g,"-").toLowerCase()+".pdf");
+    toast("Boletín del grupo descargado");
+  }catch(e){ toast("Se necesita conexión para descargar"); }
+}
+function descargarBoletinIndividual(n){
+  try{
+    const c = califs()[n]||{};
+    const nf = notaDe(n);
+    const doc = new jspdf.jsPDF();
+    cabeceraPdf(doc, "Reporte individual · Alumno "+n+" · "+S.docente.periodo,
+      "Nivel "+S.docente.nivel+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion+" · Docente: "+(S.docente.nombre||"—"));
+    const plan = planAbierto || planActivo();
+    const filas = [
+      ["Participación", c.p!==undefined? c.p : "—"],
+      ["Trabajos", c.t!==undefined? c.t : "—"],
+      ["Examen", c.e!==undefined? c.e : "—"],
+      ["Nota final (ponderada)", nf===null? "—" : nf+" / 100"],
+      ["Escala MINERD", nf===null? "—" : escalaDe(nf)+" ("+escalaTexto(escalaDe(nf))+")"],
+      ["Asistencia del plan activo", pctMes(plan,"asis")+"%"],
+      ["Logros del plan activo", pctMes(plan,"eval")+"%"],
+    ];
+    let y = 52;
+    doc.setFillColor(0,51,160); doc.rect(14, y-5, 182, 7, "F");
+    doc.setTextColor(255); doc.setFontSize(9);
+    doc.text("Indicador", 17, y); doc.text("Valor", 140, y);
+    y += 10;
+    filas.forEach(f=>{
+      doc.setTextColor(50); doc.setFontSize(10);
+      doc.text(f[0], 17, y);
+      doc.setTextColor(0,51,160); doc.setFont(undefined,"bold");
+      doc.text(String(f[1]), 140, y);
+      doc.setFont(undefined,"normal");
+      y += 9;
+    });
+    doc.setFontSize(8.5); doc.setTextColor(120);
+    doc.text("Generado por Planificación Docente RD · "+new Date().toLocaleString("es-DO"), 105, 288, {align:"center"});
+    doc.save("reporte-alumno-"+n+"-"+S.docente.periodo.replace(/ /g,"-").toLowerCase()+".pdf");
+    toast("Reporte individual descargado");
+  }catch(e){ toast("Se necesita conexión para descargar"); }
+}
+
 /* ---------- INICIO ---------- */
 if(S.docente && S.docente.id){
   mostrar("mes");
-  cargarPlanes().then(()=>{ if($("scr-mes").classList.contains("visible")) renderMes(); });
+  cargarPlanes().then(()=>{ generarNotificaciones(); if($("scr-mes").classList.contains("visible")) renderMes(); });
   flush();
 }else{
   mostrar("onboarding");

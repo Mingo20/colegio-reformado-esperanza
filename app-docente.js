@@ -554,10 +554,10 @@ const LS_VIEJO2 = "plan_docente_rd_v2";
 function estadoDefault(){
   return {
     docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er Trimestre" },
-    asistencia:{}, evaluacion:{}, tiempoClase:{}, obs:{}, calificaciones:{}, libreta:{},
+    asistencia:{}, evaluacion:{}, tiempoClase:{}, puntos:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
     notificaciones:[], vistosPlanes:0,
-    ui:{ progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er Trimestre" },
+    ui:{ progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er Trimestre", libFecha:null, histFiltro:"anio" },
   };
 }
 function normalizar(d){
@@ -571,6 +571,7 @@ function normalizar(d){
     docente: doc,
     asistencia: d.asistencia||{}, evaluacion: d.evaluacion||{}, obs: d.obs||{},
     calificaciones: d.calificaciones||{}, libreta: d.libreta||{},
+    tiempoClase: d.tiempoClase||{}, puntos: d.puntos||{},
     cola: d.cola||[], lastSync: d.lastSync||null,
     planesCache: d.planesCache||{}, listaPlanes: d.listaPlanes||null,
     notificaciones: d.notificaciones||[], vistosPlanes: d.vistosPlanes||0,
@@ -768,8 +769,9 @@ function planDiario(){
   let u = null;
   if(activo.tipo==="derivado" && parseMes(activo.mes)===ym) u = activo;
   else {
-    const idx = PLANES_ANUALES[nivel].temas.findIndex(t=>parseMes(t.mes)===ym);
-    if(idx>=0) u = unidadDerivada(nivel, String(idx));
+    const anual = PLANES_ANUALES[nivel] || PLANES_ANUALES["Inicial"];
+    const idx = anual.temas.findIndex(t=>parseMes(t.mes)===ym);
+    if(idx>=0) u = unidadDerivada(anual===PLANES_ANUALES[nivel]? nivel : "Inicial", String(idx));
   }
   if(u){
     const dias = generarDiasDerivados(u);
@@ -917,16 +919,23 @@ function mostrar(scr, arg){
   autoRefresco(scr);
   let [t, s] = TITULOS[scr]||["Planificación Docente",""];
   $("tituloApp").textContent = t; $("subtituloApp").textContent = s;
-  if(scr==="onboarding") renderOnboarding();
-  if(scr==="anio") renderAnio();
-  if(scr==="anio-detalle") renderAnioDetalle(arg);
-  if(scr==="mes") renderMes();
-  if(scr==="mes-detalle") renderMesDetalle(arg);
-  if(scr==="diaria") renderDiaria();
-  if(scr==="clase") renderClase(arg);
-  if(scr==="progreso") renderProgreso();
-  if(scr==="notificaciones") renderNotificaciones();
-  if(scr==="info") renderInfo();
+  const seguro = (fn)=>{ try{ fn(); }catch(e){
+    console.error("Error renderizando "+scr, e);
+    const el2 = $("scr-"+scr);
+    if(el2) el2.innerHTML = `<div class="card"><h2>No se pudo cargar esta pantalla</h2>
+      <p class="muted">Ocurrió un error inesperado: ${esc(String(e.message||e))}. Tus datos están a salvo.</p>
+      <button class="dl" onclick="location.reload()">Recargar aplicación</button></div>`;
+  }};
+  if(scr==="onboarding") seguro(()=>renderOnboarding());
+  if(scr==="anio") seguro(()=>renderAnio());
+  if(scr==="anio-detalle") seguro(()=>renderAnioDetalle(arg));
+  if(scr==="mes") seguro(()=>renderMes());
+  if(scr==="mes-detalle") seguro(()=>renderMesDetalle(arg));
+  if(scr==="diaria") seguro(()=>renderDiaria());
+  if(scr==="clase") seguro(()=>renderClase(arg));
+  if(scr==="progreso") seguro(()=>renderProgreso());
+  if(scr==="notificaciones") seguro(()=>renderNotificaciones());
+  if(scr==="info") seguro(()=>renderInfo());
   window.scrollTo({top:0});
 }
 let pantallaActual = null;
@@ -1509,11 +1518,9 @@ function htmlLibretaPanel(){
   const N = alumnosDe(sc);
   let html = `
   <div class="card">
-    <h2>${ic("boletin")} Grupo y período</h2>
-    <label class="lbl">Trimestre</label>
-    <select class="inp" id="libTrim" onchange="libSel('trim')">
-      ${PERIODOS.map(p=>`<option value="${esc(p)}" ${p===trim?"selected":""}>${esc(p)}</option>`).join("")}
-    </select>
+    <h2>${ic("boletin")} Grupo y fecha</h2>
+    <label class="lbl">Fecha de registro</label>
+    <input type="date" class="inp" id="libFecha" value="${esc(S.ui.libFecha||HOY)}" onchange="libSel('fecha')">
     <label class="lbl">Grado</label>
     <select class="inp" id="libGrado" onchange="libSel('grado')">
       ${GRADOS_POR_NIVEL[nivel].map(x=>`<option value="${esc(x)}" ${x===g?"selected":""}>${esc(x)} (${esc(nivel)})</option>`).join("")}
@@ -1522,7 +1529,7 @@ function htmlLibretaPanel(){
     <select class="inp" id="libSec" onchange="libSel('sec')">
       ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
     </select>
-    <p class="muted">Mostrando Alumno 1 a ${N} del grado ${esc(g)} · Sección ${esc(sc)} · ${esc(trim)}. Puedes cambiar la cantidad de alumnos en Info.</p>
+    <p class="muted">Mostrando Alumno 1 a ${N} del grado ${esc(g)} · Sección ${esc(sc)} · Fecha: ${esc(fmtFechaLinda(S.ui.libFecha||HOY))} (${esc(trim)}). Puedes cambiar la cantidad de alumnos en Info.</p>
   </div>
   <h2 class="mini">Registro porcentual por alumno</h2>`;
   for(let i=1;i<=N;i++){
@@ -1531,7 +1538,7 @@ function htmlLibretaPanel(){
     const k = nf===null? "—" : escalaDe(nf);
     const color = nf===null? "#94a3b8" : (nf>=70? "#0033A0" : "#CE1126");
     html += `<div class="prog-card">
-      <div class="pc-top">
+      <div class="pc-top" onclick="abrirHistorial(${i},'libreta')" title="Ver historial de puntos">
         <div class="an">${i}</div>
         <div class="pc-nombre">Alumno ${i}</div>
         <span class="escala ${nf===null?"":k}">${nf===null? "Sin registrar" : esc(escalaTexto(k))}</span>
@@ -1552,17 +1559,23 @@ function htmlLibretaPanel(){
   return html;
 }
 function libSel(q){
-  if(q==="trim") S.ui.libTrim = $("libTrim").value;
+  if(q==="fecha"){ S.ui.libFecha = $("libFecha").value || HOY; S.ui.libTrim = trimDeFecha(S.ui.libFecha); }
   if(q==="grado") S.ui.libGrado = $("libGrado").value;
   if(q==="sec") S.ui.libSec = $("libSec").value;
   guardar();
   renderProgreso();
 }
 function guardarLib(n){
+  const fecha = S.ui.libFecha || HOY;
+  S.ui.libTrim = trimDeFecha(fecha);
   const c = califsLib();
   const p = $("libP_"+n).value, t = $("libT_"+n).value, e = $("libE_"+n).value;
   if(p==="" && t==="" && e===""){ delete c[n]; }
   else c[n] = { p:p===""?0:+p, t:t===""?0:+t, e:e===""?0:+e };
+  const grupo = grupoLibreta();
+  if(p!=="") upsertPunto(grupo, n, fecha, "P", +p);
+  if(t!=="") upsertPunto(grupo, n, fecha, "T", +t);
+  if(e!=="") upsertPunto(grupo, n, fecha, "E", +e);
   guardar();
   const nf = notaLib(n);
   encolar("calificaciones", S.ui.libTrim, { alumno:"Alumno "+n, participacion:c[n]?c[n].p:0, trabajos:c[n]?c[n].t:0, examen:c[n]?c[n].e:0, final:nf===null?0:nf },
@@ -1859,6 +1872,103 @@ function initTimer(durs){
   T={dur:d,resta:d,corriendo:false,iv:null};
 }
 
+/* ---------- HISTORIAL DE PUNTOS (modal por alumno) ---------- */
+let histActual = null;
+const TIPOS_PUNTO = { P:"Participación", T:"Trabajo", E:"Exámenes" };
+function trimDeFecha(f){ return PERIODOS[trimestreDeMes(parseInt((f||HOY).slice(5,7)))-1] || PERIODOS[0]; }
+function fmtFechaLinda(f){
+  try{ const d = new Date(f+"T12:00"); return d.getDate()+" "+MESES_ES[d.getMonth()].slice(0,3)+" "+d.getFullYear(); }catch(e){ return f||"—"; }
+}
+function puntosDe(grupo, n){
+  if(!S.puntos) S.puntos = {};
+  if(!S.puntos[grupo]) S.puntos[grupo] = {};
+  if(!Array.isArray(S.puntos[grupo][n])) S.puntos[grupo][n] = [];
+  return S.puntos[grupo][n];
+}
+function upsertPunto(grupo, n, f, tipo, pts, com){
+  const arr = puntosDe(grupo, n);
+  const ex = arr.find(x=>x.f===f && x.tipo===tipo);
+  if(ex){ ex.pts = pts; if(com) ex.com = com; }
+  else arr.push({ f, tipo, pts, com: com||"" });
+  return arr.sort((a,b)=> a.f<b.f? 1 : -1);
+}
+function abrirHistorial(n, fuente){
+  histActual = { n, fuente };
+  const esLib = fuente==="libreta";
+  const grupo = esLib? grupoLibreta() : grupoProg();
+  const gen = esLib? notaLib(n) : notaDe(n);
+  $("histTitulo").textContent = (esLib? "Historial de puntos":"Historial de porcentaje")+" · Alumno "+n;
+  $("histSub").textContent = "Explora cuándo y por qué se registró cada punto";
+  const filtro = S.ui.histFiltro || "anio";
+  const fechaSel = S.ui.libFecha || HOY;
+  const chips = [["anio","Año"],["1","1er Trim."],["2","2do Trim."],["3","3er Trim."],["fecha","Fecha sel."]]
+    .map(([v,l])=>`<span class="chip ${filtro===v?"sel":""}" onclick="filtrarHist('${v}')">${l}</span>`).join("");
+  let arr = puntosDe(grupo, n).slice();
+  if(filtro==="fecha") arr = arr.filter(x=>x.f===fechaSel);
+  else if(filtro!=="anio") arr = arr.filter(x=>String(trimestreDeMes(parseInt(x.f.slice(5,7))))===filtro);
+  const filas = arr.length? arr.map(x=>`
+    <div class="g-paso"><b>${esc(fmtFechaLinda(x.f))} · ${esc(TIPOS_PUNTO[x.tipo]||x.tipo)} · ${x.pts} pts</b>
+    <span>${x.com? esc(x.com) : "Sin comentario"}</span></div>`).join("")
+    : `<p class="g-intro">Sin registros en este filtro. Agrega un punto más abajo.</p>`;
+  const color = gen===null? "#94a3b8" : (gen>=70? "#0033A0" : "#CE1126");
+  $("histCuerpo").innerHTML = `
+  <div style="display:flex;justify-content:center;margin:2px 0 8px">
+    <div style="text-align:center">${ring(gen===null?0:gen,64,7,color, gen===null? "—":String(gen))}<small class="muted" style="display:block;font-weight:700">Porcentaje general</small></div>
+  </div>
+  <div class="g-chips" style="margin-bottom:10px">${chips}</div>
+  ${filas}
+  <h3 style="margin-top:12px">Registrar un punto</h3>
+  <label class="lbl">Fecha</label>
+  <input type="date" class="inp" id="hpFecha" value="${esc(fechaSel)}">
+  <label class="lbl">Tipo</label>
+  <select class="inp" id="hpTipo">
+    <option value="P">Participación</option>
+    <option value="T">Trabajo</option>
+    <option value="E">Exámenes</option>
+  </select>
+  <label class="lbl">Puntos (0 a 100)</label>
+  <input type="number" min="0" max="100" class="inp" id="hpPts" placeholder="Ej. 85">
+  <label class="lbl">Comentario (opcional)</label>
+  <input type="text" class="inp" id="hpCom" placeholder="¿Por qué este punto?">
+  <button class="dl grande" style="margin-top:10px" onclick="registrarPunto()">${ic("nota")} Registrar punto</button>`;
+  $("modalHistFondo").classList.add("abierto");
+  $("modalHistHoja").classList.add("abierta");
+}
+function filtrarHist(f){ S.ui.histFiltro = f; if(histActual) abrirHistorial(histActual.n, histActual.fuente); }
+function cerrarHistorial(){
+  $("modalHistFondo").classList.remove("abierto");
+  $("modalHistHoja").classList.remove("abierta");
+}
+function registrarPunto(){
+  if(!histActual) return;
+  const n = histActual.n, esLib = histActual.fuente==="libreta";
+  const f = ($("hpFecha").value||HOY).slice(0,10);
+  const tipo = $("hpTipo").value;
+  const pv = parseFloat($("hpPts").value);
+  if(isNaN(pv) || pv<0 || pv>100){ toast("Escribe los puntos entre 0 y 100"); return; }
+  const pts = Math.round(pv);
+  const com = $("hpCom").value||"";
+  const campo = {P:"p",T:"t",E:"e"}[tipo];
+  const grupo = esLib? grupoLibreta() : grupoProg();
+  upsertPunto(grupo, n, f, tipo, pts, com);
+  if(esLib){
+    const t = trimDeFecha(f);
+    if(!S.libreta[t]) S.libreta[t] = {};
+    if(!S.libreta[t][grupo]) S.libreta[t][grupo] = {};
+    const c = S.libreta[t][grupo];
+    c[n] = Object.assign({p:0,t:0,e:0}, c[n]||{});
+    c[n][campo] = pts;
+  } else {
+    const c = califs();
+    c[n] = Object.assign({p:0,t:0,e:0}, c[n]||{});
+    c[n][campo] = pts;
+  }
+  guardar();
+  cerrarHistorial();
+  if(S.ui.progTab && $("scr-progreso").classList.contains("visible")) renderProgreso();
+  toast("Punto registrado para Alumno "+n);
+}
+
 /* ---------- PROGRESO ---------- */
 function grupoProg(){ return ((S.ui.progGrado||S.docente.grado)+"|"+(S.ui.progSec||S.docente.seccion||"A")); }
 function califs(){
@@ -1912,7 +2022,7 @@ function htmlProgresoPanel(){
     <select class="inp" id="progSec" onchange="progSel('sec')">
       ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
     </select>
-    <p class="muted">Nota final = Participación 30% + Trabajos 30% + Examen 40%. Escala: L ≥ 90 (Logrado) · EP 70–89 (En proceso) · I < 70 (Insuficiente).</p>
+    <p class="muted">Nota final = Participación 30% + Trabajos 30% + Examen 40%. Escala: L ≥ 90 (Logrado) · EP 70–89 (En proceso) · I < 70 (Iniciando).</p>
   </div>
   <h2 class="mini">Calificación por alumno · Grado ${esc(g)} · Sección ${esc(sc)}</h2>`;
   for(let i=1;i<=N;i++){
@@ -1921,7 +2031,7 @@ function htmlProgresoPanel(){
     const k = nf===null? "—" : escalaDe(nf);
     const color = nf===null? "#94a3b8" : (nf>=70? "#0033A0" : "#CE1126");
     html += `<div class="prog-card">
-      <div class="pc-top">
+      <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver historial de porcentaje">
         <div class="an">${i}</div>
         <div class="pc-nombre">Alumno ${i}</div>
         <span class="escala ${nf===null?"":k}">${nf===null? "Sin calificar" : esc(escalaTexto(k))}</span>
@@ -2767,7 +2877,7 @@ function descargarBoletinGrupo(fuente){
     doc.setFontSize(11); doc.setTextColor(0,51,160); doc.setFont(undefined,"bold");
     doc.text("Promedio del grupo: "+prom+"/100 · "+escalaTexto(escalaDe(prom)), 14, Math.min(y,288));
     doc.setFontSize(8); doc.setTextColor(120); doc.setFont(undefined,"normal");
-    doc.text("Escala MINERD: L = Logrado (90-100) · EP = En proceso (70-89) · I = Insuficiente (<70). Final = Part. 30% + Trab. 30% + Examen 40%.", 14, Math.min(y+5,292), {maxWidth:182});
+    doc.text("Escala MINERD: L = Logrado (90-100) · EP = En proceso (70-89) · I = Iniciando (<70). Final = Part. 30% + Trab. 30% + Examen 40%.", 14, Math.min(y+5,292), {maxWidth:182});
     doc.save("boletin-"+dt.grado.replace(/ /g,"")+"-"+dt.seccion+".pdf");
     toast("Boletín descargado");
   }catch(e){ toast("Se necesita conexión para descargar"); }

@@ -553,8 +553,8 @@ const LS_VIEJO = "plan_docente_rd_v4";
 const LS_VIEJO2 = "plan_docente_rd_v2";
 function estadoDefault(){
   return {
-    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],alumnosPorSeccion:{},jornada:"",duracionMin:0,alumnos:24,periodo:"1er Trimestre" },
-    asistencia:{}, evaluacion:{}, obs:{}, calificaciones:{}, libreta:{},
+    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er Trimestre" },
+    asistencia:{}, evaluacion:{}, tiempoClase:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
     notificaciones:[], vistosPlanes:0,
     ui:{ progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er Trimestre" },
@@ -887,7 +887,7 @@ const TITULOS = {
   clase:["",""],
   progreso:["Progreso y Libreta","Calificaciones y registro porcentual"],
   info:["Información y Ajustes","Tu perfil y sincronización"],
-  notificaciones:["Notificaciones","Avisos de tu app docente"],
+  notificaciones:["",""],
   onboarding:["Bienvenida","Regístrate para comenzar"],
 };
 function irA(scr, arg){
@@ -905,12 +905,16 @@ function mostrar(scr, arg){
   document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("sel", b.dataset.scr===scr));
   const esNivel1 = ["anio","mes","diaria","progreso","info"].includes(scr);
   const esDetalle = ["anio-detalle","mes-detalle","clase"].includes(scr);
+  const esLimpio = esDetalle || scr==="notificaciones";
   $("btnAtras").classList.toggle("visible", registrado && !esNivel1);
   $("btnGuia").classList.toggle("visible", registrado && esDetalle);
-  $("logoTop").style.display = esDetalle? "none":"flex";
-  $("ttApp").style.display = esDetalle? "none":"block";
-  $("btnCampana").classList.toggle("visible", registrado && !esOnb && !esDetalle);
+  $("logoTop").style.display = esLimpio? "none":"flex";
+  $("ttApp").style.display = esLimpio? "none":"block";
+  $("btnCampana").classList.toggle("visible", registrado && !esOnb);
   actualizarCampana();
+  actualizarFotoTopbar();
+  pantallaActual = scr;
+  autoRefresco(scr);
   let [t, s] = TITULOS[scr]||["Planificación Docente",""];
   $("tituloApp").textContent = t; $("subtituloApp").textContent = s;
   if(scr==="onboarding") renderOnboarding();
@@ -924,6 +928,28 @@ function mostrar(scr, arg){
   if(scr==="notificaciones") renderNotificaciones();
   if(scr==="info") renderInfo();
   window.scrollTo({top:0});
+}
+let pantallaActual = null;
+let autoRefIv = null;
+function autoRefresco(scr){
+  if(autoRefIv){ clearInterval(autoRefIv); autoRefIv = null; }
+  if(!["anio","mes","diaria"].includes(scr) || !S.docente.id) return;
+  autoRefIv = setInterval(async ()=>{
+    try{
+      if(document.hidden) return;
+      const hoja = $("modalHoja");
+      if(hoja && hoja.classList.contains("abierta")) return;
+      const a = document.activeElement;
+      if(a && ["INPUT","TEXTAREA","SELECT"].includes(a.tagName)) return;
+      if(pantallaActual !== scr) return;
+      if(scr==="mes"){ await cargarPlanes(); if(pantallaActual!==scr) return; }
+      const y = window.scrollY||0;
+      if(scr==="anio") renderAnio();
+      else if(scr==="mes") renderMes();
+      else if(scr==="diaria") renderDiaria();
+      window.scrollTo(0,y);
+    }catch(e){}
+  }, 10000);
 }
 
 /* ---------- ONBOARDING ---------- */
@@ -1206,8 +1232,8 @@ function renderAnioDetalle(nivel){
     <h3>Recursos digitales</h3>
     <p class="muted">${esc(A.recursosDig)}</p>
   </div>
-  <button class="dl grande" onclick="descargarRegistroPdf('asis')">${ic("descarga")} Descargar asistencias en PDF</button>
-  <button class="dl alt" onclick="descargarRegistroPdf('logros')">${ic("descarga")} Descargar logros en PDF</button>
+  <button class="dl grande" onclick="descargarAsistenciaPlanPdf('${esc(nivel)}')">${ic("descarga")} Asistencia del plan</button>
+  <button class="dl alt" onclick="descargarEvaluacionPlanPdf('${esc(nivel)}')">${ic("descarga")} Evaluación del plan</button>
   <button class="dl grande" onclick="descargarPlanAnualDocx('${esc(nivel)}')">${ic("descarga")} Descargar plan anual en Word</button>
   <div style="height:14px"></div>`;
   $("scr-anio-detalle").innerHTML = html;
@@ -1239,10 +1265,6 @@ function renderMes(){
       <div class="ringbox">${ring(avanceSemanas(plan),56,7,"#FFD6DB")}<small>Semanas</small></div>
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#fff")}<small>Asistencias</small></div>
     </div>
-  </div>
-  <h2 class="mini">Tus planes mensuales</h2>
-  <div style="display:flex;justify-content:flex-end;margin-bottom:4px">
-    <button class="btn-soft" style="flex:0 0 auto;padding:8px 14px" onclick="refrescarPlanes()">${ic("refrescar")} Actualizar</button>
   </div>`;
   const planes = planesMensuales();
   const vistos = new Set();
@@ -1265,7 +1287,9 @@ function renderMes(){
   pintar(unicos.filter(p=>semestreDe(p.mes)==="1er"));
   html += `<div class="sep">2do Semestre · Enero a Junio</div>`;
   pintar(unicos.filter(p=>semestreDe(p.mes)==="2do"));
-  html += `<div style="height:14px"></div>`;
+  html += `<button class="dl grande" onclick="descargarAsistenciaTrimPdf()">${ic("descarga")} Asistencia del trimestre</button>
+  <button class="dl alt" onclick="descargarEvaluacionTrimPdf()">${ic("descarga")} Evaluación del trimestre</button>
+  <div style="height:14px"></div>`;
   $("scr-mes").innerHTML = html;
 }
 async function refrescarPlanes(){
@@ -1376,8 +1400,8 @@ function renderMesDetalle(plan){
   }
   html += `
   </div>
-  <button class="dl grande" onclick="descargarRegistroPdf('asis')">${ic("descarga")} Descargar asistencia en PDF</button>
-  <button class="dl alt" onclick="descargarRegistroPdf('logros')">${ic("descarga")} Descargar logros en PDF</button>
+  <button class="dl grande" onclick="descargarAsistenciaUnidadPdf()">${ic("descarga")} Asistencia de la unidad</button>
+  <button class="dl alt" onclick="descargarEvaluacionUnidadPdf()">${ic("descarga")} Evaluación de la unidad en PDF</button>
   <button class="dl grande" onclick="descargarUnidadDocx()">${ic("descarga")} Descargar unidad en Word (.docx)</button>
   <div style="height:14px"></div>`;
   $("scr-mes-detalle").innerHTML = html;
@@ -1420,23 +1444,62 @@ function asistenciaAnio(){
 function horasSemana(){
   const w = planDiario();
   const dias = w.semana? (w.semana.dias||[]) : [];
-  const dur = (+S.docente.duracionMin || 45)/60;
-  const impartidas = dias.filter(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; }).length;
-  return { h: impartidas*dur, pct: dias.length? Math.round(impartidas*100/dias.length) : 0 };
+  const totalSec = dias.reduce((a,d)=>a+(claseMinutos(d.id)*60),0);
+  const hechas = dias.reduce((a,d)=>a+(S.tiempoClase[d.id]||0),0);
+  return { h: hechas/3600, pct: totalSec? Math.min(100,Math.round(hechas*100/totalSec)) : 0 };
+}
+function claseMinutos(claseId){
+  let d = null;
+  try{ d = clasePorId(planAbierto || planActivo(), claseId); }catch(e){}
+  if(!d){ try{ d = clasePorId(planDiario().plan, claseId); }catch(e){} }
+  if(!d) return (+S.docente.duracionMin || 45);
+  const momentos = d.momentos||[];
+  const base = momentos.reduce((a,m)=>a+(minsDe(m.duracion)||0),0);
+  return (+S.docente.duracionMin || base || 45);
+}
+function pctCrono(claseId){
+  const total = claseMinutos(claseId)*60;
+  const e = S.tiempoClase[claseId]||0;
+  return total? Math.min(100, Math.round(e*100/total)) : 0;
+}
+function fmtCrono(seg){
+  seg = Math.max(0, Math.round(seg||0));
+  const h = Math.floor(seg/3600), m = Math.floor((seg%3600)/60), s = seg%60;
+  if(h>0) return h+"h "+String(m).padStart(2,"0")+"m";
+  return m+"m "+String(s).padStart(2,"0")+"s";
 }
 function htmlLibretaHero(){
   const g = S.ui.libGrado || S.docente.grado;
   const sc = S.ui.libSec || S.docente.seccion || "A";
+  const trim = S.ui.libTrim || "1er Trimestre";
   return `
   <div class="hero">
     <h2>Libreta del año escolar</h2>
     <p>Puntos porcentuales por trimestre y grupo · Grado ${esc(g)} · Sección ${esc(sc)}</p>
     <div class="row">
-      <div class="ringbox">${ring(promedioLib(),56,7,"#fff")}<small>Calificación</small></div>
-      <div class="ringbox">${ring(promedioAnioLibreta(),56,7,"#FFD6DB")}<small>Promedio del año</small></div>
-      <div class="ringbox">${ring(asistenciaAnio(),56,7,"#fff")}<small>Asistencias del año</small></div>
+      <div class="ringbox">${ring(pctEvaluacionClases(),56,7,"#fff")}<small>Evaluación</small></div>
+      <div class="ringbox">${ring(promedioLib(),56,7,"#FFD6DB")}<small>Promedios</small></div>
+      <div class="ringbox">${ring(asistenciaTrim(trimDePeriodo(trim)),56,7,"#fff")}<small>Asistencias</small></div>
     </div>
   </div>`;
+}
+function pctEvaluacionClases(){
+  const fechas = fechasRegistradas("eval");
+  if(!fechas.length) return 0;
+  const N = alumnosDe(S.docente.seccion);
+  let evals = 0;
+  fechas.forEach(f=>{
+    const reg = S.evaluacion[f]||{};
+    for(let i=1;i<=N;i++){ if(reg[i]) evals++; }
+  });
+  return Math.round(evals*100/(fechas.length*N));
+}
+function asistenciaTrim(trim){
+  const fechas = fechasRegistradas("asis").filter(f=>trimestreDeMes(parseInt(f.slice(5,7)))===trim);
+  if(!fechas.length) return 0;
+  let sum=0;
+  fechas.forEach(f=>sum += pctDia(f,"asis"));
+  return Math.round(sum/fechas.length);
 }
 function htmlLibretaPanel(){
   const nivel = S.docente.nivel;
@@ -1476,9 +1539,9 @@ function htmlLibretaPanel(){
       </div>
       <div class="pc-bottom">
         <div class="prog-inputs">
-          <label>Participación %<input type="number" min="0" max="100" inputmode="numeric" id="libP_${i}" value="${c.p!==undefined?esc(c.p):""}" oninput="guardarLib(${i})"></label>
-          <label>Trabajo %<input type="number" min="0" max="100" inputmode="numeric" id="libT_${i}" value="${c.t!==undefined?esc(c.t):""}" oninput="guardarLib(${i})"></label>
-          <label>Exámenes %<input type="number" min="0" max="100" inputmode="numeric" id="libE_${i}" value="${c.e!==undefined?esc(c.e):""}" oninput="guardarLib(${i})"></label>
+          <label>Participación<input type="number" min="0" max="100" inputmode="numeric" id="libP_${i}" value="${c.p!==undefined?esc(c.p):""}" oninput="guardarLib(${i})"></label>
+          <label>Trabajo<input type="number" min="0" max="100" inputmode="numeric" id="libT_${i}" value="${c.t!==undefined?esc(c.t):""}" oninput="guardarLib(${i})"></label>
+          <label>Exámenes<input type="number" min="0" max="100" inputmode="numeric" id="libE_${i}" value="${c.e!==undefined?esc(c.e):""}" oninput="guardarLib(${i})"></label>
         </div>
         <button class="btn-mini" title="Reporte individual" onclick="descargarBoletinIndividual(${i},'libreta')">${ic("descarga",15)}</button>
       </div>
@@ -1534,11 +1597,10 @@ function renderDiaria(){
   } else {
     dias.forEach(d=>{
       const esHoy = d.id===HOY;
-      const pct = pctDia(d.id,"asis");
       html += `<div class="item" onclick="abrirClaseDiaria('${d.id}')">
         <div class="ic">${ic("diaria")}</div>
         <div class="tx"><b>${esc(d.etiqueta)} · ${esc(d.titulo)}</b><span>${esc((d.desempenos||[""])[0])}</span></div>
-        <div class="rg">${ring(pct,46,6,"#0033A0")}</div>
+        <div class="rg">${ring(pctCrono(d.id),46,6,"#0033A0",fmtCrono(S.tiempoClase[d.id]||0))}</div>
         ${esHoy? '<span class="hoy-badge">HOY</span>':""}
       </div>`;
     });
@@ -1566,6 +1628,7 @@ function renderClase(claseId){
   const plan = planAbierto || planActivo();
   const d = clasePorId(plan, claseId);
   if(!d){ irA("mes"); return; }
+  claseActualId = claseId;
   guiaActual = { titulo:"Guía técnica · Planificación diaria", html: guiaClase() };
   const s = (plan.semanas||[]).find(w=>w.dias.some(x=>x.id===claseId));
   const pctA = pctDia(claseId,"asis"), pctE = pctDia(claseId,"eval");
@@ -1583,8 +1646,8 @@ function renderClase(claseId){
         <h2>${esc(d.etiqueta)} · ${esc(d.titulo)}</h2>
         <p>Semana ${s?s.numero:""}: ${s?esc(s.tema):""} · ${esc(plan.mes)}</p>
       </div>
-      <div class="rg" id="headRings" style="display:flex;flex-direction:column;gap:4px">
-        ${ring(pctA,44,5,"#0033A0")}${ring(pctE,44,5,"#CE1126")}
+      <div class="rg" id="headRings" style="display:flex">
+        ${ring(pctCrono(claseId),60,7,"#0033A0",fmtCrono(S.tiempoClase[claseId]||0))}
       </div>
     </div>
     <div class="mcard" style="margin-top:12px">
@@ -1695,7 +1758,7 @@ function marcar(tipo, claseId, n, valor){
   if(tipo==="A") $("zonaA").innerHTML = alumnosHTML(claseId,"A");
   else $("zonaE").innerHTML = alumnosHTML(claseId,"E");
   const el = $("headRings");
-  if(el) el.innerHTML = ring(pctDia(claseId,"asis"),44,5,"#0033A0") + ring(pctDia(claseId,"eval"),44,5,"#CE1126");
+  if(el) el.innerHTML = ring(pctCrono(claseId),60,7,"#0033A0",fmtCrono(S.tiempoClase[claseId]||0));
 }
 function toggleRegistro(){
   $("zonaRegistro").classList.toggle("abierta");
@@ -1733,6 +1796,7 @@ function temporizadorHTML(durs){
 }
 const CIRC = 2*Math.PI*40;
 let T = { dur:300, resta:300, corriendo:false, iv:null };
+let claseActualId = null;
 function setDur(min, btn){
   document.querySelectorAll(".dur-btn").forEach(b=>b.classList.remove("sel"));
   btn.classList.add("sel");
@@ -1758,6 +1822,12 @@ function playTimer(){
   T.iv = setInterval(()=>{
     T.resta--;
     pintarTimer();
+    if(claseActualId){
+      S.tiempoClase[claseActualId] = (S.tiempoClase[claseActualId]||0)+1;
+      if(S.tiempoClase[claseActualId]%15===0) guardar();
+      const hr = $("headRings");
+      if(hr) hr.innerHTML = ring(pctCrono(claseActualId),60,7,"#0033A0",fmtCrono(S.tiempoClase[claseActualId]));
+    }
     if(T.resta<=0){
       clearInterval(T.iv); T.corriendo=false; T.resta=T.dur;
       $("btnPlay").innerHTML = ic("play",14)+" Iniciar"; $("timerEstado").textContent="¡Tiempo!";
@@ -1956,6 +2026,17 @@ function renderInfo(){
   <div class="hero"><h2>Tu perfil docente</h2>
     <p>${esc(S.docente.nombre)} · ${esc(S.docente.colegio)}</p></div>
   <div class="card">
+    <h2>${ic("usuarios")} Foto de perfil</h2>
+    <div style="display:flex;align-items:center;gap:12px">
+      <img id="prevFoto" src="${S.docente.foto||""}" style="${S.docente.foto?"":"display:none"};width:60px;height:60px;border-radius:50%;object-fit:cover;border:3px solid rgba(0,51,160,.15)">
+      <div style="flex:1">
+        <p class="muted" style="margin-bottom:8px">Tu foto aparece en el encabezado de la app. Se guarda en tu dispositivo.</p>
+        <input type="file" id="inpFoto" accept="image/*" style="display:none" onchange="subirFotoPerfil(event)">
+        <button class="btn-soft" style="flex:0 0 auto;padding:8px 14px" onclick="$('inpFoto').click()">${ic("refrescar")} ${S.docente.foto? "Cambiar foto":"Subir foto de perfil"}</button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
     <h2>${ic("usuarios")} Datos registrados</h2>
     <div class="stat-row"><span>Nombre</span><b>${esc(S.docente.nombre)}</b></div>
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
@@ -2054,6 +2135,37 @@ function guardarDuracion(){
   toast("Clases de "+(h?h+"h ":"")+m+"min · momentos reajustados");
   renderInfo();
 }
+function subirFotoPerfil(ev){
+  const archivo = ev.target && ev.target.files && ev.target.files[0];
+  if(!archivo) return;
+  try{
+    const lector = new FileReader();
+    lector.onload = ()=>{
+      const img = new Image();
+      img.onload = ()=>{
+        const lado = 200;
+        const canvas = document.createElement("canvas");
+        canvas.width = lado; canvas.height = lado;
+        const ctx = canvas.getContext("2d");
+        const min = Math.min(img.width, img.height);
+        ctx.drawImage(img, (img.width-min)/2, (img.height-min)/2, min, min, 0, 0, lado, lado);
+        S.docente.foto = canvas.toDataURL("image/jpeg", 0.82);
+        guardar();
+        actualizarFotoTopbar();
+        renderInfo();
+        toast("Foto de perfil actualizada");
+      };
+      img.src = lector.result;
+    };
+    lector.readAsDataURL(archivo);
+  }catch(e){ toast("No se pudo procesar la imagen"); }
+}
+function actualizarFotoTopbar(){
+  const el = $("fotoPerfil");
+  if(!el) return;
+  if(S.docente && S.docente.foto){ el.src = S.docente.foto; el.style.display = "block"; }
+  else el.style.display = "none";
+}
 function guardarJornada(){
   S.docente.jornada = $("inpJornada").value;
   guardar();
@@ -2078,7 +2190,7 @@ function guardarAlumnosPorSeccion(){
 }
 function borrarTodo(){
   if(!confirm("¿Borrar asistencias, evaluaciones, calificaciones, libreta y observaciones guardadas en este dispositivo?")) return;
-  S.asistencia={}; S.evaluacion={}; S.obs={}; S.calificaciones={}; S.libreta={}; guardar();
+  S.asistencia={}; S.evaluacion={}; S.tiempoClase={}; S.obs={}; S.calificaciones={}; S.libreta={}; guardar();
   toast("Datos locales borrados"); renderInfo();
 }
 function cerrarSesion(){
@@ -2330,6 +2442,115 @@ async function descargarPlanDiarioDocx(claseId){
 }
 
 /* ---------- DESCARGAS: PDF ---------- */
+function fechasRegistradas(tipo){
+  const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
+  return Object.keys(mapa).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f) && Object.keys(mapa[f]).length).sort();
+}
+function trimestreDeMes(m){ return (m>=8&&m<=10)? 1 : ((m>=11||m<=2)? 2 : 3); }
+function trimDePeriodo(t){ const n = parseInt(t); return (n>=1&&n<=3)? n : trimestreDeMes(parseInt(HOY.slice(5,7))); }
+function fechasTrim(tipo, trim){ return fechasRegistradas(tipo).filter(f=>trimestreDeMes(parseInt(f.slice(5,7)))===trim); }
+function fechasMesDe(tipo, ym){ return fechasRegistradas(tipo).filter(f=>f.slice(0,7)===ym); }
+function pdfResumen(tipo, titulo, sub, fechas, conClases, nombre){
+  try{
+    const doc = new jspdf.jsPDF();
+    cabeceraPdf(doc, titulo, sub);
+    const N = alumnosDe(S.docente.seccion);
+    const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
+    let y = 50;
+    const aseg = s=>{ if(y+s>282){ doc.addPage(); y=20; } };
+    if(!fechas.length){
+      doc.setFontSize(11); doc.setTextColor(90);
+      doc.text("Aún no hay registros de "+(tipo==="asis"?"asistencia":"evaluación")+" para este período.", 14, y);
+      doc.save(nombre); toast("PDF descargado (sin registros aún)");
+      return;
+    }
+    doc.setFontSize(9.5); doc.setFont(undefined,"bold"); doc.setTextColor(0,51,160);
+    doc.text("Alumno", 16, y);
+    doc.text(tipo==="asis"? "Presentes":"Logrados", 78, y);
+    doc.text(tipo==="asis"? "Ausentes":"En proc.", 112, y);
+    doc.text("Sin reg.", 146, y); doc.text("%", 184, y);
+    y += 3; doc.setDrawColor(190); doc.line(14, y, 196, y); y += 6;
+    doc.setFont(undefined,"normal"); doc.setTextColor(30); doc.setFontSize(9);
+    let sumPct = 0;
+    for(let i=1;i<=N;i++){
+      aseg(8);
+      let p=0,o=0,n=0;
+      fechas.forEach(f=>{
+        const v = (mapa[f]||{})[i];
+        if(tipo==="asis"){ if(v==="Presente")p++; else if(v==="Ausente")o++; else n++; }
+        else { if(v==="Logrado")p++; else if(v==="En proceso")o++; else n++; }
+      });
+      const pct = Math.round(p*100/fechas.length);
+      sumPct += pct;
+      doc.text("Alumno "+i, 16, y); doc.text(String(p), 86, y); doc.text(String(o), 120, y);
+      doc.text(String(n), 154, y); doc.text(pct+"%", 184, y);
+      y += 7;
+    }
+    aseg(16);
+    doc.line(14, y, 196, y); y += 7;
+    const gen = Math.round(sumPct/N);
+    doc.setFont(undefined,"bold"); doc.setFontSize(10.5); doc.setTextColor(0,51,160);
+    doc.text((tipo==="asis"? "Asistencia general: ":"Evaluación general: ")+gen+"%", 16, y); y += 7;
+    doc.setFont(undefined,"normal"); doc.setFontSize(9); doc.setTextColor(90);
+    doc.text("Clases registradas en el período: "+fechas.length, 16, y); y += 10;
+    if(conClases){
+      aseg(14);
+      doc.setFont(undefined,"bold"); doc.setFontSize(10.5); doc.setTextColor(0,51,160);
+      doc.text("Registro por clase", 14, y); y += 6;
+      doc.setFontSize(8.5); doc.setFont(undefined,"normal"); doc.setTextColor(60);
+      doc.text("Fecha", 16, y); doc.text("Asist.", 62, y); doc.text("Evaluac.", 92, y);
+      doc.text("Logrados", 126, y); doc.text("Presentes", 162, y);
+      y += 3; doc.line(14, y, 196, y); y += 5;
+      fechas.forEach(f=>{
+        aseg(6);
+        const regA = S.asistencia[f]||{}, regE = S.evaluacion[f]||{};
+        let pres=0, logr=0;
+        for(let i=1;i<=N;i++){ if(regA[i]==="Presente")pres++; if(regE[i]==="Logrado")logr++; }
+        doc.text(f, 16, y); doc.text(pctDia(f,"asis")+"%", 64, y); doc.text(pctDia(f,"eval")+"%", 96, y);
+        doc.text(String(logr), 132, y); doc.text(String(pres), 168, y);
+        y += 6;
+      });
+    }
+    doc.save(nombre);
+    toast("PDF descargado");
+  }catch(e){ toast("Se necesita conexión para descargar"); }
+}
+function descargarAsistenciaPlanPdf(nivel){
+  pdfResumen("asis", "Asistencia del plan anual",
+    "Nivel "+(nivel||S.docente.nivel)+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion,
+    fechasRegistradas("asis"), false, "asistencia-plan-anual.pdf");
+}
+function descargarEvaluacionPlanPdf(nivel){
+  pdfResumen("eval", "Evaluación del plan anual",
+    "Nivel "+(nivel||S.docente.nivel)+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion+" · Resumen por alumno, general y por clase",
+    fechasRegistradas("eval"), true, "evaluacion-plan-anual.pdf");
+}
+function descargarAsistenciaTrimPdf(){
+  const trim = trimDePeriodo(S.docente.periodo);
+  pdfResumen("asis", "Asistencia del trimestre",
+    S.docente.periodo+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion,
+    fechasTrim("asis", trim), false, "asistencia-"+trim+"er-trimestre.pdf");
+}
+function descargarEvaluacionTrimPdf(){
+  const trim = trimDePeriodo(S.docente.periodo);
+  pdfResumen("eval", "Evaluación del trimestre",
+    S.docente.periodo+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion,
+    fechasTrim("eval", trim), false, "evaluacion-"+trim+"er-trimestre.pdf");
+}
+function descargarAsistenciaUnidadPdf(){
+  const plan = planAbierto || planActivo();
+  const ym = parseMes(plan.mes);
+  pdfResumen("asis", "Asistencia de la unidad",
+    (plan.titulo||"")+" · "+(plan.mes||"")+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion,
+    ym? fechasMesDe("asis", ym) : [], false, "asistencia-unidad.pdf");
+}
+function descargarEvaluacionUnidadPdf(){
+  const plan = planAbierto || planActivo();
+  const ym = parseMes(plan.mes);
+  pdfResumen("eval", "Evaluación de la unidad",
+    (plan.titulo||"")+" · "+(plan.mes||"")+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion,
+    ym? fechasMesDe("eval", ym) : [], false, "evaluacion-unidad.pdf");
+}
 function descargarRegistroPdf(tipo){
   try{
     const mapa = tipo==="asis"? S.asistencia : S.evaluacion;

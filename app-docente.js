@@ -33,6 +33,8 @@ function ic(nombre, s=18, color="currentColor"){
     boletin:   '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/>',
     libro:     '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
     diaria:    '<rect x="3" y="4" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><polyline points="8.5 14.5 11 17 15.5 12.5"/>',
+    calAnual:  '<rect x="3" y="4" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/>',
+    calMensual:'<rect x="3" y="4" width="18" height="17" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="2" x2="9" y2="6"/><line x1="15" y1="2" x2="15" y2="6"/><line x1="7" y1="13" x2="13" y2="13"/><line x1="7" y1="17" x2="17" y2="17"/>',
     salir:     '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>',
   };
   return `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths[nombre]||paths.objetivo}</svg>`;
@@ -690,7 +692,7 @@ function notaFinalDe(p,t,e){
   return Math.round(p*0.3 + t*0.3 + e*0.4);
 }
 function escalaDe(n){ return n>=90?"L":(n>=70?"EP":"I"); }
-function escalaTexto(k){ return k==="L"?"Logrado":(k==="EP"?"En proceso":"Insuficiente"); }
+function escalaTexto(k){ return k==="L"?"Logrado":(k==="EP"?"En proceso":"Iniciando"); }
 function unidadDerivada(nivel, idxStr){
   const idx = parseInt(idxStr);
   const A = ANUAL_MINERD[nivel];
@@ -877,15 +879,15 @@ document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && S.doc
 /* ---------- NAVEGACIÓN ---------- */
 let navStack = [];
 const TITULOS = {
-  anio:["Planes Anuales","El plan anual de tu nivel educativo"],
-  "anio-detalle":["Planes Anuales","Estructura según Adecuación Curricular 2023"],
-  mes:["Planificación Mensual","Unidades de aprendizaje por semestre"],
-  diaria:["Plan Diaria","Planes diarios de la semana en curso"],
-  progreso:["Progreso y Libreta","Calificaciones del período y registro porcentual del año"],
+  anio:["Planificación anual","El plan anual de tu nivel educativo"],
+  "anio-detalle":["",""],
+  mes:["Planificación mensual","Unidades de aprendizaje por semestre"],
+  "mes-detalle":["",""],
+  diaria:["Planificación diaria","Planes diarios de la semana en curso"],
+  clase:["",""],
+  progreso:["Progreso y Libreta","Calificaciones y registro porcentual"],
   info:["Información y Ajustes","Tu perfil y sincronización"],
   notificaciones:["Notificaciones","Avisos de tu app docente"],
-  "mes-detalle":["Unidad de Aprendizaje","Detalle completo del plan mensual"],
-  clase:["Clase del día","Lista para enseñar"],
   onboarding:["Bienvenida","Regístrate para comenzar"],
 };
 function irA(scr, arg){
@@ -902,11 +904,14 @@ function mostrar(scr, arg){
   $("topbar").style.display = esOnb? "none":"flex";
   document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("sel", b.dataset.scr===scr));
   const esNivel1 = ["anio","mes","diaria","progreso","info"].includes(scr);
+  const esDetalle = ["anio-detalle","mes-detalle","clase"].includes(scr);
   $("btnAtras").classList.toggle("visible", registrado && !esNivel1);
-  $("btnCampana").classList.toggle("visible", registrado && !esOnb);
+  $("btnGuia").classList.toggle("visible", registrado && esDetalle);
+  $("logoTop").style.display = esDetalle? "none":"flex";
+  $("ttApp").style.display = esDetalle? "none":"block";
+  $("btnCampana").classList.toggle("visible", registrado && !esOnb && !esDetalle);
   actualizarCampana();
   let [t, s] = TITULOS[scr]||["Planificación Docente",""];
-  if(scr==="anio-detalle" && arg) t = "Plan Anual · "+arg;
   $("tituloApp").textContent = t; $("subtituloApp").textContent = s;
   if(scr==="onboarding") renderOnboarding();
   if(scr==="anio") renderAnio();
@@ -1022,6 +1027,68 @@ async function entrarConCodigo(){
   }catch(e){ toast("Sin conexión a internet"); }
 }
 
+/* ---------- MODAL GUÍA TÉCNICA ---------- */
+let guiaActual = null;
+function abrirGuia(){
+  if(!guiaActual) return;
+  $("modalGuiaTitulo").textContent = guiaActual.titulo;
+  $("modalGuiaCuerpo").innerHTML = guiaActual.html;
+  $("modalFondo").classList.add("abierto");
+  $("modalHoja").classList.add("abierta");
+}
+function cerrarGuia(){
+  $("modalFondo").classList.remove("abierto");
+  $("modalHoja").classList.remove("abierta");
+}
+function guiaAnual(){
+  return `
+  <p class="g-intro">Tu planificación anual es la hoja de ruta del año escolar: organiza las competencias, contenidos y situaciones de aprendizaje de agosto a junio, en tres trimestres, según la Adecuación Curricular 2023.</p>
+  <h3>Cómo aplicarla paso a paso</h3>
+  <div class="g-paso"><b>1. Parte de las competencias</b><span>Lee las competencias fundamentales y las específicas del grado: son el norte de todas tus unidades. Todo lo que planifiques debe movilizarlas.</span></div>
+  <div class="g-paso"><b>2. Contextualiza las situaciones</b><span>Adapta el reto y el producto final de cada unidad a la realidad de tus estudiantes y de tu comunidad educativa.</span></div>
+  <div class="g-paso"><b>3. Dosifica los contenidos</b><span>Sigue la secuencia mes a mes: cada mes desarrolla un tema con sus contenidos conceptuales, procedimentales y actitudinales.</span></div>
+  <div class="g-paso"><b>4. Planifica la evaluación desde el inicio</b><span>Define qué evidencias e instrumentos usarás en cada trimestre antes de comenzar, no al final.</span></div>
+  <div class="g-paso"><b>5. Revisa y ajusta cada trimestre</b><span>Al cierre de cada trimestre revisa el avance real (asistencia, logros y calificaciones en la app) y ajusta tiempos y estrategias.</span></div>
+  <h3>Sugerencias prácticas</h3>
+  <ul class="g-lista">
+    <li>Integra los ejes transversales de forma natural, no como temas aislados.</li>
+    <li>Usa la app como evidencia: tus registros diarios alimentan la revisión trimestral.</li>
+    <li>Descarga el plan anual en Word para entregarlo a coordinación o dirección.</li>
+  </ul>`;
+}
+function guiaMensual(){
+  return `
+  <p class="g-intro">La unidad de aprendizaje es el puente entre tu plan anual y tu práctica diaria: un tema integrador que se desarrolla en varias semanas a partir de una situación con reto real.</p>
+  <h3>Cómo aplicarla paso a paso</h3>
+  <div class="g-paso"><b>1. Comprende la situación de aprendizaje</b><span>Lee el escenario, el reto, la estrategia y el producto final: todo lo que hagas en el mes apunta a ese producto.</span></div>
+  <div class="g-paso"><b>2. Revisa los componentes curriculares</b><span>Verifica qué competencias, contenidos (conceptuales, procedimentales y actitudinales) e indicadores de logro se movilizan en la unidad.</span></div>
+  <div class="g-paso"><b>3. Sigue la secuencia didáctica</b><span>Cada semana avanza del inicio al cierre: exploración de saberes previos, construcción y práctica, y consolidación con el producto final.</span></div>
+  <div class="g-paso"><b>4. Registra el avance en la app</b><span>Pasa lista y evalúa logros desde la clase diaria; el progreso de la unidad se calcula automáticamente.</span></div>
+  <div class="g-paso"><b>5. Cierra con evaluación auténtica</b><span>Evalúa el producto final con las técnicas e instrumentos del plan (rúbricas, portafolios, listas de cotejo).</span></div>
+  <h3>Sugerencias prácticas</h3>
+  <ul class="g-lista">
+    <li>Si la situación no conecta con tu grupo, adáptala manteniendo la competencia y el indicador.</li>
+    <li>Usa el progreso de Clases para detectar días con baja asistencia y reprogramar.</li>
+    <li>Pídele a Delega un plan con clases diarias detalladas para esta unidad.</li>
+  </ul>`;
+}
+function guiaClase(){
+  return `
+  <p class="g-intro">La planificación diaria es el nivel más operativo: aquí movilizas las competencias en una sesión concreta con la secuencia oficial Inicio · Desarrollo · Cierre.</p>
+  <h3>Cómo aplicar la clase</h3>
+  <div class="g-paso"><b>1. Prepara antes de entrar</b><span>Revisa la intención pedagógica y el indicador de logro, y ten listos los recursos del día.</span></div>
+  <div class="g-paso"><b>2. Inicio: recupera saberes previos</b><span>Saludo, pase de lista y preguntas problematizadoras que conecten la clase anterior con la de hoy.</span></div>
+  <div class="g-paso"><b>3. Desarrollo: construye y practica</b><span>Es el cuerpo de la clase: los estudiantes interactúan con el contenido y realizan la tarea principal. Usa el temporizador con los minutos reales de cada momento.</span></div>
+  <div class="g-paso"><b>4. Cierre: metacognición</b><span>Pregunta qué aprendimos, cómo lo hicimos y para qué nos sirve. Registra la asistencia y los logros desde esta misma pantalla.</span></div>
+  <div class="g-paso"><b>5. Deja evidencia</b><span>Escribe la observación del día y descarga los PDFs de asistencia y logros cuando los necesites.</span></div>
+  <h3>Sugerencias prácticas</h3>
+  <ul class="g-lista">
+    <li>El temporizador se adapta a los tiempos de cada momento y a la clase completa.</li>
+    <li>El registro del día está contraído: despliégalo solo cuando vayas a marcar.</li>
+    <li>Usa las iniciales P (presente), A (ausente) y N (neutral) para marcar más rápido.</li>
+  </ul>`;
+}
+
 /* ---------- RENDER: AÑO (plan anual del nivel del docente) ---------- */
 function renderAnio(){
   const nivel = S.docente.nivel;
@@ -1029,7 +1096,7 @@ function renderAnio(){
   const A = ANUAL_MINERD[nivel];
   let html = `
   <div class="hero">
-    <h2>Planes Anuales ${ANIO_ESCOLAR}</h2>
+    <h2>Planificación anual ${ANIO_ESCOLAR}</h2>
     <p>Tu plan anual del nivel ${esc(nivel)}: 11 unidades de agosto 2026 a junio 2027, en 3 trimestres, según la Adecuación Curricular vigente del MINERD.</p>
     <div class="row">
       <div class="ringbox">${ring(avanceAnual(),56,7,"#fff")}<small>Unidades</small></div>
@@ -1047,7 +1114,7 @@ function renderAnio(){
   </div>
   <h2 class="mini">Tu plan anual</h2>
   <div class="item" onclick="irA('anio-detalle','${esc(nivel)}')">
-    <div class="ic">${ic("plan")}</div>
+    <div class="ic">${ic("calAnual")}</div>
     <div class="tx"><b>${esc(info.titulo)} ${ANIO_ESCOLAR}</b><span>${esc(A.descripcion)}</span></div>
   </div>`;
   $("scr-anio").innerHTML = html;
@@ -1056,6 +1123,7 @@ function renderAnio(){
 /* ---------- RENDER: AÑO DETALLE (estructura MINERD completa) ---------- */
 function renderAnioDetalle(nivel){
   nivel = (nivel && PLANES_ANUALES[nivel])? nivel : S.docente.nivel;
+  guiaActual = { titulo:"Guía técnica · Planificación anual", html: guiaAnual() };
   const info = PLANES_ANUALES[nivel];
   const A = ANUAL_MINERD[nivel];
   const temas = info.temas;
@@ -1172,6 +1240,7 @@ function renderMes(){
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#fff")}<small>Asistencias</small></div>
     </div>
   </div>
+  <h2 class="mini">Tus planes mensuales</h2>
   <div style="display:flex;justify-content:flex-end;margin-bottom:4px">
     <button class="btn-soft" style="flex:0 0 auto;padding:8px 14px" onclick="refrescarPlanes()">${ic("refrescar")} Actualizar</button>
   </div>`;
@@ -1182,7 +1251,7 @@ function renderMes(){
     lista.forEach(p=>{
       const est = estadoMes(p.mes);
       html += `<div class="item" onclick="abrirPlan('${p.id}')">
-        <div class="ic">${ic("lista")}</div>
+        <div class="ic">${ic("calMensual")}</div>
         <div class="tx"><b>${esc(p.titulo)}</b><span>${esc(p.mes)} · ${p.nSem} semanas</span></div>
         <span style="display:inline-flex;flex-direction:column;gap:4px;align-items:flex-end;flex-shrink:0">
           <span class="estado ${est.k}">${est.t}</span>
@@ -1196,9 +1265,7 @@ function renderMes(){
   pintar(unicos.filter(p=>semestreDe(p.mes)==="1er"));
   html += `<div class="sep">2do Semestre · Enero a Junio</div>`;
   pintar(unicos.filter(p=>semestreDe(p.mes)==="2do"));
-  html += `<button class="dl grande" onclick="descargarRegistroPdf('asis')">${ic("descarga")} Descargar asistencias en PDF</button>
-  <button class="dl alt" onclick="descargarRegistroPdf('logros')">${ic("descarga")} Descargar logros en PDF</button>
-  <div style="height:14px"></div>`;
+  html += `<div style="height:14px"></div>`;
   $("scr-mes").innerHTML = html;
 }
 async function refrescarPlanes(){
@@ -1220,6 +1287,7 @@ let planAbierto = null;
 function renderMesDetalle(plan){
   if(!plan){ irA("mes"); return; }
   planAbierto = plan;
+  guiaActual = { titulo:"Guía técnica · Unidad de aprendizaje", html: guiaMensual() };
   const esDerivado = plan.tipo==="derivado";
   let html = `
   <div class="hero">
@@ -1228,7 +1296,8 @@ function renderMesDetalle(plan){
     <div class="row">
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#fff")}<small>Asistencia</small></div>
       <div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
-      <div class="ringbox">${ring(avanceClases(plan),56,7,"#fff")}<small>Clases</small></div>
+      <div class="ringbox">${ring(avanceSemanas(plan),56,7,"#fff")}<small>Semanas</small></div>
+      <div class="ringbox">${ring(avanceClases(plan),56,7,"#FFD6DB")}<small>Clases</small></div>
     </div>
   </div>
   <div class="card">
@@ -1336,6 +1405,39 @@ function promedioLib(){
   for(let i=1;i<=S.docente.alumnos;i++){ const nf=notaLib(i); if(nf!==null){ sum+=nf; cont++; } }
   return cont? Math.round(sum/cont) : 0;
 }
+function promedioAnioLibreta(){
+  let sum=0, cont=0;
+  Object.values(S.libreta||{}).forEach(porTrim=>Object.values(porTrim||{}).forEach(porGrupo=>{
+    Object.values(porGrupo||{}).forEach(c=>{ sum += notaFinalDe(c.p,c.t,c.e); cont++; });
+  }));
+  return cont? Math.round(sum/cont) : 0;
+}
+function asistenciaAnio(){
+  let sum=0, cont=0;
+  Object.keys(S.asistencia).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f)).forEach(f=>{ sum += pctDia(f,"asis"); cont++; });
+  return cont? Math.round(sum/cont) : 0;
+}
+function horasSemana(){
+  const w = planDiario();
+  const dias = w.semana? (w.semana.dias||[]) : [];
+  const dur = (+S.docente.duracionMin || 45)/60;
+  const impartidas = dias.filter(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; }).length;
+  return { h: impartidas*dur, pct: dias.length? Math.round(impartidas*100/dias.length) : 0 };
+}
+function htmlLibretaHero(){
+  const g = S.ui.libGrado || S.docente.grado;
+  const sc = S.ui.libSec || S.docente.seccion || "A";
+  return `
+  <div class="hero">
+    <h2>Libreta del año escolar</h2>
+    <p>Puntos porcentuales por trimestre y grupo · Grado ${esc(g)} · Sección ${esc(sc)}</p>
+    <div class="row">
+      <div class="ringbox">${ring(promedioLib(),56,7,"#fff")}<small>Calificación</small></div>
+      <div class="ringbox">${ring(promedioAnioLibreta(),56,7,"#FFD6DB")}<small>Promedio del año</small></div>
+      <div class="ringbox">${ring(asistenciaAnio(),56,7,"#fff")}<small>Asistencias del año</small></div>
+    </div>
+  </div>`;
+}
 function htmlLibretaPanel(){
   const nivel = S.docente.nivel;
   const g = S.ui.libGrado || S.docente.grado;
@@ -1343,14 +1445,6 @@ function htmlLibretaPanel(){
   const trim = S.ui.libTrim || "1er Trimestre";
   const N = alumnosDe(sc);
   let html = `
-  <div class="hero">
-    <h2>Libreta del año escolar</h2>
-    <p>Puntos porcentuales de participación, trabajo y exámenes de tus alumnos, por trimestre y grupo.</p>
-    <div class="row">
-      <div class="ringbox">${ring(promedioLib(),56,7,"#fff")}<small>Promedio ${esc(trim)}</small></div>
-      <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
-    </div>
-  </div>
   <div class="card">
     <h2>${ic("boletin")} Grupo y período</h2>
     <label class="lbl">Trimestre</label>
@@ -1377,7 +1471,7 @@ function htmlLibretaPanel(){
       <div class="pc-top">
         <div class="an">${i}</div>
         <div class="pc-nombre">Alumno ${i}</div>
-        <span class="escala ${nf===null?"":k}">${nf===null? "Sin registrar" : esc(escalaTexto(k))+" · "+nf}</span>
+        <span class="escala ${nf===null?"":k}">${nf===null? "Sin registrar" : esc(escalaTexto(k))}</span>
         <div class="rg">${ring(nf===null?0:nf,44,5,color, nf===null? "—":String(nf))}</div>
       </div>
       <div class="pc-bottom">
@@ -1426,10 +1520,12 @@ function renderDiaria(){
   const conReg = dias.filter(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; }).length;
   let html = `
   <div class="hero">
-    <h2>Plan Diaria · Semana en curso</h2>
+    <h2>Planificación diaria</h2>
     <p>Semana del ${fmt(lunes)} al ${fmt(vier)}${w.generado? " · Generado desde tu plan mensual de este mes":""}. Toca una clase para registrar asistencia y logros.</p>
     <div class="row">
-      <div class="ringbox">${ring(pctDia(HOY,"asis"),56,7,"#fff")}<small>Diaria</small></div>
+      <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#fff")}<small>Asistencias</small></div>
+      <div class="ringbox">${ring(pctMes(planActivo(),"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
+      <div class="ringbox">${ring(horasSemana().pct,56,7,"#fff", horasSemana().h.toFixed(1).replace(".",",")+"h")}<small>Horas</small></div>
       <div class="ringbox">${ring(dias.length? Math.round(conReg*100/dias.length) : 0,56,7,"#FFD6DB")}<small>Clases</small></div>
     </div>
   </div>`;
@@ -1470,10 +1566,15 @@ function renderClase(claseId){
   const plan = planAbierto || planActivo();
   const d = clasePorId(plan, claseId);
   if(!d){ irA("mes"); return; }
+  guiaActual = { titulo:"Guía técnica · Planificación diaria", html: guiaClase() };
   const s = (plan.semanas||[]).find(w=>w.dias.some(x=>x.id===claseId));
   const pctA = pctDia(claseId,"asis"), pctE = pctDia(claseId,"eval");
   const momentos = d.momentos||[];
   const baseTotal = momentos.reduce((a,m)=>a+(minsDe(m.duracion)||0),0);
+  const dursMomento = momentos.map(m=>minsDe(duracionAjustada(m, baseTotal))).filter(x=>x&&x>0);
+  const durs = [...new Set(dursMomento)];
+  if(durs.length && S.docente.duracionMin) durs.push(Math.round((+S.docente.duracionMin)));
+  else if(durs.length) durs.push(dursMomento.reduce((a,b)=>a+b,0));
   let html = `
   <div class="card">
     <div class="clase-head">
@@ -1482,8 +1583,8 @@ function renderClase(claseId){
         <h2>${esc(d.etiqueta)} · ${esc(d.titulo)}</h2>
         <p>Semana ${s?s.numero:""}: ${s?esc(s.tema):""} · ${esc(plan.mes)}</p>
       </div>
-      <div class="rg" id="headRings" style="display:flex;gap:2px">
-        ${ring(pctA,52,6,"#0033A0")}${ring(pctE,52,6,"#CE1126")}
+      <div class="rg" id="headRings" style="display:flex;flex-direction:column;gap:4px">
+        ${ring(pctA,44,5,"#0033A0")}${ring(pctE,44,5,"#CE1126")}
       </div>
     </div>
     <div class="mcard" style="margin-top:12px">
@@ -1504,13 +1605,13 @@ function renderClase(claseId){
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
   </div>
   ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Momentos ajustados a tu clase de ${S.docente.duracionMin} min (cámbialo en Info).</p>`:""}
-  <h2 class="mini">Momentos de la clase · Inicio · Desarrollo · Cierre</h2>
+  <h2 class="mini">Momentos de la clase</h2>
   ${momentos.map((m,i)=>`
     <div class="momento">
       <div class="m-head"><div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b><span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))}</span></div>
       <p class="prop">Propósito: ${esc(m.proposito)}</p>
       <ol>${(m.pasos||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ol>
-      ${i===0? temporizadorHTML() : ""}
+      ${i===0? temporizadorHTML(durs.length? durs : null) : ""}
     </div>`).join("")}
   <div class="card">
     <h2>${ic("etiqueta")} Recursos y evaluación</h2>
@@ -1519,16 +1620,25 @@ function renderClase(claseId){
     ${(d.orientacion||"").length? `<div class="nota" style="margin-top:10px"><b>${ic("bombilla")} Orientaciones pedagógicas</b>${esc(d.orientacion)}</div>`:""}
   </div>
   <div class="card">
-    <h2>${ic("usuarios")} Registro del día · ${alumnosDe(S.docente.seccion)} alumnos</h2>
-    <div class="tabs">
-      <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
-      <div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · ${alumnosDe(S.docente.seccion)} alumnos</h2>
+      <button class="btn-colapsa" id="btnColapsa" onclick="toggleRegistro()" title="Desplegar lista">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
     </div>
-    <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
-    <div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>
     <div style="display:flex;justify-content:space-around;margin-top:12px">
-      <div style="text-align:center">${ring(pctA,64,7,"#0033A0")}<small class="muted" style="display:block;font-weight:700">Presentes</small></div>
+      <div style="text-align:center">${ring(pctA,64,7,"#0033A0")}<small class="muted" style="display:block;font-weight:700">Presente</small></div>
       <div style="text-align:center">${ring(pctE,64,7,"#CE1126")}<small class="muted" style="display:block;font-weight:700">Logrado</small></div>
+    </div>
+    <div class="colapso" id="zonaRegistro">
+      <div>
+        <div class="tabs" style="margin-top:12px">
+          <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
+          <div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>
+        </div>
+        <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
+        <div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>
+      </div>
     </div>
   </div>
   <div class="card">
@@ -1536,13 +1646,12 @@ function renderClase(claseId){
     <textarea class="obs" id="obsTxt" placeholder="Registra aquí lo más relevante del día: logros, dificultades, situaciones del grupo...">${esc(S.obs[claseId]||"")}</textarea>
     <p class="muted" style="margin-top:6px">Se guarda automáticamente y se sincroniza con la dirección.</p>
   </div>
-  <button class="dl grande" onclick="descargarPlanDiarioPdf('${claseId}')">${ic("descarga")} Descargar plan diario en PDF</button>
   <button class="dl alt" onclick="descargarAsistenciaDiaPdf('${claseId}')">${ic("descarga")} Descargar asistencia en PDF</button>
   <button class="dl alt" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar logros en PDF</button>
   <button class="dl" onclick="descargarPlanDiarioDocx('${claseId}')">${ic("descarga")} Descargar plan diario en Word (.docx)</button>
   <div style="height:14px"></div>`;
   $("scr-clase").innerHTML = html;
-  initTimer();
+  initTimer(durs.length? durs : null);
   $("obsTxt").addEventListener("input", ()=>{
     S.obs[claseId] = $("obsTxt").value;
     guardar();
@@ -1559,16 +1668,16 @@ function alumnosHTML(claseId, tipo){
     if(tipo==="A"){
       html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
-          <button class="${st==="Presente"?"selP":""}" onclick="marcar('A','${claseId}',${i},'Presente')">Presente</button>
-          <button class="${st===null?"selA":""}" onclick="marcar('A','${claseId}',${i},null)">Sin reg.</button>
-          <button class="${st==="Ausente"?"selA":""}" onclick="marcar('A','${claseId}',${i},'Ausente')">Ausente</button>
+          <button class="${st==="Presente"?"selP":""}" title="Presente" onclick="marcar('A','${claseId}',${i},'Presente')">P</button>
+          <button class="${st===null?"selA":""}" title="Neutral (sin registrar)" onclick="marcar('A','${claseId}',${i},null)">N</button>
+          <button class="${st==="Ausente"?"selA":""}" title="Ausente" onclick="marcar('A','${claseId}',${i},'Ausente')">A</button>
         </div></div>`;
     } else {
       html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
-          <button class="${st==="Logrado"?"selL":""}" onclick="marcar('E','${claseId}',${i},'Logrado')">Logrado</button>
-          <button class="${st==="En proceso"?"selEP":""}" onclick="marcar('E','${claseId}',${i},'En proceso')">En proc.</button>
-          <button class="${st===null?"selA":""}" onclick="marcar('E','${claseId}',${i},null)">Sin evaluar</button>
+          <button class="${st==="Logrado"?"selL":""}" title="Logrado" onclick="marcar('E','${claseId}',${i},'Logrado')">L</button>
+          <button class="${st==="En proceso"?"selEP":""}" title="En proceso" onclick="marcar('E','${claseId}',${i},'En proceso')">E</button>
+          <button class="${st===null?"selA":""}" title="Neutral (sin evaluar)" onclick="marcar('E','${claseId}',${i},null)">N</button>
         </div></div>`;
     }
   }
@@ -1586,7 +1695,11 @@ function marcar(tipo, claseId, n, valor){
   if(tipo==="A") $("zonaA").innerHTML = alumnosHTML(claseId,"A");
   else $("zonaE").innerHTML = alumnosHTML(claseId,"E");
   const el = $("headRings");
-  if(el) el.innerHTML = ring(pctDia(claseId,"asis"),52,6,"#0033A0") + ring(pctDia(claseId,"eval"),52,6,"#CE1126");
+  if(el) el.innerHTML = ring(pctDia(claseId,"asis"),44,5,"#0033A0") + ring(pctDia(claseId,"eval"),44,5,"#CE1126");
+}
+function toggleRegistro(){
+  $("zonaRegistro").classList.toggle("abierta");
+  $("btnColapsa").classList.toggle("abierto");
 }
 function tabClase(t){
   $("tabA").classList.toggle("sel", t==="A");
@@ -1596,7 +1709,9 @@ function tabClase(t){
 }
 
 /* ---------- TEMPORIZADOR ---------- */
-function temporizadorHTML(){
+function temporizadorHTML(durs){
+  durs = (durs && durs.length)? durs : [5,10,15];
+  const btns = durs.map((m,i)=>`<button class="dur-btn ${i===0?"sel":""}" onclick="setDur(${m},this)">${m} min</button>`).join("");
   return `
   <div class="timer-wrap" id="timerBox">
     <div class="timer-ring">
@@ -1605,15 +1720,10 @@ function temporizadorHTML(){
         <circle id="timerRing" cx="48" cy="48" r="40" fill="none" stroke="#CE1126" stroke-width="8"
           stroke-linecap="round" stroke-dasharray="${2*Math.PI*40}" stroke-dashoffset="0"/>
       </svg>
-      <div class="t-txt"><b id="timerTxt">05:00</b><small id="timerEstado">Listo</small></div>
+      <div class="t-txt"><b id="timerTxt">${String(Math.floor((durs[0]*60)/60)).padStart(2,"0")}:00</b><small id="timerEstado">Listo</small></div>
     </div>
     <div class="timer-ctrl">
-      <div class="timer-durs">
-        <button class="dur-btn sel" onclick="setDur(5,this)">5 min</button>
-        <button class="dur-btn" onclick="setDur(10,this)">10 min</button>
-        <button class="dur-btn" onclick="setDur(15,this)">15 min</button>
-        <button class="dur-btn" onclick="setDur(20,this)">20 min</button>
-      </div>
+      <div class="timer-durs">${btns}</div>
       <div class="timer-btns">
         <button class="btn-soft" id="btnPlay" onclick="playTimer()">${ic("play",14)} Iniciar</button>
         <button class="btn-soft" onclick="resetTimer()">${ic("reiniciar",14)} Reiniciar</button>
@@ -1674,7 +1784,10 @@ function beep(){
     });
   }catch(e){}
 }
-function initTimer(){ T={dur:300,resta:300,corriendo:false,iv:null}; }
+function initTimer(durs){
+  const d = (durs && durs.length)? durs[0]*60 : 300;
+  T={dur:d,resta:d,corriendo:false,iv:null};
+}
 
 /* ---------- PROGRESO ---------- */
 function grupoProg(){ return ((S.ui.progGrado||S.docente.grado)+"|"+(S.ui.progSec||S.docente.seccion||"A")); }
@@ -1694,23 +1807,27 @@ function promedioGrupo(){
   for(let i=1;i<=S.docente.alumnos;i++){ const nf=notaDe(i); if(nf!==null){ sum+=nf; cont++; } }
   return cont? Math.round(sum/cont) : 0;
 }
-function htmlProgresoPanel(){
-  const nivel = S.docente.nivel;
+function htmlProgresoHero(){
   const g = S.ui.progGrado || S.docente.grado;
   const sc = S.ui.progSec || S.docente.seccion || "A";
   const plan = planAbierto || planActivo();
-  const prom = promedioGrupo();
-  const N = alumnosDe(sc);
-  let html = `
+  return `
   <div class="hero">
     <h2>Progreso del grupo</h2>
     <p>Calificaciones de ${esc(S.docente.periodo)} · Grado ${esc(g)} · Sección ${esc(sc)}</p>
     <div class="row">
-      <div class="ringbox">${ring(prom,56,7,"#fff")}<small>Promedio</small></div>
+      <div class="ringbox">${ring(promedioGrupo(),56,7,"#fff")}<small>Promedio</small></div>
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
       <div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logros</small></div>
     </div>
-  </div>
+  </div>`;
+}
+function htmlProgresoPanel(){
+  const nivel = S.docente.nivel;
+  const g = S.ui.progGrado || S.docente.grado;
+  const sc = S.ui.progSec || S.docente.seccion || "A";
+  const N = alumnosDe(sc);
+  let html = `
   <div class="card">
     <h2>${ic("boletin")} Período y escala MINERD</h2>
     <label class="lbl">Período</label>
@@ -1756,7 +1873,8 @@ function htmlProgresoPanel(){
 }
 function renderProgreso(){
   const esLib = S.ui.progTab==="libreta";
-  let html = `
+  let html = esLib? htmlLibretaHero() : htmlProgresoHero();
+  html += `
   <div class="ptabs">
     <div class="pt-ind ${esLib?"der":""}"></div>
     <button class="${esLib?"":"sel"}" onclick="progTab('progreso')">${ic("tendencia",15)} Progreso</button>

@@ -261,9 +261,13 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .estado.curso{background:linear-gradient(135deg,var(--rojo),#e6414f);color:#fff;box-shadow:0 3px 8px rgba(206,17,38,.3)}
 .estado.pend{background:rgba(90,107,133,.12);color:var(--tinta-suave)}
 
+/* ---------- GRUPO DERECHO DEL TOPBAR ---------- */
+.top-right{margin-left:auto;display:flex;align-items:center;gap:7px;flex-shrink:0}
+.pc-top{cursor:pointer}
+
 /* ---------- FOTO DE PERFIL ---------- */
 .foto-perfil{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.92);
-  box-shadow:0 2px 10px rgba(0,28,90,.3);margin-left:8px;flex-shrink:0}
+  box-shadow:0 2px 10px rgba(0,28,90,.3);flex-shrink:0}
 
 /* ---------- MODAL GUÍA TÉCNICA ---------- */
 .g-fondo{position:fixed;inset:0;background:rgba(2,18,50,.48);z-index:80;opacity:0;pointer-events:none;transition:opacity .25s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
@@ -315,10 +319,6 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
       Volver atrás
     </button>
-    <button class="btn-atras" id="btnGuia" onclick="abrirGuia()" style="display:none">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><circle cx="12" cy="8" r="0.5" fill="currentColor"/></svg>
-      Guía técnica
-    </button>
     <div class="logo" id="logoTop">
       <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M6 10.5V15c0 1.7 3 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 8v5"/></svg>
     </div>
@@ -326,11 +326,16 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
       <h1 id="tituloApp">Planificación Docente</h1>
       <p id="subtituloApp">Currículo MINERD · República Dominicana</p>
     </div>
-    <img id="fotoPerfil" class="foto-perfil" alt="Foto de perfil" style="display:none">
-    <button class="btn-campana" id="btnCampana" onclick="irA('notificaciones')">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
-      <span class="badge-campana" id="badgeNotif"></span>
-    </button>
+    <div class="top-right">
+      <button class="btn-campana" id="btnGuia" onclick="abrirGuia()" title="Guía técnica">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.3a2.8 2.8 0 1 1 4.1 2.5c-.8.4-1.3 1-1.3 1.9"/><circle cx="12" cy="16.6" r="0.7" fill="currentColor"/></svg>
+      </button>
+      <img id="fotoPerfil" class="foto-perfil" alt="Foto de perfil" style="display:none">
+      <button class="btn-campana" id="btnCampana" onclick="irA('notificaciones')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <span class="badge-campana" id="badgeNotif"></span>
+      </button>
+    </div>
   </div>
 
   <div class="screen" id="scr-onboarding"></div>
@@ -369,11 +374,18 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
   <p class="g-sub" id="modalGuiaSub">Guía práctica alineada a la Adecuación Curricular 2023</p>
   <div id="modalGuiaCuerpo"></div>
 </div>
+<div class="g-fondo" id="modalHistFondo" onclick="cerrarHistorial()"></div>
+<div class="g-hoja" id="modalHistHoja">
+  <div class="g-asa"></div>
+  <h2 id="histTitulo"></h2>
+  <p class="g-sub" id="histSub"></p>
+  <div id="histCuerpo"></div>
+</div>
 <div id="toast"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js"></script>
+<script src="app-docente.js?v=8"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

@@ -554,10 +554,11 @@ const LS_VIEJO2 = "plan_docente_rd_v2";
 function estadoDefault(){
   return {
     docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er Trimestre" },
-    asistencia:{}, evaluacion:{}, tiempoClase:{}, puntos:{}, obs:{}, calificaciones:{}, libreta:{},
+    asistencia:{}, evaluacion:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
     notificaciones:[], vistosPlanes:0,
     ui:{ progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er Trimestre", libFecha:null, histFiltro:"anio" },
+    puntosMigrados: true,
   };
 }
 function normalizar(d){
@@ -571,12 +572,42 @@ function normalizar(d){
     docente: doc,
     asistencia: d.asistencia||{}, evaluacion: d.evaluacion||{}, obs: d.obs||{},
     calificaciones: d.calificaciones||{}, libreta: d.libreta||{},
-    tiempoClase: d.tiempoClase||{}, puntos: d.puntos||{},
+    tiempoClase: d.tiempoClase||{}, crono: d.crono||{},
     cola: d.cola||[], lastSync: d.lastSync||null,
     planesCache: d.planesCache||{}, listaPlanes: d.listaPlanes||null,
     notificaciones: d.notificaciones||[], vistosPlanes: d.vistosPlanes||0,
     ui: Object.assign({}, def.ui, d.ui||{}),
+    puntosMigrados: true,
+    puntos: migrarPuntos(d),
   };
+}
+function migrarPuntos(d){
+  const puntos = d.puntos && typeof d.puntos==="object"? d.puntos : {};
+  if(d.puntosMigrados) return puntos;
+  const fechasTrim = { "1er Trimestre":"2026-10-31", "2do Trimestre":"2027-02-26", "3er Trimestre":"2027-06-18" };
+  const gruposF = (mapa)=>{ const out = [];
+    if(!mapa || typeof mapa!=="object") return out;
+    Object.keys(mapa).forEach(t=>{ const gs = mapa[t]||{};
+      Object.keys(gs).forEach(k=>{ const als = gs[k]||{};
+        Object.keys(als).forEach(n=>{ out.push({ grupo:k, n:+n, trim:t, v:als[n] }); }); }); });
+    return out; };
+  const sembrar = (regs, fuente)=>{
+    regs.forEach(o=>{
+      if(!o.v) return;
+      if(!puntos[o.grupo]) puntos[o.grupo] = {};
+      const arr = Array.isArray(puntos[o.grupo][o.n])? puntos[o.grupo][o.n] : (puntos[o.grupo][o.n] = []);
+      const fecha = fechasTrim[o.trim] || HOY;
+      [["P",o.v.p],["T",o.v.t],["E",o.v.e]].forEach(([tipo,val])=>{
+        if(val!==undefined && val!==null && !arr.some(x=>x.f===fecha && x.tipo===tipo)){
+          arr.push({ f:fecha, tipo, pts:+val||0, com:"Migrado de "+fuente });
+        }
+      });
+      arr.sort((a,b)=> a.f<b.f? 1 : -1);
+    });
+  };
+  sembrar(gruposF(d.libreta), "libreta");
+  sembrar(gruposF(d.calificaciones), "progreso");
+  return puntos;
 }
 function cargarEstado(){
   try{ const d = JSON.parse(localStorage.getItem(LS_KEY)); if(d && d.docente) return normalizar(d); }catch(e){}
@@ -903,6 +934,7 @@ function mostrar(scr, arg){
   const registrado = !!S.docente.id;
   const esOnb = scr==="onboarding";
   $("nav").classList.toggle("oculto", !registrado || esOnb);
+  $("nav").style.display = (!registrado || esOnb)? "none" : "flex";
   $("topbar").style.display = esOnb? "none":"flex";
   document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("sel", b.dataset.scr===scr));
   const esNivel1 = ["anio","mes","diaria","progreso","info"].includes(scr);
@@ -1425,24 +1457,17 @@ async function abrirClase(claseId){
 /* ---------- LIBRETA ---------- */
 function grupoLibreta(){ return ((S.ui.libGrado||S.docente.grado)+"|"+(S.ui.libSec||S.docente.seccion||"A")); }
 function califsLib(){
-  const t = S.ui.libTrim||"1er Trimestre";
-  if(!S.libreta) S.libreta = {};
-  if(!S.libreta[t]) S.libreta[t] = {};
-  const k = grupoLibreta();
-  if(!S.libreta[t][k]) S.libreta[t][k] = {};
-  return S.libreta[t][k];
+  const N = alumnosDe(S.ui.libSec||S.docente.seccion||"A");
+  const grupo = grupoLibreta();
+  const t = S.ui.libTrim || trimDeFecha(S.ui.libFecha||HOY);
+  const out = {};
+  for(let i=1;i<=N;i++){ const c = valoresDe(puntosDe(grupo,i), t); if(c) out[i] = c; }
+  return out;
 }
 function notaLib(n){ const c = califsLib()[n]; return c? notaFinalDe(c.p,c.t,c.e) : null; }
 function promedioLib(){
   let sum=0, cont=0;
   for(let i=1;i<=S.docente.alumnos;i++){ const nf=notaLib(i); if(nf!==null){ sum+=nf; cont++; } }
-  return cont? Math.round(sum/cont) : 0;
-}
-function promedioAnioLibreta(){
-  let sum=0, cont=0;
-  Object.values(S.libreta||{}).forEach(porTrim=>Object.values(porTrim||{}).forEach(porGrupo=>{
-    Object.values(porGrupo||{}).forEach(c=>{ sum += notaFinalDe(c.p,c.t,c.e); cont++; });
-  }));
   return cont? Math.round(sum/cont) : 0;
 }
 function asistenciaAnio(){
@@ -1477,127 +1502,28 @@ function fmtCrono(seg){
   if(h>0) return h+"h "+String(m).padStart(2,"0")+"m";
   return m+"m "+String(s).padStart(2,"0")+"s";
 }
-function htmlLibretaHero(){
-  const g = S.ui.libGrado || S.docente.grado;
-  const sc = S.ui.libSec || S.docente.seccion || "A";
-  const trim = S.ui.libTrim || "1er Trimestre";
-  return `
-  <div class="hero">
-    <h2>Libreta del año escolar</h2>
-    <p>Puntos porcentuales por trimestre y grupo · Grado ${esc(g)} · Sección ${esc(sc)}</p>
-    <div class="row">
-      <div class="ringbox">${ring(pctEvaluacionClases(),56,7,"#fff")}<small>Evaluación</small></div>
-      <div class="ringbox">${ring(promedioLib(),56,7,"#FFD6DB")}<small>Promedios</small></div>
-      <div class="ringbox">${ring(asistenciaTrim(trimDePeriodo(trim)),56,7,"#fff")}<small>Asistencias</small></div>
-    </div>
-  </div>`;
-}
-function pctEvaluacionClases(){
-  const fechas = fechasRegistradas("eval");
-  if(!fechas.length) return 0;
-  const N = alumnosDe(S.docente.seccion);
-  let evals = 0;
-  fechas.forEach(f=>{
-    const reg = S.evaluacion[f]||{};
-    for(let i=1;i<=N;i++){ if(reg[i]) evals++; }
-  });
-  return Math.round(evals*100/(fechas.length*N));
-}
-function asistenciaTrim(trim){
-  const fechas = fechasRegistradas("asis").filter(f=>trimestreDeMes(parseInt(f.slice(5,7)))===trim);
-  if(!fechas.length) return 0;
-  let sum=0;
-  fechas.forEach(f=>sum += pctDia(f,"asis"));
-  return Math.round(sum/fechas.length);
-}
-function htmlLibretaPanel(){
-  const nivel = S.docente.nivel;
-  const g = S.ui.libGrado || S.docente.grado;
-  const sc = S.ui.libSec || S.docente.seccion || "A";
-  const trim = S.ui.libTrim || "1er Trimestre";
-  const N = alumnosDe(sc);
-  let html = `
-  <div class="card">
-    <h2>${ic("boletin")} Grupo y fecha</h2>
-    <label class="lbl">Fecha de registro</label>
-    <input type="date" class="inp" id="libFecha" value="${esc(S.ui.libFecha||HOY)}" onchange="libSel('fecha')">
-    <label class="lbl">Grado</label>
-    <select class="inp" id="libGrado" onchange="libSel('grado')">
-      ${GRADOS_POR_NIVEL[nivel].map(x=>`<option value="${esc(x)}" ${x===g?"selected":""}>${esc(x)} (${esc(nivel)})</option>`).join("")}
-    </select>
-    <label class="lbl">Sección</label>
-    <select class="inp" id="libSec" onchange="libSel('sec')">
-      ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
-    </select>
-    <p class="muted">Mostrando Alumno 1 a ${N} del grado ${esc(g)} · Sección ${esc(sc)} · Fecha: ${esc(fmtFechaLinda(S.ui.libFecha||HOY))} (${esc(trim)}). Puedes cambiar la cantidad de alumnos en Info.</p>
-  </div>
-  <h2 class="mini">Registro porcentual por alumno</h2>`;
-  for(let i=1;i<=N;i++){
-    const c = califsLib()[i]||{};
-    const nf = notaLib(i);
-    const k = nf===null? "—" : escalaDe(nf);
-    const color = nf===null? "#94a3b8" : (nf>=70? "#0033A0" : "#CE1126");
-    html += `<div class="prog-card">
-      <div class="pc-top" onclick="abrirHistorial(${i},'libreta')" title="Ver historial de puntos">
-        <div class="an">${i}</div>
-        <div class="pc-nombre">Alumno ${i}</div>
-        <span class="escala ${nf===null?"":k}">${nf===null? "Sin registrar" : esc(escalaTexto(k))}</span>
-        <div class="rg">${ring(nf===null?0:nf,44,5,color, nf===null? "—":String(nf))}</div>
-      </div>
-      <div class="pc-bottom">
-        <div class="prog-inputs">
-          <label>Participación<input type="number" min="0" max="100" inputmode="numeric" id="libP_${i}" value="${c.p!==undefined?esc(c.p):""}" oninput="guardarLib(${i})"></label>
-          <label>Trabajo<input type="number" min="0" max="100" inputmode="numeric" id="libT_${i}" value="${c.t!==undefined?esc(c.t):""}" oninput="guardarLib(${i})"></label>
-          <label>Exámenes<input type="number" min="0" max="100" inputmode="numeric" id="libE_${i}" value="${c.e!==undefined?esc(c.e):""}" oninput="guardarLib(${i})"></label>
-        </div>
-        <button class="btn-mini" title="Reporte individual" onclick="descargarBoletinIndividual(${i},'libreta')">${ic("descarga",15)}</button>
-      </div>
-    </div>`;
-  }
-  html += `<button class="dl grande" onclick="descargarBoletinGrupo('libreta')">${ic("descarga")} Descargar libreta del grupo en PDF</button>
-  <div style="height:14px"></div>`;
-  return html;
-}
-function libSel(q){
-  if(q==="fecha"){ S.ui.libFecha = $("libFecha").value || HOY; S.ui.libTrim = trimDeFecha(S.ui.libFecha); }
-  if(q==="grado") S.ui.libGrado = $("libGrado").value;
-  if(q==="sec") S.ui.libSec = $("libSec").value;
-  guardar();
-  renderProgreso();
-}
-function guardarLib(n){
-  const fecha = S.ui.libFecha || HOY;
-  S.ui.libTrim = trimDeFecha(fecha);
-  const c = califsLib();
-  const p = $("libP_"+n).value, t = $("libT_"+n).value, e = $("libE_"+n).value;
-  if(p==="" && t==="" && e===""){ delete c[n]; }
-  else c[n] = { p:p===""?0:+p, t:t===""?0:+t, e:e===""?0:+e };
-  const grupo = grupoLibreta();
-  if(p!=="") upsertPunto(grupo, n, fecha, "P", +p);
-  if(t!=="") upsertPunto(grupo, n, fecha, "T", +t);
-  if(e!=="") upsertPunto(grupo, n, fecha, "E", +e);
-  guardar();
-  const nf = notaLib(n);
-  encolar("calificaciones", S.ui.libTrim, { alumno:"Alumno "+n, participacion:c[n]?c[n].p:0, trabajos:c[n]?c[n].t:0, examen:c[n]?c[n].e:0, final:nf===null?0:nf },
-    null, { grado:S.ui.libGrado||S.docente.grado, seccion:S.ui.libSec||S.docente.seccion||"A" });
-  clearTimeout(window._libT);
-  window._libT = setTimeout(()=>{
-    if($("scr-progreso").classList.contains("visible") && S.ui.progTab==="libreta") renderProgreso();
-    toast("Puntos de Alumno "+n+" sincronizados");
-  }, 900);
-}
-
 /* ---------- RENDER: DIARIA ---------- */
+const DIAS_ES = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+function diaDeId(id){ try{ return new Date(id+"T12:00").getDay(); }catch(e){ return 1; } }
+function nombreDiaDe(id){ return DIAS_ES[diaDeId(id)]||"—"; }
+function ordenDiario(dias){
+  const hoyIdx = diaDeId(HOY);
+  return dias.slice().sort((a,b)=>{
+    const sa = (diaDeId(a.id)-hoyIdx+7)%7, sb = (diaDeId(b.id)-hoyIdx+7)%7;
+    return sa-sb;
+  });
+}
 function renderDiaria(){
   const w = planDiario();
-  const dias = w.semana? (w.semana.dias||[]) : [];
+  const totalPlan = (w.plan && w.plan.semanas||[]).reduce((a,s)=>a+((s&&s.dias)||[]).length,0);
+  const dias = w.semana? ordenDiario(w.semana.dias||[]) : [];
   const lunes = lunesActual(); const vier = new Date(lunes); vier.setDate(lunes.getDate()+4);
   const fmt = d => d.getDate()+" "+MESES_ES[d.getMonth()].slice(0,3).toLowerCase();
   const conReg = dias.filter(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; }).length;
   let html = `
   <div class="hero">
     <h2>Planificación diaria</h2>
-    <p>Semana del ${fmt(lunes)} al ${fmt(vier)}${w.generado? " · Generado desde tu plan mensual de este mes":""}. Toca una clase para registrar asistencia y logros.</p>
+    <p>Semana del ${fmt(lunes)} al ${fmt(vier)}${w.generado? " · Generado desde tu plan mensual de este mes":""} · ${totalPlan} clases en el plan mensual en curso. Toca una clase para registrar asistencia y logros.</p>
     <div class="row">
       <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#fff")}<small>Asistencias</small></div>
       <div class="ringbox">${ring(pctMes(planActivo(),"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
@@ -1613,8 +1539,7 @@ function renderDiaria(){
       html += `<div class="item" onclick="abrirClaseDiaria('${d.id}')">
         <div class="ic">${ic("diaria")}</div>
         <div class="tx"><b>${esc(d.etiqueta)} · ${esc(d.titulo)}</b><span>${esc((d.desempenos||[""])[0])}</span></div>
-        <div class="rg">${ring(pctCrono(d.id),46,6,"#0033A0",fmtCrono(S.tiempoClase[d.id]||0))}</div>
-        ${esHoy? '<span class="hoy-badge">HOY</span>':""}
+        <span class="dia-etq ${esHoy?"hoy":""}">${esHoy? "Hoy" : nombreDiaDe(d.id)}</span>
       </div>`;
     });
   }
@@ -1659,9 +1584,7 @@ function renderClase(claseId){
         <h2>${esc(d.etiqueta)} · ${esc(d.titulo)}</h2>
         <p>Semana ${s?s.numero:""}: ${s?esc(s.tema):""} · ${esc(plan.mes)}</p>
       </div>
-      <div class="rg" id="headRings" style="display:flex">
-        ${ring(pctCrono(claseId),60,7,"#0033A0",fmtCrono(S.tiempoClase[claseId]||0))}
-      </div>
+      <div class="ringcol" id="headRings">${ringDuo(claseId)}</div>
     </div>
     <div class="mcard" style="margin-top:12px">
       <div class="kv"><b>Fecha</b><span>${esc(claseId)}</span></div>
@@ -1681,13 +1604,20 @@ function renderClase(claseId){
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
   </div>
   ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Momentos ajustados a tu clase de ${S.docente.duracionMin} min (cámbialo en Info).</p>`:""}
+  <div class="card">
+    <h2>${ic("reloj")} Cronómetro de la clase</h2>
+    <p class="muted" style="margin-bottom:8px;font-size:12.5px">Cronometra cada momento o la clase completa. Si sales o recargas, el tiempo queda guardado tal como lo dejaste.</p>
+    ${temporizadorHTML(durs.length? durs : null)}
+  </div>
   <h2 class="mini">Momentos de la clase</h2>
   ${momentos.map((m,i)=>`
     <div class="momento">
-      <div class="m-head"><div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b><span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))}</span></div>
+      <div class="m-head" onclick="abrirMomento(${i})" title="Ver cómo desarrollar este momento">
+        <div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b>
+        <span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))} · guía</span>
+      </div>
       <p class="prop">Propósito: ${esc(m.proposito)}</p>
       <ol>${(m.pasos||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ol>
-      ${i===0? temporizadorHTML(durs.length? durs : null) : ""}
     </div>`).join("")}
   <div class="card">
     <h2>${ic("etiqueta")} Recursos y evaluación</h2>
@@ -1701,10 +1631,6 @@ function renderClase(claseId){
       <button class="btn-colapsa" id="btnColapsa" onclick="toggleRegistro()" title="Desplegar lista">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
-    </div>
-    <div style="display:flex;justify-content:space-around;margin-top:12px">
-      <div style="text-align:center">${ring(pctA,64,7,"#0033A0")}<small class="muted" style="display:block;font-weight:700">Presente</small></div>
-      <div style="text-align:center">${ring(pctE,64,7,"#CE1126")}<small class="muted" style="display:block;font-weight:700">Logrado</small></div>
     </div>
     <div class="colapso" id="zonaRegistro">
       <div>
@@ -1742,26 +1668,35 @@ function alumnosHTML(claseId, tipo){
   for(let i=1;i<=N;i++){
     const st = reg[i]||null;
     if(tipo==="A"){
+      const efectivo = st===null? "Presente" : st;
       html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
-          <button class="${st==="Presente"?"selP":""}" title="Presente" onclick="marcar('A','${claseId}',${i},'Presente')">P</button>
-          <button class="${st===null?"selA":""}" title="Neutral (sin registrar)" onclick="marcar('A','${claseId}',${i},null)">N</button>
-          <button class="${st==="Ausente"?"selA":""}" title="Ausente" onclick="marcar('A','${claseId}',${i},'Ausente')">A</button>
+          <button class="${efectivo==="Presente"?"selP":""}" title="Presente" onclick="marcar('A','${claseId}',${i},'Presente')">P</button>
+          <button class="${st===null?"selA":""}" title="Quitar registro" onclick="marcar('A','${claseId}',${i},null)">N</button>
+          <button class="${efectivo==="Ausente"?"selA":""}" title="Ausente" onclick="marcar('A','${claseId}',${i},'Ausente')">A</button>
         </div></div>`;
     } else {
       html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
           <button class="${st==="Logrado"?"selL":""}" title="Logrado" onclick="marcar('E','${claseId}',${i},'Logrado')">L</button>
           <button class="${st==="En proceso"?"selEP":""}" title="En proceso" onclick="marcar('E','${claseId}',${i},'En proceso')">E</button>
-          <button class="${st===null?"selA":""}" title="Neutral (sin evaluar)" onclick="marcar('E','${claseId}',${i},null)">N</button>
+          <button class="${st==="Iniciando"?"selA":""}" title="Iniciando" onclick="marcar('E','${claseId}',${i},'Iniciando')">I</button>
         </div></div>`;
     }
   }
   return html;
 }
+function ringDuo(claseId){
+  return `<div class="ringitem">${ring(pctDia(claseId,"asis"),44,5,"#0033A0")}<small>Presentes</small></div>
+  <div class="ringitem">${ring(pctDia(claseId,"eval"),44,5,"#CE1126")}<small>Logrado</small></div>`;
+}
 function marcar(tipo, claseId, n, valor){
   const mapa = tipo==="A"? S.asistencia : S.evaluacion;
   if(!mapa[claseId]) mapa[claseId] = {};
+  if(tipo==="A" && valor!==null){
+    const NA = alumnosDe(S.docente.seccion);
+    for(let k=1;k<=NA;k++) if(mapa[claseId][k]===undefined) mapa[claseId][k] = "Presente";
+  }
   mapa[claseId][n] = valor;
   if(valor===null) delete mapa[claseId][n];
   guardar();
@@ -1771,7 +1706,7 @@ function marcar(tipo, claseId, n, valor){
   if(tipo==="A") $("zonaA").innerHTML = alumnosHTML(claseId,"A");
   else $("zonaE").innerHTML = alumnosHTML(claseId,"E");
   const el = $("headRings");
-  if(el) el.innerHTML = ring(pctCrono(claseId),60,7,"#0033A0",fmtCrono(S.tiempoClase[claseId]||0));
+  if(el) el.innerHTML = ringDuo(claseId);
 }
 function toggleRegistro(){
   $("zonaRegistro").classList.toggle("abierta");
@@ -1810,6 +1745,11 @@ function temporizadorHTML(durs){
 const CIRC = 2*Math.PI*40;
 let T = { dur:300, resta:300, corriendo:false, iv:null };
 let claseActualId = null;
+function cronoGuarda(){
+  if(!claseActualId) return;
+  if(!S.crono) S.crono = {};
+  S.crono[claseActualId] = { dur: T.dur, resta: T.resta };
+}
 function setDur(min, btn){
   document.querySelectorAll(".dur-btn").forEach(b=>b.classList.remove("sel"));
   btn.classList.add("sel");
@@ -1817,6 +1757,7 @@ function setDur(min, btn){
   clearInterval(T.iv); pintarTimer(); $("timerEstado").textContent="Listo";
   $("btnPlay").innerHTML = ic("play",14)+" Iniciar";
   $("timerBox").classList.remove("timer-corriendo");
+  cronoGuarda();
 }
 function pintarTimer(){
   const m = Math.floor(T.resta/60), s = T.resta%60;
@@ -1825,11 +1766,12 @@ function pintarTimer(){
 }
 function playTimer(){
   if(T.corriendo){
-    T.corriendo=false; clearInterval(T.iv);
+    T.corriendo=false; clearInterval(T.iv); cronoGuarda();
     $("btnPlay").innerHTML = ic("play",14)+" Continuar"; $("timerEstado").textContent="En pausa";
     $("timerBox").classList.remove("timer-corriendo");
     return;
   }
+  if(T.resta<=0) T.resta = T.dur;
   T.corriendo=true; $("btnPlay").innerHTML = ic("pausa",14)+" Pausar"; $("timerEstado").textContent="¡Corriendo!";
   $("timerBox").classList.add("timer-corriendo");
   T.iv = setInterval(()=>{
@@ -1837,15 +1779,17 @@ function playTimer(){
     pintarTimer();
     if(claseActualId){
       S.tiempoClase[claseActualId] = (S.tiempoClase[claseActualId]||0)+1;
-      if(S.tiempoClase[claseActualId]%15===0) guardar();
+      if(S.tiempoClase[claseActualId]%15===0){ guardar(); cronoGuarda(); }
       const hr = $("headRings");
-      if(hr) hr.innerHTML = ring(pctCrono(claseActualId),60,7,"#0033A0",fmtCrono(S.tiempoClase[claseActualId]));
+      if(hr) hr.innerHTML = ringDuo(claseActualId);
     }
     if(T.resta<=0){
-      clearInterval(T.iv); T.corriendo=false; T.resta=T.dur;
-      $("btnPlay").innerHTML = ic("play",14)+" Iniciar"; $("timerEstado").textContent="¡Tiempo!";
+      clearInterval(T.iv); T.corriendo=false; T.resta=0; cronoGuarda();
+      $("btnPlay").innerHTML = ic("play",14)+" Reiniciar"; $("timerEstado").textContent="¡Tiempo cumplido!";
       $("timerBox").classList.remove("timer-corriendo");
-      beep(); toast("¡Se acabó el tiempo del momento!");
+      beepFuerte();
+      try{ if(navigator.vibrate) navigator.vibrate([400,200,400,200,600]); }catch(e){}
+      toast("¡Se acabó el tiempo del momento!");
     }
   },1000);
 }
@@ -1853,6 +1797,7 @@ function resetTimer(){
   clearInterval(T.iv); T.corriendo=false; T.resta=T.dur;
   pintarTimer(); $("btnPlay").innerHTML = ic("play",14)+" Iniciar"; $("timerEstado").textContent="Listo";
   $("timerBox").classList.remove("timer-corriendo");
+  cronoGuarda();
 }
 function beep(){
   try{
@@ -1867,9 +1812,69 @@ function beep(){
     });
   }catch(e){}
 }
+function beepFuerte(){
+  try{
+    const ctx = new (window.AudioContext||window.webkitAudioContext)();
+    [0,0.3,0.6,0.9].forEach((delay,i)=>{
+      const o=ctx.createOscillator(), g=ctx.createGain();
+      o.connect(g); g.connect(ctx.destination); o.frequency.value=980+i*260; o.type="square";
+      g.gain.setValueAtTime(0.0001, ctx.currentTime+delay);
+      g.gain.exponentialRampToValueAtTime(0.9, ctx.currentTime+delay+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime+delay+0.28);
+      o.start(ctx.currentTime+delay); o.stop(ctx.currentTime+delay+0.3);
+    });
+  }catch(e){}
+}
 function initTimer(durs){
   const d = (durs && durs.length)? durs[0]*60 : 300;
   T={dur:d,resta:d,corriendo:false,iv:null};
+  const g = claseActualId && S.crono && S.crono[claseActualId];
+  if(g && g.dur){ T.dur = g.dur; T.resta = Math.max(0, g.resta); }
+  pintarTimer();
+}
+function abrirMomento(i){
+  const plan = planAbierto || planActivo();
+  const d = clasePorId(plan, claseActualId);
+  const momentos = (d && d.momentos)||[];
+  const m = momentos[i]; if(!m) return;
+  const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
+  const dur = duracionAjustada(m, base);
+  const obj = (d.desempenos||[])[0]||"el objetivo de la sesión";
+  const roles = [
+    { rol:"Apertura · Despertar la intención pedagógica", guia:[
+      "Saluda al grupo con calidez y aplica la rutina de entrada (canción, saludo o dinámica breve de dos minutos).",
+      "Presenta el tema de forma vivencial: un objeto real, una imagen llamativa o una pregunta sorpresa que despierte la curiosidad.",
+      "Recupera los saberes previos con preguntas abiertas: ¿qué saben de…? ¿qué han visto sobre…?",
+      "Anuncia el objetivo de la sesión en lenguaje sencillo y cercano para el nivel.",
+      "Acuerda con el grupo las normas de convivencia para la actividad de hoy." ]},
+    { rol:"Desarrollo · Construcción del aprendizaje", guia:[
+      "Desarrolla el contenido paso a paso, combinando explicaciones breves con demostraciones concretas.",
+      "Promueve la participación activa: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+      "Usa material del entorno real: en el nivel inicial los niños aprenden manipulando, no solo escuchando.",
+      "Acompaña a quienes avanzan distinto: recorre el aula, pregunta y apoya sin dar la respuesta directamente.",
+      "Vincula cada paso con el objetivo de la clase: «¿cómo nos ayuda esto con…?»." ]},
+    { rol:"Práctica · Ejercitación guiada", guia:[
+      "Propón la actividad práctica con consignas claras y cortas (máximo dos instrucciones a la vez).",
+      "Modela primero cómo hacer la actividad; después deja que el grupo lo intente de forma autónoma.",
+      "Observa y registra los logros mientras trabajan: es el momento ideal para la evaluación formativa.",
+      "Diferencia el acompañamiento: algunos niños necesitarán más apoyo que otros.",
+      "Comparte 2 o 3 trabajos del grupo para valorarlos en colectivo y dar retroalimentación." ]},
+    { rol:"Cierre · Metacognición y transferencia", guia:[
+      "Retoma el objetivo y pregunta: ¿qué aprendimos hoy? ¿qué fue lo que más nos gustó?",
+      "Permite que varios niños expresen con sus propias palabras lo aprendido.",
+      "Conecta el aprendizaje con la vida diaria: ¿dónde más vemos o usamos esto?",
+      "Anticipa brevemente el tema de la próxima clase para mantener la motivación abierta.",
+      "Felicita el esfuerzo del grupo y refuerza positivamente los logros del día." ]}
+  ][i] || { rol:"Momento de la clase", guia:[] };
+  guiaActual = { titulo: "Momento "+(i+1)+" · "+m.nombre, html: `
+    <p class="g-intro">Cómo desarrollar este momento en el aula, paso a paso, alineado al objetivo: <b>${esc(obj)}</b></p>
+    <div class="g-chips"><span class="chip">Duración: ${esc(dur)} min</span><span class="chip roja">${esc(m.nombre)}</span></div>
+    <h3>${esc(roles.rol)}</h3>
+    <ol class="g-pasos">${roles.guia.map(x=>`<li>${x}</li>`).join("")}</ol>
+    <h3>Pasos del plan de clase</h3>
+    <ol class="g-pasos">${(m.pasos||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ol>
+    <p class="muted" style="font-size:12px">Propósito oficial del momento: ${esc(m.proposito)}</p>` };
+  abrirGuia();
 }
 
 /* ---------- HISTORIAL DE PUNTOS (modal por alumno) ---------- */
@@ -1901,7 +1906,7 @@ function abrirHistorial(n, fuente){
   $("histSub").textContent = "Explora cuándo y por qué se registró cada punto";
   const filtro = S.ui.histFiltro || "anio";
   const fechaSel = S.ui.libFecha || HOY;
-  const chips = [["anio","Año"],["1","1er Trim."],["2","2do Trim."],["3","3er Trim."],["fecha","Fecha sel."]]
+  const chips = [["anio","Año"],["1","1er Trim."],["2","2do Trim."],["3","3er Trim."],["fecha","Fecha"]]
     .map(([v,l])=>`<span class="chip ${filtro===v?"sel":""}" onclick="filtrarHist('${v}')">${l}</span>`).join("");
   let arr = puntosDe(grupo, n).slice();
   if(filtro==="fecha") arr = arr.filter(x=>x.f===fechaSel);
@@ -1909,28 +1914,27 @@ function abrirHistorial(n, fuente){
   const filas = arr.length? arr.map(x=>`
     <div class="g-paso"><b>${esc(fmtFechaLinda(x.f))} · ${esc(TIPOS_PUNTO[x.tipo]||x.tipo)} · ${x.pts} pts</b>
     <span>${x.com? esc(x.com) : "Sin comentario"}</span></div>`).join("")
-    : `<p class="g-intro">Sin registros en este filtro. Agrega un punto más abajo.</p>`;
+    : `<p class="g-intro">Sin registros en este filtro todavía.</p>`;
   const color = gen===null? "#94a3b8" : (gen>=70? "#0033A0" : "#CE1126");
   $("histCuerpo").innerHTML = `
-  <div style="display:flex;justify-content:center;margin:2px 0 8px">
-    <div style="text-align:center">${ring(gen===null?0:gen,64,7,color, gen===null? "—":String(gen))}<small class="muted" style="display:block;font-weight:700">Porcentaje general</small></div>
+  <div class="hist-general">${ring(gen===null?0:gen,72,8,color, gen===null? "—":String(gen))}<small>Porcentaje general</small></div>
+  <div class="g-chips" style="justify-content:center;margin-bottom:10px">${chips}</div>
+  <h3 class="hist-sep">Registrar un punto</h3>
+  <div class="hist-grid">
+    <div><label class="lbl">Fecha</label><input type="date" class="inp" id="hpFecha" value="${esc(fechaSel)}"></div>
+    <div><label class="lbl">Tipo</label>
+      <select class="inp" id="hpTipo">
+        <option value="P">Participación</option>
+        <option value="T">Trabajo</option>
+        <option value="E">Exámenes</option>
+      </select></div>
+    <div><label class="lbl">Puntos (0 a 100)</label><input type="number" min="0" max="100" class="inp" id="hpPts" placeholder="Ej. 85"></div>
+    <div><label class="lbl">Comentario</label><input type="text" class="inp" id="hpCom" placeholder="¿Por qué? (opcional)"></div>
   </div>
-  <div class="g-chips" style="margin-bottom:10px">${chips}</div>
+  <div class="hist-sticky"><button class="dl grande" style="margin:0" onclick="registrarPunto()">${ic("nota")} Registrar punto</button></div>
+  <h3 class="hist-sep">Historial de puntos</h3>
   ${filas}
-  <h3 style="margin-top:12px">Registrar un punto</h3>
-  <label class="lbl">Fecha</label>
-  <input type="date" class="inp" id="hpFecha" value="${esc(fechaSel)}">
-  <label class="lbl">Tipo</label>
-  <select class="inp" id="hpTipo">
-    <option value="P">Participación</option>
-    <option value="T">Trabajo</option>
-    <option value="E">Exámenes</option>
-  </select>
-  <label class="lbl">Puntos (0 a 100)</label>
-  <input type="number" min="0" max="100" class="inp" id="hpPts" placeholder="Ej. 85">
-  <label class="lbl">Comentario (opcional)</label>
-  <input type="text" class="inp" id="hpCom" placeholder="¿Por qué este punto?">
-  <button class="dl grande" style="margin-top:10px" onclick="registrarPunto()">${ic("nota")} Registrar punto</button>`;
+  <div style="height:26px"></div>`;
   $("modalHistFondo").classList.add("abierto");
   $("modalHistHoja").classList.add("abierta");
 }
@@ -1948,35 +1952,36 @@ function registrarPunto(){
   if(isNaN(pv) || pv<0 || pv>100){ toast("Escribe los puntos entre 0 y 100"); return; }
   const pts = Math.round(pv);
   const com = $("hpCom").value||"";
-  const campo = {P:"p",T:"t",E:"e"}[tipo];
   const grupo = esLib? grupoLibreta() : grupoProg();
   upsertPunto(grupo, n, f, tipo, pts, com);
-  if(esLib){
-    const t = trimDeFecha(f);
-    if(!S.libreta[t]) S.libreta[t] = {};
-    if(!S.libreta[t][grupo]) S.libreta[t][grupo] = {};
-    const c = S.libreta[t][grupo];
-    c[n] = Object.assign({p:0,t:0,e:0}, c[n]||{});
-    c[n][campo] = pts;
-  } else {
-    const c = califs();
-    c[n] = Object.assign({p:0,t:0,e:0}, c[n]||{});
-    c[n][campo] = pts;
-  }
   guardar();
-  cerrarHistorial();
-  if(S.ui.progTab && $("scr-progreso").classList.contains("visible")) renderProgreso();
+  abrirHistorial(n, histActual.fuente);
+  if($("scr-progreso").classList.contains("visible")) renderProgreso();
   toast("Punto registrado para Alumno "+n);
 }
 
 /* ---------- PROGRESO ---------- */
 function grupoProg(){ return ((S.ui.progGrado||S.docente.grado)+"|"+(S.ui.progSec||S.docente.seccion||"A")); }
+function valoresDe(arr, soloTrim){
+  const filtro = soloTrim? arr.filter(x=>trimDeFecha(x.f)===soloTrim) : arr;
+  const prom = tipo=>{ const vs = filtro.filter(x=>x.tipo===tipo).map(x=>+x.pts||0); return vs.length? Math.round(vs.reduce((a,b)=>a+b,0)/vs.length) : null; };
+  const p = prom("P"), t = prom("T"), e = prom("E");
+  if(p===null && t===null && e===null) return null;
+  return { p:p||0, t:t||0, e:e||0 };
+}
 function califs(){
-  const p = S.docente.periodo;
-  if(!S.calificaciones[p]) S.calificaciones[p] = {};
-  const k = grupoProg();
-  if(!S.calificaciones[p][k]) S.calificaciones[p][k] = {};
-  return S.calificaciones[p][k];
+  const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A");
+  const grupo = grupoProg();
+  const out = {};
+  for(let i=1;i<=N;i++){ const c = valoresDe(puntosDe(grupo,i), S.docente.periodo); if(c) out[i] = c; }
+  return out;
+}
+function promedioGrupoTrim(trim){
+  const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A");
+  const grupo = grupoProg();
+  let s=0, c=0;
+  for(let i=1;i<=N;i++){ const v = valoresDe(puntosDe(grupo,i), trim); if(v){ s+=notaFinalDe(v.p,v.t,v.e); c++; } }
+  return c? Math.round(s/c) : null;
 }
 function notaDe(n){
   const c = califs()[n];
@@ -2022,27 +2027,23 @@ function htmlProgresoPanel(){
     <select class="inp" id="progSec" onchange="progSel('sec')">
       ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
     </select>
-    <p class="muted">Nota final = Participación 30% + Trabajos 30% + Examen 40%. Escala: L ≥ 90 (Logrado) · EP 70–89 (En proceso) · I < 70 (Iniciando).</p>
+    <p class="muted">Nota final = Participación 30% + Trabajos 30% + Examen 40% (se calcula sola con los puntos registrados). Escala: L ≥ 90 (Logrado) · EP 70–89 (En proceso) · I < 70 (Iniciando).</p>
+    <div class="stat-row"><span>Promedio del grupo · T1 / T2 / T3</span><b>${promedioGrupoTrim("1er Trimestre")??"—"}% / ${promedioGrupoTrim("2do Trimestre")??"—"}% / ${promedioGrupoTrim("3er Trimestre")??"—"}%</b></div>
   </div>
   <h2 class="mini">Calificación por alumno · Grado ${esc(g)} · Sección ${esc(sc)}</h2>`;
   for(let i=1;i<=N;i++){
-    const c = califs()[i]||{};
     const nf = notaDe(i);
     const k = nf===null? "—" : escalaDe(nf);
     const color = nf===null? "#94a3b8" : (nf>=70? "#0033A0" : "#CE1126");
     html += `<div class="prog-card">
-      <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver historial de porcentaje">
+      <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver historial y registrar puntos">
         <div class="an">${i}</div>
         <div class="pc-nombre">Alumno ${i}</div>
         <span class="escala ${nf===null?"":k}">${nf===null? "Sin calificar" : esc(escalaTexto(k))}</span>
-        <div class="rg">${ring(nf===null?0:nf,44,5,color, nf===null? "—":String(nf))}</div>
+        <div class="rg">${ring(nf===null?0:nf,50,6,color, nf===null? "—":String(nf))}</div>
       </div>
       <div class="pc-bottom">
-        <div class="prog-inputs">
-          <label>Participación<input type="number" min="0" max="100" inputmode="numeric" id="calP_${i}" value="${c.p!==undefined?esc(c.p):""}" oninput="guardarCalif(${i})"></label>
-          <label>Trabajos<input type="number" min="0" max="100" inputmode="numeric" id="calT_${i}" value="${c.t!==undefined?esc(c.t):""}" oninput="guardarCalif(${i})"></label>
-          <label>Examen<input type="number" min="0" max="100" inputmode="numeric" id="calE_${i}" value="${c.e!==undefined?esc(c.e):""}" oninput="guardarCalif(${i})"></label>
-        </div>
+        <button class="dl" style="flex:1;margin-top:6px" onclick="abrirHistorial(${i},'progreso')">${ic("nota")} Registrar puntos</button>
         <button class="btn-mini" title="Reporte individual" onclick="descargarBoletinIndividual(${i})">${ic("descarga",15)}</button>
       </div>
     </div>`;
@@ -2052,21 +2053,9 @@ function htmlProgresoPanel(){
   return html;
 }
 function renderProgreso(){
-  const esLib = S.ui.progTab==="libreta";
-  let html = esLib? htmlLibretaHero() : htmlProgresoHero();
-  html += `
-  <div class="ptabs">
-    <div class="pt-ind ${esLib?"der":""}"></div>
-    <button class="${esLib?"":"sel"}" onclick="progTab('progreso')">${ic("tendencia",15)} Progreso</button>
-    <button class="${esLib?"sel":""}" onclick="progTab('libreta')">${ic("boletin",15)} Libreta</button>
-  </div>`;
-  html += esLib? htmlLibretaPanel() : htmlProgresoPanel();
+  let html = htmlProgresoHero();
+  html += htmlProgresoPanel();
   $("scr-progreso").innerHTML = html;
-}
-function progTab(t){
-  S.ui.progTab = t;
-  guardar();
-  renderProgreso();
 }
 function progSel(q){
   if(q==="grado") S.ui.progGrado = $("progGrado").value;
@@ -2079,22 +2068,6 @@ function cambiarPeriodo(){
   guardar();
   renderProgreso();
 }
-function guardarCalif(n){
-  const c = califs();
-  const p = $("calP_"+n).value, t = $("calT_"+n).value, e = $("calE_"+n).value;
-  if(p==="" && t==="" && e===""){ delete c[n]; }
-  else c[n] = { p:p===""?0:+p, t:t===""?0:+t, e:e===""?0:+e };
-  guardar();
-  const nf = notaDe(n);
-  encolar("calificaciones", S.docente.periodo, { alumno:"Alumno "+n, participacion:c[n]?c[n].p:0, trabajos:c[n]?c[n].t:0, examen:c[n]?c[n].e:0, final:nf===null?0:nf },
-    null, { grado:S.ui.progGrado||S.docente.grado, seccion:S.ui.progSec||S.docente.seccion||"A" });
-  clearTimeout(window._calT);
-  window._calT = setTimeout(()=>{
-    if($("scr-progreso").classList.contains("visible") && S.ui.progTab!=="libreta") renderProgreso();
-    toast("Calificación de Alumno "+n+" sincronizada");
-  }, 900);
-}
-
 /* ---------- NOTIFICACIONES ---------- */
 function renderNotificaciones(){
   let html = `<div class="hero"><h2>Notificaciones</h2>
@@ -2925,8 +2898,8 @@ if(S.docente && S.docente.id){
   if(!S.ui.progTab) S.ui.progTab = "progreso";
   if(!S.ui.progGrado) S.ui.progGrado = S.docente.grado;
   if(!S.ui.progSec) S.ui.progSec = S.docente.seccion || "A";
-  mostrar("mes");
-  cargarPlanes().then(()=>{ generarNotificaciones(); if($("scr-mes").classList.contains("visible")) renderMes(); });
+  mostrar("diaria");
+  cargarPlanes().then(()=>{ generarNotificaciones(); if(pantallaActual==="diaria") renderDiaria(); });
   flush();
 }else{
   mostrar("onboarding");

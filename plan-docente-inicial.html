@@ -309,6 +309,11 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .m-ver{margin-left:auto;display:flex;align-items:center;color:var(--azul);background:rgba(0,51,160,.08);border-radius:999px;padding:5px;flex-shrink:0;cursor:pointer}
 .m-ver svg{width:14px;height:14px}
 .selT{background:#f59e0b !important;color:#fff !important;border-color:#f59e0b !important}
+.chip-mini{padding:5px 10px;font-size:11px}
+.an-persona{display:flex;align-items:center;justify-content:center;color:#fff}
+.dia-etq.manana{background:#f59e0b;color:#fff}
+.dia-etq.futura{background:rgba(0,51,160,.10);color:var(--azul)}
+.dia-etq.pasada{background:rgba(100,116,139,.12);color:#64748b}
 
 /* ---------- MODAL GUÍA TÉCNICA ---------- */
 .g-fondo{position:fixed;inset:0;background:rgba(2,18,50,.48);z-index:80;opacity:0;pointer-events:none;transition:opacity .25s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
@@ -426,7 +431,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=10"></script>
+<script src="app-docente.js?v=11"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

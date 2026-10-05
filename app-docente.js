@@ -558,7 +558,7 @@ const LS_VIEJO = "plan_docente_rd_v4";
 const LS_VIEJO2 = "plan_docente_rd_v2";
 function estadoDefault(){
   return {
-    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er periodo",recursos:[] },
+    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er periodo",recursos:[] },
     asistencia:{}, evaluacion:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
     notificaciones:[], vistosPlanes:0,
@@ -570,6 +570,19 @@ function normalizar(d){
   const def = estadoDefault();
   const doc = Object.assign({}, def.docente, d.docente||{});
   if(!Array.isArray(doc.recursos)) doc.recursos = [];
+  if(!Array.isArray(doc.gradosSecciones) || !doc.gradosSecciones.length){
+    const base = doc.grado || "";
+    const secs = (Array.isArray(doc.secciones) && doc.secciones.length)? doc.secciones
+      : (doc.seccion? [doc.seccion] : ["A"]);
+    doc.gradosSecciones = secs.map(s=>base+"|"+s).filter(x=>x!=="|");
+    if(!doc.gradosSecciones.length) doc.gradosSecciones = ["|A"];
+  }
+  const aps = doc.alumnosPorSeccion || {};
+  doc.gradosSecciones.forEach(gs=>{
+    const sec = gs.split("|")[1];
+    if(aps[gs]===undefined && aps[sec]!==undefined) aps[gs] = aps[sec];
+  });
+  doc.alumnosPorSeccion = aps;
   const MAPA_PERIODO = { "1er Trimestre":"1er periodo", "2do Trimestre":"2do periodo", "3er Trimestre":"3er periodo" };
   if(MAPA_PERIODO[doc.periodo]) doc.periodo = MAPA_PERIODO[doc.periodo];
   if(typeof doc.asignaturas === "string") doc.asignaturasSel = doc.asignaturas? doc.asignaturas.split(/,\s*/).filter(Boolean) : [];
@@ -777,10 +790,13 @@ function unidadDerivada(nivel, idxStr){
     semanas: SEMANAS_PLANTILLA.map(w=>({ numero:w.semana, tema:"Semana "+w.semana+" · "+m.tema, inicio:w.inicio, desarrollo:w.desarrollo, cierre:w.cierre })),
   };
 }
-function alumnosDe(sec){
+function alumnosDe(sec, grado){
   const aps = S.docente.alumnosPorSeccion||{};
-  const n = parseInt(aps[sec||S.docente.seccion]);
-  return (n && n>0)? n : S.docente.alumnos;
+  const s = sec || S.docente.seccion || "A";
+  const g = (grado!==undefined && grado!==null && grado!=="")? grado : (S.docente.grado||"");
+  let n = parseInt(aps[g+"|"+s]);
+  if(!(n>0)) n = parseInt(aps[s]);
+  return (n>0)? n : (S.docente.alumnos||24);
 }
 function estadoMes(mesTxt){
   const m = parseMes(mesTxt);
@@ -1051,8 +1067,10 @@ function renderOnboarding(){
       <label class="lbl">Asignaturas que impartes</label>
       <input class="inp" id="onbAsignaturas" placeholder="Ej: Lengua Española, Matemática">
     </div>
-    <label class="lbl">Sección</label>
-    <input class="inp" id="onbSeccion" placeholder="Ej: A" value="A">
+    <div style="display:none">
+      <label class="lbl">Sección</label>
+      <input class="inp" id="onbSeccion" placeholder="Ej: A" value="A">
+    </div>
     <label class="lbl">Jornada del centro educativo</label>
     <select class="inp" id="onbJornada">
       <option value="Matutina" selected>Matutina</option>
@@ -1157,7 +1175,7 @@ function cerrarGuia(){
 }
 function guiaAnual(){
   return `
-  <p class="g-intro">Tu planificación anual es la hoja de ruta del año escolar: organiza las competencias, contenidos y situaciones de aprendizaje de agosto a junio, en tres trimestres, según la Adecuación Curricular 2023.</p>
+  <p class="g-intro">Tu planificación anual es la hoja de ruta del año escolar: organiza las competencias, contenidos y situaciones de aprendizaje de agosto a junio, en cuatro periodos, según la Adecuación Curricular 2023.</p>
   <h3>Cómo aplicarla paso a paso</h3>
   <div class="g-paso"><b>1. Parte de las competencias</b><span>Lee las competencias fundamentales y las específicas del grado: son el norte de todas tus unidades. Todo lo que planifiques debe movilizarlas.</span></div>
   <div class="g-paso"><b>2. Contextualiza las situaciones</b><span>Adapta el reto y el producto final de cada unidad a la realidad de tus estudiantes y de tu comunidad educativa.</span></div>
@@ -1554,6 +1572,25 @@ function fmtCrono(seg){
 const DIAS_ES = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
 function diaDeId(id){ try{ return new Date(id+"T12:00").getDay(); }catch(e){ return 1; } }
 function nombreDiaDe(id){ return DIAS_ES[diaDeId(id)]||"—"; }
+function diffDias(desde, hasta){
+  try{ return Math.round((new Date(hasta+"T12:00") - new Date(desde+"T12:00"))/86400000); }
+  catch(e){ return 0; }
+}
+function etqClase(id){
+  if(id===HOY) return { t:"Hoy", cls:"hoy" };
+  const dif = diffDias(HOY, id);
+  if(dif===1) return { t:"Mañana", cls:"manana" };
+  if(dif>1) return { t:"-"+dif+" días", cls:"futura" };
+  return { t: nombreDiaDe(id), cls:"pasada" };
+}
+function ordenarClases(dias){
+  return dias.slice().sort((a,b)=>{
+    const da = diffDias(HOY, a.id), db = diffDias(HOY, b.id);
+    const fa = da>=0?0:1, fb = db>=0?0:1;
+    if(fa!==fb) return fa-fb;
+    return fa? db-da : da-db;
+  });
+}
 function ordenDiario(dias){
   const hoyIdx = diaDeId(HOY);
   return dias.slice().sort((a,b)=>{
@@ -1563,31 +1600,30 @@ function ordenDiario(dias){
 }
 function renderDiaria(){
   const w = planDiario();
-  const totalPlan = (w.plan && w.plan.semanas||[]).reduce((a,s)=>a+((s&&s.dias)||[]).length,0);
-  const dias = w.semana? ordenDiario(w.semana.dias||[]) : [];
-  const lunes = lunesActual(); const vier = new Date(lunes); vier.setDate(lunes.getDate()+4);
-  const fmt = d => d.getDate()+" "+MESES_ES[d.getMonth()].slice(0,3).toLowerCase();
+  const plan = w.plan;
+  const dias = (plan && plan.semanas||[]).reduce((a,s)=>a.concat((s&&s.dias)||[]),[]);
+  const totalPlan = dias.length;
   const conReg = dias.filter(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; }).length;
+  const ordenados = ordenarClases(dias);
   let html = `
   <div class="hero">
     <h2>Planificación diaria</h2>
-    <p>Semana del ${fmt(lunes)} al ${fmt(vier)}${w.generado? " · Generado desde tu plan mensual de este mes":""} · ${totalPlan} clases en el plan mensual en curso. Toca una clase para registrar asistencia y logros.</p>
+    <p>${totalPlan} clases del plan mensual en curso${w.generado? " · Generado desde tu plan mensual de este mes":""}. Toca una clase para registrar asistencia y logros.</p>
     <div class="row">
-      <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#fff")}<small>Asistencias</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff", String(totalPlan))}<small>Clases</small></div>
+      <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#fff")}<small>Asistencia</small></div>
       <div class="ringbox">${ring(pctMes(planActivo(),"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
-      <div class="ringbox">${ring(horasSemana().pct,56,7,"#fff", horasSemana().h.toFixed(1).replace(".",",")+"h")}<small>Horas</small></div>
-      <div class="ringbox">${ring(dias.length? Math.round(conReg*100/dias.length) : 0,56,7,"#FFD6DB")}<small>Clases</small></div>
     </div>
   </div>`;
-  if(!dias.length){
-    html += `<p class="vacio">Tu plan activo no tiene clases diarias para esta semana.<br>Pídele a Delega tu plan detallado con clases diarias.</p>`;
+  if(!ordenados.length){
+    html += `<p class="vacio">Tu plan activo no tiene clases diarias.<br>Pídele a Delega tu plan detallado con clases diarias.</p>`;
   } else {
-    dias.forEach(d=>{
-      const esHoy = d.id===HOY;
+    ordenados.forEach(d=>{
+      const etq = etqClase(d.id);
       html += `<div class="item" onclick="abrirClaseDiaria('${d.id}')">
         <div class="ic">${ic("diaria")}</div>
         <div class="tx"><b>${esc(d.etiqueta)} · ${esc(d.titulo)}</b><span>${esc((d.desempenos||[""])[0])}</span></div>
-        <span class="dia-etq ${esHoy?"hoy":""}">${esHoy? "Hoy" : nombreDiaDe(d.id)}</span>
+        <span class="dia-etq ${etq.cls}">${esc(etq.t)}</span>
       </div>`;
     });
   }
@@ -1721,7 +1757,7 @@ function alumnosHTML(claseId, tipo){
     if(tipo==="A"){
       html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
-          <button class="${st==="Presente"||(st===null)?"selP":""}" title="Presente" onclick="marcar('A','${claseId}',${i},'Presente')">P</button>
+          <button class="${st==="Presente"?"selP":""}" title="Presente" onclick="marcar('A','${claseId}',${i},'Presente')">P</button>
           <button class="${st==="Tarde"?"selT":""}" title="Tarde" onclick="marcar('A','${claseId}',${i},'Tarde')">T</button>
           <button class="${st==="Ausente"?"selA":""}" title="Ausente" onclick="marcar('A','${claseId}',${i},'Ausente')">A</button>
         </div></div>`;
@@ -1743,10 +1779,6 @@ function ringDuo(claseId){
 function marcar(tipo, claseId, n, valor){
   const mapa = tipo==="A"? S.asistencia : S.evaluacion;
   if(!mapa[claseId]) mapa[claseId] = {};
-  if(tipo==="A" && valor!==null){
-    const NA = alumnosDe(S.docente.seccion);
-    for(let k=1;k<=NA;k++) if(mapa[claseId][k]===undefined) mapa[claseId][k] = "Presente";
-  }
   mapa[claseId][n] = valor;
   if(valor===null) delete mapa[claseId][n];
   guardar();
@@ -1953,7 +1985,7 @@ function abrirHistorial(n, fuente){
   const grupo = grupoProg();
   const periodoSel = PERIODOS[(parseInt(S.ui.histFiltro)||numDePeriodo(S.docente.periodo))-1] || S.docente.periodo;
   $("histTitulo").textContent = "Calificaciones · Alumno "+n;
-  $("histSub").textContent = "Promedios por asignatura y periodo · toca las flechas para deslizar";
+  $("histSub").textContent = "Promedios por asignatura y periodo · desliza hacia los lados";
   const asigs = asignaturasVista();
   const ancho = Math.max(1, asigs.length);
   const rings = asigs.map(a=>{
@@ -1962,7 +1994,7 @@ function abrirHistorial(n, fuente){
     return `<div class="ringbox2">${ring(v===null?0:v,64,7,color, v===null? "—":String(v))}<small>${esc(a.length>12? a.slice(0,11)+"…" : a)}</small></div>`;
   }).join("");
   const NUMS = ["1er","2do","3er","4to"];
-  const chips = PERIODOS.map((p,i)=>`<span class="chip ${periodoSel===p?"sel":""}" onclick="filtrarHist('${i+1}')">${NUMS[i]} periodo</span>`).join("");
+  const chips = PERIODOS.map((p,i)=>`<span class="chip chip-mini ${periodoSel===p?"sel":""}" onclick="filtrarHist('${i+1}')">${NUMS[i]} periodo</span>`).join("");
   let arr = puntosDe(grupo, n).slice();
   arr = arr.filter(x=>trimDeFecha(x.f)===periodoSel);
   const filas = arr.length? arr.map(x=>`
@@ -1970,11 +2002,7 @@ function abrirHistorial(n, fuente){
     <span>${x.com? esc(x.com) : "Sin comentario"}</span></div>`).join("")
     : `<p class="g-intro">Sin registros en ${esc(periodoSel)} todavía.</p>`;
   $("histCuerpo").innerHTML = `
-  <div class="hscroll rings-scroll">
-    <span class="scroll-flecha" onclick="deslizarRings(-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 6 9 12 15 18"/></svg></span>
-    ${rings}
-    <span class="scroll-flecha" onclick="deslizarRings(1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
-  </div>
+  <div class="hscroll rings-scroll">${rings}</div>
   <div class="g-chips hscroll" style="justify-content:flex-start;margin-bottom:10px">${chips}</div>
   <h3 class="hist-sep">Registrar un punto</h3>
   <div class="hist-grid">
@@ -2076,14 +2104,14 @@ function ringPersona(pct, size, stroke, color){
   </svg>`;
 }
 function califs(){
-  const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A");
+  const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A", S.ui.progGrado||S.docente.grado);
   const grupo = grupoProg();
   const out = {};
   for(let i=1;i<=N;i++){ const c = valoresDe(puntosDe(grupo,i), S.docente.periodo); if(c) out[i] = c; }
   return out;
 }
 function promedioGrupoTrim(trim){
-  const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A");
+  const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A", S.ui.progGrado||S.docente.grado);
   const grupo = grupoProg();
   let s=0, c=0;
   for(let i=1;i<=N;i++){ const v = valoresDe(puntosDe(grupo,i), trim); if(v){ s+=notaFinalDe(v.p,v.t,v.e); c++; } }
@@ -2123,10 +2151,10 @@ function htmlProgresoPanel(){
   const N = alumnosDe(sc);
   let html = `
   <div class="card">
-    <h2>${ic("boletin")} Período y escala MIN""" + """ERD</h2>
+    <h2>${ic("boletin")} Período y escala</h2>
     <label class="lbl">Período del año escolar</label>
     <select class="inp" id="selPeriodo" onchange="cambiarPeriodo()">
-      ${PERIODOS.map(p=>`<option value="${esc(p)}" ${p===S.docente.periodo?"selected":""}>${esc(p)} (ago–oct / nov–ene / feb–abr / may–jun)</option>`).join("")}
+      ${PERIODOS.map(p=>`<option value="${esc(p)}" ${p===S.docente.periodo?"selected":""}>${esc(p)}</option>`).join("")}
     </select>
     <label class="lbl">Grado a calificar</label>
     <select class="inp" id="progGrado" onchange="progSel('grado')">
@@ -2136,8 +2164,8 @@ function htmlProgresoPanel(){
     <select class="inp" id="progSec" onchange="progSel('sec')">
       ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
     </select>
-    <p class="muted">El promedio se calcula solo: puntos por asignatura (Participación 30% + Trabajos 30% + Exámenes 40%) y promedio general entre asignaturas. Escala: L ≥ 90 (Logrado) · EP 70–89 (En proceso) · I < 70 (Iniciando).</p>
-    <div class="stat-row"><span>Promedio del grupo · P1 / P2 / P3 / P4</span><b>${promedioGrupoTrim("1er periodo")??"—"}% / ${promedioGrupoTrim("2do periodo")??"—"}% / ${promedioGrupoTrim("3er periodo")??"—"}% / ${promedioGrupoTrim("4to periodo")??"—"}%</b></div>
+
+
   </div>
   <h2 class="mini">Calificación por alumno · Grado ${esc(g)} · Sección ${esc(sc)}</h2>`;
   for(let i=1;i<=N;i++){
@@ -2147,12 +2175,12 @@ function htmlProgresoPanel(){
     const asis = asistenciaDe(i);
     html += `<div class="prog-card">
       <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver promedios y registrar puntos">
-        <div class="an">${i}</div>
+        <div class="an an-persona">${ic("persona",14)}</div>
         <div class="pc-nombre">Alumno ${i}</div>
         <span class="escala ${nf===null?"":k}">${nf===null? "Sin calificar" : esc(escalaTexto(k))}</span>
         <div class="rg">
-          <div class="ring-duo">${ringPersona(nf===null?0:nf,46,5,color)}
-          ${ring(asis===null?0:asis,46,5,asis===null? "#94a3b8":"#0f9d58", asis===null? "—":String(asis))}</div>
+          <div class="ring-duo">${ring(nf===null?0:nf,46,5,color, nf===null? "—":String(nf))}
+          ${ring(asis===null?0:asis,46,5,asis===null? "#94a3b8":"#0033A0", asis===null? "—":String(asis))}</div>
         </div>
       </div>
       <div class="pc-bottom">
@@ -2263,12 +2291,22 @@ function renderInfo(){
     </div>
   </div>
   <div class="card">
-    <h2>${ic("usuarios")} Secciones a tu cargo</h2>
-    <p class="muted" style="margin-bottom:8px">Selecciona una o más secciones.</p>
-    <div class="chips-sel">
-      ${SECCIONES.map(x=>`<span class="chip ${secs.includes(x)?"sel":""}" onclick="toggleSel('sec','${esc(x)}')">Sección ${esc(x)}</span>`).join("")}
+    <h2>${ic("usuarios")} Grados y secciones a tu cargo</h2>
+    <p class="muted" style="margin-bottom:8px">Agrega cada combinación de grado y sección en la que impartes docencia (ej. 3ro · A). Ideal para Secundaria, donde atiendes varios grupos.</p>
+    <div style="display:flex;gap:8px">
+      <select class="inp" id="selGradoGS" style="flex:1">
+        ${(GRADOS_POR_NIVEL[nivel]||[]).map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
+      </select>
+      <select class="inp" id="selSeccionGS" style="flex:0 0 auto;width:86px">
+        ${SECCIONES.map(x=>`<option value="${esc(x)}">Sección ${esc(x)}</option>`).join("")}
+      </select>
+      <button class="btn-soft" style="flex:0 0 auto;padding:10px 14px" onclick="agregarGS()">Agregar</button>
     </div>
-    <button class="dl" onclick="guardarAcademicos()">Guardar asignaturas y secciones</button>
+    <div class="chips-sel" style="margin-top:10px">
+      ${(S.docente.gradosSecciones||[]).map(gs=>{ const [g,s] = gs.split("|");
+        return `<span class="chip sel">${esc(g)} · ${esc(s)} <b style="cursor:pointer;padding-left:4px" onclick="quitarGS('${esc(gs)}')">✕</b></span>`; }).join("")
+        || '<span class="muted" style="font-size:12px">Aún no has agregado grupos.</span>'}
+    </div>
   </div>
   <div class="card">
     <h2>${ic("reloj")} Duración de mis clases</h2>
@@ -2291,11 +2329,12 @@ function renderInfo(){
     <button class="dl" onclick="guardarJornada()">Guardar jornada</button>
   </div>
   <div class="card">
-    <h2>${ic("usuarios")} Cantidad de alumnos por sección</h2>
-    <p class="muted" style="margin-bottom:10px">En Secundaria y otros niveles sueles atender varias secciones en el día: define cuántos alumnos tiene cada una (secciones seleccionadas arriba).</p>
-    ${secs.map(sec=>`
-    <label class="lbl">Sección ${esc(sec)}</label>
-    <input class="inp inpAlum" data-sec="${esc(sec)}" type="number" min="1" max="60" value="${alumnosDe(sec)}" style="text-align:center;font-weight:800">`).join("")}
+    <h2>${ic("usuarios")} Alumnos por grado y sección</h2>
+    <p class="muted" style="margin-bottom:10px">Define cuántos alumnos tiene cada grupo agregado arriba.</p>
+    ${(S.docente.gradosSecciones||[]).map(gs=>{ const [g,s] = gs.split("|");
+      return `
+    <label class="lbl">${esc(g)} · Sección ${esc(s)}</label>
+    <input class="inp inpAlum" data-sec="${esc(gs)}" type="number" min="1" max="60" value="${alumnosDe(s, g)}" style="text-align:center;font-weight:800">`; }).join("")}
     <button class="dl" onclick="guardarAlumnosPorSeccion()">Guardar</button>
   </div>
   <div class="card">
@@ -2306,7 +2345,7 @@ function renderInfo(){
   </div>
   <div class="card">
     <h2>${ic("plan")} Alineación curricular</h2>
-    <p class="muted">Contenido basado en el currículo vigente del MINERD y la Adecuación Curricular 2023 para los niveles Inicial, Primaria y Secundaria. Calendario escolar dominicano: agosto – junio, 3 trimestres. Tu nivel: ${esc(nivel)}.</p>
+    <p class="muted">Contenido basado en el currículo vigente del MINERD y la Adecuación Curricular 2023 para los niveles Inicial, Primaria y Secundaria. Calendario escolar dominicano: agosto – junio, 4 periodos. Tu nivel: ${esc(nivel)}.</p>
   </div>
   <div class="card">
     <h2>${ic("salir")} Zona delicada</h2>
@@ -2327,9 +2366,28 @@ function toggleSel(tipo, valor){
   guardar();
   renderInfo();
 }
+function agregarGS(){
+  const g = $("selGradoGS").value, s = $("selSeccionGS").value;
+  if(!g){ toast("Selecciona un grado"); return; }
+  if(!Array.isArray(S.docente.gradosSecciones)) S.docente.gradosSecciones = [];
+  if(S.docente.gradosSecciones.includes(g+"|"+s)){ toast("Ese grupo ya está agregado"); return; }
+  S.docente.gradosSecciones.push(g+"|"+s);
+  S.docente.secciones = [...new Set(S.docente.gradosSecciones.map(x=>x.split("|")[1]))];
+  guardar();
+  renderInfo();
+  toast("Grupo agregado: "+g+" · "+s);
+}
+function quitarGS(gs){
+  S.docente.gradosSecciones = (S.docente.gradosSecciones||[]).filter(x=>x!==gs);
+  S.docente.secciones = [...new Set(S.docente.gradosSecciones.map(x=>x.split("|")[1]))];
+  guardar();
+  renderInfo();
+  toast("Grupo eliminado");
+}
 function guardarAcademicos(){
+  S.docente.secciones = [...new Set((S.docente.gradosSecciones||[]).map(x=>x.split("|")[1]))];
   apiAccion("actualizar-perfil", { id:S.docente.id, asignaturas:S.docente.asignaturasSel.join(", "), secciones:S.docente.secciones.join(", ") }).catch(()=>{});
-  toast("Asignaturas y secciones guardadas");
+  toast("Asignaturas guardadas");
 }
 function guardarDuracion(){
   const h = Math.max(0, Math.min(8, parseInt($("inpDurH").value)||0));
@@ -2392,7 +2450,7 @@ function guardarAlumnosPorSeccion(){
   if(primero) S.docente.alumnos = primero;
   guardar();
   apiAccion("actualizar-perfil", { id:S.docente.id, alumnos_por_seccion: JSON.stringify(S.docente.alumnosPorSeccion) }).catch(()=>{});
-  toast("Alumnos por sección guardados");
+  toast("Alumnos por grado y sección guardados");
   renderInfo();
 }
 function borrarTodo(){

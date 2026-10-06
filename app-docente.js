@@ -798,6 +798,11 @@ function alumnosDe(sec, grado){
   if(!(n>0)) n = parseInt(aps[s]);
   return (n>0)? n : (S.docente.alumnos||24);
 }
+function diasDuracionPlan(plan){
+  const ids = todasClases(plan||{}).map(d=>d.id).filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)).sort();
+  if(!ids.length) return (plan&&plan.semanas||[]).length*5 || 0;
+  return diffDias(ids[0], ids[ids.length-1])+1;
+}
 function estadoMes(mesTxt){
   const m = parseMes(mesTxt);
   if(!m) return { k:"pend", t:"Pendiente" };
@@ -1229,13 +1234,13 @@ function renderAnio(){
   const A = ANUAL_MINERD[nivel];
   let html = `
   <div class="hero">
-    <h2>Planificación anual ${ANIO_ESCOLAR}</h2>
-    <p>Tu plan anual del nivel ${esc(nivel)}: 11 unidades de agosto 2026 a junio 2027, en 3 trimestres, según la Adecuación Curricular vigente del MINERD.</p>
+    <h2>Delega</h2>
+    <p class="eslogan">Tu agente administrativo</p>
+    <p>Planificación anual ${ANIO_ESCOLAR} · Nivel ${esc(nivel)}</p>
     <div class="row">
-      <div class="ringbox">${ring(avanceAnual(),56,7,"#fff")}<small>Unidades</small></div>
-      <div class="ringbox">${ring(avanceSemanas(null),56,7,"#FFD6DB")}<small>Semanas</small></div>
-      <div class="ringbox">${ring(pctDia(HOY,"asis"),56,7,"#fff")}<small>Diaria</small></div>
-      <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff","1")}<small>Anual</small></div>
+      <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(info.temas.length))}<small>Unidad</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String(info.temas.length*4))}<small>Semana</small></div>
     </div>
   </div>
   <div class="card">
@@ -1267,10 +1272,9 @@ function renderAnioDetalle(nivel){
     <h2>${esc(info.titulo)} ${ANIO_ESCOLAR}</h2>
     <p>Nivel ${esc(nivel)} · Adecuación Curricular vigente (Ordenanza 2023) · Docente: ${esc(S.docente.nombre)}</p>
     <div class="row">
-      <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#fff")}<small>Asistencia</small></div>
-      <div class="ringbox">${ring(pctMes(planActivo(),"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
-      <div class="ringbox">${ring(avanceAnual(),56,7,"#fff")}<small>Unidades</small></div>
-      <div class="ringbox">${ring(avanceSemanas(null),56,7,"#FFD6DB")}<small>Semanas</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String(temas.length))}<small>Unidad</small></div>
+      <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(temas.length*4))}<small>Semana</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String(temas.length*4*5))}<small>Clases</small></div>
     </div>
   </div>
   <div class="card">
@@ -1339,8 +1343,6 @@ function renderAnioDetalle(nivel){
     <h3>Recursos digitales</h3>
     <p class="muted">${esc(A.recursosDig)}</p>
   </div>
-  <button class="dl grande" onclick="descargarAsistenciaPlanPdf('${esc(nivel)}')">${ic("descarga")} Asistencia del plan</button>
-  <button class="dl alt" onclick="descargarEvaluacionPlanPdf('${esc(nivel)}')">${ic("descarga")} Evaluación del plan</button>
   <button class="dl grande" onclick="descargarPlanAnualDocx('${esc(nivel)}')">${ic("descarga")} Descargar plan anual en Word</button>
   <div style="height:14px"></div>`;
   $("scr-anio-detalle").innerHTML = html;
@@ -1362,18 +1364,21 @@ function planesMensuales(){
 }
 function renderMes(){
   const plan = planActivo();
+  const planes = planesMensuales();
+  const vistos0 = new Set();
+  const unicos0 = planes.filter(p=>{ if(vistos0.has(p.id)) return false; vistos0.add(p.id); return true; });
+  const totalSem0 = unicos0.reduce((a,p)=>a+(p.nSem||0),0);
   let html = `
   <div class="hero">
-    <h2>Planificación Mensual</h2>
-    <p>Unidades de aprendizaje del nivel ${esc(S.docente.nivel)} derivadas de tu plan anual, por semestre. Tu avance trimestral:</p>
+    <h2>Delega</h2>
+    <p class="eslogan">Tu agente administrativo</p>
+    <p>Planificación mensual · Unidades de aprendizaje del nivel ${esc(S.docente.nivel)}</p>
     <div class="row">
-      <div class="ringbox">${ring(pctDia(HOY,"asis"),56,7,"#fff")}<small>Diaria</small></div>
-      <div class="ringbox">${ring(avanceAnual(),56,7,"#fff")}<small>Unidades</small></div>
-      <div class="ringbox">${ring(avanceSemanas(plan),56,7,"#FFD6DB")}<small>Semanas</small></div>
-      <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#fff")}<small>Asistencias</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String(unicos0.length))}<small>Unidades</small></div>
+      <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(totalSem0))}<small>Semanas</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String(totalSem0*5))}<small>Clases</small></div>
     </div>
   </div>`;
-  const planes = planesMensuales();
   const vistos = new Set();
   const unicos = planes.filter(p=>{ if(vistos.has(p.id)) return false; vistos.add(p.id); return true; });
   const pintar = (lista)=>{
@@ -1425,10 +1430,9 @@ function renderMesDetalle(plan){
     <h2>${esc(plan.titulo)}</h2>
     <p>${esc(plan.mes)} · Nivel ${esc(plan.nivel||S.docente.nivel)} · Grado ${esc(plan.grado||S.docente.grado)} · Sección ${esc(S.docente.seccion)}</p>
     <div class="row">
-      <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#fff")}<small>Asistencia</small></div>
-      <div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
-      <div class="ringbox">${ring(avanceSemanas(plan),56,7,"#fff")}<small>Semanas</small></div>
-      <div class="ringbox">${ring(avanceClases(plan),56,7,"#FFD6DB")}<small>Clases</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String((plan.semanas||[]).length))}<small>Semanas</small></div>
+      <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(todasClases(plan).length))}<small>Clases</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String(diasDuracionPlan(plan)))}<small>Días</small></div>
     </div>
   </div>
   <div class="card">
@@ -1507,8 +1511,6 @@ function renderMesDetalle(plan){
   }
   html += `
   </div>
-  <button class="dl grande" onclick="descargarAsistenciaUnidadPdf()">${ic("descarga")} Asistencia de la unidad</button>
-  <button class="dl alt" onclick="descargarEvaluacionUnidadPdf()">${ic("descarga")} Evaluación de la unidad en PDF</button>
   <button class="dl grande" onclick="descargarUnidadDocx()">${ic("descarga")} Descargar unidad en Word (.docx)</button>
   <div style="height:14px"></div>`;
   $("scr-mes-detalle").innerHTML = html;
@@ -1572,6 +1574,10 @@ function fmtCrono(seg){
 const DIAS_ES = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
 function diaDeId(id){ try{ return new Date(id+"T12:00").getDay(); }catch(e){ return 1; } }
 function nombreDiaDe(id){ return DIAS_ES[diaDeId(id)]||"—"; }
+function sumarDias(id, n){
+  try{ const d = new Date(id+"T12:00"); d.setDate(d.getDate()+n); return d.toISOString().slice(0,10); }
+  catch(e){ return id; }
+}
 function diffDias(desde, hasta){
   try{ return Math.round((new Date(hasta+"T12:00") - new Date(desde+"T12:00"))/86400000); }
   catch(e){ return 0; }
@@ -1607,12 +1613,13 @@ function renderDiaria(){
   const ordenados = ordenarClases(dias);
   let html = `
   <div class="hero">
-    <h2>Planificación diaria</h2>
-    <p>${totalPlan} clases del plan mensual en curso${w.generado? " · Generado desde tu plan mensual de este mes":""}. Toca una clase para registrar asistencia y logros.</p>
+    <h2>Delega</h2>
+    <p class="eslogan">Tu agente administrativo</p>
+    <p>Planificación diaria · ${totalPlan} clases del plan mensual en curso${w.generado? " · Generado desde tu plan mensual de este mes":""}. Toca una clase para registrar asistencia y logros.</p>
     <div class="row">
       <div class="ringbox">${ring(100,56,7,"#fff", String(totalPlan))}<small>Clases</small></div>
-      <div class="ringbox">${ring(pctMes(planActivo(),"asis"),56,7,"#fff")}<small>Asistencia</small></div>
-      <div class="ringbox">${ring(pctMes(planActivo(),"eval"),56,7,"#FFD6DB")}<small>Logros</small></div>
+      <div class="ringbox">${ring(100,56,7,"#FFD6DB", String(dias.filter(d=>d.id===HOY).length))}<small>Hoy</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff", String(dias.filter(d=>d.id===sumarDias(HOY,1)).length))}<small>Mañana</small></div>
     </div>
   </div>`;
   if(!ordenados.length){
@@ -1991,7 +1998,7 @@ function abrirHistorial(n, fuente){
   const rings = asigs.map(a=>{
     const v = notaAsig(n, a, periodoSel);
     const color = v===null? "#94a3b8" : (v>=70? "#0033A0" : "#CE1126");
-    return `<div class="ringbox2">${ring(v===null?0:v,64,7,color, v===null? "—":String(v))}<small>${esc(a.length>12? a.slice(0,11)+"…" : a)}</small></div>`;
+    return `<div class="ringbox2">${ring(v===null?0:v,64,7,color, v===null? "—":String(v))}<small>${esc(a.length>20? a.slice(0,19)+"…" : a)}</small></div>`;
   }).join("");
   const NUMS = ["1er","2do","3er","4to"];
   const chips = PERIODOS.map((p,i)=>`<span class="chip chip-mini ${periodoSel===p?"sel":""}" onclick="filtrarHist('${i+1}')">${NUMS[i]} periodo</span>`).join("");
@@ -2001,11 +2008,13 @@ function abrirHistorial(n, fuente){
     <div class="g-paso"><b>${esc(fmtFechaLinda(x.f))} · ${esc(x.asig||"General")} · ${esc(TIPOS_PUNTO[x.tipo]||x.tipo)} · ${x.pts} pts</b>
     <span>${x.com? esc(x.com) : "Sin comentario"}</span></div>`).join("")
     : `<p class="g-intro">Sin registros en ${esc(periodoSel)} todavía.</p>`;
+  const esInicial = S.docente.nivel==="Inicial";
   $("histCuerpo").innerHTML = `
   <div class="hscroll rings-scroll">${rings}</div>
-  <div class="g-chips hscroll" style="justify-content:flex-start;margin-bottom:10px">${chips}</div>
+  <div class="g-chips hscroll g-chips-centro" style="margin-bottom:10px">${chips}</div>
   <h3 class="hist-sep">Registrar un punto</h3>
   <div class="hist-grid">
+    ${esInicial? "" : `
     <div><label class="lbl">Asignatura</label>
       <select class="inp" id="hpAsig">
         ${asigs.filter(a=>a!=="General").concat(asigs.includes("General")?["General"]:[]).map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join("")}
@@ -2015,7 +2024,7 @@ function abrirHistorial(n, fuente){
         <option value="P">Participación</option>
         <option value="T">Trabajo</option>
         <option value="E">Exámenes</option>
-      </select></div>
+      </select></div>`}
     <div><label class="lbl">Puntos (0 a 100)</label><input type="number" min="0" max="100" class="inp" id="hpPts" placeholder="Ej. 85"></div>
     <div><label class="lbl">Comentario</label><input type="text" class="inp" id="hpCom" placeholder="¿Por qué? (opcional)"></div>
   </div>
@@ -2031,7 +2040,13 @@ function deslizarRings(dir){
   const el = document.querySelector(".rings-scroll");
   if(el) el.scrollBy({ left: dir*220, behavior: "smooth" });
 }
-function filtrarHist(f){ S.ui.histFiltro = f; if(histActual) abrirHistorial(histActual.n, histActual.fuente); }
+function filtrarHist(f){
+  S.ui.histFiltro = f;
+  const p = PERIODOS[(parseInt(f)||1)-1];
+  if(p && S.docente.periodo!==p) S.docente.periodo = p;
+  guardar();
+  if(histActual) abrirHistorial(histActual.n, histActual.fuente);
+}
 function cerrarHistorial(){
   $("modalHistFondo").classList.remove("abierto");
   $("modalHistHoja").classList.remove("abierta");
@@ -2040,8 +2055,9 @@ function registrarPunto(){
   if(!histActual) return;
   const n = histActual.n;
   const f = HOY;
-  const asig = $("hpAsig").value || "General";
-  const tipo = $("hpTipo").value;
+  const esInicial = S.docente.nivel==="Inicial";
+  const asig = esInicial? "Asignatura integrada" : ($("hpAsig")? ($("hpAsig").value||"General") : "General");
+  const tipo = esInicial? "P" : ($("hpTipo")? $("hpTipo").value : "P");
   const pv = parseFloat($("hpPts").value);
   if(isNaN(pv) || pv<0 || pv>100){ toast("Escribe los puntos entre 0 y 100"); return; }
   const pts = Math.round(pv);
@@ -2069,6 +2085,7 @@ function valoresDe(arr, soloPeriodo, asig){
   return { p:p||0, t:t||0, e:e||0 };
 }
 function asignaturasVista(){
+  if(S.docente.nivel==="Inicial") return ["Asignatura integrada"];
   const propias = (S.docente.asignaturasSel||[]).filter(Boolean);
   const lista = propias.length? propias.slice() : ["Global"];
   const grupo = grupoProg();
@@ -2080,7 +2097,11 @@ function asignaturasVista(){
   return lista;
 }
 function notaAsig(n, asig, periodo){
-  const v = valoresDe(puntosDe(grupoProg(), n), periodo, asig);
+  let puntos = puntosDe(grupoProg(), n);
+  if(S.docente.nivel==="Inicial" && asig==="Asignatura integrada"){
+    puntos = puntos.map(x=> (x.asig||"General")==="General"? Object.assign({}, x, {asig:"Asignatura integrada"}) : x);
+  }
+  const v = valoresDe(puntos, periodo, asig);
   return v? notaFinalDe(v.p, v.t, v.e) : null;
 }
 function asistenciaDe(n){
@@ -2135,8 +2156,9 @@ function htmlProgresoHero(){
   const plan = planAbierto || planActivo();
   return `
   <div class="hero">
-    <h2>Progreso del grupo</h2>
-    <p>Calificaciones de ${esc(S.docente.periodo)} · Grado ${esc(g)} · Sección ${esc(sc)}</p>
+    <h2>Delega</h2>
+    <p class="eslogan">Tu agente administrativo</p>
+    <p>Progreso · Calificaciones de ${esc(S.docente.periodo)} · Grado ${esc(g)} · Sección ${esc(sc)}</p>
     <div class="row">
       <div class="ringbox">${ring(promedioGrupo(),56,7,"#fff")}<small>Promedio</small></div>
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
@@ -2151,21 +2173,17 @@ function htmlProgresoPanel(){
   const N = alumnosDe(sc);
   let html = `
   <div class="card">
-    <h2>${ic("boletin")} Período y escala</h2>
-    <label class="lbl">Período del año escolar</label>
-    <select class="inp" id="selPeriodo" onchange="cambiarPeriodo()">
-      ${PERIODOS.map(p=>`<option value="${esc(p)}" ${p===S.docente.periodo?"selected":""}>${esc(p)}</option>`).join("")}
-    </select>
-    <label class="lbl">Grado a calificar</label>
-    <select class="inp" id="progGrado" onchange="progSel('grado')">
-      ${GRADOS_POR_NIVEL[nivel].map(x=>`<option value="${esc(x)}" ${x===g?"selected":""}>${esc(x)} (${esc(nivel)})</option>`).join("")}
-    </select>
-    <label class="lbl">Sección</label>
-    <select class="inp" id="progSec" onchange="progSel('sec')">
-      ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
-    </select>
-
-
+    <h2>${ic("boletin")} Filtrar por grupos</h2>
+    <div class="grid-2col">
+      <div><label class="lbl">Grado</label>
+        <select class="inp" id="progGrado" onchange="progSel('grado')">
+          ${GRADOS_POR_NIVEL[nivel].map(x=>`<option value="${esc(x)}" ${x===g?"selected":""}>${esc(x)}</option>`).join("")}
+        </select></div>
+      <div><label class="lbl">Sección</label>
+        <select class="inp" id="progSec" onchange="progSel('sec')">
+          ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+        </select></div>
+    </div>
   </div>
   <h2 class="mini">Calificación por alumno · Grado ${esc(g)} · Sección ${esc(sc)}</h2>`;
   for(let i=1;i<=N;i++){
@@ -2184,7 +2202,7 @@ function htmlProgresoPanel(){
         </div>
       </div>
       <div class="pc-bottom">
-        <button class="dl dl-chico" onclick="abrirHistorial(${i},'progreso')">${ic("cuaderno",14)} Registrar puntos</button>
+        <button class="dl dl-chico dl-gris" onclick="abrirHistorial(${i},'progreso')">${ic("cuaderno",14)} Registrar puntos</button>
         <button class="btn-mini" title="Reporte individual" onclick="descargarBoletinIndividual(${i})">${ic("descarga",15)}</button>
       </div>
     </div>`;
@@ -2247,8 +2265,9 @@ function renderInfo(){
   const asigs = ASIGNATURAS_RD[nivel] || [];
   const secs = S.docente.secciones.length? S.docente.secciones : [S.docente.seccion||"A"];
   $("scr-info").innerHTML = `
-  <div class="hero"><h2>Tu perfil docente</h2>
-    <p>${esc(S.docente.nombre)} · ${esc(S.docente.colegio)}</p></div>
+  <div class="hero"><h2>Delega</h2>
+    <p class="eslogan">Tu agente administrativo</p>
+    <p>Perfil del docente · ${esc(S.docente.nombre)} · ${esc(S.docente.colegio)}</p></div>
   <div class="card">
     <h2>${ic("usuarios")} Foto de perfil</h2>
     <div style="display:flex;align-items:center;gap:12px">
@@ -2272,6 +2291,7 @@ function renderInfo(){
       <div class="cod">${esc(S.docente.codigo)}</div>
       <p class="muted">Úsalo para entrar desde otro dispositivo</p></div>
   </div>
+  ${nivel==="Inicial"? "" : `
   <div class="card">
     <h2>${ic("libro")} Asignaturas que impartes</h2>
     <p class="muted" style="margin-bottom:8px">${nivel==="Inicial"? "Nivel Inicial: áreas de desarrollo (planificación integral).":"Selecciona una o más asignaturas del currículo dominicano."}</p>
@@ -2279,6 +2299,7 @@ function renderInfo(){
       ${asigs.map(a=>`<span class="chip ${S.docente.asignaturasSel.includes(a)?"sel":""}" onclick="toggleSel('asig','${esc(a)}')">${esc(a)}</span>`).join("")}
     </div>
   </div>
+  `}
   <div class="card">
     <h2>${ic("refrescar")} Recursos disponibles en mi centro</h2>
     <p class="muted" style="margin-bottom:8px">Registra los recursos con los que cuentas: proyector, tabletas, pizarra digital, huerto, biblioteca...</p>
@@ -2298,7 +2319,7 @@ function renderInfo(){
         ${(GRADOS_POR_NIVEL[nivel]||[]).map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
       </select>
       <select class="inp" id="selSeccionGS" style="flex:0 0 auto;width:86px">
-        ${SECCIONES.map(x=>`<option value="${esc(x)}">Sección ${esc(x)}</option>`).join("")}
+        ${SECCIONES.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("")}
       </select>
       <button class="btn-soft" style="flex:0 0 auto;padding:10px 14px" onclick="agregarGS()">Agregar</button>
     </div>
@@ -2350,9 +2371,9 @@ function renderInfo(){
   <div class="card">
     <h2>${ic("salir")} Zona delicada</h2>
     <button class="dl alt" onclick="borrarTodo()">Borrar datos locales</button>
-    <button class="dl alt" style="margin-top:8px" onclick="cerrarSesion()">Cerrar sesión en este dispositivo</button>
+    <button class="dl alt" style="margin-top:8px" onclick="abrirConfCierre()">Cerrar sesión en este dispositivo</button>
   </div>
-  <p class="vacio">Planificación Docente RD · Delega IA · DGtech · 2026</p>`;
+`;
 }
 function toggleSel(tipo, valor){
   if(tipo==="asig"){
@@ -2475,8 +2496,19 @@ function quitarRecurso(r){
   renderInfo();
   toast("Recurso eliminado");
 }
+function abrirConfCierre(){
+  $("modalConfFondo").classList.add("abierto");
+  $("modalConfHoja").classList.add("abierta");
+}
+function cerrarConfCierre(){
+  $("modalConfFondo").classList.remove("abierto");
+  $("modalConfHoja").classList.remove("abierta");
+}
+function confirmarCierre(){
+  cerrarConfCierre();
+  cerrarSesion();
+}
 async function cerrarSesion(){
-  if(!confirm("¿Cerrar sesión? Necesitarás tu código para volver a entrar.")) return;
   const codigo = S.docente.codigo;
   if(codigo){
     try{

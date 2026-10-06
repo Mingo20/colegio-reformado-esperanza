@@ -309,7 +309,14 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .m-ver{margin-left:auto;display:flex;align-items:center;color:var(--azul);background:rgba(0,51,160,.08);border-radius:999px;padding:5px;flex-shrink:0;cursor:pointer}
 .m-ver svg{width:14px;height:14px}
 .selT{background:#f59e0b !important;color:#fff !important;border-color:#f59e0b !important}
-.chip-mini{padding:5px 10px;font-size:11px}
+.chip-mini{padding:4px 8px;font-size:10.5px}
+.g-chips-centro{justify-content:center !important}
+.rings-scroll{justify-content:center}
+.rings-scroll .ringbox2{flex:0 0 auto}
+.ringbox2 small{font-size:10px}
+.grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dl-gris{background:#e2e8f0 !important;color:#334155 !important;border-color:#cbd5e1 !important}
+.hero .eslogan{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#FFD6DB;margin:-4px 0 8px;opacity:.95}
 .an-persona{display:flex;align-items:center;justify-content:center;color:#fff}
 .dia-etq.manana{background:#f59e0b;color:#fff}
 .dia-etq.futura{background:rgba(0,51,160,.10);color:var(--azul)}
@@ -420,6 +427,13 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
   <p class="g-sub" id="modalGuiaSub">Guía práctica alineada a la Adecuación Curricular 2023</p>
   <div id="modalGuiaCuerpo"></div>
 </div>
+<div class="g-fondo" id="modalConfFondo" onclick="cerrarConfCierre()"></div>
+<div class="g-hoja" id="modalConfHoja" style="max-width:330px;text-align:center">
+  <h2>Cerrar sesión</h2>
+  <p class="g-sub" style="margin-bottom:14px">Se guardará una copia de tus datos en la nube antes de salir de este dispositivo. Necesitarás tu código para volver a entrar.</p>
+  <button class="dl grande" style="width:100%;margin:0 0 8px" onclick="cerrarConfCierre()">Cancelar</button>
+  <button class="dl alt" style="width:100%;margin:0" onclick="confirmarCierre()">Sí, cerrar sesión</button>
+</div>
 <div class="g-fondo" id="modalHistFondo" onclick="cerrarHistorial()"></div>
 <div class="g-hoja" id="modalHistHoja">
   <div class="g-asa"></div>
@@ -431,7 +445,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=11"></script>
+<script src="app-docente.js?v=12"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

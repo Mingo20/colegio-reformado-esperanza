@@ -66,6 +66,41 @@ function periodoDeMes(m){ if(m>=8&&m<=10) return 1; if(m>=11||m===1||m===12) ret
 function periodoDeFecha(f){ return PERIODOS[periodoDeMes(parseInt((f||HOY).slice(5,7)))-1] || PERIODOS[0]; }
 function numDePeriodo(p){ const i = PERIODOS.indexOf(p); return i>=0? i+1 : periodoDeMes(parseInt(HOY.slice(5,7))); }
 const SECCIONES = ["A","B","C","D","E","F"];
+const ASIG_BASICAS_PRIM = ["Lengua Española","Matemática","Ciencias de la Naturaleza","Ciencias Sociales","Formación Integral Humana y Religiosa"];
+const ASIG_ESP_PRIM = ["Inglés","Francés","Educación Física","Educación Artística"];
+function puedeElegirGrado(){
+  const nivel = S.docente.nivel;
+  if(nivel==="Secundaria") return true;
+  if(nivel==="Primaria"){
+    const asigs = (S.docente.asignaturasSel||[]).filter(Boolean);
+    return asigs.some(a=> ASIG_ESP_PRIM.indexOf(a)>=0);
+  }
+  return false;
+}
+function nivelUsaEvaluacionCualitativa(){ return S.docente.nivel==="Inicial"; }
+const ESTRATEGIAS_RD = {
+  "Inicial": ["Centro de Interés","Unidad de Aprendizaje / Situación de Aprendizaje","Proyecto de Aula"],
+  "Primaria": ["Unidad de Aprendizaje","Proyecto de Investigación","Proyecto Participativo de Aula (PPA)","Proyecto de Intervención de Aula","Eje Temático"],
+  "Secundaria": ["Unidad de Aprendizaje","Proyecto de Investigación","Proyecto Participativo de Aula (PPA)","Proyecto de Intervención de Aula"]
+};
+function estrategiaDe(gs, asig, periodo){
+  const e = S.docente.estrategias||{};
+  return e[gs+"|"+(asig||"—")+"|"+periodo] || null;
+}
+function evalsAlumno(n){
+  let L=0, EP=0, I=0;
+  Object.keys(S.evaluacion||{}).forEach(f=>{
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(f)) return;
+    const v = (S.evaluacion[f]||{})[n];
+    if(v==="Logrado") L++; else if(v==="En proceso") EP++; else if(v==="Iniciando") I++;
+  });
+  const t = L+EP+I;
+  return { L, EP, I, total:t,
+    pL: t? Math.round(L*100/t) : null,
+    pEP: t? Math.round(EP*100/t) : null,
+    pI: t? Math.round(I*100/t) : null };
+}
+function grupoReg(){ return { g: S.ui.regGrado||S.docente.grado||"", s: S.ui.regSec||S.docente.seccion||"A" }; }
 const ASIGNATURAS_RD = {
   Inicial: ["Identidad y Autonomía","Convivencia y Ciudadanía","Comprensión del Lenguaje","Comprensión del Mundo Físico y Natural","Expresión Artística y Corporal"],
   Primaria: ["Lengua Española","Matemática","Ciencias Sociales","Ciencias de la Naturaleza","Inglés","Francés","Formación Integral Humana y Religiosa","Educación Física","Educación Artística"],
@@ -709,7 +744,7 @@ async function obtenerPlan(id){
 function todasClases(plan){ const arr=[]; (plan.semanas||[]).forEach(s=>(s.dias||[]).forEach(d=>arr.push(d))); return arr; }
 function clasePorId(plan, id){ return todasClases(plan).find(d=>d.id===id); }
 function pctDia(claseId, tipo){
-  const N = alumnosDe(S.docente.seccion);
+  const N = alumnosDe(grupoReg().s, grupoReg().g);
   const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
   const reg = mapa[claseId]||{};
   let n=0;
@@ -774,8 +809,14 @@ function unidadDerivada(nivel, idxStr){
   const m = PLANES_ANUALES[nivel].temas[idx];
   if(!m) return null;
   const s = A.situacion(m);
+  const ym = parseMes(m.mes);
+  const perPlan = ym? PERIODOS[periodoDeMes(parseInt(ym.slice(5,7)))-1] : S.docente.periodo;
+  const asigPlan = (S.docente.asignaturasSel||[])[0] || "—";
+  const est = estrategiaDe((S.docente.grado||"")+"|"+(S.docente.seccion||"A"), asigPlan, perPlan);
+  if(est) s.estrategia = est;
   return {
     tipo:"derivado", id:"der-"+nivel+"-"+idx, nivel,
+    estrategia: est || "Unidad de Aprendizaje",
     titulo: m.tema, mes: m.mes, trimestre: m.trimestre, tema: m.tema,
     enfoque: m.enfoque, evaluacion: m.evaluacion,
     eje: A.ejes[idx % A.ejes.length],
@@ -1351,15 +1392,22 @@ function renderAnioDetalle(nivel){
 /* ---------- RENDER: MES ---------- */
 function planesMensuales(){
   const nivel = S.docente.nivel;
+  const perN = numDePeriodo(S.docente.periodo);
   const arr = [];
   PLANES_ANUALES[nivel].temas.forEach((m,i)=>{
+    const ym = parseMes(m.mes);
+    if(ym && periodoDeMes(parseInt(ym.slice(5,7)))!==perN) return;
     if(nivel==="Inicial" && /septiembre/i.test(m.mes)){
       arr.push({ id:"local-mariposa", titulo:PLAN_MARIPOSA.titulo, mes:PLAN_MARIPOSA.mes, tema:PLAN_MARIPOSA.tema, nSem:(PLAN_MARIPOSA.semanas||[]).length, detallado:true, propio:false });
     } else {
       arr.push({ id:"der-"+nivel+"-"+i, titulo:m.tema, mes:m.mes, tema:m.tema, nSem:4, detallado:false, propio:false });
     }
   });
-  (S.listaPlanes||[]).forEach(p=>arr.push({ id:p.id, titulo:p.titulo, mes:p.mes, tema:p.tema, nSem:p.semanas||0, detallado:true, propio:p.propio }));
+  (S.listaPlanes||[]).forEach(p=>{
+    const ym = parseMes(p.mes);
+    if(ym && periodoDeMes(parseInt(ym.slice(5,7)))!==perN) return;
+    arr.push({ id:p.id, titulo:p.titulo, mes:p.mes, tema:p.tema, nSem:p.semanas||0, detallado:true, propio:p.propio });
+  });
   return arr;
 }
 function renderMes(){
@@ -1393,12 +1441,10 @@ function renderMes(){
         </span>
       </div>`;
     });
-    if(!lista.length) html += `<p class="vacio">Aún no hay planes para este semestre.</p>`;
+    if(!lista.length) html += `<p class="vacio">Aún no hay unidades generadas en este período. Cuando completes tu planificación se mostrarán aquí.</p>`;
   };
-  html += `<div class="sep">1er Semestre · Agosto a Diciembre</div>`;
-  pintar(unicos.filter(p=>semestreDe(p.mes)==="1er"));
-  html += `<div class="sep">2do Semestre · Enero a Junio</div>`;
-  pintar(unicos.filter(p=>semestreDe(p.mes)==="2do"));
+  html += `<div class="sep">${esc(S.docente.periodo)} · Unidades de este período</div>`;
+  pintar(unicos);
   html += `<button class="dl grande" onclick="descargarAsistenciaTrimPdf()">${ic("descarga")} Asistencia del trimestre</button>
   <button class="dl alt" onclick="descargarEvaluacionTrimPdf()">${ic("descarga")} Evaluación del trimestre</button>
   <div style="height:14px"></div>`;
@@ -1443,6 +1489,7 @@ function renderMesDetalle(plan){
       <div class="kv"><b>Sección</b><span>${esc(S.docente.seccion)}</span></div>
       <div class="kv"><b>Tiempo</b><span>${esDerivado? esc(plan.duracion||"4 semanas") : (plan.semanas||[]).length+" semanas"}</span></div>
       <div class="kv"><b>Eje temático</b><span>${esc(plan.eje||"Según plan")}</span></div>
+      <div class="kv"><b>Estrategia</b><span>${esc(plan.estrategia || "Unidad de Aprendizaje")}</span></div>
       <div class="kv"><b>Docente</b><span>${esc(S.docente.nombre||"—")}</span></div>
     </div>
   </div>
@@ -1653,7 +1700,9 @@ function duracionAjustada(m, baseTotal){
   const factor = claseMin / baseTotal;
   return "~"+Math.max(2, Math.round(b*factor))+" min";
 }
+let claseAbiertaId = null;
 function renderClase(claseId){
+  claseAbiertaId = claseId;
   const plan = planAbierto || planActivo();
   const d = clasePorId(plan, claseId);
   if(!d){ irA("mes"); return; }
@@ -1721,19 +1770,27 @@ function renderClase(claseId){
   </div>
   <div class="card">
     <div style="display:flex;align-items:center;gap:8px">
-      <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · ${alumnosDe(S.docente.seccion)} alumnos</h2>
+      <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · <span id="regCuenta">${alumnosDe(grupoReg().s, grupoReg().g)}</span> alumnos</h2>
       <button class="btn-colapsa" id="btnColapsa" onclick="toggleRegistro()" title="Desplegar lista">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
     </div>
     <div class="colapso" id="zonaRegistro">
       <div>
+        <div class="grid-2col" style="margin-top:12px">
+          ${puedeElegirGrado()? `<select class="inp" id="regGrado" onchange="regSel('g')">
+            ${GRADOS_POR_NIVEL[S.docente.nivel].map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
+          </select>`:""}
+          <select class="inp" id="regSec" onchange="regSel('s')">
+            ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+          </select>
+        </div>
         <div class="tabs" style="margin-top:12px">
           <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
-          <div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>
+          ${nivelUsaEvaluacionCualitativa()? `<div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>`:""}
         </div>
         <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
-        <div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>
+        ${nivelUsaEvaluacionCualitativa()? `<div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>`:""}
       </div>
     </div>
   </div>
@@ -1743,7 +1800,7 @@ function renderClase(claseId){
     <p class="muted" style="margin-top:6px">Se guarda automáticamente y se sincroniza con la dirección.</p>
   </div>
   <button class="dl alt" onclick="descargarAsistenciaDiaPdf('${claseId}')">${ic("descarga")} Descargar asistencia en PDF</button>
-  <button class="dl alt" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar logros en PDF</button>
+  ${nivelUsaEvaluacionCualitativa()? `<button class="dl alt" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar logros en PDF</button>`:""}
   <button class="dl" onclick="descargarPlanDiarioDocx('${claseId}')">${ic("descarga")} Descargar plan diario en Word (.docx)</button>
   <div style="height:14px"></div>`;
   $("scr-clase").innerHTML = html;
@@ -1755,8 +1812,16 @@ function renderClase(claseId){
     window._obsT = setTimeout(()=>{ encolar("observacion", claseId, null, S.obs[claseId]); toast("Observación sincronizada"); }, 1500);
   });
 }
+function regSel(q){
+  if(q==="g") S.ui.regGrado = $("regGrado").value;
+  if(q==="s") S.ui.regSec = $("regSec").value;
+  guardar();
+  const c = $("regCuenta"); if(c) c.textContent = alumnosDe(grupoReg().s, grupoReg().g);
+  $("zonaA").innerHTML = alumnosHTML(claseAbiertaId,"A");
+  if($("zonaE")) $("zonaE").innerHTML = alumnosHTML(claseAbiertaId,"E");
+}
 function alumnosHTML(claseId, tipo){
-  const N = alumnosDe(S.docente.seccion);
+  const N = alumnosDe(grupoReg().s, grupoReg().g);
   const reg = (tipo==="A"? S.asistencia : S.evaluacion)[claseId]||{};
   let html = "";
   for(let i=1;i<=N;i++){
@@ -1780,8 +1845,9 @@ function alumnosHTML(claseId, tipo){
   return html;
 }
 function ringDuo(claseId){
-  return `<div class="ringitem">${ring(pctDia(claseId,"asis"),44,5,"#0033A0")}<small>Presentes</small></div>
-  <div class="ringitem">${ring(pctDia(claseId,"eval"),44,5,"#CE1126")}<small>Logrado</small></div>`;
+  let html = `<div class="ringitem">${ring(pctDia(claseId,"asis"),44,5,"#0033A0")}<small>Presentes</small></div>`;
+  if(nivelUsaEvaluacionCualitativa()) html += `<div class="ringitem">${ring(pctDia(claseId,"eval"),44,5,"#CE1126")}<small>Logrado</small></div>`;
+  return html;
 }
 function marcar(tipo, claseId, n, valor){
   const mapa = tipo==="A"? S.asistencia : S.evaluacion;
@@ -1802,6 +1868,7 @@ function toggleRegistro(){
   $("btnColapsa").classList.toggle("abierto");
 }
 function tabClase(t){
+  if(t==="E" && !nivelUsaEvaluacionCualitativa()) return;
   $("tabA").classList.toggle("sel", t==="A");
   $("tabE").classList.toggle("sel", t==="E");
   $("zonaA").style.display = t==="A"?"":"none";
@@ -1987,19 +2054,46 @@ function upsertPunto(grupo, n, f, tipo, pts, com, asig){
   else arr.push({ f, tipo, pts, com: com||"", asig: a });
   return arr.sort((a,b)=> a.f<b.f? 1 : -1);
 }
+let histRegAbierto = false;
+function toggleRegCal(){
+  histRegAbierto = !histRegAbierto;
+  const z = $("zonaRegCal"); if(z) z.style.display = histRegAbierto? "" : "none";
+  const c = $("collapReg"); if(c) c.classList.toggle("abierto", histRegAbierto);
+}
+function filasEval(n){
+  const fechas = Object.keys(S.evaluacion||{}).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f)).sort().reverse();
+  if(!fechas.length) return `<p class="g-intro">Sin evaluaciones registradas todavía. Regístralas en Planificación diaria → Registro del día → Evaluación.</p>`;
+  return fechas.map(f=>{
+    const v = (S.evaluacion[f]||{})[n];
+    const col = v==="Logrado"? "#0033A0" : v==="En proceso"? "#f59e0b" : v==="Iniciando"? "#CE1126" : "#94a3b8";
+    return `<div class="g-paso"><b>${esc(fmtFechaLinda(f))} · ${v? `<span style="color:${col}">${esc(v)}</span>` : "<span class=\"muted\">Sin registrar</span>"}</b></div>`;
+  }).join("");
+}
 function abrirHistorial(n, fuente){
   histActual = { n, fuente };
+  histRegAbierto = false;
   const grupo = grupoProg();
   const periodoSel = PERIODOS[(parseInt(S.ui.histFiltro)||numDePeriodo(S.docente.periodo))-1] || S.docente.periodo;
-  $("histTitulo").textContent = "Calificaciones · Alumno "+n;
+  $("histTitulo").textContent = ("Calificar · Alumno "+n).toUpperCase();
   $("histSub").textContent = "Promedios por asignatura y periodo · desliza hacia los lados";
+  const esInicial = nivelUsaEvaluacionCualitativa();
   const asigs = asignaturasVista();
-  const ancho = Math.max(1, asigs.length);
-  const rings = asigs.map(a=>{
-    const v = notaAsig(n, a, periodoSel);
-    const color = v===null? "#94a3b8" : (v>=70? "#0033A0" : "#CE1126");
-    return `<div class="ringbox2">${ring(v===null?0:v,64,7,color, v===null? "—":String(v))}<small>${esc(a.length>20? a.slice(0,19)+"…" : a)}</small></div>`;
-  }).join("");
+  let rings;
+  if(esInicial){
+    const ev = evalsAlumno(n);
+    $("histSub").textContent = "Evaluación acumulada de tus clases · desliza hacia los lados";
+    rings = [
+      ["Logrado", ev.pL, "#0033A0"],
+      ["En proceso", ev.pEP, "#f59e0b"],
+      ["Iniciado", ev.pI, "#CE1126"]
+    ].map(([etq, p, col])=>`<div class="ringbox2">${ring(p||0,64,7, p===null? "#94a3b8":col, p===null? "—":String(p))}<small>${etq}</small></div>`).join("");
+  } else {
+    rings = asigs.map(a=>{
+      const v = notaAsig(n, a, periodoSel);
+      const color = v===null? "#94a3b8" : (v>=70? "#0033A0" : "#CE1126");
+      return `<div class="ringbox2">${ring(v===null?0:v,64,7,color, v===null? "—":String(v))}<small>${esc(a.length>20? a.slice(0,19)+"…" : a)}</small></div>`;
+    }).join("");
+  }
   const NUMS = ["1er","2do","3er","4to"];
   const chips = PERIODOS.map((p,i)=>`<span class="chip chip-mini ${periodoSel===p?"sel":""}" onclick="filtrarHist('${i+1}')">${NUMS[i]} periodo</span>`).join("");
   let arr = puntosDe(grupo, n).slice();
@@ -2008,30 +2102,35 @@ function abrirHistorial(n, fuente){
     <div class="g-paso"><b>${esc(fmtFechaLinda(x.f))} · ${esc(x.asig||"General")} · ${esc(TIPOS_PUNTO[x.tipo]||x.tipo)} · ${x.pts} pts</b>
     <span>${x.com? esc(x.com) : "Sin comentario"}</span></div>`).join("")
     : `<p class="g-intro">Sin registros en ${esc(periodoSel)} todavía.</p>`;
-  const esInicial = S.docente.nivel==="Inicial";
   $("histCuerpo").innerHTML = `
   <div class="hscroll rings-scroll">${rings}</div>
   <div class="g-chips hscroll g-chips-centro" style="margin-bottom:10px">${chips}</div>
-  <h3 class="hist-sep">Registrar un punto</h3>
-  <div class="hist-grid">
-    ${esInicial? "" : `
-    <div><label class="lbl">Asignatura</label>
+  ${esInicial? "" : `
+  <div class="hist-collap" id="collapReg" onclick="toggleRegCal()">
+    <b>${ic("cuaderno",15)} Registrar calificación</b>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+  <div id="zonaRegCal" style="display:${histRegAbierto? "":"none"}">
+    <div class="hist-grid">
       <select class="inp" id="hpAsig">
+        <option value="" disabled selected>Asignatura</option>
         ${asigs.filter(a=>a!=="General").concat(asigs.includes("General")?["General"]:[]).map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join("")}
-      </select></div>
-    <div><label class="lbl">Tipo</label>
+      </select>
       <select class="inp" id="hpTipo">
+        <option value="" disabled selected>Tipo</option>
         <option value="P">Participación</option>
         <option value="T">Trabajo</option>
         <option value="E">Exámenes</option>
-      </select></div>`}
-    <div><label class="lbl">Puntos (0 a 100)</label><input type="number" min="0" max="100" class="inp" id="hpPts" placeholder="Ej. 85"></div>
-    <div><label class="lbl">Comentario</label><input type="text" class="inp" id="hpCom" placeholder="¿Por qué? (opcional)"></div>
-  </div>
-  <p class="muted" style="font-size:11.5px;margin-top:4px">El punto se registra con la fecha de hoy (${esc(fmtFechaLinda(HOY))}) en ${esc(periodoSel)}.</p>
-  <div class="hist-sticky"><button class="dl grande" style="margin:0" onclick="registrarPunto()">${ic("cuaderno")} Registrar punto</button></div>
-  <h3 class="hist-sep">Historial de puntos · ${esc(periodoSel)}</h3>
-  ${filas}
+      </select>
+      <input type="number" min="0" max="100" class="inp" id="hpPts" placeholder="Puntos (0 a 100)">
+      <input type="text" class="inp" id="hpCom" placeholder="Comentario">
+    </div>
+    <p class="muted" style="font-size:11.5px;margin-top:4px">La calificación se registra con la fecha de hoy (${esc(fmtFechaLinda(HOY))}) en ${esc(periodoSel)}.</p>
+    <div class="hist-sticky"><button class="dl grande" style="margin:0" onclick="registrarPunto()">${ic("cuaderno")} Registrar calificación</button></div>
+  </div>`}
+  <h3 class="hist-sep">Historial ${esInicial? "de evaluaciones":"de calificaciones"} · ${esc(periodoSel)}</h3>
+  ${esInicial? "" : filas}
+  ${esInicial? filasEval(n) : ""}
   <div style="height:26px"></div>`;
   $("modalHistFondo").classList.add("abierto");
   $("modalHistHoja").classList.add("abierta");
@@ -2055,9 +2154,11 @@ function registrarPunto(){
   if(!histActual) return;
   const n = histActual.n;
   const f = HOY;
-  const esInicial = S.docente.nivel==="Inicial";
-  const asig = esInicial? "Asignatura integrada" : ($("hpAsig")? ($("hpAsig").value||"General") : "General");
-  const tipo = esInicial? "P" : ($("hpTipo")? $("hpTipo").value : "P");
+  if(nivelUsaEvaluacionCualitativa()){ toast("Inicial trabaja con evaluación cualitativa, no con puntos"); return; }
+  const asig = $("hpAsig")? $("hpAsig").value : "";
+  const tipo = $("hpTipo")? $("hpTipo").value : "";
+  if(!asig){ toast("Selecciona la asignatura"); return; }
+  if(!tipo){ toast("Selecciona el tipo de calificación"); return; }
   const pv = parseFloat($("hpPts").value);
   if(isNaN(pv) || pv<0 || pv>100){ toast("Escribe los puntos entre 0 y 100"); return; }
   const pts = Math.round(pv);
@@ -2071,7 +2172,7 @@ function registrarPunto(){
   guardar();
   abrirHistorial(n, "progreso");
   if($("scr-progreso").classList.contains("visible")) renderProgreso();
-  toast("Punto de "+asig+" registrado para Alumno "+n);
+  toast("Calificación de "+asig+" registrada para Alumno "+n);
 }
 
 /* ---------- PROGRESO ---------- */
@@ -2160,9 +2261,9 @@ function htmlProgresoHero(){
     <p class="eslogan">Tu agente administrativo</p>
     <p>Progreso · Calificaciones de ${esc(S.docente.periodo)} · Grado ${esc(g)} · Sección ${esc(sc)}</p>
     <div class="row">
-      <div class="ringbox">${ring(promedioGrupo(),56,7,"#fff")}<small>Promedio</small></div>
+      ${nivelUsaEvaluacionCualitativa()? "" : `<div class="ringbox">${ring(promedioGrupo(),56,7,"#fff")}<small>Promedio</small></div>`}
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
-      <div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logros</small></div>
+      ${nivelUsaEvaluacionCualitativa()? `<div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logros</small></div>` : ""}
     </div>
   </div>`;
 }
@@ -2174,6 +2275,7 @@ function htmlProgresoPanel(){
   let html = `
   <div class="card">
     <h2>${ic("boletin")} Filtrar por grupos</h2>
+    ${puedeElegirGrado()? `
     <div class="grid-2col">
       <div><label class="lbl">Grado</label>
         <select class="inp" id="progGrado" onchange="progSel('grado')">
@@ -2183,26 +2285,33 @@ function htmlProgresoPanel(){
         <select class="inp" id="progSec" onchange="progSel('sec')">
           ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
         </select></div>
-    </div>
+    </div>` : `
+    <label class="lbl">Sección</label>
+    <select class="inp" id="progSec" onchange="progSel('sec')">
+      ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+    </select>`}
   </div>
-  <h2 class="mini">Calificación por alumno · Grado ${esc(g)} · Sección ${esc(sc)}</h2>`;
+  <h2 class="mini">${puedeElegirGrado()? "Grado "+esc(g)+" · " : ""}Sección ${esc(sc)}</h2>`;
   for(let i=1;i<=N;i++){
+    const inicial = nivelUsaEvaluacionCualitativa();
     const nf = notaDe(i);
-    const k = nf===null? "—" : escalaDe(nf);
     const color = nf===null? "#94a3b8" : (nf>=70? "#0033A0" : "#CE1126");
     const asis = asistenciaDe(i);
+    const ev = evalsAlumno(i);
+    const segundoRing = inicial
+      ? ring(ev.total? ev.pL:0,46,5, ev.total? "#CE1126":"#94a3b8", ev.total? String(ev.pL):"—")
+      : ring(nf===null?0:nf,46,5,color, nf===null? "—":String(nf));
+    const segundaEtq = inicial? "Logrado" : "Promedio";
     html += `<div class="prog-card">
-      <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver promedios y registrar puntos">
-        <div class="an an-persona">${ic("persona",14)}</div>
-        <div class="pc-nombre">Alumno ${i}</div>
-        <span class="escala ${nf===null?"":k}">${nf===null? "Sin calificar" : esc(escalaTexto(k))}</span>
-        <div class="rg">
-          <div class="ring-duo">${ring(nf===null?0:nf,46,5,color, nf===null? "—":String(nf))}
-          ${ring(asis===null?0:asis,46,5,asis===null? "#94a3b8":"#0033A0", asis===null? "—":String(asis))}</div>
+      <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver detalle del alumno">
+        <div class="pc-user">${ic("persona",13)}<span class="pc-nombre">Alumno ${i}</span></div>
+        <div class="rg pc-rings">
+          <div class="ringitem">${ring(asis===null?0:asis,46,5,asis===null? "#94a3b8":"#0033A0", asis===null? "—":String(asis))}<small>Asistencia</small></div>
+          <div class="ringitem">${segundoRing}<small>${segundaEtq}</small></div>
         </div>
       </div>
       <div class="pc-bottom">
-        <button class="dl dl-chico dl-gris" onclick="abrirHistorial(${i},'progreso')">${ic("cuaderno",14)} Registrar puntos</button>
+        <button class="dl dl-chico dl-detalle" onclick="abrirHistorial(${i},'progreso')">Ver detalle</button>
         <button class="btn-mini" title="Reporte individual" onclick="descargarBoletinIndividual(${i})">${ic("descarga",15)}</button>
       </div>
     </div>`;
@@ -2257,7 +2366,37 @@ function borrarNotificaciones(){
 }
 
 /* ---------- INFO ---------- */
+let estGSel = null, estAsigSel = null, estPerSel = null, estEstSel = null;
+function estSel(q){
+  if(q==="gs") estGSel = $("estGS").value;
+  if(q==="asig") estAsigSel = $("estAsig")? $("estAsig").value : null;
+  if(q==="per") estPerSel = $("estPer").value;
+  if(q==="est") estEstSel = $("estEst").value;
+}
+function guardarEstrategia(){
+  const gs = $("estGS").value;
+  const asig = ($("estAsig")? $("estAsig").value : "—") || "—";
+  const per = $("estPer").value;
+  const est = $("estEst").value;
+  if(!gs || !per || !est){ toast("Completa los campos de la estrategia"); return; }
+  S.docente.estrategias = S.docente.estrategias||{};
+  S.docente.estrategias[gs+"|"+asig+"|"+per] = est;
+  guardar();
+  renderInfo();
+  toast("Estrategia guardada para "+gs+" · "+per);
+}
+function quitarEstrategia(k){
+  if(!S.docente.estrategias) return;
+  delete S.docente.estrategias[k];
+  guardar();
+  renderInfo();
+  toast("Estrategia eliminada");
+}
 function renderInfo(){
+  if(estGSel===null) estGSel = (S.docente.gradosSecciones&&S.docente.gradosSecciones[0]) || (S.docente.grado||"")+"|"+(S.docente.seccion||"A");
+  if(estAsigSel===null) estAsigSel = (S.docente.asignaturasSel||[])[0] || (ASIGNATURAS_RD[S.docente.nivel]||[])[0];
+  if(estPerSel===null) estPerSel = S.docente.periodo || periodoDeFecha(HOY);
+  if(estEstSel===null) estEstSel = (ESTRATEGIAS_RD[S.docente.nivel]||[])[0];
   const pend = S.cola.length;
   const ult = S.lastSync? new Date(S.lastSync).toLocaleString("es-DO") : "Aún no sincroniza";
   const durH = Math.floor((S.docente.duracionMin||0)/60), durM = (S.docente.duracionMin||0)%60;
@@ -2357,6 +2496,38 @@ function renderInfo(){
     <label class="lbl">${esc(g)} · Sección ${esc(s)}</label>
     <input class="inp inpAlum" data-sec="${esc(gs)}" type="number" min="1" max="60" value="${alumnosDe(s, g)}" style="text-align:center;font-weight:800">`; }).join("")}
     <button class="dl" onclick="guardarAlumnosPorSeccion()">Guardar</button>
+  </div>
+  <div class="card">
+    <h2>${ic("plan")} Estrategia de planificación</h2>
+    <p class="muted" style="margin-bottom:10px">Elige cómo quieres que genere cada plan mensual según tu grupo, ${nivel==="Inicial"? "período y estrategia":"asignatura, período y estrategia"}. Tu plan anual sigue como mapa general del año.</p>
+    <div class="grid-2col">
+      <select class="inp" id="estGS" onchange="estSel('gs')">
+        ${(S.docente.gradosSecciones&&S.docente.gradosSecciones.length? S.docente.gradosSecciones : [(S.docente.grado||"")+"|"+(S.docente.seccion||"A")]).map(gs=>{ const [g,s]=gs.split("|");
+          return `<option value="${esc(gs)}" ${gs===estGSel? "selected":""}>${esc(g)} · Sección ${esc(s)}</option>`; }).join("")}
+      </select>
+      ${nivel==="Inicial"? "" : `
+      <select class="inp" id="estAsig" onchange="estSel('asig')">
+        ${( (S.docente.asignaturasSel||[]).length? S.docente.asignaturasSel : (ASIGNATURAS_RD[nivel]||[]) ).map(a=>`<option value="${esc(a)}" ${a===estAsigSel? "selected":""}>${esc(a)}</option>`).join("")}
+      </select>`}
+    </div>
+    <div class="grid-2col" style="margin-top:8px">
+      <select class="inp" id="estPer" onchange="estSel('per')">
+        ${PERIODOS.map(p=>`<option value="${esc(p)}" ${p===estPerSel? "selected":""}>${esc(p)}</option>`).join("")}
+      </select>
+      <select class="inp" id="estEst" onchange="estSel('est')">
+        ${(ESTRATEGIAS_RD[nivel]||[]).map(e=>`<option value="${esc(e)}" ${e===estEstSel? "selected":""}>${esc(e)}</option>`).join("")}
+      </select>
+    </div>
+    <button class="dl" style="margin-top:10px" onclick="guardarEstrategia()">${ic("nota")} Guardar estrategia</button>
+    <div class="chips-sel" style="margin-top:10px">
+      ${Object.keys(S.docente.estrategias||{}).length
+        ? Object.entries(S.docente.estrategias).map(([k,v])=>{
+            const [g,s,asig,per] = k.split("|");
+            const lbl = g+" · "+s+(nivel==="Inicial"? "" : " · "+(asig!=="—"? asig:"—"))+" · "+per;
+            return `<span class="chip sel">${esc(lbl)}<br>${esc(v)} <b style="cursor:pointer;padding-left:4px" onclick="quitarEstrategia('${esc(k)}')">✕</b></span>`;
+          }).join("")
+        : '<span class="muted" style="font-size:12px">Aún no has configurado estrategias. Guarda la primera arriba.</span>'}
+    </div>
   </div>
   <div class="card">
     <h2>${ic("refrescar")} Sincronización automática</h2>

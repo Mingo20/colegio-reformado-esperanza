@@ -316,6 +316,18 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .ringbox2 small{font-size:10px}
 .grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .dl-gris{background:#e2e8f0 !important;color:#334155 !important;border-color:#cbd5e1 !important}
+.dl-detalle{background:#f1f5f9 !important;color:#475569 !important;border:1px solid #cbd5e1 !important;box-shadow:none !important}
+.prog-card{background:#fff !important;box-shadow:0 1px 3px rgba(15,23,42,.08) !important}
+.prog-card .pc-user{display:flex;align-items:center;gap:6px;flex:1;min-width:0}
+.prog-card .pc-user svg{flex-shrink:0;opacity:.75}
+.prog-card .pc-user .pc-nombre{font-size:13.5px;font-weight:800;color:var(--azul-osc)}
+.prog-card .pc-rings{display:flex;gap:14px;align-items:center}
+.prog-card .pc-rings .ringitem{text-align:center}
+.prog-card .pc-rings .ringitem small{display:block;font-size:9px;font-weight:800;color:var(--tinta-suave);margin-top:2px}
+.hist-collap{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;cursor:pointer;margin:12px 0}
+.hist-collap b{font-size:13px;display:flex;align-items:center;gap:8px}
+.hist-collap svg{width:18px;height:18px;transition:transform .2s}
+.hist-collap.abierto svg{transform:rotate(180deg)}
 .hero .eslogan{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#FFD6DB;margin:-4px 0 8px;opacity:.95}
 .an-persona{display:flex;align-items:center;justify-content:center;color:#fff}
 .dia-etq.manana{background:#f59e0b;color:#fff}
@@ -445,7 +457,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=12"></script>
+<script src="app-docente.js?v=13"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

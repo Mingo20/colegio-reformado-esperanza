@@ -79,7 +79,7 @@ function puedeElegirGrado(){
 }
 function nivelUsaEvaluacionCualitativa(){ return S.docente.nivel==="Inicial"; }
 const ESTRATEGIAS_RD = {
-  "Inicial": ["Centro de Interés","Unidad de Aprendizaje / Situación de Aprendizaje","Proyecto de Aula"],
+  "Inicial": ["Centro de Interés","Unidad de aprendizaje","Proyecto de Aula"],
   "Primaria": ["Unidad de Aprendizaje","Proyecto de Investigación","Proyecto Participativo de Aula (PPA)","Proyecto de Intervención de Aula","Eje Temático"],
   "Secundaria": ["Unidad de Aprendizaje","Proyecto de Investigación","Proyecto Participativo de Aula (PPA)","Proyecto de Intervención de Aula"]
 };
@@ -593,7 +593,7 @@ const LS_VIEJO = "plan_docente_rd_v4";
 const LS_VIEJO2 = "plan_docente_rd_v2";
 function estadoDefault(){
   return {
-    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er periodo",recursos:[] },
+    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er periodo",recursos:[],estGuarda:null,estrategias:{} },
     asistencia:{}, evaluacion:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
     notificaciones:[], vistosPlanes:0,
@@ -678,7 +678,7 @@ function guardar(){
   try{ localStorage.setItem(LS_KEY, JSON.stringify(S)); }catch(e){}
   programarSyncEstado();
 }
-const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","lastSync"];
+const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","lastSync"];
 let _syncT = null;
 function programarSyncEstado(){
   if(!S.docente.id || !S.docente.codigo) return;
@@ -1102,6 +1102,17 @@ function renderOnboarding(){
     <p class="muted" style="text-align:center;margin-bottom:10px">¿Aún no tienes tu cuenta?</p>
     <button class="dl alt" style="width:100%" onclick="mostrarRegistro()">Registrarme</button>
   </div>
+  <div class="card onb-aviso">
+    <div style="display:flex;gap:10px;align-items:flex-start">
+      <div class="onb-aviso-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 20h20L12 2z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></svg>
+      </div>
+      <div>
+        <b>Importante al iniciar sesión</b>
+        <p style="margin:4px 0 0">Completa tu perfil docente en la pantalla <b>Perfil</b>: grados, secciones, asignaturas y duración de tus clases. Así el sistema generará planes, documentos de evaluación e informes <b>personalizados y coherentes</b> con tu nivel y tu realidad escolar.</p>
+      </div>
+    </div>
+  </div>
   <div class="card" id="cardRegistro" style="display:none">
     <h2>${ic("usuarios")} Regístrate</h2>
     <label class="lbl">Nombre del colegio o escuela</label>
@@ -1192,13 +1203,14 @@ async function entrarConCodigo(){
       if(e2.success && e2.estado) remoto = e2.estado;
     }catch(e2){ }
     if(remoto){
-      ["asistencia","evaluacion","puntos","crono","tiempoClase","obs","notificaciones","vistosPlanes","lastSync"].forEach(k=>{
+      ["asistencia","evaluacion","evalsCom","puntos","crono","tiempoClase","obs","notificaciones","vistosPlanes","lastSync"].forEach(k=>{
         if(remoto[k]!==undefined) S[k] = remoto[k];
       });
       if(remoto.ui) S.ui = Object.assign({}, S.ui, remoto.ui);
       if(remoto.docente){
         if(remoto.docente.foto) S.docente.foto = remoto.docente.foto;
         if(Array.isArray(remoto.docente.recursos)) S.docente.recursos = remoto.docente.recursos;
+        if(remoto.docente.estGuarda) S.docente.estGuarda = remoto.docente.estGuarda;
       }
       if(!S.docente.foto) S.docente.foto = fotoPerfilActual;
     }
@@ -1473,6 +1485,7 @@ async function abrirPlan(id){
 
 /* ---------- RENDER: MES DETALLE (unidad de aprendizaje MINERD) ---------- */
 let planAbierto = null;
+function esAnualPlan(plan){ return /plan anual/i.test(plan&&plan.titulo||""); }
 function renderMesDetalle(plan){
   if(!plan){ irA("mes"); return; }
   planAbierto = plan;
@@ -1546,10 +1559,11 @@ function renderMesDetalle(plan){
     semanasInv.forEach(s=>{
       const dias = s.dias||[];
       const pctW = dias.length? Math.round(dias.reduce((a,d)=>a+pctDia(d.id,"asis"),0)/dias.length) : 0;
-      html += `<div class="item" onclick="abrirClase('${dias[dias.length-1].id}')">
+      const lblSem = esAnualPlan(plan)? "Mes":"Semana";
+      html += `<div class="item" ${dias.length? `onclick="abrirClase('${dias[dias.length-1].id}')"`:""}>
         <div class="ic">${ic("lista")}</div>
-        <div class="tx"><b>Semana ${s.numero} · ${esc(s.tema)}</b><span>${esc(s.fechas)} · ${dias.length} clases diarias</span></div>
-        <div class="rg">${ring(pctW,46,6,"#0033A0")}</div>
+        <div class="tx"><b>${lblSem} ${s.numero} · ${esc(s.tema)}</b><span>${esc(s.fechas)}${dias.length? " · "+dias.length+" clases diarias":""}</span></div>
+        ${dias.length? `<div class="rg">${ring(pctW,46,6,"#0033A0")}</div>`:""}
       </div>
       <div class="card" style="padding:10px 12px">
         ${dias.slice().reverse().map(d=>{
@@ -1759,14 +1773,16 @@ function renderClase(claseId){
   <h2 class="mini">Momentos de la clase</h2>
   ${momentos.map((m,i)=>`
     <div class="momento" onclick="abrirMomento(${i})" title="Ver cómo desarrollar este momento" style="cursor:pointer">
+      <div class="m-head">
         <div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b>
-        <span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))}</span>
+        <span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))} min</span>
         <span class="m-ver" title="Toca para ver la guía del momento">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.5" r="0.8" fill="currentColor"/></svg>
         </span>
       </div>
-      <p class="prop">Propósito: ${esc(m.proposito)}</p>
-      <ol>${(m.pasos||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ol>
+      <div class="m-acciones">
+        <button class="m-iniciar" onclick="iniciarMomento(event, ${i})">${ic("play",13)} Iniciar momento</button>
+      </div>
     </div>`).join("")}
   <div class="card">
     <h2>${ic("etiqueta")} Recursos y evaluación</h2>
@@ -1871,6 +1887,7 @@ function marcar(tipo, claseId, n, valor){
   guardar();
   encolar(tipo==="A"?"asistencia":"evaluacion", claseId, { alumno:"Alumno "+n, estado: valor||"Sin registrar" });
   toast("Alumno "+n+": "+(valor||"Sin registrar"));
+  if(tipo==="E" && valor && PREGUNTAS_EVAL[valor]){ abrirEvalModal(claseId, n, valor); }
   if(!$("scr-clase").classList.contains("visible")) return;
   if(tipo==="A") $("zonaA").innerHTML = alumnosHTML(claseId,"A");
   else $("zonaE").innerHTML = alumnosHTML(claseId,"E");
@@ -1911,6 +1928,42 @@ function temporizadorHTML(durs){
     </div>
   </div>`;
 }
+let evalPend = null;
+const PREGUNTAS_EVAL = {
+  "Logrado": "¿Qué avance ha tenido?",
+  "En proceso": "¿Qué apoyos está necesitando?",
+  "Iniciando": "¿Qué indicios ha mostrado?"
+};
+function abrirEvalModal(claseId, n, valor){
+  evalPend = { claseId, n, valor };
+  const el = $("evalPreg");
+  if(el) el.textContent = PREGUNTAS_EVAL[valor] || "Cuéntanos sobre esta evaluación";
+  const inp = $("evalCom"), lbl = $("evalLbl");
+  if(inp){ inp.value = ""; lbl.classList.remove("esc"); }
+  const tit = $("evalAlum"); if(tit) tit.textContent = "ALUMNO "+n+" · "+valor.toUpperCase();
+  $("modalEvalFondo").classList.add("abierto");
+  $("modalEvalHoja").classList.add("abierta");
+}
+function cerrarEvalModal(){
+  $("modalEvalFondo").classList.remove("abierto");
+  $("modalEvalHoja").classList.remove("abierta");
+  evalPend = null;
+}
+function onEvalInput(v){
+  $("evalLbl").classList.toggle("esc", (v||"").length>0);
+}
+function guardarEvalCom(){
+  if(!evalPend) return;
+  const com = ($("evalCom").value||"").trim();
+  if(!S.evalsCom) S.evalsCom = {};
+  const k = evalPend.claseId+"|"+evalPend.n;
+  if(com) S.evalsCom[k] = com; else delete S.evalsCom[k];
+  guardar();
+  const p = evalPend; cerrarEvalModal();
+  toast("Evaluación guardada"+(com? " con comentario de evidencia":""));
+  if(!$("scr-clase").classList.contains("visible")) return;
+  $("zonaE").innerHTML = alumnosHTML(p.claseId,"E");
+}
 const CIRC = 2*Math.PI*40;
 let T = { dur:300, resta:300, corriendo:false, iv:null };
 let claseActualId = null;
@@ -1921,7 +1974,8 @@ function cronoGuarda(){
 }
 function setDur(min, btn){
   document.querySelectorAll(".dur-btn").forEach(b=>b.classList.remove("sel"));
-  btn.classList.add("sel");
+  if(btn) btn.classList.add("sel");
+  else { const b1 = document.querySelector(".dur-btn"); if(b1) b1.classList.add("sel"); }
   T.dur = min*60; T.resta = T.dur; T.corriendo = false;
   clearInterval(T.iv); pintarTimer(); $("timerEstado").textContent="Listo";
   $("btnPlay").innerHTML = ic("play",14)+" Iniciar";
@@ -2014,6 +2068,20 @@ function beepFuerte(){
     });
   }catch(e){}
 }
+function iniciarMomento(ev, i){
+  ev.stopPropagation();
+  const plan = planAbierto || planActivo();
+  const d = clasePorId(plan, claseActualId);
+  const momentos = (d && d.momentos)||[];
+  const m = momentos[i]; if(!m) return;
+  const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
+  const mins = Math.max(1, minsDe(duracionAjustada(m, base)) || 5);
+  const btnSel = Array.from(document.querySelectorAll(".dur-btn")).find(b=>b.textContent.trim().startsWith(mins+""));
+  setDur(mins, btnSel||null);
+  abrirMomento(i);
+  if(!T.corriendo) playTimer();
+  toast("Momento en marcha: "+m.nombre+" · "+mins+" min");
+}
 function initTimer(durs){
   const d = (durs && durs.length)? durs[0]*60 : 300;
   T={dur:d,resta:d,corriendo:false,iv:null};
@@ -2099,7 +2167,8 @@ function filasEval(n){
   return fechas.map(f=>{
     const v = (S.evaluacion[f]||{})[n];
     const col = v==="Logrado"? "#0033A0" : v==="En proceso"? "#f59e0b" : v==="Iniciando"? "#CE1126" : "#94a3b8";
-    return `<div class="g-paso"><b>${esc(fmtFechaLinda(f))} · ${v? `<span style="color:${col}">${esc(v)}</span>` : "<span class=\"muted\">Sin registrar</span>"}</b></div>`;
+    const com = (S.evalsCom||{})[f+"|"+n] || "";
+    return `<div class="g-paso"><b>${esc(fmtFechaLinda(f))} · ${v? `<span style="color:${col}">${esc(v)}</span>` : "<span class=\"muted\">Sin registrar</span>"}</b>${com? `<span>${esc(com)}</span>`:""}</div>`;
   }).join("");
 }
 function abrirHistorial(n, fuente){
@@ -2107,7 +2176,7 @@ function abrirHistorial(n, fuente){
   histRegAbierto = false;
   const grupo = grupoProg();
   const periodoSel = PERIODOS[(parseInt(S.ui.histFiltro)||numDePeriodo(S.docente.periodo))-1] || S.docente.periodo;
-  $("histTitulo").textContent = ((nivelUsaEvaluacionCualitativa()? "Evaluar":"Calificar")+" · Alumno "+n).toUpperCase();
+  $("histTitulo").textContent = ((nivelUsaEvaluacionCualitativa()? "Evaluación":"Calificar")+" · Alumno "+n).toUpperCase();
   $("histSub").textContent = "Promedios por asignatura y periodo · desliza hacia los lados";
   const esInicial = nivelUsaEvaluacionCualitativa();
   const asigs = asignaturasVista();
@@ -2296,7 +2365,7 @@ function htmlProgresoHero(){
     <div class="row">
       ${nivelUsaEvaluacionCualitativa()? "" : `<div class="ringbox">${ring(promedioGrupo(),56,7,"#fff")}<small>Promedio</small></div>`}
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
-      ${nivelUsaEvaluacionCualitativa()? `<div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logros</small></div>` : ""}
+      ${nivelUsaEvaluacionCualitativa()? `<div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logrado</small></div>` : ""}
     </div>
   </div>`;
 }
@@ -2401,6 +2470,11 @@ function estSel(q){
   if(q==="asig") estAsigSel = $("estAsig")? $("estAsig").value : null;
   if(q==="per") estPerSel = $("estPer").value;
   if(q==="est") estEstSel = $("estEst").value;
+  if(!S.docente.estGuarda) S.docente.estGuarda = {};
+  S.docente.estGuarda = Object.assign({}, S.docente.estGuarda, {
+    gs: estGSel||null, asig: estAsigSel||null, per: estPerSel||null, est: estEstSel||null
+  });
+  guardar();
 }
 function guardarEstrategia(){
   const selGS = $("estGS");
@@ -2423,10 +2497,11 @@ function quitarEstrategia(k){
   toast("Estrategia eliminada");
 }
 function renderInfo(){
-  if(estGSel===null) estGSel = (S.docente.gradosSecciones&&S.docente.gradosSecciones[0]) || (S.docente.grado||"")+"|"+(S.docente.seccion||"A");
-  if(estAsigSel===null) estAsigSel = (S.docente.asignaturasSel||[])[0] || (ASIGNATURAS_RD[S.docente.nivel]||[])[0];
-  if(estPerSel===null) estPerSel = S.docente.periodo || periodoDeFecha(HOY);
-  if(estEstSel===null) estEstSel = (ESTRATEGIAS_RD[S.docente.nivel]||[])[0];
+  const eg = S.docente.estGuarda||{};
+  if(estGSel===null) estGSel = eg.gs || (S.docente.gradosSecciones&&S.docente.gradosSecciones[0]) || (S.docente.grado||"")+"|"+(S.docente.seccion||"A");
+  if(estAsigSel===null) estAsigSel = eg.asig || (S.docente.asignaturasSel||[])[0] || (ASIGNATURAS_RD[S.docente.nivel]||[])[0];
+  if(estPerSel===null) estPerSel = eg.per || S.docente.periodo || periodoDeFecha(HOY);
+  if(estEstSel===null) estEstSel = eg.est || (ESTRATEGIAS_RD[S.docente.nivel]||[])[0];
   const pend = S.cola.length;
   const ult = S.lastSync? new Date(S.lastSync).toLocaleString("es-DO") : "Aún no sincroniza";
   const durH = Math.floor((S.docente.duracionMin||0)/60), durM = (S.docente.duracionMin||0)%60;
@@ -2434,19 +2509,16 @@ function renderInfo(){
   const asigs = ASIGNATURAS_RD[nivel] || [];
   const secs = S.docente.secciones.length? S.docente.secciones : [S.docente.seccion||"A"];
   $("scr-info").innerHTML = `
-  <div class="hero"><h2>Delega</h2>
-    <p class="eslogan">Tu agente administrativo</p>
-    <p>Perfil del docente · ${esc(S.docente.nombre)} · ${esc(S.docente.colegio)}</p></div>
-  <div class="card">
-    <h2>${ic("usuarios")} Foto de perfil</h2>
-    <div style="display:flex;align-items:center;gap:12px">
-      <img id="prevFoto" src="${S.docente.foto||""}" style="${S.docente.foto?"":"display:none"};width:60px;height:60px;border-radius:50%;object-fit:cover;border:3px solid rgba(0,51,160,.15)">
-      <div style="flex:1">
-        <p class="muted" style="margin-bottom:8px">Tu foto aparece en el encabezado de la app. Se guarda en tu dispositivo.</p>
-        <input type="file" id="inpFoto" accept="image/*" style="display:none" onchange="subirFotoPerfil(event)">
-        <button class="btn-soft" style="flex:0 0 auto;padding:8px 14px" onclick="$('inpFoto').click()">${ic("refrescar")} ${S.docente.foto? "Cambiar foto":"Subir foto de perfil"}</button>
-      </div>
+  <div class="card foto-card">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <h2>${ic("usuarios")} Foto de perfil</h2>
+      <button class="btn-soft" style="padding:7px 13px;font-size:13px" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
     </div>
+    <input type="file" id="inpFoto" accept="image/*" style="display:none" onchange="subirFotoPerfil(event)">
+    <div class="foto-wrap" ${S.docente.foto? "":"style='display:none'"}>
+      <img id="prevFoto" src="${S.docente.foto||""}">
+    </div>
+    ${S.docente.foto? "" : `<p class="muted" style="text-align:center;font-size:12.5px;margin:10px 0 0">Aún no has subido tu foto</p>`}
   </div>
   <div class="card">
     <h2>${ic("usuarios")} Datos registrados</h2>
@@ -2677,8 +2749,16 @@ function guardarAlumnosPorSeccion(){
   renderInfo();
 }
 function borrarTodo(){
-  if(!confirm("¿Borrar asistencias, evaluaciones, calificaciones, libreta y observaciones guardadas en este dispositivo?")) return;
-  S.asistencia={}; S.evaluacion={}; S.tiempoClase={}; S.obs={}; S.calificaciones={}; S.libreta={}; guardar();
+  $("modalBorrarFondo").classList.add("abierto");
+  $("modalBorrarHoja").classList.add("abierta");
+}
+function cerrarBorrar(){
+  $("modalBorrarFondo").classList.remove("abierto");
+  $("modalBorrarHoja").classList.remove("abierta");
+}
+function confirmarBorrado(){
+  S.asistencia={}; S.evaluacion={}; S.tiempoClase={}; S.obs={}; S.evalsCom={}; S.calificaciones={}; S.libreta={}; guardar();
+  cerrarBorrar();
   toast("Datos locales borrados"); renderInfo();
 }
 function agregarRecurso(){

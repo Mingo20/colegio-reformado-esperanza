@@ -1772,17 +1772,13 @@ function renderClase(claseId){
   </div>
   <h2 class="mini">Momentos de la clase</h2>
   ${momentos.map((m,i)=>`
-    <div class="momento" onclick="abrirMomento(${i})" title="Ver cómo desarrollar este momento" style="cursor:pointer">
+    <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
       <div class="m-head">
         <div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b>
         <span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))} min</span>
-        <span class="m-ver" title="Toca para ver la guía del momento">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.5" r="0.8" fill="currentColor"/></svg>
-        </span>
+        <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
       </div>
-      <div class="m-acciones">
-        <button class="m-iniciar" onclick="iniciarMomento(event, ${i})">${ic("play",13)} Iniciar momento</button>
-      </div>
+      <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
     </div>`).join("")}
   <div class="card">
     <h2>${ic("etiqueta")} Recursos y evaluación</h2>
@@ -1865,11 +1861,7 @@ function alumnosHTML(claseId, tipo){
         </div></div>`;
     } else {
       html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
-        <div class="seg">
-          <button class="${st==="Logrado"?"selL":""}" title="Logrado" onclick="marcar('E','${claseId}',${i},'Logrado')">L</button>
-          <button class="${st==="En proceso"?"selEP":""}" title="En proceso" onclick="marcar('E','${claseId}',${i},'En proceso')">E</button>
-          <button class="${st==="Iniciando"?"selA":""}" title="Iniciando" onclick="marcar('E','${claseId}',${i},'Iniciando')">I</button>
-        </div></div>`;
+        <div class="seg">${st? `<span class="chip chip-mini sel">${esc(st)}</span>`:""}<button class="btn-evaluar" onclick="abrirEvalAlumno('${claseId}', ${i})">Evaluar alumno</button></div></div>`;
     }
   }
   return html;
@@ -1887,7 +1879,6 @@ function marcar(tipo, claseId, n, valor){
   guardar();
   encolar(tipo==="A"?"asistencia":"evaluacion", claseId, { alumno:"Alumno "+n, estado: valor||"Sin registrar" });
   toast("Alumno "+n+": "+(valor||"Sin registrar"));
-  if(tipo==="E" && valor && PREGUNTAS_EVAL[valor]){ abrirEvalModal(claseId, n, valor); }
   if(!$("scr-clase").classList.contains("visible")) return;
   if(tipo==="A") $("zonaA").innerHTML = alumnosHTML(claseId,"A");
   else $("zonaE").innerHTML = alumnosHTML(claseId,"E");
@@ -1963,6 +1954,134 @@ function guardarEvalCom(){
   toast("Evaluación guardada"+(com? " con comentario de evidencia":""));
   if(!$("scr-clase").classList.contains("visible")) return;
   $("zonaE").innerHTML = alumnosHTML(p.claseId,"E");
+}
+/* ---------- v16: Evaluación cualitativa con lista de cotejo ---------- */
+let eval2 = null;
+const COTEJO_BASE = {
+  "Logrado":["Realizó la actividad completa con autonomía","Explica con sus palabras lo que aprendió","Muestra satisfacción al compartir su logro","Colabora y comparte materiales sin recordárselo"],
+  "En proceso":["Inicia la actividad con acompañamiento","Completa la tarea cuando se le anima","Nombra el contenido con ayuda de pistas","Participa al ser invitado"],
+  "Iniciado":["Observa la actividad con atención","Imita a sus compañeros","Responde con gestos o palabras sueltas","Permanece en el espacio de trabajo"]
+};
+function cotejoDe(claseId){
+  try{
+    const d = clasePorId(planAbierto || planActivo(), claseId);
+    if(d && d.cotejo && Object.keys(d.cotejo).length) return d.cotejo;
+  }catch(e){}
+  return COTEJO_BASE;
+}
+function abrirEvalAlumno(claseId, n){
+  eval2 = { claseId, n, estado:null, evid:{} };
+  const prev = (S.evaluacion[claseId]||{})[n];
+  if(prev) eval2.estado = prev;
+  $("eval2Alum").textContent = "ALUMNO "+n;
+  const obs = $("eval2Obs"); if(obs) obs.value = "";
+  pintarEval2Estados(); pintarEval2Cotejo();
+  $("modalEval2Fondo").classList.add("abierto");
+  $("modalEval2Hoja").classList.add("abierta");
+}
+function cerrarEvalAlumno(){
+  $("modalEval2Fondo").classList.remove("abierto");
+  $("modalEval2Hoja").classList.remove("abierta");
+  eval2 = null;
+}
+function selEval2Estado(e){
+  if(!eval2) return;
+  eval2.estado = e;
+  pintarEval2Estados(); pintarEval2Cotejo();
+}
+function pintarEval2Estados(){
+  const map = { "Logrado":"ev2-L", "En proceso":"ev2-E", "Iniciado":"ev2-I" };
+  Object.keys(map).forEach(e=>{
+    const b = $(map[e]); if(b) b.classList.toggle("sel", !!(eval2 && eval2.estado===e));
+  });
+}
+function pintarEval2Cotejo(){
+  const cont = $("eval2Cotejo");
+  if(!cont) return;
+  if(!eval2){ cont.innerHTML = ""; return; }
+  if(!eval2.estado){
+    cont.innerHTML = `<p class="mg-nota">Toca un estado para ver su lista de cotejo. Puedes explorar los tres estados antes de decidir: solo se guarda lo que confirmes con «Registrar evaluación».</p>`;
+    return;
+  }
+  const listas = cotejoDe(eval2.claseId);
+  const items = (listas[eval2.estado]||COTEJO_BASE[eval2.estado]||[]);
+  if(!eval2.evid[eval2.estado]) eval2.evid[eval2.estado] = {};
+  cont.innerHTML = items.map((it,ix)=>{
+    const on = !!eval2.evid[eval2.estado][ix];
+    return `<div class="cotejo-item ${on?"on":""}" onclick="toggleEvid(${ix})"><span class="ck">${on? "✓":""}</span>${esc(it)}</div>`;
+  }).join("") + `<p class="mg-nota" style="margin-top:2px">Marca solo lo que realmente observaste en el niño o la niña.</p>`;
+}
+function toggleEvid(ix){
+  if(!eval2 || !eval2.estado) return;
+  const e = eval2.estado;
+  if(!eval2.evid[e]) eval2.evid[e] = {};
+  eval2.evid[e][ix] = !eval2.evid[e][ix];
+  pintarEval2Cotejo();
+}
+function confirmarEvalAlumno(){
+  if(!eval2) return;
+  if(!eval2.estado){ toast("Selecciona un estado: Logrado, En proceso o Iniciado"); return; }
+  const claseId = eval2.claseId, n = eval2.n, estado = eval2.estado;
+  const listas = cotejoDe(claseId);
+  const items = listas[estado]||COTEJO_BASE[estado]||[];
+  const evidTxt = Object.keys(eval2.evid[estado]||{}).filter(k=>eval2.evid[estado][k]).map(k=>items[parseInt(k,10)]).filter(Boolean);
+  const obs = ($("eval2Obs").value||"").trim();
+  if(!S.evaluacion[claseId]) S.evaluacion[claseId] = {};
+  S.evaluacion[claseId][n] = estado;
+  const comFinal = [ evidTxt.length? "Evidencias: "+evidTxt.join("; ") : "", obs ].filter(Boolean).join(" | ");
+  if(!S.evalsCom) S.evalsCom = {};
+  const k = claseId+"|"+n;
+  if(comFinal) S.evalsCom[k] = comFinal; else delete S.evalsCom[k];
+  guardar();
+  encolar("evaluacion", claseId, { alumno:"Alumno "+n, estado });
+  cerrarEvalAlumno();
+  toast("Alumno "+n+": "+estado+" registrado");
+  if(!$("scr-clase").classList.contains("visible")) return;
+  $("zonaE").innerHTML = alumnosHTML(claseId,"E");
+  const el = $("headRings"); if(el) el.innerHTML = ringDuo(claseId);
+}
+/* ---------- v16: Momentos expandibles ---------- */
+function toggleMomentoCard(i){
+  const t = $("mexp-"+i);
+  if(!t) return;
+  const abierto = t.classList.contains("abierta");
+  document.querySelectorAll(".momento.m-exp").forEach(c=>c.classList.remove("abierta"));
+  if(!abierto) t.classList.add("abierta");
+  if(!S.ui) S.ui = {};
+  S.ui.momentoAbierto = abierto? -1 : i;
+  guardar();
+}
+function guiaMomentoHTML(m, i, d){
+  let html = "";
+  const roles = [
+    "Apertura · Despertar la intención pedagógica",
+    "Desarrollo · Construcción del aprendizaje",
+    "Práctica · Ejercitación guiada",
+    "Cierre · Metacognición y transferencia"
+  ];
+  if(Array.isArray(m.guia) && m.guia.length){
+    m.guia.forEach(b=>{
+      if(b.t) html += `<p class="mg-t">${esc(b.t)}</p>`;
+      if(b.d) html += `<p class="mg-d">${esc(b.d)}</p>`;
+      if(Array.isArray(b.li) && b.li.length) html += `<ul class="mg-li">${b.li.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+    });
+  } else {
+    html += `<p class="mg-rol">${esc(roles[i]||"Momento de la clase")}</p>`;
+    if(m.proposito) html += `<p class="mg-d"><b>${esc(m.proposito)}</b></p>`;
+    if(Array.isArray(m.pasos) && m.pasos.length){
+      html += `<ul class="mg-li">${m.pasos.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+    }
+  }
+  if(d && Array.isArray(d.recursos) && d.recursos.length){
+    html += `<p class="mg-t">Recursos del día</p><p class="mg-d">${esc(d.recursos.join(" · "))}</p>`;
+  }
+  if(d && Array.isArray(d.desempenos) && d.desempenos.length){
+    html += `<p class="mg-t">Qué debe lograrse hoy</p><p class="mg-d">${esc(d.desempenos[0])}</p>`;
+  }
+  if(d && d.orientacion){
+    html += `<p class="mg-nota">${ic("bombilla",12)} ${esc(d.orientacion)}</p>`;
+  }
+  return html;
 }
 const CIRC = 2*Math.PI*40;
 let T = { dur:300, resta:300, corriendo:false, iv:null };
@@ -2464,44 +2583,7 @@ function borrarNotificaciones(){
 }
 
 /* ---------- INFO ---------- */
-let estGSel = null, estAsigSel = null, estPerSel = null, estEstSel = null;
-function estSel(q){
-  if(q==="gs") estGSel = $("estGS").value;
-  if(q==="asig") estAsigSel = $("estAsig")? $("estAsig").value : null;
-  if(q==="per") estPerSel = $("estPer").value;
-  if(q==="est") estEstSel = $("estEst").value;
-  if(!S.docente.estGuarda) S.docente.estGuarda = {};
-  S.docente.estGuarda = Object.assign({}, S.docente.estGuarda, {
-    gs: estGSel||null, asig: estAsigSel||null, per: estPerSel||null, est: estEstSel||null
-  });
-  guardar();
-}
-function guardarEstrategia(){
-  const selGS = $("estGS");
-  const gs = (selGS && selGS.value)? selGS.value : ((S.docente.gradosSecciones&&S.docente.gradosSecciones[0]) || (S.docente.grado||"")+"|"+(S.docente.seccion||"A"));
-  const asig = ($("estAsig")? $("estAsig").value : "—") || "—";
-  const per = $("estPer").value;
-  const est = $("estEst").value;
-  if(!gs || !per || !est){ toast("Completa los campos de la estrategia"); return; }
-  S.docente.estrategias = S.docente.estrategias||{};
-  S.docente.estrategias[gs+"|"+asig+"|"+per] = est;
-  guardar();
-  renderInfo();
-  toast("Estrategia guardada para "+gs+" · "+per);
-}
-function quitarEstrategia(k){
-  if(!S.docente.estrategias) return;
-  delete S.docente.estrategias[k];
-  guardar();
-  renderInfo();
-  toast("Estrategia eliminada");
-}
 function renderInfo(){
-  const eg = S.docente.estGuarda||{};
-  if(estGSel===null) estGSel = eg.gs || (S.docente.gradosSecciones&&S.docente.gradosSecciones[0]) || (S.docente.grado||"")+"|"+(S.docente.seccion||"A");
-  if(estAsigSel===null) estAsigSel = eg.asig || (S.docente.asignaturasSel||[])[0] || (ASIGNATURAS_RD[S.docente.nivel]||[])[0];
-  if(estPerSel===null) estPerSel = eg.per || S.docente.periodo || periodoDeFecha(HOY);
-  if(estEstSel===null) estEstSel = eg.est || (ESTRATEGIAS_RD[S.docente.nivel]||[])[0];
   const pend = S.cola.length;
   const ult = S.lastSync? new Date(S.lastSync).toLocaleString("es-DO") : "Aún no sincroniza";
   const durH = Math.floor((S.docente.duracionMin||0)/60), durM = (S.docente.duracionMin||0)%60;
@@ -2512,7 +2594,7 @@ function renderInfo(){
   <div class="card foto-card">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <h2>${ic("usuarios")} Foto de perfil</h2>
-      <button class="btn-soft" style="padding:7px 13px;font-size:13px" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
+      <button class="btn-soft" style="padding:7px 9px;font-size:13px" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
     </div>
     <input type="file" id="inpFoto" accept="image/*" style="display:none" onchange="subirFotoPerfil(event)">
     <div class="foto-wrap" ${S.docente.foto? "":"style='display:none'"}>
@@ -2524,7 +2606,7 @@ function renderInfo(){
     <h2>${ic("usuarios")} Datos registrados</h2>
     <div class="stat-row"><span>Nombre</span><b>${esc(S.docente.nombre)}</b></div>
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
-    <div class="stat-row"><span>Distrito</span><b>${esc(S.docente.distrito)}</b></div>
+    <div class="stat-row"><span>WhatsApp</span><b>${esc(S.docente.whatsapp||"—")}</b></div>
     <div class="stat-row"><span>Nivel / Grado</span><b>${esc(nivel)} · ${esc(S.docente.grado)}</b></div>
     <div class="stat-row"><span>Sección / Alumnos</span><b>${esc(S.docente.seccion)} · ${S.docente.alumnos}</b></div>
     <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
@@ -2598,39 +2680,6 @@ function renderInfo(){
     <label class="lbl">${esc(g)} · Sección ${esc(s)}</label>
     <input class="inp inpAlum" data-sec="${esc(gs)}" type="number" min="1" max="60" value="${alumnosDe(s, g)}" style="text-align:center;font-weight:800">`; }).join("")}
     <button class="dl" onclick="guardarAlumnosPorSeccion()">Guardar</button>
-  </div>
-  <div class="card">
-    <h2>${ic("plan")} Estrategia de planificación</h2>
-    <p class="muted" style="margin-bottom:10px">Elige cómo quieres que genere cada plan mensual según tu grupo, ${nivel==="Inicial"? "período y estrategia":"asignatura, período y estrategia"}. Tu plan anual sigue como mapa general del año.</p>
-    ${puedeElegirGrado()? `
-    <div class="grid-2col">
-      <select class="inp" id="estGS" onchange="estSel('gs')">
-        ${(S.docente.gradosSecciones&&S.docente.gradosSecciones.length? S.docente.gradosSecciones : [(S.docente.grado||"")+"|"+(S.docente.seccion||"A")]).map(gs=>{ const [g,s]=gs.split("|");
-          return `<option value="${esc(gs)}" ${gs===estGSel? "selected":""}>${esc(g)} · Sección ${esc(s)}</option>`; }).join("")}
-      </select>
-      ${nivel==="Inicial"? "" : `
-      <select class="inp" id="estAsig" onchange="estSel('asig')">
-        ${( (S.docente.asignaturasSel||[]).length? S.docente.asignaturasSel : (ASIGNATURAS_RD[nivel]||[]) ).map(a=>`<option value="${esc(a)}" ${a===estAsigSel? "selected":""}>${esc(a)}</option>`).join("")}
-      </select>`}
-    </div>`:""}
-    <div class="grid-2col" style="margin-top:8px">
-      <select class="inp" id="estPer" onchange="estSel('per')">
-        ${PERIODOS.map(p=>`<option value="${esc(p)}" ${p===estPerSel? "selected":""}>${esc(p)}</option>`).join("")}
-      </select>
-      <select class="inp" id="estEst" onchange="estSel('est')">
-        ${(ESTRATEGIAS_RD[nivel]||[]).map(e=>`<option value="${esc(e)}" ${e===estEstSel? "selected":""}>${esc(e)}</option>`).join("")}
-      </select>
-    </div>
-    <button class="dl" style="margin-top:10px" onclick="guardarEstrategia()">${ic("nota")} Guardar estrategia</button>
-    <div class="chips-sel" style="margin-top:10px">
-      ${Object.keys(S.docente.estrategias||{}).length
-        ? Object.entries(S.docente.estrategias).map(([k,v])=>{
-            const [g,s,asig,per] = k.split("|");
-            const lbl = g+" · "+s+(nivel==="Inicial"? "" : " · "+(asig!=="—"? asig:"—"))+" · "+per;
-            return `<span class="chip sel">${esc(lbl)}<br>${esc(v)} <b style="cursor:pointer;padding-left:4px" onclick="quitarEstrategia('${esc(k)}')">✕</b></span>`;
-          }).join("")
-        : '<span class="muted" style="font-size:12px">Aún no has configurado estrategias. Guarda la primera arriba.</span>'}
-    </div>
   </div>
   <div class="card">
     <h2>${ic("refrescar")} Sincronización automática</h2>

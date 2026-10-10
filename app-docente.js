@@ -55,10 +55,56 @@ const COMPETENCIAS = [
 
 /* ---------- CATÁLOGOS ---------- */
 const GRADOS_POR_NIVEL = {
-  Inicial:   ["Maternal","3 años","4 años","5 años"],
-  Primaria:  ["1ro","2ro","3ro","4ro","5ro","6to"],
-  Secundaria:["1ro","2ro","3ro","4ro","5ro","6to"],
+  Inicial:   ["Maternal","Pre-Kínder","Kínder","Pre-Primario"],
+  Primaria:  ["1ro","2do","3ro","4to","5to","6to"],
+  Secundaria:["1ro","2do","3ro","4to","5to","6to"],
 };
+function normalizaGrado(g){
+  const map = {"3 años":"Pre-Kínder","4 años":"Kínder","5 años":"Pre-Primario","pre-kinder":"Pre-Kínder","preprimario":"Pre-Primario"};
+  return map[String(g||"").trim()] || map[String(g||"").trim().toLowerCase()] || g;
+}
+function misGradosDocente(){
+  const gs = [...new Set((S.docente.gradosSecciones||[]).map(x=>String(x).split("|")[0]))].filter(Boolean)
+    .map(normalizaGrado);
+  return gs.length? gs : [S.docente.grado].filter(Boolean).map(normalizaGrado);
+}
+function misSeccionesDe(g){
+  const gN = normalizaGrado(g);
+  const ss = [...new Set((S.docente.gradosSecciones||[]).filter(x=>normalizaGrado(String(x).split("|")[0])===gN).map(x=>String(x).split("|")[1]))].filter(Boolean);
+  return ss.length? ss : SECCIONES;
+}
+function asigsDisponibles(){
+  const nivel = S.docente.nivel;
+  if(nivel==="Primaria"){
+    const esp = S.docente.especialidad;
+    if(esp && ASIG_ESP_PRIM.includes(esp)) return [esp];
+    const sel = (S.docente.asignaturasSel||[]).filter(a=>ASIG_ESP_PRIM.includes(a));
+    if(sel.length) return [sel[0]];
+    return ASIG_BASICAS_PRIM;
+  }
+  if(nivel==="Secundaria"){
+    const sel = (S.docente.asignaturasSel||[]).filter(Boolean);
+    if(sel.length===1) return [sel[0]];
+    return (ASIGNATURAS_RD["Secundaria"]||[]);
+  }
+  return (ASIGNATURAS_RD[nivel]||[]);
+}
+function planParaDocente(p){
+  if(!p) return false;
+  const nivel = S.docente.nivel;
+  if(p.nivel && p.nivel!==nivel) return false;
+  if(nivel==="Inicial"){
+    const pg = normalizaGrado(p.grado), dg = normalizaGrado(S.docente.grado);
+    if(pg && dg && pg!==dg) return false;
+  } else {
+    const mis = misGradosDocente();
+    const pg = normalizaGrado(p.grado);
+    if(pg && mis.length && !mis.includes(pg)) return false;
+    const asigs = (S.docente.asignaturasSel||[]).filter(Boolean);
+    if(p.asig && asigs.length && !asigs.includes(p.asig)) return false;
+  }
+  return true;
+}
 const JORNADAS = ["Matutina","Vespertina","Nocturna","Jornada Extendida"];
 const MESES_ES = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 const PERIODOS = ["1er periodo","2do periodo","3er periodo","4to periodo"];
@@ -702,7 +748,7 @@ async function apiAccion(accion, datos){
 async function cargarPlanes(){
   try{
     const r = await apiAccion("planes", { nivel: S.docente.nivel, docente_id: S.docente.id });
-    if(r.success) S.listaPlanes = r.planes;
+    if(r.success) S.listaPlanes = (r.planes||[]).filter(planParaDocente);
   }catch(e){ /* offline */ }
   guardar();
 }
@@ -1102,29 +1148,21 @@ function renderOnboarding(){
     <p class="muted" style="text-align:center;margin-bottom:10px">¿Aún no tienes tu cuenta?</p>
     <button class="dl alt" style="width:100%" onclick="mostrarRegistro()">Registrarme</button>
   </div>
-  <div class="card onb-aviso">
-    <div style="display:flex;gap:10px;align-items:flex-start">
-      <div class="onb-aviso-ico">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 20h20L12 2z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></svg>
-      </div>
-      <div>
-        <b>Importante al iniciar sesión</b>
-        <p style="margin:4px 0 0">Completa tu perfil docente en la pantalla <b>Perfil</b>: grados, secciones, asignaturas y duración de tus clases. Así el sistema generará planes, documentos de evaluación e informes <b>personalizados y coherentes</b> con tu nivel y tu realidad escolar.</p>
-      </div>
-    </div>
-  </div>
   <div class="card" id="cardRegistro" style="display:none">
     <h2>${ic("usuarios")} Regístrate</h2>
     <label class="lbl">Nombre del colegio o escuela</label>
     <input class="inp" id="onbColegio" placeholder="Ej: Colegio Reformado la Esperanza">
     <label class="lbl">Tu nombre completo</label>
     <input class="inp" id="onbNombre" placeholder="Ej: María Pérez">
+    <label class="lbl">Distrito educativo</label>
+    <input class="inp" id="onbDistrito" placeholder="Ej: 15-05" style="text-align:center;letter-spacing:1px">
     <label class="lbl">Nivel que impartes</label>
-    <select class="inp" id="onbNivel">
+    <select class="inp" id="onbNivel" onchange="onbNivelChange()">
       <option value="Inicial" selected>Inicial</option>
       <option value="Primaria">Primaria</option>
       <option value="Secundaria">Secundaria</option>
     </select>
+    <div id="onbSmart"></div>
     <label class="lbl">Jornada del centro educativo</label>
     <select class="inp" id="onbJornada">
       <option value="Matutina" selected>Matutina</option>
@@ -1155,6 +1193,33 @@ function animLogin(nombre, luego){
   ov.classList.add("activo");
   setTimeout(()=>{ ov.classList.remove("activo"); luego(); }, 2000);
 }
+function onbNivelChange(){
+  const nivel = $("onbNivel").value;
+  const cont = $("onbSmart");
+  if(nivel==="Inicial"){
+    cont.innerHTML = `
+    <label class="lbl">Grado que atiendes</label>
+    <select class="inp" id="onbGradoIni">
+      <option value="" selected disabled>Selecciona el grado…</option>
+      ${GRADOS_POR_NIVEL["Inicial"].map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
+    </select>`;
+  } else if(nivel==="Primaria"){
+    cont.innerHTML = `
+    <label class="lbl">Tipo de docente de Primaria</label>
+    <select class="inp" id="onbTipoPrim">
+      <option value="" selected disabled>Selecciona tu tipo…</option>
+      <option value="Básicas">Docente de asignaturas básicas</option>
+      ${ASIG_ESP_PRIM.map(a=>`<option value="${esc(a)}">Docente especializado · ${esc(a)}</option>`).join("")}
+    </select>`;
+  } else {
+    cont.innerHTML = `
+    <label class="lbl">Asignatura que impartes</label>
+    <select class="inp" id="onbAsigSec">
+      <option value="" selected disabled>Selecciona tu asignatura…</option>
+      ${(ASIGNATURAS_RD["Secundaria"]||[]).map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join("")}
+    </select>`;
+  }
+}
 async function registrarDocente(){
   const colegio = $("onbColegio").value.trim();
   const nombre = $("onbNombre").value.trim();
@@ -1163,13 +1228,27 @@ async function registrarDocente(){
   const whatsapp = ($("onbWhats")? $("onbWhats").value.trim() : "");
   if(!colegio || !nombre){ toast("Completa el colegio y tu nombre"); return; }
   if(!whatsapp){ toast("Escribe tu número de WhatsApp"); return; }
-  const grado = (GRADOS_POR_NIVEL[nivel]||[""])[0];
+  const distrito = ($("onbDistrito")? $("onbDistrito").value.trim() : "");
+  let grado = "", especialidad = "", asignaturas = [];
+  if(nivel==="Inicial"){
+    grado = ($("onbGradoIni")? $("onbGradoIni").value : "") || "";
+    if(!grado){ toast("Selecciona el grado que atiendes"); return; }
+  } else if(nivel==="Primaria"){
+    especialidad = ($("onbTipoPrim")? $("onbTipoPrim").value : "") || "";
+    if(!especialidad){ toast("Selecciona tu tipo de docente"); return; }
+    if(ASIG_ESP_PRIM.includes(especialidad)) asignaturas = [especialidad];
+  } else {
+    const asig = ($("onbAsigSec")? $("onbAsigSec").value : "") || "";
+    if(!asig){ toast("Selecciona la asignatura que impartes"); return; }
+    asignaturas = [asig];
+  }
   toast("Registrando...");
   try{
-    const r = await apiAccion("onboarding", { colegio, nombre, whatsapp, nivel, grado, seccion:"", jornada, asignaturas:"" });
+    const r = await apiAccion("onboarding", { colegio, nombre, whatsapp, distrito, nivel, grado, seccion:"", jornada,
+      asignaturas: asignaturas.join(", "), especialidad });
     if(!r.success){ toast("Error: "+(r.error||"intenta de nuevo")); return; }
-    S.docente = Object.assign({}, S.docente, { id:r.id, codigo:r.codigo, nombre, colegio, whatsapp, nivel,
-      grado:"", seccion:"", jornada, asignaturasSel:[], secciones:[] });
+    S.docente = Object.assign({}, S.docente, { id:r.id, codigo:r.codigo, nombre, colegio, distrito, whatsapp, nivel,
+      grado, seccion:"", jornada, especialidad, asignaturasSel: asignaturas, secciones:[] });
     guardar();
     await cargarPlanes();
     generarNotificaciones();
@@ -1208,9 +1287,15 @@ async function entrarConCodigo(){
       });
       if(remoto.ui) S.ui = Object.assign({}, S.ui, remoto.ui);
       if(remoto.docente){
-        if(remoto.docente.foto) S.docente.foto = remoto.docente.foto;
-        if(Array.isArray(remoto.docente.recursos)) S.docente.recursos = remoto.docente.recursos;
-        if(remoto.docente.estGuarda) S.docente.estGuarda = remoto.docente.estGuarda;
+        ["foto","recursos","estGuarda","gradosSecciones","alumnosPorSeccion","asignaturasSel","secciones","duracionMin","grado","seccion","jornada","especialidad","alumnos","whatsapp","distrito","periodo"].forEach(k=>{
+          const v = remoto.docente[k];
+          if(v===undefined || v===null || v==="") return;
+          if(Array.isArray(v) && !v.length) return;
+          if(k==="gradosSecciones" && !Array.isArray(v)) return;
+          if(k==="alumnosPorSeccion" && typeof v!=="object") return;
+          if(k==="duracionMin" && !(+v>0)) return;
+          S.docente[k] = v;
+        });
       }
       if(!S.docente.foto) S.docente.foto = fotoPerfilActual;
     }
@@ -1728,6 +1813,8 @@ function renderClase(claseId){
   const d = clasePorId(plan, claseId);
   if(!d){ irA("mes"); return; }
   claseActualId = claseId;
+  if(S.ui._claseVista !== claseId){ S.ui.momentoAbierto = 0; S.ui._claseVista = claseId; }
+  if(S.ui.momentoAbierto==null) S.ui.momentoAbierto = 0;
   guiaActual = { titulo:"Guía técnica · Planificación diaria", html: guiaClase() };
   const s = (plan.semanas||[]).find(w=>w.dias.some(x=>x.id===claseId));
   const pctA = pctDia(claseId,"asis"), pctE = pctDia(claseId,"eval");
@@ -1751,7 +1838,7 @@ function renderClase(claseId){
       <div class="kv"><b>Fecha</b><span>${esc(claseId)}</span></div>
       <div class="kv"><b>Nivel / Grado</b><span>${esc(S.docente.nivel)} · ${esc(S.docente.grado)}</span></div>
       <div class="kv"><b>Sección</b><span>${esc(S.docente.seccion)}</span></div>
-      <div class="kv"><b>Asignaturas</b><span>${esc(S.docente.asignaturasSel.join(", ")||S.docente.nivel)}</span></div>
+      <div class="kv"><b>Asignaturas</b><span>${esc(plan.asig || (S.docente.asignaturasSel.length? S.docente.asignaturasSel.join(", ") : (S.docente.nivel==="Inicial"? "Planificación integral del nivel": S.docente.nivel)))}</span></div>
       <div class="kv"><b>Docente</b><span>${esc(S.docente.nombre||"—")}</span></div>
     </div>
   </div>
@@ -1767,7 +1854,7 @@ function renderClase(claseId){
   ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Momentos ajustados a tu clase de ${S.docente.duracionMin} min (cámbialo en Info).</p>`:""}
   <div class="card">
     <h2>${ic("reloj")} Cronómetro de la clase</h2>
-    <p class="muted" style="margin-bottom:8px;font-size:12.5px">Cronometra cada momento o la clase completa. Si sales o recargas, el tiempo queda guardado tal como lo dejaste.</p>
+    <p class="muted" style="margin-bottom:8px;font-size:12.5px">Cronometra cada momento o la clase completa.</p>
     ${temporizadorHTML(durs.length? durs : null)}
   </div>
   <h2 class="mini">Momentos de la clase</h2>
@@ -1798,10 +1885,10 @@ function renderClase(claseId){
         ${puedeElegirGrado()? `
         <div class="grid-2col" style="margin-top:12px">
           <select class="inp" id="regGrado" onchange="regSel('g')">
-            ${GRADOS_POR_NIVEL[S.docente.nivel].map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
+            ${misGradosDocente().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
           </select>
           <select class="inp" id="regSec" onchange="regSel('s')">
-            ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+            ${misSeccionesDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
           </select>
         </div>`:""}
         <div class="tabs" style="margin-top:12px">
@@ -1861,7 +1948,7 @@ function alumnosHTML(claseId, tipo){
         </div></div>`;
     } else {
       html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
-        <div class="seg">${st? `<span class="chip chip-mini sel">${esc(st)}</span>`:""}<button class="btn-evaluar" onclick="abrirEvalAlumno('${claseId}', ${i})">Evaluar alumno</button></div></div>`;
+        <div class="seg">${st? `<span class="chip chip-mini sel">${esc(st)}</span>`:""}<button class="btn-evaluar ${st? "evaluado":""}" onclick="abrirEvalAlumno('${claseId}', ${i})">${st? "Evaluado":"Evaluar"}</button></div></div>`;
     }
   }
   return html;
@@ -2051,14 +2138,16 @@ function toggleMomentoCard(i){
   S.ui.momentoAbierto = abierto? -1 : i;
   guardar();
 }
+function rolMomento(nombre){
+  const n = String(nombre||"").toLowerCase();
+  if(n.includes("inicio") || n.includes("apertura")) return "Apertura · Intención pedagógica";
+  if(n.includes("práctica") || n.includes("practica")) return "Práctica guiada en el aula";
+  if(n.includes("desarrollo")) return "Desarrollo · Construcción del aprendizaje";
+  if(n.includes("cierre")) return "Cierre · Metacognición y transferencia";
+  return "Momento de la clase";
+}
 function guiaMomentoHTML(m, i, d){
   let html = "";
-  const roles = [
-    "Apertura · Despertar la intención pedagógica",
-    "Desarrollo · Construcción del aprendizaje",
-    "Práctica · Ejercitación guiada",
-    "Cierre · Metacognición y transferencia"
-  ];
   if(Array.isArray(m.guia) && m.guia.length){
     m.guia.forEach(b=>{
       if(b.t) html += `<p class="mg-t">${esc(b.t)}</p>`;
@@ -2066,19 +2155,27 @@ function guiaMomentoHTML(m, i, d){
       if(Array.isArray(b.li) && b.li.length) html += `<ul class="mg-li">${b.li.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
     });
   } else {
-    html += `<p class="mg-rol">${esc(roles[i]||"Momento de la clase")}</p>`;
+    html += `<p class="mg-rol">${esc(rolMomento(m.nombre))}</p>`;
     if(m.proposito) html += `<p class="mg-d"><b>${esc(m.proposito)}</b></p>`;
     if(Array.isArray(m.pasos) && m.pasos.length){
       html += `<ul class="mg-li">${m.pasos.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
     }
   }
-  if(d && Array.isArray(d.recursos) && d.recursos.length){
-    html += `<p class="mg-t">Recursos del día</p><p class="mg-d">${esc(d.recursos.join(" · "))}</p>`;
+  if(m.desempeno){
+    html += `<p class="mg-t">Qué debe lograrse en este momento</p><p class="mg-d">${esc(m.desempeno)}</p>`;
+  } else if(d && Array.isArray(d.desempenos) && d.desempenos.length){
+    html += `<p class="mg-t">Qué debe lograrse en este momento</p><p class="mg-d">${esc(d.desempenos[0])}</p>`;
   }
-  if(d && Array.isArray(d.desempenos) && d.desempenos.length){
-    html += `<p class="mg-t">Qué debe lograrse hoy</p><p class="mg-d">${esc(d.desempenos[0])}</p>`;
+  if(m.practica){
+    html += `<p class="mg-t">Cómo ejecutar la práctica</p><p class="mg-d">${esc(m.practica)}</p>`;
   }
-  if(d && d.orientacion){
+  const rec = (Array.isArray(m.recursos) && m.recursos.length)? m.recursos : (d && d.recursos);
+  if(Array.isArray(rec) && rec.length){
+    html += `<p class="mg-t">Recursos del momento</p><p class="mg-d">${esc(rec.join(" · "))}</p>`;
+  }
+  if(m.orientacion){
+    html += `<p class="mg-nota">${ic("bombilla",12)} ${esc(m.orientacion)}</p>`;
+  } else if(d && d.orientacion){
     html += `<p class="mg-nota">${ic("bombilla",12)} ${esc(d.orientacion)}</p>`;
   }
   return html;
@@ -2386,9 +2483,7 @@ function registrarPunto(){
   const com = $("hpCom").value||"";
   const grupo = grupoProg();
   const arr = puntosDe(grupo, n);
-  const ex = arr.find(x=>x.f===f && x.tipo===tipo && (x.asig||"General")===asig);
-  if(ex){ ex.pts = pts; if(com) ex.com = com; }
-  else arr.push({ f, tipo, pts, com, asig });
+  arr.push({ f, tipo, pts, com, asig });
   arr.sort((a,b)=> a.f<b.f? 1 : -1);
   guardar();
   abrirHistorial(n, "progreso");
@@ -2482,7 +2577,7 @@ function htmlProgresoHero(){
     <p class="eslogan">Tu agente administrativo</p>
     <p>Progreso · Calificaciones de ${esc(S.docente.periodo)} · Grado ${esc(g)} · Sección ${esc(sc)}</p>
     <div class="row">
-      ${nivelUsaEvaluacionCualitativa()? "" : `<div class="ringbox">${ring(promedioGrupo(),56,7,"#fff")}<small>Promedio</small></div>`}
+      ${nivelUsaEvaluacionCualitativa()? "" : `<div class="ringbox">${ring(promedioGrupo(),56,7,"#fff",promedioGrupo()+"★")}<small>Promedio</small></div>`}
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
       ${nivelUsaEvaluacionCualitativa()? `<div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logrado</small></div>` : ""}
     </div>
@@ -2492,6 +2587,9 @@ function htmlProgresoPanel(){
   const nivel = S.docente.nivel;
   const g = S.ui.progGrado || S.docente.grado;
   const sc = S.ui.progSec || S.docente.seccion || "A";
+  const gradosOpts = [...new Set(misGradosDocente().filter(x=>GRADOS_POR_NIVEL[nivel].includes(normalizaGrado(x))))];
+  const gOpts = gradosOpts.length? gradosOpts : GRADOS_POR_NIVEL[nivel];
+  const sOpts = misSeccionesDe(g).length? misSeccionesDe(g) : SECCIONES;
   const N = alumnosDe(sc);
   let html = `
   ${puedeElegirGrado()? `
@@ -2500,11 +2598,11 @@ function htmlProgresoPanel(){
     <div class="grid-2col">
       <div><label class="lbl">Grado</label>
         <select class="inp" id="progGrado" onchange="progSel('grado')">
-          ${GRADOS_POR_NIVEL[nivel].map(x=>`<option value="${esc(x)}" ${x===g?"selected":""}>${esc(x)}</option>`).join("")}
+          ${gOpts.map(x=>`<option value="${esc(x)}" ${x===g?"selected":""}>${esc(x)}</option>`).join("")}
         </select></div>
       <div><label class="lbl">Sección</label>
         <select class="inp" id="progSec" onchange="progSel('sec')">
-          ${SECCIONES.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+          ${sOpts.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
         </select></div>
     </div>
   </div>`:""}
@@ -2516,14 +2614,14 @@ function htmlProgresoPanel(){
     const asis = asistenciaDe(i);
     const ev = evalsAlumno(i);
     const segundoRing = inicial
-      ? ring(ev.total? ev.pL:0,46,5, ev.total? "#CE1126":"#94a3b8", ev.total? String(ev.pL):"—")
-      : ring(nf===null?0:nf,46,5,color, nf===null? "—":String(nf));
+      ? ring(ev.total? ev.pL:0,46,5, ev.total? "#CE1126":"#94a3b8", ev.total? ev.pL+"%":"—")
+      : ring(nf===null?0:nf,46,5,color, nf===null? "—":nf+"★");
     const segundaEtq = inicial? "Logrado" : "Promedio";
     html += `<div class="prog-card">
       <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver detalle del alumno">
         <div class="pc-user">${ic("persona",39)}<span class="pc-nombre">Alumno ${i}</span></div>
         <div class="rg pc-rings">
-          <div class="ringitem">${ring(asis===null?0:asis,46,5,asis===null? "#94a3b8":"#0033A0", asis===null? "—":String(asis))}<small>Asistencia</small></div>
+          <div class="ringitem">${ring(asis===null?0:asis,46,5,asis===null? "#94a3b8":"#0033A0", asis===null? "—":asis+"%")}<small>Asistencia</small></div>
           <div class="ringitem">${segundoRing}<small>${segundaEtq}</small></div>
         </div>
       </div>
@@ -2588,13 +2686,13 @@ function renderInfo(){
   const ult = S.lastSync? new Date(S.lastSync).toLocaleString("es-DO") : "Aún no sincroniza";
   const durH = Math.floor((S.docente.duracionMin||0)/60), durM = (S.docente.duracionMin||0)%60;
   const nivel = S.docente.nivel;
-  const asigs = ASIGNATURAS_RD[nivel] || [];
+  const asigs = asigsDisponibles();
   const secs = S.docente.secciones.length? S.docente.secciones : [S.docente.seccion||"A"];
   $("scr-info").innerHTML = `
   <div class="card foto-card">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <h2>${ic("usuarios")} Foto de perfil</h2>
-      <button class="btn-soft" style="padding:7px 9px;font-size:13px" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
+      <button class="btn-soft" style="padding:7px 6px;font-size:12px;white-space:nowrap" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
     </div>
     <input type="file" id="inpFoto" accept="image/*" style="display:none" onchange="subirFotoPerfil(event)">
     <div class="foto-wrap" ${S.docente.foto? "":"style='display:none'"}>
@@ -2608,7 +2706,6 @@ function renderInfo(){
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
     <div class="stat-row"><span>WhatsApp</span><b>${esc(S.docente.whatsapp||"—")}</b></div>
     <div class="stat-row"><span>Nivel / Grado</span><b>${esc(nivel)} · ${esc(S.docente.grado)}</b></div>
-    <div class="stat-row"><span>Sección / Alumnos</span><b>${esc(S.docente.seccion)} · ${S.docente.alumnos}</b></div>
     <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
     <div class="codigo-box"><span class="muted" style="font-weight:800;letter-spacing:1px">TU CÓDIGO</span>
       <div class="cod">${esc(S.docente.codigo)}</div>
@@ -2639,9 +2736,11 @@ function renderInfo(){
     <p class="muted" style="margin-bottom:8px">Agrega cada combinación de grado y sección en la que impartes docencia (ej. 3ro · A). Ideal para Secundaria, donde atiendes varios grupos.</p>
     <div style="display:flex;gap:8px">
       <select class="inp" id="selGradoGS" style="flex:1">
-        ${(GRADOS_POR_NIVEL[nivel]||[]).map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
+        <option value="" selected>Grados</option>
+        ${(nivel==="Inicial"? ["Maternal","Pre-Kínder","Kínder","Pre-Primario"] : (GRADOS_POR_NIVEL[nivel]||[])).map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
       </select>
-      <select class="inp" id="selSeccionGS" style="flex:0 0 auto;width:86px">
+      <select class="inp" id="selSeccionGS" style="flex:0 0 auto;width:96px">
+        <option value="" selected>Secciones</option>
         ${SECCIONES.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("")}
       </select>
       <button class="btn-soft" style="flex:0 0 auto;padding:10px 14px" onclick="agregarGS()">Agregar</button>
@@ -2700,8 +2799,14 @@ function renderInfo(){
 }
 function toggleSel(tipo, valor){
   if(tipo==="asig"){
-    const i = S.docente.asignaturasSel.indexOf(valor);
-    if(i>=0) S.docente.asignaturasSel.splice(i,1); else S.docente.asignaturasSel.push(valor);
+    if(S.docente.nivel==="Secundaria"){
+      const i = S.docente.asignaturasSel.indexOf(valor);
+      S.docente.asignaturasSel = i>=0? [] : [valor];
+    } else {
+      const i = S.docente.asignaturasSel.indexOf(valor);
+      if(i>=0) S.docente.asignaturasSel.splice(i,1); else S.docente.asignaturasSel.push(valor);
+    }
+    apiAccion("actualizar-perfil", { id:S.docente.id, asignaturas:S.docente.asignaturasSel.join(", ") }).catch(()=>{});
   } else {
     if(!Array.isArray(S.docente.secciones)) S.docente.secciones = [];
     const i = S.docente.secciones.indexOf(valor);
@@ -2713,11 +2818,13 @@ function toggleSel(tipo, valor){
 function agregarGS(){
   const g = $("selGradoGS").value, s = $("selSeccionGS").value;
   if(!g){ toast("Selecciona un grado"); return; }
+  if(!s){ toast("Selecciona una sección"); return; }
   if(!Array.isArray(S.docente.gradosSecciones)) S.docente.gradosSecciones = [];
   if(S.docente.gradosSecciones.includes(g+"|"+s)){ toast("Ese grupo ya está agregado"); return; }
   S.docente.gradosSecciones.push(g+"|"+s);
   S.docente.secciones = [...new Set(S.docente.gradosSecciones.map(x=>x.split("|")[1]))];
   guardar();
+  apiAccion("actualizar-perfil", { id:S.docente.id, secciones:S.docente.secciones.join(", ") }).catch(()=>{});
   renderInfo();
   toast("Grupo agregado: "+g+" · "+s);
 }
@@ -2725,6 +2832,7 @@ function quitarGS(gs){
   S.docente.gradosSecciones = (S.docente.gradosSecciones||[]).filter(x=>x!==gs);
   S.docente.secciones = [...new Set(S.docente.gradosSecciones.map(x=>x.split("|")[1]))];
   guardar();
+  apiAccion("actualizar-perfil", { id:S.docente.id, secciones:S.docente.secciones.join(", ") }).catch(()=>{});
   renderInfo();
   toast("Grupo eliminado");
 }

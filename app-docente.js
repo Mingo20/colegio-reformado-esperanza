@@ -736,8 +736,27 @@ async function syncEstado(){
     const o = {};
     CLAVES_SYNC.forEach(k=>{ o[k] = S[k]; });
     await apiAccion("guardar-estado", { codigo: S.docente.codigo, estado: JSON.stringify(o) });
+    S.lastSync = new Date().toISOString();
   }catch(e){ }
 }
+/* Sync bidireccional en tiempo real:
+   - Con internet: cada registro se envía a la base de datos al instante (syncAhora).
+   - Sin internet: todo queda guardado local (guardar) y al volver la conexión se sincroniza solo.
+   - Cada 25s se consulta la base de datos para traer planes nuevos generados por el agente. */
+function syncAhora(){ syncEstado(); flush(); }
+window.addEventListener("online", ()=>{
+  if(S && S.docente && S.docente.codigo){
+    syncEstado(); flush();
+    cargarPlanes().then(()=>{ generarNotificaciones(); if(pantallaActual==="diaria") renderDiaria(); else if(pantallaActual==="mes") renderMes(); });
+  }
+});
+setInterval(()=>{
+  try{
+    if(!navigator.onLine || !S || !S.docente.codigo || document.hidden) return;
+    syncEstado();
+    cargarPlanes().then(()=>{ if(pantallaActual==="diaria") abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); });
+  }catch(e){ }
+}, 25000);
 
 /* ---------- API ---------- */
 async function apiAccion(accion, datos){
@@ -774,7 +793,7 @@ function ring(pct, size, stroke, color, label){
 function planActivo(){
   const ids = Object.keys(S.planesCache);
   if(ids.length) return S.planesCache[ids[ids.length-1]];
-  if(S.docente.nivel === "Inicial") return PLAN_MARIPOSA;
+  return { titulo:"Sin plan activo", mes:"", tema:"", nivel:S.docente.nivel, descripcion:"", competencias:[], areas:[], semanas:[] };
   return { titulo:"Sin plan activo", mes:"", tema:"", nivel:S.docente.nivel, descripcion:"", competencias:[], areas:[], semanas:[] };
 }
 async function obtenerPlan(id){
@@ -1106,6 +1125,9 @@ function mostrar(scr, arg){
   if(scr==="progreso") seguro(()=>renderProgreso());
   if(scr==="notificaciones") seguro(()=>renderNotificaciones());
   if(scr==="info") seguro(()=>renderInfo());
+  if(scr==="diaria" && S.docente.id && (!planAbierto || (planAbierto.titulo||"")==="Sin plan activo")){
+    abrirPlanEnCurso().then(ok=>{ if(ok && pantallaActual==="diaria") renderDiaria(); });
+  }
   window.scrollTo({top:0});
 }
 let pantallaActual = null;
@@ -1121,7 +1143,8 @@ function autoRefresco(scr){
       const a = document.activeElement;
       if(a && ["INPUT","TEXTAREA","SELECT"].includes(a.tagName)) return;
       if(pantallaActual !== scr) return;
-      if(scr==="mes"){ await cargarPlanes(); if(pantallaActual!==scr) return; }
+      await cargarPlanes(); if(pantallaActual!==scr) return;
+      if(scr==="diaria" && (!planAbierto || (planAbierto.titulo||"")==="Sin plan activo")){ await abrirPlanEnCurso(); }
       const y = window.scrollY||0;
       if(scr==="anio") renderAnio();
       else if(scr==="mes") renderMes();
@@ -1154,24 +1177,29 @@ function renderOnboarding(){
     <input class="inp" id="onbColegio" placeholder="Ej: Colegio Reformado la Esperanza">
     <label class="lbl">Tu nombre completo</label>
     <input class="inp" id="onbNombre" placeholder="Ej: María Pérez">
-    <label class="lbl">Distrito educativo</label>
-    <input class="inp" id="onbDistrito" placeholder="Ej: 15-05" style="text-align:center;letter-spacing:1px">
-    <label class="lbl">Nivel que impartes</label>
-    <select class="inp" id="onbNivel" onchange="onbNivelChange()">
-      <option value="Inicial" selected>Inicial</option>
-      <option value="Primaria">Primaria</option>
-      <option value="Secundaria">Secundaria</option>
-    </select>
+    <div class="grid-2col">
+      <div><label class="lbl">Jornada del centro educativo</label>
+        <select class="inp" id="onbJornada">
+          <option value="Matutina" selected>Matutina</option>
+          <option value="Vespertina">Vespertina</option>
+          <option value="Nocturna">Nocturna</option>
+          <option value="Jornada Extendida">Jornada Extendida</option>
+        </select></div>
+      <div><label class="lbl">Nivel que impartes</label>
+        <select class="inp" id="onbNivel" onchange="onbNivelChange()">
+          <option value="" selected disabled>Seleccionar nivel</option>
+          <option value="Inicial">Inicial</option>
+          <option value="Primaria">Primaria</option>
+          <option value="Secundaria">Secundaria</option>
+        </select></div>
+    </div>
     <div id="onbSmart"></div>
-    <label class="lbl">Jornada del centro educativo</label>
-    <select class="inp" id="onbJornada">
-      <option value="Matutina" selected>Matutina</option>
-      <option value="Vespertina">Vespertina</option>
-      <option value="Nocturna">Nocturna</option>
-      <option value="Jornada Extendida">Jornada Extendida</option>
-    </select>
-    <label class="lbl">Número de WhatsApp</label>
-    <input class="inp" id="onbWhats" type="tel" placeholder="Ej: 809-555-1234" style="text-align:center;letter-spacing:1px">
+    <div class="grid-2col">
+      <div><label class="lbl">Número de WhatsApp</label>
+        <input class="inp" id="onbWhats" type="tel" placeholder="Ej: 809-555-1234" style="text-align:center;letter-spacing:1px"></div>
+      <div><label class="lbl">Distrito educativo</label>
+        <input class="inp" id="onbDistrito" placeholder="Ej: 15-05" style="text-align:center;letter-spacing:1px"></div>
+    </div>
     <button class="dl grande" onclick="registrarDocente()">Crear mi cuenta</button>
     <button class="btn-mini" style="width:100%;margin-top:10px" onclick="mostrarLogin()">Ya tengo código · Iniciar sesión</button>
   </div>`;
@@ -1205,11 +1233,11 @@ function onbNivelChange(){
     </select>`;
   } else if(nivel==="Primaria"){
     cont.innerHTML = `
-    <label class="lbl">Tipo de docente de Primaria</label>
-    <select class="inp" id="onbTipoPrim">
-      <option value="" selected disabled>Selecciona tu tipo…</option>
-      <option value="Básicas">Docente de asignaturas básicas</option>
-      ${ASIG_ESP_PRIM.map(a=>`<option value="${esc(a)}">Docente especializado · ${esc(a)}</option>`).join("")}
+    <label class="lbl">Asignatura que impartes</label>
+    <select class="inp" id="onbAsigPrim">
+      <option value="" selected disabled>Selecciona tu asignatura…</option>
+      <option value="Básicas">Asignaturas básicas</option>
+      ${ASIG_ESP_PRIM.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join("")}
     </select>`;
   } else {
     cont.innerHTML = `
@@ -1224,6 +1252,7 @@ async function registrarDocente(){
   const colegio = $("onbColegio").value.trim();
   const nombre = $("onbNombre").value.trim();
   const nivel = $("onbNivel").value;
+  if(!nivel){ toast("Selecciona el nivel que impartes"); return; }
   const jornada = $("onbJornada").value;
   const whatsapp = ($("onbWhats")? $("onbWhats").value.trim() : "");
   if(!colegio || !nombre){ toast("Completa el colegio y tu nombre"); return; }
@@ -1234,7 +1263,7 @@ async function registrarDocente(){
     grado = ($("onbGradoIni")? $("onbGradoIni").value : "") || "";
     if(!grado){ toast("Selecciona el grado que atiendes"); return; }
   } else if(nivel==="Primaria"){
-    especialidad = ($("onbTipoPrim")? $("onbTipoPrim").value : "") || "";
+    especialidad = ($("onbAsigPrim")? $("onbAsigPrim").value : "") || "";
     if(!especialidad){ toast("Selecciona tu tipo de docente"); return; }
     if(ASIG_ESP_PRIM.includes(especialidad)) asignaturas = [especialidad];
   } else {
@@ -1500,16 +1529,15 @@ function planesMensuales(){
   const nivel = S.docente.nivel;
   const perN = numDePeriodo(S.docente.periodo);
   const arr = [];
+  const mesesReales = new Set((S.listaPlanes||[]).filter(p=>!/plan anual/i.test(p.titulo)).map(p=>parseMes(p.mes)).filter(Boolean));
   PLANES_ANUALES[nivel].temas.forEach((m,i)=>{
     const ym = parseMes(m.mes);
     if(ym && periodoDeMes(parseInt(ym.slice(5,7)))!==perN) return;
-    if(nivel==="Inicial" && /septiembre/i.test(m.mes)){
-      arr.push({ id:"local-mariposa", titulo:PLAN_MARIPOSA.titulo, mes:PLAN_MARIPOSA.mes, tema:PLAN_MARIPOSA.tema, nSem:(PLAN_MARIPOSA.semanas||[]).length, detallado:true, propio:false });
-    } else {
-      arr.push({ id:"der-"+nivel+"-"+i, titulo:m.tema, mes:m.mes, tema:m.tema, nSem:4, detallado:false, propio:false });
-    }
+    if(ym && mesesReales.has(ym)) return;
+    arr.push({ id:"der-"+nivel+"-"+i, titulo:m.tema, mes:m.mes, tema:m.tema, nSem:4, detallado:false, propio:false });
   });
   (S.listaPlanes||[]).forEach(p=>{
+    if(/plan anual/i.test(p.titulo)) return;
     const ym = parseMes(p.mes);
     if(ym && periodoDeMes(parseInt(ym.slice(5,7)))!==perN) return;
     arr.push({ id:p.id, titulo:p.titulo, mes:p.mes, tema:p.tema, nSem:p.semanas||0, detallado:true, propio:p.propio });
@@ -1560,6 +1588,17 @@ async function refrescarPlanes(){
   generarNotificaciones();
   renderMes();
   toast("Planes actualizados");
+}
+async function abrirPlanEnCurso(){
+  try{
+    const ym = HOY.slice(0,7);
+    let cand = (S.listaPlanes||[]).find(p=>parseMes(p.mes)===ym && !/plan anual/i.test(p.titulo));
+    if(!cand) return false;
+    const plan = await obtenerPlan(cand.id);
+    if(!plan) return false;
+    planAbierto = plan;
+    return true;
+  }catch(e){ return false; }
 }
 async function abrirPlan(id){
   toast("Cargando plan...");
@@ -1965,6 +2004,7 @@ function marcar(tipo, claseId, n, valor){
   if(valor===null) delete mapa[claseId][n];
   guardar();
   encolar(tipo==="A"?"asistencia":"evaluacion", claseId, { alumno:"Alumno "+n, estado: valor||"Sin registrar" });
+  syncAhora();
   toast("Alumno "+n+": "+(valor||"Sin registrar"));
   if(!$("scr-clase").classList.contains("visible")) return;
   if(tipo==="A") $("zonaA").innerHTML = alumnosHTML(claseId,"A");
@@ -2121,6 +2161,7 @@ function confirmarEvalAlumno(){
   if(comFinal) S.evalsCom[k] = comFinal; else delete S.evalsCom[k];
   guardar();
   encolar("evaluacion", claseId, { alumno:"Alumno "+n, estado });
+  syncAhora();
   cerrarEvalAlumno();
   toast("Alumno "+n+": "+estado+" registrado");
   if(!$("scr-clase").classList.contains("visible")) return;
@@ -2486,6 +2527,7 @@ function registrarPunto(){
   arr.push({ f, tipo, pts, com, asig });
   arr.sort((a,b)=> a.f<b.f? 1 : -1);
   guardar();
+  syncAhora();
   abrirHistorial(n, "progreso");
   if($("scr-progreso").classList.contains("visible")) renderProgreso();
   toast("Calificación de "+asig+" registrada para Alumno "+n);
@@ -2690,9 +2732,9 @@ function renderInfo(){
   const secs = S.docente.secciones.length? S.docente.secciones : [S.docente.seccion||"A"];
   $("scr-info").innerHTML = `
   <div class="card foto-card">
-    <div style="display:flex;align-items:center;justify-content:space-between">
-      <h2>${ic("usuarios")} Foto de perfil</h2>
-      <button class="btn-soft" style="padding:7px 6px;font-size:12px;white-space:nowrap" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
+    <div style="display:flex;gap:8px;align-items:stretch">
+      <span class="foto-chip">${ic("usuarios",13)} Foto de perfil</span>
+      <button class="btn-soft foto-chip" style="padding:7px 6px;font-size:12px;white-space:nowrap;background:#fff" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
     </div>
     <input type="file" id="inpFoto" accept="image/*" style="display:none" onchange="subirFotoPerfil(event)">
     <div class="foto-wrap" ${S.docente.foto? "":"style='display:none'"}>
@@ -2779,12 +2821,6 @@ function renderInfo(){
     <label class="lbl">${esc(g)} · Sección ${esc(s)}</label>
     <input class="inp inpAlum" data-sec="${esc(gs)}" type="number" min="1" max="60" value="${alumnosDe(s, g)}" style="text-align:center;font-weight:800">`; }).join("")}
     <button class="dl" onclick="guardarAlumnosPorSeccion()">Guardar</button>
-  </div>
-  <div class="card">
-    <h2>${ic("refrescar")} Sincronización automática</h2>
-    <div class="stat-row"><span><span class="punto" style="background:${pend?"#f59e0b":"#10b981"}"></span>Estado</span><b>${pend? pend+" pendiente(s) en cola":"Todo sincronizado"}</b></div>
-    <div class="stat-row"><span>Última sincronización</span><b>${esc(ult)}</b></div>
-    <button class="dl" onclick="flush(); toast('Sincronizando...')">${ic("refrescar")} Sincronizar ahora</button>
   </div>
   <div class="card">
     <h2>${ic("plan")} Alineación curricular</h2>
@@ -3581,7 +3617,7 @@ if(S.docente && S.docente.id){
   if(!S.ui.progSec) S.ui.progSec = S.docente.seccion || "A";
     animLogin(S.docente.nombre? S.docente.nombre.split(" ")[0] : "", ()=>{
       mostrar("diaria");
-      cargarPlanes().then(()=>{ generarNotificaciones(); if(pantallaActual==="diaria") renderDiaria(); });
+      cargarPlanes().then(()=>{ generarNotificaciones(); abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); });
       flush();
     });
   }else{

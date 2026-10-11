@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Planificación Docente">
 <link rel="manifest" href="manifest-docente.json">
 <link rel="icon" href="icon-graduacion.svg" type="image/svg+xml">
-<title>Planificación Docente · RD</title>
+<title>PlanApp</title>
 <style>
 :root{
   --azul:#0033A0; --azul-osc:#001C5A; --azul-med:#0B4FD8; --rojo:#CE1126; --rojo-osc:#9E0E1E;
@@ -368,6 +368,7 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 
 /* ---------- MODAL GUÍA TÉCNICA ---------- */
 .btn-evaluar.evaluado{background:#dcfce7;border-color:#059669;color:#065f46}
+.foto-chip{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:#fff;border:1px solid rgba(0,51,160,.10);border-radius:10px;padding:7px 6px;font-size:12px;font-weight:800;color:var(--tinta);white-space:nowrap;overflow:hidden}
 /* ---------- v16 ---------- */
 .ev2-hoja{max-width:440px;text-align:left}
 .ev2-estados{display:flex;gap:8px;margin:6px 0 12px}
@@ -566,7 +567,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=17"></script>
+<script src="app-docente.js?v=18"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

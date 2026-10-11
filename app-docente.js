@@ -138,7 +138,7 @@ function evalsAlumno(n){
   Object.keys(S.evaluacion||{}).forEach(f=>{
     if(!/^\d{4}-\d{2}-\d{2}$/.test(f)) return;
     const v = (S.evaluacion[f]||{})[n];
-    if(v==="Logrado") L++; else if(v==="En proceso") EP++; else if(v==="Iniciando") I++;
+    if(v==="Logrado") L++; else if(v==="En proceso") EP++; else if(v==="Iniciado") I++;
   });
   const t = L+EP+I;
   return { L, EP, I, total:t,
@@ -640,7 +640,7 @@ const LS_VIEJO2 = "plan_docente_rd_v2";
 function estadoDefault(){
   return {
     docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er periodo",recursos:[],estGuarda:null,estrategias:{} },
-    asistencia:{}, evaluacion:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
+    asistencia:{}, evaluacion:{}, evalsCom:{}, evalsEvid:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
     notificaciones:[], vistosPlanes:0,
     ui:{ progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er periodo", libFecha:null, histFiltro:String(periodoDeMes(parseInt(HOY.slice(5,7)))) },
@@ -724,7 +724,7 @@ function guardar(){
   try{ localStorage.setItem(LS_KEY, JSON.stringify(S)); }catch(e){}
   programarSyncEstado();
 }
-const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","lastSync"];
+const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","lastSync"];
 let _syncT = null;
 function programarSyncEstado(){
   if(!S.docente.id || !S.docente.codigo) return;
@@ -1164,8 +1164,11 @@ function renderOnboarding(){
   </div>
   <div class="card" id="cardLogin">
     <h2>${ic("nota")} Iniciar sesión</h2>
-    <p class="muted" style="margin-bottom:10px">Ingresa el código que te dimos cuando te registraste y entra directamente a tu planificación.</p>
-    <input class="inp" id="onbCodigo" placeholder="Tu código (ej: AB3K9Z)" style="text-transform:uppercase;letter-spacing:3px;text-align:center;font-weight:800">
+    <p class="muted" style="margin-bottom:10px">Ingresa tu número de WhatsApp y el código que te dimos al registrarte para entrar a tu planificación.</p>
+    <label class="lbl">Tu WhatsApp (usuario)</label>
+    <input class="inp" id="onbWhatsLogin" type="tel" placeholder="Ej: 809-555-1234" style="text-align:center;letter-spacing:1px;font-weight:800">
+    <label class="lbl">Tu código (contraseña)</label>
+    <input class="inp" id="onbCodigo" placeholder="Ej: AB3K9Z" style="text-transform:uppercase;letter-spacing:3px;text-align:center;font-weight:800">
     <button class="dl grande" onclick="entrarConCodigo()">Entrar con mi código</button>
     <div class="onb-div"></div>
     <p class="muted" style="text-align:center;margin-bottom:10px">¿Aún no tienes tu cuenta?</p>
@@ -1178,16 +1181,17 @@ function renderOnboarding(){
     <label class="lbl">Tu nombre completo</label>
     <input class="inp" id="onbNombre" placeholder="Ej: María Pérez">
     <div class="grid-2col">
-      <div><label class="lbl">Jornada del centro educativo</label>
+      <div><label class="lbl">Jornada del centro</label>
         <select class="inp" id="onbJornada">
-          <option value="Matutina" selected>Matutina</option>
+          <option value="" selected disabled>Seleccionar</option>
+          <option value="Matutina">Matutina</option>
           <option value="Vespertina">Vespertina</option>
           <option value="Nocturna">Nocturna</option>
           <option value="Jornada Extendida">Jornada Extendida</option>
         </select></div>
       <div><label class="lbl">Nivel que impartes</label>
         <select class="inp" id="onbNivel" onchange="onbNivelChange()">
-          <option value="" selected disabled>Seleccionar nivel</option>
+          <option value="" selected disabled>Seleccionar</option>
           <option value="Inicial">Inicial</option>
           <option value="Primaria">Primaria</option>
           <option value="Secundaria">Secundaria</option>
@@ -1205,11 +1209,13 @@ function renderOnboarding(){
   </div>`;
 }
 function mostrarRegistro(){
+  animIn("cardRegistro");
   $("cardLogin").style.display = "none";
   $("cardRegistro").style.display = "";
   $("scr-onboarding").scrollTop = 0;
 }
 function mostrarLogin(){
+  animIn("cardLogin");
   $("cardRegistro").style.display = "none";
   $("cardLogin").style.display = "";
   $("scr-onboarding").scrollTop = 0;
@@ -1220,6 +1226,13 @@ function animLogin(nombre, luego){
   $("animNombre").textContent = nombre? "¡Hola, "+nombre+"!" : "Entrando...";
   ov.classList.add("activo");
   setTimeout(()=>{ ov.classList.remove("activo"); luego(); }, 2000);
+}
+function animIn(id){
+  const el = typeof id==="string"? $(id) : id;
+  if(!el) return;
+  el.classList.remove("anim-in");
+  void el.offsetWidth;
+  el.classList.add("anim-in");
 }
 function onbNivelChange(){
   const nivel = $("onbNivel").value;
@@ -1247,6 +1260,7 @@ function onbNivelChange(){
       ${(ASIGNATURAS_RD["Secundaria"]||[]).map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join("")}
     </select>`;
   }
+  animIn("onbSmart");
 }
 async function registrarDocente(){
   const colegio = $("onbColegio").value.trim();
@@ -1254,6 +1268,7 @@ async function registrarDocente(){
   const nivel = $("onbNivel").value;
   if(!nivel){ toast("Selecciona el nivel que impartes"); return; }
   const jornada = $("onbJornada").value;
+  if(!jornada){ toast("Selecciona la jornada de tu centro"); return; }
   const whatsapp = ($("onbWhats")? $("onbWhats").value.trim() : "");
   if(!colegio || !nombre){ toast("Completa el colegio y tu nombre"); return; }
   if(!whatsapp){ toast("Escribe tu número de WhatsApp"); return; }
@@ -1290,10 +1305,12 @@ async function registrarDocente(){
 }
 async function entrarConCodigo(){
   const codigo = $("onbCodigo").value.trim().toUpperCase();
+  const whats = ($("onbWhatsLogin")? $("onbWhatsLogin").value.trim() : "");
+  if(!whats){ toast("Escribe tu número de WhatsApp"); return; }
   if(!codigo){ toast("Escribe tu código"); return; }
   try{
-    const r = await apiAccion("perfil", { codigo });
-    if(!r.success){ toast("Código no encontrado"); return; }
+    const r = await apiAccion("perfil", { codigo, whatsapp: whats });
+    if(!r.success){ toast(r.error || "Datos incorrectos"); return; }
     const p = r.perfil;
     S.docente.id = r.id; S.docente.codigo = r.codigo;
     S.docente.nombre = p.nombre_completo; S.docente.colegio = p.colegio;
@@ -1311,7 +1328,7 @@ async function entrarConCodigo(){
       if(e2.success && e2.estado) remoto = e2.estado;
     }catch(e2){ }
     if(remoto){
-      ["asistencia","evaluacion","evalsCom","puntos","crono","tiempoClase","obs","notificaciones","vistosPlanes","lastSync"].forEach(k=>{
+      ["asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","notificaciones","vistosPlanes","lastSync"].forEach(k=>{
         if(remoto[k]!==undefined) S[k] = remoto[k];
       });
       if(remoto.ui) S.ui = Object.assign({}, S.ui, remoto.ui);
@@ -1410,9 +1427,9 @@ function renderAnio(){
   const A = ANUAL_MINERD[nivel];
   let html = `
   <div class="hero">
-    <h2>Delega</h2>
-    <p class="eslogan">Tu agente administrativo</p>
-    <p>Planificación anual ${ANIO_ESCOLAR} · Nivel ${esc(nivel)}</p>
+    <h2>Planificación anual</h2>
+    <p class="eslogan">El plan anual de tu nivel educativo</p>
+    <p>Nivel ${esc(nivel)} · Año escolar ${ANIO_ESCOLAR}</p>
     <div class="row">
       <div class="ringbox">${ring(100,56,7,"#fff","1")}<small>Anual</small></div>
       <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(info.temas.length))}<small>Unidad</small></div>
@@ -1552,9 +1569,9 @@ function renderMes(){
   const totalSem0 = unicos0.reduce((a,p)=>a+(p.nSem||0),0);
   let html = `
   <div class="hero">
-    <h2>Delega</h2>
-    <p class="eslogan">Tu agente administrativo</p>
-    <p>Planificación mensual · Unidades de aprendizaje del nivel ${esc(S.docente.nivel)}</p>
+    <h2>Planificación mensual</h2>
+    <p class="eslogan">Las unidades de aprendizaje de tu nivel</p>
+    <p>Nivel ${esc(S.docente.nivel)} · Periodo ${esc(S.docente.periodo)}</p>
     <div class="row">
       <div class="ringbox">${ring(100,56,7,"#fff",String(unicos0.length))}<small>Unidades</small></div>
       <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(totalSem0))}<small>Semanas</small></div>
@@ -1805,9 +1822,9 @@ function renderDiaria(){
   const ordenados = ordenarClases(dias);
   let html = `
   <div class="hero">
-    <h2>Delega</h2>
-    <p class="eslogan">Tu agente administrativo</p>
-    <p>Planificación diaria · ${totalPlan} clases del plan mensual en curso${w.generado? " · Generado desde tu plan mensual de este mes":""}. Toca una clase para registrar asistencia y logros.</p>
+    <h2>Planificación diaria</h2>
+    <p class="eslogan">Tus clases del plan mensual en curso</p>
+    <p>${totalPlan} clases disponibles · Toca una clase para registrar asistencia y logros</p>
     <div class="row">
       <div class="ringbox">${ring(100,56,7,"#fff", String(totalPlan))}<small>Clases</small></div>
       <div class="ringbox">${ring(100,56,7,"#FFD6DB", String(dias.filter(d=>d.id===HOY).length))}<small>Hoy</small></div>
@@ -1901,7 +1918,7 @@ function renderClase(claseId){
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
       <div class="m-head">
         <div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b>
-        <span class="dur">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))} min</span>
+        <span class="dur dur-chip" title="Iniciar el cronómetro de este momento" onclick="iniciarMomento(event, ${i})">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))}</span>
         <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
       </div>
       <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
@@ -1979,14 +1996,14 @@ function alumnosHTML(claseId, tipo){
   for(let i=1;i<=N;i++){
     const st = reg[i]||null;
     if(tipo==="A"){
-      html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
+      html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
           <button class="${st==="Presente"?"selP":""}" title="Presente" onclick="marcar('A','${claseId}',${i},'Presente')">P</button>
           <button class="${st==="Tarde"?"selT":""}" title="Tarde" onclick="marcar('A','${claseId}',${i},'Tarde')">T</button>
           <button class="${st==="Ausente"?"selA":""}" title="Ausente" onclick="marcar('A','${claseId}',${i},'Ausente')">A</button>
         </div></div>`;
     } else {
-      html += `<div class="alumno"><div class="an">${i}</div><div class="anx">Alumno ${i}</div>
+      html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">${st? `<span class="chip chip-mini sel">${esc(st)}</span>`:""}<button class="btn-evaluar ${st? "evaluado":""}" onclick="abrirEvalAlumno('${claseId}', ${i})">${st? "Evaluado":"Evaluar"}</button></div></div>`;
     }
   }
@@ -2027,7 +2044,7 @@ function tabClase(t){
 /* ---------- TEMPORIZADOR ---------- */
 function temporizadorHTML(durs){
   durs = (durs && durs.length)? durs : [5,10,15];
-  const btns = durs.map((m,i)=>`<button class="dur-btn ${i===0?"sel":""}" onclick="setDur(${m},this)">${m} min</button>`).join("");
+  
   return `
   <div class="timer-wrap" id="timerBox">
     <div class="timer-ring">
@@ -2038,7 +2055,6 @@ function temporizadorHTML(durs){
       <div class="t-txt"><b id="timerTxt">${String(Math.floor((durs[0]*60)/60)).padStart(2,"0")}:00</b><small id="timerEstado">Listo</small></div>
     </div>
     <div class="timer-ctrl">
-      <div class="timer-durs">${btns}</div>
       <div class="timer-btns">
         <button class="btn-soft" id="btnPlay" onclick="playTimer()">${ic("play",14)} Iniciar</button>
         <button class="btn-soft" onclick="resetTimer()">${ic("reiniciar",14)} Reiniciar</button>
@@ -2097,11 +2113,17 @@ function cotejoDe(claseId){
   return COTEJO_BASE;
 }
 function abrirEvalAlumno(claseId, n){
+  if(!S.evalsEvid) S.evalsEvid = {};
+  const guardado = S.evalsEvid[claseId+"|"+n]||null;
   eval2 = { claseId, n, estado:null, evid:{} };
   const prev = (S.evaluacion[claseId]||{})[n];
   if(prev) eval2.estado = prev;
+  if(guardado && guardado.estado){
+    eval2.estado = guardado.estado;
+    eval2.evid[guardado.estado] = Object.assign({}, guardado.sel||{});
+  }
   $("eval2Alum").textContent = "ALUMNO "+n;
-  const obs = $("eval2Obs"); if(obs) obs.value = "";
+  const obs = $("eval2Obs"); if(obs) obs.value = guardado? (guardado.obs||"") : "";
   pintarEval2Estados(); pintarEval2Cotejo();
   $("modalEval2Fondo").classList.add("abierto");
   $("modalEval2Hoja").classList.add("abierta");
@@ -2157,8 +2179,10 @@ function confirmarEvalAlumno(){
   S.evaluacion[claseId][n] = estado;
   const comFinal = [ evidTxt.length? "Evidencias: "+evidTxt.join("; ") : "", obs ].filter(Boolean).join(" | ");
   if(!S.evalsCom) S.evalsCom = {};
+  if(!S.evalsEvid) S.evalsEvid = {};
   const k = claseId+"|"+n;
   if(comFinal) S.evalsCom[k] = comFinal; else delete S.evalsCom[k];
+  S.evalsEvid[k] = { estado, sel: Object.assign({}, eval2.evid[estado]||{}), obs };
   guardar();
   encolar("evaluacion", claseId, { alumno:"Alumno "+n, estado });
   syncAhora();
@@ -2230,9 +2254,6 @@ function cronoGuarda(){
   S.crono[claseActualId] = { dur: T.dur, resta: T.resta };
 }
 function setDur(min, btn){
-  document.querySelectorAll(".dur-btn").forEach(b=>b.classList.remove("sel"));
-  if(btn) btn.classList.add("sel");
-  else { const b1 = document.querySelector(".dur-btn"); if(b1) b1.classList.add("sel"); }
   T.dur = min*60; T.resta = T.dur; T.corriendo = false;
   clearInterval(T.iv); pintarTimer(); $("timerEstado").textContent="Listo";
   $("btnPlay").innerHTML = ic("play",14)+" Iniciar";
@@ -2333,8 +2354,7 @@ function iniciarMomento(ev, i){
   const m = momentos[i]; if(!m) return;
   const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
   const mins = Math.max(1, minsDe(duracionAjustada(m, base)) || 5);
-  const btnSel = Array.from(document.querySelectorAll(".dur-btn")).find(b=>b.textContent.trim().startsWith(mins+""));
-  setDur(mins, btnSel||null);
+  setDur(mins, null);
   abrirMomento(i);
   if(!T.corriendo) playTimer();
   toast("Momento en marcha: "+m.nombre+" · "+mins+" min");
@@ -2563,6 +2583,13 @@ function notaAsig(n, asig, periodo){
   const v = valoresDe(puntos, periodo, asig);
   return v? notaFinalDe(v.p, v.t, v.e) : null;
 }
+function pctTardeAlumno(n){
+  const fechas = fechasRegistradas("asis");
+  if(!fechas.length) return null;
+  let t = 0, marcados = 0;
+  fechas.forEach(f=>{ const v = (S.asistencia[f]||{})[n]; if(v){ marcados++; if(v==="Tarde") t++; } });
+  return marcados? Math.round(t*100/marcados) : null;
+}
 function asistenciaDe(n){
   const fechas = fechasRegistradas("asis");
   if(!fechas.length) return null;
@@ -2615,9 +2642,9 @@ function htmlProgresoHero(){
   const plan = planAbierto || planActivo();
   return `
   <div class="hero">
-    <h2>Delega</h2>
-    <p class="eslogan">Tu agente administrativo</p>
-    <p>Progreso · Calificaciones de ${esc(S.docente.periodo)} · Grado ${esc(g)} · Sección ${esc(sc)}</p>
+    <h2>Progreso</h2>
+    <p class="eslogan">Seguimiento de tus estudiantes</p>
+    <p>${esc(g)} · Sección ${esc(sc)} · Periodo ${esc(S.docente.periodo)}</p>
     <div class="row">
       ${nivelUsaEvaluacionCualitativa()? "" : `<div class="ringbox">${ring(promedioGrupo(),56,7,"#fff",promedioGrupo()+"★")}<small>Promedio</small></div>`}
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
@@ -2648,7 +2675,7 @@ function htmlProgresoPanel(){
         </select></div>
     </div>
   </div>`:""}
-  <h2 class="mini">${puedeElegirGrado()? "Grado "+esc(g)+" · " : ""}Sección ${esc(sc)}</h2>`;
+  <h2 class="mini">${esc(g).toUpperCase()} · SECCIÓN ${esc(sc)}</h2>`;
   for(let i=1;i<=N;i++){
     const inicial = nivelUsaEvaluacionCualitativa();
     const nf = notaDe(i);
@@ -2659,12 +2686,14 @@ function htmlProgresoPanel(){
       ? ring(ev.total? ev.pL:0,46,5, ev.total? "#CE1126":"#94a3b8", ev.total? ev.pL+"%":"—")
       : ring(nf===null?0:nf,46,5,color, nf===null? "—":nf+"★");
     const segundaEtq = inicial? "Logrado" : "Promedio";
+    const tarde = pctTardeAlumno(i);
     html += `<div class="prog-card">
       <div class="pc-top" onclick="abrirHistorial(${i},'progreso')" title="Ver detalle del alumno">
         <div class="pc-user">${ic("persona",39)}<span class="pc-nombre">Alumno ${i}</span></div>
         <div class="rg pc-rings">
           <div class="ringitem">${ring(asis===null?0:asis,46,5,asis===null? "#94a3b8":"#0033A0", asis===null? "—":asis+"%")}<small>Asistencia</small></div>
           <div class="ringitem">${segundoRing}<small>${segundaEtq}</small></div>
+          <div class="ringitem">${ring(tarde===null?0:tarde,46,5,tarde===null? "#94a3b8":"#f59e0b", tarde===null? "—":tarde+"%")}<small>Tarde</small></div>
         </div>
       </div>
       <div class="pc-bottom">
@@ -2707,10 +2736,7 @@ function renderNotificaciones(){
       <div class="n-tx">${esc(n.texto)}<small>${esc(fecha)}</small></div>
     </div>`;
   });
-  if(S.notificaciones.length){
-    html += `<button class="dl alt" onclick="borrarNotificaciones()">Borrar todas las notificaciones</button>`;
-  }
-  $("scr-notificaciones").innerHTML = html;
+   $("scr-notificaciones").innerHTML = html;
   setTimeout(()=>{
     S.notificaciones.forEach(n=>n.leida = true);
     guardar(); actualizarCampana();
@@ -2993,7 +3019,7 @@ async function cerrarSesion(){
     }catch(e){ }
   }
   const def = estadoDefault();
-  S = Object.assign({}, def, { asistencia:{}, evaluacion:{}, obs:{}, calificaciones:{}, libreta:{}, puntos:{}, crono:{}, tiempoClase:{}, cola:[], planesCache:{}, listaPlanes:null, notificaciones:[] });
+  S = Object.assign({}, def, { asistencia:{}, evaluacion:{}, evalsCom:{}, evalsEvid:{}, obs:{}, calificaciones:{}, libreta:{}, puntos:{}, crono:{}, tiempoClase:{}, cola:[], planesCache:{}, listaPlanes:null, notificaciones:[] });
   guardar();
   clearTimeout(_syncT);
   actualizarFotoTopbar();
@@ -3074,7 +3100,7 @@ async function descargarPlanAnualDocx(nivel){
     const secs = (S.docente.secciones.length? S.docente.secciones:[S.docente.seccion||"A"]).join(", ");
     const tiempo = {};
     info.temas.forEach(t=>{ tiempo[t.trimestre]=(tiempo[t.trimestre]||0)+1; });
-    const doc = new D.Document({ sections:[{ children:[
+    const doc = new D.Document({ sections:[{ properties:{ page:{ size:{ width:11906, height:16838 }, margin:{ top:1134, right:1134, bottom:1134, left:1134 } } }, children:[
       new D.Paragraph({ text:S.docente.colegio||"Colegio", heading:D.HeadingLevel.HEADING_1, alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:info.titulo+" "+ANIO_ESCOLAR+" · Nivel "+nivel, heading:D.HeadingLevel.HEADING_2, alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:"Adecuación Curricular vigente (Ordenanza 2023) · MINERD · República Dominicana", alignment:D.AlignmentType.CENTER }),
@@ -3096,9 +3122,10 @@ async function descargarPlanAnualDocx(nivel){
       tblDocx(D, ["#","Competencia","Descripción"], COMPETENCIAS.map((c,i)=>[ "C"+(i+1), c.n, c.d ])),
       h2docx(D, "2.2 Competencias específicas del grado"),
       tblDocx(D, ["#","Capacidad"], A.compEspecificas.map((c,i)=>["E"+(i+1), c])),
-      h2docx(D, "2.3 Contenidos dosificados"),
+      h2docx(D, "2.3 Contenidos dosificados por mes"),
+      tblDocx(D, ["Mes","Conceptuales (Saber)"],
+        info.temas.map(t=>[t.mes, t.contenidos])),
       tblDocx(D, ["Tipo","Contenidos"], [
-        ["Conceptuales (Saber)", info.temas.map(t=>t.mes+": "+t.contenidos).join(" | ")],
         ["Procedimentales (Saber hacer)", A.procContenidos.join(" · ")],
         ["Actitudinales y valores (Saber ser)", A.actContenidos.join(" · ")],
       ]),

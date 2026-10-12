@@ -94,8 +94,11 @@ function planParaDocente(p){
   const nivel = S.docente.nivel;
   if(p.nivel && p.nivel!==nivel) return false;
   if(nivel==="Inicial"){
-    const pg = normalizaGrado(p.grado), dg = normalizaGrado(S.docente.grado);
-    if(pg && dg && pg!==dg) return false;
+    const pg = normalizaGrado(p.grado);
+    const mis = misGradosDocente();
+    if(pg && mis.length && !mis.includes(pg)) return false;
+    const dg = normalizaGrado(S.docente.grado);
+    if(pg && dg && !mis.length && pg!==dg) return false;
   } else {
     const mis = misGradosDocente();
     const pg = normalizaGrado(p.grado);
@@ -788,6 +791,14 @@ setInterval(()=>{
   try{
     if(!navigator.onLine || !S || !S.docente.codigo || document.hidden) return;
     syncEstado();
+    apiAccion("pull-evals", { codigo: S.docente.codigo }).then(r=>{
+      if(!r || !r.success) return;
+      let cambio = false;
+      const ev = r.evalsEvid||{}, com = r.evalsCom||{};
+      Object.keys(ev).forEach(k=>{ if(!(k in S.evalsEvid)){ S.evalsEvid[k] = ev[k]; cambio = true; } });
+      Object.keys(com).forEach(k=>{ if(!(k in S.evalsCom)){ S.evalsCom[k] = com[k]; cambio = true; } });
+      if(cambio) guardar();
+    }).catch(()=>{});
     cargarPlanes().then(()=>{ if(pantallaActual==="diaria") abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); });
   }catch(e){ }
 }, 25000);
@@ -1012,11 +1023,26 @@ function actualizarCampana(){
   const b = $("badgeNotif");
   if(b){ b.textContent = n>99? "99+" : String(n); b.classList.toggle("visible", n>0); }
 }
+function beepNotif(){
+  try{
+    const ctx = new (window.AudioContext||window.webkitAudioContext)();
+    [[659,0],[784,0.16],[988,0.32]].forEach(([f,d])=>{
+      const o=ctx.createOscillator(), g=ctx.createGain();
+      o.connect(g); g.connect(ctx.destination); o.frequency.value=f; o.type="sine";
+      g.gain.setValueAtTime(0.0001, ctx.currentTime+d);
+      g.gain.exponentialRampToValueAtTime(0.35, ctx.currentTime+d+0.03);
+      g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime+d+0.55);
+      o.start(ctx.currentTime+d); o.stop(ctx.currentTime+d+0.6);
+    });
+    try{ if(navigator.vibrate) navigator.vibrate([90,60,90]); }catch(e){}
+  }catch(e){}
+}
 function pushNotif(texto, icono){
   if(S.notificaciones.some(x=>x.texto===texto)) return;
   S.notificaciones.unshift({ id: Date.now()+"-"+Math.random().toString(36).slice(2,6), texto, icono: icono||"campana", fecha: new Date().toISOString(), leida:false });
   if(S.notificaciones.length>60) S.notificaciones.pop();
   guardar(); actualizarCampana();
+  beepNotif();
 }
 function generarNotificaciones(){
   if(!S.docente.id) return;
@@ -1098,7 +1124,12 @@ async function flush(){
   window._flushing = false;
   if(S.cola.length) programarFlush();
   actualizarCampana();
-  if($("scr-info").classList.contains("visible")) renderInfo();
+  if($("scr-info").classList.contains("visible")){
+    const a = document.activeElement;
+    const editando = a && a.tagName && ["INPUT","TEXTAREA","SELECT"].indexOf(a.tagName)>=0;
+    const modalAbierto = $("modalHoja") && $("modalHoja").classList.contains("abierta");
+    if(!editando && !modalAbierto) renderInfo();
+  }
 }
 document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && S.docente.id){ flush(); generarNotificaciones(); } });
 
@@ -1210,12 +1241,12 @@ function renderOnboarding(){
     <button class="dl grande" onclick="entrarConCodigo()">Entrar con mi código</button>
     <div class="onb-div"></div>
     <p class="muted" style="text-align:center;margin-bottom:10px">¿Aún no tienes tu cuenta?</p>
-    <button class="dl alt" style="width:100%" onclick="mostrarRegistro()">Registrarme</button>
+    <button class="dl alt" style="width:100%" onclick="mostrarRegistro()">Regístrate Gratis</button>
   </div>
   <div class="card" id="cardRegistro" style="display:none">
     <h2>${ic("usuarios")} Regístrate</h2>
     <label class="lbl">Nombre del colegio o escuela</label>
-    <input class="inp" id="onbColegio" placeholder="Ej: Colegio Reformado la Esperanza">
+    <input class="inp" id="onbColegio" list="dlColegios" autocomplete="off" placeholder="Ej: Colegio Reformado la Esperanza">
     <label class="lbl">Tu nombre completo</label>
     <input class="inp" id="onbNombre" placeholder="Ej: María Pérez">
     <div class="grid-2col">
@@ -1240,14 +1271,17 @@ function renderOnboarding(){
       <div><label class="lbl">Número de WhatsApp</label>
         <input class="inp" id="onbWhats" type="tel" placeholder="Ej: 809-555-1234" style="text-align:center;letter-spacing:1px"></div>
       <div><label class="lbl">Distrito educativo</label>
-        <input class="inp" id="onbDistrito" placeholder="Ej: 15-05" style="text-align:center;letter-spacing:1px"></div>
+        <input class="inp" id="onbDistrito" list="dlDistritos" autocomplete="off" placeholder="Ej: 15-05" style="text-align:center;letter-spacing:1px"></div>
     </div>
+    <datalist id="dlColegios"></datalist>
+    <datalist id="dlDistritos"></datalist>
     <button class="dl grande" onclick="registrarDocente()">Crear mi cuenta</button>
     <button class="btn-mini" style="width:100%;margin-top:10px" onclick="mostrarLogin()">Ya tengo código · Iniciar sesión</button>
   </div>`;
 }
 function mostrarRegistro(){
   animIn("cardRegistro");
+  cargarSugerencias();
   $("cardLogin").style.display = "none";
   $("cardRegistro").style.display = "";
   $("scr-onboarding").scrollTop = 0;
@@ -1272,16 +1306,38 @@ function animIn(id){
   void el.offsetWidth;
   el.classList.add("anim-in");
 }
+let onbSecsSel = [];
+function toggleOnbSec(s){
+  const idx = onbSecsSel.indexOf(s);
+  if(idx>=0) onbSecsSel.splice(idx,1); else onbSecsSel.push(s);
+  try{ const el = document.querySelector('.onb-sec[data-s="'+s+'"]'); if(el && el.classList && el.classList.toggle) el.classList.toggle("sel", idx<0); }catch(e){}
+}
+async function cargarSugerencias(){
+  try{
+    const r = await apiAccion("sugerencias", {});
+    if(!r || !r.success) return;
+    const lc = $("dlColegios"), ld = $("dlDistritos");
+    if(lc) lc.innerHTML = (r.colegios||[]).map(x=>`<option value="${esc(x)}">`).join("");
+    if(ld) ld.innerHTML = (r.distritos||[]).map(x=>`<option value="${esc(x)}">`).join("");
+  }catch(e){}
+}
 function onbNivelChange(){
+  onbSecsSel = [];
   const nivel = $("onbNivel").value;
   const cont = $("onbSmart");
   if(nivel==="Inicial"){
     cont.innerHTML = `
-    <label class="lbl">Grado que atiendes</label>
-    <select class="inp" id="onbGradoIni">
-      <option value="" selected disabled>Selecciona el grado…</option>
-      ${GRADOS_POR_NIVEL["Inicial"].map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
-    </select>`;
+    <div class="grid-2col">
+      <div><label class="lbl">Grado que atiendes</label>
+        <select class="inp" id="onbGradoIni">
+          <option value="" selected disabled>Selecciona…</option>
+          ${GRADOS_POR_NIVEL["Inicial"].map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
+        </select></div>
+      <div><label class="lbl">Sección que impartes</label>
+        <div class="onb-secs" id="onbSecs">
+          ${["A","B","C","D","E","F"].map(s=>`<button type="button" class="onb-sec" data-s="${s}" onclick="toggleOnbSec('${s}')">${s}</button>`).join("")}
+        </div></div>
+    </div>`;
   } else if(nivel==="Primaria"){
     cont.innerHTML = `
     <label class="lbl">Asignatura que impartes</label>
@@ -1311,14 +1367,17 @@ async function registrarDocente(){
   if(!colegio || !nombre){ toast("Completa el colegio y tu nombre"); return; }
   if(!whatsapp){ toast("Escribe tu número de WhatsApp"); return; }
   const distrito = ($("onbDistrito")? $("onbDistrito").value.trim() : "");
-  let grado = "", especialidad = "", asignaturas = [];
+  let grado = "", especialidad = "", asignaturas = [], seccionesSel = [];
   if(nivel==="Inicial"){
     grado = ($("onbGradoIni")? $("onbGradoIni").value : "") || "";
     if(!grado){ toast("Selecciona el grado que atiendes"); return; }
+    seccionesSel = (onbSecsSel||[]).slice().sort();
+    if(!seccionesSel.length){ toast("Selecciona al menos una sección (A–F)"); return; }
   } else if(nivel==="Primaria"){
     especialidad = ($("onbAsigPrim")? $("onbAsigPrim").value : "") || "";
     if(!especialidad){ toast("Selecciona tu tipo de docente"); return; }
-    if(ASIG_ESP_PRIM.includes(especialidad)) asignaturas = [especialidad];
+    if(especialidad==="Básicas") asignaturas = ["Lengua Española","Matemática","Ciencias Sociales","Ciencias de la Naturaleza","Formación Integral Humana y Religiosa"];
+    else if(ASIG_ESP_PRIM.includes(especialidad)) asignaturas = [especialidad];
   } else {
     const asig = ($("onbAsigSec")? $("onbAsigSec").value : "") || "";
     if(!asig){ toast("Selecciona la asignatura que impartes"); return; }
@@ -1326,12 +1385,16 @@ async function registrarDocente(){
   }
   toast("Registrando...");
   try{
-    const r = await apiAccion("onboarding", { colegio, nombre, whatsapp, distrito, nivel, grado, seccion:"", jornada,
-      asignaturas: asignaturas.join(", "), especialidad });
+    const r = await apiAccion("onboarding", { colegio, nombre, whatsapp, distrito, nivel, grado, seccion: seccionesSel[0]||"", jornada,
+      secciones: seccionesSel.join(", "), asignaturas: asignaturas.join(", "), especialidad });
     if(!r.success){ toast("Error: "+(r.error||"intenta de nuevo")); return; }
+    const apsIni = {};
+    seccionesSel.forEach(s=>{ apsIni[grado+"|"+s] = 24; });
     S.docente = Object.assign({}, S.docente, { id:r.id, codigo:r.codigo, nombre, colegio, distrito, whatsapp, nivel,
-      grado, seccion:"", jornada, especialidad, asignaturasSel: asignaturas, secciones:[] });
+      grado, seccion: seccionesSel[0]||"A", jornada, especialidad, asignaturasSel: asignaturas,
+      secciones: seccionesSel, gradosSecciones: seccionesSel.map(s=>grado+"|"+s), alumnosPorSeccion: apsIni });
     guardar();
+    pushNotif("¡Bienvenida/o a PlanApp! Completa tu perfil en la pantalla Perfil (grados, secciones, alumnos y duración de clase) para que generemos planes personalizados para ti.","perfil");
     await cargarPlanes();
     generarNotificaciones();
     animLogin(nombre.split(" ")[0], ()=>{
@@ -1477,7 +1540,6 @@ function renderAnio(){
   <div class="card">
     <h2>${ic("plan")} Tu perfil docente</h2>
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
-    <div class="stat-row"><span>Distrito</span><b>${esc(S.docente.distrito||"—")}</b></div>
     <div class="stat-row"><span>WhatsApp</span><b>${esc(S.docente.whatsapp || S.docente.distrito || "—")}</b></div>
     <div class="stat-row"><span>Nivel / Grado</span><b>${esc(nivel)} · ${esc(S.docente.grado)}</b></div>
     <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
@@ -1586,7 +1648,8 @@ function planesMensuales(){
   const perN = numDePeriodo(S.docente.periodo);
   const arr = [];
   const mesesReales = new Set((S.listaPlanes||[]).filter(p=>!/plan anual/i.test(p.titulo)).map(p=>parseMes(p.mes)).filter(Boolean));
-  PLANES_ANUALES[nivel].temas.forEach((m,i)=>{
+  if(nivel==="Inicial") PLANES_ANUALES[nivel].temas.forEach(()=>{});
+  else PLANES_ANUALES[nivel].temas.forEach((m,i)=>{
     const ym = parseMes(m.mes);
     if(ym && periodoDeMes(parseInt(ym.slice(5,7)))!==perN) return;
     if(ym && mesesReales.has(ym)) return;
@@ -1689,7 +1752,7 @@ function renderMesDetalle(plan){
       <div class="kv"><b>Sección</b><span>${esc(S.docente.seccion)}</span></div>
       <div class="kv"><b>Tiempo</b><span>${esDerivado? esc(plan.duracion||"4 semanas") : (plan.semanas||[]).length+" semanas"}</span></div>
       <div class="kv"><b>Eje temático</b><span>${esc(plan.eje||"Según plan")}</span></div>
-      <div class="kv"><b>Estrategia</b><span>${esc(plan.estrategia || "Unidad de Aprendizaje")}</span></div>
+      <div class="kv"><b>Estrategia</b><span>${esc(plan.estrategia || (plan.nivel==="Inicial"? "Centro de Interés" : "Unidad de Aprendizaje"))}</span></div>
       <div class="kv"><b>Docente</b><span>${esc(S.docente.nombre||"—")}</span></div>
     </div>
   </div>
@@ -1947,11 +2010,6 @@ function renderClase(claseId){
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
   </div>
   ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Momentos ajustados a tu clase de ${S.docente.duracionMin} min (cámbialo en Info).</p>`:""}
-  <div class="card">
-    <h2>${ic("reloj")} Cronómetro de la clase</h2>
-    <p class="muted" style="margin-bottom:8px;font-size:12.5px">Cronometra cada momento o la clase completa.</p>
-    ${temporizadorHTML(durs.length? durs : null)}
-  </div>
   <h2 class="mini">Momentos de la clase</h2>
   ${momentos.map((m,i)=>`
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
@@ -2012,6 +2070,7 @@ function renderClase(claseId){
   <div style="height:6px"></div>
   <div style="height:14px"></div>`;
   $("scr-clase").innerHTML = html;
+  pintarCronoFlotante(durs.length? durs : null);
   initTimer(durs.length? durs : null);
   $("obsTxt").addEventListener("input", ()=>{
     S.obs[claseId] = $("obsTxt").value;
@@ -2084,23 +2143,36 @@ function tabClase(t){
 /* ---------- TEMPORIZADOR ---------- */
 function temporizadorHTML(durs){
   durs = (durs && durs.length)? durs : [5,10,15];
-  
   return `
   <div class="timer-wrap" id="timerBox">
     <div class="timer-ring">
-      <svg width="96" height="96">
-        <circle cx="48" cy="48" r="40" fill="none" stroke="rgba(0,51,160,.12)" stroke-width="8"/>
-
+      <svg width="96" height="96" viewBox="0 0 96 96">
+        <circle cx="48" cy="48" r="40" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="8"/>
+        <circle id="timerCirc" cx="48" cy="48" r="40" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="251.3" stroke-dashoffset="0" transform="rotate(-90 48 48)"/>
       </svg>
       <div class="t-txt"><b id="timerTxt">${String(Math.floor((durs[0]*60)/60)).padStart(2,"0")}:00</b><small id="timerEstado">Listo</small></div>
     </div>
     <div class="timer-ctrl">
       <div class="timer-btns">
-        <button class="btn-soft" id="btnPlay" onclick="playTimer()">${ic("play",14)} Iniciar</button>
-        <button class="btn-soft" onclick="resetTimer()">${ic("reiniciar",14)} Reiniciar</button>
+        <button class="btn-soft" id="btnPlay" onclick="event.stopPropagation(); playTimer()">${ic("play",14)} Iniciar</button>
+        <button class="btn-soft" onclick="event.stopPropagation(); resetTimer()">${ic("reiniciar",12)} Reiniciar</button>
       </div>
     </div>
   </div>`;
+}
+function pintarCronoFlotante(durs){
+  const cf = $("cronoFlotante");
+  if(!cf) return;
+  if(!claseActualId){ cf.style.display = "none"; return; }
+  const llave = JSON.stringify(durs||null);
+  if(cf.dataset.durs !== llave){
+    cf.innerHTML = temporizadorHTML(durs && durs.length? durs : null);
+    cf.dataset.durs = llave;
+  }
+}
+function volverAClaseActiva(){
+  if(claseActualId && clasePorId(planAbierto || planActivo(), claseActualId)) irA("clase", claseActualId);
 }
 let evalPend = null;
 const PREGUNTAS_EVAL = {
@@ -2224,6 +2296,7 @@ function confirmarEvalAlumno(){
   if(comFinal) S.evalsCom[k] = comFinal; else delete S.evalsCom[k];
   S.evalsEvid[k] = { estado, sel: Object.assign({}, eval2.evid[estado]||{}), obs };
   guardar();
+  syncAhora();
   encolar("evaluacion", claseId, { alumno:"Alumno "+n, estado });
   syncAhora();
   cerrarEvalAlumno();
@@ -2309,7 +2382,7 @@ function pintarDurChips(){
     momentos.forEach((m,i)=>{
       const el = $("durchip-"+i); if(!el) return;
       if(T.momentoActivo===i && T.resta>0){
-        el.innerHTML = T.corriendo? "▶ En curso" : "⏸ Pausada";
+        el.innerHTML = T.corriendo? "▶ En curso" : "⏸ En pausa";
       } else {
         el.innerHTML = ic("reloj",13)+" "+esc(duracionAjustada(m, base));
       }
@@ -2319,7 +2392,12 @@ function pintarDurChips(){
 function pintarTimer(){
   pintarDurChips();
   const m = Math.floor(T.resta/60), s = T.resta%60;
-  $("timerTxt").textContent = String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
+  const tt = $("timerTxt");
+  if(tt) tt.textContent = String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
+  const circ = $("timerCirc");
+  if(circ && circ.setAttribute) circ.setAttribute("stroke-dashoffset", String(Math.round(251.3*(1-(T.resta/Math.max(1,T.dur))))));
+  const cf = $("cronoFlotante");
+  if(cf) cf.style.display = (claseActualId && T && T.momentoActivo!=null && T.resta>0)? "" : "none";
 }
 function playTimer(){
   if(T.corriendo){
@@ -2412,12 +2490,19 @@ function iniciarMomento(ev, i){
   const d = clasePorId(plan, claseActualId);
   const momentos = (d && d.momentos)||[];
   const m = momentos[i]; if(!m) return;
+  if(T.momentoActivo===i && T.resta>0){
+    playTimer();
+    pintarDurChips();
+    pintarTimer();
+    return;
+  }
   const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
   const mins = Math.max(1, minsDe(duracionAjustada(m, base)) || 5);
   setDur(mins, null);
   T.momentoActivo = i;
   if(!T.corriendo) playTimer();
   pintarDurChips();
+  pintarTimer();
   toast("Momento en marcha: "+m.nombre+" · "+mins+" min");
 }
 function initTimer(durs){
@@ -2835,7 +2920,7 @@ function renderInfo(){
   <div class="card foto-card">
     <div style="display:flex;gap:8px;align-items:stretch">
       <span class="foto-chip">${ic("usuarios",13)} Foto de perfil</span>
-      <button class="btn-soft foto-chip" style="padding:7px 6px;font-size:12px;white-space:nowrap;background:#fff" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
+      <button class="foto-chip" style="padding:7px 6px;font-size:12px;white-space:nowrap" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>
     </div>
     <input type="file" id="inpFoto" accept="image/*" style="display:none" onchange="subirFotoPerfil(event)">
     <div class="foto-wrap" ${S.docente.foto? "":"style='display:none'"}>
@@ -2844,8 +2929,9 @@ function renderInfo(){
     ${S.docente.foto? "" : `<p class="muted" style="text-align:center;font-size:12.5px;margin:10px 0 0">Aún no has subido tu foto</p>`}
   </div>
   <div class="card">
-    <h2>${ic("usuarios")} Datos registrados</h2>
+    <h2>${ic("logo")} Tu perfil docente</h2>
     <div class="stat-row"><span>Nombre</span><b>${esc(S.docente.nombre)}</b></div>
+    <div class="stat-row"><span>Distrito</span><b>${esc(S.docente.distrito||"—")}</b></div>
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
     <div class="stat-row"><span>WhatsApp</span><b>${esc(S.docente.whatsapp||"—")}</b></div>
     <div class="stat-row"><span>Nivel / Grado</span><b>${esc(nivel)} · ${esc(S.docente.grado)}</b></div>
@@ -3051,9 +3137,11 @@ function cerrarBorrar(){
   $("modalBorrarHoja").classList.remove("abierta");
 }
 function confirmarBorrado(){
-  S.asistencia={}; S.evaluacion={}; S.tiempoClase={}; S.obs={}; S.evalsCom={}; S.calificaciones={}; S.libreta={}; guardar();
   cerrarBorrar();
-  toast("Datos locales borrados"); renderInfo();
+  animarAccion("Borrando datos locales…", ()=>{
+    S.asistencia={}; S.evaluacion={}; S.tiempoClase={}; S.obs={}; S.evalsCom={}; S.evalsEvid={}; S.calificaciones={}; S.libreta={}; guardar();
+    toast("Datos locales borrados"); renderInfo();
+  });
 }
 function agregarRecurso(){
   const inp = $("inpRecurso");
@@ -3080,9 +3168,16 @@ function cerrarConfCierre(){
   $("modalConfFondo").classList.remove("abierto");
   $("modalConfHoja").classList.remove("abierta");
 }
+function animarAccion(texto, luego){
+  const ov = $("accAnim");
+  if(!ov){ luego(); return; }
+  $("accTxt").textContent = texto;
+  ov.classList.add("activo");
+  setTimeout(()=>{ ov.classList.remove("activo"); luego(); }, 3000);
+}
 function confirmarCierre(){
   cerrarConfCierre();
-  cerrarSesion();
+  animarAccion("Cerrando tu sesión…", cerrarSesion);
 }
 async function cerrarSesion(){
   const codigo = S.docente.codigo;

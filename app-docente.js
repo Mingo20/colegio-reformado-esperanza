@@ -1787,7 +1787,7 @@ function renderMesDetalle(plan){
     ${(plan.areas||[]).length? `<h3>Áreas curriculares</h3>${(plan.areas||[]).map(a=>`<span class="chip roja">${esc(a)}</span>`).join("")}`:""}
   </div>
   <div class="card">
-    <h2>${ic("lista")} 4. Secuencia didáctica</h2>`;
+    <h2>${ic("lista")} 4. Desglose por semanas</h2>`;
   if(esDerivado){
     html += plan.semanas.map(s=>`<div class="mcard">
       <div class="m-tit"><div class="n">${s.numero}</div><b>${esc(s.tema)}</b></div>
@@ -1798,27 +1798,17 @@ function renderMesDetalle(plan){
     html += `<div class="nota"><b>${ic("bombilla")} Evaluación de la unidad</b>${esc(plan.evaluacion||"")}</div>
     <p class="vacio">¿Quieres este plan con clases diarias completas? Pídeselo a Delega por WhatsApp y aparecerá aquí como plan detallado.</p>`;
   } else {
-    const semanasInv = [...(plan.semanas||[])].reverse();
-    semanasInv.forEach(s=>{
-      const dias = s.dias||[];
-      const pctW = dias.length? Math.round(dias.reduce((a,d)=>a+pctDia(d.id,"asis"),0)/dias.length) : 0;
-      const lblSem = esAnualPlan(plan)? "Mes":"Semana";
-      html += `<div class="item" ${dias.length? `onclick="abrirClase('${dias[dias.length-1].id}')"`:""}>
-        <div class="ic">${ic("lista")}</div>
-        <div class="tx"><b>${lblSem} ${s.numero} · ${esc(s.tema)}</b><span>${esc(s.fechas)}${dias.length? " · "+dias.length+" clases diarias":""}</span></div>
-        ${dias.length? `<div class="rg">${ring(pctW,46,6,"#0033A0")}</div>`:""}
-      </div>
-      <div class="card" style="padding:10px 12px">
-        ${dias.slice().reverse().map(d=>{
-          const esHoy = d.id===HOY;
-          return `<div class="item" style="margin-bottom:8px;box-shadow:none;background:rgba(255,255,255,.6)" onclick="event.stopPropagation(); abrirClase('${d.id}')">
-            <div class="ic" style="width:38px;height:38px;border-radius:12px">${ic("plan",18)}</div>
-            <div class="tx"><b style="font-size:12.5px">${esc(d.etiqueta)} · ${esc(d.titulo)}</b><span>${esHoy?"HOY · Ver clase completa ›":"Ver clase completa ›"}</span></div>
-            ${esHoy?'<span class="hoy-badge">HOY</span>':""}
-          </div>`;
-        }).join("")}
+    const lblSem = esAnualPlan(plan)? "Mes":"Semana";
+    (plan.semanas||[]).forEach(s=>{
+      html += `<div class="mcard">
+        <div class="m-tit"><div class="n">${s.numero}</div><b>${lblSem} ${s.numero} · ${esc(s.tema)}</b></div>
+        ${s.fechas? `<div class="kv"><b>Fechas</b><span>${esc(s.fechas)}</span></div>`:""}
+        ${s.inicio? `<div class="kv"><b>Pregunta generadora</b><span>${esc(s.inicio)}</span></div>`:""}
+        ${s.desarrollo? `<div class="kv"><b>Contenido central</b><span>${esc(s.desarrollo)}</span></div>`:""}
+        ${s.cierre? `<div class="kv"><b>Cierre previsto</b><span>${esc(s.cierre)}</span></div>`:""}
       </div>`;
     });
+    if(!esAnualPlan(plan)) html += `<p class="vacio">Las clases diarias de este mes se trabajan desde la pantalla «Planificación diaria».</p>`;
   }
   html += `
   </div>
@@ -2009,7 +1999,7 @@ function renderClase(claseId){
     <div><span class="chip">Indagación dialógica</span><span class="chip">Socialización</span><span class="chip">Recuperación de saberes previos</span></div>
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
   </div>
-  ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Momentos ajustados a tu clase de ${S.docente.duracionMin} min (cámbialo en Info).</p>`:""}
+  ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Momentos ajustados a tu clase de ${S.docente.duracionMin} minutos, si lo deseas (cámbialo en perfil).</p>`:""}
   <h2 class="mini">Momentos de la clase</h2>
   ${momentos.map((m,i)=>`
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
@@ -2063,9 +2053,9 @@ function renderClase(claseId){
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
   </div>
   <div id="zonaDescargas" class="zona-desc">
-    <button class="dl alt" onclick="descargarAsistenciaDiaPdf('${claseId}')">${ic("descarga")} Descargar asistencias PDF</button>
-    ${nivelUsaEvaluacionCualitativa()? `<button class="dl alt" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar logros PDF</button>`:""}
-    <button class="dl" onclick="descargarPlanDiarioDocx('${claseId}')">${ic("descarga")} Descargar plan diario Word</button>
+    <button class="dl alt" onclick="descargarAsistenciaDiaPdf('${claseId}')">${ic("descarga")} Descargar asistencias</button>
+    ${nivelUsaEvaluacionCualitativa()? `<button class="dl alt" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar evaluación</button>`:""}
+    <button class="dl" onclick="descargarPlanDiarioDocx('${claseId}')">${ic("descarga")} Descargar planificación diaria</button>
   </div>
   <div style="height:6px"></div>
   <div style="height:14px"></div>`;
@@ -2141,23 +2131,19 @@ function tabClase(t){
 }
 
 /* ---------- TEMPORIZADOR ---------- */
+function setBtn(html){ const b=$("btnPlay"); if(b) b.innerHTML = html; }
+function setEstado(txt){ const e=$("timerEstado"); if(e) e.textContent = txt; }
 function temporizadorHTML(durs){
   durs = (durs && durs.length)? durs : [5,10,15];
   return `
   <div class="timer-wrap" id="timerBox">
     <div class="timer-ring">
       <svg width="96" height="96" viewBox="0 0 96 96">
-        <circle cx="48" cy="48" r="40" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="8"/>
-        <circle id="timerCirc" cx="48" cy="48" r="40" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"
+        <circle cx="48" cy="48" r="44" fill="#fff"/>
+        <circle id="timerCirc" cx="48" cy="48" r="40" fill="none" stroke="#0033A0" stroke-width="7" stroke-linecap="round"
           stroke-dasharray="251.3" stroke-dashoffset="0" transform="rotate(-90 48 48)"/>
       </svg>
-      <div class="t-txt"><b id="timerTxt">${String(Math.floor((durs[0]*60)/60)).padStart(2,"0")}:00</b><small id="timerEstado">Listo</small></div>
-    </div>
-    <div class="timer-ctrl">
-      <div class="timer-btns">
-        <button class="btn-soft" id="btnPlay" onclick="event.stopPropagation(); playTimer()">${ic("play",14)} Iniciar</button>
-        <button class="btn-soft" onclick="event.stopPropagation(); resetTimer()">${ic("reiniciar",12)} Reiniciar</button>
-      </div>
+      <div class="t-txt"><b id="timerTxt">${String(Math.floor((durs[0]*60)/60)).padStart(2,"0")}:00</b></div>
     </div>
   </div>`;
 }
@@ -2261,16 +2247,13 @@ function pintarEval2Cotejo(){
   if(!cont) return;
   if(!eval2){ cont.innerHTML = ""; return; }
   if(!eval2.estado){
-    cont.innerHTML = `<p class="mg-nota">Toca un estado para ver su lista de cotejo. Puedes explorar los tres estados antes de decidir: solo se guarda lo que confirmes con «Registrar evaluación».</p>`;
+    cont.innerHTML = `<p class="mg-nota">Toca un estado para ver su lista de cotejo de referencia: es tu guía de observación durante la actividad.</p>`;
     return;
   }
   const listas = cotejoDe(eval2.claseId);
   const items = (listas[eval2.estado]||COTEJO_BASE[eval2.estado]||[]);
-  if(!eval2.evid[eval2.estado]) eval2.evid[eval2.estado] = {};
-  cont.innerHTML = items.map((it,ix)=>{
-    const on = !!eval2.evid[eval2.estado][ix];
-    return `<div class="cotejo-item ${on?"on":""}" onclick="toggleEvid(${ix})"><span class="ck">${on? "✓":""}</span>${esc(it)}</div>`;
-  }).join("") + `<p class="mg-nota" style="margin-top:2px">Marca solo lo que realmente observaste en el niño o la niña.</p>`;
+  cont.innerHTML = items.map((it,ix)=>`<div class="cotejo-item guia"><span class="ck">✓</span>${esc(it)}</div>`).join("")
+    + `<p class="mg-nota" style="margin-top:2px">Guía de observación: verifica estos logros mientras observas al niño o la niña.</p>`;
 }
 function toggleEvid(ix){
   if(!eval2 || !eval2.estado) return;
@@ -2285,11 +2268,11 @@ function confirmarEvalAlumno(){
   const claseId = eval2.claseId, n = eval2.n, estado = eval2.estado;
   const listas = cotejoDe(claseId);
   const items = listas[estado]||COTEJO_BASE[estado]||[];
-  const evidTxt = Object.keys(eval2.evid[estado]||{}).filter(k=>eval2.evid[estado][k]).map(k=>items[parseInt(k,10)]).filter(Boolean);
-  const obs = ($("eval2Obs").value||"").trim();
+  const obsEl = $("eval2Obs");
+  const obs = obsEl? (obsEl.value||"").trim() : "";
   if(!S.evaluacion[claseId]) S.evaluacion[claseId] = {};
   S.evaluacion[claseId][n] = estado;
-  const comFinal = [ evidTxt.length? "Evidencias: "+evidTxt.join("; ") : "", obs ].filter(Boolean).join(" | ");
+  const comFinal = obs || "";
   if(!S.evalsCom) S.evalsCom = {};
   if(!S.evalsEvid) S.evalsEvid = {};
   const k = claseId+"|"+n;
@@ -2362,15 +2345,39 @@ const CIRC = 2*Math.PI*40;
 let T = { dur:300, resta:300, corriendo:false, iv:null };
 let claseActualId = null;
 function cronoGuarda(){
-  if(!claseActualId) return;
+  const cid = claseActualId;
+  if(!cid) return;
   if(!S.crono) S.crono = {};
-  S.crono[claseActualId] = { dur: T.dur, resta: T.resta };
+  S.crono[cid] = { dur: T.dur, resta: T.resta, corriendo: !!T.corriendo, momentoActivo: (T.momentoActivo==null? null : T.momentoActivo), t: Date.now() };
+  if(T.corriendo && T.resta>0 && T.momentoActivo!=null) S.cronoActivo = cid;
+  else if(T.resta<=0) delete S.cronoActivo;
+  guardar();
+}
+function restaurarCrono(){
+  try{
+    const cid = S.cronoActivo;
+    if(!cid || !S.crono || !S.crono[cid]) return;
+    const g = S.crono[cid];
+    if(!g.resta || g.resta<=0){ delete S.cronoActivo; return; }
+    claseActualId = cid;
+    T = { dur: g.dur||300, resta: g.resta, corriendo: false, momentoActivo: g.momentoActivo, iv:null };
+    pintarCronoFlotante(null);
+    if(g.corriendo){
+      if(g.t){
+        const seg = Math.floor((Date.now()-g.t)/1000);
+        T.resta = Math.max(0, T.resta - seg);
+      }
+      if(T.resta>0 && T.momentoActivo!=null) playTimer();
+      else if(T.resta<=0){ T.resta = 0; cronoGuarda(); }
+    }
+    pintarTimer();
+  }catch(e){}
 }
 function setDur(min, btn){
   T.dur = min*60; T.resta = T.dur; T.corriendo = false;
-  clearInterval(T.iv); pintarTimer(); $("timerEstado").textContent="Listo";
-  $("btnPlay").innerHTML = ic("play",14)+" Iniciar";
-  $("timerBox").classList.remove("timer-corriendo");
+  clearInterval(T.iv); pintarTimer(); setEstado("Listo");
+  setBtn(ic("play",14)+" Iniciar");
+  const tb=$("timerBox"); if(tb) tb.classList.remove("timer-corriendo");
   cronoGuarda();
 }
 function pintarDurChips(){
@@ -2402,29 +2409,31 @@ function pintarTimer(){
 function playTimer(){
   if(T.corriendo){
     T.corriendo=false; clearInterval(T.iv); cronoGuarda();
-    $("btnPlay").innerHTML = ic("play",14)+" Continuar"; $("timerEstado").textContent="En pausa";
-    $("timerBox").classList.remove("timer-corriendo");
+    setBtn(ic("play",14)+" Continuar"); setEstado("En pausa");
+    const tb=$("timerBox"); if(tb) tb.classList.remove("timer-corriendo");
     pintarDurChips();
+    pintarTimer();
     return;
   }
   if(T.resta<=0) T.resta = T.dur;
-  T.corriendo=true; $("btnPlay").innerHTML = ic("pausa",14)+" Pausar"; $("timerEstado").textContent="¡Corriendo!";
-  $("timerBox").classList.add("timer-corriendo");
-  T.iv = setInterval(()=>{
+  T.corriendo=true; setBtn(ic("pausa",14)+" Pausar"); setEstado("¡Corriendo!");
+  const tb2=$("timerBox"); if(tb2) tb2.classList.add("timer-corriendo");
+    T.iv = setInterval(()=>{
     T.resta--;
     pintarTimer();
-    if(claseActualId){
-      S.tiempoClase[claseActualId] = (S.tiempoClase[claseActualId]||0)+1;
-      if(S.tiempoClase[claseActualId]%15===0){ guardar(); cronoGuarda(); }
+    const cidTick = S.cronoActivo || claseActualId;
+    if(cidTick){
+      S.tiempoClase[cidTick] = (S.tiempoClase[cidTick]||0)+1;
+      if(S.tiempoClase[cidTick]%15===0){ cronoGuarda(); }
       const hr = $("headRings");
-      if(hr) hr.innerHTML = ringDuo(claseActualId);
+      if(hr && cidTick===claseActualId) hr.innerHTML = ringDuo(claseActualId);
     }
     if(T.resta<=0){
       clearInterval(T.iv); T.corriendo=false; T.resta=0; cronoGuarda();
-      $("btnPlay").innerHTML = ic("play",14)+" Reiniciar"; $("timerEstado").textContent="¡Tiempo cumplido!";
-      $("timerBox").classList.remove("timer-corriendo");
+      setBtn(ic("play",14)+" Reiniciar"); setEstado("¡Tiempo cumplido!");
+      const tb3=$("timerBox"); if(tb3) tb3.classList.remove("timer-corriendo");
       pintarDurChips();
-      iniciarAlarma(claseActualId);
+      iniciarAlarma(S.cronoActivo || claseActualId);
     }
   },1000);
 }
@@ -2454,8 +2463,9 @@ function toggleDescargas(btn){
 function resetTimer(){
   T.momentoActivo = null; pintarDurChips();
   clearInterval(T.iv); T.corriendo=false; T.resta=T.dur;
-  pintarTimer(); $("btnPlay").innerHTML = ic("play",14)+" Iniciar"; $("timerEstado").textContent="Listo";
-  $("timerBox").classList.remove("timer-corriendo");
+  delete S.cronoActivo;
+  pintarTimer(); setBtn(ic("play",14)+" Iniciar"); setEstado("Listo");
+  const tb=$("timerBox"); if(tb) tb.classList.remove("timer-corriendo");
   cronoGuarda();
 }
 function beep(){
@@ -2503,6 +2513,7 @@ function iniciarMomento(ev, i){
   if(!T.corriendo) playTimer();
   pintarDurChips();
   pintarTimer();
+  cronoGuarda();
   toast("Momento en marcha: "+m.nombre+" · "+mins+" min");
 }
 function initTimer(durs){
@@ -2964,10 +2975,12 @@ function renderInfo(){
     <h2>${ic("usuarios")} Grados y secciones a tu cargo</h2>
     <p class="muted" style="margin-bottom:8px">Agrega cada combinación de grado y sección en la que impartes docencia (ej. 3ro · A). Ideal para Secundaria, donde atiendes varios grupos.</p>
     <div style="display:flex;gap:8px">
-      <select class="inp" id="selGradoGS" style="flex:1">
+      ${(nivel==="Inicial")
+        ? `<div class="inp" style="flex:1;display:flex;align-items:center;font-weight:800;color:var(--azul-osc)">${esc(S.docente.grado||"Tu grado")}</div>`
+        : `<select class="inp" id="selGradoGS" style="flex:1">
         <option value="" selected>Grados</option>
-        ${(nivel==="Inicial"? ["Maternal","Pre-Kínder","Kínder","Pre-Primario"] : (GRADOS_POR_NIVEL[nivel]||[])).map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
-      </select>
+        ${(GRADOS_POR_NIVEL[nivel]||[]).map(g=>`<option value="${esc(g)}">${esc(g)}</option>`).join("")}
+      </select>`}
       <select class="inp" id="selSeccionGS" style="flex:0 0 auto;width:96px">
         <option value="" selected>Secciones</option>
         ${SECCIONES.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("")}
@@ -3039,8 +3052,10 @@ function toggleSel(tipo, valor){
   renderInfo();
 }
 function agregarGS(){
-  const g = $("selGradoGS").value, s = $("selSeccionGS").value;
-  if(!g){ toast("Selecciona un grado"); return; }
+  const esIni = S.docente.nivel==="Inicial";
+  const g = esIni? (S.docente.grado||"") : (($("selGradoGS")||{}).value||"");
+  const s = $("selSeccionGS").value;
+  if(!g){ toast(esIni? "Registra tu grado en el formulario de registro" : "Selecciona un grado"); return; }
   if(!s){ toast("Selecciona una sección"); return; }
   if(!Array.isArray(S.docente.gradosSecciones)) S.docente.gradosSecciones = [];
   if(S.docente.gradosSecciones.includes(g+"|"+s)){ toast("Ese grupo ya está agregado"); return; }
@@ -3815,6 +3830,7 @@ async function initApp(){
     if(!S.ui.progTab) S.ui.progTab = "progreso";
     if(!S.ui.progGrado) S.ui.progGrado = S.docente.grado;
     if(!S.ui.progSec) S.ui.progSec = S.docente.seccion || "A";
+    restaurarCrono();
     animLogin(S.docente.nombre? S.docente.nombre.split(" ")[0] : "", ()=>{
       mostrar("diaria");
       cargarPlanes().then(()=>{ generarNotificaciones(); abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); });

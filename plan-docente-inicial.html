@@ -455,7 +455,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 .codigo-box .cod{font-size:24px;font-weight:900;letter-spacing:5px;color:var(--azul);font-family:monospace}
 /* ---------- v21 ---------- */
 .foto-card{overflow:visible}
-.foto-card::before{border-radius:20px 20px 0 0}
+.foto-card::before{border-radius:var(--radio) var(--radio) 0 0}
 .foto-card .foto-chip{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:transparent;
   border:1.5px solid rgba(255,255,255,.65);border-radius:12px;padding:7px 6px;font-size:12px;font-weight:800;color:#fff;white-space:nowrap;overflow:hidden}
 .onb-secs{display:flex;gap:6px;flex-wrap:wrap}
@@ -478,6 +478,15 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 .acc-card p{font-weight:800;color:var(--azul-osc);font-size:14px;margin-top:12px}
 .acc-spin{width:38px;height:38px;border-radius:50%;border:4px solid rgba(0,51,160,.15);border-top-color:var(--azul);animation:accSpin .9s linear infinite;margin:0 auto}
 @keyframes accSpin{to{transform:rotate(360deg)}}
+/* ---------- v22 ---------- */
+.cotejo-item{cursor:default}
+.cotejo-item .ck{background:#16a34a;border-color:#16a34a;color:#fff}
+.crono-flotante{background:transparent;border:none;box-shadow:none;padding:0;width:auto;border-radius:50%}
+.crono-flotante .timer-wrap{flex-direction:column;gap:2px;padding:0}
+.crono-flotante .timer-ring{filter:drop-shadow(0 6px 14px rgba(0,30,90,.28))}
+.crono-flotante .timer-ring svg{width:88px;height:88px}
+.crono-flotante .t-txt b{color:var(--azul-osc);font-size:17px;letter-spacing:.5px}
+.crono-flotante .t-txt small{display:none}
 </style>
 </head>
 <body>
@@ -578,7 +587,6 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
     <button class="ev2-btn" id="ev2-I" onclick="selEval2Estado('Iniciado')">Iniciado</button>
   </div>
   <div id="eval2Cotejo" class="ev2-cotejo"></div>
-  <textarea class="obs" id="eval2Obs" placeholder="Observación opcional: algo que no esté en la lista de cotejo"></textarea>
   <button class="dl grande" style="width:100%;margin:12px 0 0" onclick="confirmarEvalAlumno()">Registrar evaluación</button>
 </div>
 <div id="loginAnim">
@@ -612,7 +620,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=21"></script>
+<script src="app-docente.js?v=22"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

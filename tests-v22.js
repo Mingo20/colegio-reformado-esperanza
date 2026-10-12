@@ -436,6 +436,28 @@ globalThis.jspdf = { jsPDF: FakePdf };
     if(!archivo.slice(iTorta-500, iTorta).includes("M12 3a9 9 0 0 1 9 9h-9z")) throw new Error("icono torta ausente");
   });
 
+  await probar("v22: biblioteca filtrada por asignatura del docente", ()=>{
+    S.docente.nivel = "Primaria"; S.docente.grado = "3ro";
+    S.docente.gradosSecciones = ["3ro|A"]; S.docente.seccion = "A";
+    S.docente.asignaturasSel = ["Matemática"];
+    if(planParaDocente({ nivel:"Primaria", grado:"3ro", titulo:"Matemática 3ro · Los números de mi salud" })!==true) throw new Error("docente de Matemática no ve su plan");
+    if(planParaDocente({ nivel:"Primaria", grado:"3ro", titulo:"Lengua Española 3ro · Narramos mi mundo saludable" })) throw new Error("docente de Matemática ve Lengua");
+    if(!planParaDocente({ nivel:"Primaria", grado:"3ro", titulo:"Plan Anual 2026-2027 · Primaria 3ro · Matemática" })) throw new Error("no ve su plan anual de Matemática");
+    if(planParaDocente({ nivel:"Primaria", grado:"3ro", titulo:"Plan Anual 2026-2027 · Primaria 3ro · Lengua Española" })) throw new Error("ve anual de otra asignatura");
+    if(asigDeTitulo("FIHyR 3ro · Me conozco, me cuido y amo")!=="Formación Integral Humana y Religiosa") throw new Error("asigDeTitulo no resuelve FIHyR");
+    if(asigDeTitulo("Matemática 1ro · Los números que cuidan mi salud")!=="Matemática") throw new Error("asigDeTitulo no resuelve Matemática");
+    if(asigDeTitulo("Plan Mensual · Inicial Kínder · Octubre 2026 · X")!=="") throw new Error("asigDeTitulo inventa asignatura en Inicial");
+    S.docente.asignaturasSel = ["Matemática","Lengua Española","Ciencias Sociales","Ciencias de la Naturaleza","Formación Integral Humana y Religiosa"];
+    ["Matemática 3ro · X","Lengua Española 3ro · X","Ciencias Sociales 3ro · X","Ciencias de la Naturaleza 3ro · X","FIHyR 3ro · X"].forEach(tit=>{
+      if(!planParaDocente({ nivel:"Primaria", grado:"3ro", titulo:tit })) throw new Error("docente de básicas no ve: "+tit);
+    });
+    S.docente.nivel = "Secundaria"; S.docente.grado = "1ro";
+    S.docente.gradosSecciones = ["1ro|A"];
+    S.docente.asignaturasSel = ["Matemática"];
+    if(!planParaDocente({ nivel:"Secundaria", grado:"1ro", titulo:"Matemática 1ro · Los números que cuidan mi salud" })) throw new Error("secundaria no ve su plan de Matemática");
+    S.docente.nivel = "Inicial"; S.docente.grado = "Kínder"; S.docente.asignaturasSel = [];
+  });
+
   await probar("v22: mensual con desglose por semanas sin acceso a diarios", ()=>{
     const plan = { titulo:"Plan Mensual · Inicial Kínder · Octubre 2026 · Prueba", mes:"Octubre 2026", nivel:"Inicial", grado:"Kínder",
       semanas:[{ numero:1, tema:"Mi cuerpo es único", fechas:"1–7 oct 2026", inicio:"¿Quién soy?", desarrollo:"las partes del cuerpo", cierre:"Señala dos partes",

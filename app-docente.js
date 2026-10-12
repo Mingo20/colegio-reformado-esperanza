@@ -89,6 +89,12 @@ function asigsDisponibles(){
   }
   return (ASIGNATURAS_RD[nivel]||[]);
 }
+function asigDeTitulo(t){
+  t = t||"";
+  if(t.indexOf("FIHyR")>=0) return "Formación Integral Humana y Religiosa";
+  const asigs = (ASIGNATURAS_RD["Primaria"]||[]).concat(ASIGNATURAS_RD["Secundaria"]||[]);
+  return asigs.find(a=> t.indexOf(a+" ")===0 || t.indexOf("· "+a)>=0) || "";
+}
 function planParaDocente(p){
   if(!p) return false;
   const nivel = S.docente.nivel;
@@ -105,6 +111,8 @@ function planParaDocente(p){
     if(pg && mis.length && !mis.includes(pg)) return false;
     const asigs = (S.docente.asignaturasSel||[]).filter(Boolean);
     if(p.asig && asigs.length && !asigs.includes(p.asig)) return false;
+    const pa = asigDeTitulo(p.titulo);
+    if(pa && asigs.length && !asigs.includes(pa)) return false;
   }
   return true;
 }

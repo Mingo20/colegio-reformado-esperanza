@@ -199,6 +199,9 @@ Deno.serve(async (req) => {
         competencias: parseSeguro(d.competencias_json, []),
         areas: parseSeguro(d.areas_json, []),
         ciclo: parseSeguro(d.ciclo_json, null),
+        situacion: parseSeguro(d.situacion_json, null),
+        contenidos: parseSeguro(d.contenidos_json, null),
+        evaluacion: parseSeguro(d.evaluacion_json, null),
         semanas,
         anio_escolar: d.anio_escolar || "2026-2027",
       };

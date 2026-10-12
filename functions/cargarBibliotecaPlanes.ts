@@ -31,7 +31,7 @@ Deno.serve(async (req) => {
   const base44 = createClientFromRequest(req) as any;
   const db = base44.asServiceRole ?? base44;
   try {
-    const url = "https://raw.githubusercontent.com/Mingo20/colegio-reformado-esperanza/main/planapp_records_v5.json";
+    const url = "https://raw.githubusercontent.com/Mingo20/colegio-reformado-esperanza/main/planapp_records_v6.json";
     // v5: reconstruir la biblioteca completa: Inicial (anual + Ago/Sep/Oct por grado),
     //     Primaria 3ro (anual + Octubre por asignatura básica) y Secundaria 1ro Matemática
 
@@ -62,6 +62,9 @@ Deno.serve(async (req) => {
         competencias_json: String(reg.competencias_json || "[]"),
         areas_json: String(reg.areas_json || "[]"),
         ciclo_json: String(reg.ciclo_json || "{}"),
+        situacion_json: String(reg.situacion_json || "{}"),
+        contenidos_json: String(reg.contenidos_json || "{}"),
+        evaluacion_json: String(reg.evaluacion_json || "{}"),
         semanas_json: String(reg.semanas_json || "[]"),
         anio_escolar: String(reg.anio_escolar || "2026-2027"),
         docente_id: "",

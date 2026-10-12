@@ -157,7 +157,7 @@ body{
 .btn-soft{border:none;background:rgba(255,255,255,.92);color:var(--azul);font-weight:800;font-size:13px;padding:10px 14px;border-radius:14px;cursor:pointer;box-shadow:0 3px 10px rgba(0,51,160,.12);flex:1;display:flex;align-items:center;justify-content:center;gap:6px}
 .btn-soft svg{width:14px;height:14px}
 .btn-soft:active{transform:scale(.96)}
-.timer-corriendo{outline:2px solid rgba(206,17,38,.5);outline-offset:2px;border-radius:20px}
+.timer-corriendo{outline:none}
 
 /* ---------- ALUMNOS ---------- */
 .tabs{display:flex;background:rgba(0,51,160,.08);border-radius:16px;padding:5px;margin-bottom:14px}
@@ -455,7 +455,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 .codigo-box .cod{font-size:24px;font-weight:900;letter-spacing:5px;color:var(--azul);font-family:monospace}
 /* ---------- v21 ---------- */
 .foto-card{overflow:visible}
-.foto-card::before{border-radius:var(--radio) var(--radio) 0 0}
+.foto-card::before{height:6px;border-radius:16px 16px 0 0}
 .foto-card .foto-chip{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:transparent;
   border:1.5px solid rgba(255,255,255,.65);border-radius:12px;padding:7px 6px;font-size:12px;font-weight:800;color:#fff;white-space:nowrap;overflow:hidden}
 .onb-secs{display:flex;gap:6px;flex-wrap:wrap}
@@ -487,6 +487,13 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 .crono-flotante .timer-ring svg{width:88px;height:88px}
 .crono-flotante .t-txt b{color:var(--azul-osc);font-size:17px;letter-spacing:.5px}
 .crono-flotante .t-txt small{display:none}
+/* ---------- v23 ---------- */
+.crono-flotante{right:14px;bottom:calc(88px + env(safe-area-inset-bottom));touch-action:none;cursor:grab}
+.crono-flotante.arrastrando{cursor:grabbing}
+.crono-flotante .timer-ring{width:88px;height:88px}
+.crono-flotante .timer-ring svg{width:88px;height:88px;display:block}
+.crono-flotante .t-txt b{font-size:16px;letter-spacing:0}
+.crono-flotante .t-txt small{display:block;font-size:8.5px;line-height:1.1;color:#1D4ED8;font-weight:800;letter-spacing:0}
 </style>
 </head>
 <body>
@@ -614,13 +621,13 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
   <p class="g-sub" id="histSub"></p>
   <div id="histCuerpo"></div>
 </div>
-<div id="cronoFlotante" class="crono-flotante" style="display:none" onclick="volverAClaseActiva()"></div>
+<div id="cronoFlotante" class="crono-flotante" style="display:none"></div>
 <div id="accAnim" class="acc-anim"><div class="acc-card"><div class="acc-spin"></div><p id="accTxt">Un momento…</p></div></div>
 <div id="toast"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=22"></script>
+<script src="app-docente.js?v=23"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

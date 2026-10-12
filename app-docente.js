@@ -1775,6 +1775,11 @@ function renderMesDetalle(plan){
       <div class="kv"><b>Enfoque</b><span>${esc(plan.enfoque||"")}</span></div>
       ` : `
       <div class="kv"><b>Descripción</b><span>${esc(plan.descripcion||"")}</span></div>
+      ${(plan.situacion)? `
+      <div class="kv"><b>Punto de partida</b><span>${esc(plan.situacion.partida||"")}</span></div>
+      <div class="kv"><b>Estrategia</b><span>${esc(plan.situacion.estrategia||"")}</span></div>
+      <div class="kv"><b>Proceso</b><span>${esc(plan.situacion.proceso||"")}</span></div>
+      <div class="kv"><b>Producto final</b><span>${esc(plan.situacion.producto||"")}</span></div>`:""}
       <div class="kv"><b>Tema</b><span>${esc(plan.tema||"")}</span></div>
       ${(plan.areas||[]).length? `<div class="kv"><b>Áreas</b><span>${esc((plan.areas||[]).join(", "))}</span></div>`:""}
       ${(plan.ciclo&&plan.ciclo.titulo)? `<div class="kv"><b>Ciclo</b><span>${esc(plan.ciclo.titulo)}</span></div>`:""}
@@ -1792,6 +1797,14 @@ function renderMesDetalle(plan){
     <div class="mcard"><div class="m-tit"><div class="n">A</div><b>Actitudinales y valores (Saber ser)</b></div><ul>${plan.contenidos.actitudinales.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>
     <h3>Indicadores de logro</h3>
     <div class="mcard"><ul>${plan.indicadores.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>`:""}
+    ${(!esDerivado && plan.evaluacion && Array.isArray(plan.evaluacion.especificas) && plan.evaluacion.especificas.length)? `
+    <h3>Competencias específicas</h3>
+    <div class="mcard"><ul>${plan.evaluacion.especificas.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`:""}
+    ${(!esDerivado && plan.contenidos)? `
+    <h3>Contenidos de la unidad</h3>
+    <div class="mcard"><div class="m-tit"><div class="n">C</div><b>Conceptuales (Saber)</b></div><ul>${(plan.contenidos.conceptuales||[]).map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>
+    <div class="mcard"><div class="m-tit"><div class="n">P</div><b>Procedimentales (Saber hacer)</b></div><ul>${(plan.contenidos.procedimentales||[]).map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>
+    <div class="mcard"><div class="m-tit"><div class="n">A</div><b>Actitudinales y valores (Saber ser)</b></div><ul>${(plan.contenidos.actitudinales||[]).map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`:""}
     ${(plan.areas||[]).length? `<h3>Áreas curriculares</h3>${(plan.areas||[]).map(a=>`<span class="chip roja">${esc(a)}</span>`).join("")}`:""}
   </div>
   <div class="card">
@@ -1817,6 +1830,16 @@ function renderMesDetalle(plan){
       </div>`;
     });
     if(!esAnualPlan(plan)) html += `<p class="vacio">Las clases diarias de este mes se trabajan desde la pantalla «Planificación diaria».</p>`;
+  }
+  if(!esDerivado && plan.evaluacion){
+    const ev = plan.evaluacion;
+    html += `
+  <div class="card">
+    <h2>${ic("nota")} 5. Evaluación de la unidad</h2>
+    ${(ev.indicadores||[]).length? `<h3>Indicadores de logro</h3><div class="mcard"><ul>${ev.indicadores.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>`:""}
+    ${(ev.tecnicas||[]).length? `<h3>Técnicas e instrumentos</h3><div class="mcard"><ul>${ev.tecnicas.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>`:""}
+    ${(ev.metacognicion||[]).length? `<h3>Metacognición</h3><div class="mcard"><ul>${ev.metacognicion.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>`:""}
+  </div>`;
   }
   html += `
   </div>
@@ -2007,7 +2030,6 @@ function renderClase(claseId){
     <div><span class="chip">Indagación dialógica</span><span class="chip">Socialización</span><span class="chip">Recuperación de saberes previos</span></div>
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
   </div>
-  ${S.docente.duracionMin? `<p class="vacio" style="padding:4px">Momentos ajustados a tu clase de ${S.docente.duracionMin} minutos, si lo deseas (cámbialo en perfil).</p>`:""}
   <h2 class="mini">Momentos de la clase</h2>
   ${momentos.map((m,i)=>`
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
@@ -2139,6 +2161,48 @@ function tabClase(t){
 }
 
 /* ---------- TEMPORIZADOR ---------- */
+function habilitarArrastreCrono(){
+  const el = $("cronoFlotante");
+  if(!el || !el.addEventListener) return;
+  let ox=0, oy=0, dragging=false, movio=false;
+  el.addEventListener("pointerdown", e=>{
+    dragging=true; movio=false;
+    const r = el.getBoundingClientRect();
+    ox = e.clientX - r.left; oy = e.clientY - r.top;
+    try{ el.setPointerCapture(e.pointerId); }catch(_e){}
+    el.classList.add("arrastrando");
+  });
+  el.addEventListener("pointermove", e=>{
+    if(!dragging) return;
+    movio=true;
+    const w = (window.innerWidth||360), h = (window.innerHeight||640);
+    el.style.left = Math.max(4, Math.min(w-92, e.clientX-ox))+"px";
+    el.style.top  = Math.max(4, Math.min(h-92, e.clientY-oy))+"px";
+    el.style.right = "auto"; el.style.bottom = "auto";
+  });
+  const soltar = ()=>{
+    if(!dragging) return;
+    dragging=false;
+    el.classList.remove("arrastrando");
+    if(movio){
+      const r = el.getBoundingClientRect();
+      if(!S.ui) S.ui = {};
+      S.ui.cronoPos = { left: Math.round(r.left), top: Math.round(r.top) };
+      guardar();
+    }
+  };
+  el.addEventListener("pointerup", soltar);
+  el.addEventListener("pointercancel", soltar);
+}
+function aplicarPosCrono(){
+  const el = $("cronoFlotante");
+  if(!el) return;
+  const p = S.ui && S.ui.cronoPos;
+  if(p && typeof p.left === "number" && typeof p.top === "number"){
+    el.style.left = p.left+"px"; el.style.top = p.top+"px";
+    el.style.right = "auto"; el.style.bottom = "auto";
+  }
+}
 function setBtn(html){ const b=$("btnPlay"); if(b) b.innerHTML = html; }
 function setEstado(txt){ const e=$("timerEstado"); if(e) e.textContent = txt; }
 function temporizadorHTML(durs){
@@ -2151,7 +2215,7 @@ function temporizadorHTML(durs){
         <circle id="timerCirc" cx="48" cy="48" r="40" fill="none" stroke="#0033A0" stroke-width="7" stroke-linecap="round"
           stroke-dasharray="251.3" stroke-dashoffset="0" transform="rotate(-90 48 48)"/>
       </svg>
-      <div class="t-txt"><b id="timerTxt">${String(Math.floor((durs[0]*60)/60)).padStart(2,"0")}:00</b></div>
+      <div class="t-txt"><b id="timerTxt">${String(Math.floor((durs[0]*60)/60)).padStart(2,"0")}:00</b><small id="timerEstado">Listo</small></div>
     </div>
   </div>`;
 }
@@ -3839,6 +3903,8 @@ async function initApp(){
     if(!S.ui.progGrado) S.ui.progGrado = S.docente.grado;
     if(!S.ui.progSec) S.ui.progSec = S.docente.seccion || "A";
     restaurarCrono();
+    habilitarArrastreCrono();
+    aplicarPosCrono();
     animLogin(S.docente.nombre? S.docente.nombre.split(" ")[0] : "", ()=>{
       mostrar("diaria");
       cargarPlanes().then(()=>{ generarNotificaciones(); abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); });

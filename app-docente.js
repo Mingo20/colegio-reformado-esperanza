@@ -720,8 +720,42 @@ function cargarEstado(){
   return estadoDefault();
 }
 let S = cargarEstado();
+/* ---------- ALMACENAMIENTO: IndexedDB (principal, gran capacidad) + localStorage (respaldo) ---------- */
+const IDB_NOMBRE = "planapp-v1", IDB_STORE = "estado";
+function idbAbrir(){
+  return new Promise((res, rej)=>{
+    const r = indexedDB.open(IDB_NOMBRE, 1);
+    r.onupgradeneeded = ()=>{ r.result.createObjectStore(IDB_STORE); };
+    r.onsuccess = ()=> res(r.result);
+    r.onerror = ()=> rej(r.error);
+  });
+}
+async function idbGuardar(obj){
+  try{
+    const db = await idbAbrir();
+    await new Promise((res, rej)=>{
+      const tx = db.transaction(IDB_STORE, "readwrite");
+      tx.objectStore(IDB_STORE).put(obj, "S");
+      tx.oncomplete = ()=> res(true);
+      tx.onerror = ()=> rej(tx.error);
+    });
+    return true;
+  }catch(e){ return false; }
+}
+async function idbCargar(){
+  try{
+    const db = await idbAbrir();
+    return await new Promise((res)=>{
+      const tx = db.transaction(IDB_STORE, "readonly");
+      const rq = tx.objectStore(IDB_STORE).get("S");
+      rq.onsuccess = ()=> res(rq.result || null);
+      rq.onerror = ()=> res(null);
+    });
+  }catch(e){ return null; }
+}
 function guardar(){
-  try{ localStorage.setItem(LS_KEY, JSON.stringify(S)); }catch(e){}
+  try{ localStorage.setItem(LS_KEY, JSON.stringify({...S, planesCache:{}})); }catch(e){}
+  idbGuardar(S);
   programarSyncEstado();
 }
 const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","lastSync"];
@@ -900,9 +934,11 @@ function alumnosDe(sec, grado){
   const aps = S.docente.alumnosPorSeccion||{};
   const s = sec || S.docente.seccion || "A";
   const g = (grado!==undefined && grado!==null && grado!=="")? grado : (S.docente.grado||"");
-  let n = parseInt(aps[g+"|"+s]);
-  if(!(n>0)) n = parseInt(aps[s]);
-  return (n>0)? n : (S.docente.alumnos||24);
+  const n = parseInt(aps[g+"|"+s]);
+  if(n>0) return n;
+  if((S.docente.gradosSecciones||[]).length) return 0;
+  const n2 = parseInt(aps[s]);
+  return (n2>0)? n2 : (S.docente.alumnos||24);
 }
 function diasDuracionPlan(plan){
   const ids = todasClases(plan||{}).map(d=>d.id).filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)).sort();
@@ -1069,16 +1105,16 @@ document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && S.doc
 /* ---------- NAVEGACIÓN ---------- */
 let navStack = [];
 const TITULOS = {
-  anio:["Planificación anual","El plan anual de tu nivel educativo"],
-  "anio-detalle":["",""],
-  mes:["Planificación mensual","Unidades de aprendizaje por semestre"],
-  "mes-detalle":["",""],
-  diaria:["Planificación diaria","Planes diarios de la semana en curso"],
-  clase:["",""],
-  progreso:["Progreso y Libreta","Calificaciones y registro porcentual"],
-  info:["Información y Ajustes","Tu perfil y sincronización"],
-  notificaciones:["",""],
-  onboarding:["Bienvenida","Regístrate para comenzar"],
+  anio:["PlanApp","Tu plan listo para enseñar"],
+  "anio-detalle":["PlanApp","Tu plan listo para enseñar"],
+  mes:["PlanApp","Tu plan listo para enseñar"],
+  "mes-detalle":["PlanApp","Tu plan listo para enseñar"],
+  diaria:["PlanApp","Tu plan listo para enseñar"],
+  clase:["PlanApp","Tu plan listo para enseñar"],
+  progreso:["PlanApp","Tu plan listo para enseñar"],
+  info:["PlanApp","Tu plan listo para enseñar"],
+  notificaciones:["PlanApp","Tu plan listo para enseñar"],
+  onboarding:["PlanApp","Tu plan listo para enseñar"],
 };
 function irA(scr, arg){
   if(!navStack.length || navStack[navStack.length-1]!==scr) navStack.push(scr);
@@ -1108,6 +1144,8 @@ function mostrar(scr, arg){
   autoRefresco(scr);
   let [t, s] = TITULOS[scr]||["Planificación Docente",""];
   $("tituloApp").textContent = t; $("subtituloApp").textContent = s;
+  const bg = $("btnGuia");
+  if(bg) bg.style.display = ["anio","anio-detalle","mes","mes-detalle"].includes(scr)? "" : "none";
   const seguro = (fn)=>{ try{ fn(); }catch(e){
     console.error("Error renderizando "+scr, e);
     const el2 = $("scr-"+scr);
@@ -1439,6 +1477,7 @@ function renderAnio(){
   <div class="card">
     <h2>${ic("plan")} Tu perfil docente</h2>
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
+    <div class="stat-row"><span>Distrito</span><b>${esc(S.docente.distrito||"—")}</b></div>
     <div class="stat-row"><span>WhatsApp</span><b>${esc(S.docente.whatsapp || S.docente.distrito || "—")}</b></div>
     <div class="stat-row"><span>Nivel / Grado</span><b>${esc(nivel)} · ${esc(S.docente.grado)}</b></div>
     <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
@@ -1734,7 +1773,7 @@ async function abrirClase(claseId){
 /* ---------- LIBRETA ---------- */
 function grupoLibreta(){ return ((S.ui.libGrado||S.docente.grado)+"|"+(S.ui.libSec||S.docente.seccion||"A")); }
 function califsLib(){
-  const N = alumnosDe(S.ui.libSec||S.docente.seccion||"A");
+  const N = alumnosDe(S.ui.libSec||S.docente.seccion||"A", S.ui.libGrado||S.docente.grado);
   const grupo = grupoLibreta();
   const t = S.ui.libTrim || trimDeFecha(S.ui.libFecha||HOY);
   const out = {};
@@ -1871,7 +1910,7 @@ function renderClase(claseId){
   claseActualId = claseId;
   if(S.ui._claseVista !== claseId){ S.ui.momentoAbierto = 0; S.ui._claseVista = claseId; }
   if(S.ui.momentoAbierto==null) S.ui.momentoAbierto = 0;
-  guiaActual = { titulo:"Guía técnica · Planificación diaria", html: guiaClase() };
+
   const s = (plan.semanas||[]).find(w=>w.dias.some(x=>x.id===claseId));
   const pctA = pctDia(claseId,"asis"), pctE = pctDia(claseId,"eval");
   const momentos = d.momentos||[];
@@ -1918,7 +1957,7 @@ function renderClase(claseId){
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
       <div class="m-head">
         <div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b>
-        <span class="dur dur-chip" title="Iniciar el cronómetro de este momento" onclick="iniciarMomento(event, ${i})">${ic("reloj",12)} ${esc(duracionAjustada(m, baseTotal))}</span>
+        <span class="dur dur-chip" id="durchip-${i}" title="Iniciar el cronómetro de este momento" onclick="iniciarMomento(event, ${i})">${ic("reloj",13)} ${esc(duracionAjustada(m, baseTotal))}</span>
         <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
       </div>
       <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
@@ -1965,7 +2004,7 @@ function renderClase(claseId){
     <b>${ic("descarga",16)} Descargar documentos</b>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
   </div>
-  <div id="zonaDescargas" style="display:none">
+  <div id="zonaDescargas" class="zona-desc">
     <button class="dl alt" onclick="descargarAsistenciaDiaPdf('${claseId}')">${ic("descarga")} Descargar asistencias PDF</button>
     ${nivelUsaEvaluacionCualitativa()? `<button class="dl alt" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar logros PDF</button>`:""}
     <button class="dl" onclick="descargarPlanDiarioDocx('${claseId}')">${ic("descarga")} Descargar plan diario Word</button>
@@ -1991,6 +2030,7 @@ function regSel(q){
 }
 function alumnosHTML(claseId, tipo){
   const N = alumnosDe(grupoReg().s, grupoReg().g);
+  if(N<=0) return `<p class="vacio" style="padding:8px 0">No tienes alumnos registrados en este grupo. Añádelos desde tu perfil, en «Grados y secciones a tu cargo».</p>`;
   const reg = (tipo==="A"? S.asistencia : S.evaluacion)[claseId]||{};
   let html = "";
   for(let i=1;i<=N;i++){
@@ -2260,7 +2300,24 @@ function setDur(min, btn){
   $("timerBox").classList.remove("timer-corriendo");
   cronoGuarda();
 }
+function pintarDurChips(){
+  try{
+    if(!claseActualId || !T) return;
+    const d = clasePorId(planAbierto || planActivo(), claseActualId);
+    const momentos = (d && d.momentos)||[];
+    const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
+    momentos.forEach((m,i)=>{
+      const el = $("durchip-"+i); if(!el) return;
+      if(T.momentoActivo===i && T.resta>0){
+        el.innerHTML = T.corriendo? "▶ En curso" : "⏸ Pausada";
+      } else {
+        el.innerHTML = ic("reloj",13)+" "+esc(duracionAjustada(m, base));
+      }
+    });
+  }catch(e){}
+}
 function pintarTimer(){
+  pintarDurChips();
   const m = Math.floor(T.resta/60), s = T.resta%60;
   $("timerTxt").textContent = String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
 }
@@ -2269,6 +2326,7 @@ function playTimer(){
     T.corriendo=false; clearInterval(T.iv); cronoGuarda();
     $("btnPlay").innerHTML = ic("play",14)+" Continuar"; $("timerEstado").textContent="En pausa";
     $("timerBox").classList.remove("timer-corriendo");
+    pintarDurChips();
     return;
   }
   if(T.resta<=0) T.resta = T.dur;
@@ -2287,6 +2345,7 @@ function playTimer(){
       clearInterval(T.iv); T.corriendo=false; T.resta=0; cronoGuarda();
       $("btnPlay").innerHTML = ic("play",14)+" Reiniciar"; $("timerEstado").textContent="¡Tiempo cumplido!";
       $("timerBox").classList.remove("timer-corriendo");
+      pintarDurChips();
       iniciarAlarma(claseActualId);
     }
   },1000);
@@ -2310,11 +2369,12 @@ function detenerAlarma(){
 }
 function toggleDescargas(btn){
   const z = $("zonaDescargas"); if(!z) return;
-  const abierto = z.style.display==="none";
-  z.style.display = abierto? "":"none";
+  const abierto = !z.classList.contains("abierta");
+  z.classList.toggle("abierta", abierto);
   btn.classList.toggle("abierto", abierto);
 }
 function resetTimer(){
+  T.momentoActivo = null; pintarDurChips();
   clearInterval(T.iv); T.corriendo=false; T.resta=T.dur;
   pintarTimer(); $("btnPlay").innerHTML = ic("play",14)+" Iniciar"; $("timerEstado").textContent="Listo";
   $("timerBox").classList.remove("timer-corriendo");
@@ -2355,8 +2415,9 @@ function iniciarMomento(ev, i){
   const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
   const mins = Math.max(1, minsDe(duracionAjustada(m, base)) || 5);
   setDur(mins, null);
-  abrirMomento(i);
+  T.momentoActivo = i;
   if(!T.corriendo) playTimer();
+  pintarDurChips();
   toast("Momento en marcha: "+m.nombre+" · "+mins+" min");
 }
 function initTimer(durs){
@@ -2408,7 +2469,6 @@ function abrirMomento(i){
     <div class="g-bloque b-crema"><b>${ic("nota",15)} Pasos del plan de clase</b>
       <ol class="g-pasos">${(m.pasos||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ol></div>
     <div class="g-bloque b-gris"><b>Propósito oficial</b><span>${esc(m.proposito)}</span></div>` };
-  abrirGuia();
 }
 
 /* ---------- HISTORIAL DE PUNTOS (modal por alumno) ---------- */
@@ -2590,6 +2650,17 @@ function pctTardeAlumno(n){
   fechas.forEach(f=>{ const v = (S.asistencia[f]||{})[n]; if(v){ marcados++; if(v==="Tarde") t++; } });
   return marcados? Math.round(t*100/marcados) : null;
 }
+function pctTardeGrupo(){
+  const N = alumnosDe(S.ui.progSec || S.docente.seccion || "A", S.ui.progGrado || S.docente.grado);
+  const fechas = fechasRegistradas("asis");
+  if(!N || !fechas.length) return null;
+  let t = 0, marks = 0;
+  fechas.forEach(f=>{
+    const reg = S.asistencia[f]||{};
+    for(let i=1;i<=N;i++){ const v = reg[i]; if(v){ marks++; if(v==="Tarde") t++; } }
+  });
+  return marks? Math.round(t*100/marks) : null;
+}
 function asistenciaDe(n){
   const fechas = fechasRegistradas("asis");
   if(!fechas.length) return null;
@@ -2648,6 +2719,7 @@ function htmlProgresoHero(){
     <div class="row">
       ${nivelUsaEvaluacionCualitativa()? "" : `<div class="ringbox">${ring(promedioGrupo(),56,7,"#fff",promedioGrupo()+"★")}<small>Promedio</small></div>`}
       <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
+      <div class="ringbox">${ring(pctTardeGrupo()===null?0:pctTardeGrupo(),56,7,"#fff",pctTardeGrupo()===null? "—":String(pctTardeGrupo())+"%")}<small>Tarde</small></div>
       ${nivelUsaEvaluacionCualitativa()? `<div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logrado</small></div>` : ""}
     </div>
   </div>`;
@@ -2659,7 +2731,7 @@ function htmlProgresoPanel(){
   const gradosOpts = [...new Set(misGradosDocente().filter(x=>GRADOS_POR_NIVEL[nivel].includes(normalizaGrado(x))))];
   const gOpts = gradosOpts.length? gradosOpts : GRADOS_POR_NIVEL[nivel];
   const sOpts = misSeccionesDe(g).length? misSeccionesDe(g) : SECCIONES;
-  const N = alumnosDe(sc);
+  const N = alumnosDe(sc, g);
   let html = `
   ${puedeElegirGrado()? `
   <div class="card">
@@ -2676,6 +2748,9 @@ function htmlProgresoPanel(){
     </div>
   </div>`:""}
   <h2 class="mini">${esc(g).toUpperCase()} · SECCIÓN ${esc(sc)}</h2>`;
+  if(N<=0){
+    html += `<p class="vacio">No tienes alumnos registrados en este grupo. Añádelos desde tu perfil, en «Grados y secciones a tu cargo».</p>`;
+  }
   for(let i=1;i<=N;i++){
     const inicial = nivelUsaEvaluacionCualitativa();
     const nf = notaDe(i);
@@ -3280,7 +3355,7 @@ function pdfResumen(tipo, titulo, sub, fechas, conClases, nombre){
   try{
     const doc = new jspdf.jsPDF();
     cabeceraPdf(doc, titulo, sub);
-    const N = alumnosDe(S.docente.seccion);
+    const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A", S.ui.progGrado||S.docente.grado);
     const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
     let y = 50;
     const aseg = s=>{ if(y+s>282){ doc.addPage(); y=20; } };
@@ -3560,7 +3635,7 @@ function datosBoletin(fuente){
 function descargarBoletinGrupo(fuente){
   try{
     const dt = datosBoletin(fuente||"progreso");
-    const N = alumnosDe(dt.seccion);
+    const N = alumnosDe(dt.seccion, dt.grado);
     const doc = new jspdf.jsPDF();
     cabeceraPdf(doc, dt.titulo,
       "Nivel "+S.docente.nivel+" · Grado "+dt.grado+" · Sección "+dt.seccion+" · Docente: "+(S.docente.nombre||"—")+" · "+ANIO_ESCOLAR);
@@ -3638,10 +3713,13 @@ function descargarBoletinIndividual(n, fuente){
 }
 
 /* ---------- INICIO ---------- */
-if(S.docente && S.docente.id){
-  if(!S.ui.progTab) S.ui.progTab = "progreso";
-  if(!S.ui.progGrado) S.ui.progGrado = S.docente.grado;
-  if(!S.ui.progSec) S.ui.progSec = S.docente.seccion || "A";
+async function initApp(){
+  const enIDB = await idbCargar();
+  if(enIDB && enIDB.docente && enIDB.docente.id) S = normalizar(enIDB);
+  if(S.docente && S.docente.id){
+    if(!S.ui.progTab) S.ui.progTab = "progreso";
+    if(!S.ui.progGrado) S.ui.progGrado = S.docente.grado;
+    if(!S.ui.progSec) S.ui.progSec = S.docente.seccion || "A";
     animLogin(S.docente.nombre? S.docente.nombre.split(" ")[0] : "", ()=>{
       mostrar("diaria");
       cargarPlanes().then(()=>{ generarNotificaciones(); abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); });
@@ -3650,3 +3728,5 @@ if(S.docente && S.docente.id){
   }else{
     mostrar("onboarding");
   }
+}
+initApp();

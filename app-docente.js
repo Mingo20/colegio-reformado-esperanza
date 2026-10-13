@@ -1549,13 +1549,6 @@ function renderAnio(){
       <div class="ringbox">${ring(100,56,7,"#fff",String(info.temas.length*4))}<small>Semana</small></div>
     </div>
   </div>
-  <div class="card">
-    <h2>${ic("plan")} Tu perfil docente</h2>
-    <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
-    <div class="stat-row"><span>WhatsApp</span><b>${esc(S.docente.whatsapp || S.docente.distrito || "—")}</b></div>
-    <div class="stat-row"><span>Nivel / Grado</span><b>${esc(nivel)} · ${esc(S.docente.grado)}</b></div>
-    <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
-  </div>
   <h2 class="mini">Tu plan anual</h2>
   <div class="item" onclick="irA('anio-detalle','${esc(nivel)}')">
     <div class="ic">${ic("calAnual")}</div>
@@ -2035,11 +2028,12 @@ function renderClase(claseId){
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
   </div>
   <h2 class="mini">Momentos de la clase</h2>
+  ${S.docente.duracionMin? "" : `<p class="bol-hint">Configura la duración de tu clase en Perfil para activar el temporizador de cada momento</p>`}
   ${momentos.map((m,i)=>`
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
       <div class="m-head">
         <div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b>
-        <span class="dur dur-chip" id="durchip-${i}" title="Iniciar el cronómetro de este momento" onclick="iniciarMomento(event, ${i})">${ic("reloj",13)} ${esc(duracionAjustada(m, baseTotal))}</span>
+        ${S.docente.duracionMin? `<span class="dur dur-chip" id="durchip-${i}" title="Iniciar el cronómetro de este momento" onclick="iniciarMomento(event, ${i})">${ic("reloj",13)} ${esc(duracionAjustada(m, baseTotal))}</span>` : ""}
         <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
       </div>
       <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
@@ -2095,7 +2089,7 @@ function renderClase(claseId){
   <div style="height:14px"></div>`;
   $("scr-clase").innerHTML = html;
   pintarCronoFlotante(durs.length? durs : null);
-  initTimer(durs.length? durs : null);
+  sincronizarCrono(durs.length? durs : null);
   $("obsTxt").addEventListener("input", ()=>{
     S.obs[claseId] = $("obsTxt").value;
     guardar();
@@ -2119,11 +2113,11 @@ function alumnosHTML(claseId, tipo){
   for(let i=1;i<=N;i++){
     const st = reg[i]||null;
     if(tipo==="A"){
+      const color = st==="Presente"? "background:#DCFCE7;color:#15803d" : st==="Tarde"? "background:#FEF3C7;color:#b45309" : st==="Ausente"? "background:#FEE2E2;color:#b91c1c" : "";
       html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
-          <button class="${st==="Presente"?"selP":""}" title="Presente" onclick="marcar('A','${claseId}',${i},'Presente')">P</button>
-          <button class="${st==="Tarde"?"selT":""}" title="Tarde" onclick="marcar('A','${claseId}',${i},'Tarde')">T</button>
-          <button class="${st==="Ausente"?"selA":""}" title="Ausente" onclick="marcar('A','${claseId}',${i},'Ausente')">A</button>
+          ${st? `<span class="chip chip-mini" style="${color}">${esc(st)}</span>`:""}
+          <button class="btn-evaluar ${st? "evaluado":""}" onclick="abrirAsistencia('${claseId}', ${i})">Tomar asistencia</button>
         </div></div>`;
     } else {
       html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
@@ -2151,6 +2145,24 @@ function marcar(tipo, claseId, n, valor){
   else $("zonaE").innerHTML = alumnosHTML(claseId,"E");
   const el = $("headRings");
   if(el) el.innerHTML = ringDuo(claseId);
+}
+let _asisSel = null;
+function abrirAsistencia(claseId, n){
+  _asisSel = { claseId, n };
+  const t = $("asisTitulo"); if(t) t.textContent = "Alumno "+n+" · toca su estado de asistencia";
+  $("asisFondo").classList.add("abierto");
+  $("asisHoja").classList.add("abierta");
+}
+function cerrarAsistencia(){
+  $("asisFondo").classList.remove("abierto");
+  $("asisHoja").classList.remove("abierta");
+  _asisSel = null;
+}
+function marcarDesdeHoja(valor){
+  if(!_asisSel) return;
+  const c = _asisSel;
+  cerrarAsistencia();
+  marcar('A', c.claseId, c.n, valor);
 }
 function toggleRegistro(){
   $("zonaRegistro").classList.toggle("abierta");
@@ -2307,10 +2319,36 @@ function cerrarEvalAlumno(){
   $("modalEval2Hoja").classList.remove("abierta");
   eval2 = null;
 }
+let _ev2Deb = null;
+function onEval2ObsInput(){
+  clearTimeout(_ev2Deb);
+  _ev2Deb = setTimeout(autoGuardarEval2, 600);
+}
+function autoGuardarEval2(){
+  if(!eval2 || !eval2.estado) return;
+  try{
+    const claseId = eval2.claseId, n = eval2.n, estado = eval2.estado;
+    if(!S.evaluacion[claseId]) S.evaluacion[claseId] = {};
+    S.evaluacion[claseId][n] = estado;
+    if(!S.evalsEvid) S.evalsEvid = {};
+    if(!S.evalsCom) S.evalsCom = {};
+    const k = claseId+"|"+n;
+    const obsEl = $("eval2Obs");
+    const obs = obsEl? (obsEl.value||"").trim() : "";
+    if(obs) S.evalsCom[k] = obs; else delete S.evalsCom[k];
+    S.evalsEvid[k] = { estado, sel: Object.assign({}, eval2.evid[estado]||{}), obs };
+    guardar();
+    syncAhora();
+    if($("scr-clase").classList.contains("visible")){
+      const el = $("headRings"); if(el) el.innerHTML = ringDuo(claseId);
+    }
+  }catch(e){}
+}
 function selEval2Estado(e){
   if(!eval2) return;
   eval2.estado = e;
   pintarEval2Estados(); pintarEval2Cotejo();
+  autoGuardarEval2();
 }
 function pintarEval2Estados(){
   const map = { "Logrado":"ev2-L", "En proceso":"ev2-E", "Iniciado":"ev2-I" };
@@ -2328,8 +2366,11 @@ function pintarEval2Cotejo(){
   }
   const listas = cotejoDe(eval2.claseId);
   const items = (listas[eval2.estado]||COTEJO_BASE[eval2.estado]||[]);
-  cont.innerHTML = items.map((it,ix)=>`<div class="cotejo-item guia"><span class="ck">✓</span>${esc(it)}</div>`).join("")
-    + `<p class="mg-nota" style="margin-top:2px">Guía de observación: verifica estos logros mientras observas al niño o la niña.</p>`;
+  cont.innerHTML = items.map((it,ix)=>{
+      const marcado = !!(eval2.evid[eval2.estado] && eval2.evid[eval2.estado][ix]);
+      return `<div class="cotejo-item ${marcado?"on":""}" onclick="toggleEvid(${ix})"><span class="ck">${marcado?"✓":""}</span>${esc(it)}</div>`;
+    }).join("")
+    + `<p class="mg-nota" style="margin-top:2px">Toca cada logro que observaste en el alumno o la alumna: se guarda solo.</p>`;
 }
 function toggleEvid(ix){
   if(!eval2 || !eval2.estado) return;
@@ -2337,6 +2378,7 @@ function toggleEvid(ix){
   if(!eval2.evid[e]) eval2.evid[e] = {};
   eval2.evid[e][ix] = !eval2.evid[e][ix];
   pintarEval2Cotejo();
+  autoGuardarEval2();
 }
 function confirmarEvalAlumno(){
   if(!eval2) return;
@@ -2421,7 +2463,7 @@ const CIRC = 2*Math.PI*40;
 let T = { dur:300, resta:300, corriendo:false, iv:null };
 let claseActualId = null;
 function cronoGuarda(){
-  const cid = claseActualId;
+  const cid = S.cronoActivo || claseActualId;
   if(!cid) return;
   if(!S.crono) S.crono = {};
   S.crono[cid] = { dur: T.dur, resta: T.resta, corriendo: !!T.corriendo, momentoActivo: (T.momentoActivo==null? null : T.momentoActivo), t: Date.now() };
@@ -2429,14 +2471,26 @@ function cronoGuarda(){
   else if(T.resta<=0) delete S.cronoActivo;
   guardar();
 }
-function restaurarCrono(){
+function sincronizarCrono(durs){
+  try{
+    if(S.cronoActivo && S.crono && S.crono[S.cronoActivo]){
+      restaurarCrono(false);
+      pintarDurChips();
+      pintarTimer();
+      return;
+    }
+  }catch(e){}
+  initTimer(durs);
+}
+function restaurarCrono(fijarClase){
   try{
     const cid = S.cronoActivo;
     if(!cid || !S.crono || !S.crono[cid]) return;
     const g = S.crono[cid];
     if(!g.resta || g.resta<=0){ delete S.cronoActivo; return; }
-    claseActualId = cid;
-    T = { dur: g.dur||300, resta: g.resta, corriendo: false, momentoActivo: g.momentoActivo, iv:null };
+    try{ if(T && T.iv) clearInterval(T.iv); }catch(e){}
+    if(fijarClase || !claseActualId) claseActualId = cid;
+    T = { dur: g.dur||300, resta: g.resta, corriendo: false, momentoActivo: (g.momentoActivo==null? null : g.momentoActivo), iv:null };
     pintarCronoFlotante(null);
     if(g.corriendo){
       if(g.t){
@@ -2464,7 +2518,7 @@ function pintarDurChips(){
     const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
     momentos.forEach((m,i)=>{
       const el = $("durchip-"+i); if(!el) return;
-      if(T.momentoActivo===i && T.resta>0){
+      if((S.cronoActivo===claseActualId || !S.cronoActivo) && T.momentoActivo===i && T.resta>0){
         el.innerHTML = T.corriendo? "▶ En curso" : "⏸ En pausa";
       } else {
         el.innerHTML = ic("reloj",13)+" "+esc(duracionAjustada(m, base));
@@ -2576,12 +2630,13 @@ function iniciarMomento(ev, i){
   const d = clasePorId(plan, claseActualId);
   const momentos = (d && d.momentos)||[];
   const m = momentos[i]; if(!m) return;
-  if(T.momentoActivo===i && T.resta>0){
+  if((S.cronoActivo===claseActualId || !S.cronoActivo) && T.momentoActivo===i && T.resta>0){
     playTimer();
     pintarDurChips();
     pintarTimer();
     return;
   }
+  if(S.cronoActivo && S.cronoActivo!==claseActualId) delete S.cronoActivo;
   const base = momentos.reduce((a,x)=>a+(minsDe(x.duracion)||0),0);
   const mins = Math.max(1, minsDe(duracionAjustada(m, base)) || 5);
   setDur(mins, null);
@@ -2593,10 +2648,11 @@ function iniciarMomento(ev, i){
   toast("Momento en marcha: "+m.nombre+" · "+mins+" min");
 }
 function initTimer(durs){
+  try{ if(T && T.iv) clearInterval(T.iv); }catch(e){}
   const d = (durs && durs.length)? durs[0]*60 : 300;
   T={dur:d,resta:d,corriendo:false,iv:null};
   const g = claseActualId && S.crono && S.crono[claseActualId];
-  if(g && g.dur){ T.dur = g.dur; T.resta = Math.max(0, g.resta); }
+  if(g && g.dur){ T.dur = g.dur; T.resta = Math.max(0, g.resta); T.momentoActivo = (g.momentoActivo==null? null : g.momentoActivo); }
   pintarTimer();
 }
 function abrirMomento(i){
@@ -2949,7 +3005,7 @@ function htmlProgresoPanel(){
       </div>
     </div>`;
   }
-  html += `<button class="dl grande" onclick="abrirModalBoletines()">${ic("descarga")} Descargar boletines del grupo</button>
+  html += `<button class="dl grande" onclick="abrirModalBoletines()">${ic("descarga")} Descargar boletines</button>
   <div style="height:14px"></div>`;
   return html;
 }
@@ -3819,35 +3875,28 @@ function datosBoletin(fuente){
     grado: S.ui.progGrado||S.docente.grado, seccion: S.ui.progSec||S.docente.seccion||"A" };
 }
 
-let _bolFondoEl = null;
 function abrirModalBoletines(){
-  if(_bolFondoEl){ _bolFondoEl.remove(); _bolFondoEl = null; return; }
-  const fondo = document.createElement("div");
-  fondo.id = "bolFondo";
-  fondo.setAttribute("onclick","if(event.target===this) cerrarModalBoletines()");
-  fondo.style.cssText = "position:fixed;inset:0;background:rgba(11,46,143,.45);z-index:1200;display:flex;align-items:center;justify-content:center;padding:18px;";
+  const contenido = $("bolContenido"); if(!contenido) return;
   const grado = S.ui.progGrado||S.docente.grado, seccion = S.ui.progSec||S.docente.seccion||"A";
-  fondo.innerHTML = `
-  <div style="background:#fff;border-radius:22px;max-width:380px;width:100%;padding:22px 20px;box-shadow:0 18px 60px rgba(11,46,143,.35);max-height:86vh;overflow:auto;">
-    <h2 style="margin:0 0 4px;font-size:19px;color:#001C5A">Boletines del grupo</h2>
-    <p style="margin:0 0 14px;font-size:12.5px;color:#64748b">Formato oficial · Grado ${esc(grado)} · Sección ${esc(seccion)} · ${ANIO_ESCOLAR}</p>
-    <b style="font-size:13px;color:#001C5A">Por período</b>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 14px;">
-      ${PERIODOS.map(p=>`<button class="dl dl-chico" onclick="boletinDetallePdf('periodo','${esc(p)}')">${esc(p)}</button>`).join("")}
-    </div>
-    <b style="font-size:13px;color:#001C5A">Por fecha</b>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 12px;">
+  const sub = $("bolSub"); if(sub) sub.textContent = "Grado "+grado+" · Sección "+seccion+" · "+ANIO_ESCOLAR;
+  contenido.innerHTML = `
+    <b class="bol-sec">Por período</b>
+    <div class="bol-grid">${PERIODOS.map(p=>`<button class="dl dl-chico" onclick="boletinDetallePdf('periodo','${esc(p)}')">${esc(p)}</button>`).join("")}</div>
+    <b class="bol-sec">Por fecha</b>
+    <div class="bol-fechas">
       <div class="eval-campo"><input type="date" id="bolDesde" value="${HOY.slice(0,8)}01"></div>
       <div class="eval-campo"><input type="date" id="bolHasta" value="${HOY}"></div>
     </div>
-    <button class="dl grande" style="width:100%;margin:4px 0 8px;" onclick="boletinFechaDesdeModal()">${ic("descarga")} Boletín detallado por fechas</button>
-    <button class="dl grande" style="width:100%;background:#fff;color:#0033A0;border:1.5px solid rgba(0,51,160,.25);" onclick="descargarBoletinGrupo()">Resumen del grupo (tabla)</button>
-    <button style="margin-top:12px;width:100%;border:none;background:transparent;color:#64748b;font-size:13px;font-weight:700;cursor:pointer;" onclick="cerrarModalBoletines()">Cerrar</button>
-  </div>`;
-  document.body.appendChild(fondo);
-  _bolFondoEl = fondo;
+    <button class="dl grande" style="width:100%;margin:4px 0 8px" onclick="boletinFechaDesdeModal()">${ic("descarga")} Boletín detallado por fechas</button>
+    <button class="dl grande" style="width:100%;background:#fff;color:#0033A0;border:1.5px solid rgba(0,51,160,.25)" onclick="descargarBoletinGrupo()">Resumen del grupo (tabla)</button>
+    <button class="bol-cerrar" onclick="cerrarModalBoletines()">Cerrar</button>`;
+  $("bolFondo").classList.add("abierto");
+  $("bolHoja").classList.add("abierta");
 }
-function cerrarModalBoletines(){ if(_bolFondoEl){ _bolFondoEl.remove(); _bolFondoEl = null; } }
+function cerrarModalBoletines(){
+  $("bolFondo").classList.remove("abierto");
+  $("bolHoja").classList.remove("abierta");
+}
 function boletinFechaDesdeModal(){
   const d = ($("bolDesde")&&$("bolDesde").value)||"";
   const h = ($("bolHasta")&&$("bolHasta").value)||"";

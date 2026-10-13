@@ -377,8 +377,6 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .dur-chip:active{transform:scale(.94)}
 /* ---------- v20 ---------- */
 .foto-card{background:linear-gradient(135deg,#001C5A 0%,#0033A0 55%,#0B4FD8 100%);position:relative;overflow:hidden;color:#fff}
-.foto-card::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;
-  background:linear-gradient(90deg,var(--rojo) 0%,var(--rojo) 33%,#fff 33%,#fff 66%,var(--rojo) 66%)}
 .foto-card h2{color:#fff;position:relative;z-index:1}
 .foto-card .muted{color:rgba(255,255,255,.88)}
 .foto-card .foto-chip{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:#fff;border:1px solid rgba(0,51,160,.10);border-radius:10px;padding:7px 6px;font-size:12px;font-weight:800;color:var(--tinta);white-space:nowrap;overflow:hidden}
@@ -455,7 +453,6 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 .codigo-box .cod{font-size:24px;font-weight:900;letter-spacing:5px;color:var(--azul);font-family:monospace}
 /* ---------- v21 ---------- */
 .foto-card{overflow:visible}
-.foto-card::before{height:6px;border-radius:16px 16px 0 0}
 .foto-card .foto-chip{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:transparent;
   border:1.5px solid rgba(255,255,255,.65);border-radius:12px;padding:7px 6px;font-size:12px;font-weight:800;color:#fff;white-space:nowrap;overflow:hidden}
 .onb-secs{display:flex;gap:6px;flex-wrap:wrap}
@@ -627,7 +624,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=23"></script>
+<script src="app-docente.js?v=24"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

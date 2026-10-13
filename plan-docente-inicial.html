@@ -47,7 +47,7 @@ body{
   background:linear-gradient(135deg,var(--azul),var(--azul-med));box-shadow:0 4px 14px rgba(0,51,160,.35)}
 .topbar .logo svg{width:24px;height:24px}
 .topbar .tt{flex:1;min-width:0}
-.topbar .tt h1{font-size:15px;font-weight:800;letter-spacing:-.2px;color:var(--azul-osc);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar .tt h1{font-size:19px;font-weight:800;letter-spacing:-.2px;color:var(--azul-osc);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .topbar .tt p{font-size:11px;color:var(--tinta-suave);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .btn-atras{border:none;background:rgba(255,255,255,.92);color:var(--azul);font-weight:700;font-size:12.5px;
   padding:9px 12px;border-radius:14px;display:none;align-items:center;gap:6px;box-shadow:0 2px 10px rgba(0,51,160,.15);cursor:pointer;flex-shrink:0}
@@ -260,6 +260,7 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .estado.fin{background:rgba(16,185,129,.13);color:#067a53}
 .estado.curso{background:linear-gradient(135deg,var(--rojo),#e6414f);color:#fff;box-shadow:0 3px 8px rgba(206,17,38,.3)}
 .estado.pend{background:rgba(90,107,133,.12);color:var(--tinta-suave)}
+.estado.prox{background:rgba(245,158,11,.16);color:#b45309}
 
 /* ---------- GRUPO DERECHO DEL TOPBAR ---------- */
 .top-right{margin-left:auto;display:flex;align-items:center;gap:7px;flex-shrink:0}
@@ -509,7 +510,6 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
     </div>
     <div class="tt" id="ttApp">
       <h1 id="tituloApp">PlanApp</h1>
-      <p id="subtituloApp">Tu plan listo para enseñar</p>
     </div>
     <div class="top-right">
       <button class="btn-campana" id="btnGuia" onclick="abrirGuia()" title="Guía técnica">
@@ -651,7 +651,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=25"></script>
+<script src="app-docente.js?v=26"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

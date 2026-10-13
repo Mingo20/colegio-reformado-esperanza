@@ -964,12 +964,58 @@ function diasDuracionPlan(plan){
   if(!ids.length) return (plan&&plan.semanas||[]).length*5 || 0;
   return diffDias(ids[0], ids[ids.length-1])+1;
 }
+/* ---------- EFEMÉRIDES Y VALORES (calendario escolar RD 2026-2027) ---------- */
+const EFEMERIDES_RD = {
+  "08": { lema:"Inicio del año escolar · Restauración de la República", valor:"Perseverancia", lista:["16: Día de la Restauración de la República","Agosto: acogida, adaptación y planificación docente"] },
+  "09": { lema:"Mes de la Integración escolar", valor:"Fraternidad", lista:["8: Día Mundial de la Alfabetización","21: Día Internacional de la Paz","24: Nuestra Señora de las Mercedes"] },
+  "10": { lema:"Mes de la Canción Escolar · Mes de la Alimentación Saludable", valor:"Identidad y autocuidado", lista:["5: Día Mundial del Docente","12: Día de la Hispanidad","16: Día Mundial de la Alimentación","Octubre (Inicial): Me reconozco como persona: mi nombre, mi cuerpo y mi identidad"] },
+  "11": { lema:"Mes de la Familia · Mes del Buen Trato", valor:"Solidaridad y buen trato", lista:["9: Día de la Constitución (trasladado del 6)","20: Día Universal del Niño y la Niña","25: Día Internacional de la Eliminación de la Violencia contra la Mujer"] },
+  "12": { lema:"Mes de la Navidad y la solidaridad", valor:"Generosidad", lista:["10: Día de los Derechos Humanos","25: Día de Navidad","18 dic – 6 ene: Vacaciones navideñas"] },
+  "01": { lema:"Mes de la Patria y del gentilicio", valor:"Patriotismo", lista:["1: Año Nuevo","26: Natalicio de Juan Pablo Duarte","4: Día de Reyes (trasladado)"] },
+  "02": { lema:"Mes de la Patria", valor:"Patriotismo", lista:["14: Día de la Amistad y el Amor","27: Día de la Independencia Nacional"] },
+  "03": { lema:"Mes de la mujer y la equidad", valor:"Equidad y respeto", lista:["8: Día Internacional de la Mujer","21: Día Mundial de la Poesía","30: Día Nacional del Suelo y el Agua"] },
+  "04": { lema:"Mes de la salud y la vida", valor:"Cuidado de la vida", lista:["7: Día Mundial de la Salud","22: Día de la Tierra","23: Día Mundial del Libro"] },
+  "05": { lema:"Mes del trabajo y la madre dominicana", valor:"Trabajo y gratitud", lista:["1: Día del Trabajo","17: Día del Agricultor","Último domingo: Día de las Madres"] },
+  "06": { lema:"Cierre del año escolar", valor:"Responsabilidad", lista:["5: Día Mundial del Medio Ambiente","Junio: cierre, recuperación y transición del año escolar"] }
+};
+function mesNumDe(txt){
+  const t = String(txt||"").toLowerCase();
+  const M = {enero:"01",febrero:"02",marzo:"03",abril:"04",mayo:"05",junio:"06",julio:"07",agosto:"08",septiembre:"09",octubre:"10",noviembre:"11",diciembre:"12"};
+  for(const k in M){ if(t.includes(k)) return M[k]; }
+  const m = t.match(/(\d{4})-(\d{2})/);
+  return m? m[2] : "";
+}
+function efemeridesDeMes(txt){
+  const e = EFEMERIDES_RD[mesNumDe(txt)];
+  return e || null;
+}
+function efemerideDe(fecha){
+  const num = String(fecha||"").slice(5,7);
+  const e = EFEMERIDES_RD[num];
+  if(!e) return null;
+  const d = String(fecha||"").slice(8,10);
+  const hit = (e.lista||[]).find(x=>String(parseInt(x.split(":")[0],10))===String(parseInt(d,10)));
+  return hit? (hit.split(": ").slice(1).join(": ")||hit.split(":").slice(1).join(":")) : null;
+}
+function tablaEfemeridesAnual(){
+  const orden = ["08","09","10","11","12","01","02","03","04","05","06"];
+  const nombres = {"08":"Agosto","09":"Septiembre","10":"Octubre","11":"Noviembre","12":"Diciembre","01":"Enero","02":"Febrero","03":"Marzo","04":"Abril","05":"Mayo","06":"Junio"};
+  return `<p class="mg-nota">Las conmemoraciones del calendario escolar ordenan los valores del año: nacen aquí, dan contexto en el plan mensual y se ejecutan en los momentos de la clase diaria.</p>` +
+    orden.map(mn=>{
+      const e = EFEMERIDES_RD[mn]; if(!e) return "";
+      return `<div class="stat-row"><span><b>${nombres[mn]}</b> · ${esc(e.lema)}</span><b>${esc(e.valor)}</b></div>
+        <div class="g-chips" style="margin:4px 0 12px">${(e.lista||[]).map(x=>`<span class="chip chip-mini">${esc(x)}</span>`).join("")}</div>`;
+    }).join("");
+}
 function estadoMes(mesTxt){
   const m = parseMes(mesTxt);
   if(!m) return { k:"pend", t:"Pendiente" };
   const actual = HOY.slice(0,7);
   if(m < actual) return { k:"fin", t:"Terminado" };
   if(m === actual) return { k:"curso", t:"En curso" };
+  const dt = new Date(HOY+"T12:00"); dt.setMonth(dt.getMonth()+1);
+  const sig = dt.toISOString().slice(0,7);
+  if(m === sig) return { k:"prox", t:"Próximo" };
   return { k:"pend", t:"Pendiente" };
 }
 const DIAS_SEMANA = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
@@ -1183,7 +1229,7 @@ function mostrar(scr, arg){
   pantallaActual = scr;
   autoRefresco(scr);
   let [t, s] = TITULOS[scr]||["Planificación Docente",""];
-  $("tituloApp").textContent = t; $("subtituloApp").textContent = s;
+  $("tituloApp").textContent = t; if($("subtituloApp")) $("subtituloApp").textContent = s;
   const bg = $("btnGuia");
   if(bg) bg.style.display = ["anio","anio-detalle","mes","mes-detalle"].includes(scr)? "" : "none";
   const seguro = (fn)=>{ try{ fn(); }catch(e){
@@ -1549,7 +1595,7 @@ function renderAnio(){
       <div class="ringbox">${ring(100,56,7,"#fff",String(info.temas.length*4))}<small>Semana</small></div>
     </div>
   </div>
-  <h2 class="mini">Tu plan anual</h2>
+  <h2 class="mini">Tus planes anuales</h2>
   <div class="item" onclick="irA('anio-detalle','${esc(nivel)}')">
     <div class="ic">${ic("calAnual")}</div>
     <div class="tx"><b>${esc(info.titulo)} ${ANIO_ESCOLAR}</b><span>${esc(A.descripcion)}</span></div>
@@ -1644,6 +1690,7 @@ function renderAnioDetalle(nivel){
   </div>
   <button class="dl grande" onclick="descargarPlanAnualDocx('${esc(nivel)}')">${ic("descarga")} Descargar plan anual en Word</button>
   <div style="height:14px"></div>`;
+  html += `<div class="card"><h2>${ic("calAnual")} Efemérides y valores del año escolar</h2>${tablaEfemeridesAnual()}</div>`;
   $("scr-anio-detalle").innerHTML = html;
 }
 
@@ -1784,6 +1831,10 @@ function renderMesDetalle(plan){
     </div>
   </div>
   <div class="card">
+    <div class="card">
+      <h2>${ic("calAnual")} Efemérides del mes</h2>
+      ${(function(){ const e = efemeridesDeMes(plan.mes||plan.titulo); return e? `<p class="mg-nota"><b>${esc(e.lema)}</b> · Valor del mes: <b>${esc(e.valor)}</b></p><div class="g-chips">${e.lista.map(x=>`<span class="chip chip-mini">${esc(x)}</span>`).join("")}</div>` : `<p class="mg-nota">Sin efemérides registradas para este mes.</p>`; })()}
+    </div>
     <h2>${ic("objetivo")} 3. Componentes curriculares</h2>
     <h3>Competencias fundamentales</h3>
     ${(plan.competencias&&plan.competencias.length? plan.competencias : COMPETENCIAS.slice(0,4)).map(c=>`<span class="chip">${esc(c.n||c)}</span>`).join("")}
@@ -1950,7 +2001,8 @@ function renderDiaria(){
       <div class="ringbox">${ring(100,56,7,"#FFD6DB", String(dias.filter(d=>d.id===HOY).length))}<small>Hoy</small></div>
       <div class="ringbox">${ring(100,56,7,"#fff", String(dias.filter(d=>d.id===sumarDias(HOY,1)).length))}<small>Mañana</small></div>
     </div>
-  </div>`;
+  </div>
+  <h2 class="mini" style="text-transform:uppercase;letter-spacing:1.2px">Tus clases diarias</h2>`;
   if(!ordenados.length){
     html += `<p class="vacio">No hay plan mensual del mes en curso.<br>Pídele a Delega tu plan detallado con clases diarias.</p>`;
   } else {
@@ -2012,6 +2064,7 @@ function renderClase(claseId){
     </div>
     <div class="mcard" style="margin-top:12px">
       <div class="kv"><b>Fecha</b><span>${esc(claseId)}</span></div>
+      ${efemerideDe(claseId)? `<div class="kv"><b>Conmemoración</b><span>${esc(efemerideDe(claseId))}</span></div>`:""}
       <div class="kv"><b>Nivel / Grado</b><span>${esc(S.docente.nivel)} · ${esc(S.docente.grado)}</span></div>
       <div class="kv"><b>Sección</b><span>${esc(S.docente.seccion)}</span></div>
       <div class="kv"><b>Asignaturas</b><span>${esc(plan.asig || (S.docente.asignaturasSel.length? S.docente.asignaturasSel.join(", ") : (S.docente.nivel==="Inicial"? "Planificación integral del nivel": S.docente.nivel)))}</span></div>
@@ -2117,11 +2170,12 @@ function alumnosHTML(claseId, tipo){
       html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
           ${st? `<span class="chip chip-mini" style="${color}">${esc(st)}</span>`:""}
-          <button class="btn-evaluar ${st? "evaluado":""}" onclick="abrirAsistencia('${claseId}', ${i})">Tomar asistencia</button>
+          <button class="btn-evaluar" onclick="abrirAsistencia('${claseId}', ${i})">${st? "Registrada":"Tomar asistencia"}</button>
         </div></div>`;
     } else {
+      const colEv = st==="Logrado"? "background:#0033A0;color:#fff" : st==="En proceso"? "background:#f59e0b;color:#fff" : st==="Iniciado"? "background:#CE1126;color:#fff" : "";
       html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
-        <div class="seg">${st? `<span class="chip chip-mini sel">${esc(st)}</span>`:""}<button class="btn-evaluar ${st? "evaluado":""}" onclick="abrirEvalAlumno('${claseId}', ${i})">${st? "Evaluado":"Evaluar"}</button></div></div>`;
+        <div class="seg">${st? `<span class="chip chip-mini" style="${colEv}">${esc(st)}</span>`:""}<button class="btn-evaluar" onclick="abrirEvalAlumno('${claseId}', ${i})">${st? "Registrada":"Evaluar"}</button></div></div>`;
     }
   }
   return html;
@@ -2205,6 +2259,8 @@ function habilitarArrastreCrono(){
       if(!S.ui) S.ui = {};
       S.ui.cronoPos = { left: Math.round(r.left), top: Math.round(r.top) };
       guardar();
+    } else if(S.cronoActivo){
+      try{ irA("clase", S.cronoActivo); }catch(e){}
     }
   };
   el.addEventListener("pointerup", soltar);
@@ -2457,6 +2513,10 @@ function guiaMomentoHTML(m, i, d){
   } else if(d && d.orientacion){
     html += `<p class="mg-nota">${ic("bombilla",12)} ${esc(d.orientacion)}</p>`;
   }
+    try{
+    const _efe = d && efemerideDe(d.id);
+    if(_efe) html += `<p class="mg-nota">⭐ Conmemoración del día: ${esc(_efe)} · Úsala como motivación, actividad o cierre reflexivo en este momento.</p>`;
+  }catch(e){}
   return html;
 }
 const CIRC = 2*Math.PI*40;
@@ -2736,6 +2796,21 @@ function filasEval(n){
     return `<div class="g-paso"><b>${esc(fmtFechaLinda(f))} · ${v? `<span style="color:${col}">${esc(v)}</span>` : "<span class=\"muted\">Sin registrar</span>"}</b>${com? `<span>${esc(com)}</span>`:""}</div>`;
   }).join("");
 }
+function histEvalsHTML(n){
+  try{
+    const keys = Object.keys(S.evaluacion||{}).filter(k=>/^\d{4}-\d{2}-\d{2}$/.test(k) && S.evaluacion[k] && S.evaluacion[k][n]).sort();
+    if(!keys.length) return "";
+    const cols = { "Logrado":"background:#0033A0;color:#fff", "En proceso":"background:#f59e0b;color:#fff", "Iniciado":"background:#CE1126;color:#fff" };
+    const filas = keys.map(k=>{
+      const e = S.evaluacion[k][n];
+      const g = (S.evalsEvid||{})[k+"|"+n]||{};
+      const cot = g.sel? Object.keys(g.sel).filter(x=>g.sel[x]).length : 0;
+      const com = (S.evalsCom||{})[k+"|"+n];
+      return `<div class="g-paso"><b><span class="chip chip-mini" style="${cols[e]||""}">${esc(e)}</span> · ${esc(fmtFechaLinda(k))}${cot? " · "+cot+" logros del cotejo":""}</b><span>${com? esc(com) : (cot? "Evidencias marcadas en la lista de cotejo." : "Sin comentario")}</span></div>`;
+    }).join("");
+    return `<h3 style="margin:12px 2px 6px;font-size:13px;color:#001C5A">Historial de evaluaciones con cotejo</h3>${filas}`;
+  }catch(e){ return ""; }
+}
 function abrirHistorial(n, fuente){
   histActual = { n, fuente };
   histRegAbierto = false;
@@ -2772,6 +2847,7 @@ function abrirHistorial(n, fuente){
   $("histCuerpo").innerHTML = `
   <div class="hscroll rings-scroll">${rings}</div>
   <div class="g-chips hscroll g-chips-centro" style="margin-bottom:10px">${chips}</div>
+  ${esInicial? histEvalsHTML(n) : ""}
   ${esInicial? "" : `
   <div class="hist-collap" id="collapReg" onclick="toggleRegCal()">
     <b>${ic("cuaderno",15)} Registrar calificación</b>
@@ -3878,7 +3954,7 @@ function datosBoletin(fuente){
 function abrirModalBoletines(){
   const contenido = $("bolContenido"); if(!contenido) return;
   const grado = S.ui.progGrado||S.docente.grado, seccion = S.ui.progSec||S.docente.seccion||"A";
-  const sub = $("bolSub"); if(sub) sub.textContent = "Grado "+grado+" · Sección "+seccion+" · "+ANIO_ESCOLAR;
+  const sub = $("bolSub"); if(sub) sub.textContent = "Nivel "+S.docente.nivel+" · Grado "+grado+" · Sección "+seccion+" · "+(nivelUsaEvaluacionCualitativa()? "Evaluación cualitativa":"Calificaciones numéricas");
   contenido.innerHTML = `
     <b class="bol-sec">Por período</b>
     <div class="bol-grid">${PERIODOS.map(p=>`<button class="dl dl-chico" onclick="boletinDetallePdf('periodo','${esc(p)}')">${esc(p)}</button>`).join("")}</div>
@@ -3903,6 +3979,48 @@ function boletinFechaDesdeModal(){
   if(!d||!h||h<d){ toast("Revisa el rango de fechas"); return; }
   boletinDetallePdf("fecha", null, d, h);
 }
+function letraEscala(nf){ return nf>=90? "A":nf>=80? "B":nf>=70? "C":nf>=60? "D":"F"; }
+function textoEscala(l){ return l==="A"?"Excelente":l==="B"?"Muy bueno":l==="C"?"Bueno":l==="D"?"Suficiente":"Insuficiente"; }
+function bloqueCualitativoPdf(doc, i, enRango, y){
+  const evs = Object.keys(S.evaluacion||{}).filter(k=>/^\d{4}-\d{2}-\d{2}$/.test(k) && (S.evaluacion[k]||{})[i] && enRango(k)).sort();
+  const cuenta = { "Logrado":0, "En proceso":0, "Iniciado":0 };
+  evs.forEach(k=>{ const e=S.evaluacion[k][i]; if(cuenta[e]!=null) cuenta[e]++; });
+  doc.setFillColor("#F0F5FF"); doc.roundedRect(14, y-4, 182, 9, 2, 2, "F");
+  doc.setTextColor(0,51,160); doc.setFontSize(10); doc.setFont(undefined,"bold");
+  doc.text("EVALUACIÓN CUALITATIVA · NIVEL INICIAL", 105, y+2, {align:"center"});
+  doc.setFont(undefined,"normal"); doc.setTextColor(30); doc.setFontSize(9);
+  y += 13;
+  [["Logrado"],["En proceso"],["Iniciado"]].forEach((fila,ix)=>{
+    doc.setFillColor(ix%2? "#F8FAFC":"#FFFFFF"); doc.rect(14, y-5, 182, 7.5, "F");
+    doc.text(fila[0], 17, y);
+    doc.text(String(cuenta[fila[0]])+" clases evaluadas", 90, y);
+    y += 7.5;
+  });
+  const dom = Object.keys(cuenta).sort((a,b)=>cuenta[b]-cuenta[a])[0];
+  doc.setFont(undefined,"bold"); doc.setFontSize(9.5);
+  doc.text("Escala final: "+(evs.length? dom : "Sin evaluar")+(evs.length? " ("+cuenta[dom]+" de "+evs.length+" clases evaluadas)" : ""), 17, y+2);
+  doc.setFont(undefined,"normal"); doc.setFontSize(9);
+  y += 11;
+  const regs = evs.map(k=>{
+    const g = (S.evalsEvid||{})[k+"|"+i]||{};
+    const nc = g.sel? Object.keys(g.sel).filter(x=>g.sel[x]).length : 0;
+    return { k, e:S.evaluacion[k][i], nc, c:(S.evalsCom||{})[k+"|"+i]||"" };
+  });
+  if(regs.length){
+    doc.setFillColor(0,51,160); doc.rect(14, y-5, 182, 7, "F");
+    doc.setTextColor(255); doc.setFontSize(8);
+    doc.text("Historial de evaluación y cotejo (últimas "+Math.min(8,regs.length)+")", 17, y);
+    y += 8;
+    regs.slice(-8).forEach(r=>{
+      if(y>262){ doc.addPage(); y=20; }
+      doc.setTextColor(30); doc.setFontSize(8.5);
+      doc.text(fmtFechaLinda(r.k)+" · "+r.e+(r.nc? " · "+r.nc+" logros del cotejo":""), 17, y, {maxWidth:120});
+      if(r.c) doc.text(String(r.c).slice(0,50), 140, y, {maxWidth:56});
+      y += 6;
+    });
+  }
+  return y;
+}
 function boletinDetallePdf(modo, periodo, desde, hasta){
   try{
     const grado = S.ui.progGrado||S.docente.grado, seccion = S.ui.progSec||S.docente.seccion||"A";
@@ -3926,6 +4044,9 @@ function boletinDetallePdf(modo, periodo, desde, hasta){
       doc.text("ALUMNO "+String(i).padStart(2,"0"), 105, y+8, {align:"center"});
       y += 18;
       doc.setFont(undefined,"normal");
+      if(nivelUsaEvaluacionCualitativa()){
+        y = bloqueCualitativoPdf(doc, i, enRango, y);
+      } else {
       const arr = puntosDe(grupo, i);
       const calc = asig => {
         const f = asig? arr.filter(x=>(x.asig||"General")===asig && enRango(x.f)) : arr.filter(x=>enRango(x.f));
@@ -3957,12 +4078,12 @@ function boletinDetallePdf(modo, periodo, desde, hasta){
         doc.setFontSize(10);
         doc.text(nf===null? "—": String(nf), 143, y);
         doc.setFontSize(8.5); doc.setFont(undefined,"normal");
-        const cod = nf===null? "—" : escalaDe(nf);
         doc.setTextColor(nf===null? 140 : (nf>=70? 22: 190), nf===null? 140 : (nf>=70? 100: 60), nf===null? 140 : (nf>=70? 16: 30));
-        doc.text(cod==="L"? "Logrado" : cod==="EP"? "En proceso" : cod==="I"? "Iniciando" : "—", 158, y);
+        doc.text(nf===null? "—" : letraEscala(nf), 158, y);
         y += 7.5;
       });
       y += 4;
+      }
       if(y>250){ doc.addPage(); y=20; }
       const fechasA = fechasRegistradas("asis").filter(enRango);
       let pres=0, tar=0, aus=0, marc=0;
@@ -3998,16 +4119,34 @@ function descargarBoletinGrupo(fuente){
     let y = 48;
     doc.setFillColor(0,51,160); doc.rect(14, y-5, 182, 7, "F");
     doc.setTextColor(255); doc.setFontSize(8.5);
-    doc.text("Alumno", 17, y); doc.text("Part.", 95, y); doc.text("Trab.", 118, y);
-    doc.text("Examen", 141, y); doc.text("Final", 165, y); doc.text("Escala", 182, y);
+    if(nivelUsaEvaluacionCualitativa()){
+      doc.text("Alumno", 17, y); doc.text("Logrado", 92, y); doc.text("En proc.", 118, y);
+      doc.text("Iniciado", 144, y); doc.text("Escala", 172, y);
+    } else {
+      doc.text("Alumno", 17, y); doc.text("Part.", 95, y); doc.text("Trab.", 118, y);
+      doc.text("Examen", 141, y); doc.text("Final", 165, y); doc.text("Escala", 182, y);
+    }
     y += 10;
     let sum=0, cont=0;
     for(let i=1;i<=N;i++){
       if(y>280){ doc.addPage(); y=25; }
+      if(nivelUsaEvaluacionCualitativa()){
+        const ev = evalsAlumno(i);
+        const ordenEv = [["Logrado",ev.pL],["En proceso",ev.pEP],["Iniciado",ev.pI]].filter(x=>x[1]);
+        ordenEv.sort((a,b)=>b[1]-a[1]);
+        doc.setTextColor(30); doc.setFontSize(9.5);
+        doc.text("Alumno "+String(i).padStart(2,"0"), 17, y);
+        doc.text(String(ev.pL||0), 98, y);
+        doc.text(String(ev.pEP||0), 124, y);
+        doc.text(String(ev.pI||0), 150, y);
+        doc.setFontSize(10.5); doc.setFont(undefined,"bold");
+        doc.text(ordenEv.length? ordenEv[0][0] : "—", 174, y);
+        doc.setFont(undefined,"normal");
+        y += 8;
+      } else {
       const c = dt.store[i]||{};
       const nf = c? notaFinalDe(c.p,c.t,c.e) : null;
       if(nf!==null){ sum+=nf; cont++; }
-      const esc2 = nf===null? "—" : escalaDe(nf);
       doc.setTextColor(nf===null?120:(nf>=70?0:206), nf===null?120:(nf>=70?51:17), nf===null?120:(nf>=70?160:38));
       doc.setFontSize(9.5);
       doc.text("Alumno "+String(i).padStart(2,"0"), 17, y);
@@ -4017,15 +4156,16 @@ function descargarBoletinGrupo(fuente){
       doc.setFontSize(10.5); doc.setFont(undefined,"bold");
       doc.text(nf===null? "—": String(nf), 166, y);
       doc.setFontSize(9); doc.setFont(undefined,"normal");
-      doc.text(esc2, 184, y);
+      doc.text(nf===null? "—": letraEscala(nf), 184, y);
       y += 8;
+      }
     }
     y += 4;
     const prom = cont? Math.round(sum/cont) : 0;
     doc.setFontSize(11); doc.setTextColor(0,51,160); doc.setFont(undefined,"bold");
-    doc.text("Promedio del grupo: "+prom+"/100 · "+escalaTexto(escalaDe(prom)), 14, Math.min(y,288));
+    doc.text(nivelUsaEvaluacionCualitativa()? "Evaluación cualitativa del nivel Inicial · Nivel de logro dominante por alumno" : "Promedio del grupo: "+prom+"/100 · "+letraEscala(prom)+" ("+textoEscala(letraEscala(prom))+")", 14, Math.min(y,288));
     doc.setFontSize(8); doc.setTextColor(120); doc.setFont(undefined,"normal");
-    doc.text("Escala MINERD: L = Logrado (90-100) · EP = En proceso (70-89) · I = Iniciando (<70). Final = Part. 30% + Trab. 30% + Examen 40%.", 14, Math.min(y+5,292), {maxWidth:182});
+    doc.text(nivelUsaEvaluacionCualitativa()? "Escala del nivel Inicial: L = Logrado · EP = En proceso · I = Iniciando (evaluación cualitativa)." : "Escala: A = Excelente (90-100) · B = Muy bueno (80-89) · C = Bueno (70-79) · D = Suficiente (60-69) · F = Insuficiente (<60). Final = Part. 30% + Trab. 30% + Examen 40%.", 14, Math.min(y+5,292), {maxWidth:182});
     doc.save("boletin-"+dt.grado.replace(/ /g,"")+"-"+dt.seccion+".pdf");
     toast("Boletín descargado");
   }catch(e){ toast("Se necesita conexión para descargar"); }
@@ -4039,12 +4179,25 @@ function descargarBoletinIndividual(n, fuente){
     cabeceraPdf(doc, "Reporte individual · Alumno "+n+" · "+dt.titulo,
       "Nivel "+S.docente.nivel+" · Grado "+dt.grado+" · Sección "+dt.seccion+" · Docente: "+(S.docente.nombre||"—"));
     const plan = planAbierto || planActivo();
-    const filas = [
+    const filas = nivelUsaEvaluacionCualitativa()? (function(){
+      const ev = evalsAlumno(n);
+      const ordenEv = [["Logrado",ev.pL],["En proceso",ev.pEP],["Iniciado",ev.pI]].filter(x=>x[1]);
+      ordenEv.sort((a,b)=>b[1]-a[1]);
+      let cot = 0;
+      Object.keys(S.evalsEvid||{}).forEach(k=>{ if(k.endsWith("|"+n)){ const g = S.evalsEvid[k]; cot += g.sel? Object.keys(g.sel).filter(x=>g.sel[x]).length : 0; } });
+      return [
+        ["Evaluación cualitativa", "Logrado "+(ev.pL||0)+" · En proceso "+(ev.pEP||0)+" · Iniciado "+(ev.pI||0)],
+        ["Escala dominante", ordenEv.length? ordenEv[0][0] : "Sin evaluar"],
+        ["Logros marcados en cotejo", String(cot)],
+        ["Asistencia del plan activo", pctMes(plan,"asis")+"%"],
+        ["Logros del plan activo", pctMes(plan,"eval")+"%"],
+      ];
+    })() : [
       ["Participación", c.p!==undefined? c.p : "—"],
       ["Trabajos", c.t!==undefined? c.t : "—"],
       ["Examen", c.e!==undefined? c.e : "—"],
       ["Nota final (ponderada)", nf===null? "—" : nf+" / 100"],
-      ["Escala MINERD", nf===null? "—" : escalaDe(nf)+" ("+escalaTexto(escalaDe(nf))+")"],
+      ["Escala de calificaciones", nf===null? "—" : letraEscala(nf)+" ("+textoEscala(letraEscala(nf))+")"],
       ["Asistencia del plan activo", pctMes(plan,"asis")+"%"],
       ["Logros del plan activo", pctMes(plan,"eval")+"%"],
     ];

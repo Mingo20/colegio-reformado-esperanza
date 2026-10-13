@@ -792,7 +792,7 @@ function syncAhora(){ syncEstado(); flush(); }
 window.addEventListener("online", ()=>{
   if(S && S.docente && S.docente.codigo){
     syncEstado(); flush();
-    cargarPlanes().then(()=>{ generarNotificaciones(); if(pantallaActual==="diaria") renderDiaria(); else if(pantallaActual==="mes") renderMes(); });
+    cargarPlanes().then(()=>{ generarNotificaciones(); if(pantallaActual==="diaria"){ abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); } else if(pantallaActual==="mes") renderMes(); });
   }
 });
 setInterval(()=>{
@@ -807,7 +807,7 @@ setInterval(()=>{
       Object.keys(com).forEach(k=>{ if(!(k in S.evalsCom)){ S.evalsCom[k] = com[k]; cambio = true; } });
       if(cambio) guardar();
     }).catch(()=>{});
-    cargarPlanes().then(()=>{ if(pantallaActual==="diaria") abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria") renderDiaria(); }); });
+    cargarPlanes().then(()=>{ if(pantallaActual!=="diaria") return; const antes = firmaDiaria(); abrirPlanEnCurso().then(()=>{ if(pantallaActual==="diaria" && firmaDiaria()!==antes) renderDiaria(); }); });
   }catch(e){ }
 }, 25000);
 
@@ -849,10 +849,10 @@ function planActivo(){
   return { titulo:"Sin plan activo", mes:"", tema:"", nivel:S.docente.nivel, descripcion:"", competencias:[], areas:[], semanas:[] };
   return { titulo:"Sin plan activo", mes:"", tema:"", nivel:S.docente.nivel, descripcion:"", competencias:[], areas:[], semanas:[] };
 }
-async function obtenerPlan(id){
+async function obtenerPlan(id, forzar){
   if(!id || id==="local-mariposa") return PLAN_MARIPOSA;
   if(id.startsWith("der-")) return unidadDerivada(...id.slice(4).split("-"));
-  if(S.planesCache[id]) return S.planesCache[id];
+  if(S.planesCache[id] && !forzar) return S.planesCache[id];
   try{
     const r = await apiAccion("plan", { id });
     if(r.success){ S.planesCache[id] = r.plan; guardar(); return r.plan; }
@@ -1002,27 +1002,28 @@ function generarDiasDerivados(u){
   }
   return dias;
 }
+function planDiarioFirma(){
+  const p = planDiario().plan;
+  return (p.titulo||"")+"|"+((p.semanas||[]).map(s=>(s.dias||[]).map(d=>d.id).join(",")).join(";"));
+}
+function firmaDiaria(){
+  return JSON.stringify((S.listaPlanes||[]).map(x=>x.id))+ "|" + planDiarioFirma();
+}
 function planDiario(){
-  const activo = planActivo();
-  const lunes = lunesActual(); const domingo = new Date(lunes); domingo.setDate(lunes.getDate()+6);
-  const enCurso = (activo.semanas||[]).find(s=>(s.dias||[]).some(d=>{ try{ const f=new Date(d.id+"T12:00"); return f>=lunes && f<=domingo; }catch(e){ return false; } }));
-  if(enCurso) return { plan: activo, semana: enCurso, generado:false };
   const ym = HOY.slice(0,7);
-  const nivel = S.docente.nivel;
-  let u = null;
-  if(activo.tipo==="derivado" && parseMes(activo.mes)===ym) u = activo;
-  else {
-    const anual = PLANES_ANUALES[nivel] || PLANES_ANUALES["Inicial"];
-    const idx = anual.temas.findIndex(t=>parseMes(t.mes)===ym);
-    if(idx>=0) u = unidadDerivada(anual===PLANES_ANUALES[nivel]? nivel : "Inicial", String(idx));
+  let plan = null;
+  const cand = (S.listaPlanes||[]).find(p=>parseMes(p.mes)===ym && !esAnualPlan(p));
+  if(cand && S.planesCache[cand.id] && (S.planesCache[cand.id].semanas||[]).length) plan = S.planesCache[cand.id];
+  if(!plan){
+    const activo = planActivo();
+    if(activo && parseMes(activo.mes||"")===ym && (activo.semanas||[]).length) plan = activo;
   }
-  if(u){
-    const dias = generarDiasDerivados(u);
-    const wrapper = { tipo:"derivado", id:"der-diaria", nivel, titulo:u.titulo, mes:u.mes, tema:u.tema,
-      semanas:[{ numero:1, tema:u.tema, fechas:"Semana en curso", dias }] };
-    return { plan: wrapper, semana: wrapper.semanas[0], generado:true };
+  if(!plan){
+    return { plan:{ titulo:"Sin plan del mes en curso", mes:"", tema:"", nivel:S.docente.nivel, descripcion:"Pídele a Delega tu plan mensual con clases diarias.", competencias:[], areas:[], semanas:[] }, semana:null, generado:false };
   }
-  return { plan: activo, semana: null, generado:false };
+  const lunes = lunesActual(); const domingo = new Date(lunes); domingo.setDate(lunes.getDate()+6);
+  const enCurso = (plan.semanas||[]).find(s=>(s.dias||[]).some(d=>{ try{ const f=new Date(d.id+"T12:00"); return f>=lunes && f<=domingo; }catch(e){ return false; } }));
+  return { plan, semana: enCurso||null, generado:false };
 }
 
 /* ---------- NOTIFICACIONES ---------- */
@@ -1202,7 +1203,7 @@ function mostrar(scr, arg){
   if(scr==="progreso") seguro(()=>renderProgreso());
   if(scr==="notificaciones") seguro(()=>renderNotificaciones());
   if(scr==="info") seguro(()=>renderInfo());
-  if(scr==="diaria" && S.docente.id && (!planAbierto || (planAbierto.titulo||"")==="Sin plan activo")){
+  if(scr==="diaria" && S.docente.id){
     abrirPlanEnCurso().then(ok=>{ if(ok && pantallaActual==="diaria") renderDiaria(); });
   }
   window.scrollTo({top:0});
@@ -1221,11 +1222,14 @@ function autoRefresco(scr){
       if(a && ["INPUT","TEXTAREA","SELECT"].includes(a.tagName)) return;
       if(pantallaActual !== scr) return;
       await cargarPlanes(); if(pantallaActual!==scr) return;
-      if(scr==="diaria" && (!planAbierto || (planAbierto.titulo||"")==="Sin plan activo")){ await abrirPlanEnCurso(); }
       const y = window.scrollY||0;
-      if(scr==="anio") renderAnio();
+      if(scr==="diaria"){
+        const antes = firmaDiaria();
+        await abrirPlanEnCurso();
+        if(pantallaActual===scr && firmaDiaria()!==antes) renderDiaria();
+      }
+      else if(scr==="anio") renderAnio();
       else if(scr==="mes") renderMes();
-      else if(scr==="diaria") renderDiaria();
       window.scrollTo(0,y);
     }catch(e){}
   }, 10000);
@@ -1721,7 +1725,7 @@ async function abrirPlanEnCurso(){
     const ym = HOY.slice(0,7);
     let cand = (S.listaPlanes||[]).find(p=>parseMes(p.mes)===ym && !/plan anual/i.test(p.titulo));
     if(!cand) return false;
-    const plan = await obtenerPlan(cand.id);
+    const plan = await obtenerPlan(cand.id, true);
     if(!plan) return false;
     planAbierto = plan;
     return true;
@@ -1955,7 +1959,7 @@ function renderDiaria(){
     </div>
   </div>`;
   if(!ordenados.length){
-    html += `<p class="vacio">Tu plan activo no tiene clases diarias.<br>Pídele a Delega tu plan detallado con clases diarias.</p>`;
+    html += `<p class="vacio">No hay plan mensual del mes en curso.<br>Pídele a Delega tu plan detallado con clases diarias.</p>`;
   } else {
     ordenados.forEach(d=>{
       const etq = etqClase(d.id);
@@ -2945,7 +2949,7 @@ function htmlProgresoPanel(){
       </div>
     </div>`;
   }
-  html += `<button class="dl grande" onclick="descargarBoletinGrupo()">${ic("descarga")} Descargar boletín del grupo en PDF</button>
+  html += `<button class="dl grande" onclick="abrirModalBoletines()">${ic("descarga")} Descargar boletines del grupo</button>
   <div style="height:14px"></div>`;
   return html;
 }
@@ -3304,7 +3308,7 @@ function pesosDe(headers){
   return headers.map(()=>1);
 }
 function tblDocx(D, headers, rows, pesos){
-  const TOTAL = 9000;
+  const TOTAL = 14570;
   const n = headers.length;
   const ws = (Array.isArray(pesos) && pesos.length===n)? pesos : pesosDe(headers);
   const suma = ws.reduce((a,b)=>a+b,0);
@@ -3357,7 +3361,7 @@ async function descargarPlanAnualDocx(nivel){
     const secs = (S.docente.secciones.length? S.docente.secciones:[S.docente.seccion||"A"]).join(", ");
     const tiempo = {};
     info.temas.forEach(t=>{ tiempo[t.trimestre]=(tiempo[t.trimestre]||0)+1; });
-    const doc = new D.Document({ sections:[{ properties:{ page:{ size:{ width:11906, height:16838 }, margin:{ top:1134, right:1134, bottom:1134, left:1134 } } }, children:[
+    const doc = new D.Document({ sections:[{ properties:{ page:{ size:{ width:16838, height:11906, orientation:D.PageOrientation.LANDSCAPE }, margin:{ top:1134, right:1134, bottom:1134, left:1134 } } }, children:[
       new D.Paragraph({ text:S.docente.colegio||"Colegio", heading:D.HeadingLevel.HEADING_1, alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:info.titulo+" "+ANIO_ESCOLAR+" · Nivel "+nivel, heading:D.HeadingLevel.HEADING_2, alignment:D.AlignmentType.CENTER }),
       new D.Paragraph({ text:"Adecuación Curricular vigente (Ordenanza 2023) · MINERD · República Dominicana", alignment:D.AlignmentType.CENTER }),
@@ -3476,7 +3480,7 @@ async function descargarUnidadDocx(){
       children.push(h2docx(D, "5. Evaluación"));
       children.push(par(D, "Evaluación formativa diaria con registro de logros, observación y lista de cotejo."));
     }
-    const doc = new D.Document({ sections:[{ children }]});
+    const doc = new D.Document({ sections:[{ properties:{ page:{ size:{ width:16838, height:11906, orientation:D.PageOrientation.LANDSCAPE }, margin:{ top:1134, right:1134, bottom:1134, left:1134 } } }, children }]});
     await docxDe(await D.Packer.toBlob(doc), "unidad-"+(plan.tema||plan.titulo).replace(/[^\w]+/g,"-").toLowerCase()+".docx");
     toast("Unidad de aprendizaje descargada");
   }catch(e){ toast("Se necesita conexión para descargar"); }
@@ -3813,6 +3817,127 @@ function datosBoletin(fuente){
     grado: S.ui.libGrado||S.docente.grado, seccion: S.ui.libSec||S.docente.seccion||"A" };
   return { store: califs(), titulo: "Boletín de calificaciones · "+S.docente.periodo,
     grado: S.ui.progGrado||S.docente.grado, seccion: S.ui.progSec||S.docente.seccion||"A" };
+}
+
+let _bolFondoEl = null;
+function abrirModalBoletines(){
+  if(_bolFondoEl){ _bolFondoEl.remove(); _bolFondoEl = null; return; }
+  const fondo = document.createElement("div");
+  fondo.id = "bolFondo";
+  fondo.setAttribute("onclick","if(event.target===this) cerrarModalBoletines()");
+  fondo.style.cssText = "position:fixed;inset:0;background:rgba(11,46,143,.45);z-index:1200;display:flex;align-items:center;justify-content:center;padding:18px;";
+  const grado = S.ui.progGrado||S.docente.grado, seccion = S.ui.progSec||S.docente.seccion||"A";
+  fondo.innerHTML = `
+  <div style="background:#fff;border-radius:22px;max-width:380px;width:100%;padding:22px 20px;box-shadow:0 18px 60px rgba(11,46,143,.35);max-height:86vh;overflow:auto;">
+    <h2 style="margin:0 0 4px;font-size:19px;color:#001C5A">Boletines del grupo</h2>
+    <p style="margin:0 0 14px;font-size:12.5px;color:#64748b">Formato oficial · Grado ${esc(grado)} · Sección ${esc(seccion)} · ${ANIO_ESCOLAR}</p>
+    <b style="font-size:13px;color:#001C5A">Por período</b>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 14px;">
+      ${PERIODOS.map(p=>`<button class="dl dl-chico" onclick="boletinDetallePdf('periodo','${esc(p)}')">${esc(p)}</button>`).join("")}
+    </div>
+    <b style="font-size:13px;color:#001C5A">Por fecha</b>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 12px;">
+      <div class="eval-campo"><input type="date" id="bolDesde" value="${HOY.slice(0,8)}01"></div>
+      <div class="eval-campo"><input type="date" id="bolHasta" value="${HOY}"></div>
+    </div>
+    <button class="dl grande" style="width:100%;margin:4px 0 8px;" onclick="boletinFechaDesdeModal()">${ic("descarga")} Boletín detallado por fechas</button>
+    <button class="dl grande" style="width:100%;background:#fff;color:#0033A0;border:1.5px solid rgba(0,51,160,.25);" onclick="descargarBoletinGrupo()">Resumen del grupo (tabla)</button>
+    <button style="margin-top:12px;width:100%;border:none;background:transparent;color:#64748b;font-size:13px;font-weight:700;cursor:pointer;" onclick="cerrarModalBoletines()">Cerrar</button>
+  </div>`;
+  document.body.appendChild(fondo);
+  _bolFondoEl = fondo;
+}
+function cerrarModalBoletines(){ if(_bolFondoEl){ _bolFondoEl.remove(); _bolFondoEl = null; } }
+function boletinFechaDesdeModal(){
+  const d = ($("bolDesde")&&$("bolDesde").value)||"";
+  const h = ($("bolHasta")&&$("bolHasta").value)||"";
+  if(!d||!h||h<d){ toast("Revisa el rango de fechas"); return; }
+  boletinDetallePdf("fecha", null, d, h);
+}
+function boletinDetallePdf(modo, periodo, desde, hasta){
+  try{
+    const grado = S.ui.progGrado||S.docente.grado, seccion = S.ui.progSec||S.docente.seccion||"A";
+    const N = alumnosDe(seccion, grado);
+    if(!N){ toast("No hay alumnos en este grupo"); return; }
+    const grupo = grado+"|"+seccion;
+    const asigs = asignaturasVista();
+    const esPeriodo = modo==="periodo";
+    const enRango = f => esPeriodo? (trimDeFecha(f)===periodo) : (f>=desde && f<=hasta);
+    const doc = new jspdf.jsPDF();
+    let y;
+    for(let i=1;i<=N;i++){
+      if(i>1) doc.addPage();
+      cabeceraPdf(doc, "Boletín de calificaciones", (esPeriodo? "Periodo: "+periodo : "Fechas: "+desde+" a "+hasta)+" · "+ANIO_ESCOLAR);
+      y = 36;
+      doc.setTextColor(40); doc.setFontSize(9);
+      doc.text("Nivel "+S.docente.nivel+" · Grado "+grado+" · Sección "+seccion+" · Docente: "+(S.docente.nombre||"—")+" · Distrito educativo "+(S.docente.distrito||"—"), 105, y, {align:"center", maxWidth:180});
+      y += 9;
+      doc.setFillColor("#F0F5FF"); doc.roundedRect(14, y, 182, 12, 2, 2, "F");
+      doc.setTextColor(0,51,160); doc.setFontSize(11); doc.setFont(undefined,"bold");
+      doc.text("ALUMNO "+String(i).padStart(2,"0"), 105, y+8, {align:"center"});
+      y += 18;
+      doc.setFont(undefined,"normal");
+      const arr = puntosDe(grupo, i);
+      const calc = asig => {
+        const f = asig? arr.filter(x=>(x.asig||"General")===asig && enRango(x.f)) : arr.filter(x=>enRango(x.f));
+        const prom = t=>{ const vs = f.filter(x=>x.tipo===t).map(x=>+x.pts||0); return vs.length? Math.round(vs.reduce((a,b)=>a+b,0)/vs.length) : null; };
+        const p = prom("P"), t = prom("T"), e = prom("E");
+        if(p===null && t===null && e===null) return null;
+        return { p:p||0, t:t||0, e:e||0 };
+      };
+      doc.setFillColor(0,51,160); doc.rect(14, y-5, 182, 7, "F");
+      doc.setTextColor(255); doc.setFontSize(8);
+      doc.text("Asignatura", 17, y); doc.text("Part.", 92, y); doc.text("Trab.", 108, y);
+      doc.text("Examen", 124, y); doc.text("Final", 141, y); doc.text("Escala", 158, y);
+      y += 8;
+      const filas = asigs.map(a=>({ a, c: calc(a) }));
+      filas.push({ a:"Promedio general", c: calc(null) });
+      filas.forEach((fila, idx)=>{
+        if(y>262){ doc.addPage(); y=20; }
+        const c = fila.c;
+        const nf = c? notaFinalDe(c.p,c.t,c.e) : null;
+        const fondo2 = idx===filas.length-1? "#F2F6FF" : (idx%2? "#F8FAFC":"#FFFFFF");
+        doc.setFillColor(fondo2); doc.rect(14, y-5, 182, 7.5, "F");
+        doc.setTextColor(30);
+        doc.setFontSize(9);
+        doc.setFont(undefined, idx===filas.length-1? "bold":"normal");
+        doc.text(String(fila.a).slice(0,36), 17, y);
+        doc.text(c? String(c.p):"—", 95, y);
+        doc.text(c? String(c.t):"—", 111, y);
+        doc.text(c? String(c.e):"—", 127, y);
+        doc.setFontSize(10);
+        doc.text(nf===null? "—": String(nf), 143, y);
+        doc.setFontSize(8.5); doc.setFont(undefined,"normal");
+        const cod = nf===null? "—" : escalaDe(nf);
+        doc.setTextColor(nf===null? 140 : (nf>=70? 22: 190), nf===null? 140 : (nf>=70? 100: 60), nf===null? 140 : (nf>=70? 16: 30));
+        doc.text(cod==="L"? "Logrado" : cod==="EP"? "En proceso" : cod==="I"? "Iniciando" : "—", 158, y);
+        y += 7.5;
+      });
+      y += 4;
+      if(y>250){ doc.addPage(); y=20; }
+      const fechasA = fechasRegistradas("asis").filter(enRango);
+      let pres=0, tar=0, aus=0, marc=0;
+      fechasA.forEach(f=>{ const v=(S.asistencia[f]||{})[i]; if(v){ marc++; if(v==="Presente")pres++; else if(v==="Tarde")tar++; else if(v==="Ausente")aus++; } });
+      const evFe = Object.keys(S.evaluacion||{}).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f) && Object.keys(S.evaluacion[f]||{}).length).filter(enRango);
+      let log=0, ep=0, ini=0, evTot=0;
+      evFe.forEach(f=>{ const v=(S.evaluacion[f]||{})[i]; if(v){ evTot++; if(v==="Logrado")log++; else if(v==="En proceso")ep++; else if(v==="Iniciado")ini++; } });
+      doc.setTextColor(0,51,160); doc.setFontSize(10); doc.setFont(undefined,"bold");
+      doc.text("Asistencia y desempeño", 14, y+4); doc.setFont(undefined,"normal"); doc.setTextColor(40); doc.setFontSize(9);
+      doc.text("Días registrados: "+marc+" · Presente: "+pres+" · Tarde: "+tar+" · Ausente: "+aus, 14, y+11);
+      doc.text("Logros evaluados: "+(evTot? (log+" Logrado · "+ep+" En proceso · "+ini+" Iniciado") : "sin registros en el rango"), 14, y+17);
+      y += 24;
+      if(y>265){ doc.addPage(); y=20; }
+      doc.setFontSize(8); doc.setTextColor(110);
+      doc.text("Escala: Logrado (90-100) · En proceso (70-89) · Iniciando (<70). Final = Part. 30% + Trab. 30% + Examen 40%.", 14, y, {maxWidth:182});
+      y += 14;
+      doc.setDrawColor(140); doc.line(20, y, 65, y); doc.line(85, y, 130, y); doc.line(150, y, 195, y);
+      doc.setTextColor(70); doc.setFontSize(8);
+      doc.text("Docente", 20, y+4); doc.text("Dirección del centro", 85, y+4); doc.text("Madre / Padre / Tutor", 150, y+4);
+    }
+    const sufijo = esPeriodo? periodo.replace(/ /g,"-") : (desde+"_"+hasta);
+    doc.save("boletines-"+grado.replace(/ /g,"")+"-"+seccion+"-"+sufijo+".pdf");
+    toast("Boletines descargados");
+  }catch(e){ toast("Se necesita conexión para descargar"); }
 }
 function descargarBoletinGrupo(fuente){
   try{

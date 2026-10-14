@@ -483,6 +483,11 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 @keyframes accSpin{to{transform:rotate(360deg)}}
 /* ---------- v22 ---------- */
 .cotejo-item{cursor:pointer;transition:background .15s,border-color .15s}
+.switch{width:44px;height:24px;border-radius:12px;background:#cbd5e1;border:none;position:relative;transition:background .2s;flex-shrink:0;padding:0;cursor:pointer}
+.switch span{position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 2px rgba(0,0,0,.25)}
+.switch.on{background:#059669}
+.switch.on span{left:23px}
+.cotejo-item.guia{cursor:default;background:#f8fafc}
 .crono-flotante{background:transparent;border:none;box-shadow:none;padding:0;width:auto;border-radius:50%}
 .crono-flotante .timer-wrap{flex-direction:column;gap:2px;padding:0}
 .crono-flotante .timer-ring{filter:drop-shadow(0 6px 14px rgba(0,30,90,.28))}
@@ -607,17 +612,13 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 <div class="g-hoja ev2-hoja" id="modalEval2Hoja">
   <div class="g-asa"></div>
   <h2 id="eval2Alum" style="text-align:center">ALUMNO 1</h2>
-  <p class="g-sub" style="text-align:center;margin-bottom:10px">Explora los tres estados, marca las evidencias y confirma</p>
+  <p class="g-sub" style="text-align:center;margin-bottom:10px">Selecciona un estado: la lista de cotejo te guía sobre qué observar</p>
   <div class="ev2-estados">
     <button class="ev2-btn" id="ev2-L" onclick="selEval2Estado('Logrado')">Logrado</button>
     <button class="ev2-btn" id="ev2-E" onclick="selEval2Estado('En proceso')">En proceso</button>
     <button class="ev2-btn" id="ev2-I" onclick="selEval2Estado('Iniciado')">Iniciado</button>
   </div>
   <div id="eval2Cotejo" class="ev2-cotejo"></div>
-  <div class="eval-campo" style="margin-top:12px">
-    <label class="eval-lbl" for="eval2Obs">Comentario personalizado (opcional)</label>
-    <input type="text" id="eval2Obs" placeholder="Agrega una nota sobre este alumno" oninput="onEval2ObsInput()">
-  </div>
   <button class="dl grande" style="width:100%;margin:12px 0 0" onclick="confirmarEvalAlumno()">Registrar evaluación</button>
 </div>
 <div id="loginAnim">
@@ -651,7 +652,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=26"></script>
+<script src="app-docente.js?v=27"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

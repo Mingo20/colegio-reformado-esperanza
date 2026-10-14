@@ -1807,6 +1807,9 @@ function renderMesDetalle(plan){
       <div class="kv"><b>Eje temático</b><span>${esc(plan.eje||"Según plan")}</span></div>
       <div class="kv"><b>Estrategia</b><span>${esc(plan.estrategia || (plan.nivel==="Inicial"? "Centro de Interés" : "Unidad de Aprendizaje"))}</span></div>
       <div class="kv"><b>Docente</b><span>${esc(S.docente.nombre||"—")}</span></div>
+      <div class="kv"><b>Tanda</b><span>${esc(S.docente.jornada||"—")}</span></div>
+      <div class="kv"><b>Tipo de planificación</b><span>Unidad de aprendizaje</span></div>
+      <div class="kv"><b>Fechas de la unidad</b><span>${(function(){ const f=(plan.semanas||[]).flatMap(s=>s.dias||[]).map(x=>x.id).filter(Boolean); return f.length? esc(fmtFechaLinda(f[0]))+" al "+esc(fmtFechaLinda(f[f.length-1])) : "—"; })()}</span></div>
     </div>
   </div>
   <div class="card">
@@ -1831,6 +1834,32 @@ function renderMesDetalle(plan){
       `}
     </div>
   </div>
+  ${(plan.anticipacion)? `
+  <div class="card">
+    <h2>${ic("nota")} Cuadro de anticipación</h2>
+    <div class="grid-2col" style="grid-template-columns:1fr 1fr 1fr;gap:8px">
+      <div class="mcard"><div class="m-tit"><div class="n">S</div><b>¿Qué sabemos?</b></div><ul>${(plan.anticipacion.sabemos||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+      <div class="mcard"><div class="m-tit"><div class="n">Q</div><b>¿Qué queremos saber?</b></div><ul>${(plan.anticipacion.queremos||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+      <div class="mcard"><div class="m-tit"><div class="n">H</div><b>¿Cómo lo vamos a saber?</b></div><ul>${(plan.anticipacion.como||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+    </div>
+  </div>`:""}
+  ${(plan.dominios||[]).length? `
+  <div class="card">
+    <h2>${ic("bombilla")} Dominios del desarrollo</h2>
+    ${plan.dominios.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}
+  </div>`:""}
+  ${(plan.experiencias||[]).length? `
+  <div class="card">
+    <h2>${ic("usuarios")} Experiencias clave de aprendizaje</h2>
+    ${plan.experiencias.map(e=>`
+    <div class="mcard">
+      <div class="m-tit"><div class="n">${e.semana}</div><b>Semana ${e.semana} · ${esc(e.tema||"")}</b></div>
+      <div class="kv"><b>Encuentro de grupo</b><span>${esc(e.encuentro||"—")}</span></div>
+      <div class="kv"><b>Grupo pequeño</b><span>${esc(e.indPequeno||"")} · ${esc(e.actPequeno||"—")}</span></div>
+      <div class="kv"><b>Grupo grande</b><span>${esc(e.indGrande||"")} · ${esc(e.actGrande||"—")}</span></div>
+      ${e.taller? `<div class="kv"><b>Taller de ${esc(e.taller)}</b><span>${esc(e.indTaller||"")} · ${esc(e.actTaller||"—")}</span></div>`:""}
+    </div>`).join("")}
+  </div>`:""}
   <div class="card">
     <div class="card">
       <h2>${ic("calAnual")} Efemérides del mes</h2>
@@ -2098,31 +2127,14 @@ function renderClase(claseId){
     <div class="nota" style="margin-top:10px"><b>Evaluación</b>Tipo: formativa diaria · Instrumento: observación con lista de cotejo y registro de logros.</div>
     ${(d.orientacion||"").length? `<div class="nota" style="margin-top:10px"><b>${ic("bombilla")} Orientaciones pedagógicas</b>${esc(d.orientacion)}</div>`:""}
   </div>
-  <div class="card">
+  <div class="card" style="cursor:pointer" onclick="abrirRegistroDia('${claseId}')">
     <div style="display:flex;align-items:center;gap:8px">
       <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · <span id="regCuenta">${alumnosDe(grupoReg().s, grupoReg().g)}</span> alumnos</h2>
-      <button class="btn-colapsa" id="btnColapsa" onclick="toggleRegistro()" title="Desplegar lista">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
     </div>
-    <div class="colapso" id="zonaRegistro">
-      <div>
-        ${puedeElegirGrado()? `
-        <div class="grid-2col" style="margin-top:12px">
-          <select class="inp" id="regGrado" onchange="regSel('g')">
-            ${misGradosDocente().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
-          </select>
-          <select class="inp" id="regSec" onchange="regSel('s')">
-            ${misSeccionesDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
-          </select>
-        </div>`:""}
-        <div class="tabs" style="margin-top:12px">
-          <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
-          ${nivelUsaEvaluacionCualitativa()? `<div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>`:""}
-        </div>
-        <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
-        ${nivelUsaEvaluacionCualitativa()? `<div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>`:""}
-      </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+      <span class="chip chip-mini" style="background:#DCFCE7;color:#15803d">Asistencia: ${cuentaReg(claseId,"A")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>
+      ${nivelUsaEvaluacionCualitativa()? `<span class="chip chip-mini" style="background:#FEF3C7;color:#b45309">Evaluación: ${cuentaReg(claseId,"E")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>`:""}
+      <span class="chip chip-mini" style="background:#f0f5ff;color:#0033A0">Toca la tarjeta para registrar</span>
     </div>
   </div>
   <div class="card">
@@ -2175,7 +2187,7 @@ function alumnosHTML(claseId, tipo){
         </div></div>`;
     } else {
       const colEv = st==="Logrado"? "background:#0033A0;color:#fff" : st==="En proceso"? "background:#f59e0b;color:#fff" : st==="Iniciado"? "background:#CE1126;color:#fff" : "";
-      html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
+      html += `<div class="alumno"><div class="an"${st? ' style="background:#DCFCE7;color:#15803d;font-size:16px"':''}>${st? "✓" : ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">${st? `<span class="chip chip-mini" style="${colEv}">${esc(st)}</span>`:""}<button class="btn-evaluar" onclick="abrirEvalAlumno('${claseId}', ${i})">${st? "Registrada":"Evaluar"}</button></div></div>`;
     }
   }
@@ -2219,9 +2231,39 @@ function marcarDesdeHoja(valor){
   cerrarAsistencia();
   marcar('A', c.claseId, c.n, valor);
 }
-function toggleRegistro(){
-  $("zonaRegistro").classList.toggle("abierta");
-  $("btnColapsa").classList.toggle("abierto");
+function cuentaReg(claseId, tipo){
+  const reg = (tipo==="A"? S.asistencia : S.evaluacion)[claseId]||{};
+  return Object.keys(reg).filter(k=>reg[k]).length;
+}
+function abrirRegistroDia(claseId){
+  claseAbiertaId = claseId;
+  const s = planAbierto || planActivo();
+  const d = clasePorId(s, claseId);
+  const n = alumnosDe(grupoReg().s, grupoReg().g);
+  $("regHojaTitulo").textContent = "Registro del día · " + n + " alumnos";
+  $("regHojaSub").textContent = d? (d.etiqueta+" · "+d.titulo) : "";
+  $("regHojaCuerpo").innerHTML = `
+    ${puedeElegirGrado()? `
+    <div class="grid-2col">
+      <select class="inp" id="regGrado" onchange="regSel('g')">
+        ${misGradosDocente().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
+      </select>
+      <select class="inp" id="regSec" onchange="regSel('s')">
+        ${misSeccionesDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+      </select>
+    </div>`:""}
+    <div class="tabs" style="margin-top:10px">
+      <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
+      ${nivelUsaEvaluacionCualitativa()? `<div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>`:""}
+    </div>
+    <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
+    ${nivelUsaEvaluacionCualitativa()? `<div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>`:""}`;
+  $("regFondo").classList.add("abierto");
+  $("regHoja").classList.add("abierta");
+}
+function cerrarRegistroDia(){
+  $("regFondo").classList.remove("abierto");
+  $("regHoja").classList.remove("abierta");
 }
 function tabClase(t){
   if(t==="E" && !nivelUsaEvaluacionCualitativa()) return;
@@ -2506,7 +2548,10 @@ function guiaMomentoHTML(m, i, d){
   }
     try{
     const _efe = d && efemerideDe(d.id);
-    if(_efe) html += `<p class="mg-nota">⭐ Conmemoración del día: ${esc(_efe)} · Úsala como motivación, actividad o cierre reflexivo en este momento.</p>`;
+    if(_efe){
+      const _gu = { "Inicio":"úsala para motivar y activar saberes previos", "Desarrollo":"conviértela en la actividad central de aprendizaje", "Práctica":"transforma la conmemoración en ejercicio o juego", "Cierre":"guía la metacognición: ¿cómo vivo yo este valor o hecho hoy?" };
+      html += `<p class="mg-nota">⭐ Conmemoración del día: ${esc(_efe)} · En ${esc(m.nombre)}: ${esc(_gu[m.nombre]||"intégrela según el propósito del momento")}.</p>`;
+    }
   }catch(e){}
   return html;
 }
@@ -3576,6 +3621,26 @@ async function descargarUnidadDocx(){
       h2docx(D, "2. Situación de aprendizaje"),
     ];
     const _efeM = efemeridesDeMes(plan.mes||plan.titulo) || { lema:"—", lista:[], valor:"—" };
+    const anticipacionDocx = ()=>{
+      const a = plan.anticipacion;
+      if(!a) return;
+      children.push(
+        h2docx(D, "Cuadro de anticipación"),
+        tblDocx(D, ["¿Qué sabemos sobre el tema?","¿Qué queremos saber?","¿Cómo lo vamos a saber?"], [[(a.sabemos||[]).join(" · "), (a.queremos||[]).join(" · "), (a.como||[]).join(" · ")]])
+      );
+      if((plan.dominios||[]).length) children.push(par(D, "Dominios del desarrollo: "+plan.dominios.join(" · ")));
+      (plan.experiencias||[]).forEach(e=>{
+        children.push(
+          h2docx(D, "Experiencias clave · Semana "+e.semana+": "+(e.tema||"")),
+          tblDocx(D, ["Experiencia","Indicador","Actividad"], [
+            ["Encuentro de grupo", "Rutina de encuentro: saludo, canción y activación", e.encuentro||"—"],
+            ["Experiencia grupal (grupo pequeño)", e.indPequeno||"—", e.actPequeno||"—"],
+            ["Experiencia grupal (grupo grande)", e.indGrande||"—", e.actGrande||"—"],
+            ["Taller: "+(e.taller||""), e.indTaller||"—", e.actTaller||"—"],
+          ])
+        );
+      });
+    };
     const efemeridesDocx = ()=> children.push(
       h2docx(D, "Efemérides del mes"),
       tblDocx(D, ["Mes","Lema oficial","Conmemoraciones","Valor del mes"], [
@@ -3590,6 +3655,7 @@ async function descargarUnidadDocx(){
         ["Producto final", plan.situacion.producto],
       ]));
       efemeridesDocx();
+      anticipacionDocx();
       children.push(h2docx(D, "3. Componentes curriculares (tabla de coherencia)"));
       children.push(tblDocx(D, ["Componente","Contenido"], [
         ["Competencias fundamentales", COMPETENCIAS.slice(0,4).map(c=>c.n).join(" · ")],
@@ -3608,6 +3674,7 @@ async function descargarUnidadDocx(){
       children.push(tblDocx(D, ["Físicos","Digitales"], [[plan.recursosFis, plan.recursosDig]]));
     } else {
       efemeridesDocx();
+      anticipacionDocx();
       children.push(tblDocx(D, ["Componente","Descripción"], [
         ["Descripción de la unidad", plan.descripcion||"—"],
         ["Tema", plan.tema||"—"],
@@ -3657,10 +3724,12 @@ async function descargarPlanDiarioDocx(claseId){
         ["Intención pedagógica del día", (d.desempenos||[]).join(" · ")||d.titulo],
         ["Indicador de logro", (d.desempenos||[]).join("; ")||"—"],
         ["Estrategias", "Indagación dialógica · socialización · recuperación de saberes previos"],
+        ["Conmemoración del día", (function(){ try{ return efemerideDe(claseId)||"—"; }catch(_e){ return "—"; } })()],
       ]),
       h2docx(D, "2. Los tres momentos de la clase"),
       tblDocx(D, ["Momento","Tiempo","Propósito","Actividades"],
         momentos.map(m=>[m.nombre, duracionAjustada(m, baseTotal), m.proposito, (m.pasos||[]).join(" ")])),
+      par(D, (function(){ try{ const _e = efemerideDe(claseId); return _e? "Conmemoración del día: "+_e+" — Integración pedagógica: en Inicio como motivación y saberes previos, en Desarrollo como actividad central de aprendizaje, en Práctica como ejercicio o juego y en Cierre como metacognición del valor." : "Sin conmemoración oficial en esta fecha."; }catch(_e){ return "—"; } })()),
       h2docx(D, "3. Recursos y evaluación"),
       tblDocx(D, ["Componente","Descripción"], [
         ["Recursos", (d.recursos||[]).join(" · ")||"—"],

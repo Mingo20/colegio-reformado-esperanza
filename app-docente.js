@@ -650,7 +650,7 @@ const LS_VIEJO = "plan_docente_rd_v4";
 const LS_VIEJO2 = "plan_docente_rd_v2";
 function estadoDefault(){
   return {
-    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,alumnos:24,periodo:"1er periodo",recursos:[],estGuarda:null,estrategias:{} },
+    docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,duracionOn:true,alumnos:24,periodo:"1er periodo",recursos:[],estGuarda:null,estrategias:{} },
     asistencia:{}, evaluacion:{}, evalsCom:{}, evalsEvid:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
     notificaciones:[], vistosPlanes:0,
@@ -1492,7 +1492,7 @@ async function entrarConCodigo(){
       });
       if(remoto.ui) S.ui = Object.assign({}, S.ui, remoto.ui);
       if(remoto.docente){
-        ["foto","recursos","estGuarda","gradosSecciones","alumnosPorSeccion","asignaturasSel","secciones","duracionMin","grado","seccion","jornada","especialidad","alumnos","whatsapp","distrito","periodo"].forEach(k=>{
+        ["foto","recursos","estGuarda","gradosSecciones","alumnosPorSeccion","asignaturasSel","secciones","duracionMin","duracionOn","grado","seccion","jornada","especialidad","alumnos","whatsapp","distrito","periodo"].forEach(k=>{
           const v = remoto.docente[k];
           if(v===undefined || v===null || v==="") return;
           if(Array.isArray(v) && !v.length) return;
@@ -1688,9 +1688,10 @@ function renderAnioDetalle(nivel){
     <h3>Recursos digitales</h3>
     <p class="muted">${esc(A.recursosDig)}</p>
   </div>
+`;
+  html += `<div class="card"><h2>${ic("calAnual")} Efemérides y valores del año escolar</h2>${tablaEfemeridesAnual()}</div>
   <button class="dl grande" onclick="descargarPlanAnualDocx('${esc(nivel)}')">${ic("descarga")} Descargar plan anual en Word</button>
   <div style="height:14px"></div>`;
-  html += `<div class="card"><h2>${ic("calAnual")} Efemérides y valores del año escolar</h2>${tablaEfemeridesAnual()}</div>`;
   $("scr-anio-detalle").innerHTML = html;
 }
 
@@ -2081,12 +2082,12 @@ function renderClase(claseId){
     <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
   </div>
   <h2 class="mini">Momentos de la clase</h2>
-  ${S.docente.duracionMin? "" : `<p class="bol-hint">Configura la duración de tu clase en Perfil para activar el temporizador de cada momento</p>`}
+  ${(S.docente.duracionMin || !duracionActiva())? "" : `<p class="bol-hint">Configura la duración de tu clase en Perfil para activar el temporizador de cada momento</p>`}
   ${momentos.map((m,i)=>`
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
       <div class="m-head">
         <div class="m-num">${i+1}</div><b>${esc(m.nombre)}</b>
-        ${S.docente.duracionMin? `<span class="dur dur-chip" id="durchip-${i}" title="Iniciar el cronómetro de este momento" onclick="iniciarMomento(event, ${i})">${ic("reloj",13)} ${esc(duracionAjustada(m, baseTotal))}</span>` : ""}
+        ${(S.docente.duracionMin && duracionActiva())? `<span class="dur dur-chip" id="durchip-${i}" title="Iniciar el cronómetro de este momento" onclick="iniciarMomento(event, ${i})">${ic("reloj",13)} ${esc(duracionAjustada(m, baseTotal))}</span>` : ""}
         <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
       </div>
       <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
@@ -2422,20 +2423,10 @@ function pintarEval2Cotejo(){
   }
   const listas = cotejoDe(eval2.claseId);
   const items = (listas[eval2.estado]||COTEJO_BASE[eval2.estado]||[]);
-  cont.innerHTML = items.map((it,ix)=>{
-      const marcado = !!(eval2.evid[eval2.estado] && eval2.evid[eval2.estado][ix]);
-      return `<div class="cotejo-item ${marcado?"on":""}" onclick="toggleEvid(${ix})"><span class="ck">${marcado?"✓":""}</span>${esc(it)}</div>`;
-    }).join("")
-    + `<p class="mg-nota" style="margin-top:2px">Toca cada logro que observaste en el alumno o la alumna: se guarda solo.</p>`;
+  cont.innerHTML = items.map(it=>`<div class="cotejo-item guia"><span class="ck on">✓</span>${esc(it)}</div>`).join("")
+    + `<p class="mg-nota" style="margin-top:2px">Lista de cotejo de referencia: observa estos logros en el alumno o la alumna al evaluar el estado «${esc(eval2.estado)}».</p>`;
 }
-function toggleEvid(ix){
-  if(!eval2 || !eval2.estado) return;
-  const e = eval2.estado;
-  if(!eval2.evid[e]) eval2.evid[e] = {};
-  eval2.evid[e][ix] = !eval2.evid[e][ix];
-  pintarEval2Cotejo();
-  autoGuardarEval2();
-}
+function toggleEvid(ix){ /* v27: el cotejo es guía de observación, ya no se selecciona */ }
 function confirmarEvalAlumno(){
   if(!eval2) return;
   if(!eval2.estado){ toast("Selecciona un estado: Logrado, En proceso o Iniciado"); return; }
@@ -2806,7 +2797,7 @@ function histEvalsHTML(n){
       const g = (S.evalsEvid||{})[k+"|"+n]||{};
       const cot = g.sel? Object.keys(g.sel).filter(x=>g.sel[x]).length : 0;
       const com = (S.evalsCom||{})[k+"|"+n];
-      return `<div class="g-paso"><b><span class="chip chip-mini" style="${cols[e]||""}">${esc(e)}</span> · ${esc(fmtFechaLinda(k))}${cot? " · "+cot+" logros del cotejo":""}</b><span>${com? esc(com) : (cot? "Evidencias marcadas en la lista de cotejo." : "Sin comentario")}</span></div>`;
+      return `<div class="g-paso"><b><span class="chip chip-mini" style="${cols[e]||""}">${esc(e)}</span> · ${esc(fmtFechaLinda(k))}${cot? " · "+cot+" logros del cotejo":""}</b><span>${com? esc(com) : (cot? "Evidencias marcadas en la lista de cotejo." : "")}</span></div>`;
     }).join("");
     return `<h3 style="margin:12px 2px 6px;font-size:13px;color:#001C5A">Historial de evaluaciones con cotejo</h3>${filas}`;
   }catch(e){ return ""; }
@@ -2842,7 +2833,7 @@ function abrirHistorial(n, fuente){
   arr = arr.filter(x=>trimDeFecha(x.f)===periodoSel);
   const filas = arr.length? arr.map(x=>`
     <div class="g-paso"><b>${esc(fmtFechaLinda(x.f))} · ${esc(x.asig||"General")} · ${esc(TIPOS_PUNTO[x.tipo]||x.tipo)} · ${x.pts} pts</b>
-    <span>${x.com? esc(x.com) : "Sin comentario"}</span></div>`).join("")
+    <span>${x.com? esc(x.com) : ""}</span></div>`).join("")
     : `<p class="g-intro">Sin registros en ${esc(periodoSel)} todavía.</p>`;
   $("histCuerpo").innerHTML = `
   <div class="hscroll rings-scroll">${rings}</div>
@@ -3128,6 +3119,13 @@ function borrarNotificaciones(){
 }
 
 /* ---------- INFO ---------- */
+function duracionActiva(){ return S.docente.duracionOn !== false; }
+function toggleDuracion(){
+  S.docente.duracionOn = !duracionActiva();
+  guardar();
+  if(document.getElementById("scr-info") && document.getElementById("scr-info").classList.contains("visible")) renderInfo();
+  toast(duracionActiva()? "Duración de momentos activada" : "Duración de momentos oculta");
+}
 function renderInfo(){
   const pend = S.cola.length;
   const ult = S.lastSync? new Date(S.lastSync).toLocaleString("es-DO") : "Aún no sincroniza";
@@ -3202,15 +3200,18 @@ function renderInfo(){
     </div>
   </div>
   <div class="card">
-    <h2>${ic("reloj")} Duración de mis clases</h2>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:2px">
+      <h2 style="flex:1;margin:0">${ic("reloj")} Duración de mis clases</h2>
+      <button class="switch ${duracionActiva()? "on":""}" onclick="toggleDuracion()" title="${duracionActiva()? "Ocultar":"Mostrar"} la duración de los momentos de la clase"><span></span></button>
+    </div>
     <p class="muted" style="margin-bottom:10px">Define cuánto dura tu clase. La app reparte los minutos de cada momento de la clase de forma proporcional.</p>
-    <div style="display:flex;gap:8px;align-items:center">
+    <div style="display:flex;gap:8px;align-items:center${duracionActiva()? "":";opacity:.45;pointer-events:none"}">
       <input class="inp" id="inpDurH" type="number" min="0" max="8" placeholder="horas" value="${durH}" style="text-align:center">
       <span style="font-weight:800;color:var(--tinta-suave)">h</span>
       <input class="inp" id="inpDurM" type="number" min="0" max="59" placeholder="minutos" value="${durM}" style="text-align:center">
       <span style="font-weight:800;color:var(--tinta-suave)">min</span>
     </div>
-    <button class="dl" onclick="guardarDuracion()">Guardar duración</button>
+    <button class="dl" onclick="guardarDuracion()"${duracionActiva()? "":" style='opacity:.45;pointer-events:none'"}>Guardar duración</button>
   </div>
   <div class="card">
     <h2>${ic("calendario")} Mi jornada</h2>
@@ -3540,6 +3541,12 @@ async function descargarPlanAnualDocx(nivel){
       tblDocx(D, ["Técnica / Instrumento"], A.tecnicas.map(t=>[t])),
       h2docx(D, "4.2 Recursos y medios"),
       tblDocx(D, ["Físicos","Digitales"], [[A.recursosFis, A.recursosDig]]),
+      h2docx(D, "Efemérides y valores del año escolar"),
+      tblDocx(D, ["Mes","Lema del mes","Conmemoraciones","Valor"], (function(){
+        const _orden = ["08","09","10","11","12","01","02","03","04","05","06"];
+        const _nombres = {"08":"Agosto","09":"Septiembre","10":"Octubre","11":"Noviembre","12":"Diciembre","01":"Enero","02":"Febrero","03":"Marzo","04":"Abril","05":"Mayo","06":"Junio"};
+        return _orden.map(mn=>{ const e = EFEMERIDES_RD[mn]; return e? [_nombres[mn], e.lema, (e.lista||[]).join(" · "), e.valor] : null; }).filter(Boolean);
+      })()),
     ]}]});
     await docxDe(await D.Packer.toBlob(doc), "plan-anual-"+nivel.toLowerCase()+"-"+ANIO_ESCOLAR+".docx");
     toast("Plan anual descargado");
@@ -3568,6 +3575,13 @@ async function descargarUnidadDocx(){
       ]),
       h2docx(D, "2. Situación de aprendizaje"),
     ];
+    const _efeM = efemeridesDeMes(plan.mes||plan.titulo) || { lema:"—", lista:[], valor:"—" };
+    const efemeridesDocx = ()=> children.push(
+      h2docx(D, "Efemérides del mes"),
+      tblDocx(D, ["Mes","Lema oficial","Conmemoraciones","Valor del mes"], [
+        [ (plan.mes||"—"), _efeM.lema||"—", (_efeM.lista||[]).join(" · "), _efeM.valor||"—" ]
+      ])
+    );
     if(esDerivado){
       children.push(tblDocx(D, ["Componente","Descripción"], [
         ["Escenario", plan.situacion.escenario],
@@ -3575,6 +3589,7 @@ async function descargarUnidadDocx(){
         ["Estrategia", plan.situacion.estrategia],
         ["Producto final", plan.situacion.producto],
       ]));
+      efemeridesDocx();
       children.push(h2docx(D, "3. Componentes curriculares (tabla de coherencia)"));
       children.push(tblDocx(D, ["Componente","Contenido"], [
         ["Competencias fundamentales", COMPETENCIAS.slice(0,4).map(c=>c.n).join(" · ")],
@@ -3592,6 +3607,7 @@ async function descargarUnidadDocx(){
       children.push(h2docx(D, "6. Recursos y medios"));
       children.push(tblDocx(D, ["Físicos","Digitales"], [[plan.recursosFis, plan.recursosDig]]));
     } else {
+      efemeridesDocx();
       children.push(tblDocx(D, ["Componente","Descripción"], [
         ["Descripción de la unidad", plan.descripcion||"—"],
         ["Tema", plan.tema||"—"],

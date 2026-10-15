@@ -769,7 +769,7 @@ function guardar(){
   idbGuardar(S);
   programarSyncEstado();
 }
-const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","lastSync"];
+const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","anticipacionEdit","lastSync"];
 let _syncT = null;
 function programarSyncEstado(){
   if(!S.docente.id || !S.docente.codigo) return;
@@ -971,12 +971,12 @@ const EFEMERIDES_RD = {
   "10": { lema:"Mes de la Canción Escolar · Mes de la Alimentación Saludable", valor:"Identidad y autocuidado", lista:["5: Día Mundial del Docente","12: Día de la Hispanidad","16: Día Mundial de la Alimentación","Octubre (Inicial): Me reconozco como persona: mi nombre, mi cuerpo y mi identidad"] },
   "11": { lema:"Mes de la Familia · Mes del Buen Trato", valor:"Solidaridad y buen trato", lista:["9: Día de la Constitución (trasladado del 6)","20: Día Universal del Niño y la Niña","25: Día Internacional de la Eliminación de la Violencia contra la Mujer"] },
   "12": { lema:"Mes de la Navidad y la solidaridad", valor:"Generosidad", lista:["10: Día de los Derechos Humanos","25: Día de Navidad","18 dic – 6 ene: Vacaciones navideñas"] },
-  "01": { lema:"Mes de la Patria y del gentilicio", valor:"Patriotismo", lista:["1: Año Nuevo","26: Natalicio de Juan Pablo Duarte","4: Día de Reyes (trasladado)"] },
+  "01": { lema:"Mes de la Patria y del gentilicio", valor:"Patriotismo", lista:["1: Año Nuevo","4: Día de Reyes (trasladado)","21: Día de Nuestra Señora de la Altagracia (feriado)","26: Natalicio de Juan Pablo Duarte (trasladado al 25)"] },
   "02": { lema:"Mes de la Patria", valor:"Patriotismo", lista:["14: Día de la Amistad y el Amor","27: Día de la Independencia Nacional"] },
-  "03": { lema:"Mes de la mujer y la equidad", valor:"Equidad y respeto", lista:["8: Día Internacional de la Mujer","21: Día Mundial de la Poesía","30: Día Nacional del Suelo y el Agua"] },
+  "03": { lema:"Mes de la mujer y la equidad", valor:"Equidad y respeto", lista:["8: Día Internacional de la Mujer","19: Batalla del 19 de Marzo","21: Día Forestal Mundial y del Títere","22: Día Mundial del Agua","26: Viernes Santo (22–26: Semana Santa sin docencia)"] },
   "04": { lema:"Mes de la salud y la vida", valor:"Cuidado de la vida", lista:["7: Día Mundial de la Salud","22: Día de la Tierra","23: Día Mundial del Libro"] },
-  "05": { lema:"Mes del trabajo y la madre dominicana", valor:"Trabajo y gratitud", lista:["1: Día del Trabajo","17: Día del Agricultor","Último domingo: Día de las Madres"] },
-  "06": { lema:"Cierre del año escolar", valor:"Responsabilidad", lista:["5: Día Mundial del Medio Ambiente","Junio: cierre, recuperación y transición del año escolar"] }
+  "05": { lema:"Mes del trabajo y la madre dominicana", valor:"Trabajo y gratitud", lista:["1: Día del Trabajo (trasladado al 3)","5: Día del Árbol","15: Día del Agricultor","30: Día de las Madres"] },
+  "06": { lema:"Cierre del año escolar", valor:"Responsabilidad", lista:["5: Día Mundial del Medio Ambiente","8: Día Mundial de los Océanos","11: Fin de los procesos pedagógicos del Nivel Inicial","Junio: cierre, evaluación final y transición del año escolar"] }
 };
 function mesNumDe(txt){
   const t = String(txt||"").toLowerCase();
@@ -984,6 +984,45 @@ function mesNumDe(txt){
   for(const k in M){ if(t.includes(k)) return M[k]; }
   const m = t.match(/(\d{4})-(\d{2})/);
   return m? m[2] : "";
+}
+function toggleCompDia(){
+  S.ui.compDiaAbierto = !S.ui.compDiaAbierto;
+  guardar();
+  renderClase(claseActualId);
+}
+function anticDe(plan){
+  const id = plan && (plan.id || plan.titulo) || "";
+  const ed = (S.anticipacionEdit||{})[id];
+  return Object.assign({}, (plan&&plan.anticipacion)||{}, ed||{});
+}
+function editarAntic(k){
+  const plan = planAbierto || planActivo();
+  const a = anticDe(plan);
+  const titulos = { sabemos:"¿Qué sabemos?", queremos:"¿Qué queremos saber?", como:"¿Cómo lo vamos a saber?" };
+  $("edtAntTitulo").textContent = titulos[k] || "Editar";
+  const ta = $("edtAntTxt");
+  ta.value = (a[k]||[]).join("\n");
+  ta.dataset.campo = k;
+  $("edtAntFondo").classList.add("abierto");
+  $("edtAntHoja").classList.add("abierta");
+  setTimeout(()=>ta.focus(), 250);
+}
+function edtAntGuarda(){
+  const plan = planAbierto || planActivo();
+  const id = plan && (plan.id || plan.titulo) || "";
+  const k = $("edtAntTxt").dataset.campo;
+  if(!k) return;
+  const val = $("edtAntTxt").value.split("\n").map(x=>x.trim()).filter(Boolean);
+  if(!S.anticipacionEdit) S.anticipacionEdit = {};
+  if(!S.anticipacionEdit[id]) S.anticipacionEdit[id] = {};
+  S.anticipacionEdit[id][k] = val;
+  guardar();
+}
+function cerrarEdtAnt(){
+  edtAntGuarda();
+  $("edtAntFondo").classList.remove("abierto");
+  $("edtAntHoja").classList.remove("abierto");
+  if(planAbierto && S.anticipacionEdit) renderMesDetalle(planAbierto);
 }
 function efemeridesDeMes(txt){
   const e = EFEMERIDES_RD[mesNumDe(txt)];
@@ -1770,7 +1809,13 @@ async function abrirPlanEnCurso(){
     return true;
   }catch(e){ return false; }
 }
+function puedeAbrirMes(mes){
+  const est = estadoMes(mes||"");
+  return est.k!=="pend";
+}
 async function abrirPlan(id){
+  const _p = planesMensuales().find(x=>x.id===id);
+  if(_p && !puedeAbrirMes(_p.mes)){ toast("Esta unidad está Pendiente: aún no está disponible"); return; }
   toast("Cargando plan...");
   const plan = await obtenerPlan(id);
   if(!plan){ toast("No se pudo cargar el plan"); return; }
@@ -1835,10 +1880,16 @@ function renderMesDetalle(plan){
   ${(plan.anticipacion)? `
   <div class="card">
     <h2>${ic("nota")} Cuadro de anticipación</h2>
-    <div class="grid-2col" style="grid-template-columns:1fr 1fr 1fr;gap:8px">
-      <div class="mcard"><div class="m-tit"><div class="n">S</div><b>¿Qué sabemos?</b></div><ul>${(plan.anticipacion.sabemos||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
-      <div class="mcard"><div class="m-tit"><div class="n">Q</div><b>¿Qué queremos saber?</b></div><ul>${(plan.anticipacion.queremos||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
-      <div class="mcard"><div class="m-tit"><div class="n">H</div><b>¿Cómo lo vamos a saber?</b></div><ul>${(plan.anticipacion.como||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+    <p class="muted" style="margin:0 0 8px">Desliza las tarjetas hacia los lados y tócalas para personalizarlas.</p>
+    <div class="antic-carrusel">
+      ${[["sabemos","S","¿Qué sabemos?"],["queremos","Q","¿Qué queremos saber?"],["como","H","¿Cómo lo vamos a saber?"]].map(([k,n,t])=>{
+        const a = anticDe(plan);
+        return `<div class="antic-slide" onclick="editarAntic('${k}')">
+          <div class="m-tit"><div class="n">${n}</div><b>${t}</b></div>
+          <ul>${(a[k]||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+          <p class="antic-hint">✏️ Toca para editar</p>
+        </div>`;
+      }).join("")}
     </div>
   </div>`:""}
   ${(plan.dominios||[]).length? `
@@ -2046,6 +2097,8 @@ function renderDiaria(){
   $("scr-diaria").innerHTML = html;
 }
 function abrirClaseDiaria(claseId){
+  const etq = etqClase(claseId);
+  if(etq.cls==="futura"){ toast("Esta clase aún no está disponible"); return; }
   const w = planDiario();
   planAbierto = w.plan;
   const d = clasePorId(planAbierto, claseId);
@@ -2103,30 +2156,49 @@ function renderClase(claseId){
       </div>
       <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
     </div>`).join("")}
-  <div class="card" style="cursor:pointer" onclick="abrirRegistroDia('${claseId}')">
+  <div class="momento m-exp ${S.ui.compDiaAbierto? "abierta":""}" onclick="toggleCompDia()">
+    <div class="m-head">
+      <div class="m-num">C</div><b>Competencias del día</b>
+      <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </div>
+    <div class="m-cuerpo"><div class="m-scroll">
+      ${(plan.competencias&&plan.competencias.length? plan.competencias : COMPETENCIAS.slice(0,4)).map(c=>`<p class="mg-t">${esc(c.n||c)}</p><p class="mg-d">${esc(c.d||"")}</p>`).join("")}
+    </div></div>
+  </div>
+  <div class="card" style="cursor:pointer" onclick="toggleRegistroDia('${claseId}')">
     <div style="display:flex;align-items:center;gap:8px">
       <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · <span id="regCuenta">${alumnosDe(grupoReg().s, grupoReg().g)}</span> alumnos</h2>
-      <span class="m-chevron" title="Toca para registrar asistencia y evaluación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+      <span class="m-chevron ${S.ui.regAbierto? "gira":""}" title="Toca para registrar asistencia y evaluación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
       <span class="chip chip-mini" style="background:#DCFCE7;color:#15803d">Asistencia: ${cuentaReg(claseId,"A")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>
       ${nivelUsaEvaluacionCualitativa()? `<span class="chip chip-mini" style="background:#FEF3C7;color:#b45309">Evaluación: ${cuentaReg(claseId,"E")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>`:""}
-      <span class="chip chip-mini" style="background:#f0f5ff;color:#0033A0">Toca la tarjeta para registrar</span>
+    </div>
+    <div class="reg-zona ${S.ui.regAbierto? "abierta":""}">
+      ${puedeElegirGrado()? `
+      <div class="grid-2col" style="margin-top:12px">
+        <select class="inp" id="regGrado" onchange="regSel('g')">
+          ${misGradosDocente().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
+        </select>
+        <select class="inp" id="regSec" onchange="regSel('s')">
+          ${misSeccionesDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+        </select>
+      </div>`:""}
+      <div class="tabs" style="margin-top:10px">
+        <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
+        ${nivelUsaEvaluacionCualitativa()? `<div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>`:""}
+      </div>
+      <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
+      ${nivelUsaEvaluacionCualitativa()? `<div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>`:""}
     </div>
   </div>
   <div class="card">
     <h2>${ic("nota")} Nota de observación del día</h2>
     <textarea class="obs" id="obsTxt" placeholder="Registra aquí lo más relevante del día: logros, dificultades, situaciones del grupo...">${esc(S.obs[claseId]||"")}</textarea>
-    <p class="muted" style="margin-top:6px">Se guarda automáticamente y se sincroniza con la dirección.</p>
   </div>
-  <div class="card hist-collap" onclick="toggleDescargas(this)">
+  <div class="card hist-collap" onclick="abrirDescargas('${claseId}')">
     <b>${ic("descarga",16)} Descargar documentos</b>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-  </div>
-  <div id="zonaDescargas" class="zona-desc">
-    <button class="dl alt" onclick="descargarAsistenciaDiaPdf('${claseId}')">${ic("descarga")} Descargar asistencias</button>
-    ${nivelUsaEvaluacionCualitativa()? `<button class="dl alt" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar evaluación</button>`:""}
-    <button class="dl" onclick="descargarPlanDiarioDocx('${claseId}')">${ic("descarga")} Descargar planificación diaria</button>
   </div>
   <div style="height:6px"></div>
   <div style="height:14px"></div>`;
@@ -2212,35 +2284,10 @@ function cuentaReg(claseId, tipo){
   const reg = (tipo==="A"? S.asistencia : S.evaluacion)[claseId]||{};
   return Object.keys(reg).filter(k=>reg[k]).length;
 }
-function abrirRegistroDia(claseId){
-  claseAbiertaId = claseId;
-  const s = planAbierto || planActivo();
-  const d = clasePorId(s, claseId);
-  const n = alumnosDe(grupoReg().s, grupoReg().g);
-  $("regHojaTitulo").textContent = "Registro del día · " + n + " alumnos";
-  $("regHojaSub").textContent = d? (d.etiqueta+" · "+d.titulo) : "";
-  $("regHojaCuerpo").innerHTML = `
-    ${puedeElegirGrado()? `
-    <div class="grid-2col">
-      <select class="inp" id="regGrado" onchange="regSel('g')">
-        ${misGradosDocente().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
-      </select>
-      <select class="inp" id="regSec" onchange="regSel('s')">
-        ${misSeccionesDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
-      </select>
-    </div>`:""}
-    <div class="tabs" style="margin-top:10px">
-      <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
-      ${nivelUsaEvaluacionCualitativa()? `<div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>`:""}
-    </div>
-    <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
-    ${nivelUsaEvaluacionCualitativa()? `<div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>`:""}`;
-  $("regFondo").classList.add("abierto");
-  $("regHoja").classList.add("abierta");
-}
-function cerrarRegistroDia(){
-  $("regFondo").classList.remove("abierto");
-  $("regHoja").classList.remove("abierta");
+function toggleRegistroDia(claseId){
+  S.ui.regAbierto = !S.ui.regAbierto;
+  guardar();
+  renderClase(claseId);
 }
 function tabClase(t){
   if(t==="E" && !nivelUsaEvaluacionCualitativa()) return;
@@ -2657,11 +2704,18 @@ function detenerAlarma(){
   $("modalAlarmaHoja").classList.remove("abierta");
   toast("Alarma detenida · momento finalizado");
 }
-function toggleDescargas(btn){
-  const z = $("zonaDescargas"); if(!z) return;
-  const abierto = !z.classList.contains("abierta");
-  z.classList.toggle("abierta", abierto);
-  btn.classList.toggle("abierto", abierto);
+function abrirDescargas(claseId){
+  $("dlHojaCuerpo").innerHTML = `
+    <button class="dl alt" style="width:100%" onclick="descargarAsistenciaDiaPdf('${claseId}')">${ic("descarga")} Descargar asistencias</button>
+    ${nivelUsaEvaluacionCualitativa()? `<button class="dl alt" style="width:100%" onclick="descargarEvaluacionPdf('${claseId}')">${ic("descarga")} Descargar evaluación</button>`:""}
+    <button class="dl" style="width:100%" onclick="descargarPlanDiarioDocx('${claseId}')">${ic("descarga")} Descargar planificación diaria</button>
+    <button class="btn-mini" style="margin:12px auto 0;display:block" onclick="cerrarDescargas()">Cerrar</button>`;
+  $("dlFondo").classList.add("abierto");
+  $("dlHoja").classList.add("abierta");
+}
+function cerrarDescargas(){
+  $("dlFondo").classList.remove("abierto");
+  $("dlHoja").classList.remove("abierta");
 }
 function resetTimer(){
   T.momentoActivo = null; pintarDurChips();
@@ -3599,7 +3653,7 @@ async function descargarUnidadDocx(){
     ];
     const _efeM = efemeridesDeMes(plan.mes||plan.titulo) || { lema:"—", lista:[], valor:"—" };
     const anticipacionDocx = ()=>{
-      const a = plan.anticipacion;
+      const a = anticDe(plan);
       if(!a) return;
       children.push(
         h2docx(D, "Cuadro de anticipación"),

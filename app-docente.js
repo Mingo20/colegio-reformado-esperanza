@@ -1710,8 +1710,6 @@ function planesMensuales(){
   });
   (S.listaPlanes||[]).forEach(p=>{
     if(/plan anual/i.test(p.titulo)) return;
-    const ym = parseMes(p.mes);
-    if(ym && periodoDeMes(parseInt(ym.slice(5,7)))!==perN) return;
     arr.push({ id:p.id, titulo:p.titulo, mes:p.mes, tema:p.tema, nSem:p.semanas||0, detallado:true, propio:p.propio });
   });
   return arr;
@@ -1749,7 +1747,7 @@ function renderMes(){
     });
     if(!lista.length) html += `<p class="vacio">Aún no hay unidades generadas en este período. Cuando completes tu planificación se mostrarán aquí.</p>`;
   };
-  html += `<div class="sep">${esc(S.docente.periodo)} · Unidades de este período</div>`;
+  html += `<div class="sep">Unidades del año escolar</div>`;
   pintar(unicos);
   html += `<div style="height:14px"></div>`;
   $("scr-mes").innerHTML = html;
@@ -2092,23 +2090,7 @@ function renderClase(claseId){
       </div>
       <div class="ringcol" id="headRings">${ringDuo(claseId)}</div>
     </div>
-    <div class="mcard" style="margin-top:12px">
-      <div class="kv"><b>Fecha</b><span>${esc(claseId)}</span></div>
-      ${efemerideDe(claseId)? `<div class="kv"><b>Conmemoración</b><span>${esc(efemerideDe(claseId))}</span></div>`:""}
-      <div class="kv"><b>Nivel / Grado</b><span>${esc(S.docente.nivel)} · ${esc(S.docente.grado)}</span></div>
-      <div class="kv"><b>Sección</b><span>${esc(S.docente.seccion)}</span></div>
-      <div class="kv"><b>Asignaturas</b><span>${esc(plan.asig || (S.docente.asignaturasSel.length? S.docente.asignaturasSel.join(", ") : (S.docente.nivel==="Inicial"? "Planificación integral del nivel": S.docente.nivel)))}</span></div>
-      <div class="kv"><b>Docente</b><span>${esc(S.docente.nombre||"—")}</span></div>
-    </div>
-  </div>
-  <div class="card">
-    <h2>${ic("objetivo")} Intención pedagógica e indicadores</h2>
-    ${(d.desempenos||[]).map(x=>`<p style="font-size:13px;margin-bottom:6px">✓ ${esc(x)}</p>`).join("")}
-    <h3>Indicador de logro de la sesión</h3>
-    <p class="muted">${esc((d.desempenos||[])[0]||"—")}</p>
-    <h3>Estrategias de enseñanza-aprendizaje</h3>
-    <div><span class="chip">Indagación dialógica</span><span class="chip">Socialización</span><span class="chip">Recuperación de saberes previos</span></div>
-    <div style="margin-top:8px">${COMPETENCIAS.slice(0,3).map(c=>`<span class="chip roja">${esc(c.n)}</span>`).join("")}</div>
+    ${efemerideDe(claseId)? `<div class="mcard" style="margin-top:12px"><div class="kv"><b>Conmemoración</b><span>${esc(efemerideDe(claseId))}</span></div></div>` : ""}
   </div>
   <h2 class="mini">Momentos de la clase</h2>
   ${(S.docente.duracionMin || !duracionActiva())? "" : `<p class="bol-hint">Configura la duración de tu clase en Perfil para activar el temporizador de cada momento</p>`}
@@ -2121,15 +2103,10 @@ function renderClase(claseId){
       </div>
       <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
     </div>`).join("")}
-  <div class="card">
-    <h2>${ic("etiqueta")} Recursos y evaluación</h2>
-    ${(d.recursos||[]).map(r=>`<span class="chip roja">${esc(r)}</span>`).join("")}
-    <div class="nota" style="margin-top:10px"><b>Evaluación</b>Tipo: formativa diaria · Instrumento: observación con lista de cotejo y registro de logros.</div>
-    ${(d.orientacion||"").length? `<div class="nota" style="margin-top:10px"><b>${ic("bombilla")} Orientaciones pedagógicas</b>${esc(d.orientacion)}</div>`:""}
-  </div>
   <div class="card" style="cursor:pointer" onclick="abrirRegistroDia('${claseId}')">
     <div style="display:flex;align-items:center;gap:8px">
       <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · <span id="regCuenta">${alumnosDe(grupoReg().s, grupoReg().g)}</span> alumnos</h2>
+      <span class="m-chevron" title="Toca para registrar asistencia y evaluación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
       <span class="chip chip-mini" style="background:#DCFCE7;color:#15803d">Asistencia: ${cuentaReg(claseId,"A")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>

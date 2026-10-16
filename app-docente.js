@@ -1019,9 +1019,10 @@ function edtAntGuarda(){
   guardar();
 }
 function cerrarEdtAnt(){
-  edtAntGuarda();
+  edtAntGuarda();          // guarda en el navegador (localStorage + IndexedDB)
+  syncEstado();            // envío inmediato a la base de datos central
   $("edtAntFondo").classList.remove("abierto");
-  $("edtAntHoja").classList.remove("abierto");
+  $("edtAntHoja").classList.remove("abierta");
   if(planAbierto && S.anticipacionEdit) renderMesDetalle(planAbierto);
 }
 function efemeridesDeMes(txt){
@@ -2158,22 +2159,23 @@ function renderClase(claseId){
     </div>`).join("")}
   <div class="momento m-exp ${S.ui.compDiaAbierto? "abierta":""}" onclick="toggleCompDia()">
     <div class="m-head">
-      <div class="m-num">C</div><b>Competencias del día</b>
+      <div class="comp-ico" title="Competencias del día"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.8v2.4M12 19.8v2.4M1.8 12h2.4M19.8 12h2.4"/></svg></div><b>Competencias del día</b>
       <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
     </div>
     <div class="m-cuerpo"><div class="m-scroll">
       ${(plan.competencias&&plan.competencias.length? plan.competencias : COMPETENCIAS.slice(0,4)).map(c=>`<p class="mg-t">${esc(c.n||c)}</p><p class="mg-d">${esc(c.d||"")}</p>`).join("")}
     </div></div>
   </div>
-  <div class="card" style="cursor:pointer" onclick="toggleRegistroDia('${claseId}')">
-    <div style="display:flex;align-items:center;gap:8px">
+  <div class="card">
+    <div style="display:flex;align-items:center;gap:8px;cursor:pointer" onclick="toggleRegistroDia('${claseId}')">
       <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · <span id="regCuenta">${alumnosDe(grupoReg().s, grupoReg().g)}</span> alumnos</h2>
       <span class="m-chevron ${S.ui.regAbierto? "gira":""}" title="Toca para registrar asistencia y evaluación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
     </div>
+    ${S.ui.regAbierto? "" : `
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
       <span class="chip chip-mini" style="background:#DCFCE7;color:#15803d">Asistencia: ${cuentaReg(claseId,"A")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>
       ${nivelUsaEvaluacionCualitativa()? `<span class="chip chip-mini" style="background:#FEF3C7;color:#b45309">Evaluación: ${cuentaReg(claseId,"E")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>`:""}
-    </div>
+    </div>`}
     <div class="reg-zona ${S.ui.regAbierto? "abierta":""}">
       ${puedeElegirGrado()? `
       <div class="grid-2col" style="margin-top:12px">

@@ -653,8 +653,8 @@ function estadoDefault(){
     docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,duracionOn:true,alumnos:24,periodo:"1er periodo",recursos:[],estGuarda:null,estrategias:{} },
     asistencia:{}, evaluacion:{}, evalsCom:{}, evalsEvid:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
-    notificaciones:[], vistosPlanes:0,
-    ui:{ progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er periodo", libFecha:null, histFiltro:String(periodoDeMes(parseInt(HOY.slice(5,7)))) },
+    horarios:{}, horAlerta:true, notificaciones:[], vistosPlanes:0,
+    ui:{ horDia:"lun", progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er periodo", libFecha:null, histFiltro:String(periodoDeMes(parseInt(HOY.slice(5,7)))) },
     puntosMigrados: true,
   };
 }
@@ -689,6 +689,8 @@ function normalizar(d){
     cola: d.cola||[], lastSync: d.lastSync||null,
     planesCache: d.planesCache||{}, listaPlanes: d.listaPlanes||null,
     notificaciones: d.notificaciones||[], vistosPlanes: d.vistosPlanes||0,
+    horarios: (d.horarios&&typeof d.horarios==="object")? d.horarios : {},
+    horAlerta: d.horAlerta!==false,
     ui: Object.assign({}, def.ui, d.ui||{}),
     puntosMigrados: true,
     puntos: migrarPuntos(d),
@@ -769,7 +771,7 @@ function guardar(){
   idbGuardar(S);
   programarSyncEstado();
 }
-const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","anticipacionEdit","lastSync"];
+const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","anticipacionEdit","horarios","horAlerta","lastSync"];
 let _syncT = null;
 function programarSyncEstado(){
   if(!S.docente.id || !S.docente.codigo) return;
@@ -991,39 +993,24 @@ function toggleCompDia(){
   renderClase(claseActualId);
 }
 function anticDe(plan){
-  const id = plan && (plan.id || plan.titulo) || "";
-  const ed = (S.anticipacionEdit||{})[id];
-  return Object.assign({}, (plan&&plan.anticipacion)||{}, ed||{});
-}
-function editarAntic(k){
-  const plan = planAbierto || planActivo();
-  const a = anticDe(plan);
-  const titulos = { sabemos:"¿Qué sabemos?", queremos:"¿Qué queremos saber?", como:"¿Cómo lo vamos a saber?" };
-  $("edtAntTitulo").textContent = titulos[k] || "Editar";
-  const ta = $("edtAntTxt");
-  ta.value = (a[k]||[]).join("\n");
-  ta.dataset.campo = k;
-  $("edtAntFondo").classList.add("abierto");
-  $("edtAntHoja").classList.add("abierta");
-  setTimeout(()=>ta.focus(), 250);
-}
-function edtAntGuarda(){
-  const plan = planAbierto || planActivo();
-  const id = plan && (plan.id || plan.titulo) || "";
-  const k = $("edtAntTxt").dataset.campo;
-  if(!k) return;
-  const val = $("edtAntTxt").value.split("\n").map(x=>x.trim()).filter(Boolean);
-  if(!S.anticipacionEdit) S.anticipacionEdit = {};
-  if(!S.anticipacionEdit[id]) S.anticipacionEdit[id] = {};
-  S.anticipacionEdit[id][k] = val;
-  guardar();
-}
-function cerrarEdtAnt(){
-  edtAntGuarda();          // guarda en el navegador (localStorage + IndexedDB)
-  syncEstado();            // envío inmediato a la base de datos central
-  $("edtAntFondo").classList.remove("abierto");
-  $("edtAntHoja").classList.remove("abierta");
-  if(planAbierto && S.anticipacionEdit) renderMesDetalle(planAbierto);
+  /* v32: cuadro de anticipación autogenerado con el perfil del docente
+     y los alumnos registrados en la planificación diaria. */
+  const base = (plan&&plan.anticipacion)||{};
+  const d = S.docente||{};
+  const grado = (plan&&plan.grado) || d.grado || "tu grado";
+  const sec = d.seccion || "A";
+  const n = alumnosDe(sec, grado) || 0;
+  const colegio = d.colegio? " del "+d.colegio : "";
+  const tema = (plan&&plan.tema)? plan.tema : "el tema del mes";
+  const grupo = (n>0? "Somos "+n+" niños y niñas del grupo de "+grado+", sección "+sec+colegio
+                 : "Somos el grupo de "+grado+", sección "+sec+colegio);
+  const jornada = d.jornada? " en la jornada "+d.jornada : "";
+  const doc = d.nombre? " junto a nuestra docente "+d.nombre : "";
+  return {
+    sabemos: [grupo+"."].concat(base.sabemos||[]),
+    queremos: ["Queremos descubrir «"+tema+"» con preguntas, juegos y experiencias."].concat(base.queremos||[]),
+    como: ["Lo lograremos explorando, jugando y conversando"+doc+jornada+"."].concat(base.como||[]),
+  };
 }
 function efemeridesDeMes(txt){
   const e = EFEMERIDES_RD[mesNumDe(txt)];
@@ -1110,6 +1097,152 @@ function planDiario(){
   const lunes = lunesActual(); const domingo = new Date(lunes); domingo.setDate(lunes.getDate()+6);
   const enCurso = (plan.semanas||[]).find(s=>(s.dias||[]).some(d=>{ try{ const f=new Date(d.id+"T12:00"); return f>=lunes && f<=domingo; }catch(e){ return false; } }));
   return { plan, semana: enCurso||null, generado:false };
+}
+
+
+/* ---------- HORARIOS DE CLASE (v32) ---------- */
+const DIAS_HOR = ["lun","mar","mié","jue","vie","sáb","dom"];
+const DIAS_HOR_TXT = { "lun":"Lunes","mar":"Martes","mié":"Miércoles","jue":"Jueves","vie":"Viernes","sáb":"Sábado","dom":"Domingo" };
+function diaHoy(){ return DIAS_HOR[(new Date().getDay()+6)%7]; }
+function minDeHora(t){ try{ const p = String(t).split(":"); return (parseInt(p[0])||0)*60 + (parseInt(p[1])||0); }catch(e){ return 0; } }
+function horaDeMin(m){ return String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0"); }
+
+function renderHorarios(){
+  if(!S.ui.horDia) S.ui.horDia = diaHoy();
+  const d = S.ui.horDia;
+  const lista = (S.horarios||{})[d]||[];
+  const grados = (misGradosDocente().length? misGradosDocente() : [S.docente.grado||"Tu grado"]);
+  const totalSem = DIAS_HOR.reduce((a,x)=>a+(((S.horarios||{})[x]||[]).length),0);
+  const dias = DIAS_HOR.map(x=>`<span class="chip chip-mini ${x===d?"sel":""}" onclick="selectDiaHor('${x}')">${DIAS_HOR_TXT[x]}</span>`).join("");
+  const filas = lista.map((c,i)=>{
+    const secciones = misSeccionesDe(c.grado||grados[0]);
+    const secs = secciones.length? secciones : [c.seccion||"A"];
+    return `
+    <div class="mcard" style="margin-top:10px">
+      <div class="grid-2col" style="margin-top:0">
+        <div class="inp" style="display:flex;flex-direction:column;gap:2px;padding:8px 10px">
+          <small class="muted">Entrada</small>
+          <input type="time" value="${esc(c.ini||"08:00")}" onchange="cambiarHorario('${d}',${i},'ini',this.value)" style="border:none;background:none;font-weight:800;color:var(--azul-osc);font-size:15px;outline:none">
+        </div>
+        <div class="inp" style="display:flex;flex-direction:column;gap:2px;padding:8px 10px">
+          <small class="muted">Salida</small>
+          <input type="time" value="${esc(c.fin||"08:45")}" onchange="cambiarHorario('${d}',${i},'fin',this.value)" style="border:none;background:none;font-weight:800;color:var(--azul-osc);font-size:15px;outline:none">
+        </div>
+      </div>
+      <div class="grid-2col" style="margin-top:8px">
+        <select class="inp" onchange="cambiarHorario('${d}',${i},'grado',this.value)">
+          ${grados.map(g=>`<option value="${esc(g)}" ${g===c.grado?"selected":""}>${esc(g)}</option>`).join("")}
+        </select>
+        <select class="inp" onchange="cambiarHorario('${d}',${i},'seccion',this.value)">
+          ${secs.map(s=>`<option value="${esc(s)}" ${s===c.seccion?"selected":""}>Sección ${esc(s)}</option>`).join("")}
+        </select>
+      </div>
+      <button class="dl dl-chico" style="width:100%;margin-top:8px" onclick="eliminarClaseHorario('${d}',${i})">Quitar esta clase</button>
+    </div>`;
+  }).join("");
+  $("scr-horarios").innerHTML = `
+  <div class="card">
+    <h2>${ic("reloj",16)} Horarios de clase</h2>
+    <p class="muted">Programa hasta una semana de clases con su hora de entrada y salida. Al llegar la hora, sonará una alerta y podrás iniciar la clase de una sola vez.</p>
+    <label style="display:flex;align-items:center;gap:8px;margin-top:10px;cursor:pointer">
+      <input type="checkbox" ${S.horAlerta!==false? "checked":""} onchange="toggleAlarmaHor(this.checked)" style="width:18px;height:18px">
+      <b>Alerta sonora al iniciar y al terminar cada clase</b>
+    </label>
+    <div class="g-chips hscroll" style="margin-top:12px">${dias}</div>
+    <p class="muted" style="margin:8px 0 0">${totalSem} clases programadas esta semana${lista.length? " · "+lista.length+" el "+DIAS_HOR_TXT[d].toLowerCase():""}</p>
+  </div>
+  ${filas}
+  <button class="dl grande" style="width:100%;margin-top:4px" onclick="agregarClaseHorario()">+ Agregar clase del ${esc(DIAS_HOR_TXT[d].toLowerCase())}</button>
+  <div style="height:26px"></div>`;
+}
+function selectDiaHor(d){ S.ui.horDia = d; guardar(); renderHorarios(); }
+function agregarClaseHorario(){
+  const d = S.ui.horDia || diaHoy();
+  if(!S.horarios) S.horarios = {};
+  if(!Array.isArray(S.horarios[d])) S.horarios[d] = [];
+  const prev = S.horarios[d][S.horarios[d].length-1];
+  const ini = prev? horaDeMin(minDeHora(prev.fin)+10) : "08:00";
+  S.horarios[d].push({ ini, fin: horaDeMin(minDeHora(ini)+45), grado: (S.docente.grado||""), seccion: (S.docente.seccion||"A") });
+  guardar(); renderHorarios();
+}
+function eliminarClaseHorario(d, i){
+  if(!S.horarios || !Array.isArray(S.horarios[d])) return;
+  S.horarios[d].splice(i,1);
+  guardar(); renderHorarios();
+}
+function cambiarHorario(d, i, campo, val){
+  if(!S.horarios || !S.horarios[d] || !S.horarios[d][i]) return;
+  S.horarios[d][i][campo] = val;
+  guardar();
+}
+function toggleAlarmaHor(on){ S.horAlerta = !!on; guardar(); }
+
+let _horIv = null, _horAlIv = null, _horKeys = new Set(), horActual = null, horClaseHoy = null;
+function iniciarVigilanteHorarios(){
+  if(_horIv) return;
+  _horIv = setInterval(()=>vigilarHorarios(), 15000);
+  vigilarHorarios();
+}
+function vigilarHorarios(ahora){
+  try{
+    if(!S.docente.id || !S.horarios || S.horAlerta===false) return;
+    ahora = ahora || new Date();
+    const di = DIAS_HOR[(ahora.getDay()+6)%7];
+    const lista = (S.horarios[di]||[]).slice().sort((a,b)=>minDeHora(a.ini)-minDeHora(b.ini));
+    if(!lista.length) return;
+    const m = (ahora.getHours()*60)+ahora.getMinutes();
+    const fecha = ahora.getFullYear()+"-"+String(ahora.getMonth()+1).padStart(2,"0")+"-"+String(ahora.getDate()).padStart(2,"0");
+    lista.forEach((c,i)=>{
+      const base = fecha+"|"+di+"|"+(c.ini||"")+"|"+(c.fin||"")+"|"+(c.grado||"")+"|"+(c.seccion||"");
+      if(m===minDeHora(c.ini) && !_horKeys.has(base+"|ini")){
+        _horKeys.add(base+"|ini");
+        dispararClaseHorario(c, false);
+      } else if(m===minDeHora(c.fin) && !_horKeys.has(base+"|fin")){
+        const sig = lista[i+1];
+        if(sig){ _horKeys.add(base+"|fin"); dispararClaseHorario(sig, true); }
+      }
+    });
+  }catch(e){}
+}
+function dispararClaseHorario(c, siguiente){
+  horActual = c;
+  horClaseHoy = buscarClaseHoyDe(c.grado, c.seccion);
+  $("horAlarmaTitulo").textContent = siguiente? "Siguiente clase" : "¡Hora de clase!";
+  $("horAlarmaInfo").textContent = (c.grado||"")+(c.seccion? " · Sección "+c.seccion : "")+" · "+(c.ini||"")+" a "+(c.fin||"");
+  $("horAlarmaClase").textContent = horClaseHoy? ("Clase de hoy: "+horClaseHoy.titulo) : "No hay clase diaria planificada hoy para este grupo; se abrirá tu planificación diaria.";
+  $("horAlarmaFondo").classList.add("abierto");
+  $("horAlarmaHoja").classList.add("abierta");
+  try{ if(navigator.vibrate) navigator.vibrate([200,100,200]); }catch(e){}
+  detenerSonidoHorario();
+  if(S.horAlerta!==false) _horAlIv = setInterval(beepFuerte, 2500);
+  beepFuerte();
+}
+function detenerSonidoHorario(){ if(_horAlIv){ clearInterval(_horAlIv); _horAlIv = null; } }
+function detenerAlarmaHorario(){
+  detenerSonidoHorario();
+  $("horAlarmaFondo").classList.remove("abierto");
+  $("horAlarmaHoja").classList.remove("abierta");
+  horActual = null; horClaseHoy = null;
+}
+function iniciarClaseHorario(){
+  const clase = horClaseHoy;
+  detenerAlarmaHorario();
+  if(clase && clase.id){ abrirClaseDiaria(clase.id); }
+  else { irA("diaria"); toast("No hay clase diaria de hoy para ese grado"); }
+}
+function buscarClaseHoyDe(grado, seccion){
+  try{
+    const planes = Object.keys(S.planesCache||{}).map(k=>S.planesCache[k]).filter(p=>p && (p.semanas||[]).length);
+    let cands = planes.filter(p=>!grado || p.grado===grado);
+    if(!cands.length) cands = planes;
+    for(const p of cands){
+      for(const s of (p.semanas||[])){
+        const d = (s.dias||[]).find(x=>x.id===HOY);
+        if(d) return d;
+      }
+    }
+  }catch(e){}
+  return null;
 }
 
 /* ---------- NOTIFICACIONES ---------- */
@@ -1240,6 +1373,7 @@ const TITULOS = {
   progreso:["PlanApp","Tu plan listo para enseñar"],
   info:["PlanApp","Tu plan listo para enseñar"],
   notificaciones:["PlanApp","Tu plan listo para enseñar"],
+  horarios:["PlanApp","Tu plan listo para enseñar"],
   onboarding:["PlanApp","Tu plan listo para enseñar"],
 };
 function irA(scr, arg){
@@ -1264,10 +1398,12 @@ function mostrar(scr, arg){
   $("logoTop").style.display = esLimpio? "none":"flex";
   $("ttApp").style.display = esLimpio? "none":"block";
   $("btnCampana").classList.toggle("visible", registrado && !esOnb);
+  const br2 = $("btnReloj"); if(br2) br2.classList.toggle("visible", registrado && !esOnb);
   actualizarCampana();
   actualizarFotoTopbar();
   pantallaActual = scr;
   autoRefresco(scr);
+  if(registrado) iniciarVigilanteHorarios();
   let [t, s] = TITULOS[scr]||["Planificación Docente",""];
   $("tituloApp").textContent = t; if($("subtituloApp")) $("subtituloApp").textContent = s;
   const bg = $("btnGuia");
@@ -1288,6 +1424,7 @@ function mostrar(scr, arg){
   if(scr==="clase") seguro(()=>renderClase(arg));
   if(scr==="progreso") seguro(()=>renderProgreso());
   if(scr==="notificaciones") seguro(()=>renderNotificaciones());
+  if(scr==="horarios") seguro(()=>renderHorarios());
   if(scr==="info") seguro(()=>renderInfo());
   if(scr==="diaria" && S.docente.id){
     abrirPlanEnCurso().then(ok=>{ if(ok && pantallaActual==="diaria") renderDiaria(); });
@@ -1881,14 +2018,13 @@ function renderMesDetalle(plan){
   ${(plan.anticipacion)? `
   <div class="card">
     <h2>${ic("nota")} Cuadro de anticipación</h2>
-    <p class="muted" style="margin:0 0 8px">Desliza las tarjetas hacia los lados y tócalas para personalizarlas.</p>
+    <p class="muted" style="margin:0 0 8px">Generada automáticamente con los datos de tu perfil y tu grupo de estudiantes.</p>
     <div class="antic-carrusel">
-      ${[["sabemos","S","¿Qué sabemos?"],["queremos","Q","¿Qué queremos saber?"],["como","H","¿Cómo lo vamos a saber?"]].map(([k,n,t])=>{
+      ${[["sabemos","¿Qué sabemos?"],["queremos","¿Qué queremos saber?"],["como","¿Cómo lo vamos a saber?"]].map(([k,t])=>{
         const a = anticDe(plan);
-        return `<div class="antic-slide" onclick="editarAntic('${k}')">
-          <div class="m-tit"><div class="n">${n}</div><b>${t}</b></div>
+        return `<div class="antic-slide">
+          <div class="m-tit"><b>${t}</b></div>
           <ul>${(a[k]||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
-          <p class="antic-hint">✏️ Toca para editar</p>
         </div>`;
       }).join("")}
     </div>
@@ -2146,6 +2282,15 @@ function renderClase(claseId){
     </div>
     ${efemerideDe(claseId)? `<div class="mcard" style="margin-top:12px"><div class="kv"><b>Conmemoración</b><span>${esc(efemerideDe(claseId))}</span></div></div>` : ""}
   </div>
+  <div class="momento m-exp ${S.ui.compDiaAbierto? "abierta":""}" onclick="toggleCompDia()">
+    <div class="m-head">
+      <div class="comp-ico" title="Competencias del día"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.8v2.4M12 19.8v2.4M1.8 12h2.4M19.8 12h2.4"/></svg></div><b>Competencias del día</b>
+      <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </div>
+    <div class="m-cuerpo"><div class="m-scroll">
+      ${(plan.competencias&&plan.competencias.length? plan.competencias : COMPETENCIAS.slice(0,4)).map(c=>`<p class="mg-t">${esc(c.n||c)}</p><p class="mg-d">${esc(c.d||"")}</p>`).join("")}
+    </div></div>
+  </div>
   <h2 class="mini">Momentos de la clase</h2>
   ${(S.docente.duracionMin || !duracionActiva())? "" : `<p class="bol-hint">Configura la duración de tu clase en Perfil para activar el temporizador de cada momento</p>`}
   ${momentos.map((m,i)=>`
@@ -2157,28 +2302,14 @@ function renderClase(claseId){
       </div>
       <div class="m-cuerpo"><div class="m-scroll">${guiaMomentoHTML(m, i, d)}</div></div>
     </div>`).join("")}
-  <div class="momento m-exp ${S.ui.compDiaAbierto? "abierta":""}" onclick="toggleCompDia()">
-    <div class="m-head">
-      <div class="comp-ico" title="Competencias del día"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.8v2.4M12 19.8v2.4M1.8 12h2.4M19.8 12h2.4"/></svg></div><b>Competencias del día</b>
-      <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+  <div class="momento m-exp ${S.ui.regAbierto? "abierta":""}" id="regCard">
+    <div class="m-head" onclick="toggleRegistroDia('${claseId}')">
+      <div class="m-num">${ic("usuarios",15)}</div><b>Registro del día · ${alumnosDe(grupoReg().s, grupoReg().g)} alumnos</b>
+      <span class="m-chevron" title="Toca para registrar asistencia y evaluación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
     </div>
     <div class="m-cuerpo"><div class="m-scroll">
-      ${(plan.competencias&&plan.competencias.length? plan.competencias : COMPETENCIAS.slice(0,4)).map(c=>`<p class="mg-t">${esc(c.n||c)}</p><p class="mg-d">${esc(c.d||"")}</p>`).join("")}
-    </div></div>
-  </div>
-  <div class="card">
-    <div style="display:flex;align-items:center;gap:8px;cursor:pointer" onclick="toggleRegistroDia('${claseId}')">
-      <h2 style="flex:1;margin-bottom:0">${ic("usuarios")} Registro del día · <span id="regCuenta">${alumnosDe(grupoReg().s, grupoReg().g)}</span> alumnos</h2>
-      <span class="m-chevron ${S.ui.regAbierto? "gira":""}" title="Toca para registrar asistencia y evaluación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
-    </div>
-    ${S.ui.regAbierto? "" : `
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
-      <span class="chip chip-mini" style="background:#DCFCE7;color:#15803d">Asistencia: ${cuentaReg(claseId,"A")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>
-      ${nivelUsaEvaluacionCualitativa()? `<span class="chip chip-mini" style="background:#FEF3C7;color:#b45309">Evaluación: ${cuentaReg(claseId,"E")}/${alumnosDe(grupoReg().s, grupoReg().g)}</span>`:""}
-    </div>`}
-    <div class="reg-zona ${S.ui.regAbierto? "abierta":""}">
       ${puedeElegirGrado()? `
-      <div class="grid-2col" style="margin-top:12px">
+      <div class="grid-2col" style="margin-top:6px">
         <select class="inp" id="regGrado" onchange="regSel('g')">
           ${misGradosDocente().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
         </select>
@@ -2192,7 +2323,7 @@ function renderClase(claseId){
       </div>
       <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
       ${nivelUsaEvaluacionCualitativa()? `<div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>`:""}
-    </div>
+    </div></div>
   </div>
   <div class="card">
     <h2>${ic("nota")} Nota de observación del día</h2>
@@ -2440,6 +2571,8 @@ function abrirEvalAlumno(claseId, n){
   $("modalEval2Hoja").classList.add("abierta");
 }
 function cerrarEvalAlumno(){
+  clearTimeout(_ev2Sync); clearTimeout(_ev2Deb);
+  autoGuardarEval2();
   $("modalEval2Fondo").classList.remove("abierto");
   $("modalEval2Hoja").classList.remove("abierta");
   eval2 = null;
@@ -2447,7 +2580,7 @@ function cerrarEvalAlumno(){
 let _ev2Deb = null;
 function onEval2ObsInput(){
   clearTimeout(_ev2Deb);
-  _ev2Deb = setTimeout(autoGuardarEval2, 600);
+  _ev2Deb = setTimeout(autoGuardarEval2, EVAL2_SYNC_MS);
 }
 function autoGuardarEval2(){
   if(!eval2 || !eval2.estado) return;
@@ -2469,11 +2602,27 @@ function autoGuardarEval2(){
     }
   }catch(e){}
 }
+const EVAL2_SYNC_MS = 10000;
+let _ev2Sync = null;
+function programarEval2Sync(){
+  clearTimeout(_ev2Sync);
+  _ev2Sync = setTimeout(autoGuardarEval2, EVAL2_SYNC_MS);
+}
 function selEval2Estado(e){
   if(!eval2) return;
   eval2.estado = e;
+  const listas = cotejoDe(eval2.claseId);
+  const items = listas[e]||COTEJO_BASE[e]||[];
+  const ta = $("eval2Obs");
+  if(ta) ta.value = items.map((x,i)=>(i+1)+". "+x).join("\n");
+  if(!eval2.evid[e]) eval2.evid[e] = {};
+  try{
+    if(!S.evaluacion[eval2.claseId]) S.evaluacion[eval2.claseId] = {};
+    S.evaluacion[eval2.claseId][eval2.n] = e;
+    guardar();
+  }catch(_x){}
   pintarEval2Estados(); pintarEval2Cotejo();
-  autoGuardarEval2();
+  programarEval2Sync();
 }
 function pintarEval2Estados(){
   const map = { "Logrado":"ev2-L", "En proceso":"ev2-E", "Iniciado":"ev2-I" };
@@ -2495,32 +2644,6 @@ function pintarEval2Cotejo(){
     + `<p class="mg-nota" style="margin-top:2px">Lista de cotejo de referencia: observa estos logros en el alumno o la alumna al evaluar el estado «${esc(eval2.estado)}».</p>`;
 }
 function toggleEvid(ix){ /* v27: el cotejo es guía de observación, ya no se selecciona */ }
-function confirmarEvalAlumno(){
-  if(!eval2) return;
-  if(!eval2.estado){ toast("Selecciona un estado: Logrado, En proceso o Iniciado"); return; }
-  const claseId = eval2.claseId, n = eval2.n, estado = eval2.estado;
-  const listas = cotejoDe(claseId);
-  const items = listas[estado]||COTEJO_BASE[estado]||[];
-  const obsEl = $("eval2Obs");
-  const obs = obsEl? (obsEl.value||"").trim() : "";
-  if(!S.evaluacion[claseId]) S.evaluacion[claseId] = {};
-  S.evaluacion[claseId][n] = estado;
-  const comFinal = obs || "";
-  if(!S.evalsCom) S.evalsCom = {};
-  if(!S.evalsEvid) S.evalsEvid = {};
-  const k = claseId+"|"+n;
-  if(comFinal) S.evalsCom[k] = comFinal; else delete S.evalsCom[k];
-  S.evalsEvid[k] = { estado, sel: Object.assign({}, eval2.evid[estado]||{}), obs };
-  guardar();
-  syncAhora();
-  encolar("evaluacion", claseId, { alumno:"Alumno "+n, estado });
-  syncAhora();
-  cerrarEvalAlumno();
-  toast("Alumno "+n+": "+estado+" registrado");
-  if(!$("scr-clase").classList.contains("visible")) return;
-  $("zonaE").innerHTML = alumnosHTML(claseId,"E");
-  const el = $("headRings"); if(el) el.innerHTML = ringDuo(claseId);
-}
 /* ---------- v16: Momentos expandibles ---------- */
 function toggleMomentoCard(i){
   const t = $("mexp-"+i);
@@ -2877,7 +3000,7 @@ function histEvalsHTML(n){
       const com = (S.evalsCom||{})[k+"|"+n];
       return `<div class="g-paso"><b><span class="chip chip-mini" style="${cols[e]||""}">${esc(e)}</span> · ${esc(fmtFechaLinda(k))}${cot? " · "+cot+" logros del cotejo":""}</b><span>${com? esc(com) : (cot? "Evidencias marcadas en la lista de cotejo." : "")}</span></div>`;
     }).join("");
-    return `<h3 style="margin:12px 2px 6px;font-size:13px;color:#001C5A">Historial de evaluaciones con cotejo</h3>${filas}`;
+    return `<h3 style="margin:12px 2px 6px;font-size:13px;color:#001C5A">Historial de evaluaciones</h3>${filas}`;
   }catch(e){ return ""; }
 }
 function abrirHistorial(n, fuente){
@@ -2940,9 +3063,7 @@ function abrirHistorial(n, fuente){
     <p class="muted" style="font-size:11.5px;margin-top:4px">La calificación se registra con la fecha de hoy (${esc(fmtFechaLinda(HOY))}) en ${esc(periodoSel)}.</p>
     <div class="hist-sticky"><button class="dl grande" style="margin:0" onclick="registrarPunto()">${ic("cuaderno")} Registrar calificación</button></div>
   </div>`}
-  <h3 class="hist-sep">Historial ${esInicial? "de evaluaciones":"de calificaciones"} · ${esc(periodoSel)}</h3>
-  ${esInicial? "" : filas}
-  ${esInicial? filasEval(n) : ""}
+  ${esInicial? "" : `<h3 class="hist-sep">Historial de calificaciones · ${esc(periodoSel)}</h3>${filas}`}
   <div style="height:26px"></div>`;
   $("modalHistFondo").classList.add("abierto");
   $("modalHistHoja").classList.add("abierta");

@@ -1,0 +1,362 @@
+[
+ {
+  "numero": 1,
+  "tema": "Carreras y relevos con aros y cintas",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre carreras y relevos con aros y cintas y su relación con La Navidad?",
+  "desarrollo": "Carreras y relevos con aros y cintas en el marco de la unidad «Atletismo y fiestas».",
+  "cierre": "Evidencia esperada: el estudiante practica «Carreras y relevos con aros y cintas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos carreras y relevos con aros y cintas",
+    "desempenos": [
+     "Practica y disfruta «Carreras y relevos con aros y cintas».",
+     "Participa con autonomía en la actividad «Investigamos carreras y relevos con aros y cintas»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Carreras y relevos con aros y cintas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Carreras y relevos con aros y cintas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Carreras y relevos con aros y cintas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Carreras y relevos con aros y cintas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Carreras y relevos con aros y cintas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Carreras y relevos con aros y cintas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos carreras y relevos con aros y cintas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Practicamos carreras y relevos con aros y cintas",
+    "desempenos": [
+     "Practica y disfruta «Carreras y relevos con aros y cintas».",
+     "Participa con autonomía en la actividad «Practicamos carreras y relevos con aros y cintas»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Carreras y relevos con aros y cintas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Carreras y relevos con aros y cintas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Carreras y relevos con aros y cintas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Carreras y relevos con aros y cintas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Carreras y relevos con aros y cintas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Carreras y relevos con aros y cintas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos carreras y relevos con aros y cintas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Saltos y lanzamientos navideños",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre saltos y lanzamientos navideños y su relación con La Navidad?",
+  "desarrollo": "Saltos y lanzamientos navideños en el marco de la unidad «Atletismo y fiestas».",
+  "cierre": "Evidencia esperada: el estudiante practica «Saltos y lanzamientos navideños» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Investigamos saltos y lanzamientos navideños",
+    "desempenos": [
+     "Practica y disfruta «Saltos y lanzamientos navideños».",
+     "Participa con autonomía en la actividad «Investigamos saltos y lanzamientos navideños»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Saltos y lanzamientos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Saltos y lanzamientos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Saltos y lanzamientos navideños» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Saltos y lanzamientos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Saltos y lanzamientos navideños, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Saltos y lanzamientos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos saltos y lanzamientos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Practicamos saltos y lanzamientos navideños",
+    "desempenos": [
+     "Practica y disfruta «Saltos y lanzamientos navideños».",
+     "Participa con autonomía en la actividad «Practicamos saltos y lanzamientos navideños»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Saltos y lanzamientos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Saltos y lanzamientos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Saltos y lanzamientos navideños» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Saltos y lanzamientos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Saltos y lanzamientos navideños, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Saltos y lanzamientos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos saltos y lanzamientos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Coreografías de fin de año",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre coreografías de fin de año y su relación con La Navidad?",
+  "desarrollo": "Coreografías de fin de año en el marco de la unidad «Atletismo y fiestas».",
+  "cierre": "Evidencia esperada: el estudiante practica «Coreografías de fin de año» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Investigamos coreografías de fin de año",
+    "desempenos": [
+     "Practica y disfruta «Coreografías de fin de año».",
+     "Participa con autonomía en la actividad «Investigamos coreografías de fin de año»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Coreografías de fin de año» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Coreografías de fin de año».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Coreografías de fin de año» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Coreografías de fin de año» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Coreografías de fin de año, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Coreografías de fin de año» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos coreografías de fin de año»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

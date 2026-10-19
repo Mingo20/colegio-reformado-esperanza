@@ -1,0 +1,1032 @@
+[
+ {
+  "numero": 1,
+  "tema": "Identificación del grado de un polinomio",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre identificación del grado de un polinomio y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Identificación del grado de un polinomio en el marco de la unidad «Álgebra para entender mi mundo».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Identificación del grado de un polinomio» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Investigamos identificación del grado de un polinomio",
+    "desempenos": [
+     "Comprende y aplica «Identificación del grado de un polinomio».",
+     "Participa con autonomía en la actividad «Investigamos identificación del grado de un polinomio»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Identificación del grado de un polinomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Identificación del grado de un polinomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Identificación del grado de un polinomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Identificación del grado de un polinomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Identificación del grado de un polinomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Identificación del grado de un polinomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos identificación del grado de un polinomio»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Practicamos identificación del grado de un polinomio",
+    "desempenos": [
+     "Comprende y aplica «Identificación del grado de un polinomio».",
+     "Participa con autonomía en la actividad «Practicamos identificación del grado de un polinomio»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Identificación del grado de un polinomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Identificación del grado de un polinomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Identificación del grado de un polinomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Identificación del grado de un polinomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Identificación del grado de un polinomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Identificación del grado de un polinomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos identificación del grado de un polinomio»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Aplicamos identificación del grado de un polinomio",
+    "desempenos": [
+     "Comprende y aplica «Identificación del grado de un polinomio».",
+     "Participa con autonomía en la actividad «Aplicamos identificación del grado de un polinomio»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Identificación del grado de un polinomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Identificación del grado de un polinomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Identificación del grado de un polinomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Identificación del grado de un polinomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Identificación del grado de un polinomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Identificación del grado de un polinomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos identificación del grado de un polinomio»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Creamos con identificación del grado de un polinomio",
+    "desempenos": [
+     "Comprende y aplica «Identificación del grado de un polinomio».",
+     "Participa con autonomía en la actividad «Creamos con identificación del grado de un polinomio»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Identificación del grado de un polinomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Identificación del grado de un polinomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Identificación del grado de un polinomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Identificación del grado de un polinomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Identificación del grado de un polinomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Identificación del grado de un polinomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con identificación del grado de un polinomio»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Cálculo del valor numérico de polinomios",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre cálculo del valor numérico de polinomios y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Cálculo del valor numérico de polinomios en el marco de la unidad «Álgebra para entender mi mundo».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Cálculo del valor numérico de polinomios» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Investigamos cálculo del valor numérico de polinomios",
+    "desempenos": [
+     "Comprende y aplica «Cálculo del valor numérico de polinomios».",
+     "Participa con autonomía en la actividad «Investigamos cálculo del valor numérico de polinomios»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo del valor numérico de polinomios» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo del valor numérico de polinomios».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo del valor numérico de polinomios» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo del valor numérico de polinomios» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo del valor numérico de polinomios, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo del valor numérico de polinomios» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos cálculo del valor numérico de polinomios»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Practicamos cálculo del valor numérico de polinomios",
+    "desempenos": [
+     "Comprende y aplica «Cálculo del valor numérico de polinomios».",
+     "Participa con autonomía en la actividad «Practicamos cálculo del valor numérico de polinomios»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo del valor numérico de polinomios» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo del valor numérico de polinomios».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo del valor numérico de polinomios» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo del valor numérico de polinomios» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo del valor numérico de polinomios, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo del valor numérico de polinomios» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos cálculo del valor numérico de polinomios»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Aplicamos cálculo del valor numérico de polinomios",
+    "desempenos": [
+     "Comprende y aplica «Cálculo del valor numérico de polinomios».",
+     "Participa con autonomía en la actividad «Aplicamos cálculo del valor numérico de polinomios»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo del valor numérico de polinomios» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo del valor numérico de polinomios».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo del valor numérico de polinomios» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo del valor numérico de polinomios» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo del valor numérico de polinomios, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo del valor numérico de polinomios» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos cálculo del valor numérico de polinomios»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención en el marco de la unidad «Álgebra para entender mi mundo».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Clasificación de polinomios según el número de términos, ",
+    "desempenos": [
+     "Comprende y aplica «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+     "Participa con autonomía en la actividad «Clasificación de polinomios según el número de términos, »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Clasificación de polinomios según el número de términos, »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Clasificación de polinomios según el número de términos, ",
+    "desempenos": [
+     "Comprende y aplica «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+     "Participa con autonomía en la actividad «Clasificación de polinomios según el número de términos, »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Clasificación de polinomios según el número de términos, »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Clasificación de polinomios según el número de términos, ",
+    "desempenos": [
+     "Comprende y aplica «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+     "Participa con autonomía en la actividad «Clasificación de polinomios según el número de términos, »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Clasificación de polinomios según el número de términos, »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Clasificación de polinomios según el número de términos, ",
+    "desempenos": [
+     "Comprende y aplica «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+     "Participa con autonomía en la actividad «Clasificación de polinomios según el número de términos, »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Clasificación de polinomios según el número de términos, Identificación de polinomios especiales. Obtención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Clasificación de polinomios según el número de términos, »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio en el marco de la unidad «Álgebra para entender mi mundo».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Modelación y resolución de expresiones algebraicas a parti",
+    "desempenos": [
+     "Comprende y aplica «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+     "Participa con autonomía en la actividad «Modelación y resolución de expresiones algebraicas a parti»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Modelación y resolución de expresiones algebraicas a parti»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Modelación y resolución de expresiones algebraicas a parti",
+    "desempenos": [
+     "Comprende y aplica «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+     "Participa con autonomía en la actividad «Modelación y resolución de expresiones algebraicas a parti»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Modelación y resolución de expresiones algebraicas a parti»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Modelación y resolución de expresiones algebraicas a parti",
+    "desempenos": [
+     "Comprende y aplica «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+     "Participa con autonomía en la actividad «Modelación y resolución de expresiones algebraicas a parti»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Modelación y resolución de expresiones algebraicas a parti»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Modelación y resolución de expresiones algebraicas a parti",
+    "desempenos": [
+     "Comprende y aplica «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+     "Participa con autonomía en la actividad «Modelación y resolución de expresiones algebraicas a parti»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Modelación y resolución de expresiones algebraicas a partir, Obtención de productos notables: cuadrado de un binomio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Modelación y resolución de expresiones algebraicas a parti»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

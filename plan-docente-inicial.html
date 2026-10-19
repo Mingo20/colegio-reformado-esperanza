@@ -132,11 +132,11 @@ body{
 .momento .m-head{display:flex;align-items:center;gap:10px;margin-bottom:6px;position:relative}
 .momento .m-num{width:30px;height:30px;border-radius:11px;background:linear-gradient(135deg,var(--azul),var(--azul-med));color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .momento .m-head b{font-size:16px;color:var(--azul-osc)}
-.momento .m-head .dur{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:11px;font-weight:700;color:var(--azul);background:#fff;border:1px solid #d5dbe7;padding:4px 10px;border-radius:999px;display:flex;align-items:center;gap:4px;z-index:2;box-shadow:0 2px 8px rgba(0,51,160,.12)}
+.momento .m-head .dur{position:absolute;left:50%;top:6px;transform:translateX(-50%);font-size:10.5px;font-weight:700;color:var(--azul);background:#fff;border:1px solid #d5dbe7;padding:2px 9px;border-radius:999px;display:flex;align-items:center;gap:4px;z-index:2;box-shadow:0 2px 8px rgba(0,51,160,.12);transition:none}
 .comp-ico{width:30px;height:30px;border-radius:11px;background:linear-gradient(135deg,var(--azul),var(--azul-med));color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .comp-ico svg{width:17px;height:17px}
 .momento .m-head .dur-chip:active{transform:translate(-50%,-50%)}.momento .m-head .dur-chip:hover{transform:translate(-50%,-50%)}
-@media (max-width:400px){.momento .m-head b{font-size:14px}.momento .m-head .dur{position:static;transform:none;margin-left:auto}}
+@media (max-width:400px){.momento .m-head b{font-size:14px}.momento .m-head .dur{transform:translateX(-50%)}}
 .momento .m-head .dur svg{width:12px;height:12px}
 .momento .prop{font-size:12.5px;color:var(--tinta-suave);font-style:italic;margin-bottom:8px}
 .momento ol{margin-left:20px}
@@ -343,6 +343,7 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .onb-aviso-ico svg{width:20px;height:20px}
 @keyframes latido{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
 .card.foto-card{position:relative;padding-bottom:88px;margin-bottom:42px}
+.rf-linea{height:5px;width:72%;margin:0 auto 10px;border-radius:999px;background:linear-gradient(90deg,#CE1126 0%,#CE1126 26%,#fff 50%,#CE1126 74%,#CE1126 100%)}
 .foto-wrap{position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);width:112px;height:112px;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:0 6px 18px rgba(11,46,143,.28);background:#e8edf7}
 .foto-wrap img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .m-acciones{display:flex;justify-content:flex-end;padding:0 12px 12px}
@@ -361,7 +362,7 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .prog-card .pc-rings{display:flex;gap:14px;align-items:center}
 .prog-card .pc-rings .ringitem{text-align:center}
 .prog-card .pc-rings .ringitem small{display:block;font-size:9px;font-weight:800;color:var(--tinta-suave);margin-top:2px}
-.hist-collap{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;cursor:pointer;margin:12px 0}
+.hist-collap{display:flex;align-items:center;justify-content:space-between;padding:15px 16px;border:1px solid #e2e8f0;border-radius:20px;background:#f8fafc;cursor:pointer;margin:12px 0}
 .hist-collap b{font-size:13px;display:flex;align-items:center;gap:8px}
 .hist-collap svg{width:18px;height:18px;transition:transform .2s}
 .hist-collap.abierto svg{transform:rotate(180deg)}
@@ -627,7 +628,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
   <h2 id="horAlarmaTitulo" style="margin:4px 0">¡Hora de clase!</h2>
   <p class="g-sub" id="horAlarmaInfo"></p>
   <p class="muted" id="horAlarmaClase" style="margin:10px 0 4px"></p>
-  <button class="dl grande" style="margin:12px auto 0;width:100%" onclick="iniciarClaseHorario()">Iniciar clase</button>
+  <button class="dl grande" id="horAlarmaBtn" style="margin:12px auto 0;width:100%" onclick="iniciarClaseHorario()">Iniciar clase</button>
   <button class="dl dl-chico" style="margin:10px auto 0;width:100%" onclick="detenerAlarmaHorario()">Descartar</button>
 </div>
 <div class="g-hoja" id="asisHoja" style="max-width:400px">
@@ -684,7 +685,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=33"></script>
+<script src="app-docente.js?v=34"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

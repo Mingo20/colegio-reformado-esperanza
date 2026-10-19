@@ -1,0 +1,560 @@
+[
+ {
+  "numero": 1,
+  "tema": "El poema navideño: métrica y rima",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre el poema navideño: métrica y rima y su relación con La Navidad?",
+  "desarrollo": "El poema navideño: métrica y rima en el marco de la unidad «Poética y teatro de Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «El poema navideño: métrica y rima» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos el poema navideño: métrica y rima",
+    "desempenos": [
+     "Comprende y produce «El poema navideño: métrica y rima».",
+     "Participa con autonomía en la actividad «Investigamos el poema navideño: métrica y rima»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El poema navideño: métrica y rima» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El poema navideño: métrica y rima».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El poema navideño: métrica y rima» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El poema navideño: métrica y rima» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El poema navideño: métrica y rima, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El poema navideño: métrica y rima» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos el poema navideño: métrica y rima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Practicamos el poema navideño: métrica y rima",
+    "desempenos": [
+     "Comprende y produce «El poema navideño: métrica y rima».",
+     "Participa con autonomía en la actividad «Practicamos el poema navideño: métrica y rima»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El poema navideño: métrica y rima» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El poema navideño: métrica y rima».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El poema navideño: métrica y rima» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El poema navideño: métrica y rima» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El poema navideño: métrica y rima, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El poema navideño: métrica y rima» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el poema navideño: métrica y rima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "La obra dramática: diálogos y acotaciones",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre la obra dramática: diálogos y acotaciones y su relación con La Navidad?",
+  "desarrollo": "La obra dramática: diálogos y acotaciones en el marco de la unidad «Poética y teatro de Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «La obra dramática: diálogos y acotaciones» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Investigamos la obra dramática: diálogos y acotaciones",
+    "desempenos": [
+     "Comprende y produce «La obra dramática: diálogos y acotaciones».",
+     "Participa con autonomía en la actividad «Investigamos la obra dramática: diálogos y acotaciones»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La obra dramática: diálogos y acotaciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La obra dramática: diálogos y acotaciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La obra dramática: diálogos y acotaciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La obra dramática: diálogos y acotaciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La obra dramática: diálogos y acotaciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La obra dramática: diálogos y acotaciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos la obra dramática: diálogos y acotaciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos la obra dramática: diálogos y acotaciones",
+    "desempenos": [
+     "Comprende y produce «La obra dramática: diálogos y acotaciones».",
+     "Participa con autonomía en la actividad «Practicamos la obra dramática: diálogos y acotaciones»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La obra dramática: diálogos y acotaciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La obra dramática: diálogos y acotaciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La obra dramática: diálogos y acotaciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La obra dramática: diálogos y acotaciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La obra dramática: diálogos y acotaciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La obra dramática: diálogos y acotaciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la obra dramática: diálogos y acotaciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Aplicamos la obra dramática: diálogos y acotaciones",
+    "desempenos": [
+     "Comprende y produce «La obra dramática: diálogos y acotaciones».",
+     "Participa con autonomía en la actividad «Aplicamos la obra dramática: diálogos y acotaciones»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La obra dramática: diálogos y acotaciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La obra dramática: diálogos y acotaciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La obra dramática: diálogos y acotaciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La obra dramática: diálogos y acotaciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La obra dramática: diálogos y acotaciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La obra dramática: diálogos y acotaciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos la obra dramática: diálogos y acotaciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "La pastorela dominicana: lectura dramatizada",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre la pastorela dominicana: lectura dramatizada y su relación con La Navidad?",
+  "desarrollo": "La pastorela dominicana: lectura dramatizada en el marco de la unidad «Poética y teatro de Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «La pastorela dominicana: lectura dramatizada» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "La pastorela dominicana: lectura dramatizada",
+    "desempenos": [
+     "Comprende y produce «La pastorela dominicana: lectura dramatizada».",
+     "Participa con autonomía en la actividad «La pastorela dominicana: lectura dramatizada»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La pastorela dominicana: lectura dramatizada» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La pastorela dominicana: lectura dramatizada».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La pastorela dominicana: lectura dramatizada» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La pastorela dominicana: lectura dramatizada» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La pastorela dominicana: lectura dramatizada, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La pastorela dominicana: lectura dramatizada» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «La pastorela dominicana: lectura dramatizada»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "La pastorela dominicana: lectura dramatizada",
+    "desempenos": [
+     "Comprende y produce «La pastorela dominicana: lectura dramatizada».",
+     "Participa con autonomía en la actividad «La pastorela dominicana: lectura dramatizada»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La pastorela dominicana: lectura dramatizada» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La pastorela dominicana: lectura dramatizada».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La pastorela dominicana: lectura dramatizada» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La pastorela dominicana: lectura dramatizada» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La pastorela dominicana: lectura dramatizada, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La pastorela dominicana: lectura dramatizada» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «La pastorela dominicana: lectura dramatizada»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "La pastorela dominicana: lectura dramatizada",
+    "desempenos": [
+     "Comprende y produce «La pastorela dominicana: lectura dramatizada».",
+     "Participa con autonomía en la actividad «La pastorela dominicana: lectura dramatizada»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La pastorela dominicana: lectura dramatizada» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La pastorela dominicana: lectura dramatizada».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La pastorela dominicana: lectura dramatizada» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La pastorela dominicana: lectura dramatizada» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La pastorela dominicana: lectura dramatizada, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La pastorela dominicana: lectura dramatizada» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «La pastorela dominicana: lectura dramatizada»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

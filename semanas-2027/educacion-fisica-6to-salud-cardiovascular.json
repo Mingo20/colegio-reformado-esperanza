@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Resistencia aeróbica",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre resistencia aeróbica y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Resistencia aeróbica en el marco de la unidad «Salud cardiovascular»: Salud cardiovascular.",
+  "cierre": "Evidencia esperada: el estudiante practica «Resistencia aeróbica» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-05",
+    "etiqueta": "lun 5 oct",
+    "titulo": "Descubrimos resistencia aeróbica",
+    "desempenos": [
+     "Practica y disfruta «Resistencia aeróbica».",
+     "Participa con autonomía en la actividad «Descubrimos resistencia aeróbica»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Resistencia aeróbica» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resistencia aeróbica».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resistencia aeróbica» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos resistencia aeróbica», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Resistencia aeróbica» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resistencia aeróbica, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Resistencia aeróbica» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos resistencia aeróbica»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-07",
+    "etiqueta": "mié 7 oct",
+    "titulo": "Practicamos resistencia aeróbica",
+    "desempenos": [
+     "Practica y disfruta «Resistencia aeróbica».",
+     "Participa con autonomía en la actividad «Practicamos resistencia aeróbica»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Resistencia aeróbica» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resistencia aeróbica».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resistencia aeróbica» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos resistencia aeróbica», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Resistencia aeróbica» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resistencia aeróbica, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Resistencia aeróbica» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos resistencia aeróbica»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Circuito de intensidad moderada",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre circuito de intensidad moderada y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Circuito de intensidad moderada en el marco de la unidad «Salud cardiovascular»: Salud cardiovascular.",
+  "cierre": "Evidencia esperada: el estudiante practica «Circuito de intensidad moderada» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-12",
+    "etiqueta": "lun 12 oct",
+    "titulo": "Descubrimos circuito de intensidad moderada",
+    "desempenos": [
+     "Practica y disfruta «Circuito de intensidad moderada».",
+     "Participa con autonomía en la actividad «Descubrimos circuito de intensidad moderada»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Circuito de intensidad moderada» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuito de intensidad moderada».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuito de intensidad moderada» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos circuito de intensidad moderada», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Circuito de intensidad moderada» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuito de intensidad moderada, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Circuito de intensidad moderada» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos circuito de intensidad moderada»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-14",
+    "etiqueta": "mié 14 oct",
+    "titulo": "Practicamos circuito de intensidad moderada",
+    "desempenos": [
+     "Practica y disfruta «Circuito de intensidad moderada».",
+     "Participa con autonomía en la actividad «Practicamos circuito de intensidad moderada»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Circuito de intensidad moderada» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuito de intensidad moderada».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuito de intensidad moderada» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos circuito de intensidad moderada», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Circuito de intensidad moderada» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuito de intensidad moderada, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Circuito de intensidad moderada» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos circuito de intensidad moderada»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Hidratación y esfuerzo",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre hidratación y esfuerzo y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Hidratación y esfuerzo en el marco de la unidad «Salud cardiovascular»: Salud cardiovascular.",
+  "cierre": "Evidencia esperada: el estudiante practica «Hidratación y esfuerzo» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-19",
+    "etiqueta": "lun 19 oct",
+    "titulo": "Descubrimos hidratación y esfuerzo",
+    "desempenos": [
+     "Practica y disfruta «Hidratación y esfuerzo».",
+     "Participa con autonomía en la actividad «Descubrimos hidratación y esfuerzo»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Hidratación y esfuerzo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Hidratación y esfuerzo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Hidratación y esfuerzo» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos hidratación y esfuerzo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Hidratación y esfuerzo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Hidratación y esfuerzo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Hidratación y esfuerzo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos hidratación y esfuerzo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-21",
+    "etiqueta": "mié 21 oct",
+    "titulo": "Practicamos hidratación y esfuerzo",
+    "desempenos": [
+     "Practica y disfruta «Hidratación y esfuerzo».",
+     "Participa con autonomía en la actividad «Practicamos hidratación y esfuerzo»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Hidratación y esfuerzo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Hidratación y esfuerzo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Hidratación y esfuerzo» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos hidratación y esfuerzo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Hidratación y esfuerzo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Hidratación y esfuerzo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Hidratación y esfuerzo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos hidratación y esfuerzo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: reto saludable 6to",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: reto saludable 6to y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Proyecto: reto saludable 6to en el marco de la unidad «Salud cardiovascular»: Salud cardiovascular.",
+  "cierre": "Evidencia esperada: el estudiante practica «Proyecto: reto saludable 6to» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-26",
+    "etiqueta": "lun 26 oct",
+    "titulo": "Descubrimos proyecto: reto saludable 6to",
+    "desempenos": [
+     "Practica y disfruta «Proyecto: reto saludable 6to».",
+     "Participa con autonomía en la actividad «Descubrimos proyecto: reto saludable 6to»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Proyecto: reto saludable 6to» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: reto saludable 6to».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: reto saludable 6to» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos proyecto: reto saludable 6to», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: reto saludable 6to» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: reto saludable 6to, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: reto saludable 6to» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos proyecto: reto saludable 6to»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-28",
+    "etiqueta": "mié 28 oct",
+    "titulo": "Practicamos proyecto: reto saludable 6to",
+    "desempenos": [
+     "Practica y disfruta «Proyecto: reto saludable 6to».",
+     "Participa con autonomía en la actividad «Practicamos proyecto: reto saludable 6to»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Proyecto: reto saludable 6to» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: reto saludable 6to».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: reto saludable 6to» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos proyecto: reto saludable 6to», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: reto saludable 6to» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: reto saludable 6to, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: reto saludable 6to» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos proyecto: reto saludable 6to»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

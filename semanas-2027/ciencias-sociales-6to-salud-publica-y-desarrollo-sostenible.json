@@ -1,0 +1,636 @@
+[
+ {
+  "numero": 1,
+  "tema": "Indicadores de desarrollo humano",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre indicadores de desarrollo humano y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Indicadores de desarrollo humano en el marco de la unidad «Salud pública y desarrollo sostenible»: Salud pública y desarrollo sostenible.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Indicadores de desarrollo humano» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-01",
+    "etiqueta": "jue 1 oct",
+    "titulo": "Descubrimos indicadores de desarrollo humano",
+    "desempenos": [
+     "Comprende y valora «Indicadores de desarrollo humano».",
+     "Participa con autonomía en la actividad «Descubrimos indicadores de desarrollo humano»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Indicadores de desarrollo humano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Indicadores de desarrollo humano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Indicadores de desarrollo humano» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos indicadores de desarrollo humano», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Indicadores de desarrollo humano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Indicadores de desarrollo humano, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Indicadores de desarrollo humano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos indicadores de desarrollo humano»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-06",
+    "etiqueta": "mar 6 oct",
+    "titulo": "Practicamos indicadores de desarrollo humano",
+    "desempenos": [
+     "Comprende y valora «Indicadores de desarrollo humano».",
+     "Participa con autonomía en la actividad «Practicamos indicadores de desarrollo humano»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Indicadores de desarrollo humano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Indicadores de desarrollo humano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Indicadores de desarrollo humano» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos indicadores de desarrollo humano», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Indicadores de desarrollo humano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Indicadores de desarrollo humano, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Indicadores de desarrollo humano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos indicadores de desarrollo humano»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-08",
+    "etiqueta": "jue 8 oct",
+    "titulo": "Aplicamos indicadores de desarrollo humano",
+    "desempenos": [
+     "Comprende y valora «Indicadores de desarrollo humano».",
+     "Participa con autonomía en la actividad «Aplicamos indicadores de desarrollo humano»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Indicadores de desarrollo humano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Indicadores de desarrollo humano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Indicadores de desarrollo humano» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Aplicamos indicadores de desarrollo humano», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Indicadores de desarrollo humano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Indicadores de desarrollo humano, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Indicadores de desarrollo humano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos indicadores de desarrollo humano»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Salud pública en República Dominicana",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre salud pública en República Dominicana y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Salud pública en República Dominicana en el marco de la unidad «Salud pública y desarrollo sostenible»: Salud pública y desarrollo sostenible.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Salud pública en República Dominicana» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-13",
+    "etiqueta": "mar 13 oct",
+    "titulo": "Descubrimos salud pública en República Dominicana",
+    "desempenos": [
+     "Comprende y valora «Salud pública en República Dominicana».",
+     "Participa con autonomía en la actividad «Descubrimos salud pública en República Dominicana»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Salud pública en República Dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Salud pública en República Dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Salud pública en República Dominicana» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos salud pública en República Dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Salud pública en República Dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Salud pública en República Dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Salud pública en República Dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos salud pública en República Dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-15",
+    "etiqueta": "jue 15 oct",
+    "titulo": "Practicamos salud pública en República Dominicana",
+    "desempenos": [
+     "Comprende y valora «Salud pública en República Dominicana».",
+     "Participa con autonomía en la actividad «Practicamos salud pública en República Dominicana»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Salud pública en República Dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Salud pública en República Dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Salud pública en República Dominicana» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos salud pública en República Dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Salud pública en República Dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Salud pública en República Dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Salud pública en República Dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos salud pública en República Dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Objetivos de Desarrollo Sostenible",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre objetivos de Desarrollo Sostenible y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Objetivos de Desarrollo Sostenible en el marco de la unidad «Salud pública y desarrollo sostenible»: Salud pública y desarrollo sostenible.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Objetivos de Desarrollo Sostenible» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-20",
+    "etiqueta": "mar 20 oct",
+    "titulo": "Descubrimos objetivos de Desarrollo Sostenible",
+    "desempenos": [
+     "Comprende y valora «Objetivos de Desarrollo Sostenible».",
+     "Participa con autonomía en la actividad «Descubrimos objetivos de Desarrollo Sostenible»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Objetivos de Desarrollo Sostenible» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Objetivos de Desarrollo Sostenible».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Objetivos de Desarrollo Sostenible» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos objetivos de Desarrollo Sostenible», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Objetivos de Desarrollo Sostenible» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Objetivos de Desarrollo Sostenible, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Objetivos de Desarrollo Sostenible» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos objetivos de Desarrollo Sostenible»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-22",
+    "etiqueta": "jue 22 oct",
+    "titulo": "Practicamos objetivos de Desarrollo Sostenible",
+    "desempenos": [
+     "Comprende y valora «Objetivos de Desarrollo Sostenible».",
+     "Participa con autonomía en la actividad «Practicamos objetivos de Desarrollo Sostenible»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Objetivos de Desarrollo Sostenible» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Objetivos de Desarrollo Sostenible».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Objetivos de Desarrollo Sostenible» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos objetivos de Desarrollo Sostenible», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Objetivos de Desarrollo Sostenible» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Objetivos de Desarrollo Sostenible, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Objetivos de Desarrollo Sostenible» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos objetivos de Desarrollo Sostenible»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: escuela sostenible y saludable",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: escuela sostenible y saludable y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Proyecto: escuela sostenible y saludable en el marco de la unidad «Salud pública y desarrollo sostenible»: Salud pública y desarrollo sostenible.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Proyecto: escuela sostenible y saludable» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-27",
+    "etiqueta": "mar 27 oct",
+    "titulo": "Proyecto: escuela sostenible y saludable",
+    "desempenos": [
+     "Comprende y valora «Proyecto: escuela sostenible y saludable».",
+     "Participa con autonomía en la actividad «Proyecto: escuela sostenible y saludable»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Proyecto: escuela sostenible y saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: escuela sostenible y saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: escuela sostenible y saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Proyecto: escuela sostenible y saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: escuela sostenible y saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: escuela sostenible y saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: escuela sostenible y saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Proyecto: escuela sostenible y saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-29",
+    "etiqueta": "jue 29 oct",
+    "titulo": "Proyecto: escuela sostenible y saludable",
+    "desempenos": [
+     "Comprende y valora «Proyecto: escuela sostenible y saludable».",
+     "Participa con autonomía en la actividad «Proyecto: escuela sostenible y saludable»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Proyecto: escuela sostenible y saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: escuela sostenible y saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: escuela sostenible y saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Proyecto: escuela sostenible y saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: escuela sostenible y saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: escuela sostenible y saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: escuela sostenible y saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Proyecto: escuela sostenible y saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

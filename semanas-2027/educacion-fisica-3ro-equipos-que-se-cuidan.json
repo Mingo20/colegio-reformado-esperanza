@@ -1,0 +1,504 @@
+[
+ {
+  "numero": 1,
+  "tema": "Juegos predeportivos",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre juegos predeportivos y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Juegos predeportivos en el marco de la unidad «Equipos que se cuidan»: Equipos que se cuidan.",
+  "cierre": "Evidencia esperada: el estudiante practica «Juegos predeportivos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Descubrimos juegos predeportivos",
+    "desempenos": [
+     "Practica y disfruta «Juegos predeportivos».",
+     "Participa con autonomía en la actividad «Descubrimos juegos predeportivos»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos predeportivos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos predeportivos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos predeportivos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos juegos predeportivos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos predeportivos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos predeportivos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos predeportivos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos juegos predeportivos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Practicamos juegos predeportivos",
+    "desempenos": [
+     "Practica y disfruta «Juegos predeportivos».",
+     "Participa con autonomía en la actividad «Practicamos juegos predeportivos»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos predeportivos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos predeportivos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos predeportivos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos juegos predeportivos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos predeportivos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos predeportivos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos predeportivos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos juegos predeportivos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Trabajo en equipos y roles",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre trabajo en equipos y roles y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Trabajo en equipos y roles en el marco de la unidad «Equipos que se cuidan»: Equipos que se cuidan.",
+  "cierre": "Evidencia esperada: el estudiante practica «Trabajo en equipos y roles» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Descubrimos trabajo en equipos y roles",
+    "desempenos": [
+     "Practica y disfruta «Trabajo en equipos y roles».",
+     "Participa con autonomía en la actividad «Descubrimos trabajo en equipos y roles»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Trabajo en equipos y roles» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Trabajo en equipos y roles».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Trabajo en equipos y roles» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos trabajo en equipos y roles», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Trabajo en equipos y roles» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Trabajo en equipos y roles, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Trabajo en equipos y roles» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos trabajo en equipos y roles»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Juegos de integración familiar",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre juegos de integración familiar y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Juegos de integración familiar en el marco de la unidad «Equipos que se cuidan»: Equipos que se cuidan.",
+  "cierre": "Evidencia esperada: el estudiante practica «Juegos de integración familiar» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Descubrimos juegos de integración familiar",
+    "desempenos": [
+     "Practica y disfruta «Juegos de integración familiar».",
+     "Participa con autonomía en la actividad «Descubrimos juegos de integración familiar»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos de integración familiar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos de integración familiar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos de integración familiar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos juegos de integración familiar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos de integración familiar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos de integración familiar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos de integración familiar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos juegos de integración familiar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Practicamos juegos de integración familiar",
+    "desempenos": [
+     "Practica y disfruta «Juegos de integración familiar».",
+     "Participa con autonomía en la actividad «Practicamos juegos de integración familiar»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos de integración familiar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos de integración familiar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos de integración familiar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos juegos de integración familiar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos de integración familiar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos de integración familiar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos de integración familiar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos juegos de integración familiar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Encuentro recreativo del grado",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre encuentro recreativo del grado y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Encuentro recreativo del grado en el marco de la unidad «Equipos que se cuidan»: Equipos que se cuidan.",
+  "cierre": "Evidencia esperada: el estudiante practica «Encuentro recreativo del grado» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Descubrimos encuentro recreativo del grado",
+    "desempenos": [
+     "Practica y disfruta «Encuentro recreativo del grado».",
+     "Participa con autonomía en la actividad «Descubrimos encuentro recreativo del grado»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Encuentro recreativo del grado» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Encuentro recreativo del grado».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Encuentro recreativo del grado» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos encuentro recreativo del grado», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Encuentro recreativo del grado» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Encuentro recreativo del grado, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Encuentro recreativo del grado» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos encuentro recreativo del grado»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Practicamos encuentro recreativo del grado",
+    "desempenos": [
+     "Practica y disfruta «Encuentro recreativo del grado».",
+     "Participa con autonomía en la actividad «Practicamos encuentro recreativo del grado»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Encuentro recreativo del grado» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Encuentro recreativo del grado».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Encuentro recreativo del grado» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos encuentro recreativo del grado», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Encuentro recreativo del grado» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Encuentro recreativo del grado, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Encuentro recreativo del grado» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos encuentro recreativo del grado»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

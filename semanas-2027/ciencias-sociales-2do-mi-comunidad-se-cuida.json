@@ -1,0 +1,636 @@
+[
+ {
+  "numero": 1,
+  "tema": "Los lugares de salud de mi comunidad",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre los lugares de salud de mi comunidad y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Los lugares de salud de mi comunidad en el marco de la unidad «Mi comunidad se cuida»: Mi comunidad se cuida.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los lugares de salud de mi comunidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-01",
+    "etiqueta": "jue 1 oct",
+    "titulo": "Descubrimos los lugares de salud de mi comunidad",
+    "desempenos": [
+     "Comprende y valora «Los lugares de salud de mi comunidad».",
+     "Participa con autonomía en la actividad «Descubrimos los lugares de salud de mi comunidad»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los lugares de salud de mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los lugares de salud de mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los lugares de salud de mi comunidad» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos los lugares de salud de mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los lugares de salud de mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los lugares de salud de mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los lugares de salud de mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos los lugares de salud de mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-06",
+    "etiqueta": "mar 6 oct",
+    "titulo": "Practicamos los lugares de salud de mi comunidad",
+    "desempenos": [
+     "Comprende y valora «Los lugares de salud de mi comunidad».",
+     "Participa con autonomía en la actividad «Practicamos los lugares de salud de mi comunidad»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los lugares de salud de mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los lugares de salud de mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los lugares de salud de mi comunidad» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos los lugares de salud de mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los lugares de salud de mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los lugares de salud de mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los lugares de salud de mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los lugares de salud de mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-08",
+    "etiqueta": "jue 8 oct",
+    "titulo": "Aplicamos los lugares de salud de mi comunidad",
+    "desempenos": [
+     "Comprende y valora «Los lugares de salud de mi comunidad».",
+     "Participa con autonomía en la actividad «Aplicamos los lugares de salud de mi comunidad»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los lugares de salud de mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los lugares de salud de mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los lugares de salud de mi comunidad» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Aplicamos los lugares de salud de mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los lugares de salud de mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los lugares de salud de mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los lugares de salud de mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos los lugares de salud de mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Mapas sencillos: de mi casa a la escuela",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre mapas sencillos: de mi casa a la escuela y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Mapas sencillos: de mi casa a la escuela en el marco de la unidad «Mi comunidad se cuida»: Mi comunidad se cuida.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Mapas sencillos: de mi casa a la escuela» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-13",
+    "etiqueta": "mar 13 oct",
+    "titulo": "Mapas sencillos: de mi casa a la escuela",
+    "desempenos": [
+     "Comprende y valora «Mapas sencillos: de mi casa a la escuela».",
+     "Participa con autonomía en la actividad «Mapas sencillos: de mi casa a la escuela»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Mapas sencillos: de mi casa a la escuela» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Mapas sencillos: de mi casa a la escuela».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Mapas sencillos: de mi casa a la escuela» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Mapas sencillos: de mi casa a la escuela», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Mapas sencillos: de mi casa a la escuela» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Mapas sencillos: de mi casa a la escuela, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Mapas sencillos: de mi casa a la escuela» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Mapas sencillos: de mi casa a la escuela»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-15",
+    "etiqueta": "jue 15 oct",
+    "titulo": "Mapas sencillos: de mi casa a la escuela",
+    "desempenos": [
+     "Comprende y valora «Mapas sencillos: de mi casa a la escuela».",
+     "Participa con autonomía en la actividad «Mapas sencillos: de mi casa a la escuela»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Mapas sencillos: de mi casa a la escuela» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Mapas sencillos: de mi casa a la escuela».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Mapas sencillos: de mi casa a la escuela» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Mapas sencillos: de mi casa a la escuela», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Mapas sencillos: de mi casa a la escuela» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Mapas sencillos: de mi casa a la escuela, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Mapas sencillos: de mi casa a la escuela» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Mapas sencillos: de mi casa a la escuela»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Servicios que protegen a la comunidad",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre servicios que protegen a la comunidad y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Servicios que protegen a la comunidad en el marco de la unidad «Mi comunidad se cuida»: Mi comunidad se cuida.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Servicios que protegen a la comunidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-20",
+    "etiqueta": "mar 20 oct",
+    "titulo": "Descubrimos servicios que protegen a la comunidad",
+    "desempenos": [
+     "Comprende y valora «Servicios que protegen a la comunidad».",
+     "Participa con autonomía en la actividad «Descubrimos servicios que protegen a la comunidad»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Servicios que protegen a la comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Servicios que protegen a la comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Servicios que protegen a la comunidad» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos servicios que protegen a la comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Servicios que protegen a la comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Servicios que protegen a la comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Servicios que protegen a la comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos servicios que protegen a la comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-22",
+    "etiqueta": "jue 22 oct",
+    "titulo": "Practicamos servicios que protegen a la comunidad",
+    "desempenos": [
+     "Comprende y valora «Servicios que protegen a la comunidad».",
+     "Participa con autonomía en la actividad «Practicamos servicios que protegen a la comunidad»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Servicios que protegen a la comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Servicios que protegen a la comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Servicios que protegen a la comunidad» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos servicios que protegen a la comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Servicios que protegen a la comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Servicios que protegen a la comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Servicios que protegen a la comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos servicios que protegen a la comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: maqueta de mi comunidad saludable",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: maqueta de mi comunidad saludable y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Proyecto: maqueta de mi comunidad saludable en el marco de la unidad «Mi comunidad se cuida»: Mi comunidad se cuida.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Proyecto: maqueta de mi comunidad saludable» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-27",
+    "etiqueta": "mar 27 oct",
+    "titulo": "Proyecto: maqueta de mi comunidad saludable",
+    "desempenos": [
+     "Comprende y valora «Proyecto: maqueta de mi comunidad saludable».",
+     "Participa con autonomía en la actividad «Proyecto: maqueta de mi comunidad saludable»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Proyecto: maqueta de mi comunidad saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: maqueta de mi comunidad saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: maqueta de mi comunidad saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Proyecto: maqueta de mi comunidad saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: maqueta de mi comunidad saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: maqueta de mi comunidad saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: maqueta de mi comunidad saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Proyecto: maqueta de mi comunidad saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-29",
+    "etiqueta": "jue 29 oct",
+    "titulo": "Proyecto: maqueta de mi comunidad saludable",
+    "desempenos": [
+     "Comprende y valora «Proyecto: maqueta de mi comunidad saludable».",
+     "Participa con autonomía en la actividad «Proyecto: maqueta de mi comunidad saludable»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Proyecto: maqueta de mi comunidad saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: maqueta de mi comunidad saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: maqueta de mi comunidad saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Proyecto: maqueta de mi comunidad saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: maqueta de mi comunidad saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: maqueta de mi comunidad saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: maqueta de mi comunidad saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Proyecto: maqueta de mi comunidad saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

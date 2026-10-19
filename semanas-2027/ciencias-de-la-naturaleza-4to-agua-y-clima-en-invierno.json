@@ -1,0 +1,362 @@
+[
+ {
+  "numero": 1,
+  "tema": "El ciclo del agua",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre el ciclo del agua y su relación con Navidad y convivencia?",
+  "desarrollo": "El ciclo del agua en el marco de la unidad «Agua y clima en invierno»: Agua y clima en invierno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «El ciclo del agua» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Descubrimos el ciclo del agua",
+    "desempenos": [
+     "Comprende y experimenta «El ciclo del agua».",
+     "Participa con autonomía en la actividad «Descubrimos el ciclo del agua»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El ciclo del agua» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El ciclo del agua».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El ciclo del agua» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos el ciclo del agua», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El ciclo del agua» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El ciclo del agua, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El ciclo del agua» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el ciclo del agua»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Practicamos el ciclo del agua",
+    "desempenos": [
+     "Comprende y experimenta «El ciclo del agua».",
+     "Participa con autonomía en la actividad «Practicamos el ciclo del agua»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El ciclo del agua» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El ciclo del agua».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El ciclo del agua» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos el ciclo del agua», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El ciclo del agua» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El ciclo del agua, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El ciclo del agua» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el ciclo del agua»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "El clima y sus elementos",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre el clima y sus elementos y su relación con Navidad y convivencia?",
+  "desarrollo": "El clima y sus elementos en el marco de la unidad «Agua y clima en invierno»: Agua y clima en invierno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «El clima y sus elementos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Descubrimos el clima y sus elementos",
+    "desempenos": [
+     "Comprende y experimenta «El clima y sus elementos».",
+     "Participa con autonomía en la actividad «Descubrimos el clima y sus elementos»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El clima y sus elementos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El clima y sus elementos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El clima y sus elementos» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos el clima y sus elementos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El clima y sus elementos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El clima y sus elementos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El clima y sus elementos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el clima y sus elementos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Practicamos el clima y sus elementos",
+    "desempenos": [
+     "Comprende y experimenta «El clima y sus elementos».",
+     "Participa con autonomía en la actividad «Practicamos el clima y sus elementos»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El clima y sus elementos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El clima y sus elementos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El clima y sus elementos» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos el clima y sus elementos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El clima y sus elementos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El clima y sus elementos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El clima y sus elementos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el clima y sus elementos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Contaminación del agua y del aire",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre contaminación del agua y del aire y su relación con Navidad y convivencia?",
+  "desarrollo": "Contaminación del agua y del aire en el marco de la unidad «Agua y clima en invierno»: Agua y clima en invierno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Contaminación del agua y del aire» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Descubrimos contaminación del agua y del aire",
+    "desempenos": [
+     "Comprende y experimenta «Contaminación del agua y del aire».",
+     "Participa con autonomía en la actividad «Descubrimos contaminación del agua y del aire»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Contaminación del agua y del aire» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Contaminación del agua y del aire».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Contaminación del agua y del aire» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos contaminación del agua y del aire», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Contaminación del agua y del aire» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Contaminación del agua y del aire, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Contaminación del agua y del aire» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos contaminación del agua y del aire»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

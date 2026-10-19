@@ -1,0 +1,306 @@
+[
+ {
+  "numero": 1,
+  "tema": "El amor en la vida familiar",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre el amor en la vida familiar y su relación con Mi familia y el buen trato?",
+  "desarrollo": "El amor en la vida familiar en el marco de la unidad «La familia, comunidad de amor»: La familia, comunidad de amor.",
+  "cierre": "Evidencia esperada: el estudiante reflexiona «El amor en la vida familiar» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Descubrimos el amor en la vida familiar",
+    "desempenos": [
+     "Reflexiona y vive «El amor en la vida familiar».",
+     "Participa con autonomía en la actividad «Descubrimos el amor en la vida familiar»."
+    ],
+    "recursos": [
+     "Biblia infantil",
+     "Láminas bíblicas",
+     "Ficha de valores",
+     "Cuaderno de reflexión"
+    ],
+    "orientacion": "Contextualizar «El amor en la vida familiar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El amor en la vida familiar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El amor en la vida familiar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos el amor en la vida familiar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El amor en la vida familiar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El amor en la vida familiar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El amor en la vida familiar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el amor en la vida familiar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Confianza y respeto en el hogar",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre confianza y respeto en el hogar y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Confianza y respeto en el hogar en el marco de la unidad «La familia, comunidad de amor»: La familia, comunidad de amor.",
+  "cierre": "Evidencia esperada: el estudiante reflexiona «Confianza y respeto en el hogar» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Descubrimos confianza y respeto en el hogar",
+    "desempenos": [
+     "Reflexiona y vive «Confianza y respeto en el hogar».",
+     "Participa con autonomía en la actividad «Descubrimos confianza y respeto en el hogar»."
+    ],
+    "recursos": [
+     "Biblia infantil",
+     "Láminas bíblicas",
+     "Ficha de valores",
+     "Cuaderno de reflexión"
+    ],
+    "orientacion": "Contextualizar «Confianza y respeto en el hogar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Confianza y respeto en el hogar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Confianza y respeto en el hogar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos confianza y respeto en el hogar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Confianza y respeto en el hogar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Confianza y respeto en el hogar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Confianza y respeto en el hogar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos confianza y respeto en el hogar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Prevención del maltrato",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre prevención del maltrato y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Prevención del maltrato en el marco de la unidad «La familia, comunidad de amor»: La familia, comunidad de amor.",
+  "cierre": "Evidencia esperada: el estudiante reflexiona «Prevención del maltrato» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Descubrimos prevención del maltrato",
+    "desempenos": [
+     "Reflexiona y vive «Prevención del maltrato».",
+     "Participa con autonomía en la actividad «Descubrimos prevención del maltrato»."
+    ],
+    "recursos": [
+     "Biblia infantil",
+     "Láminas bíblicas",
+     "Ficha de valores",
+     "Cuaderno de reflexión"
+    ],
+    "orientacion": "Contextualizar «Prevención del maltrato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Prevención del maltrato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Prevención del maltrato» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos prevención del maltrato», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Prevención del maltrato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Prevención del maltrato, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Prevención del maltrato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos prevención del maltrato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Pacto del buen trato del grado",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre pacto del buen trato del grado y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Pacto del buen trato del grado en el marco de la unidad «La familia, comunidad de amor»: La familia, comunidad de amor.",
+  "cierre": "Evidencia esperada: el estudiante reflexiona «Pacto del buen trato del grado» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Descubrimos pacto del buen trato del grado",
+    "desempenos": [
+     "Reflexiona y vive «Pacto del buen trato del grado».",
+     "Participa con autonomía en la actividad «Descubrimos pacto del buen trato del grado»."
+    ],
+    "recursos": [
+     "Biblia infantil",
+     "Láminas bíblicas",
+     "Ficha de valores",
+     "Cuaderno de reflexión"
+    ],
+    "orientacion": "Contextualizar «Pacto del buen trato del grado» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Pacto del buen trato del grado».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Pacto del buen trato del grado» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos pacto del buen trato del grado», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Pacto del buen trato del grado» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Pacto del buen trato del grado, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Pacto del buen trato del grado» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos pacto del buen trato del grado»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

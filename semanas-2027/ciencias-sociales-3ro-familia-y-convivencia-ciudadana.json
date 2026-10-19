@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Los grupos de mi comunidad",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre los grupos de mi comunidad y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Los grupos de mi comunidad en el marco de la unidad «Familia y convivencia ciudadana»: Familia y convivencia ciudadana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los grupos de mi comunidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Descubrimos los grupos de mi comunidad",
+    "desempenos": [
+     "Comprende y valora «Los grupos de mi comunidad».",
+     "Participa con autonomía en la actividad «Descubrimos los grupos de mi comunidad»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los grupos de mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los grupos de mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los grupos de mi comunidad» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos los grupos de mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los grupos de mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los grupos de mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los grupos de mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos los grupos de mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Practicamos los grupos de mi comunidad",
+    "desempenos": [
+     "Comprende y valora «Los grupos de mi comunidad».",
+     "Participa con autonomía en la actividad «Practicamos los grupos de mi comunidad»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los grupos de mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los grupos de mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los grupos de mi comunidad» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos los grupos de mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los grupos de mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los grupos de mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los grupos de mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los grupos de mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "La convivencia y la resolución de conflictos",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre la convivencia y la resolución de conflictos y su relación con Mi familia y el buen trato?",
+  "desarrollo": "La convivencia y la resolución de conflictos en el marco de la unidad «Familia y convivencia ciudadana»: Familia y convivencia ciudadana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «La convivencia y la resolución de conflictos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "La convivencia y la resolución de conflictos",
+    "desempenos": [
+     "Comprende y valora «La convivencia y la resolución de conflictos».",
+     "Participa con autonomía en la actividad «La convivencia y la resolución de conflictos»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La convivencia y la resolución de conflictos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La convivencia y la resolución de conflictos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La convivencia y la resolución de conflictos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «La convivencia y la resolución de conflictos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La convivencia y la resolución de conflictos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La convivencia y la resolución de conflictos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La convivencia y la resolución de conflictos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «La convivencia y la resolución de conflictos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "La convivencia y la resolución de conflictos",
+    "desempenos": [
+     "Comprende y valora «La convivencia y la resolución de conflictos».",
+     "Participa con autonomía en la actividad «La convivencia y la resolución de conflictos»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La convivencia y la resolución de conflictos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La convivencia y la resolución de conflictos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La convivencia y la resolución de conflictos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «La convivencia y la resolución de conflictos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La convivencia y la resolución de conflictos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La convivencia y la resolución de conflictos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La convivencia y la resolución de conflictos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «La convivencia y la resolución de conflictos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "La Constitución y el Día del Niño",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre la Constitución y el Día del Niño y su relación con Mi familia y el buen trato?",
+  "desarrollo": "La Constitución y el Día del Niño en el marco de la unidad «Familia y convivencia ciudadana»: Familia y convivencia ciudadana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «La Constitución y el Día del Niño» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Descubrimos la Constitución y el Día del Niño",
+    "desempenos": [
+     "Comprende y valora «La Constitución y el Día del Niño».",
+     "Participa con autonomía en la actividad «Descubrimos la Constitución y el Día del Niño»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La Constitución y el Día del Niño» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La Constitución y el Día del Niño».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La Constitución y el Día del Niño» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos la Constitución y el Día del Niño», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La Constitución y el Día del Niño» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La Constitución y el Día del Niño, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La Constitución y el Día del Niño» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos la Constitución y el Día del Niño»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Practicamos la Constitución y el Día del Niño",
+    "desempenos": [
+     "Comprende y valora «La Constitución y el Día del Niño».",
+     "Participa con autonomía en la actividad «Practicamos la Constitución y el Día del Niño»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La Constitución y el Día del Niño» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La Constitución y el Día del Niño».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La Constitución y el Día del Niño» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos la Constitución y el Día del Niño», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La Constitución y el Día del Niño» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La Constitución y el Día del Niño, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La Constitución y el Día del Niño» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la Constitución y el Día del Niño»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Panel del buen trato",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre panel del buen trato y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Panel del buen trato en el marco de la unidad «Familia y convivencia ciudadana»: Familia y convivencia ciudadana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Panel del buen trato» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Descubrimos panel del buen trato",
+    "desempenos": [
+     "Comprende y valora «Panel del buen trato».",
+     "Participa con autonomía en la actividad «Descubrimos panel del buen trato»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Panel del buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Panel del buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Panel del buen trato» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos panel del buen trato», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Panel del buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Panel del buen trato, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Panel del buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos panel del buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Practicamos panel del buen trato",
+    "desempenos": [
+     "Comprende y valora «Panel del buen trato».",
+     "Participa con autonomía en la actividad «Practicamos panel del buen trato»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Panel del buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Panel del buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Panel del buen trato» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos panel del buen trato», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Panel del buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Panel del buen trato, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Panel del buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos panel del buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

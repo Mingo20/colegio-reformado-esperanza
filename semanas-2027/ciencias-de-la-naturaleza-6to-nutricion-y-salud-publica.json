@@ -1,0 +1,636 @@
+[
+ {
+  "numero": 1,
+  "tema": "Nutrientes y dieta saludable",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre nutrientes y dieta saludable y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Nutrientes y dieta saludable en el marco de la unidad «Nutrición y salud pública»: Nutrición y salud pública.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Nutrientes y dieta saludable» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-02",
+    "etiqueta": "vie 2 oct",
+    "titulo": "Descubrimos nutrientes y dieta saludable",
+    "desempenos": [
+     "Comprende y experimenta «Nutrientes y dieta saludable».",
+     "Participa con autonomía en la actividad «Descubrimos nutrientes y dieta saludable»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Nutrientes y dieta saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Nutrientes y dieta saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Nutrientes y dieta saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos nutrientes y dieta saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Nutrientes y dieta saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Nutrientes y dieta saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Nutrientes y dieta saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos nutrientes y dieta saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-07",
+    "etiqueta": "mié 7 oct",
+    "titulo": "Practicamos nutrientes y dieta saludable",
+    "desempenos": [
+     "Comprende y experimenta «Nutrientes y dieta saludable».",
+     "Participa con autonomía en la actividad «Practicamos nutrientes y dieta saludable»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Nutrientes y dieta saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Nutrientes y dieta saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Nutrientes y dieta saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos nutrientes y dieta saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Nutrientes y dieta saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Nutrientes y dieta saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Nutrientes y dieta saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos nutrientes y dieta saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Sistemas del cuerpo: integración",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre sistemas del cuerpo: integración y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Sistemas del cuerpo: integración en el marco de la unidad «Nutrición y salud pública»: Nutrición y salud pública.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Sistemas del cuerpo: integración» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-09",
+    "etiqueta": "vie 9 oct",
+    "titulo": "Descubrimos sistemas del cuerpo: integración",
+    "desempenos": [
+     "Comprende y experimenta «Sistemas del cuerpo: integración».",
+     "Participa con autonomía en la actividad «Descubrimos sistemas del cuerpo: integración»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Sistemas del cuerpo: integración» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Sistemas del cuerpo: integración».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Sistemas del cuerpo: integración» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos sistemas del cuerpo: integración», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Sistemas del cuerpo: integración» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Sistemas del cuerpo: integración, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Sistemas del cuerpo: integración» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos sistemas del cuerpo: integración»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-14",
+    "etiqueta": "mié 14 oct",
+    "titulo": "Practicamos sistemas del cuerpo: integración",
+    "desempenos": [
+     "Comprende y experimenta «Sistemas del cuerpo: integración».",
+     "Participa con autonomía en la actividad «Practicamos sistemas del cuerpo: integración»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Sistemas del cuerpo: integración» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Sistemas del cuerpo: integración».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Sistemas del cuerpo: integración» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos sistemas del cuerpo: integración», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Sistemas del cuerpo: integración» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Sistemas del cuerpo: integración, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Sistemas del cuerpo: integración» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos sistemas del cuerpo: integración»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-16",
+    "etiqueta": "vie 16 oct",
+    "titulo": "Aplicamos sistemas del cuerpo: integración",
+    "desempenos": [
+     "Comprende y experimenta «Sistemas del cuerpo: integración».",
+     "Participa con autonomía en la actividad «Aplicamos sistemas del cuerpo: integración»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Sistemas del cuerpo: integración» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Sistemas del cuerpo: integración».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Sistemas del cuerpo: integración» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Aplicamos sistemas del cuerpo: integración», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Sistemas del cuerpo: integración» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Sistemas del cuerpo: integración, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Sistemas del cuerpo: integración» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos sistemas del cuerpo: integración»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Enfermedades y prevención",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre enfermedades y prevención y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Enfermedades y prevención en el marco de la unidad «Nutrición y salud pública»: Nutrición y salud pública.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Enfermedades y prevención» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-21",
+    "etiqueta": "mié 21 oct",
+    "titulo": "Descubrimos enfermedades y prevención",
+    "desempenos": [
+     "Comprende y experimenta «Enfermedades y prevención».",
+     "Participa con autonomía en la actividad «Descubrimos enfermedades y prevención»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Enfermedades y prevención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Enfermedades y prevención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Enfermedades y prevención» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos enfermedades y prevención», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Enfermedades y prevención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Enfermedades y prevención, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Enfermedades y prevención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos enfermedades y prevención»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-23",
+    "etiqueta": "vie 23 oct",
+    "titulo": "Practicamos enfermedades y prevención",
+    "desempenos": [
+     "Comprende y experimenta «Enfermedades y prevención».",
+     "Participa con autonomía en la actividad «Practicamos enfermedades y prevención»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Enfermedades y prevención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Enfermedades y prevención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Enfermedades y prevención» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos enfermedades y prevención», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Enfermedades y prevención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Enfermedades y prevención, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Enfermedades y prevención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos enfermedades y prevención»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Investigación: dieta de mi grado",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre investigación: dieta de mi grado y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Investigación: dieta de mi grado en el marco de la unidad «Nutrición y salud pública»: Nutrición y salud pública.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Investigación: dieta de mi grado» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-28",
+    "etiqueta": "mié 28 oct",
+    "titulo": "Descubrimos investigación: dieta de mi grado",
+    "desempenos": [
+     "Comprende y experimenta «Investigación: dieta de mi grado».",
+     "Participa con autonomía en la actividad «Descubrimos investigación: dieta de mi grado»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Investigación: dieta de mi grado» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Investigación: dieta de mi grado».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Investigación: dieta de mi grado» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos investigación: dieta de mi grado», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Investigación: dieta de mi grado» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Investigación: dieta de mi grado, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Investigación: dieta de mi grado» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos investigación: dieta de mi grado»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-30",
+    "etiqueta": "vie 30 oct",
+    "titulo": "Practicamos investigación: dieta de mi grado",
+    "desempenos": [
+     "Comprende y experimenta «Investigación: dieta de mi grado».",
+     "Participa con autonomía en la actividad «Practicamos investigación: dieta de mi grado»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Investigación: dieta de mi grado» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Investigación: dieta de mi grado».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Investigación: dieta de mi grado» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos investigación: dieta de mi grado», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Investigación: dieta de mi grado» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Investigación: dieta de mi grado, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Investigación: dieta de mi grado» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos investigación: dieta de mi grado»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

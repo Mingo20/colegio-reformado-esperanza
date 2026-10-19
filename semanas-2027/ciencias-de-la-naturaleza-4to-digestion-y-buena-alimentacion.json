@@ -1,0 +1,636 @@
+[
+ {
+  "numero": 1,
+  "tema": "El sistema digestivo",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre el sistema digestivo y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "El sistema digestivo en el marco de la unidad «Digestión y buena alimentación»: Digestión y buena alimentación.",
+  "cierre": "Evidencia esperada: el estudiante comprende «El sistema digestivo» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-02",
+    "etiqueta": "vie 2 oct",
+    "titulo": "Descubrimos el sistema digestivo",
+    "desempenos": [
+     "Comprende y experimenta «El sistema digestivo».",
+     "Participa con autonomía en la actividad «Descubrimos el sistema digestivo»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El sistema digestivo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El sistema digestivo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El sistema digestivo» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos el sistema digestivo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El sistema digestivo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El sistema digestivo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El sistema digestivo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el sistema digestivo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-07",
+    "etiqueta": "mié 7 oct",
+    "titulo": "Practicamos el sistema digestivo",
+    "desempenos": [
+     "Comprende y experimenta «El sistema digestivo».",
+     "Participa con autonomía en la actividad «Practicamos el sistema digestivo»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El sistema digestivo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El sistema digestivo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El sistema digestivo» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos el sistema digestivo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El sistema digestivo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El sistema digestivo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El sistema digestivo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el sistema digestivo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Dietas balanceadas en mi país",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre dietas balanceadas en mi país y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Dietas balanceadas en mi país en el marco de la unidad «Digestión y buena alimentación»: Digestión y buena alimentación.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Dietas balanceadas en mi país» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-09",
+    "etiqueta": "vie 9 oct",
+    "titulo": "Descubrimos dietas balanceadas en mi país",
+    "desempenos": [
+     "Comprende y experimenta «Dietas balanceadas en mi país».",
+     "Participa con autonomía en la actividad «Descubrimos dietas balanceadas en mi país»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Dietas balanceadas en mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Dietas balanceadas en mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Dietas balanceadas en mi país» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos dietas balanceadas en mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Dietas balanceadas en mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Dietas balanceadas en mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Dietas balanceadas en mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos dietas balanceadas en mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-14",
+    "etiqueta": "mié 14 oct",
+    "titulo": "Practicamos dietas balanceadas en mi país",
+    "desempenos": [
+     "Comprende y experimenta «Dietas balanceadas en mi país».",
+     "Participa con autonomía en la actividad «Practicamos dietas balanceadas en mi país»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Dietas balanceadas en mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Dietas balanceadas en mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Dietas balanceadas en mi país» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos dietas balanceadas en mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Dietas balanceadas en mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Dietas balanceadas en mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Dietas balanceadas en mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos dietas balanceadas en mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-16",
+    "etiqueta": "vie 16 oct",
+    "titulo": "Aplicamos dietas balanceadas en mi país",
+    "desempenos": [
+     "Comprende y experimenta «Dietas balanceadas en mi país».",
+     "Participa con autonomía en la actividad «Aplicamos dietas balanceadas en mi país»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Dietas balanceadas en mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Dietas balanceadas en mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Dietas balanceadas en mi país» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Aplicamos dietas balanceadas en mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Dietas balanceadas en mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Dietas balanceadas en mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Dietas balanceadas en mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos dietas balanceadas en mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Cadenas alimentarias y ecosistemas",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre cadenas alimentarias y ecosistemas y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Cadenas alimentarias y ecosistemas en el marco de la unidad «Digestión y buena alimentación»: Digestión y buena alimentación.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Cadenas alimentarias y ecosistemas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-21",
+    "etiqueta": "mié 21 oct",
+    "titulo": "Descubrimos cadenas alimentarias y ecosistemas",
+    "desempenos": [
+     "Comprende y experimenta «Cadenas alimentarias y ecosistemas».",
+     "Participa con autonomía en la actividad «Descubrimos cadenas alimentarias y ecosistemas»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Cadenas alimentarias y ecosistemas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cadenas alimentarias y ecosistemas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cadenas alimentarias y ecosistemas» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos cadenas alimentarias y ecosistemas», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cadenas alimentarias y ecosistemas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cadenas alimentarias y ecosistemas, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cadenas alimentarias y ecosistemas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos cadenas alimentarias y ecosistemas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-23",
+    "etiqueta": "vie 23 oct",
+    "titulo": "Practicamos cadenas alimentarias y ecosistemas",
+    "desempenos": [
+     "Comprende y experimenta «Cadenas alimentarias y ecosistemas».",
+     "Participa con autonomía en la actividad «Practicamos cadenas alimentarias y ecosistemas»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Cadenas alimentarias y ecosistemas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cadenas alimentarias y ecosistemas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cadenas alimentarias y ecosistemas» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos cadenas alimentarias y ecosistemas», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cadenas alimentarias y ecosistemas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cadenas alimentarias y ecosistemas, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cadenas alimentarias y ecosistemas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos cadenas alimentarias y ecosistemas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Investigación: ¿qué como y qué me da?",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre investigación: ¿qué como y qué me da? y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Investigación: ¿qué como y qué me da? en el marco de la unidad «Digestión y buena alimentación»: Digestión y buena alimentación.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Investigación: ¿qué como y qué me da?» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-28",
+    "etiqueta": "mié 28 oct",
+    "titulo": "Descubrimos investigación: ¿qué como y qué me da?",
+    "desempenos": [
+     "Comprende y experimenta «Investigación: ¿qué como y qué me da?».",
+     "Participa con autonomía en la actividad «Descubrimos investigación: ¿qué como y qué me da?»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Investigación: ¿qué como y qué me da?» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Investigación: ¿qué como y qué me da?».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Investigación: ¿qué como y qué me da?» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos investigación: ¿qué como y qué me da?», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Investigación: ¿qué como y qué me da?» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Investigación: ¿qué como y qué me da?, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Investigación: ¿qué como y qué me da?» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos investigación: ¿qué como y qué me da?»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-30",
+    "etiqueta": "vie 30 oct",
+    "titulo": "Practicamos investigación: ¿qué como y qué me da?",
+    "desempenos": [
+     "Comprende y experimenta «Investigación: ¿qué como y qué me da?».",
+     "Participa con autonomía en la actividad «Practicamos investigación: ¿qué como y qué me da?»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Investigación: ¿qué como y qué me da?» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Investigación: ¿qué como y qué me da?».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Investigación: ¿qué como y qué me da?» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos investigación: ¿qué como y qué me da?», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Investigación: ¿qué como y qué me da?» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Investigación: ¿qué como y qué me da?, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Investigación: ¿qué como y qué me da?» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos investigación: ¿qué como y qué me da?»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Los ecosistemas de mi comunidad",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre los ecosistemas de mi comunidad y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Los ecosistemas de mi comunidad en el marco de la unidad «Ecosistemas que compartimos»: Ecosistemas que compartimos.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los ecosistemas de mi comunidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Descubrimos los ecosistemas de mi comunidad",
+    "desempenos": [
+     "Comprende y experimenta «Los ecosistemas de mi comunidad».",
+     "Participa con autonomía en la actividad «Descubrimos los ecosistemas de mi comunidad»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Los ecosistemas de mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los ecosistemas de mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los ecosistemas de mi comunidad» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos los ecosistemas de mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los ecosistemas de mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los ecosistemas de mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los ecosistemas de mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos los ecosistemas de mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Practicamos los ecosistemas de mi comunidad",
+    "desempenos": [
+     "Comprende y experimenta «Los ecosistemas de mi comunidad».",
+     "Participa con autonomía en la actividad «Practicamos los ecosistemas de mi comunidad»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Los ecosistemas de mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los ecosistemas de mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los ecosistemas de mi comunidad» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos los ecosistemas de mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los ecosistemas de mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los ecosistemas de mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los ecosistemas de mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los ecosistemas de mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Cadenas alimentarias de mi entorno",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre cadenas alimentarias de mi entorno y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Cadenas alimentarias de mi entorno en el marco de la unidad «Ecosistemas que compartimos»: Ecosistemas que compartimos.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Cadenas alimentarias de mi entorno» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Descubrimos cadenas alimentarias de mi entorno",
+    "desempenos": [
+     "Comprende y experimenta «Cadenas alimentarias de mi entorno».",
+     "Participa con autonomía en la actividad «Descubrimos cadenas alimentarias de mi entorno»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Cadenas alimentarias de mi entorno» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cadenas alimentarias de mi entorno».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cadenas alimentarias de mi entorno» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos cadenas alimentarias de mi entorno», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cadenas alimentarias de mi entorno» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cadenas alimentarias de mi entorno, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cadenas alimentarias de mi entorno» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos cadenas alimentarias de mi entorno»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Practicamos cadenas alimentarias de mi entorno",
+    "desempenos": [
+     "Comprende y experimenta «Cadenas alimentarias de mi entorno».",
+     "Participa con autonomía en la actividad «Practicamos cadenas alimentarias de mi entorno»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Cadenas alimentarias de mi entorno» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cadenas alimentarias de mi entorno».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cadenas alimentarias de mi entorno» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos cadenas alimentarias de mi entorno», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cadenas alimentarias de mi entorno» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cadenas alimentarias de mi entorno, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cadenas alimentarias de mi entorno» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos cadenas alimentarias de mi entorno»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Cuidemos el ambiente en familia",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre cuidemos el ambiente en familia y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Cuidemos el ambiente en familia en el marco de la unidad «Ecosistemas que compartimos»: Ecosistemas que compartimos.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Cuidemos el ambiente en familia» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Descubrimos cuidemos el ambiente en familia",
+    "desempenos": [
+     "Comprende y experimenta «Cuidemos el ambiente en familia».",
+     "Participa con autonomía en la actividad «Descubrimos cuidemos el ambiente en familia»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Cuidemos el ambiente en familia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cuidemos el ambiente en familia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cuidemos el ambiente en familia» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos cuidemos el ambiente en familia», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cuidemos el ambiente en familia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cuidemos el ambiente en familia, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cuidemos el ambiente en familia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos cuidemos el ambiente en familia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Practicamos cuidemos el ambiente en familia",
+    "desempenos": [
+     "Comprende y experimenta «Cuidemos el ambiente en familia».",
+     "Participa con autonomía en la actividad «Practicamos cuidemos el ambiente en familia»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Cuidemos el ambiente en familia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cuidemos el ambiente en familia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cuidemos el ambiente en familia» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos cuidemos el ambiente en familia», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cuidemos el ambiente en familia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cuidemos el ambiente en familia, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cuidemos el ambiente en familia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos cuidemos el ambiente en familia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: adoptamos un espacio verde",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: adoptamos un espacio verde y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Proyecto: adoptamos un espacio verde en el marco de la unidad «Ecosistemas que compartimos»: Ecosistemas que compartimos.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Proyecto: adoptamos un espacio verde» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Descubrimos proyecto: adoptamos un espacio verde",
+    "desempenos": [
+     "Comprende y experimenta «Proyecto: adoptamos un espacio verde».",
+     "Participa con autonomía en la actividad «Descubrimos proyecto: adoptamos un espacio verde»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Proyecto: adoptamos un espacio verde» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: adoptamos un espacio verde».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: adoptamos un espacio verde» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos proyecto: adoptamos un espacio verde», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: adoptamos un espacio verde» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: adoptamos un espacio verde, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: adoptamos un espacio verde» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos proyecto: adoptamos un espacio verde»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Practicamos proyecto: adoptamos un espacio verde",
+    "desempenos": [
+     "Comprende y experimenta «Proyecto: adoptamos un espacio verde».",
+     "Participa con autonomía en la actividad «Practicamos proyecto: adoptamos un espacio verde»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Proyecto: adoptamos un espacio verde» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: adoptamos un espacio verde».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: adoptamos un espacio verde» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos proyecto: adoptamos un espacio verde», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: adoptamos un espacio verde» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: adoptamos un espacio verde, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: adoptamos un espacio verde» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos proyecto: adoptamos un espacio verde»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

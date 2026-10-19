@@ -1,0 +1,636 @@
+[
+ {
+  "numero": 1,
+  "tema": "Normas de convivencia y salud en el aula",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre normas de convivencia y salud en el aula y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Normas de convivencia y salud en el aula en el marco de la unidad «Mi escuela y mi vida saludable»: Mi escuela y mi vida saludable.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Normas de convivencia y salud en el aula» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-01",
+    "etiqueta": "jue 1 oct",
+    "titulo": "Normas de convivencia y salud en el aula",
+    "desempenos": [
+     "Comprende y valora «Normas de convivencia y salud en el aula».",
+     "Participa con autonomía en la actividad «Normas de convivencia y salud en el aula»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Normas de convivencia y salud en el aula» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Normas de convivencia y salud en el aula».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Normas de convivencia y salud en el aula» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Normas de convivencia y salud en el aula», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Normas de convivencia y salud en el aula» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Normas de convivencia y salud en el aula, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Normas de convivencia y salud en el aula» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Normas de convivencia y salud en el aula»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-06",
+    "etiqueta": "mar 6 oct",
+    "titulo": "Normas de convivencia y salud en el aula",
+    "desempenos": [
+     "Comprende y valora «Normas de convivencia y salud en el aula».",
+     "Participa con autonomía en la actividad «Normas de convivencia y salud en el aula»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Normas de convivencia y salud en el aula» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Normas de convivencia y salud en el aula».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Normas de convivencia y salud en el aula» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Normas de convivencia y salud en el aula», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Normas de convivencia y salud en el aula» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Normas de convivencia y salud en el aula, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Normas de convivencia y salud en el aula» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Normas de convivencia y salud en el aula»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-08",
+    "etiqueta": "jue 8 oct",
+    "titulo": "Normas de convivencia y salud en el aula",
+    "desempenos": [
+     "Comprende y valora «Normas de convivencia y salud en el aula».",
+     "Participa con autonomía en la actividad «Normas de convivencia y salud en el aula»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Normas de convivencia y salud en el aula» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Normas de convivencia y salud en el aula».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Normas de convivencia y salud en el aula» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Normas de convivencia y salud en el aula», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Normas de convivencia y salud en el aula» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Normas de convivencia y salud en el aula, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Normas de convivencia y salud en el aula» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Normas de convivencia y salud en el aula»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Los alimentos que crecen en mi país",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre los alimentos que crecen en mi país y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Los alimentos que crecen en mi país en el marco de la unidad «Mi escuela y mi vida saludable»: Mi escuela y mi vida saludable.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los alimentos que crecen en mi país» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-13",
+    "etiqueta": "mar 13 oct",
+    "titulo": "Descubrimos los alimentos que crecen en mi país",
+    "desempenos": [
+     "Comprende y valora «Los alimentos que crecen en mi país».",
+     "Participa con autonomía en la actividad «Descubrimos los alimentos que crecen en mi país»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los alimentos que crecen en mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los alimentos que crecen en mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los alimentos que crecen en mi país» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos los alimentos que crecen en mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los alimentos que crecen en mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los alimentos que crecen en mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los alimentos que crecen en mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos los alimentos que crecen en mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-15",
+    "etiqueta": "jue 15 oct",
+    "titulo": "Practicamos los alimentos que crecen en mi país",
+    "desempenos": [
+     "Comprende y valora «Los alimentos que crecen en mi país».",
+     "Participa con autonomía en la actividad «Practicamos los alimentos que crecen en mi país»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los alimentos que crecen en mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los alimentos que crecen en mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los alimentos que crecen en mi país» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos los alimentos que crecen en mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los alimentos que crecen en mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los alimentos que crecen en mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los alimentos que crecen en mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los alimentos que crecen en mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Los trabajadores de la salud",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre los trabajadores de la salud y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Los trabajadores de la salud en el marco de la unidad «Mi escuela y mi vida saludable»: Mi escuela y mi vida saludable.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los trabajadores de la salud» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-20",
+    "etiqueta": "mar 20 oct",
+    "titulo": "Descubrimos los trabajadores de la salud",
+    "desempenos": [
+     "Comprende y valora «Los trabajadores de la salud».",
+     "Participa con autonomía en la actividad «Descubrimos los trabajadores de la salud»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los trabajadores de la salud» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los trabajadores de la salud».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los trabajadores de la salud» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos los trabajadores de la salud», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los trabajadores de la salud» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los trabajadores de la salud, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los trabajadores de la salud» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos los trabajadores de la salud»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-22",
+    "etiqueta": "jue 22 oct",
+    "titulo": "Practicamos los trabajadores de la salud",
+    "desempenos": [
+     "Comprende y valora «Los trabajadores de la salud».",
+     "Participa con autonomía en la actividad «Practicamos los trabajadores de la salud»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Los trabajadores de la salud» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los trabajadores de la salud».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los trabajadores de la salud» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos los trabajadores de la salud», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los trabajadores de la salud» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los trabajadores de la salud, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los trabajadores de la salud» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los trabajadores de la salud»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: mi lonchera saludable",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: mi lonchera saludable y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Proyecto: mi lonchera saludable en el marco de la unidad «Mi escuela y mi vida saludable»: Mi escuela y mi vida saludable.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Proyecto: mi lonchera saludable» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-27",
+    "etiqueta": "mar 27 oct",
+    "titulo": "Descubrimos proyecto: mi lonchera saludable",
+    "desempenos": [
+     "Comprende y valora «Proyecto: mi lonchera saludable».",
+     "Participa con autonomía en la actividad «Descubrimos proyecto: mi lonchera saludable»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Proyecto: mi lonchera saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: mi lonchera saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: mi lonchera saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos proyecto: mi lonchera saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: mi lonchera saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: mi lonchera saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: mi lonchera saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos proyecto: mi lonchera saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-29",
+    "etiqueta": "jue 29 oct",
+    "titulo": "Practicamos proyecto: mi lonchera saludable",
+    "desempenos": [
+     "Comprende y valora «Proyecto: mi lonchera saludable».",
+     "Participa con autonomía en la actividad «Practicamos proyecto: mi lonchera saludable»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Proyecto: mi lonchera saludable» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: mi lonchera saludable».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: mi lonchera saludable» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos proyecto: mi lonchera saludable», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: mi lonchera saludable» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: mi lonchera saludable, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: mi lonchera saludable» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos proyecto: mi lonchera saludable»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

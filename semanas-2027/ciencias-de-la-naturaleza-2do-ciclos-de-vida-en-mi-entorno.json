@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "El ciclo de vida de las plantas",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre el ciclo de vida de las plantas y su relación con Mi familia y el buen trato?",
+  "desarrollo": "El ciclo de vida de las plantas en el marco de la unidad «Ciclos de vida en mi entorno»: Ciclos de vida en mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «El ciclo de vida de las plantas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Descubrimos el ciclo de vida de las plantas",
+    "desempenos": [
+     "Comprende y experimenta «El ciclo de vida de las plantas».",
+     "Participa con autonomía en la actividad «Descubrimos el ciclo de vida de las plantas»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El ciclo de vida de las plantas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El ciclo de vida de las plantas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El ciclo de vida de las plantas» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos el ciclo de vida de las plantas», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El ciclo de vida de las plantas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El ciclo de vida de las plantas, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El ciclo de vida de las plantas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el ciclo de vida de las plantas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Practicamos el ciclo de vida de las plantas",
+    "desempenos": [
+     "Comprende y experimenta «El ciclo de vida de las plantas».",
+     "Participa con autonomía en la actividad «Practicamos el ciclo de vida de las plantas»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El ciclo de vida de las plantas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El ciclo de vida de las plantas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El ciclo de vida de las plantas» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos el ciclo de vida de las plantas», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El ciclo de vida de las plantas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El ciclo de vida de las plantas, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El ciclo de vida de las plantas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el ciclo de vida de las plantas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "El ciclo de vida de los animales",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre el ciclo de vida de los animales y su relación con Mi familia y el buen trato?",
+  "desarrollo": "El ciclo de vida de los animales en el marco de la unidad «Ciclos de vida en mi entorno»: Ciclos de vida en mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «El ciclo de vida de los animales» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Descubrimos el ciclo de vida de los animales",
+    "desempenos": [
+     "Comprende y experimenta «El ciclo de vida de los animales».",
+     "Participa con autonomía en la actividad «Descubrimos el ciclo de vida de los animales»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El ciclo de vida de los animales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El ciclo de vida de los animales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El ciclo de vida de los animales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos el ciclo de vida de los animales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El ciclo de vida de los animales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El ciclo de vida de los animales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El ciclo de vida de los animales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el ciclo de vida de los animales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Practicamos el ciclo de vida de los animales",
+    "desempenos": [
+     "Comprende y experimenta «El ciclo de vida de los animales».",
+     "Participa con autonomía en la actividad «Practicamos el ciclo de vida de los animales»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «El ciclo de vida de los animales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El ciclo de vida de los animales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El ciclo de vida de los animales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos el ciclo de vida de los animales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El ciclo de vida de los animales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El ciclo de vida de los animales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El ciclo de vida de los animales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el ciclo de vida de los animales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Los seres vivos y su ambiente",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre los seres vivos y su ambiente y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Los seres vivos y su ambiente en el marco de la unidad «Ciclos de vida en mi entorno»: Ciclos de vida en mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los seres vivos y su ambiente» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Descubrimos los seres vivos y su ambiente",
+    "desempenos": [
+     "Comprende y experimenta «Los seres vivos y su ambiente».",
+     "Participa con autonomía en la actividad «Descubrimos los seres vivos y su ambiente»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Los seres vivos y su ambiente» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los seres vivos y su ambiente».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los seres vivos y su ambiente» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos los seres vivos y su ambiente», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los seres vivos y su ambiente» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los seres vivos y su ambiente, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los seres vivos y su ambiente» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos los seres vivos y su ambiente»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Practicamos los seres vivos y su ambiente",
+    "desempenos": [
+     "Comprende y experimenta «Los seres vivos y su ambiente».",
+     "Participa con autonomía en la actividad «Practicamos los seres vivos y su ambiente»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Los seres vivos y su ambiente» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los seres vivos y su ambiente».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los seres vivos y su ambiente» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos los seres vivos y su ambiente», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los seres vivos y su ambiente» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los seres vivos y su ambiente, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los seres vivos y su ambiente» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los seres vivos y su ambiente»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: huerto familiar",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: huerto familiar y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Proyecto: huerto familiar en el marco de la unidad «Ciclos de vida en mi entorno»: Ciclos de vida en mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Proyecto: huerto familiar» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Descubrimos proyecto: huerto familiar",
+    "desempenos": [
+     "Comprende y experimenta «Proyecto: huerto familiar».",
+     "Participa con autonomía en la actividad «Descubrimos proyecto: huerto familiar»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Proyecto: huerto familiar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: huerto familiar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: huerto familiar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos proyecto: huerto familiar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: huerto familiar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: huerto familiar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: huerto familiar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos proyecto: huerto familiar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Practicamos proyecto: huerto familiar",
+    "desempenos": [
+     "Comprende y experimenta «Proyecto: huerto familiar».",
+     "Participa con autonomía en la actividad «Practicamos proyecto: huerto familiar»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Proyecto: huerto familiar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: huerto familiar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: huerto familiar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos proyecto: huerto familiar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: huerto familiar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: huerto familiar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: huerto familiar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos proyecto: huerto familiar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

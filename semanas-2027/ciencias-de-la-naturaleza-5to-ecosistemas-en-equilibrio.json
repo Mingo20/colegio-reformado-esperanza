@@ -1,0 +1,362 @@
+[
+ {
+  "numero": 1,
+  "tema": "Ecosistemas y sus relaciones",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre ecosistemas y sus relaciones y su relación con Navidad y convivencia?",
+  "desarrollo": "Ecosistemas y sus relaciones en el marco de la unidad «Ecosistemas en equilibrio»: Ecosistemas en equilibrio.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Ecosistemas y sus relaciones» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Descubrimos ecosistemas y sus relaciones",
+    "desempenos": [
+     "Comprende y experimenta «Ecosistemas y sus relaciones».",
+     "Participa con autonomía en la actividad «Descubrimos ecosistemas y sus relaciones»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Ecosistemas y sus relaciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Ecosistemas y sus relaciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Ecosistemas y sus relaciones» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos ecosistemas y sus relaciones», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Ecosistemas y sus relaciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Ecosistemas y sus relaciones, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Ecosistemas y sus relaciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos ecosistemas y sus relaciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Practicamos ecosistemas y sus relaciones",
+    "desempenos": [
+     "Comprende y experimenta «Ecosistemas y sus relaciones».",
+     "Participa con autonomía en la actividad «Practicamos ecosistemas y sus relaciones»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Ecosistemas y sus relaciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Ecosistemas y sus relaciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Ecosistemas y sus relaciones» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos ecosistemas y sus relaciones», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Ecosistemas y sus relaciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Ecosistemas y sus relaciones, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Ecosistemas y sus relaciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos ecosistemas y sus relaciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Energía que fluye en la naturaleza",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre energía que fluye en la naturaleza y su relación con Navidad y convivencia?",
+  "desarrollo": "Energía que fluye en la naturaleza en el marco de la unidad «Ecosistemas en equilibrio»: Ecosistemas en equilibrio.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Energía que fluye en la naturaleza» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Descubrimos energía que fluye en la naturaleza",
+    "desempenos": [
+     "Comprende y experimenta «Energía que fluye en la naturaleza».",
+     "Participa con autonomía en la actividad «Descubrimos energía que fluye en la naturaleza»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Energía que fluye en la naturaleza» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Energía que fluye en la naturaleza».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Energía que fluye en la naturaleza» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos energía que fluye en la naturaleza», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Energía que fluye en la naturaleza» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Energía que fluye en la naturaleza, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Energía que fluye en la naturaleza» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos energía que fluye en la naturaleza»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Practicamos energía que fluye en la naturaleza",
+    "desempenos": [
+     "Comprende y experimenta «Energía que fluye en la naturaleza».",
+     "Participa con autonomía en la actividad «Practicamos energía que fluye en la naturaleza»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Energía que fluye en la naturaleza» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Energía que fluye en la naturaleza».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Energía que fluye en la naturaleza» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos energía que fluye en la naturaleza», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Energía que fluye en la naturaleza» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Energía que fluye en la naturaleza, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Energía que fluye en la naturaleza» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos energía que fluye en la naturaleza»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Conservación de la biodiversidad",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre conservación de la biodiversidad y su relación con Navidad y convivencia?",
+  "desarrollo": "Conservación de la biodiversidad en el marco de la unidad «Ecosistemas en equilibrio»: Ecosistemas en equilibrio.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Conservación de la biodiversidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Descubrimos conservación de la biodiversidad",
+    "desempenos": [
+     "Comprende y experimenta «Conservación de la biodiversidad».",
+     "Participa con autonomía en la actividad «Descubrimos conservación de la biodiversidad»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Conservación de la biodiversidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Conservación de la biodiversidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Conservación de la biodiversidad» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos conservación de la biodiversidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Conservación de la biodiversidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Conservación de la biodiversidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Conservación de la biodiversidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos conservación de la biodiversidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,504 @@
+[
+ {
+  "numero": 1,
+  "tema": "Juegos cooperativos por equipos",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre juegos cooperativos por equipos y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Juegos cooperativos por equipos en el marco de la unidad «Cooperación y buen trato»: Cooperación y buen trato.",
+  "cierre": "Evidencia esperada: el estudiante practica «Juegos cooperativos por equipos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Descubrimos juegos cooperativos por equipos",
+    "desempenos": [
+     "Practica y disfruta «Juegos cooperativos por equipos».",
+     "Participa con autonomía en la actividad «Descubrimos juegos cooperativos por equipos»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos cooperativos por equipos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos cooperativos por equipos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos cooperativos por equipos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos juegos cooperativos por equipos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos cooperativos por equipos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos cooperativos por equipos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos cooperativos por equipos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos juegos cooperativos por equipos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Practicamos juegos cooperativos por equipos",
+    "desempenos": [
+     "Practica y disfruta «Juegos cooperativos por equipos».",
+     "Participa con autonomía en la actividad «Practicamos juegos cooperativos por equipos»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos cooperativos por equipos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos cooperativos por equipos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos cooperativos por equipos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos juegos cooperativos por equipos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos cooperativos por equipos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos cooperativos por equipos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos cooperativos por equipos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos juegos cooperativos por equipos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Relés de la familia",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre relés de la familia y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Relés de la familia en el marco de la unidad «Cooperación y buen trato»: Cooperación y buen trato.",
+  "cierre": "Evidencia esperada: el estudiante practica «Relés de la familia» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Descubrimos relés de la familia",
+    "desempenos": [
+     "Practica y disfruta «Relés de la familia».",
+     "Participa con autonomía en la actividad «Descubrimos relés de la familia»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Relés de la familia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Relés de la familia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Relés de la familia» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos relés de la familia», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Relés de la familia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Relés de la familia, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Relés de la familia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos relés de la familia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Juegos con pelota en equipo",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre juegos con pelota en equipo y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Juegos con pelota en equipo en el marco de la unidad «Cooperación y buen trato»: Cooperación y buen trato.",
+  "cierre": "Evidencia esperada: el estudiante practica «Juegos con pelota en equipo» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Descubrimos juegos con pelota en equipo",
+    "desempenos": [
+     "Practica y disfruta «Juegos con pelota en equipo».",
+     "Participa con autonomía en la actividad «Descubrimos juegos con pelota en equipo»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos con pelota en equipo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos con pelota en equipo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos con pelota en equipo» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos juegos con pelota en equipo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos con pelota en equipo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos con pelota en equipo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos con pelota en equipo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos juegos con pelota en equipo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Practicamos juegos con pelota en equipo",
+    "desempenos": [
+     "Practica y disfruta «Juegos con pelota en equipo».",
+     "Participa con autonomía en la actividad «Practicamos juegos con pelota en equipo»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos con pelota en equipo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos con pelota en equipo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos con pelota en equipo» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos juegos con pelota en equipo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos con pelota en equipo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos con pelota en equipo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos con pelota en equipo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos juegos con pelota en equipo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Festival del buen trato",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre festival del buen trato y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Festival del buen trato en el marco de la unidad «Cooperación y buen trato»: Cooperación y buen trato.",
+  "cierre": "Evidencia esperada: el estudiante practica «Festival del buen trato» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Descubrimos festival del buen trato",
+    "desempenos": [
+     "Practica y disfruta «Festival del buen trato».",
+     "Participa con autonomía en la actividad «Descubrimos festival del buen trato»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Festival del buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Festival del buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Festival del buen trato» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos festival del buen trato», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Festival del buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Festival del buen trato, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Festival del buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos festival del buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Practicamos festival del buen trato",
+    "desempenos": [
+     "Practica y disfruta «Festival del buen trato».",
+     "Participa con autonomía en la actividad «Practicamos festival del buen trato»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Festival del buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Festival del buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Festival del buen trato» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos festival del buen trato», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Festival del buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Festival del buen trato, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Festival del buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos festival del buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

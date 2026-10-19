@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "La antología temática",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre la antología temática y su relación con Navidad y convivencia?",
+  "desarrollo": "La antología temática en el marco de la unidad «Proyecto escritor de fin de año»: Proyecto escritor de fin de año.",
+  "cierre": "Evidencia esperada: el estudiante comprende «La antología temática» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos la antología temática",
+    "desempenos": [
+     "Comprende y produce «La antología temática».",
+     "Participa con autonomía en la actividad «Descubrimos la antología temática»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La antología temática» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La antología temática».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La antología temática» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos la antología temática», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La antología temática» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La antología temática, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La antología temática» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos la antología temática»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos la antología temática",
+    "desempenos": [
+     "Comprende y produce «La antología temática».",
+     "Participa con autonomía en la actividad «Practicamos la antología temática»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La antología temática» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La antología temática».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La antología temática» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos la antología temática», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La antología temática» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La antología temática, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La antología temática» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la antología temática»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos la antología temática",
+    "desempenos": [
+     "Comprende y produce «La antología temática».",
+     "Participa con autonomía en la actividad «Aplicamos la antología temática»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La antología temática» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La antología temática».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La antología temática» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos la antología temática», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La antología temática» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La antología temática, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La antología temática» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos la antología temática»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con la antología temática",
+    "desempenos": [
+     "Comprende y produce «La antología temática».",
+     "Participa con autonomía en la actividad «Creamos con la antología temática»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La antología temática» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La antología temática».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La antología temática» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con la antología temática», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La antología temática» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La antología temática, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La antología temática» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con la antología temática»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Relatos de Navidad dominicana",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre relatos de Navidad dominicana y su relación con Navidad y convivencia?",
+  "desarrollo": "Relatos de Navidad dominicana en el marco de la unidad «Proyecto escritor de fin de año»: Proyecto escritor de fin de año.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Relatos de Navidad dominicana» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Descubrimos relatos de Navidad dominicana",
+    "desempenos": [
+     "Comprende y produce «Relatos de Navidad dominicana».",
+     "Participa con autonomía en la actividad «Descubrimos relatos de Navidad dominicana»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Relatos de Navidad dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Relatos de Navidad dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Relatos de Navidad dominicana» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos relatos de Navidad dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Relatos de Navidad dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Relatos de Navidad dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Relatos de Navidad dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos relatos de Navidad dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos relatos de Navidad dominicana",
+    "desempenos": [
+     "Comprende y produce «Relatos de Navidad dominicana».",
+     "Participa con autonomía en la actividad «Practicamos relatos de Navidad dominicana»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Relatos de Navidad dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Relatos de Navidad dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Relatos de Navidad dominicana» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos relatos de Navidad dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Relatos de Navidad dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Relatos de Navidad dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Relatos de Navidad dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos relatos de Navidad dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Aplicamos relatos de Navidad dominicana",
+    "desempenos": [
+     "Comprende y produce «Relatos de Navidad dominicana».",
+     "Participa con autonomía en la actividad «Aplicamos relatos de Navidad dominicana»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Relatos de Navidad dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Relatos de Navidad dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Relatos de Navidad dominicana» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos relatos de Navidad dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Relatos de Navidad dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Relatos de Navidad dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Relatos de Navidad dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos relatos de Navidad dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Creamos con relatos de Navidad dominicana",
+    "desempenos": [
+     "Comprende y produce «Relatos de Navidad dominicana».",
+     "Participa con autonomía en la actividad «Creamos con relatos de Navidad dominicana»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Relatos de Navidad dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Relatos de Navidad dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Relatos de Navidad dominicana» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con relatos de Navidad dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Relatos de Navidad dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Relatos de Navidad dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Relatos de Navidad dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con relatos de Navidad dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Compartimos relatos de Navidad dominicana",
+    "desempenos": [
+     "Comprende y produce «Relatos de Navidad dominicana».",
+     "Participa con autonomía en la actividad «Compartimos relatos de Navidad dominicana»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Relatos de Navidad dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Relatos de Navidad dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Relatos de Navidad dominicana» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Compartimos relatos de Navidad dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Relatos de Navidad dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Relatos de Navidad dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Relatos de Navidad dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Compartimos relatos de Navidad dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Presentación oral del proyecto",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre presentación oral del proyecto y su relación con Navidad y convivencia?",
+  "desarrollo": "Presentación oral del proyecto en el marco de la unidad «Proyecto escritor de fin de año»: Proyecto escritor de fin de año.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Presentación oral del proyecto» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Descubrimos presentación oral del proyecto",
+    "desempenos": [
+     "Comprende y produce «Presentación oral del proyecto».",
+     "Participa con autonomía en la actividad «Descubrimos presentación oral del proyecto»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Presentación oral del proyecto» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Presentación oral del proyecto».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Presentación oral del proyecto» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos presentación oral del proyecto», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Presentación oral del proyecto» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Presentación oral del proyecto, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Presentación oral del proyecto» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos presentación oral del proyecto»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Practicamos presentación oral del proyecto",
+    "desempenos": [
+     "Comprende y produce «Presentación oral del proyecto».",
+     "Participa con autonomía en la actividad «Practicamos presentación oral del proyecto»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Presentación oral del proyecto» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Presentación oral del proyecto».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Presentación oral del proyecto» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos presentación oral del proyecto», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Presentación oral del proyecto» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Presentación oral del proyecto, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Presentación oral del proyecto» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos presentación oral del proyecto»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Aplicamos presentación oral del proyecto",
+    "desempenos": [
+     "Comprende y produce «Presentación oral del proyecto».",
+     "Participa con autonomía en la actividad «Aplicamos presentación oral del proyecto»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Presentación oral del proyecto» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Presentación oral del proyecto».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Presentación oral del proyecto» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos presentación oral del proyecto», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Presentación oral del proyecto» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Presentación oral del proyecto, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Presentación oral del proyecto» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos presentación oral del proyecto»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Creamos con presentación oral del proyecto",
+    "desempenos": [
+     "Comprende y produce «Presentación oral del proyecto».",
+     "Participa con autonomía en la actividad «Creamos con presentación oral del proyecto»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Presentación oral del proyecto» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Presentación oral del proyecto».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Presentación oral del proyecto» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con presentación oral del proyecto», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Presentación oral del proyecto» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Presentación oral del proyecto, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Presentación oral del proyecto» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con presentación oral del proyecto»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,636 @@
+[
+ {
+  "numero": 1,
+  "tema": "Las partes de mi cuerpo y sus cuidados",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre las partes de mi cuerpo y sus cuidados y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Las partes de mi cuerpo y sus cuidados en el marco de la unidad «Mi cuerpo, mi primer milagro»: Mi cuerpo, mi primer milagro.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Las partes de mi cuerpo y sus cuidados» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-02",
+    "etiqueta": "vie 2 oct",
+    "titulo": "Descubrimos las partes de mi cuerpo y sus cuidados",
+    "desempenos": [
+     "Comprende y experimenta «Las partes de mi cuerpo y sus cuidados».",
+     "Participa con autonomía en la actividad «Descubrimos las partes de mi cuerpo y sus cuidados»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Las partes de mi cuerpo y sus cuidados» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Las partes de mi cuerpo y sus cuidados».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Las partes de mi cuerpo y sus cuidados» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos las partes de mi cuerpo y sus cuidados», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Las partes de mi cuerpo y sus cuidados» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Las partes de mi cuerpo y sus cuidados, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Las partes de mi cuerpo y sus cuidados» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos las partes de mi cuerpo y sus cuidados»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-07",
+    "etiqueta": "mié 7 oct",
+    "titulo": "Practicamos las partes de mi cuerpo y sus cuidados",
+    "desempenos": [
+     "Comprende y experimenta «Las partes de mi cuerpo y sus cuidados».",
+     "Participa con autonomía en la actividad «Practicamos las partes de mi cuerpo y sus cuidados»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Las partes de mi cuerpo y sus cuidados» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Las partes de mi cuerpo y sus cuidados».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Las partes de mi cuerpo y sus cuidados» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos las partes de mi cuerpo y sus cuidados», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Las partes de mi cuerpo y sus cuidados» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Las partes de mi cuerpo y sus cuidados, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Las partes de mi cuerpo y sus cuidados» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos las partes de mi cuerpo y sus cuidados»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Los sentidos que me ayudan a descubrir",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre los sentidos que me ayudan a descubrir y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Los sentidos que me ayudan a descubrir en el marco de la unidad «Mi cuerpo, mi primer milagro»: Mi cuerpo, mi primer milagro.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los sentidos que me ayudan a descubrir» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-09",
+    "etiqueta": "vie 9 oct",
+    "titulo": "Descubrimos los sentidos que me ayudan a descubrir",
+    "desempenos": [
+     "Comprende y experimenta «Los sentidos que me ayudan a descubrir».",
+     "Participa con autonomía en la actividad «Descubrimos los sentidos que me ayudan a descubrir»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Los sentidos que me ayudan a descubrir» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los sentidos que me ayudan a descubrir».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los sentidos que me ayudan a descubrir» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos los sentidos que me ayudan a descubrir», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los sentidos que me ayudan a descubrir» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los sentidos que me ayudan a descubrir, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los sentidos que me ayudan a descubrir» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos los sentidos que me ayudan a descubrir»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-14",
+    "etiqueta": "mié 14 oct",
+    "titulo": "Practicamos los sentidos que me ayudan a descubrir",
+    "desempenos": [
+     "Comprende y experimenta «Los sentidos que me ayudan a descubrir».",
+     "Participa con autonomía en la actividad «Practicamos los sentidos que me ayudan a descubrir»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Los sentidos que me ayudan a descubrir» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los sentidos que me ayudan a descubrir».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los sentidos que me ayudan a descubrir» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos los sentidos que me ayudan a descubrir», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los sentidos que me ayudan a descubrir» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los sentidos que me ayudan a descubrir, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los sentidos que me ayudan a descubrir» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los sentidos que me ayudan a descubrir»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-16",
+    "etiqueta": "vie 16 oct",
+    "titulo": "Aplicamos los sentidos que me ayudan a descubrir",
+    "desempenos": [
+     "Comprende y experimenta «Los sentidos que me ayudan a descubrir».",
+     "Participa con autonomía en la actividad «Aplicamos los sentidos que me ayudan a descubrir»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Los sentidos que me ayudan a descubrir» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los sentidos que me ayudan a descubrir».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los sentidos que me ayudan a descubrir» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Aplicamos los sentidos que me ayudan a descubrir», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Los sentidos que me ayudan a descubrir» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los sentidos que me ayudan a descubrir, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Los sentidos que me ayudan a descubrir» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos los sentidos que me ayudan a descubrir»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Alimentos nutritivos de mi país",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre alimentos nutritivos de mi país y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Alimentos nutritivos de mi país en el marco de la unidad «Mi cuerpo, mi primer milagro»: Mi cuerpo, mi primer milagro.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Alimentos nutritivos de mi país» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-21",
+    "etiqueta": "mié 21 oct",
+    "titulo": "Descubrimos alimentos nutritivos de mi país",
+    "desempenos": [
+     "Comprende y experimenta «Alimentos nutritivos de mi país».",
+     "Participa con autonomía en la actividad «Descubrimos alimentos nutritivos de mi país»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Alimentos nutritivos de mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Alimentos nutritivos de mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Alimentos nutritivos de mi país» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos alimentos nutritivos de mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Alimentos nutritivos de mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Alimentos nutritivos de mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Alimentos nutritivos de mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos alimentos nutritivos de mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-23",
+    "etiqueta": "vie 23 oct",
+    "titulo": "Practicamos alimentos nutritivos de mi país",
+    "desempenos": [
+     "Comprende y experimenta «Alimentos nutritivos de mi país».",
+     "Participa con autonomía en la actividad «Practicamos alimentos nutritivos de mi país»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Alimentos nutritivos de mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Alimentos nutritivos de mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Alimentos nutritivos de mi país» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos alimentos nutritivos de mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Alimentos nutritivos de mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Alimentos nutritivos de mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Alimentos nutritivos de mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos alimentos nutritivos de mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Higiene: mi cuerpo limpio y sano",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre higiene: mi cuerpo limpio y sano y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Higiene: mi cuerpo limpio y sano en el marco de la unidad «Mi cuerpo, mi primer milagro»: Mi cuerpo, mi primer milagro.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Higiene: mi cuerpo limpio y sano» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-28",
+    "etiqueta": "mié 28 oct",
+    "titulo": "Descubrimos higiene: mi cuerpo limpio y sano",
+    "desempenos": [
+     "Comprende y experimenta «Higiene: mi cuerpo limpio y sano».",
+     "Participa con autonomía en la actividad «Descubrimos higiene: mi cuerpo limpio y sano»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Higiene: mi cuerpo limpio y sano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Higiene: mi cuerpo limpio y sano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Higiene: mi cuerpo limpio y sano» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos higiene: mi cuerpo limpio y sano», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Higiene: mi cuerpo limpio y sano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Higiene: mi cuerpo limpio y sano, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Higiene: mi cuerpo limpio y sano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos higiene: mi cuerpo limpio y sano»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-30",
+    "etiqueta": "vie 30 oct",
+    "titulo": "Practicamos higiene: mi cuerpo limpio y sano",
+    "desempenos": [
+     "Comprende y experimenta «Higiene: mi cuerpo limpio y sano».",
+     "Participa con autonomía en la actividad «Practicamos higiene: mi cuerpo limpio y sano»."
+    ],
+    "recursos": [
+     "Material de experimento",
+     "Lupa y muestras del entorno",
+     "Láminas del cuerpo humano",
+     "Cuaderno de ciencia"
+    ],
+    "orientacion": "Contextualizar «Higiene: mi cuerpo limpio y sano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Higiene: mi cuerpo limpio y sano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Higiene: mi cuerpo limpio y sano» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos higiene: mi cuerpo limpio y sano», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Higiene: mi cuerpo limpio y sano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Higiene: mi cuerpo limpio y sano, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Higiene: mi cuerpo limpio y sano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos higiene: mi cuerpo limpio y sano»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "Múltiplos de un número y MCM",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre múltiplos de un número y MCM y su relación con Navidad y convivencia?",
+  "desarrollo": "Múltiplos de un número y MCM en el marco de la unidad «Geometría de diciembre»: Geometría de diciembre.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Múltiplos de un número y MCM» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos múltiplos de un número y MCM",
+    "desempenos": [
+     "Comprende y aplica «Múltiplos de un número y MCM».",
+     "Participa con autonomía en la actividad «Descubrimos múltiplos de un número y MCM»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Múltiplos de un número y MCM» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Múltiplos de un número y MCM».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Múltiplos de un número y MCM» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos múltiplos de un número y MCM», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Múltiplos de un número y MCM» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Múltiplos de un número y MCM, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Múltiplos de un número y MCM» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos múltiplos de un número y MCM»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos múltiplos de un número y MCM",
+    "desempenos": [
+     "Comprende y aplica «Múltiplos de un número y MCM».",
+     "Participa con autonomía en la actividad «Practicamos múltiplos de un número y MCM»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Múltiplos de un número y MCM» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Múltiplos de un número y MCM».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Múltiplos de un número y MCM» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos múltiplos de un número y MCM», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Múltiplos de un número y MCM» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Múltiplos de un número y MCM, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Múltiplos de un número y MCM» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos múltiplos de un número y MCM»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos múltiplos de un número y MCM",
+    "desempenos": [
+     "Comprende y aplica «Múltiplos de un número y MCM».",
+     "Participa con autonomía en la actividad «Aplicamos múltiplos de un número y MCM»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Múltiplos de un número y MCM» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Múltiplos de un número y MCM».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Múltiplos de un número y MCM» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos múltiplos de un número y MCM», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Múltiplos de un número y MCM» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Múltiplos de un número y MCM, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Múltiplos de un número y MCM» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos múltiplos de un número y MCM»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con múltiplos de un número y MCM",
+    "desempenos": [
+     "Comprende y aplica «Múltiplos de un número y MCM».",
+     "Participa con autonomía en la actividad «Creamos con múltiplos de un número y MCM»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Múltiplos de un número y MCM» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Múltiplos de un número y MCM».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Múltiplos de un número y MCM» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con múltiplos de un número y MCM», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Múltiplos de un número y MCM» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Múltiplos de un número y MCM, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Múltiplos de un número y MCM» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con múltiplos de un número y MCM»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "División y sus elementos: como resta",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre división y sus elementos: como resta y su relación con Navidad y convivencia?",
+  "desarrollo": "División y sus elementos: como resta en el marco de la unidad «Geometría de diciembre»: Geometría de diciembre.",
+  "cierre": "Evidencia esperada: el estudiante comprende «División y sus elementos: como resta» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Descubrimos división y sus elementos: como resta",
+    "desempenos": [
+     "Comprende y aplica «División y sus elementos: como resta».",
+     "Participa con autonomía en la actividad «Descubrimos división y sus elementos: como resta»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División y sus elementos: como resta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División y sus elementos: como resta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División y sus elementos: como resta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos división y sus elementos: como resta», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División y sus elementos: como resta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División y sus elementos: como resta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División y sus elementos: como resta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos división y sus elementos: como resta»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos división y sus elementos: como resta",
+    "desempenos": [
+     "Comprende y aplica «División y sus elementos: como resta».",
+     "Participa con autonomía en la actividad «Practicamos división y sus elementos: como resta»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División y sus elementos: como resta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División y sus elementos: como resta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División y sus elementos: como resta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos división y sus elementos: como resta», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División y sus elementos: como resta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División y sus elementos: como resta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División y sus elementos: como resta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos división y sus elementos: como resta»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Aplicamos división y sus elementos: como resta",
+    "desempenos": [
+     "Comprende y aplica «División y sus elementos: como resta».",
+     "Participa con autonomía en la actividad «Aplicamos división y sus elementos: como resta»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División y sus elementos: como resta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División y sus elementos: como resta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División y sus elementos: como resta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos división y sus elementos: como resta», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División y sus elementos: como resta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División y sus elementos: como resta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División y sus elementos: como resta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos división y sus elementos: como resta»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Creamos con división y sus elementos: como resta",
+    "desempenos": [
+     "Comprende y aplica «División y sus elementos: como resta».",
+     "Participa con autonomía en la actividad «Creamos con división y sus elementos: como resta»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División y sus elementos: como resta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División y sus elementos: como resta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División y sus elementos: como resta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con división y sus elementos: como resta», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División y sus elementos: como resta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División y sus elementos: como resta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División y sus elementos: como resta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con división y sus elementos: como resta»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Compartimos división y sus elementos: como resta",
+    "desempenos": [
+     "Comprende y aplica «División y sus elementos: como resta».",
+     "Participa con autonomía en la actividad «Compartimos división y sus elementos: como resta»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División y sus elementos: como resta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División y sus elementos: como resta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División y sus elementos: como resta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Compartimos división y sus elementos: como resta», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División y sus elementos: como resta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División y sus elementos: como resta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División y sus elementos: como resta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Compartimos división y sus elementos: como resta»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "División exacta e inexacta, Divisores de un número",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre división exacta e inexacta, Divisores de un número y su relación con Navidad y convivencia?",
+  "desarrollo": "División exacta e inexacta, Divisores de un número en el marco de la unidad «Geometría de diciembre»: Geometría de diciembre.",
+  "cierre": "Evidencia esperada: el estudiante comprende «División exacta e inexacta, Divisores de un número» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "División exacta e inexacta, Divisores de un número",
+    "desempenos": [
+     "Comprende y aplica «División exacta e inexacta, Divisores de un número».",
+     "Participa con autonomía en la actividad «División exacta e inexacta, Divisores de un número»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División exacta e inexacta, Divisores de un número» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División exacta e inexacta, Divisores de un número».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División exacta e inexacta, Divisores de un número» con la Navidad?",
+       "Anuncia el objetivo de hoy: «División exacta e inexacta, Divisores de un número», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División exacta e inexacta, Divisores de un número» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División exacta e inexacta, Divisores de un número, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División exacta e inexacta, Divisores de un número» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «División exacta e inexacta, Divisores de un número»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "División exacta e inexacta, Divisores de un número",
+    "desempenos": [
+     "Comprende y aplica «División exacta e inexacta, Divisores de un número».",
+     "Participa con autonomía en la actividad «División exacta e inexacta, Divisores de un número»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División exacta e inexacta, Divisores de un número» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División exacta e inexacta, Divisores de un número».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División exacta e inexacta, Divisores de un número» con la Navidad?",
+       "Anuncia el objetivo de hoy: «División exacta e inexacta, Divisores de un número», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División exacta e inexacta, Divisores de un número» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División exacta e inexacta, Divisores de un número, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División exacta e inexacta, Divisores de un número» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «División exacta e inexacta, Divisores de un número»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "División exacta e inexacta, Divisores de un número",
+    "desempenos": [
+     "Comprende y aplica «División exacta e inexacta, Divisores de un número».",
+     "Participa con autonomía en la actividad «División exacta e inexacta, Divisores de un número»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División exacta e inexacta, Divisores de un número» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División exacta e inexacta, Divisores de un número».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División exacta e inexacta, Divisores de un número» con la Navidad?",
+       "Anuncia el objetivo de hoy: «División exacta e inexacta, Divisores de un número», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División exacta e inexacta, Divisores de un número» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División exacta e inexacta, Divisores de un número, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División exacta e inexacta, Divisores de un número» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «División exacta e inexacta, Divisores de un número»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "División exacta e inexacta, Divisores de un número",
+    "desempenos": [
+     "Comprende y aplica «División exacta e inexacta, Divisores de un número».",
+     "Participa con autonomía en la actividad «División exacta e inexacta, Divisores de un número»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División exacta e inexacta, Divisores de un número» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División exacta e inexacta, Divisores de un número».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División exacta e inexacta, Divisores de un número» con la Navidad?",
+       "Anuncia el objetivo de hoy: «División exacta e inexacta, Divisores de un número», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División exacta e inexacta, Divisores de un número» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División exacta e inexacta, Divisores de un número, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División exacta e inexacta, Divisores de un número» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «División exacta e inexacta, Divisores de un número»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

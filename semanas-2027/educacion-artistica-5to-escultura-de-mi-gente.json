@@ -1,0 +1,306 @@
+[
+ {
+  "numero": 1,
+  "tema": "Modelado con arcilla",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre modelado con arcilla y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Modelado con arcilla en el marco de la unidad «Escultura de mi gente»: Escultura de mi gente.",
+  "cierre": "Evidencia esperada: el estudiante crea «Modelado con arcilla» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Descubrimos modelado con arcilla",
+    "desempenos": [
+     "Crea y expresa «Modelado con arcilla».",
+     "Participa con autonomía en la actividad «Descubrimos modelado con arcilla»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Modelado con arcilla» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Modelado con arcilla».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Modelado con arcilla» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos modelado con arcilla», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Modelado con arcilla» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Modelado con arcilla, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Modelado con arcilla» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos modelado con arcilla»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Figuras de la familia dominicana",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre figuras de la familia dominicana y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Figuras de la familia dominicana en el marco de la unidad «Escultura de mi gente»: Escultura de mi gente.",
+  "cierre": "Evidencia esperada: el estudiante crea «Figuras de la familia dominicana» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Descubrimos figuras de la familia dominicana",
+    "desempenos": [
+     "Crea y expresa «Figuras de la familia dominicana».",
+     "Participa con autonomía en la actividad «Descubrimos figuras de la familia dominicana»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Figuras de la familia dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Figuras de la familia dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Figuras de la familia dominicana» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos figuras de la familia dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Figuras de la familia dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Figuras de la familia dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Figuras de la familia dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos figuras de la familia dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Instalación colectiva",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre instalación colectiva y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Instalación colectiva en el marco de la unidad «Escultura de mi gente»: Escultura de mi gente.",
+  "cierre": "Evidencia esperada: el estudiante crea «Instalación colectiva» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Descubrimos instalación colectiva",
+    "desempenos": [
+     "Crea y expresa «Instalación colectiva».",
+     "Participa con autonomía en la actividad «Descubrimos instalación colectiva»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Instalación colectiva» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Instalación colectiva».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Instalación colectiva» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos instalación colectiva», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Instalación colectiva» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Instalación colectiva, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Instalación colectiva» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos instalación colectiva»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Exposición: mi comunidad",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre exposición: mi comunidad y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Exposición: mi comunidad en el marco de la unidad «Escultura de mi gente»: Escultura de mi gente.",
+  "cierre": "Evidencia esperada: el estudiante crea «Exposición: mi comunidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Descubrimos exposición: mi comunidad",
+    "desempenos": [
+     "Crea y expresa «Exposición: mi comunidad».",
+     "Participa con autonomía en la actividad «Descubrimos exposición: mi comunidad»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Exposición: mi comunidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Exposición: mi comunidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Exposición: mi comunidad» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos exposición: mi comunidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Exposición: mi comunidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Exposición: mi comunidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Exposición: mi comunidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos exposición: mi comunidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

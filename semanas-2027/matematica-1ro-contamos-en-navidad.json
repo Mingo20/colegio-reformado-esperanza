@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "Figuras y cuerpos en el nacimiento",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre figuras y cuerpos en el nacimiento y su relación con Navidad y convivencia?",
+  "desarrollo": "Figuras y cuerpos en el nacimiento en el marco de la unidad «Contamos en Navidad»: Contamos en Navidad.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Figuras y cuerpos en el nacimiento» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Descubrimos figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Practicamos figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Aplicamos figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Creamos con figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Práctica guiada de figuras y cuerpos en el nacimiento",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre práctica guiada de figuras y cuerpos en el nacimiento y su relación con Navidad y convivencia?",
+  "desarrollo": "Práctica guiada de figuras y cuerpos en el nacimiento en el marco de la unidad «Contamos en Navidad»: Contamos en Navidad.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Práctica guiada de figuras y cuerpos en el nacimiento» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Práctica guiada de figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Práctica guiada de figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Práctica guiada de figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Práctica guiada de figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Práctica guiada de figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Práctica guiada de figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Práctica guiada de figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Práctica guiada de figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Práctica guiada de figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Práctica guiada de figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Práctica guiada de figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Práctica guiada de figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Práctica guiada de figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Práctica guiada de figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Práctica guiada de figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Práctica guiada de figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Práctica guiada de figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Práctica guiada de figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Práctica guiada de figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Práctica guiada de figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Práctica guiada de figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Práctica guiada de figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Práctica guiada de figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Práctica guiada de figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Práctica guiada de figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Práctica guiada de figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Práctica guiada de figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Práctica guiada de figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Práctica guiada de figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Práctica guiada de figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Práctica guiada de figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Práctica guiada de figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Práctica guiada de figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Práctica guiada de figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Práctica guiada de figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Práctica guiada de figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Práctica guiada de figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Práctica guiada de figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Práctica guiada de figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Práctica guiada de figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Práctica guiada de figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Práctica guiada de figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Práctica guiada de figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Práctica guiada de figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Práctica guiada de figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Práctica guiada de figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Problemas con figuras y cuerpos en el nacimiento",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre problemas con figuras y cuerpos en el nacimiento y su relación con Navidad y convivencia?",
+  "desarrollo": "Problemas con figuras y cuerpos en el nacimiento en el marco de la unidad «Contamos en Navidad»: Contamos en Navidad.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Problemas con figuras y cuerpos en el nacimiento» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Problemas con figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Problemas con figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Problemas con figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Problemas con figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Problemas con figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Problemas con figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Problemas con figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Problemas con figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Problemas con figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Problemas con figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Problemas con figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Problemas con figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Problemas con figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Problemas con figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Problemas con figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Problemas con figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Problemas con figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Problemas con figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Problemas con figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Problemas con figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Problemas con figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Problemas con figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Problemas con figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Problemas con figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Problemas con figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Problemas con figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Problemas con figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Problemas con figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Problemas con figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Problemas con figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Problemas con figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Problemas con figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Problemas con figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Problemas con figuras y cuerpos en el nacimiento",
+    "desempenos": [
+     "Comprende y aplica «Problemas con figuras y cuerpos en el nacimiento».",
+     "Participa con autonomía en la actividad «Problemas con figuras y cuerpos en el nacimiento»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Problemas con figuras y cuerpos en el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Problemas con figuras y cuerpos en el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Problemas con figuras y cuerpos en el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Problemas con figuras y cuerpos en el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Problemas con figuras y cuerpos en el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Problemas con figuras y cuerpos en el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Problemas con figuras y cuerpos en el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Problemas con figuras y cuerpos en el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

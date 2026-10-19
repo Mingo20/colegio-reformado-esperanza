@@ -1,0 +1,230 @@
+[
+ {
+  "numero": 1,
+  "tema": "El sentido cristiano de la Navidad",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre el sentido cristiano de la Navidad y su relación con Navidad y convivencia?",
+  "desarrollo": "El sentido cristiano de la Navidad en el marco de la unidad «Navidad y solidaridad»: Navidad y solidaridad.",
+  "cierre": "Evidencia esperada: el estudiante reflexiona «El sentido cristiano de la Navidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos el sentido cristiano de la Navidad",
+    "desempenos": [
+     "Reflexiona y vive «El sentido cristiano de la Navidad».",
+     "Participa con autonomía en la actividad «Descubrimos el sentido cristiano de la Navidad»."
+    ],
+    "recursos": [
+     "Biblia infantil",
+     "Láminas bíblicas",
+     "Ficha de valores",
+     "Cuaderno de reflexión"
+    ],
+    "orientacion": "Contextualizar «El sentido cristiano de la Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El sentido cristiano de la Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El sentido cristiano de la Navidad» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos el sentido cristiano de la Navidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El sentido cristiano de la Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El sentido cristiano de la Navidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El sentido cristiano de la Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el sentido cristiano de la Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Compartir con los que menos tienen",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre compartir con los que menos tienen y su relación con Navidad y convivencia?",
+  "desarrollo": "Compartir con los que menos tienen en el marco de la unidad «Navidad y solidaridad»: Navidad y solidaridad.",
+  "cierre": "Evidencia esperada: el estudiante reflexiona «Compartir con los que menos tienen» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Descubrimos compartir con los que menos tienen",
+    "desempenos": [
+     "Reflexiona y vive «Compartir con los que menos tienen».",
+     "Participa con autonomía en la actividad «Descubrimos compartir con los que menos tienen»."
+    ],
+    "recursos": [
+     "Biblia infantil",
+     "Láminas bíblicas",
+     "Ficha de valores",
+     "Cuaderno de reflexión"
+    ],
+    "orientacion": "Contextualizar «Compartir con los que menos tienen» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Compartir con los que menos tienen».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Compartir con los que menos tienen» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos compartir con los que menos tienen», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Compartir con los que menos tienen» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Compartir con los que menos tienen, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Compartir con los que menos tienen» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos compartir con los que menos tienen»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Adviento: servicio y oración",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre adviento: servicio y oración y su relación con Navidad y convivencia?",
+  "desarrollo": "Adviento: servicio y oración en el marco de la unidad «Navidad y solidaridad»: Navidad y solidaridad.",
+  "cierre": "Evidencia esperada: el estudiante reflexiona «Adviento: servicio y oración» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Descubrimos adviento: servicio y oración",
+    "desempenos": [
+     "Reflexiona y vive «Adviento: servicio y oración».",
+     "Participa con autonomía en la actividad «Descubrimos adviento: servicio y oración»."
+    ],
+    "recursos": [
+     "Biblia infantil",
+     "Láminas bíblicas",
+     "Ficha de valores",
+     "Cuaderno de reflexión"
+    ],
+    "orientacion": "Contextualizar «Adviento: servicio y oración» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Adviento: servicio y oración».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Adviento: servicio y oración» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos adviento: servicio y oración», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Adviento: servicio y oración» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Adviento: servicio y oración, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Adviento: servicio y oración» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos adviento: servicio y oración»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

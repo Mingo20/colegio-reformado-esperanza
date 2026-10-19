@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "La carta a los Reyes Magos",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre la carta a los Reyes Magos y su relación con Navidad y convivencia?",
+  "desarrollo": "La carta a los Reyes Magos en el marco de la unidad «Textos navideños que disfruto»: Textos navideños que disfruto.",
+  "cierre": "Evidencia esperada: el estudiante comprende «La carta a los Reyes Magos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos la carta a los Reyes Magos",
+    "desempenos": [
+     "Comprende y produce «La carta a los Reyes Magos».",
+     "Participa con autonomía en la actividad «Descubrimos la carta a los Reyes Magos»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La carta a los Reyes Magos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La carta a los Reyes Magos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La carta a los Reyes Magos» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos la carta a los Reyes Magos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La carta a los Reyes Magos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La carta a los Reyes Magos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La carta a los Reyes Magos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos la carta a los Reyes Magos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos la carta a los Reyes Magos",
+    "desempenos": [
+     "Comprende y produce «La carta a los Reyes Magos».",
+     "Participa con autonomía en la actividad «Practicamos la carta a los Reyes Magos»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La carta a los Reyes Magos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La carta a los Reyes Magos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La carta a los Reyes Magos» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos la carta a los Reyes Magos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La carta a los Reyes Magos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La carta a los Reyes Magos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La carta a los Reyes Magos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la carta a los Reyes Magos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos la carta a los Reyes Magos",
+    "desempenos": [
+     "Comprende y produce «La carta a los Reyes Magos».",
+     "Participa con autonomía en la actividad «Aplicamos la carta a los Reyes Magos»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La carta a los Reyes Magos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La carta a los Reyes Magos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La carta a los Reyes Magos» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos la carta a los Reyes Magos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La carta a los Reyes Magos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La carta a los Reyes Magos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La carta a los Reyes Magos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos la carta a los Reyes Magos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con la carta a los Reyes Magos",
+    "desempenos": [
+     "Comprende y produce «La carta a los Reyes Magos».",
+     "Participa con autonomía en la actividad «Creamos con la carta a los Reyes Magos»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La carta a los Reyes Magos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La carta a los Reyes Magos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La carta a los Reyes Magos» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con la carta a los Reyes Magos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La carta a los Reyes Magos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La carta a los Reyes Magos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La carta a los Reyes Magos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con la carta a los Reyes Magos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Villancicos: verso y rima",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre villancicos: verso y rima y su relación con Navidad y convivencia?",
+  "desarrollo": "Villancicos: verso y rima en el marco de la unidad «Textos navideños que disfruto»: Textos navideños que disfruto.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Villancicos: verso y rima» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Descubrimos villancicos: verso y rima",
+    "desempenos": [
+     "Comprende y produce «Villancicos: verso y rima».",
+     "Participa con autonomía en la actividad «Descubrimos villancicos: verso y rima»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Villancicos: verso y rima» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Villancicos: verso y rima».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Villancicos: verso y rima» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos villancicos: verso y rima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Villancicos: verso y rima» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Villancicos: verso y rima, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Villancicos: verso y rima» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos villancicos: verso y rima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos villancicos: verso y rima",
+    "desempenos": [
+     "Comprende y produce «Villancicos: verso y rima».",
+     "Participa con autonomía en la actividad «Practicamos villancicos: verso y rima»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Villancicos: verso y rima» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Villancicos: verso y rima».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Villancicos: verso y rima» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos villancicos: verso y rima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Villancicos: verso y rima» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Villancicos: verso y rima, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Villancicos: verso y rima» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos villancicos: verso y rima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Aplicamos villancicos: verso y rima",
+    "desempenos": [
+     "Comprende y produce «Villancicos: verso y rima».",
+     "Participa con autonomía en la actividad «Aplicamos villancicos: verso y rima»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Villancicos: verso y rima» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Villancicos: verso y rima».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Villancicos: verso y rima» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos villancicos: verso y rima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Villancicos: verso y rima» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Villancicos: verso y rima, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Villancicos: verso y rima» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos villancicos: verso y rima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Creamos con villancicos: verso y rima",
+    "desempenos": [
+     "Comprende y produce «Villancicos: verso y rima».",
+     "Participa con autonomía en la actividad «Creamos con villancicos: verso y rima»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Villancicos: verso y rima» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Villancicos: verso y rima».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Villancicos: verso y rima» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con villancicos: verso y rima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Villancicos: verso y rima» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Villancicos: verso y rima, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Villancicos: verso y rima» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con villancicos: verso y rima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Compartimos villancicos: verso y rima",
+    "desempenos": [
+     "Comprende y produce «Villancicos: verso y rima».",
+     "Participa con autonomía en la actividad «Compartimos villancicos: verso y rima»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Villancicos: verso y rima» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Villancicos: verso y rima».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Villancicos: verso y rima» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Compartimos villancicos: verso y rima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Villancicos: verso y rima» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Villancicos: verso y rima, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Villancicos: verso y rima» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Compartimos villancicos: verso y rima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Cartel de Navidad con mensaje de paz",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre cartel de Navidad con mensaje de paz y su relación con Navidad y convivencia?",
+  "desarrollo": "Cartel de Navidad con mensaje de paz en el marco de la unidad «Textos navideños que disfruto»: Textos navideños que disfruto.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Cartel de Navidad con mensaje de paz» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Descubrimos cartel de Navidad con mensaje de paz",
+    "desempenos": [
+     "Comprende y produce «Cartel de Navidad con mensaje de paz».",
+     "Participa con autonomía en la actividad «Descubrimos cartel de Navidad con mensaje de paz»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Cartel de Navidad con mensaje de paz» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cartel de Navidad con mensaje de paz».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cartel de Navidad con mensaje de paz» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos cartel de Navidad con mensaje de paz», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cartel de Navidad con mensaje de paz» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cartel de Navidad con mensaje de paz, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cartel de Navidad con mensaje de paz» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos cartel de Navidad con mensaje de paz»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Practicamos cartel de Navidad con mensaje de paz",
+    "desempenos": [
+     "Comprende y produce «Cartel de Navidad con mensaje de paz».",
+     "Participa con autonomía en la actividad «Practicamos cartel de Navidad con mensaje de paz»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Cartel de Navidad con mensaje de paz» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cartel de Navidad con mensaje de paz».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cartel de Navidad con mensaje de paz» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos cartel de Navidad con mensaje de paz», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cartel de Navidad con mensaje de paz» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cartel de Navidad con mensaje de paz, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cartel de Navidad con mensaje de paz» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos cartel de Navidad con mensaje de paz»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Aplicamos cartel de Navidad con mensaje de paz",
+    "desempenos": [
+     "Comprende y produce «Cartel de Navidad con mensaje de paz».",
+     "Participa con autonomía en la actividad «Aplicamos cartel de Navidad con mensaje de paz»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Cartel de Navidad con mensaje de paz» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cartel de Navidad con mensaje de paz».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cartel de Navidad con mensaje de paz» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos cartel de Navidad con mensaje de paz», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cartel de Navidad con mensaje de paz» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cartel de Navidad con mensaje de paz, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cartel de Navidad con mensaje de paz» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos cartel de Navidad con mensaje de paz»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Creamos con cartel de Navidad con mensaje de paz",
+    "desempenos": [
+     "Comprende y produce «Cartel de Navidad con mensaje de paz».",
+     "Participa con autonomía en la actividad «Creamos con cartel de Navidad con mensaje de paz»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Cartel de Navidad con mensaje de paz» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cartel de Navidad con mensaje de paz».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cartel de Navidad con mensaje de paz» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con cartel de Navidad con mensaje de paz», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Cartel de Navidad con mensaje de paz» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cartel de Navidad con mensaje de paz, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Cartel de Navidad con mensaje de paz» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con cartel de Navidad con mensaje de paz»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

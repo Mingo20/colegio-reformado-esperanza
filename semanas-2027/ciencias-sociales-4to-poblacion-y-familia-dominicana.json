@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "La población de mi país",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre la población de mi país y su relación con Mi familia y el buen trato?",
+  "desarrollo": "La población de mi país en el marco de la unidad «Población y familia dominicana»: Población y familia dominicana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «La población de mi país» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Descubrimos la población de mi país",
+    "desempenos": [
+     "Comprende y valora «La población de mi país».",
+     "Participa con autonomía en la actividad «Descubrimos la población de mi país»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La población de mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La población de mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La población de mi país» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos la población de mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La población de mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La población de mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La población de mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos la población de mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Practicamos la población de mi país",
+    "desempenos": [
+     "Comprende y valora «La población de mi país».",
+     "Participa con autonomía en la actividad «Practicamos la población de mi país»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La población de mi país» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La población de mi país».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La población de mi país» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos la población de mi país», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La población de mi país» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La población de mi país, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La población de mi país» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la población de mi país»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Migración interna y familias",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre migración interna y familias y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Migración interna y familias en el marco de la unidad «Población y familia dominicana»: Población y familia dominicana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Migración interna y familias» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Descubrimos migración interna y familias",
+    "desempenos": [
+     "Comprende y valora «Migración interna y familias».",
+     "Participa con autonomía en la actividad «Descubrimos migración interna y familias»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Migración interna y familias» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Migración interna y familias».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Migración interna y familias» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos migración interna y familias», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Migración interna y familias» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Migración interna y familias, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Migración interna y familias» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos migración interna y familias»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Practicamos migración interna y familias",
+    "desempenos": [
+     "Comprende y valora «Migración interna y familias».",
+     "Participa con autonomía en la actividad «Practicamos migración interna y familias»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Migración interna y familias» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Migración interna y familias».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Migración interna y familias» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos migración interna y familias», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Migración interna y familias» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Migración interna y familias, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Migración interna y familias» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos migración interna y familias»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Derechos y deberes de la niñez dominicana",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre derechos y deberes de la niñez dominicana y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Derechos y deberes de la niñez dominicana en el marco de la unidad «Población y familia dominicana»: Población y familia dominicana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Derechos y deberes de la niñez dominicana» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Derechos y deberes de la niñez dominicana",
+    "desempenos": [
+     "Comprende y valora «Derechos y deberes de la niñez dominicana».",
+     "Participa con autonomía en la actividad «Derechos y deberes de la niñez dominicana»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Derechos y deberes de la niñez dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Derechos y deberes de la niñez dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Derechos y deberes de la niñez dominicana» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Derechos y deberes de la niñez dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Derechos y deberes de la niñez dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Derechos y deberes de la niñez dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Derechos y deberes de la niñez dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Derechos y deberes de la niñez dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Derechos y deberes de la niñez dominicana",
+    "desempenos": [
+     "Comprende y valora «Derechos y deberes de la niñez dominicana».",
+     "Participa con autonomía en la actividad «Derechos y deberes de la niñez dominicana»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Derechos y deberes de la niñez dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Derechos y deberes de la niñez dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Derechos y deberes de la niñez dominicana» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Derechos y deberes de la niñez dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Derechos y deberes de la niñez dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Derechos y deberes de la niñez dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Derechos y deberes de la niñez dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Derechos y deberes de la niñez dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Campaña del buen trato familiar",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre campaña del buen trato familiar y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Campaña del buen trato familiar en el marco de la unidad «Población y familia dominicana»: Población y familia dominicana.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Campaña del buen trato familiar» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Descubrimos campaña del buen trato familiar",
+    "desempenos": [
+     "Comprende y valora «Campaña del buen trato familiar».",
+     "Participa con autonomía en la actividad «Descubrimos campaña del buen trato familiar»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Campaña del buen trato familiar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Campaña del buen trato familiar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Campaña del buen trato familiar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos campaña del buen trato familiar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Campaña del buen trato familiar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Campaña del buen trato familiar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Campaña del buen trato familiar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos campaña del buen trato familiar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Practicamos campaña del buen trato familiar",
+    "desempenos": [
+     "Comprende y valora «Campaña del buen trato familiar».",
+     "Participa con autonomía en la actividad «Practicamos campaña del buen trato familiar»."
+    ],
+    "recursos": [
+     "Láminas de comunidad",
+     "Mapa de la República Dominicana",
+     "Imágenes del entorno",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Campaña del buen trato familiar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Campaña del buen trato familiar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Campaña del buen trato familiar» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos campaña del buen trato familiar», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Campaña del buen trato familiar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Campaña del buen trato familiar, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Campaña del buen trato familiar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos campaña del buen trato familiar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "Poemas y villancicos navideños",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre poemas y villancicos navideños y su relación con Navidad y convivencia?",
+  "desarrollo": "Poemas y villancicos navideños en el marco de la unidad «La magia de la Navidad lectora»: La magia de la Navidad lectora.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Poemas y villancicos navideños» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos poemas y villancicos navideños",
+    "desempenos": [
+     "Comprende y produce «Poemas y villancicos navideños».",
+     "Participa con autonomía en la actividad «Descubrimos poemas y villancicos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Poemas y villancicos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Poemas y villancicos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Poemas y villancicos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos poemas y villancicos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Poemas y villancicos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Poemas y villancicos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Poemas y villancicos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos poemas y villancicos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos poemas y villancicos navideños",
+    "desempenos": [
+     "Comprende y produce «Poemas y villancicos navideños».",
+     "Participa con autonomía en la actividad «Practicamos poemas y villancicos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Poemas y villancicos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Poemas y villancicos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Poemas y villancicos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos poemas y villancicos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Poemas y villancicos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Poemas y villancicos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Poemas y villancicos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos poemas y villancicos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos poemas y villancicos navideños",
+    "desempenos": [
+     "Comprende y produce «Poemas y villancicos navideños».",
+     "Participa con autonomía en la actividad «Aplicamos poemas y villancicos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Poemas y villancicos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Poemas y villancicos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Poemas y villancicos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos poemas y villancicos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Poemas y villancicos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Poemas y villancicos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Poemas y villancicos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos poemas y villancicos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con poemas y villancicos navideños",
+    "desempenos": [
+     "Comprende y produce «Poemas y villancicos navideños».",
+     "Participa con autonomía en la actividad «Creamos con poemas y villancicos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Poemas y villancicos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Poemas y villancicos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Poemas y villancicos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con poemas y villancicos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Poemas y villancicos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Poemas y villancicos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Poemas y villancicos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con poemas y villancicos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "El resumen de un cuento de Navidad",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre el resumen de un cuento de Navidad y su relación con Navidad y convivencia?",
+  "desarrollo": "El resumen de un cuento de Navidad en el marco de la unidad «La magia de la Navidad lectora»: La magia de la Navidad lectora.",
+  "cierre": "Evidencia esperada: el estudiante comprende «El resumen de un cuento de Navidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Descubrimos el resumen de un cuento de Navidad",
+    "desempenos": [
+     "Comprende y produce «El resumen de un cuento de Navidad».",
+     "Participa con autonomía en la actividad «Descubrimos el resumen de un cuento de Navidad»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El resumen de un cuento de Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El resumen de un cuento de Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El resumen de un cuento de Navidad» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos el resumen de un cuento de Navidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El resumen de un cuento de Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El resumen de un cuento de Navidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El resumen de un cuento de Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el resumen de un cuento de Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos el resumen de un cuento de Navidad",
+    "desempenos": [
+     "Comprende y produce «El resumen de un cuento de Navidad».",
+     "Participa con autonomía en la actividad «Practicamos el resumen de un cuento de Navidad»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El resumen de un cuento de Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El resumen de un cuento de Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El resumen de un cuento de Navidad» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos el resumen de un cuento de Navidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El resumen de un cuento de Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El resumen de un cuento de Navidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El resumen de un cuento de Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el resumen de un cuento de Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Aplicamos el resumen de un cuento de Navidad",
+    "desempenos": [
+     "Comprende y produce «El resumen de un cuento de Navidad».",
+     "Participa con autonomía en la actividad «Aplicamos el resumen de un cuento de Navidad»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El resumen de un cuento de Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El resumen de un cuento de Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El resumen de un cuento de Navidad» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos el resumen de un cuento de Navidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El resumen de un cuento de Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El resumen de un cuento de Navidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El resumen de un cuento de Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos el resumen de un cuento de Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Creamos con el resumen de un cuento de Navidad",
+    "desempenos": [
+     "Comprende y produce «El resumen de un cuento de Navidad».",
+     "Participa con autonomía en la actividad «Creamos con el resumen de un cuento de Navidad»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El resumen de un cuento de Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El resumen de un cuento de Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El resumen de un cuento de Navidad» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con el resumen de un cuento de Navidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El resumen de un cuento de Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El resumen de un cuento de Navidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El resumen de un cuento de Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con el resumen de un cuento de Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Compartimos el resumen de un cuento de Navidad",
+    "desempenos": [
+     "Comprende y produce «El resumen de un cuento de Navidad».",
+     "Participa con autonomía en la actividad «Compartimos el resumen de un cuento de Navidad»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El resumen de un cuento de Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El resumen de un cuento de Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El resumen de un cuento de Navidad» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Compartimos el resumen de un cuento de Navidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El resumen de un cuento de Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El resumen de un cuento de Navidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El resumen de un cuento de Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Compartimos el resumen de un cuento de Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Guiones de diálogo para el nacimiento",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre guiones de diálogo para el nacimiento y su relación con Navidad y convivencia?",
+  "desarrollo": "Guiones de diálogo para el nacimiento en el marco de la unidad «La magia de la Navidad lectora»: La magia de la Navidad lectora.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Guiones de diálogo para el nacimiento» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Descubrimos guiones de diálogo para el nacimiento",
+    "desempenos": [
+     "Comprende y produce «Guiones de diálogo para el nacimiento».",
+     "Participa con autonomía en la actividad «Descubrimos guiones de diálogo para el nacimiento»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Guiones de diálogo para el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Guiones de diálogo para el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Guiones de diálogo para el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos guiones de diálogo para el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Guiones de diálogo para el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Guiones de diálogo para el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Guiones de diálogo para el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos guiones de diálogo para el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Practicamos guiones de diálogo para el nacimiento",
+    "desempenos": [
+     "Comprende y produce «Guiones de diálogo para el nacimiento».",
+     "Participa con autonomía en la actividad «Practicamos guiones de diálogo para el nacimiento»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Guiones de diálogo para el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Guiones de diálogo para el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Guiones de diálogo para el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos guiones de diálogo para el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Guiones de diálogo para el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Guiones de diálogo para el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Guiones de diálogo para el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos guiones de diálogo para el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Aplicamos guiones de diálogo para el nacimiento",
+    "desempenos": [
+     "Comprende y produce «Guiones de diálogo para el nacimiento».",
+     "Participa con autonomía en la actividad «Aplicamos guiones de diálogo para el nacimiento»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Guiones de diálogo para el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Guiones de diálogo para el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Guiones de diálogo para el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos guiones de diálogo para el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Guiones de diálogo para el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Guiones de diálogo para el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Guiones de diálogo para el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos guiones de diálogo para el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Creamos con guiones de diálogo para el nacimiento",
+    "desempenos": [
+     "Comprende y produce «Guiones de diálogo para el nacimiento».",
+     "Participa con autonomía en la actividad «Creamos con guiones de diálogo para el nacimiento»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Guiones de diálogo para el nacimiento» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Guiones de diálogo para el nacimiento».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Guiones de diálogo para el nacimiento» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con guiones de diálogo para el nacimiento», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Guiones de diálogo para el nacimiento» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Guiones de diálogo para el nacimiento, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Guiones de diálogo para el nacimiento» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con guiones de diálogo para el nacimiento»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

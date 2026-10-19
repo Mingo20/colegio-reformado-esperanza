@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "Fracciones equivalentes",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre fracciones equivalentes y su relación con Navidad y convivencia?",
+  "desarrollo": "Fracciones equivalentes en el marco de la unidad «Proporcionalidad navideña»: Proporcionalidad navideña.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Fracciones equivalentes» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos fracciones equivalentes",
+    "desempenos": [
+     "Comprende y aplica «Fracciones equivalentes».",
+     "Participa con autonomía en la actividad «Descubrimos fracciones equivalentes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Fracciones equivalentes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fracciones equivalentes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fracciones equivalentes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos fracciones equivalentes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fracciones equivalentes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fracciones equivalentes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fracciones equivalentes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos fracciones equivalentes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos fracciones equivalentes",
+    "desempenos": [
+     "Comprende y aplica «Fracciones equivalentes».",
+     "Participa con autonomía en la actividad «Practicamos fracciones equivalentes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Fracciones equivalentes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fracciones equivalentes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fracciones equivalentes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos fracciones equivalentes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fracciones equivalentes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fracciones equivalentes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fracciones equivalentes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos fracciones equivalentes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos fracciones equivalentes",
+    "desempenos": [
+     "Comprende y aplica «Fracciones equivalentes».",
+     "Participa con autonomía en la actividad «Aplicamos fracciones equivalentes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Fracciones equivalentes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fracciones equivalentes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fracciones equivalentes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos fracciones equivalentes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fracciones equivalentes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fracciones equivalentes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fracciones equivalentes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos fracciones equivalentes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con fracciones equivalentes",
+    "desempenos": [
+     "Comprende y aplica «Fracciones equivalentes».",
+     "Participa con autonomía en la actividad «Creamos con fracciones equivalentes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Fracciones equivalentes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fracciones equivalentes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fracciones equivalentes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con fracciones equivalentes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fracciones equivalentes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fracciones equivalentes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fracciones equivalentes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con fracciones equivalentes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Simplifiicación y ampliación de fracciones",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre simplifiicación y ampliación de fracciones y su relación con Navidad y convivencia?",
+  "desarrollo": "Simplifiicación y ampliación de fracciones en el marco de la unidad «Proporcionalidad navideña»: Proporcionalidad navideña.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Simplifiicación y ampliación de fracciones» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Simplifiicación y ampliación de fracciones",
+    "desempenos": [
+     "Comprende y aplica «Simplifiicación y ampliación de fracciones».",
+     "Participa con autonomía en la actividad «Simplifiicación y ampliación de fracciones»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Simplifiicación y ampliación de fracciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Simplifiicación y ampliación de fracciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Simplifiicación y ampliación de fracciones» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Simplifiicación y ampliación de fracciones», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Simplifiicación y ampliación de fracciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Simplifiicación y ampliación de fracciones, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Simplifiicación y ampliación de fracciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Simplifiicación y ampliación de fracciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Simplifiicación y ampliación de fracciones",
+    "desempenos": [
+     "Comprende y aplica «Simplifiicación y ampliación de fracciones».",
+     "Participa con autonomía en la actividad «Simplifiicación y ampliación de fracciones»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Simplifiicación y ampliación de fracciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Simplifiicación y ampliación de fracciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Simplifiicación y ampliación de fracciones» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Simplifiicación y ampliación de fracciones», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Simplifiicación y ampliación de fracciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Simplifiicación y ampliación de fracciones, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Simplifiicación y ampliación de fracciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Simplifiicación y ampliación de fracciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Simplifiicación y ampliación de fracciones",
+    "desempenos": [
+     "Comprende y aplica «Simplifiicación y ampliación de fracciones».",
+     "Participa con autonomía en la actividad «Simplifiicación y ampliación de fracciones»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Simplifiicación y ampliación de fracciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Simplifiicación y ampliación de fracciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Simplifiicación y ampliación de fracciones» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Simplifiicación y ampliación de fracciones», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Simplifiicación y ampliación de fracciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Simplifiicación y ampliación de fracciones, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Simplifiicación y ampliación de fracciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Simplifiicación y ampliación de fracciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Simplifiicación y ampliación de fracciones",
+    "desempenos": [
+     "Comprende y aplica «Simplifiicación y ampliación de fracciones».",
+     "Participa con autonomía en la actividad «Simplifiicación y ampliación de fracciones»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Simplifiicación y ampliación de fracciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Simplifiicación y ampliación de fracciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Simplifiicación y ampliación de fracciones» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Simplifiicación y ampliación de fracciones», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Simplifiicación y ampliación de fracciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Simplifiicación y ampliación de fracciones, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Simplifiicación y ampliación de fracciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Simplifiicación y ampliación de fracciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Simplifiicación y ampliación de fracciones",
+    "desempenos": [
+     "Comprende y aplica «Simplifiicación y ampliación de fracciones».",
+     "Participa con autonomía en la actividad «Simplifiicación y ampliación de fracciones»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Simplifiicación y ampliación de fracciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Simplifiicación y ampliación de fracciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Simplifiicación y ampliación de fracciones» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Simplifiicación y ampliación de fracciones», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Simplifiicación y ampliación de fracciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Simplifiicación y ampliación de fracciones, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Simplifiicación y ampliación de fracciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Simplifiicación y ampliación de fracciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta y su relación con Navidad y convivencia?",
+  "desarrollo": "Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta en el marco de la unidad «Proporcionalidad navideña»: Proporcionalidad navideña.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Operaciones de suma, resta, multiplicación, Números decima",
+    "desempenos": [
+     "Comprende y aplica «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+     "Participa con autonomía en la actividad «Operaciones de suma, resta, multiplicación, Números decima»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Operaciones de suma, resta, multiplicación, Números decima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Operaciones de suma, resta, multiplicación, Números decima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Operaciones de suma, resta, multiplicación, Números decima",
+    "desempenos": [
+     "Comprende y aplica «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+     "Participa con autonomía en la actividad «Operaciones de suma, resta, multiplicación, Números decima»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Operaciones de suma, resta, multiplicación, Números decima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Operaciones de suma, resta, multiplicación, Números decima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Operaciones de suma, resta, multiplicación, Números decima",
+    "desempenos": [
+     "Comprende y aplica «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+     "Participa con autonomía en la actividad «Operaciones de suma, resta, multiplicación, Números decima»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Operaciones de suma, resta, multiplicación, Números decima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Operaciones de suma, resta, multiplicación, Números decima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Operaciones de suma, resta, multiplicación, Números decima",
+    "desempenos": [
+     "Comprende y aplica «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+     "Participa con autonomía en la actividad «Operaciones de suma, resta, multiplicación, Números decima»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Operaciones de suma, resta, multiplicación, Números decima», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Operaciones de suma, resta, multiplicación, Números decimales: valor posicional hasta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Operaciones de suma, resta, multiplicación, Números decima»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

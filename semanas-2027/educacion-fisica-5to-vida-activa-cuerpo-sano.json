@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Resistencia y respiración",
+  "fechas": "1–8 oct 2026",
+  "inicio": "¿Qué sabemos sobre resistencia y respiración y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Resistencia y respiración en el marco de la unidad «Vida activa, cuerpo sano»: Vida activa, cuerpo sano.",
+  "cierre": "Evidencia esperada: el estudiante practica «Resistencia y respiración» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-05",
+    "etiqueta": "lun 5 oct",
+    "titulo": "Descubrimos resistencia y respiración",
+    "desempenos": [
+     "Practica y disfruta «Resistencia y respiración».",
+     "Participa con autonomía en la actividad «Descubrimos resistencia y respiración»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Resistencia y respiración» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resistencia y respiración».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resistencia y respiración» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos resistencia y respiración», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Resistencia y respiración» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resistencia y respiración, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Resistencia y respiración» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos resistencia y respiración»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-07",
+    "etiqueta": "mié 7 oct",
+    "titulo": "Practicamos resistencia y respiración",
+    "desempenos": [
+     "Practica y disfruta «Resistencia y respiración».",
+     "Participa con autonomía en la actividad «Practicamos resistencia y respiración»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Resistencia y respiración» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resistencia y respiración».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resistencia y respiración» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos resistencia y respiración», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Resistencia y respiración» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resistencia y respiración, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Resistencia y respiración» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos resistencia y respiración»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Fuerza y flexibilidad",
+  "fechas": "9–16 oct 2026",
+  "inicio": "¿Qué sabemos sobre fuerza y flexibilidad y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Fuerza y flexibilidad en el marco de la unidad «Vida activa, cuerpo sano»: Vida activa, cuerpo sano.",
+  "cierre": "Evidencia esperada: el estudiante practica «Fuerza y flexibilidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-12",
+    "etiqueta": "lun 12 oct",
+    "titulo": "Descubrimos fuerza y flexibilidad",
+    "desempenos": [
+     "Practica y disfruta «Fuerza y flexibilidad».",
+     "Participa con autonomía en la actividad «Descubrimos fuerza y flexibilidad»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Fuerza y flexibilidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fuerza y flexibilidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fuerza y flexibilidad» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos fuerza y flexibilidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fuerza y flexibilidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fuerza y flexibilidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fuerza y flexibilidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos fuerza y flexibilidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-14",
+    "etiqueta": "mié 14 oct",
+    "titulo": "Practicamos fuerza y flexibilidad",
+    "desempenos": [
+     "Practica y disfruta «Fuerza y flexibilidad».",
+     "Participa con autonomía en la actividad «Practicamos fuerza y flexibilidad»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Fuerza y flexibilidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fuerza y flexibilidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fuerza y flexibilidad» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos fuerza y flexibilidad», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fuerza y flexibilidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fuerza y flexibilidad, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fuerza y flexibilidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos fuerza y flexibilidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Deportes alternativos",
+  "fechas": "19–23 oct 2026",
+  "inicio": "¿Qué sabemos sobre deportes alternativos y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Deportes alternativos en el marco de la unidad «Vida activa, cuerpo sano»: Vida activa, cuerpo sano.",
+  "cierre": "Evidencia esperada: el estudiante practica «Deportes alternativos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-19",
+    "etiqueta": "lun 19 oct",
+    "titulo": "Descubrimos deportes alternativos",
+    "desempenos": [
+     "Practica y disfruta «Deportes alternativos».",
+     "Participa con autonomía en la actividad «Descubrimos deportes alternativos»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Deportes alternativos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Deportes alternativos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Deportes alternativos» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos deportes alternativos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Deportes alternativos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Deportes alternativos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Deportes alternativos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos deportes alternativos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-21",
+    "etiqueta": "mié 21 oct",
+    "titulo": "Practicamos deportes alternativos",
+    "desempenos": [
+     "Practica y disfruta «Deportes alternativos».",
+     "Participa con autonomía en la actividad «Practicamos deportes alternativos»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Deportes alternativos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Deportes alternativos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Deportes alternativos» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos deportes alternativos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Deportes alternativos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Deportes alternativos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Deportes alternativos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos deportes alternativos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: mi plan activo",
+  "fechas": "26–30 oct 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: mi plan activo y su relación con Mi cuerpo, mi salud?",
+  "desarrollo": "Proyecto: mi plan activo en el marco de la unidad «Vida activa, cuerpo sano»: Vida activa, cuerpo sano.",
+  "cierre": "Evidencia esperada: el estudiante practica «Proyecto: mi plan activo» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-10-26",
+    "etiqueta": "lun 26 oct",
+    "titulo": "Descubrimos proyecto: mi plan activo",
+    "desempenos": [
+     "Practica y disfruta «Proyecto: mi plan activo».",
+     "Participa con autonomía en la actividad «Descubrimos proyecto: mi plan activo»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Proyecto: mi plan activo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: mi plan activo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: mi plan activo» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Descubrimos proyecto: mi plan activo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: mi plan activo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: mi plan activo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: mi plan activo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos proyecto: mi plan activo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-10-28",
+    "etiqueta": "mié 28 oct",
+    "titulo": "Practicamos proyecto: mi plan activo",
+    "desempenos": [
+     "Practica y disfruta «Proyecto: mi plan activo».",
+     "Participa con autonomía en la actividad «Practicamos proyecto: mi plan activo»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Proyecto: mi plan activo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: mi plan activo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: mi plan activo» con Canción Escolar y la Alimentación Saludable?",
+       "Anuncia el objetivo de hoy: «Practicamos proyecto: mi plan activo», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: mi plan activo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: mi plan activo, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi cuerpo, mi salud."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Proyecto: mi plan activo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos proyecto: mi plan activo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con Canción Escolar y la Alimentación Saludable.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

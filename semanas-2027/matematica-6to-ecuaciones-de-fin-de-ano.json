@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "Equivalencia entre fracciones comunes",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre equivalencia entre fracciones comunes y su relación con Navidad y convivencia?",
+  "desarrollo": "Equivalencia entre fracciones comunes en el marco de la unidad «Ecuaciones de fin de año»: Ecuaciones de fin de año.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Equivalencia entre fracciones comunes» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos equivalencia entre fracciones comunes",
+    "desempenos": [
+     "Comprende y aplica «Equivalencia entre fracciones comunes».",
+     "Participa con autonomía en la actividad «Descubrimos equivalencia entre fracciones comunes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Equivalencia entre fracciones comunes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Equivalencia entre fracciones comunes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Equivalencia entre fracciones comunes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos equivalencia entre fracciones comunes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Equivalencia entre fracciones comunes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Equivalencia entre fracciones comunes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Equivalencia entre fracciones comunes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos equivalencia entre fracciones comunes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos equivalencia entre fracciones comunes",
+    "desempenos": [
+     "Comprende y aplica «Equivalencia entre fracciones comunes».",
+     "Participa con autonomía en la actividad «Practicamos equivalencia entre fracciones comunes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Equivalencia entre fracciones comunes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Equivalencia entre fracciones comunes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Equivalencia entre fracciones comunes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos equivalencia entre fracciones comunes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Equivalencia entre fracciones comunes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Equivalencia entre fracciones comunes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Equivalencia entre fracciones comunes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos equivalencia entre fracciones comunes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos equivalencia entre fracciones comunes",
+    "desempenos": [
+     "Comprende y aplica «Equivalencia entre fracciones comunes».",
+     "Participa con autonomía en la actividad «Aplicamos equivalencia entre fracciones comunes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Equivalencia entre fracciones comunes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Equivalencia entre fracciones comunes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Equivalencia entre fracciones comunes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos equivalencia entre fracciones comunes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Equivalencia entre fracciones comunes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Equivalencia entre fracciones comunes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Equivalencia entre fracciones comunes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos equivalencia entre fracciones comunes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con equivalencia entre fracciones comunes",
+    "desempenos": [
+     "Comprende y aplica «Equivalencia entre fracciones comunes».",
+     "Participa con autonomía en la actividad «Creamos con equivalencia entre fracciones comunes»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Equivalencia entre fracciones comunes» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Equivalencia entre fracciones comunes».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Equivalencia entre fracciones comunes» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con equivalencia entre fracciones comunes», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Equivalencia entre fracciones comunes» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Equivalencia entre fracciones comunes, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Equivalencia entre fracciones comunes» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con equivalencia entre fracciones comunes»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Razón y proporción",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre razón y proporción y su relación con Navidad y convivencia?",
+  "desarrollo": "Razón y proporción en el marco de la unidad «Ecuaciones de fin de año»: Ecuaciones de fin de año.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Razón y proporción» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Descubrimos razón y proporción",
+    "desempenos": [
+     "Comprende y aplica «Razón y proporción».",
+     "Participa con autonomía en la actividad «Descubrimos razón y proporción»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Razón y proporción» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Razón y proporción».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Razón y proporción» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos razón y proporción», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Razón y proporción» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Razón y proporción, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Razón y proporción» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos razón y proporción»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos razón y proporción",
+    "desempenos": [
+     "Comprende y aplica «Razón y proporción».",
+     "Participa con autonomía en la actividad «Practicamos razón y proporción»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Razón y proporción» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Razón y proporción».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Razón y proporción» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos razón y proporción», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Razón y proporción» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Razón y proporción, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Razón y proporción» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos razón y proporción»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Aplicamos razón y proporción",
+    "desempenos": [
+     "Comprende y aplica «Razón y proporción».",
+     "Participa con autonomía en la actividad «Aplicamos razón y proporción»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Razón y proporción» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Razón y proporción».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Razón y proporción» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos razón y proporción», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Razón y proporción» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Razón y proporción, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Razón y proporción» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos razón y proporción»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Creamos con razón y proporción",
+    "desempenos": [
+     "Comprende y aplica «Razón y proporción».",
+     "Participa con autonomía en la actividad «Creamos con razón y proporción»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Razón y proporción» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Razón y proporción».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Razón y proporción» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con razón y proporción», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Razón y proporción» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Razón y proporción, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Razón y proporción» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con razón y proporción»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Compartimos razón y proporción",
+    "desempenos": [
+     "Comprende y aplica «Razón y proporción».",
+     "Participa con autonomía en la actividad «Compartimos razón y proporción»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Razón y proporción» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Razón y proporción».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Razón y proporción» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Compartimos razón y proporción», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Razón y proporción» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Razón y proporción, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Razón y proporción» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Compartimos razón y proporción»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre porcentaje y tanto por ciento, Interés simple, capital y monto, tasa y su relación con Navidad y convivencia?",
+  "desarrollo": "Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa en el marco de la unidad «Ecuaciones de fin de año»: Ecuaciones de fin de año.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Porcentaje y tanto por ciento, Interés simple, capital y m",
+    "desempenos": [
+     "Comprende y aplica «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+     "Participa con autonomía en la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Porcentaje y tanto por ciento, Interés simple, capital y m», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Porcentaje y tanto por ciento, Interés simple, capital y m",
+    "desempenos": [
+     "Comprende y aplica «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+     "Participa con autonomía en la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Porcentaje y tanto por ciento, Interés simple, capital y m», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Porcentaje y tanto por ciento, Interés simple, capital y m",
+    "desempenos": [
+     "Comprende y aplica «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+     "Participa con autonomía en la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Porcentaje y tanto por ciento, Interés simple, capital y m», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Porcentaje y tanto por ciento, Interés simple, capital y m",
+    "desempenos": [
+     "Comprende y aplica «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+     "Participa con autonomía en la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Porcentaje y tanto por ciento, Interés simple, capital y m», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Porcentaje y tanto por ciento, Interés simple, capital y monto, tasa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Porcentaje y tanto por ciento, Interés simple, capital y m»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

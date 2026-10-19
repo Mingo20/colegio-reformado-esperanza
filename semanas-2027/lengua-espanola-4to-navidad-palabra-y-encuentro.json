@@ -1,0 +1,890 @@
+[
+ {
+  "numero": 1,
+  "tema": "Textos poéticos navideños",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre textos poéticos navideños y su relación con Navidad y convivencia?",
+  "desarrollo": "Textos poéticos navideños en el marco de la unidad «Navidad: palabra y encuentro»: Navidad: palabra y encuentro.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Textos poéticos navideños» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Descubrimos textos poéticos navideños",
+    "desempenos": [
+     "Comprende y produce «Textos poéticos navideños».",
+     "Participa con autonomía en la actividad «Descubrimos textos poéticos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Textos poéticos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Textos poéticos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Textos poéticos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos textos poéticos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Textos poéticos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Textos poéticos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Textos poéticos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos textos poéticos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Practicamos textos poéticos navideños",
+    "desempenos": [
+     "Comprende y produce «Textos poéticos navideños».",
+     "Participa con autonomía en la actividad «Practicamos textos poéticos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Textos poéticos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Textos poéticos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Textos poéticos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos textos poéticos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Textos poéticos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Textos poéticos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Textos poéticos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos textos poéticos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Aplicamos textos poéticos navideños",
+    "desempenos": [
+     "Comprende y produce «Textos poéticos navideños».",
+     "Participa con autonomía en la actividad «Aplicamos textos poéticos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Textos poéticos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Textos poéticos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Textos poéticos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos textos poéticos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Textos poéticos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Textos poéticos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Textos poéticos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos textos poéticos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Creamos con textos poéticos navideños",
+    "desempenos": [
+     "Comprende y produce «Textos poéticos navideños».",
+     "Participa con autonomía en la actividad «Creamos con textos poéticos navideños»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «Textos poéticos navideños» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Textos poéticos navideños».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Textos poéticos navideños» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con textos poéticos navideños», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Textos poéticos navideños» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Textos poéticos navideños, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Textos poéticos navideños» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con textos poéticos navideños»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "La reseña de un villancico",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre la reseña de un villancico y su relación con Navidad y convivencia?",
+  "desarrollo": "La reseña de un villancico en el marco de la unidad «Navidad: palabra y encuentro»: Navidad: palabra y encuentro.",
+  "cierre": "Evidencia esperada: el estudiante comprende «La reseña de un villancico» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Descubrimos la reseña de un villancico",
+    "desempenos": [
+     "Comprende y produce «La reseña de un villancico».",
+     "Participa con autonomía en la actividad «Descubrimos la reseña de un villancico»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La reseña de un villancico» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La reseña de un villancico».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La reseña de un villancico» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos la reseña de un villancico», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La reseña de un villancico» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La reseña de un villancico, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La reseña de un villancico» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos la reseña de un villancico»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos la reseña de un villancico",
+    "desempenos": [
+     "Comprende y produce «La reseña de un villancico».",
+     "Participa con autonomía en la actividad «Practicamos la reseña de un villancico»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La reseña de un villancico» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La reseña de un villancico».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La reseña de un villancico» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos la reseña de un villancico», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La reseña de un villancico» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La reseña de un villancico, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La reseña de un villancico» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la reseña de un villancico»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Aplicamos la reseña de un villancico",
+    "desempenos": [
+     "Comprende y produce «La reseña de un villancico».",
+     "Participa con autonomía en la actividad «Aplicamos la reseña de un villancico»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La reseña de un villancico» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La reseña de un villancico».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La reseña de un villancico» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos la reseña de un villancico», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La reseña de un villancico» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La reseña de un villancico, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La reseña de un villancico» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos la reseña de un villancico»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Creamos con la reseña de un villancico",
+    "desempenos": [
+     "Comprende y produce «La reseña de un villancico».",
+     "Participa con autonomía en la actividad «Creamos con la reseña de un villancico»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La reseña de un villancico» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La reseña de un villancico».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La reseña de un villancico» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con la reseña de un villancico», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La reseña de un villancico» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La reseña de un villancico, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La reseña de un villancico» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con la reseña de un villancico»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Compartimos la reseña de un villancico",
+    "desempenos": [
+     "Comprende y produce «La reseña de un villancico».",
+     "Participa con autonomía en la actividad «Compartimos la reseña de un villancico»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «La reseña de un villancico» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La reseña de un villancico».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La reseña de un villancico» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Compartimos la reseña de un villancico», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «La reseña de un villancico» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La reseña de un villancico, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «La reseña de un villancico» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Compartimos la reseña de un villancico»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "El texto dramático: pastorela",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre el texto dramático: pastorela y su relación con Navidad y convivencia?",
+  "desarrollo": "El texto dramático: pastorela en el marco de la unidad «Navidad: palabra y encuentro»: Navidad: palabra y encuentro.",
+  "cierre": "Evidencia esperada: el estudiante comprende «El texto dramático: pastorela» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Descubrimos el texto dramático: pastorela",
+    "desempenos": [
+     "Comprende y produce «El texto dramático: pastorela».",
+     "Participa con autonomía en la actividad «Descubrimos el texto dramático: pastorela»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El texto dramático: pastorela» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El texto dramático: pastorela».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El texto dramático: pastorela» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Descubrimos el texto dramático: pastorela», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El texto dramático: pastorela» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El texto dramático: pastorela, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El texto dramático: pastorela» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos el texto dramático: pastorela»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Practicamos el texto dramático: pastorela",
+    "desempenos": [
+     "Comprende y produce «El texto dramático: pastorela».",
+     "Participa con autonomía en la actividad «Practicamos el texto dramático: pastorela»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El texto dramático: pastorela» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El texto dramático: pastorela».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El texto dramático: pastorela» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Practicamos el texto dramático: pastorela», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El texto dramático: pastorela» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El texto dramático: pastorela, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El texto dramático: pastorela» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el texto dramático: pastorela»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Aplicamos el texto dramático: pastorela",
+    "desempenos": [
+     "Comprende y produce «El texto dramático: pastorela».",
+     "Participa con autonomía en la actividad «Aplicamos el texto dramático: pastorela»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El texto dramático: pastorela» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El texto dramático: pastorela».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El texto dramático: pastorela» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Aplicamos el texto dramático: pastorela», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El texto dramático: pastorela» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El texto dramático: pastorela, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El texto dramático: pastorela» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos el texto dramático: pastorela»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Creamos con el texto dramático: pastorela",
+    "desempenos": [
+     "Comprende y produce «El texto dramático: pastorela».",
+     "Participa con autonomía en la actividad «Creamos con el texto dramático: pastorela»."
+    ],
+    "recursos": [
+     "Cuentos del entorno",
+     "Tarjetas de palabras",
+     "Láminas ilustradas",
+     "Cuaderno de trabajo"
+    ],
+    "orientacion": "Contextualizar «El texto dramático: pastorela» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El texto dramático: pastorela».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El texto dramático: pastorela» con la Navidad?",
+       "Anuncia el objetivo de hoy: «Creamos con el texto dramático: pastorela», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «El texto dramático: pastorela» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El texto dramático: pastorela, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Navidad y convivencia."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «El texto dramático: pastorela» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con el texto dramático: pastorela»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,1296 @@
+[
+ {
+  "numero": 1,
+  "tema": "División de números naturales",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre división de números naturales y su relación con Mi familia y el buen trato?",
+  "desarrollo": "División de números naturales en el marco de la unidad «Fracciones de mi entorno»: Fracciones de mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «División de números naturales» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Descubrimos división de números naturales",
+    "desempenos": [
+     "Comprende y aplica «División de números naturales».",
+     "Participa con autonomía en la actividad «Descubrimos división de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos división de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos división de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Practicamos división de números naturales",
+    "desempenos": [
+     "Comprende y aplica «División de números naturales».",
+     "Participa con autonomía en la actividad «Practicamos división de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos división de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos división de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Aplicamos división de números naturales",
+    "desempenos": [
+     "Comprende y aplica «División de números naturales».",
+     "Participa con autonomía en la actividad «Aplicamos división de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Aplicamos división de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos división de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Creamos con división de números naturales",
+    "desempenos": [
+     "Comprende y aplica «División de números naturales».",
+     "Participa con autonomía en la actividad «Creamos con división de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Creamos con división de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con división de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Compartimos división de números naturales",
+    "desempenos": [
+     "Comprende y aplica «División de números naturales».",
+     "Participa con autonomía en la actividad «Compartimos división de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «División de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «División de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «División de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Compartimos división de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «División de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: División de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «División de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Compartimos división de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Potencia de números naturales",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre potencia de números naturales y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Potencia de números naturales en el marco de la unidad «Fracciones de mi entorno»: Fracciones de mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Potencia de números naturales» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Descubrimos potencia de números naturales",
+    "desempenos": [
+     "Comprende y aplica «Potencia de números naturales».",
+     "Participa con autonomía en la actividad «Descubrimos potencia de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Potencia de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Potencia de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Potencia de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos potencia de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Potencia de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Potencia de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Potencia de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos potencia de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Practicamos potencia de números naturales",
+    "desempenos": [
+     "Comprende y aplica «Potencia de números naturales».",
+     "Participa con autonomía en la actividad «Practicamos potencia de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Potencia de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Potencia de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Potencia de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos potencia de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Potencia de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Potencia de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Potencia de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos potencia de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Aplicamos potencia de números naturales",
+    "desempenos": [
+     "Comprende y aplica «Potencia de números naturales».",
+     "Participa con autonomía en la actividad «Aplicamos potencia de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Potencia de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Potencia de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Potencia de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Aplicamos potencia de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Potencia de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Potencia de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Potencia de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos potencia de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Creamos con potencia de números naturales",
+    "desempenos": [
+     "Comprende y aplica «Potencia de números naturales».",
+     "Participa con autonomía en la actividad «Creamos con potencia de números naturales»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Potencia de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Potencia de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Potencia de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Creamos con potencia de números naturales», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Potencia de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Potencia de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Potencia de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con potencia de números naturales»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Números primos y compuestos, Factores primos",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre números primos y compuestos, Factores primos y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Números primos y compuestos, Factores primos en el marco de la unidad «Fracciones de mi entorno»: Fracciones de mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Números primos y compuestos, Factores primos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Números primos y compuestos, Factores primos",
+    "desempenos": [
+     "Comprende y aplica «Números primos y compuestos, Factores primos».",
+     "Participa con autonomía en la actividad «Números primos y compuestos, Factores primos»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Números primos y compuestos, Factores primos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Números primos y compuestos, Factores primos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Números primos y compuestos, Factores primos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Números primos y compuestos, Factores primos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Números primos y compuestos, Factores primos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Números primos y compuestos, Factores primos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Números primos y compuestos, Factores primos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Números primos y compuestos, Factores primos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Números primos y compuestos, Factores primos",
+    "desempenos": [
+     "Comprende y aplica «Números primos y compuestos, Factores primos».",
+     "Participa con autonomía en la actividad «Números primos y compuestos, Factores primos»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Números primos y compuestos, Factores primos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Números primos y compuestos, Factores primos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Números primos y compuestos, Factores primos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Números primos y compuestos, Factores primos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Números primos y compuestos, Factores primos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Números primos y compuestos, Factores primos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Números primos y compuestos, Factores primos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Números primos y compuestos, Factores primos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Números primos y compuestos, Factores primos",
+    "desempenos": [
+     "Comprende y aplica «Números primos y compuestos, Factores primos».",
+     "Participa con autonomía en la actividad «Números primos y compuestos, Factores primos»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Números primos y compuestos, Factores primos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Números primos y compuestos, Factores primos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Números primos y compuestos, Factores primos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Números primos y compuestos, Factores primos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Números primos y compuestos, Factores primos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Números primos y compuestos, Factores primos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Números primos y compuestos, Factores primos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Números primos y compuestos, Factores primos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Números primos y compuestos, Factores primos",
+    "desempenos": [
+     "Comprende y aplica «Números primos y compuestos, Factores primos».",
+     "Participa con autonomía en la actividad «Números primos y compuestos, Factores primos»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Números primos y compuestos, Factores primos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Números primos y compuestos, Factores primos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Números primos y compuestos, Factores primos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Números primos y compuestos, Factores primos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Números primos y compuestos, Factores primos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Números primos y compuestos, Factores primos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Números primos y compuestos, Factores primos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Números primos y compuestos, Factores primos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Números primos y compuestos, Factores primos",
+    "desempenos": [
+     "Comprende y aplica «Números primos y compuestos, Factores primos».",
+     "Participa con autonomía en la actividad «Números primos y compuestos, Factores primos»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Números primos y compuestos, Factores primos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Números primos y compuestos, Factores primos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Números primos y compuestos, Factores primos» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Números primos y compuestos, Factores primos», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Números primos y compuestos, Factores primos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Números primos y compuestos, Factores primos, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Números primos y compuestos, Factores primos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Números primos y compuestos, Factores primos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales en el marco de la unidad «Fracciones de mi entorno»: Fracciones de mi entorno.",
+  "cierre": "Evidencia esperada: el estudiante comprende «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Mínimo común múltiplo y máximo común, Raíz cuadrada de núm",
+    "desempenos": [
+     "Comprende y aplica «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+     "Participa con autonomía en la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Mínimo común múltiplo y máximo común, Raíz cuadrada de núm",
+    "desempenos": [
+     "Comprende y aplica «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+     "Participa con autonomía en la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Mínimo común múltiplo y máximo común, Raíz cuadrada de núm",
+    "desempenos": [
+     "Comprende y aplica «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+     "Participa con autonomía en la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Mínimo común múltiplo y máximo común, Raíz cuadrada de núm",
+    "desempenos": [
+     "Comprende y aplica «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+     "Participa con autonomía en la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Mínimo común múltiplo y máximo común, Raíz cuadrada de núm",
+    "desempenos": [
+     "Comprende y aplica «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+     "Participa con autonomía en la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»."
+    ],
+    "recursos": [
+     "Material concreto (tapitas, semillas)",
+     "Cuaderno de matemática",
+     "Recta numérica",
+     "Dominó y dados"
+    ],
+    "orientacion": "Contextualizar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Mínimo común múltiplo y máximo común, Raíz cuadrada de números naturales» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Mínimo común múltiplo y máximo común, Raíz cuadrada de núm»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,306 @@
+[
+ {
+  "numero": 1,
+  "tema": "Improvisación y voz",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre improvisación y voz y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Improvisación y voz en el marco de la unidad «Teatro dominicano»: Teatro dominicano.",
+  "cierre": "Evidencia esperada: el estudiante crea «Improvisación y voz» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Descubrimos improvisación y voz",
+    "desempenos": [
+     "Crea y expresa «Improvisación y voz».",
+     "Participa con autonomía en la actividad «Descubrimos improvisación y voz»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Improvisación y voz» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Improvisación y voz».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Improvisación y voz» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos improvisación y voz», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Improvisación y voz» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Improvisación y voz, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Improvisación y voz» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos improvisación y voz»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Dramatización de la familia dominicana",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre dramatización de la familia dominicana y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Dramatización de la familia dominicana en el marco de la unidad «Teatro dominicano»: Teatro dominicano.",
+  "cierre": "Evidencia esperada: el estudiante crea «Dramatización de la familia dominicana» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Descubrimos dramatización de la familia dominicana",
+    "desempenos": [
+     "Crea y expresa «Dramatización de la familia dominicana».",
+     "Participa con autonomía en la actividad «Descubrimos dramatización de la familia dominicana»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Dramatización de la familia dominicana» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Dramatización de la familia dominicana».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Dramatización de la familia dominicana» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos dramatización de la familia dominicana», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Dramatización de la familia dominicana» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Dramatización de la familia dominicana, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Dramatización de la familia dominicana» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos dramatización de la familia dominicana»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Escenografía sencilla",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre escenografía sencilla y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Escenografía sencilla en el marco de la unidad «Teatro dominicano»: Teatro dominicano.",
+  "cierre": "Evidencia esperada: el estudiante crea «Escenografía sencilla» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Descubrimos escenografía sencilla",
+    "desempenos": [
+     "Crea y expresa «Escenografía sencilla».",
+     "Participa con autonomía en la actividad «Descubrimos escenografía sencilla»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Escenografía sencilla» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Escenografía sencilla».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Escenografía sencilla» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos escenografía sencilla», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Escenografía sencilla» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Escenografía sencilla, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Escenografía sencilla» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos escenografía sencilla»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Obra de teatro del grado",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre obra de teatro del grado y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Obra de teatro del grado en el marco de la unidad «Teatro dominicano»: Teatro dominicano.",
+  "cierre": "Evidencia esperada: el estudiante crea «Obra de teatro del grado» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Descubrimos obra de teatro del grado",
+    "desempenos": [
+     "Crea y expresa «Obra de teatro del grado».",
+     "Participa con autonomía en la actividad «Descubrimos obra de teatro del grado»."
+    ],
+    "recursos": [
+     "Papel y cartulina",
+     "Temperas y crayones",
+     "Material reciclado",
+     "Instrumentos de percusión"
+    ],
+    "orientacion": "Contextualizar «Obra de teatro del grado» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Obra de teatro del grado».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Obra de teatro del grado» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos obra de teatro del grado», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Obra de teatro del grado» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Obra de teatro del grado, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Obra de teatro del grado» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos obra de teatro del grado»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

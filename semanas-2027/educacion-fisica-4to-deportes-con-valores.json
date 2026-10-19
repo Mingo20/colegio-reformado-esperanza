@@ -1,0 +1,504 @@
+[
+ {
+  "numero": 1,
+  "tema": "Fundamentos de voleibol",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre fundamentos de voleibol y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Fundamentos de voleibol en el marco de la unidad «Deportes con valores»: Deportes con valores.",
+  "cierre": "Evidencia esperada: el estudiante practica «Fundamentos de voleibol» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Descubrimos fundamentos de voleibol",
+    "desempenos": [
+     "Practica y disfruta «Fundamentos de voleibol».",
+     "Participa con autonomía en la actividad «Descubrimos fundamentos de voleibol»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Fundamentos de voleibol» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fundamentos de voleibol».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fundamentos de voleibol» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos fundamentos de voleibol», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fundamentos de voleibol» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fundamentos de voleibol, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fundamentos de voleibol» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos fundamentos de voleibol»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Practicamos fundamentos de voleibol",
+    "desempenos": [
+     "Practica y disfruta «Fundamentos de voleibol».",
+     "Participa con autonomía en la actividad «Practicamos fundamentos de voleibol»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Fundamentos de voleibol» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fundamentos de voleibol».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fundamentos de voleibol» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos fundamentos de voleibol», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fundamentos de voleibol» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fundamentos de voleibol, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fundamentos de voleibol» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos fundamentos de voleibol»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Fundamentos de baloncesto",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre fundamentos de baloncesto y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Fundamentos de baloncesto en el marco de la unidad «Deportes con valores»: Deportes con valores.",
+  "cierre": "Evidencia esperada: el estudiante practica «Fundamentos de baloncesto» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Descubrimos fundamentos de baloncesto",
+    "desempenos": [
+     "Practica y disfruta «Fundamentos de baloncesto».",
+     "Participa con autonomía en la actividad «Descubrimos fundamentos de baloncesto»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Fundamentos de baloncesto» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Fundamentos de baloncesto».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Fundamentos de baloncesto» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos fundamentos de baloncesto», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Fundamentos de baloncesto» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Fundamentos de baloncesto, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Fundamentos de baloncesto» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos fundamentos de baloncesto»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Juegos con reglas y árbitros",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre juegos con reglas y árbitros y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Juegos con reglas y árbitros en el marco de la unidad «Deportes con valores»: Deportes con valores.",
+  "cierre": "Evidencia esperada: el estudiante practica «Juegos con reglas y árbitros» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Descubrimos juegos con reglas y árbitros",
+    "desempenos": [
+     "Practica y disfruta «Juegos con reglas y árbitros».",
+     "Participa con autonomía en la actividad «Descubrimos juegos con reglas y árbitros»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos con reglas y árbitros» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos con reglas y árbitros».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos con reglas y árbitros» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos juegos con reglas y árbitros», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos con reglas y árbitros» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos con reglas y árbitros, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos con reglas y árbitros» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos juegos con reglas y árbitros»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Practicamos juegos con reglas y árbitros",
+    "desempenos": [
+     "Practica y disfruta «Juegos con reglas y árbitros».",
+     "Participa con autonomía en la actividad «Practicamos juegos con reglas y árbitros»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Juegos con reglas y árbitros» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos con reglas y árbitros».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos con reglas y árbitros» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos juegos con reglas y árbitros», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Juegos con reglas y árbitros» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos con reglas y árbitros, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Juegos con reglas y árbitros» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos juegos con reglas y árbitros»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Torneo del buen trato",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre torneo del buen trato y su relación con Mi familia y el buen trato?",
+  "desarrollo": "Torneo del buen trato en el marco de la unidad «Deportes con valores»: Deportes con valores.",
+  "cierre": "Evidencia esperada: el estudiante practica «Torneo del buen trato» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Descubrimos torneo del buen trato",
+    "desempenos": [
+     "Practica y disfruta «Torneo del buen trato».",
+     "Participa con autonomía en la actividad «Descubrimos torneo del buen trato»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Torneo del buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Torneo del buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Torneo del buen trato» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Descubrimos torneo del buen trato», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Torneo del buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Torneo del buen trato, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Torneo del buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Descubrimos torneo del buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Practicamos torneo del buen trato",
+    "desempenos": [
+     "Practica y disfruta «Torneo del buen trato».",
+     "Participa con autonomía en la actividad «Practicamos torneo del buen trato»."
+    ],
+    "recursos": [
+     "Conos y aros",
+     "Pelotas",
+     "Cintas rítmicas",
+     "Silbato"
+    ],
+    "orientacion": "Contextualizar «Torneo del buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "8 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Torneo del buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Torneo del buen trato» con la Familia y el Buen Trato?",
+       "Anuncia el objetivo de hoy: «Practicamos torneo del buen trato», en lenguaje claro y cercano.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "15 min",
+      "proposito": "Construir el aprendizaje de «Torneo del buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Torneo del buen trato, con ejemplos del entorno dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en parejas o equipos.",
+       "Modela la destreza paso a paso y acompaña a quienes avanzan distinto, sin dar la respuesta directamente.",
+       "Vincula cada paso con la vida diaria de los estudiantes y el tema del mes: Mi familia y el buen trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "15 min",
+      "proposito": "Ejercitar «Torneo del buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos torneo del buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Juegos cooperativos sin exclusiones",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre juegos cooperativos sin exclusiones y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Juegos cooperativos sin exclusiones en el marco de la unidad «Jugamos en familia con buen trato».",
+  "cierre": "Evidencia esperada: el estudiante practica «Juegos cooperativos sin exclusiones» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Investigamos juegos cooperativos sin exclusiones",
+    "desempenos": [
+     "Practica y disfruta «Juegos cooperativos sin exclusiones».",
+     "Participa con autonomía en la actividad «Investigamos juegos cooperativos sin exclusiones»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Juegos cooperativos sin exclusiones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos cooperativos sin exclusiones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos cooperativos sin exclusiones» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Juegos cooperativos sin exclusiones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos cooperativos sin exclusiones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Juegos cooperativos sin exclusiones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos juegos cooperativos sin exclusiones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Practicamos juegos cooperativos sin exclusiones",
+    "desempenos": [
+     "Practica y disfruta «Juegos cooperativos sin exclusiones».",
+     "Participa con autonomía en la actividad «Practicamos juegos cooperativos sin exclusiones»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Juegos cooperativos sin exclusiones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos cooperativos sin exclusiones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos cooperativos sin exclusiones» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Juegos cooperativos sin exclusiones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos cooperativos sin exclusiones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Juegos cooperativos sin exclusiones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos juegos cooperativos sin exclusiones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Circuitos motrices con retos en equipo",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre circuitos motrices con retos en equipo y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Circuitos motrices con retos en equipo en el marco de la unidad «Jugamos en familia con buen trato».",
+  "cierre": "Evidencia esperada: el estudiante practica «Circuitos motrices con retos en equipo» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Investigamos circuitos motrices con retos en equipo",
+    "desempenos": [
+     "Practica y disfruta «Circuitos motrices con retos en equipo».",
+     "Participa con autonomía en la actividad «Investigamos circuitos motrices con retos en equipo»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Circuitos motrices con retos en equipo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuitos motrices con retos en equipo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuitos motrices con retos en equipo» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Circuitos motrices con retos en equipo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuitos motrices con retos en equipo, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Circuitos motrices con retos en equipo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos circuitos motrices con retos en equipo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Practicamos circuitos motrices con retos en equipo",
+    "desempenos": [
+     "Practica y disfruta «Circuitos motrices con retos en equipo».",
+     "Participa con autonomía en la actividad «Practicamos circuitos motrices con retos en equipo»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Circuitos motrices con retos en equipo» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuitos motrices con retos en equipo».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuitos motrices con retos en equipo» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Circuitos motrices con retos en equipo» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuitos motrices con retos en equipo, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Circuitos motrices con retos en equipo» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos circuitos motrices con retos en equipo»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Reglas y fair play: el juego limpio",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre reglas y fair play: el juego limpio y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Reglas y fair play: el juego limpio en el marco de la unidad «Jugamos en familia con buen trato».",
+  "cierre": "Evidencia esperada: el estudiante practica «Reglas y fair play: el juego limpio» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Investigamos reglas y fair play: el juego limpio",
+    "desempenos": [
+     "Practica y disfruta «Reglas y fair play: el juego limpio».",
+     "Participa con autonomía en la actividad «Investigamos reglas y fair play: el juego limpio»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Reglas y fair play: el juego limpio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Reglas y fair play: el juego limpio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Reglas y fair play: el juego limpio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Reglas y fair play: el juego limpio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Reglas y fair play: el juego limpio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Reglas y fair play: el juego limpio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos reglas y fair play: el juego limpio»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Practicamos reglas y fair play: el juego limpio",
+    "desempenos": [
+     "Practica y disfruta «Reglas y fair play: el juego limpio».",
+     "Participa con autonomía en la actividad «Practicamos reglas y fair play: el juego limpio»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Reglas y fair play: el juego limpio» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Reglas y fair play: el juego limpio».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Reglas y fair play: el juego limpio» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Reglas y fair play: el juego limpio» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Reglas y fair play: el juego limpio, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Reglas y fair play: el juego limpio» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos reglas y fair play: el juego limpio»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Festival de juegos cooperativos",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre festival de juegos cooperativos y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Festival de juegos cooperativos en el marco de la unidad «Jugamos en familia con buen trato».",
+  "cierre": "Evidencia esperada: el estudiante practica «Festival de juegos cooperativos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Investigamos festival de juegos cooperativos",
+    "desempenos": [
+     "Practica y disfruta «Festival de juegos cooperativos».",
+     "Participa con autonomía en la actividad «Investigamos festival de juegos cooperativos»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Festival de juegos cooperativos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Festival de juegos cooperativos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Festival de juegos cooperativos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Festival de juegos cooperativos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Festival de juegos cooperativos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Festival de juegos cooperativos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos festival de juegos cooperativos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Practicamos festival de juegos cooperativos",
+    "desempenos": [
+     "Practica y disfruta «Festival de juegos cooperativos».",
+     "Participa con autonomía en la actividad «Practicamos festival de juegos cooperativos»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Festival de juegos cooperativos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Festival de juegos cooperativos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Festival de juegos cooperativos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Festival de juegos cooperativos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Festival de juegos cooperativos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Festival de juegos cooperativos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos festival de juegos cooperativos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

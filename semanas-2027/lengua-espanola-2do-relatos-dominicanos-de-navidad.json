@@ -1,0 +1,560 @@
+[
+ {
+  "numero": 1,
+  "tema": "El cuento de Navidad: personajes y ambiente",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre el cuento de Navidad: personajes y ambiente y su relación con La Navidad?",
+  "desarrollo": "El cuento de Navidad: personajes y ambiente en el marco de la unidad «Relatos dominicanos de Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «El cuento de Navidad: personajes y ambiente» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos el cuento de Navidad: personajes y ambiente",
+    "desempenos": [
+     "Comprende y produce «El cuento de Navidad: personajes y ambiente».",
+     "Participa con autonomía en la actividad «Investigamos el cuento de Navidad: personajes y ambiente»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El cuento de Navidad: personajes y ambiente» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El cuento de Navidad: personajes y ambiente».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El cuento de Navidad: personajes y ambiente» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El cuento de Navidad: personajes y ambiente» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El cuento de Navidad: personajes y ambiente, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El cuento de Navidad: personajes y ambiente» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos el cuento de Navidad: personajes y ambiente»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Practicamos el cuento de Navidad: personajes y ambiente",
+    "desempenos": [
+     "Comprende y produce «El cuento de Navidad: personajes y ambiente».",
+     "Participa con autonomía en la actividad «Practicamos el cuento de Navidad: personajes y ambiente»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El cuento de Navidad: personajes y ambiente» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El cuento de Navidad: personajes y ambiente».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El cuento de Navidad: personajes y ambiente» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El cuento de Navidad: personajes y ambiente» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El cuento de Navidad: personajes y ambiente, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El cuento de Navidad: personajes y ambiente» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el cuento de Navidad: personajes y ambiente»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Los diálogos en el relato",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre los diálogos en el relato y su relación con La Navidad?",
+  "desarrollo": "Los diálogos en el relato en el marco de la unidad «Relatos dominicanos de Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Los diálogos en el relato» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Investigamos los diálogos en el relato",
+    "desempenos": [
+     "Comprende y produce «Los diálogos en el relato».",
+     "Participa con autonomía en la actividad «Investigamos los diálogos en el relato»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Los diálogos en el relato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los diálogos en el relato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los diálogos en el relato» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Los diálogos en el relato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los diálogos en el relato, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Los diálogos en el relato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos los diálogos en el relato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Practicamos los diálogos en el relato",
+    "desempenos": [
+     "Comprende y produce «Los diálogos en el relato».",
+     "Participa con autonomía en la actividad «Practicamos los diálogos en el relato»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Los diálogos en el relato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los diálogos en el relato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los diálogos en el relato» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Los diálogos en el relato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los diálogos en el relato, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Los diálogos en el relato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los diálogos en el relato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Aplicamos los diálogos en el relato",
+    "desempenos": [
+     "Comprende y produce «Los diálogos en el relato».",
+     "Participa con autonomía en la actividad «Aplicamos los diálogos en el relato»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Los diálogos en el relato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los diálogos en el relato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los diálogos en el relato» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Los diálogos en el relato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los diálogos en el relato, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Los diálogos en el relato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos los diálogos en el relato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Carta a un ser querido en Navidad",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre carta a un ser querido en Navidad y su relación con La Navidad?",
+  "desarrollo": "Carta a un ser querido en Navidad en el marco de la unidad «Relatos dominicanos de Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Carta a un ser querido en Navidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Investigamos carta a un ser querido en Navidad",
+    "desempenos": [
+     "Comprende y produce «Carta a un ser querido en Navidad».",
+     "Participa con autonomía en la actividad «Investigamos carta a un ser querido en Navidad»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Carta a un ser querido en Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Carta a un ser querido en Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Carta a un ser querido en Navidad» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Carta a un ser querido en Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Carta a un ser querido en Navidad, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Carta a un ser querido en Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos carta a un ser querido en Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Practicamos carta a un ser querido en Navidad",
+    "desempenos": [
+     "Comprende y produce «Carta a un ser querido en Navidad».",
+     "Participa con autonomía en la actividad «Practicamos carta a un ser querido en Navidad»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Carta a un ser querido en Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Carta a un ser querido en Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Carta a un ser querido en Navidad» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Carta a un ser querido en Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Carta a un ser querido en Navidad, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Carta a un ser querido en Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos carta a un ser querido en Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Aplicamos carta a un ser querido en Navidad",
+    "desempenos": [
+     "Comprende y produce «Carta a un ser querido en Navidad».",
+     "Participa con autonomía en la actividad «Aplicamos carta a un ser querido en Navidad»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Carta a un ser querido en Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Carta a un ser querido en Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Carta a un ser querido en Navidad» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Carta a un ser querido en Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Carta a un ser querido en Navidad, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Carta a un ser querido en Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos carta a un ser querido en Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

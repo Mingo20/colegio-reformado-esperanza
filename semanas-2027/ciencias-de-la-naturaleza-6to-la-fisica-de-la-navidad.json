@@ -1,0 +1,428 @@
+[
+ {
+  "numero": 1,
+  "tema": "Ondas: luz y sonido de las fiestas",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre ondas: luz y sonido de las fiestas y su relación con La Navidad?",
+  "desarrollo": "Ondas: luz y sonido de las fiestas en el marco de la unidad «La física de la Navidad».",
+  "cierre": "Evidencia esperada: el estudiante explica «Ondas: luz y sonido de las fiestas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos ondas: luz y sonido de las fiestas",
+    "desempenos": [
+     "Explica y experimenta «Ondas: luz y sonido de las fiestas».",
+     "Participa con autonomía en la actividad «Investigamos ondas: luz y sonido de las fiestas»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Ondas: luz y sonido de las fiestas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Ondas: luz y sonido de las fiestas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Ondas: luz y sonido de las fiestas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Ondas: luz y sonido de las fiestas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Ondas: luz y sonido de las fiestas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Ondas: luz y sonido de las fiestas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos ondas: luz y sonido de las fiestas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Practicamos ondas: luz y sonido de las fiestas",
+    "desempenos": [
+     "Explica y experimenta «Ondas: luz y sonido de las fiestas».",
+     "Participa con autonomía en la actividad «Practicamos ondas: luz y sonido de las fiestas»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Ondas: luz y sonido de las fiestas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Ondas: luz y sonido de las fiestas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Ondas: luz y sonido de las fiestas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Ondas: luz y sonido de las fiestas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Ondas: luz y sonido de las fiestas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Ondas: luz y sonido de las fiestas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos ondas: luz y sonido de las fiestas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Circuitos eléctricos: las luces navideñas",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre circuitos eléctricos: las luces navideñas y su relación con La Navidad?",
+  "desarrollo": "Circuitos eléctricos: las luces navideñas en el marco de la unidad «La física de la Navidad».",
+  "cierre": "Evidencia esperada: el estudiante explica «Circuitos eléctricos: las luces navideñas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Investigamos circuitos eléctricos: las luces navideñas",
+    "desempenos": [
+     "Explica y experimenta «Circuitos eléctricos: las luces navideñas».",
+     "Participa con autonomía en la actividad «Investigamos circuitos eléctricos: las luces navideñas»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Circuitos eléctricos: las luces navideñas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuitos eléctricos: las luces navideñas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuitos eléctricos: las luces navideñas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Circuitos eléctricos: las luces navideñas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuitos eléctricos: las luces navideñas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Circuitos eléctricos: las luces navideñas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos circuitos eléctricos: las luces navideñas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Practicamos circuitos eléctricos: las luces navideñas",
+    "desempenos": [
+     "Explica y experimenta «Circuitos eléctricos: las luces navideñas».",
+     "Participa con autonomía en la actividad «Practicamos circuitos eléctricos: las luces navideñas»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Circuitos eléctricos: las luces navideñas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuitos eléctricos: las luces navideñas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuitos eléctricos: las luces navideñas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Circuitos eléctricos: las luces navideñas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuitos eléctricos: las luces navideñas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Circuitos eléctricos: las luces navideñas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos circuitos eléctricos: las luces navideñas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Óptica: colores del árbol",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre óptica: colores del árbol y su relación con La Navidad?",
+  "desarrollo": "Óptica: colores del árbol en el marco de la unidad «La física de la Navidad».",
+  "cierre": "Evidencia esperada: el estudiante explica «Óptica: colores del árbol» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Investigamos óptica: colores del árbol",
+    "desempenos": [
+     "Explica y experimenta «Óptica: colores del árbol».",
+     "Participa con autonomía en la actividad «Investigamos óptica: colores del árbol»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Óptica: colores del árbol» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Óptica: colores del árbol».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Óptica: colores del árbol» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Óptica: colores del árbol» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Óptica: colores del árbol, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Óptica: colores del árbol» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos óptica: colores del árbol»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Practicamos óptica: colores del árbol",
+    "desempenos": [
+     "Explica y experimenta «Óptica: colores del árbol».",
+     "Participa con autonomía en la actividad «Practicamos óptica: colores del árbol»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Óptica: colores del árbol» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Óptica: colores del árbol».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Óptica: colores del árbol» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Óptica: colores del árbol» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Óptica: colores del árbol, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Óptica: colores del árbol» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos óptica: colores del árbol»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

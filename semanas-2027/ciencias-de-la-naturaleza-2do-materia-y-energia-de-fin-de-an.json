@@ -1,0 +1,428 @@
+[
+ {
+  "numero": 1,
+  "tema": "Estados y cambios de la materia",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre estados y cambios de la materia y su relación con La Navidad?",
+  "desarrollo": "Estados y cambios de la materia en el marco de la unidad «Materia y energía de fin de año».",
+  "cierre": "Evidencia esperada: el estudiante explica «Estados y cambios de la materia» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos estados y cambios de la materia",
+    "desempenos": [
+     "Explica y experimenta «Estados y cambios de la materia».",
+     "Participa con autonomía en la actividad «Investigamos estados y cambios de la materia»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Estados y cambios de la materia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Estados y cambios de la materia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Estados y cambios de la materia» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Estados y cambios de la materia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Estados y cambios de la materia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Estados y cambios de la materia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos estados y cambios de la materia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Practicamos estados y cambios de la materia",
+    "desempenos": [
+     "Explica y experimenta «Estados y cambios de la materia».",
+     "Participa con autonomía en la actividad «Practicamos estados y cambios de la materia»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Estados y cambios de la materia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Estados y cambios de la materia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Estados y cambios de la materia» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Estados y cambios de la materia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Estados y cambios de la materia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Estados y cambios de la materia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos estados y cambios de la materia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Reacciones químicas en la cocina navideña",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre reacciones químicas en la cocina navideña y su relación con La Navidad?",
+  "desarrollo": "Reacciones químicas en la cocina navideña en el marco de la unidad «Materia y energía de fin de año».",
+  "cierre": "Evidencia esperada: el estudiante explica «Reacciones químicas en la cocina navideña» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Investigamos reacciones químicas en la cocina navideña",
+    "desempenos": [
+     "Explica y experimenta «Reacciones químicas en la cocina navideña».",
+     "Participa con autonomía en la actividad «Investigamos reacciones químicas en la cocina navideña»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Reacciones químicas en la cocina navideña» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Reacciones químicas en la cocina navideña».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Reacciones químicas en la cocina navideña» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Reacciones químicas en la cocina navideña» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Reacciones químicas en la cocina navideña, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Reacciones químicas en la cocina navideña» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos reacciones químicas en la cocina navideña»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Practicamos reacciones químicas en la cocina navideña",
+    "desempenos": [
+     "Explica y experimenta «Reacciones químicas en la cocina navideña».",
+     "Participa con autonomía en la actividad «Practicamos reacciones químicas en la cocina navideña»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Reacciones químicas en la cocina navideña» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Reacciones químicas en la cocina navideña».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Reacciones químicas en la cocina navideña» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Reacciones químicas en la cocina navideña» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Reacciones químicas en la cocina navideña, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Reacciones químicas en la cocina navideña» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos reacciones químicas en la cocina navideña»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "La energía en las celebraciones",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre la energía en las celebraciones y su relación con La Navidad?",
+  "desarrollo": "La energía en las celebraciones en el marco de la unidad «Materia y energía de fin de año».",
+  "cierre": "Evidencia esperada: el estudiante explica «La energía en las celebraciones» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Investigamos la energía en las celebraciones",
+    "desempenos": [
+     "Explica y experimenta «La energía en las celebraciones».",
+     "Participa con autonomía en la actividad «Investigamos la energía en las celebraciones»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «La energía en las celebraciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La energía en las celebraciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La energía en las celebraciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La energía en las celebraciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La energía en las celebraciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La energía en las celebraciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos la energía en las celebraciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Practicamos la energía en las celebraciones",
+    "desempenos": [
+     "Explica y experimenta «La energía en las celebraciones».",
+     "Participa con autonomía en la actividad «Practicamos la energía en las celebraciones»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «La energía en las celebraciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La energía en las celebraciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La energía en las celebraciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La energía en las celebraciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La energía en las celebraciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La energía en las celebraciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la energía en las celebraciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

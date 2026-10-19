@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Les nombres et l'âge de ma famille",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre les nombres et l'âge de ma famille y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Les nombres et l'âge de ma famille en el marco de la unidad «La vie de famille».",
+  "cierre": "Evidencia esperada: el estudiante uses «Les nombres et l'âge de ma famille» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Investigamos les nombres et l'âge de ma famille",
+    "desempenos": [
+     "Utilise le français pour parler de: Les nombres et l'âge de ma famille.",
+     "Participa con autonomía en la actividad «Investigamos les nombres et l'âge de ma famille»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Les nombres et l'âge de ma famille» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Les nombres et l'âge de ma famille».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Les nombres et l'âge de ma famille» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Les nombres et l'âge de ma famille» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Les nombres et l'âge de ma famille, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Les nombres et l'âge de ma famille» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos les nombres et l'âge de ma famille»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Practicamos les nombres et l'âge de ma famille",
+    "desempenos": [
+     "Utilise le français pour parler de: Les nombres et l'âge de ma famille.",
+     "Participa con autonomía en la actividad «Practicamos les nombres et l'âge de ma famille»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Les nombres et l'âge de ma famille» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Les nombres et l'âge de ma famille».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Les nombres et l'âge de ma famille» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Les nombres et l'âge de ma famille» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Les nombres et l'âge de ma famille, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Les nombres et l'âge de ma famille» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos les nombres et l'âge de ma famille»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Les verbes du premier groupe au présent",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre les verbes du premier groupe au présent y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Les verbes du premier groupe au présent en el marco de la unidad «La vie de famille».",
+  "cierre": "Evidencia esperada: el estudiante uses «Les verbes du premier groupe au présent» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Investigamos les verbes du premier groupe au présent",
+    "desempenos": [
+     "Utilise le français pour parler de: Les verbes du premier groupe au présent.",
+     "Participa con autonomía en la actividad «Investigamos les verbes du premier groupe au présent»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Les verbes du premier groupe au présent» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Les verbes du premier groupe au présent».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Les verbes du premier groupe au présent» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Les verbes du premier groupe au présent» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Les verbes du premier groupe au présent, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Les verbes du premier groupe au présent» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos les verbes du premier groupe au présent»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Practicamos les verbes du premier groupe au présent",
+    "desempenos": [
+     "Utilise le français pour parler de: Les verbes du premier groupe au présent.",
+     "Participa con autonomía en la actividad «Practicamos les verbes du premier groupe au présent»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Les verbes du premier groupe au présent» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Les verbes du premier groupe au présent».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Les verbes du premier groupe au présent» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Les verbes du premier groupe au présent» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Les verbes du premier groupe au présent, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Les verbes du premier groupe au présent» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos les verbes du premier groupe au présent»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Exprimer ses goûts: j'aime ma famille",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre exprimer ses goûts: j'aime ma famille y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Exprimer ses goûts: j'aime ma famille en el marco de la unidad «La vie de famille».",
+  "cierre": "Evidencia esperada: el estudiante uses «Exprimer ses goûts: j'aime ma famille» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Investigamos exprimer ses goûts: j'aime ma famille",
+    "desempenos": [
+     "Utilise le français pour parler de: Exprimer ses goûts: j'aime ma famille.",
+     "Participa con autonomía en la actividad «Investigamos exprimer ses goûts: j'aime ma famille»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Exprimer ses goûts: j'aime ma famille» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Exprimer ses goûts: j'aime ma famille».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Exprimer ses goûts: j'aime ma famille» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Exprimer ses goûts: j'aime ma famille» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Exprimer ses goûts: j'aime ma famille, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Exprimer ses goûts: j'aime ma famille» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos exprimer ses goûts: j'aime ma famille»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Practicamos exprimer ses goûts: j'aime ma famille",
+    "desempenos": [
+     "Utilise le français pour parler de: Exprimer ses goûts: j'aime ma famille.",
+     "Participa con autonomía en la actividad «Practicamos exprimer ses goûts: j'aime ma famille»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Exprimer ses goûts: j'aime ma famille» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Exprimer ses goûts: j'aime ma famille».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Exprimer ses goûts: j'aime ma famille» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Exprimer ses goûts: j'aime ma famille» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Exprimer ses goûts: j'aime ma famille, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Exprimer ses goûts: j'aime ma famille» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos exprimer ses goûts: j'aime ma famille»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Projet: interview d'un membre de la famille",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre projet: interview d'un membre de la famille y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Projet: interview d'un membre de la famille en el marco de la unidad «La vie de famille».",
+  "cierre": "Evidencia esperada: el estudiante uses «Projet: interview d'un membre de la famille» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Investigamos projet: interview d'un membre de la famille",
+    "desempenos": [
+     "Utilise le français pour parler de: Projet: interview d'un membre de la famille.",
+     "Participa con autonomía en la actividad «Investigamos projet: interview d'un membre de la famille»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Projet: interview d'un membre de la famille» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Projet: interview d'un membre de la famille».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Projet: interview d'un membre de la famille» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Projet: interview d'un membre de la famille» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Projet: interview d'un membre de la famille, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Projet: interview d'un membre de la famille» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos projet: interview d'un membre de la famille»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Practicamos projet: interview d'un membre de la famille",
+    "desempenos": [
+     "Utilise le français pour parler de: Projet: interview d'un membre de la famille.",
+     "Participa con autonomía en la actividad «Practicamos projet: interview d'un membre de la famille»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Projet: interview d'un membre de la famille» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Projet: interview d'un membre de la famille».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Projet: interview d'un membre de la famille» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Projet: interview d'un membre de la famille» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Projet: interview d'un membre de la famille, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Projet: interview d'un membre de la famille» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos projet: interview d'un membre de la famille»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

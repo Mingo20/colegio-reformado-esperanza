@@ -1,0 +1,1032 @@
+[
+ {
+  "numero": 1,
+  "tema": "Resolución de inecuaciones cuadráticas aplicando los métodos",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre resolución de inecuaciones cuadráticas aplicando los métodos y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Resolución de inecuaciones cuadráticas aplicando los métodos en el marco de la unidad «Datos de mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Resolución de inecuaciones cuadráticas aplicando los métodos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Resolución de inecuaciones cuadráticas aplicando los métod",
+    "desempenos": [
+     "Comprende y aplica «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+     "Participa con autonomía en la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de inecuaciones cuadráticas aplicando los métodos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de inecuaciones cuadráticas aplicando los métodos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de inecuaciones cuadráticas aplicando los métodos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de inecuaciones cuadráticas aplicando los métodos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de inecuaciones cuadráticas aplicando los métodos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Resolución de inecuaciones cuadráticas aplicando los métod",
+    "desempenos": [
+     "Comprende y aplica «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+     "Participa con autonomía en la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de inecuaciones cuadráticas aplicando los métodos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de inecuaciones cuadráticas aplicando los métodos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de inecuaciones cuadráticas aplicando los métodos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de inecuaciones cuadráticas aplicando los métodos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de inecuaciones cuadráticas aplicando los métodos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Resolución de inecuaciones cuadráticas aplicando los métod",
+    "desempenos": [
+     "Comprende y aplica «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+     "Participa con autonomía en la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de inecuaciones cuadráticas aplicando los métodos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de inecuaciones cuadráticas aplicando los métodos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de inecuaciones cuadráticas aplicando los métodos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de inecuaciones cuadráticas aplicando los métodos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de inecuaciones cuadráticas aplicando los métodos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Resolución de inecuaciones cuadráticas aplicando los métod",
+    "desempenos": [
+     "Comprende y aplica «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+     "Participa con autonomía en la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de inecuaciones cuadráticas aplicando los métodos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de inecuaciones cuadráticas aplicando los métodos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de inecuaciones cuadráticas aplicando los métodos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de inecuaciones cuadráticas aplicando los métodos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de inecuaciones cuadráticas aplicando los métodos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de inecuaciones cuadráticas aplicando los métodos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de inecuaciones cuadráticas aplicando los métod»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Resolución de sistemas de ecuaciones e inecuaciones cuadráticas",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre resolución de sistemas de ecuaciones e inecuaciones cuadráticas y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Resolución de sistemas de ecuaciones e inecuaciones cuadráticas en el marco de la unidad «Datos de mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Resolución de sistemas de ecuaciones e inecuaciones cuadrá",
+    "desempenos": [
+     "Comprende y aplica «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas».",
+     "Participa con autonomía en la actividad «Resolución de sistemas de ecuaciones e inecuaciones cuadrá»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de sistemas de ecuaciones e inecuaciones cuadráticas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de sistemas de ecuaciones e inecuaciones cuadrá»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Resolución de sistemas de ecuaciones e inecuaciones cuadrá",
+    "desempenos": [
+     "Comprende y aplica «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas».",
+     "Participa con autonomía en la actividad «Resolución de sistemas de ecuaciones e inecuaciones cuadrá»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de sistemas de ecuaciones e inecuaciones cuadráticas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de sistemas de ecuaciones e inecuaciones cuadrá»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Resolución de sistemas de ecuaciones e inecuaciones cuadrá",
+    "desempenos": [
+     "Comprende y aplica «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas».",
+     "Participa con autonomía en la actividad «Resolución de sistemas de ecuaciones e inecuaciones cuadrá»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de sistemas de ecuaciones e inecuaciones cuadráticas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de sistemas de ecuaciones e inecuaciones cuadráticas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de sistemas de ecuaciones e inecuaciones cuadrá»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución en el marco de la unidad «Datos de mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Comprobación de la solución de un sistema de ecuaciones, U",
+    "desempenos": [
+     "Comprende y aplica «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+     "Participa con autonomía en la actividad «Comprobación de la solución de un sistema de ecuaciones, U»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Comprobación de la solución de un sistema de ecuaciones, U»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Comprobación de la solución de un sistema de ecuaciones, U",
+    "desempenos": [
+     "Comprende y aplica «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+     "Participa con autonomía en la actividad «Comprobación de la solución de un sistema de ecuaciones, U»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Comprobación de la solución de un sistema de ecuaciones, U»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Comprobación de la solución de un sistema de ecuaciones, U",
+    "desempenos": [
+     "Comprende y aplica «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+     "Participa con autonomía en la actividad «Comprobación de la solución de un sistema de ecuaciones, U»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Comprobación de la solución de un sistema de ecuaciones, U»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Comprobación de la solución de un sistema de ecuaciones, U",
+    "desempenos": [
+     "Comprende y aplica «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+     "Participa con autonomía en la actividad «Comprobación de la solución de un sistema de ecuaciones, U»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Comprobación de la solución de un sistema de ecuaciones, Uso de las ecuaciones exponenciales y logarítmicas en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Comprobación de la solución de un sistema de ecuaciones, U»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas en el marco de la unidad «Datos de mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Resolución de problemas referidos a préstamos bancarios y ",
+    "desempenos": [
+     "Comprende y aplica «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+     "Participa con autonomía en la actividad «Resolución de problemas referidos a préstamos bancarios y »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de problemas referidos a préstamos bancarios y »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Resolución de problemas referidos a préstamos bancarios y ",
+    "desempenos": [
+     "Comprende y aplica «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+     "Participa con autonomía en la actividad «Resolución de problemas referidos a préstamos bancarios y »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de problemas referidos a préstamos bancarios y »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Resolución de problemas referidos a préstamos bancarios y ",
+    "desempenos": [
+     "Comprende y aplica «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+     "Participa con autonomía en la actividad «Resolución de problemas referidos a préstamos bancarios y »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de problemas referidos a préstamos bancarios y »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Resolución de problemas referidos a préstamos bancarios y ",
+    "desempenos": [
+     "Comprende y aplica «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+     "Participa con autonomía en la actividad «Resolución de problemas referidos a préstamos bancarios y »."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Resolución de problemas referidos a préstamos bancarios y de otros, Resolución de sucesiones sin y con herramientas tecnológicas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Resolución de problemas referidos a préstamos bancarios y »: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

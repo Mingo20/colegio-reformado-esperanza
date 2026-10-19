@@ -1,0 +1,768 @@
+[
+ {
+  "numero": 1,
+  "tema": "La noticia: elementos y estructura",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre la noticia: elementos y estructura y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "La noticia: elementos y estructura en el marco de la unidad «Noticias del buen trato en mi familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «La noticia: elementos y estructura» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Investigamos la noticia: elementos y estructura",
+    "desempenos": [
+     "Comprende y produce «La noticia: elementos y estructura».",
+     "Participa con autonomía en la actividad «Investigamos la noticia: elementos y estructura»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La noticia: elementos y estructura» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La noticia: elementos y estructura».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La noticia: elementos y estructura» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La noticia: elementos y estructura» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La noticia: elementos y estructura, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La noticia: elementos y estructura» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos la noticia: elementos y estructura»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Practicamos la noticia: elementos y estructura",
+    "desempenos": [
+     "Comprende y produce «La noticia: elementos y estructura».",
+     "Participa con autonomía en la actividad «Practicamos la noticia: elementos y estructura»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La noticia: elementos y estructura» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La noticia: elementos y estructura».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La noticia: elementos y estructura» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La noticia: elementos y estructura» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La noticia: elementos y estructura, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La noticia: elementos y estructura» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la noticia: elementos y estructura»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Aplicamos la noticia: elementos y estructura",
+    "desempenos": [
+     "Comprende y produce «La noticia: elementos y estructura».",
+     "Participa con autonomía en la actividad «Aplicamos la noticia: elementos y estructura»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «La noticia: elementos y estructura» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La noticia: elementos y estructura».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La noticia: elementos y estructura» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La noticia: elementos y estructura» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La noticia: elementos y estructura, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La noticia: elementos y estructura» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos la noticia: elementos y estructura»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Redactamos una noticia sobre el buen trato en casa",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre redactamos una noticia sobre el buen trato en casa y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Redactamos una noticia sobre el buen trato en casa en el marco de la unidad «Noticias del buen trato en mi familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Redactamos una noticia sobre el buen trato en casa» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Redactamos una noticia sobre el buen trato en casa",
+    "desempenos": [
+     "Comprende y produce «Redactamos una noticia sobre el buen trato en casa».",
+     "Participa con autonomía en la actividad «Redactamos una noticia sobre el buen trato en casa»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Redactamos una noticia sobre el buen trato en casa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Redactamos una noticia sobre el buen trato en casa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Redactamos una noticia sobre el buen trato en casa» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Redactamos una noticia sobre el buen trato en casa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Redactamos una noticia sobre el buen trato en casa, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Redactamos una noticia sobre el buen trato en casa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Redactamos una noticia sobre el buen trato en casa»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Redactamos una noticia sobre el buen trato en casa",
+    "desempenos": [
+     "Comprende y produce «Redactamos una noticia sobre el buen trato en casa».",
+     "Participa con autonomía en la actividad «Redactamos una noticia sobre el buen trato en casa»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Redactamos una noticia sobre el buen trato en casa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Redactamos una noticia sobre el buen trato en casa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Redactamos una noticia sobre el buen trato en casa» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Redactamos una noticia sobre el buen trato en casa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Redactamos una noticia sobre el buen trato en casa, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Redactamos una noticia sobre el buen trato en casa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Redactamos una noticia sobre el buen trato en casa»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Entrevista breve a un familiar: preguntas y respuestas",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre entrevista breve a un familiar: preguntas y respuestas y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Entrevista breve a un familiar: preguntas y respuestas en el marco de la unidad «Noticias del buen trato en mi familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Entrevista breve a un familiar: preguntas y respuestas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Entrevista breve a un familiar: preguntas y respuestas",
+    "desempenos": [
+     "Comprende y produce «Entrevista breve a un familiar: preguntas y respuestas».",
+     "Participa con autonomía en la actividad «Entrevista breve a un familiar: preguntas y respuestas»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Entrevista breve a un familiar: preguntas y respuestas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Entrevista breve a un familiar: preguntas y respuestas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Entrevista breve a un familiar: preguntas y respuestas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Entrevista breve a un familiar: preguntas y respuestas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Entrevista breve a un familiar: preguntas y respuestas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Entrevista breve a un familiar: preguntas y respuestas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Entrevista breve a un familiar: preguntas y respuestas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Entrevista breve a un familiar: preguntas y respuestas",
+    "desempenos": [
+     "Comprende y produce «Entrevista breve a un familiar: preguntas y respuestas».",
+     "Participa con autonomía en la actividad «Entrevista breve a un familiar: preguntas y respuestas»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Entrevista breve a un familiar: preguntas y respuestas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Entrevista breve a un familiar: preguntas y respuestas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Entrevista breve a un familiar: preguntas y respuestas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Entrevista breve a un familiar: preguntas y respuestas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Entrevista breve a un familiar: preguntas y respuestas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Entrevista breve a un familiar: preguntas y respuestas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Entrevista breve a un familiar: preguntas y respuestas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Entrevista breve a un familiar: preguntas y respuestas",
+    "desempenos": [
+     "Comprende y produce «Entrevista breve a un familiar: preguntas y respuestas».",
+     "Participa con autonomía en la actividad «Entrevista breve a un familiar: preguntas y respuestas»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Entrevista breve a un familiar: preguntas y respuestas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Entrevista breve a un familiar: preguntas y respuestas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Entrevista breve a un familiar: preguntas y respuestas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Entrevista breve a un familiar: preguntas y respuestas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Entrevista breve a un familiar: preguntas y respuestas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Entrevista breve a un familiar: preguntas y respuestas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Entrevista breve a un familiar: preguntas y respuestas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Panel: leemos nuestras noticias",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre panel: leemos nuestras noticias y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Panel: leemos nuestras noticias en el marco de la unidad «Noticias del buen trato en mi familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Panel: leemos nuestras noticias» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Investigamos panel: leemos nuestras noticias",
+    "desempenos": [
+     "Comprende y produce «Panel: leemos nuestras noticias».",
+     "Participa con autonomía en la actividad «Investigamos panel: leemos nuestras noticias»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Panel: leemos nuestras noticias» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Panel: leemos nuestras noticias».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Panel: leemos nuestras noticias» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Panel: leemos nuestras noticias» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Panel: leemos nuestras noticias, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Panel: leemos nuestras noticias» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos panel: leemos nuestras noticias»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Practicamos panel: leemos nuestras noticias",
+    "desempenos": [
+     "Comprende y produce «Panel: leemos nuestras noticias».",
+     "Participa con autonomía en la actividad «Practicamos panel: leemos nuestras noticias»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Panel: leemos nuestras noticias» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Panel: leemos nuestras noticias».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Panel: leemos nuestras noticias» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Panel: leemos nuestras noticias» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Panel: leemos nuestras noticias, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Panel: leemos nuestras noticias» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos panel: leemos nuestras noticias»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Aplicamos panel: leemos nuestras noticias",
+    "desempenos": [
+     "Comprende y produce «Panel: leemos nuestras noticias».",
+     "Participa con autonomía en la actividad «Aplicamos panel: leemos nuestras noticias»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Panel: leemos nuestras noticias» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Panel: leemos nuestras noticias».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Panel: leemos nuestras noticias» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Panel: leemos nuestras noticias» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Panel: leemos nuestras noticias, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Panel: leemos nuestras noticias» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos panel: leemos nuestras noticias»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,692 @@
+[
+ {
+  "numero": 1,
+  "tema": "Análisis e interpretación de los elementos básicos",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre análisis e interpretación de los elementos básicos y su relación con La Navidad?",
+  "desarrollo": "Análisis e interpretación de los elementos básicos en el marco de la unidad «La geometría de la fiesta».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Análisis e interpretación de los elementos básicos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Análisis e interpretación de los elementos básicos",
+    "desempenos": [
+     "Comprende y aplica «Análisis e interpretación de los elementos básicos».",
+     "Participa con autonomía en la actividad «Análisis e interpretación de los elementos básicos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Análisis e interpretación de los elementos básicos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Análisis e interpretación de los elementos básicos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Análisis e interpretación de los elementos básicos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Análisis e interpretación de los elementos básicos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Análisis e interpretación de los elementos básicos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Análisis e interpretación de los elementos básicos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Análisis e interpretación de los elementos básicos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Análisis e interpretación de los elementos básicos",
+    "desempenos": [
+     "Comprende y aplica «Análisis e interpretación de los elementos básicos».",
+     "Participa con autonomía en la actividad «Análisis e interpretación de los elementos básicos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Análisis e interpretación de los elementos básicos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Análisis e interpretación de los elementos básicos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Análisis e interpretación de los elementos básicos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Análisis e interpretación de los elementos básicos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Análisis e interpretación de los elementos básicos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Análisis e interpretación de los elementos básicos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Análisis e interpretación de los elementos básicos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Análisis e interpretación de los elementos básicos",
+    "desempenos": [
+     "Comprende y aplica «Análisis e interpretación de los elementos básicos».",
+     "Participa con autonomía en la actividad «Análisis e interpretación de los elementos básicos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Análisis e interpretación de los elementos básicos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Análisis e interpretación de los elementos básicos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Análisis e interpretación de los elementos básicos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Análisis e interpretación de los elementos básicos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Análisis e interpretación de los elementos básicos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Análisis e interpretación de los elementos básicos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Análisis e interpretación de los elementos básicos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Representación de figuras geométricas en el plano cartesiano",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre representación de figuras geométricas en el plano cartesiano y su relación con La Navidad?",
+  "desarrollo": "Representación de figuras geométricas en el plano cartesiano en el marco de la unidad «La geometría de la fiesta».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Representación de figuras geométricas en el plano cartesiano» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Representación de figuras geométricas en el plano cartesi",
+    "desempenos": [
+     "Comprende y aplica «Representación de figuras geométricas en el plano cartesiano».",
+     "Participa con autonomía en la actividad «Representación de figuras geométricas en el plano cartesi»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Representación de figuras geométricas en el plano cartesiano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Representación de figuras geométricas en el plano cartesiano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Representación de figuras geométricas en el plano cartesiano» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Representación de figuras geométricas en el plano cartesiano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Representación de figuras geométricas en el plano cartesiano, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Representación de figuras geométricas en el plano cartesiano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Representación de figuras geométricas en el plano cartesi»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Representación de figuras geométricas en el plano cartesi",
+    "desempenos": [
+     "Comprende y aplica «Representación de figuras geométricas en el plano cartesiano».",
+     "Participa con autonomía en la actividad «Representación de figuras geométricas en el plano cartesi»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Representación de figuras geométricas en el plano cartesiano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Representación de figuras geométricas en el plano cartesiano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Representación de figuras geométricas en el plano cartesiano» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Representación de figuras geométricas en el plano cartesiano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Representación de figuras geométricas en el plano cartesiano, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Representación de figuras geométricas en el plano cartesiano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Representación de figuras geométricas en el plano cartesi»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Representación de figuras geométricas en el plano cartesi",
+    "desempenos": [
+     "Comprende y aplica «Representación de figuras geométricas en el plano cartesiano».",
+     "Participa con autonomía en la actividad «Representación de figuras geométricas en el plano cartesi»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Representación de figuras geométricas en el plano cartesiano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Representación de figuras geométricas en el plano cartesiano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Representación de figuras geométricas en el plano cartesiano» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Representación de figuras geométricas en el plano cartesiano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Representación de figuras geométricas en el plano cartesiano, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Representación de figuras geométricas en el plano cartesiano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Representación de figuras geométricas en el plano cartesi»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Representación de figuras geométricas en el plano cartesi",
+    "desempenos": [
+     "Comprende y aplica «Representación de figuras geométricas en el plano cartesiano».",
+     "Participa con autonomía en la actividad «Representación de figuras geométricas en el plano cartesi»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Representación de figuras geométricas en el plano cartesiano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Representación de figuras geométricas en el plano cartesiano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Representación de figuras geométricas en el plano cartesiano» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Representación de figuras geométricas en el plano cartesiano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Representación de figuras geométricas en el plano cartesiano, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Representación de figuras geométricas en el plano cartesiano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Representación de figuras geométricas en el plano cartesi»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación y su relación con La Navidad?",
+  "desarrollo": "Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación en el marco de la unidad «La geometría de la fiesta».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Cálculo de la distancia entre dos puntos y longitud, Aplic",
+    "desempenos": [
+     "Comprende y aplica «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación».",
+     "Participa con autonomía en la actividad «Cálculo de la distancia entre dos puntos y longitud, Aplic»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Cálculo de la distancia entre dos puntos y longitud, Aplic»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Cálculo de la distancia entre dos puntos y longitud, Aplic",
+    "desempenos": [
+     "Comprende y aplica «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación».",
+     "Participa con autonomía en la actividad «Cálculo de la distancia entre dos puntos y longitud, Aplic»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Cálculo de la distancia entre dos puntos y longitud, Aplic»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Cálculo de la distancia entre dos puntos y longitud, Aplic",
+    "desempenos": [
+     "Comprende y aplica «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación».",
+     "Participa con autonomía en la actividad «Cálculo de la distancia entre dos puntos y longitud, Aplic»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo de la distancia entre dos puntos y longitud, Aplicación de la fórmula de Herón, Demostración y aplicación» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Cálculo de la distancia entre dos puntos y longitud, Aplic»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

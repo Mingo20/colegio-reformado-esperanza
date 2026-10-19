@@ -1,0 +1,768 @@
+[
+ {
+  "numero": 1,
+  "tema": "El discurso argumentativo: estructura",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre el discurso argumentativo: estructura y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "El discurso argumentativo: estructura en el marco de la unidad «La palabra defiende a la familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «El discurso argumentativo: estructura» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Investigamos el discurso argumentativo: estructura",
+    "desempenos": [
+     "Comprende y produce «El discurso argumentativo: estructura».",
+     "Participa con autonomía en la actividad «Investigamos el discurso argumentativo: estructura»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El discurso argumentativo: estructura» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El discurso argumentativo: estructura».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El discurso argumentativo: estructura» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El discurso argumentativo: estructura» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El discurso argumentativo: estructura, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El discurso argumentativo: estructura» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos el discurso argumentativo: estructura»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Practicamos el discurso argumentativo: estructura",
+    "desempenos": [
+     "Comprende y produce «El discurso argumentativo: estructura».",
+     "Participa con autonomía en la actividad «Practicamos el discurso argumentativo: estructura»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El discurso argumentativo: estructura» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El discurso argumentativo: estructura».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El discurso argumentativo: estructura» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El discurso argumentativo: estructura» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El discurso argumentativo: estructura, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El discurso argumentativo: estructura» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el discurso argumentativo: estructura»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Aplicamos el discurso argumentativo: estructura",
+    "desempenos": [
+     "Comprende y produce «El discurso argumentativo: estructura».",
+     "Participa con autonomía en la actividad «Aplicamos el discurso argumentativo: estructura»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El discurso argumentativo: estructura» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El discurso argumentativo: estructura».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El discurso argumentativo: estructura» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El discurso argumentativo: estructura» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El discurso argumentativo: estructura, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El discurso argumentativo: estructura» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos el discurso argumentativo: estructura»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "El debate: normas, turnos y refutación",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre el debate: normas, turnos y refutación y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "El debate: normas, turnos y refutación en el marco de la unidad «La palabra defiende a la familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «El debate: normas, turnos y refutación» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Investigamos el debate: normas, turnos y refutación",
+    "desempenos": [
+     "Comprende y produce «El debate: normas, turnos y refutación».",
+     "Participa con autonomía en la actividad «Investigamos el debate: normas, turnos y refutación»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El debate: normas, turnos y refutación» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El debate: normas, turnos y refutación».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El debate: normas, turnos y refutación» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El debate: normas, turnos y refutación» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El debate: normas, turnos y refutación, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El debate: normas, turnos y refutación» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos el debate: normas, turnos y refutación»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Practicamos el debate: normas, turnos y refutación",
+    "desempenos": [
+     "Comprende y produce «El debate: normas, turnos y refutación».",
+     "Participa con autonomía en la actividad «Practicamos el debate: normas, turnos y refutación»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «El debate: normas, turnos y refutación» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «El debate: normas, turnos y refutación».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «El debate: normas, turnos y refutación» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «El debate: normas, turnos y refutación» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: El debate: normas, turnos y refutación, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «El debate: normas, turnos y refutación» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos el debate: normas, turnos y refutación»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Editorial del aula sobre el buen trato",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre editorial del aula sobre el buen trato y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Editorial del aula sobre el buen trato en el marco de la unidad «La palabra defiende a la familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Editorial del aula sobre el buen trato» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Investigamos editorial del aula sobre el buen trato",
+    "desempenos": [
+     "Comprende y produce «Editorial del aula sobre el buen trato».",
+     "Participa con autonomía en la actividad «Investigamos editorial del aula sobre el buen trato»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Editorial del aula sobre el buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Editorial del aula sobre el buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Editorial del aula sobre el buen trato» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Editorial del aula sobre el buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Editorial del aula sobre el buen trato, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Editorial del aula sobre el buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos editorial del aula sobre el buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Practicamos editorial del aula sobre el buen trato",
+    "desempenos": [
+     "Comprende y produce «Editorial del aula sobre el buen trato».",
+     "Participa con autonomía en la actividad «Practicamos editorial del aula sobre el buen trato»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Editorial del aula sobre el buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Editorial del aula sobre el buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Editorial del aula sobre el buen trato» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Editorial del aula sobre el buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Editorial del aula sobre el buen trato, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Editorial del aula sobre el buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos editorial del aula sobre el buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Aplicamos editorial del aula sobre el buen trato",
+    "desempenos": [
+     "Comprende y produce «Editorial del aula sobre el buen trato».",
+     "Participa con autonomía en la actividad «Aplicamos editorial del aula sobre el buen trato»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Editorial del aula sobre el buen trato» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Editorial del aula sobre el buen trato».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Editorial del aula sobre el buen trato» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Editorial del aula sobre el buen trato» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Editorial del aula sobre el buen trato, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Editorial del aula sobre el buen trato» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos editorial del aula sobre el buen trato»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: campaña verbal de convivencia",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: campaña verbal de convivencia y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Proyecto: campaña verbal de convivencia en el marco de la unidad «La palabra defiende a la familia».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Proyecto: campaña verbal de convivencia» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Investigamos proyecto: campaña verbal de convivencia",
+    "desempenos": [
+     "Comprende y produce «Proyecto: campaña verbal de convivencia».",
+     "Participa con autonomía en la actividad «Investigamos proyecto: campaña verbal de convivencia»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Proyecto: campaña verbal de convivencia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: campaña verbal de convivencia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: campaña verbal de convivencia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: campaña verbal de convivencia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: campaña verbal de convivencia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Proyecto: campaña verbal de convivencia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos proyecto: campaña verbal de convivencia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Practicamos proyecto: campaña verbal de convivencia",
+    "desempenos": [
+     "Comprende y produce «Proyecto: campaña verbal de convivencia».",
+     "Participa con autonomía en la actividad «Practicamos proyecto: campaña verbal de convivencia»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Proyecto: campaña verbal de convivencia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: campaña verbal de convivencia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: campaña verbal de convivencia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: campaña verbal de convivencia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: campaña verbal de convivencia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Proyecto: campaña verbal de convivencia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos proyecto: campaña verbal de convivencia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Aplicamos proyecto: campaña verbal de convivencia",
+    "desempenos": [
+     "Comprende y produce «Proyecto: campaña verbal de convivencia».",
+     "Participa con autonomía en la actividad «Aplicamos proyecto: campaña verbal de convivencia»."
+    ],
+    "recursos": [
+     "Textos del currículo",
+     "Periódicos y revistas del entorno",
+     "Cuaderno de trabajo",
+     "Diccionario del aula"
+    ],
+    "orientacion": "Contextualizar «Proyecto: campaña verbal de convivencia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: campaña verbal de convivencia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: campaña verbal de convivencia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: campaña verbal de convivencia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: campaña verbal de convivencia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Proyecto: campaña verbal de convivencia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos proyecto: campaña verbal de convivencia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

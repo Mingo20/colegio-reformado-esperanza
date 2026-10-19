@@ -132,7 +132,7 @@ body{
 .momento .m-head{display:flex;align-items:center;gap:10px;margin-bottom:6px;position:relative}
 .momento .m-num{width:30px;height:30px;border-radius:11px;background:linear-gradient(135deg,var(--azul),var(--azul-med));color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .momento .m-head b{font-size:16px;color:var(--azul-osc)}
-.momento .m-head .dur{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:11px;font-weight:700;color:var(--azul);background:#fff;border:1px solid #d5dbe7;padding:4px 10px;border-radius:999px;display:flex;align-items:center;gap:4px;z-index:2;box-shadow:0 2px 8px rgba(0,51,160,.12)}
+.momento .m-head .dur{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:11px;font-weight:700;color:var(--azul);background:#fff;border:1px solid #d5dbe7;padding:4px 10px;border-radius:999px;display:flex;align-items:center;gap:4px;z-index:2;box-shadow:0 2px 8px rgba(0,51,160,.12)}
 .comp-ico{width:30px;height:30px;border-radius:11px;background:linear-gradient(135deg,var(--azul),var(--azul-med));color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .comp-ico svg{width:17px;height:17px}
 .momento .m-head .dur-chip:active{transform:translate(-50%,-50%)}.momento .m-head .dur-chip:hover{transform:translate(-50%,-50%)}
@@ -652,11 +652,6 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
     <button class="ev2-btn" id="ev2-I" onclick="selEval2Estado('Iniciado')">Iniciado</button>
   </div>
   <div id="eval2Cotejo" class="ev2-cotejo"></div>
-  <div class="card" style="margin:14px 0 0;background:rgba(0,51,160,.05);border:1px solid rgba(0,51,160,.14)">
-    <h2 style="font-size:15px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg> Nota de observación del día</h2>
-    <textarea class="obs" id="eval2Obs" rows="6" placeholder="Al elegir un estado, su lista de cotejo se copia aquí automáticamente. Personalízala con lo que observaste en el alumno." oninput="onEval2ObsInput()"></textarea>
-    <p class="muted" style="font-size:11.5px;margin-top:4px">Se guarda solo, 10 segundos después de tu último cambio.</p>
-  </div>
 </div>
 <div id="loginAnim">
   <div class="anim-circ">
@@ -689,7 +684,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=32"></script>
+<script src="app-docente.js?v=33"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

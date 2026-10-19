@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Los sistemas del cuerpo humano",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre los sistemas del cuerpo humano y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Los sistemas del cuerpo humano en el marco de la unidad «El cuerpo humano: templo de la familia».",
+  "cierre": "Evidencia esperada: el estudiante explica «Los sistemas del cuerpo humano» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Investigamos los sistemas del cuerpo humano",
+    "desempenos": [
+     "Explica y experimenta «Los sistemas del cuerpo humano».",
+     "Participa con autonomía en la actividad «Investigamos los sistemas del cuerpo humano»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Los sistemas del cuerpo humano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los sistemas del cuerpo humano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los sistemas del cuerpo humano» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Los sistemas del cuerpo humano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los sistemas del cuerpo humano, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Los sistemas del cuerpo humano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos los sistemas del cuerpo humano»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Practicamos los sistemas del cuerpo humano",
+    "desempenos": [
+     "Explica y experimenta «Los sistemas del cuerpo humano».",
+     "Participa con autonomía en la actividad «Practicamos los sistemas del cuerpo humano»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Los sistemas del cuerpo humano» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los sistemas del cuerpo humano».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los sistemas del cuerpo humano» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Los sistemas del cuerpo humano» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los sistemas del cuerpo humano, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Los sistemas del cuerpo humano» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los sistemas del cuerpo humano»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Higiene y salud familiar: prevención",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre higiene y salud familiar: prevención y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Higiene y salud familiar: prevención en el marco de la unidad «El cuerpo humano: templo de la familia».",
+  "cierre": "Evidencia esperada: el estudiante explica «Higiene y salud familiar: prevención» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Investigamos higiene y salud familiar: prevención",
+    "desempenos": [
+     "Explica y experimenta «Higiene y salud familiar: prevención».",
+     "Participa con autonomía en la actividad «Investigamos higiene y salud familiar: prevención»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Higiene y salud familiar: prevención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Higiene y salud familiar: prevención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Higiene y salud familiar: prevención» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Higiene y salud familiar: prevención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Higiene y salud familiar: prevención, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Higiene y salud familiar: prevención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos higiene y salud familiar: prevención»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Practicamos higiene y salud familiar: prevención",
+    "desempenos": [
+     "Explica y experimenta «Higiene y salud familiar: prevención».",
+     "Participa con autonomía en la actividad «Practicamos higiene y salud familiar: prevención»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Higiene y salud familiar: prevención» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Higiene y salud familiar: prevención».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Higiene y salud familiar: prevención» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Higiene y salud familiar: prevención» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Higiene y salud familiar: prevención, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Higiene y salud familiar: prevención» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos higiene y salud familiar: prevención»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "La célula: unidad de la vida",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre la célula: unidad de la vida y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "La célula: unidad de la vida en el marco de la unidad «El cuerpo humano: templo de la familia».",
+  "cierre": "Evidencia esperada: el estudiante explica «La célula: unidad de la vida» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Investigamos la célula: unidad de la vida",
+    "desempenos": [
+     "Explica y experimenta «La célula: unidad de la vida».",
+     "Participa con autonomía en la actividad «Investigamos la célula: unidad de la vida»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «La célula: unidad de la vida» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La célula: unidad de la vida».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La célula: unidad de la vida» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La célula: unidad de la vida» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La célula: unidad de la vida, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La célula: unidad de la vida» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos la célula: unidad de la vida»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Practicamos la célula: unidad de la vida",
+    "desempenos": [
+     "Explica y experimenta «La célula: unidad de la vida».",
+     "Participa con autonomía en la actividad «Practicamos la célula: unidad de la vida»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «La célula: unidad de la vida» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La célula: unidad de la vida».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La célula: unidad de la vida» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La célula: unidad de la vida» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La célula: unidad de la vida, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La célula: unidad de la vida» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la célula: unidad de la vida»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Investigación: hábitos saludables de mi familia",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre investigación: hábitos saludables de mi familia y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Investigación: hábitos saludables de mi familia en el marco de la unidad «El cuerpo humano: templo de la familia».",
+  "cierre": "Evidencia esperada: el estudiante explica «Investigación: hábitos saludables de mi familia» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Investigación: hábitos saludables de mi familia",
+    "desempenos": [
+     "Explica y experimenta «Investigación: hábitos saludables de mi familia».",
+     "Participa con autonomía en la actividad «Investigación: hábitos saludables de mi familia»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Investigación: hábitos saludables de mi familia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Investigación: hábitos saludables de mi familia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Investigación: hábitos saludables de mi familia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Investigación: hábitos saludables de mi familia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Investigación: hábitos saludables de mi familia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Investigación: hábitos saludables de mi familia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigación: hábitos saludables de mi familia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Investigación: hábitos saludables de mi familia",
+    "desempenos": [
+     "Explica y experimenta «Investigación: hábitos saludables de mi familia».",
+     "Participa con autonomía en la actividad «Investigación: hábitos saludables de mi familia»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Investigación: hábitos saludables de mi familia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Investigación: hábitos saludables de mi familia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Investigación: hábitos saludables de mi familia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Investigación: hábitos saludables de mi familia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Investigación: hábitos saludables de mi familia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Investigación: hábitos saludables de mi familia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigación: hábitos saludables de mi familia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

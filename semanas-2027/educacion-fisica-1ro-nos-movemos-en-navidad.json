@@ -1,0 +1,362 @@
+[
+ {
+  "numero": 1,
+  "tema": "Ritmos y danzas navideñas dominicanas",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre ritmos y danzas navideñas dominicanas y su relación con La Navidad?",
+  "desarrollo": "Ritmos y danzas navideñas dominicanas en el marco de la unidad «Nos movemos en Navidad».",
+  "cierre": "Evidencia esperada: el estudiante practica «Ritmos y danzas navideñas dominicanas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos ritmos y danzas navideñas dominicanas",
+    "desempenos": [
+     "Practica y disfruta «Ritmos y danzas navideñas dominicanas».",
+     "Participa con autonomía en la actividad «Investigamos ritmos y danzas navideñas dominicanas»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Ritmos y danzas navideñas dominicanas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Ritmos y danzas navideñas dominicanas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Ritmos y danzas navideñas dominicanas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Ritmos y danzas navideñas dominicanas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Ritmos y danzas navideñas dominicanas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Ritmos y danzas navideñas dominicanas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos ritmos y danzas navideñas dominicanas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Practicamos ritmos y danzas navideñas dominicanas",
+    "desempenos": [
+     "Practica y disfruta «Ritmos y danzas navideñas dominicanas».",
+     "Participa con autonomía en la actividad «Practicamos ritmos y danzas navideñas dominicanas»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Ritmos y danzas navideñas dominicanas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Ritmos y danzas navideñas dominicanas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Ritmos y danzas navideñas dominicanas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Ritmos y danzas navideñas dominicanas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Ritmos y danzas navideñas dominicanas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Ritmos y danzas navideñas dominicanas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos ritmos y danzas navideñas dominicanas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Estafetas navideñas por equipos",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre estafetas navideñas por equipos y su relación con La Navidad?",
+  "desarrollo": "Estafetas navideñas por equipos en el marco de la unidad «Nos movemos en Navidad».",
+  "cierre": "Evidencia esperada: el estudiante practica «Estafetas navideñas por equipos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Investigamos estafetas navideñas por equipos",
+    "desempenos": [
+     "Practica y disfruta «Estafetas navideñas por equipos».",
+     "Participa con autonomía en la actividad «Investigamos estafetas navideñas por equipos»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Estafetas navideñas por equipos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Estafetas navideñas por equipos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Estafetas navideñas por equipos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Estafetas navideñas por equipos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Estafetas navideñas por equipos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Estafetas navideñas por equipos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos estafetas navideñas por equipos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Practicamos estafetas navideñas por equipos",
+    "desempenos": [
+     "Practica y disfruta «Estafetas navideñas por equipos».",
+     "Participa con autonomía en la actividad «Practicamos estafetas navideñas por equipos»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Estafetas navideñas por equipos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Estafetas navideñas por equipos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Estafetas navideñas por equipos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Estafetas navideñas por equipos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Estafetas navideñas por equipos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Estafetas navideñas por equipos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos estafetas navideñas por equipos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Malabares y control corporal con temática de fiesta",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre malabares y control corporal con temática de fiesta y su relación con La Navidad?",
+  "desarrollo": "Malabares y control corporal con temática de fiesta en el marco de la unidad «Nos movemos en Navidad».",
+  "cierre": "Evidencia esperada: el estudiante practica «Malabares y control corporal con temática de fiesta» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Malabares y control corporal con temática de fiesta",
+    "desempenos": [
+     "Practica y disfruta «Malabares y control corporal con temática de fiesta».",
+     "Participa con autonomía en la actividad «Malabares y control corporal con temática de fiesta»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Malabares y control corporal con temática de fiesta» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Malabares y control corporal con temática de fiesta».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Malabares y control corporal con temática de fiesta» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Malabares y control corporal con temática de fiesta» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Malabares y control corporal con temática de fiesta, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Malabares y control corporal con temática de fiesta» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Malabares y control corporal con temática de fiesta»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

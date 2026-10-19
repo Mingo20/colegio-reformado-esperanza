@@ -1,0 +1,692 @@
+[
+ {
+  "numero": 1,
+  "tema": "Utilización del sistema de coordenadas cartesianas",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre utilización del sistema de coordenadas cartesianas y su relación con La Navidad?",
+  "desarrollo": "Utilización del sistema de coordenadas cartesianas en el marco de la unidad «Compartimos en Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Utilización del sistema de coordenadas cartesianas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Utilización del sistema de coordenadas cartesianas",
+    "desempenos": [
+     "Comprende y aplica «Utilización del sistema de coordenadas cartesianas».",
+     "Participa con autonomía en la actividad «Utilización del sistema de coordenadas cartesianas»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Utilización del sistema de coordenadas cartesianas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Utilización del sistema de coordenadas cartesianas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Utilización del sistema de coordenadas cartesianas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Utilización del sistema de coordenadas cartesianas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Utilización del sistema de coordenadas cartesianas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Utilización del sistema de coordenadas cartesianas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Utilización del sistema de coordenadas cartesianas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Utilización del sistema de coordenadas cartesianas",
+    "desempenos": [
+     "Comprende y aplica «Utilización del sistema de coordenadas cartesianas».",
+     "Participa con autonomía en la actividad «Utilización del sistema de coordenadas cartesianas»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Utilización del sistema de coordenadas cartesianas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Utilización del sistema de coordenadas cartesianas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Utilización del sistema de coordenadas cartesianas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Utilización del sistema de coordenadas cartesianas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Utilización del sistema de coordenadas cartesianas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Utilización del sistema de coordenadas cartesianas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Utilización del sistema de coordenadas cartesianas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Utilización del sistema de coordenadas cartesianas",
+    "desempenos": [
+     "Comprende y aplica «Utilización del sistema de coordenadas cartesianas».",
+     "Participa con autonomía en la actividad «Utilización del sistema de coordenadas cartesianas»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Utilización del sistema de coordenadas cartesianas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Utilización del sistema de coordenadas cartesianas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Utilización del sistema de coordenadas cartesianas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Utilización del sistema de coordenadas cartesianas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Utilización del sistema de coordenadas cartesianas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Utilización del sistema de coordenadas cartesianas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Utilización del sistema de coordenadas cartesianas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Conversiones y estimación de toneladas a gramos",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre conversiones y estimación de toneladas a gramos y su relación con La Navidad?",
+  "desarrollo": "Conversiones y estimación de toneladas a gramos en el marco de la unidad «Compartimos en Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Conversiones y estimación de toneladas a gramos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Conversiones y estimación de toneladas a gramos",
+    "desempenos": [
+     "Comprende y aplica «Conversiones y estimación de toneladas a gramos».",
+     "Participa con autonomía en la actividad «Conversiones y estimación de toneladas a gramos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Conversiones y estimación de toneladas a gramos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Conversiones y estimación de toneladas a gramos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Conversiones y estimación de toneladas a gramos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Conversiones y estimación de toneladas a gramos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Conversiones y estimación de toneladas a gramos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Conversiones y estimación de toneladas a gramos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Conversiones y estimación de toneladas a gramos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Conversiones y estimación de toneladas a gramos",
+    "desempenos": [
+     "Comprende y aplica «Conversiones y estimación de toneladas a gramos».",
+     "Participa con autonomía en la actividad «Conversiones y estimación de toneladas a gramos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Conversiones y estimación de toneladas a gramos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Conversiones y estimación de toneladas a gramos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Conversiones y estimación de toneladas a gramos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Conversiones y estimación de toneladas a gramos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Conversiones y estimación de toneladas a gramos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Conversiones y estimación de toneladas a gramos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Conversiones y estimación de toneladas a gramos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Conversiones y estimación de toneladas a gramos",
+    "desempenos": [
+     "Comprende y aplica «Conversiones y estimación de toneladas a gramos».",
+     "Participa con autonomía en la actividad «Conversiones y estimación de toneladas a gramos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Conversiones y estimación de toneladas a gramos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Conversiones y estimación de toneladas a gramos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Conversiones y estimación de toneladas a gramos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Conversiones y estimación de toneladas a gramos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Conversiones y estimación de toneladas a gramos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Conversiones y estimación de toneladas a gramos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Conversiones y estimación de toneladas a gramos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Conversiones y estimación de toneladas a gramos",
+    "desempenos": [
+     "Comprende y aplica «Conversiones y estimación de toneladas a gramos».",
+     "Participa con autonomía en la actividad «Conversiones y estimación de toneladas a gramos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Conversiones y estimación de toneladas a gramos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Conversiones y estimación de toneladas a gramos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Conversiones y estimación de toneladas a gramos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Conversiones y estimación de toneladas a gramos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Conversiones y estimación de toneladas a gramos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Conversiones y estimación de toneladas a gramos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Conversiones y estimación de toneladas a gramos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros y su relación con La Navidad?",
+  "desarrollo": "Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros en el marco de la unidad «Compartimos en Navidad».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Elaboración de horarios y cronogramas, comparación, Identi",
+    "desempenos": [
+     "Comprende y aplica «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros».",
+     "Participa con autonomía en la actividad «Elaboración de horarios y cronogramas, comparación, Identi»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Elaboración de horarios y cronogramas, comparación, Identi»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Elaboración de horarios y cronogramas, comparación, Identi",
+    "desempenos": [
+     "Comprende y aplica «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros».",
+     "Participa con autonomía en la actividad «Elaboración de horarios y cronogramas, comparación, Identi»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Elaboración de horarios y cronogramas, comparación, Identi»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Elaboración de horarios y cronogramas, comparación, Identi",
+    "desempenos": [
+     "Comprende y aplica «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros».",
+     "Participa con autonomía en la actividad «Elaboración de horarios y cronogramas, comparación, Identi»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Elaboración de horarios y cronogramas, comparación, Identificación de temperaturas en diferentes termómetros» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Elaboración de horarios y cronogramas, comparación, Identi»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

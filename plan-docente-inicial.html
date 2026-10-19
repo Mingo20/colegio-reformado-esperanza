@@ -169,7 +169,7 @@ body{
 .tab.sel{background:#fff;color:var(--azul);box-shadow:0 3px 10px rgba(0,51,160,.15)}
 .alumno{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.85);
   border:1px solid rgba(255,255,255,.9);border-radius:16px;padding:9px 10px;margin-bottom:8px}
-.alumno .an{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,rgba(0,51,160,.14),rgba(206,17,38,.10));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:var(--azul);flex-shrink:0}
+.alumno .an{width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:var(--azul);flex-shrink:0;background:none}
 .alumno .anx{flex:1;font-size:13.5px;font-weight:700}
 .seg{display:flex;border-radius:12px;overflow:hidden;border:1.5px solid rgba(0,51,160,.25)}
 .seg button{border:none;padding:9px 10px;font-size:14px;font-weight:800;background:#fff;color:var(--tinta-suave);cursor:pointer;min-width:52px;letter-spacing:.5px}
@@ -685,7 +685,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=34"></script>
+<script src="app-docente.js?v=35"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

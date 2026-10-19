@@ -990,7 +990,8 @@ function mesNumDe(txt){
 function toggleCompDia(){
   S.ui.compDiaAbierto = !S.ui.compDiaAbierto;
   guardar();
-  renderClase(claseActualId);
+  const c = $("compCard");
+  if(c) c.classList.toggle("abierta", S.ui.compDiaAbierto);
 }
 function anticDe(plan){
   /* v32: cuadro de anticipación autogenerado con el perfil del docente
@@ -1146,7 +1147,7 @@ function renderHorarios(){
     <p class="muted">Programa hasta una semana de clases con su hora de entrada y salida. Al llegar la hora, sonará una alerta y podrás iniciar la clase de una sola vez.</p>
     <label style="display:flex;align-items:center;gap:8px;margin-top:10px;cursor:pointer">
       <input type="checkbox" ${S.horAlerta!==false? "checked":""} onchange="toggleAlarmaHor(this.checked)" style="width:18px;height:18px">
-      <b>Alerta sonora al iniciar y al terminar cada clase</b>
+      <b>Activar alerta sonora</b>
     </label>
     <div class="g-chips hscroll" style="margin-top:12px">${dias}</div>
     <p class="muted" style="margin:8px 0 0">${totalSem} clases programadas esta semana${lista.length? " · "+lista.length+" el "+DIAS_HOR_TXT[d].toLowerCase():""}</p>
@@ -1392,7 +1393,7 @@ function mostrar(scr, arg){
   document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("sel", b.dataset.scr===scr));
   const esNivel1 = ["anio","mes","diaria","progreso","info"].includes(scr);
   const esDetalle = ["anio-detalle","mes-detalle","clase"].includes(scr);
-  const esLimpio = esDetalle || scr==="notificaciones";
+  const esLimpio = esDetalle || scr==="notificaciones" || scr==="horarios";
   $("btnAtras").classList.toggle("visible", registrado && !esNivel1);
   $("btnGuia").classList.toggle("visible", registrado && esDetalle);
   $("logoTop").style.display = esLimpio? "none":"flex";
@@ -2282,8 +2283,8 @@ function renderClase(claseId){
     </div>
     ${efemerideDe(claseId)? `<div class="mcard" style="margin-top:12px"><div class="kv"><b>Conmemoración</b><span>${esc(efemerideDe(claseId))}</span></div></div>` : ""}
   </div>
-  <div class="momento m-exp ${S.ui.compDiaAbierto? "abierta":""}" onclick="toggleCompDia()">
-    <div class="m-head">
+  <div class="momento m-exp ${S.ui.compDiaAbierto? "abierta":""}" id="compCard">
+    <div class="m-head" onclick="toggleCompDia()">
       <div class="comp-ico" title="Competencias del día"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.8v2.4M12 19.8v2.4M1.8 12h2.4M19.8 12h2.4"/></svg></div><b>Competencias del día</b>
       <span class="m-chevron" title="Toca para abrir o contraer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
     </div>
@@ -2364,13 +2365,12 @@ function alumnosHTML(claseId, tipo){
       const color = st==="Presente"? "background:#DCFCE7;color:#15803d" : st==="Tarde"? "background:#FEF3C7;color:#b45309" : st==="Ausente"? "background:#FEE2E2;color:#b91c1c" : "";
       html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
-          ${st? `<span class="chip chip-mini" style="${color}">${esc(st)}</span>`:""}
-          <button class="btn-evaluar" onclick="abrirAsistencia('${claseId}', ${i})">${st? "Registrada":"Tomar asistencia"}</button>
+          <button class="btn-evaluar" ${st? 'style="'+color+';border-color:transparent"' : ""} onclick="abrirAsistencia('${claseId}', ${i})">${st? esc(st) : "Registrar"}</button>
         </div></div>`;
     } else {
       const colEv = st==="Logrado"? "background:#0033A0;color:#fff" : st==="En proceso"? "background:#f59e0b;color:#fff" : st==="Iniciado"? "background:#CE1126;color:#fff" : "";
       html += `<div class="alumno"><div class="an"${st? ' style="background:#DCFCE7;color:#15803d;font-size:16px"':''}>${st? "✓" : ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
-        <div class="seg">${st? `<span class="chip chip-mini" style="${colEv}">${esc(st)}</span>`:""}<button class="btn-evaluar" onclick="abrirEvalAlumno('${claseId}', ${i})">${st? "Registrada":"Evaluar"}</button></div></div>`;
+        <div class="seg"><button class="btn-evaluar" ${st? 'style="'+colEv+';border-color:transparent"' : ""} onclick="abrirEvalAlumno('${claseId}', ${i})">${st? esc(st) : "Evaluar"}</button></div></div>`;
     }
   }
   return html;
@@ -2420,7 +2420,8 @@ function cuentaReg(claseId, tipo){
 function toggleRegistroDia(claseId){
   S.ui.regAbierto = !S.ui.regAbierto;
   guardar();
-  renderClase(claseId);
+  const c = $("regCard");
+  if(c) c.classList.toggle("abierta", S.ui.regAbierto);
 }
 function tabClase(t){
   if(t==="E" && !nivelUsaEvaluacionCualitativa()) return;
@@ -2602,6 +2603,19 @@ function autoGuardarEval2(){
     }
   }catch(e){}
 }
+function notaGrupoDeClase(claseId){
+  const listas = cotejoDe(claseId);
+  const reg = (S.evaluacion||{})[claseId]||{};
+  const N = alumnosDe(grupoReg().s, grupoReg().g);
+  const partes = [];
+  for(let i=1;i<=N;i++){
+    const e = reg[i]; if(!e) continue;
+    const items = listas[e]||COTEJO_BASE[e]||[];
+    if(!items.length) continue;
+    partes.push("Alumno "+i+"\n\n"+items.map((x,j)=>(j+1)+". "+x).join("\n"));
+  }
+  return partes.join("\n\n");
+}
 const EVAL2_SYNC_MS = 10000;
 let _ev2Sync = null;
 function programarEval2Sync(){
@@ -2611,15 +2625,13 @@ function programarEval2Sync(){
 function selEval2Estado(e){
   if(!eval2) return;
   eval2.estado = e;
-  const listas = cotejoDe(eval2.claseId);
-  const items = listas[e]||COTEJO_BASE[e]||[];
-  const ta = $("eval2Obs");
-  if(ta) ta.value = items.map((x,i)=>(i+1)+". "+x).join("\n");
   if(!eval2.evid[e]) eval2.evid[e] = {};
   try{
     if(!S.evaluacion[eval2.claseId]) S.evaluacion[eval2.claseId] = {};
     S.evaluacion[eval2.claseId][eval2.n] = e;
+    S.obs[eval2.claseId] = notaGrupoDeClase(eval2.claseId);
     guardar();
+    const t = $("obsTxt"); if(t) t.value = S.obs[eval2.claseId];
   }catch(_x){}
   pintarEval2Estados(); pintarEval2Cotejo();
   programarEval2Sync();

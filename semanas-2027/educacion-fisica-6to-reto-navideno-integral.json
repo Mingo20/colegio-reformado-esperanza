@@ -1,0 +1,362 @@
+[
+ {
+  "numero": 1,
+  "tema": "Circuitos funcionales de fin de año",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre circuitos funcionales de fin de año y su relación con La Navidad?",
+  "desarrollo": "Circuitos funcionales de fin de año en el marco de la unidad «Reto navideño integral».",
+  "cierre": "Evidencia esperada: el estudiante practica «Circuitos funcionales de fin de año» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos circuitos funcionales de fin de año",
+    "desempenos": [
+     "Practica y disfruta «Circuitos funcionales de fin de año».",
+     "Participa con autonomía en la actividad «Investigamos circuitos funcionales de fin de año»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Circuitos funcionales de fin de año» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuitos funcionales de fin de año».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuitos funcionales de fin de año» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Circuitos funcionales de fin de año» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuitos funcionales de fin de año, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Circuitos funcionales de fin de año» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos circuitos funcionales de fin de año»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Practicamos circuitos funcionales de fin de año",
+    "desempenos": [
+     "Practica y disfruta «Circuitos funcionales de fin de año».",
+     "Participa con autonomía en la actividad «Practicamos circuitos funcionales de fin de año»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Circuitos funcionales de fin de año» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Circuitos funcionales de fin de año».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Circuitos funcionales de fin de año» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Circuitos funcionales de fin de año» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Circuitos funcionales de fin de año, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Circuitos funcionales de fin de año» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos circuitos funcionales de fin de año»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Baile y expresión corporal navideña",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre baile y expresión corporal navideña y su relación con La Navidad?",
+  "desarrollo": "Baile y expresión corporal navideña en el marco de la unidad «Reto navideño integral».",
+  "cierre": "Evidencia esperada: el estudiante practica «Baile y expresión corporal navideña» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Investigamos baile y expresión corporal navideña",
+    "desempenos": [
+     "Practica y disfruta «Baile y expresión corporal navideña».",
+     "Participa con autonomía en la actividad «Investigamos baile y expresión corporal navideña»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Baile y expresión corporal navideña» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Baile y expresión corporal navideña».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Baile y expresión corporal navideña» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Baile y expresión corporal navideña» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Baile y expresión corporal navideña, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Baile y expresión corporal navideña» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos baile y expresión corporal navideña»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Practicamos baile y expresión corporal navideña",
+    "desempenos": [
+     "Practica y disfruta «Baile y expresión corporal navideña».",
+     "Participa con autonomía en la actividad «Practicamos baile y expresión corporal navideña»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Baile y expresión corporal navideña» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Baile y expresión corporal navideña».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Baile y expresión corporal navideña» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Baile y expresión corporal navideña» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Baile y expresión corporal navideña, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Baile y expresión corporal navideña» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos baile y expresión corporal navideña»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Organización de una mini olimpiada",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre organización de una mini olimpiada y su relación con La Navidad?",
+  "desarrollo": "Organización de una mini olimpiada en el marco de la unidad «Reto navideño integral».",
+  "cierre": "Evidencia esperada: el estudiante practica «Organización de una mini olimpiada» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Investigamos organización de una mini olimpiada",
+    "desempenos": [
+     "Practica y disfruta «Organización de una mini olimpiada».",
+     "Participa con autonomía en la actividad «Investigamos organización de una mini olimpiada»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Organización de una mini olimpiada» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Organización de una mini olimpiada».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Organización de una mini olimpiada» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Organización de una mini olimpiada» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Organización de una mini olimpiada, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Organización de una mini olimpiada» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos organización de una mini olimpiada»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

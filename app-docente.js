@@ -1153,9 +1153,9 @@ function renderHorarios(){
     </label>
     <label style="display:flex;align-items:center;gap:8px;margin-top:8px;cursor:pointer">
       <input type="checkbox" ${S.horCrono!==false? "checked":""} onchange="toggleCronoHor(this.checked)" style="width:18px;height:18px">
-      <b>Activar cronómetro</b>
+      <b>Mostrar cronómetro</b>
     </label>
-    <p class="muted" style="margin:6px 0 0;font-size:11.5px">Con el cronómetro activo, al pulsar «Iniciar clase» se arranca el cronómetro flotante con la duración de la clase.</p>
+    <p class="muted" style="margin:6px 0 0;font-size:11.5px">Con «Mostrar cronómetro» activo, al pulsar «Iniciar clase» aparece el cronómetro circular flotante con el tiempo de la clase en retroceso; arrástralo a cualquier lado de la pantalla.</p>
     <div class="g-chips hscroll" style="margin-top:12px">${dias}</div>
     <p class="muted" style="margin:8px 0 0">${totalSem} clases programadas esta semana${lista.length? " · "+lista.length+" el "+DIAS_HOR_TXT[d].toLowerCase():""}</p>
   </div>
@@ -1255,6 +1255,7 @@ function activarCronoClase(mins){
   try{
     setDur(mins, null);
     T.momentoActivo = null;
+    T.nivel = "clase";
     S.cronoActivo = claseActualId || null;
     playTimer();
     pintarDurChips();
@@ -2395,13 +2396,13 @@ function alumnosHTML(claseId, tipo){
     const st = reg[i]||null;
     if(tipo==="A"){
       const color = st==="Presente"? "background:#DCFCE7;color:#15803d" : st==="Tarde"? "background:#FEF3C7;color:#b45309" : st==="Ausente"? "background:#FEE2E2;color:#b91c1c" : "";
-      html += `<div class="alumno"><div class="an">${ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
+      html += `<div class="alumno"><div class="an">${ic("persona",26)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg">
           <button class="btn-evaluar" ${st? 'style="'+color+';border-color:transparent"' : ""} onclick="abrirAsistencia('${claseId}', ${i})">${st? esc(st) : "Registrar"}</button>
         </div></div>`;
     } else {
       const colEv = st==="Logrado"? "background:#0033A0;color:#fff" : st==="En proceso"? "background:#f59e0b;color:#fff" : st==="Iniciado"? "background:#CE1126;color:#fff" : "";
-      html += `<div class="alumno"><div class="an"${st? ' style="background:#DCFCE7;color:#15803d;font-size:16px"':''}>${st? "✓" : ic("persona",13)}</div><div class="anx">Alumno ${i}</div>
+      html += `<div class="alumno"><div class="an">${ic("persona",26)}</div><div class="anx">Alumno ${i}</div>
         <div class="seg"><button class="btn-evaluar" ${st? 'style="'+colEv+';border-color:transparent"' : ""} onclick="abrirEvalAlumno('${claseId}', ${i})">${st? esc(st) : "Evaluar"}</button></div></div>`;
     }
   }
@@ -2755,8 +2756,8 @@ function cronoGuarda(){
   const cid = S.cronoActivo || claseActualId;
   if(!cid) return;
   if(!S.crono) S.crono = {};
-  S.crono[cid] = { dur: T.dur, resta: T.resta, corriendo: !!T.corriendo, momentoActivo: (T.momentoActivo==null? null : T.momentoActivo), t: Date.now() };
-  if(T.corriendo && T.resta>0 && T.momentoActivo!=null) S.cronoActivo = cid;
+  S.crono[cid] = { dur: T.dur, resta: T.resta, corriendo: !!T.corriendo, momentoActivo: (T.momentoActivo==null? null : T.momentoActivo), nivel: (T.nivel||null), t: Date.now() };
+  if(T.corriendo && T.resta>0 && (T.momentoActivo!=null || T.nivel==="clase")) S.cronoActivo = cid;
   else if(T.resta<=0) delete S.cronoActivo;
   guardar();
 }
@@ -2779,14 +2780,14 @@ function restaurarCrono(fijarClase){
     if(!g.resta || g.resta<=0){ delete S.cronoActivo; return; }
     try{ if(T && T.iv) clearInterval(T.iv); }catch(e){}
     if(fijarClase || !claseActualId) claseActualId = cid;
-    T = { dur: g.dur||300, resta: g.resta, corriendo: false, momentoActivo: (g.momentoActivo==null? null : g.momentoActivo), iv:null };
+    T = { dur: g.dur||300, resta: g.resta, corriendo: false, momentoActivo: (g.momentoActivo==null? null : g.momentoActivo), nivel: (g.nivel||null), iv:null };
     pintarCronoFlotante(null);
     if(g.corriendo){
       if(g.t){
         const seg = Math.floor((Date.now()-g.t)/1000);
         T.resta = Math.max(0, T.resta - seg);
       }
-      if(T.resta>0 && T.momentoActivo!=null) playTimer();
+      if(T.resta>0 && (T.momentoActivo!=null || T.nivel==="clase")) playTimer();
       else if(T.resta<=0){ T.resta = 0; cronoGuarda(); }
     }
     pintarTimer();
@@ -2823,7 +2824,7 @@ function pintarTimer(){
   const circ = $("timerCirc");
   if(circ && circ.setAttribute) circ.setAttribute("stroke-dashoffset", String(Math.round(251.3*(1-(T.resta/Math.max(1,T.dur))))));
   const cf = $("cronoFlotante");
-  if(cf) cf.style.display = (claseActualId && T && T.momentoActivo!=null && T.resta>0)? "" : "none";
+  if(cf) cf.style.display = (claseActualId && T && T.resta>0 && (T.momentoActivo!=null || (T.nivel==="clase" && S.cronoActivo)))? "" : "none";
 }
 function playTimer(){
   if(T.corriendo){
@@ -2887,7 +2888,7 @@ function cerrarDescargas(){
   $("dlHoja").classList.remove("abierta");
 }
 function resetTimer(){
-  T.momentoActivo = null; pintarDurChips();
+  T.momentoActivo = null; T.nivel = null; pintarDurChips();
   clearInterval(T.iv); T.corriendo=false; T.resta=T.dur;
   delete S.cronoActivo;
   pintarTimer(); setBtn(ic("play",14)+" Iniciar"); setEstado("Listo");
@@ -2937,6 +2938,7 @@ function iniciarMomento(ev, i){
   const mins = Math.max(1, minsDe(duracionAjustada(m, base)) || 5);
   setDur(mins, null);
   T.momentoActivo = i;
+  T.nivel = "momento";
   if(!T.corriendo) playTimer();
   pintarDurChips();
   pintarTimer();

@@ -1,0 +1,692 @@
+[
+ {
+  "numero": 1,
+  "tema": "Comprobación de identidades trigonométricas",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre comprobación de identidades trigonométricas y su relación con La Navidad?",
+  "desarrollo": "Comprobación de identidades trigonométricas en el marco de la unidad «Medidas y proporciones de temporada».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Comprobación de identidades trigonométricas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-02",
+    "etiqueta": "mié 2 dic",
+    "titulo": "Investigamos comprobación de identidades trigonométricas",
+    "desempenos": [
+     "Comprende y aplica «Comprobación de identidades trigonométricas».",
+     "Participa con autonomía en la actividad «Investigamos comprobación de identidades trigonométricas»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Comprobación de identidades trigonométricas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Comprobación de identidades trigonométricas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Comprobación de identidades trigonométricas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Comprobación de identidades trigonométricas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Comprobación de identidades trigonométricas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Comprobación de identidades trigonométricas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos comprobación de identidades trigonométricas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Practicamos comprobación de identidades trigonométricas",
+    "desempenos": [
+     "Comprende y aplica «Comprobación de identidades trigonométricas».",
+     "Participa con autonomía en la actividad «Practicamos comprobación de identidades trigonométricas»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Comprobación de identidades trigonométricas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Comprobación de identidades trigonométricas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Comprobación de identidades trigonométricas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Comprobación de identidades trigonométricas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Comprobación de identidades trigonométricas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Comprobación de identidades trigonométricas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos comprobación de identidades trigonométricas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Aplicamos comprobación de identidades trigonométricas",
+    "desempenos": [
+     "Comprende y aplica «Comprobación de identidades trigonométricas».",
+     "Participa con autonomía en la actividad «Aplicamos comprobación de identidades trigonométricas»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Comprobación de identidades trigonométricas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Comprobación de identidades trigonométricas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Comprobación de identidades trigonométricas» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Comprobación de identidades trigonométricas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Comprobación de identidades trigonométricas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Comprobación de identidades trigonométricas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos comprobación de identidades trigonométricas»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Disfrute y curiosidad en la resolución",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre disfrute y curiosidad en la resolución y su relación con La Navidad?",
+  "desarrollo": "Disfrute y curiosidad en la resolución en el marco de la unidad «Medidas y proporciones de temporada».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Disfrute y curiosidad en la resolución» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-07",
+    "etiqueta": "lun 7 dic",
+    "titulo": "Investigamos disfrute y curiosidad en la resolución",
+    "desempenos": [
+     "Comprende y aplica «Disfrute y curiosidad en la resolución».",
+     "Participa con autonomía en la actividad «Investigamos disfrute y curiosidad en la resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Disfrute y curiosidad en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Disfrute y curiosidad en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Disfrute y curiosidad en la resolución» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Disfrute y curiosidad en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Disfrute y curiosidad en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Disfrute y curiosidad en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos disfrute y curiosidad en la resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-09",
+    "etiqueta": "mié 9 dic",
+    "titulo": "Practicamos disfrute y curiosidad en la resolución",
+    "desempenos": [
+     "Comprende y aplica «Disfrute y curiosidad en la resolución».",
+     "Participa con autonomía en la actividad «Practicamos disfrute y curiosidad en la resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Disfrute y curiosidad en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Disfrute y curiosidad en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Disfrute y curiosidad en la resolución» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Disfrute y curiosidad en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Disfrute y curiosidad en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Disfrute y curiosidad en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos disfrute y curiosidad en la resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Aplicamos disfrute y curiosidad en la resolución",
+    "desempenos": [
+     "Comprende y aplica «Disfrute y curiosidad en la resolución».",
+     "Participa con autonomía en la actividad «Aplicamos disfrute y curiosidad en la resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Disfrute y curiosidad en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Disfrute y curiosidad en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Disfrute y curiosidad en la resolución» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Disfrute y curiosidad en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Disfrute y curiosidad en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Disfrute y curiosidad en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos disfrute y curiosidad en la resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Creamos con disfrute y curiosidad en la resolución",
+    "desempenos": [
+     "Comprende y aplica «Disfrute y curiosidad en la resolución».",
+     "Participa con autonomía en la actividad «Creamos con disfrute y curiosidad en la resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Disfrute y curiosidad en la resolución» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Disfrute y curiosidad en la resolución».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Disfrute y curiosidad en la resolución» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Disfrute y curiosidad en la resolución» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Disfrute y curiosidad en la resolución, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Disfrute y curiosidad en la resolución» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con disfrute y curiosidad en la resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones y su relación con La Navidad?",
+  "desarrollo": "Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones en el marco de la unidad «Medidas y proporciones de temporada».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-14",
+    "etiqueta": "lun 14 dic",
+    "titulo": "Disfrute del trabajo en equipo con vectores y Respeto a su",
+    "desempenos": [
+     "Comprende y aplica «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones».",
+     "Participa con autonomía en la actividad «Disfrute del trabajo en equipo con vectores y Respeto a su»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Disfrute del trabajo en equipo con vectores y Respeto a su»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-16",
+    "etiqueta": "mié 16 dic",
+    "titulo": "Disfrute del trabajo en equipo con vectores y Respeto a su",
+    "desempenos": [
+     "Comprende y aplica «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones».",
+     "Participa con autonomía en la actividad «Disfrute del trabajo en equipo con vectores y Respeto a su»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Disfrute del trabajo en equipo con vectores y Respeto a su»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Disfrute del trabajo en equipo con vectores y Respeto a su",
+    "desempenos": [
+     "Comprende y aplica «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones».",
+     "Participa con autonomía en la actividad «Disfrute del trabajo en equipo con vectores y Respeto a su»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Disfrute del trabajo en equipo con vectores y Respeto a sus compañeros en la solución, Valoración del conocimiento histórico de la Entusiasmo al aplicar las funciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Disfrute del trabajo en equipo con vectores y Respeto a su»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

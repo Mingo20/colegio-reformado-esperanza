@@ -316,8 +316,8 @@ select.inp{appearance:none;-webkit-appearance:none;background-image:url("data:im
 .selT{background:#f59e0b !important;color:#fff !important;border-color:#f59e0b !important}
 .chip-mini{padding:4px 8px;font-size:10.5px}
 .g-chips-centro{justify-content:center !important}
-.rings-scroll{justify-content:center}
-.rings-scroll .ringbox2{flex:0 0 auto}
+.rings-scroll{justify-content:center;justify-content:safe center;scroll-snap-type:x mandatory;scroll-padding-left:10px;scroll-padding-right:10px}
+.rings-scroll .ringbox2{flex:0 0 auto;scroll-snap-align:start}
 .ringbox2 small{font-size:10px}
 .grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .dl-gris{background:#e2e8f0 !important;color:#334155 !important;border-color:#cbd5e1 !important}
@@ -685,7 +685,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=35"></script>
+<script src="app-docente.js?v=36"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

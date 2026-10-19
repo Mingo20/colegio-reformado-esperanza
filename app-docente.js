@@ -19,6 +19,7 @@ function ic(nombre, s=18, color="currentColor"){
     reloj:     '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',
     etiqueta:  '<path d="M20 12l-8 8-9-9V4h7l10 8z"/><circle cx="7.5" cy="7.5" r="1" fill="currentColor"/>',
     nota:      '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/>',
+    libro:     '<path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/>',
     usuarios:  '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
     play:      '<polygon points="6 4 20 12 6 20 6 4" fill="currentColor" stroke="none"/>',
     pausa:     '<rect x="5" y="4" width="4" height="16" rx="1" fill="currentColor" stroke="none"/><rect x="15" y="4" width="4" height="16" rx="1" fill="currentColor" stroke="none"/>',
@@ -653,7 +654,7 @@ function estadoDefault(){
     docente:{ id:"",codigo:"",nombre:"",colegio:"",distrito:"",nivel:"Inicial",grado:"",seccion:"A",asignaturasSel:[],secciones:[],gradosSecciones:[],alumnosPorSeccion:{},foto:"",jornada:"",duracionMin:0,duracionOn:true,alumnos:24,periodo:"1er periodo",recursos:[],estGuarda:null,estrategias:{} },
     asistencia:{}, evaluacion:{}, evalsCom:{}, evalsEvid:{}, tiempoClase:{}, puntos:{}, crono:{}, obs:{}, calificaciones:{}, libreta:{},
     cola:[], lastSync:null, planesCache:{}, listaPlanes:null,
-    horarios:{}, horAlerta:true, notificaciones:[], vistosPlanes:0,
+    horarios:{}, horAlerta:true, horCrono:true, notificaciones:[], vistosPlanes:0,
     ui:{ horDia:"lun", progTab:"progreso", progGrado:null, progSec:null, libGrado:null, libSec:null, libTrim:"1er periodo", libFecha:null, histFiltro:String(periodoDeMes(parseInt(HOY.slice(5,7)))) },
     puntosMigrados: true,
   };
@@ -691,6 +692,7 @@ function normalizar(d){
     notificaciones: d.notificaciones||[], vistosPlanes: d.vistosPlanes||0,
     horarios: (d.horarios&&typeof d.horarios==="object")? d.horarios : {},
     horAlerta: d.horAlerta!==false,
+    horCrono: d.horCrono!==false,
     ui: Object.assign({}, def.ui, d.ui||{}),
     puntosMigrados: true,
     puntos: migrarPuntos(d),
@@ -771,7 +773,7 @@ function guardar(){
   idbGuardar(S);
   programarSyncEstado();
 }
-const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","anticipacionEdit","horarios","horAlerta","lastSync"];
+const CLAVES_SYNC = ["docente","ui","asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","calificaciones","libreta","notificaciones","vistosPlanes","anticipacionEdit","horarios","horAlerta","horCrono","lastSync"];
 let _syncT = null;
 function programarSyncEstado(){
   if(!S.docente.id || !S.docente.codigo) return;
@@ -1149,6 +1151,11 @@ function renderHorarios(){
       <input type="checkbox" ${S.horAlerta!==false? "checked":""} onchange="toggleAlarmaHor(this.checked)" style="width:18px;height:18px">
       <b>Activar alerta sonora</b>
     </label>
+    <label style="display:flex;align-items:center;gap:8px;margin-top:8px;cursor:pointer">
+      <input type="checkbox" ${S.horCrono!==false? "checked":""} onchange="toggleCronoHor(this.checked)" style="width:18px;height:18px">
+      <b>Activar cronómetro</b>
+    </label>
+    <p class="muted" style="margin:6px 0 0;font-size:11.5px">Con el cronómetro activo, al pulsar «Iniciar clase» se arranca el cronómetro flotante con la duración de la clase.</p>
     <div class="g-chips hscroll" style="margin-top:12px">${dias}</div>
     <p class="muted" style="margin:8px 0 0">${totalSem} clases programadas esta semana${lista.length? " · "+lista.length+" el "+DIAS_HOR_TXT[d].toLowerCase():""}</p>
   </div>
@@ -1177,6 +1184,7 @@ function cambiarHorario(d, i, campo, val){
   guardar();
 }
 function toggleAlarmaHor(on){ S.horAlerta = !!on; guardar(); }
+function toggleCronoHor(on){ S.horCrono = !!on; guardar(); }
 
 let _horIv = null, _horAlIv = null, _horKeys = new Set(), horActual = null, horClaseHoy = null;
 function iniciarVigilanteHorarios(){
@@ -1197,23 +1205,29 @@ function vigilarHorarios(ahora){
       const base = fecha+"|"+di+"|"+(c.ini||"")+"|"+(c.fin||"")+"|"+(c.grado||"")+"|"+(c.seccion||"");
       if(m===minDeHora(c.ini) && !_horKeys.has(base+"|ini")){
         _horKeys.add(base+"|ini");
-        dispararClaseHorario(c, false);
+        dispararClaseHorario(c, null, "inicio");
       } else if(m===minDeHora(c.fin) && !_horKeys.has(base+"|fin")){
+        _horKeys.add(base+"|fin");
         const sig = lista[i+1];
-        if(sig){ _horKeys.add(base+"|fin"); dispararClaseHorario(sig, true); }
+        dispararClaseHorario(c, sig, "fin");
       }
     });
   }catch(e){}
 }
-function dispararClaseHorario(c, siguiente){
-  horActual = c;
-  horClaseHoy = buscarClaseHoyDe(c.grado, c.seccion);
-  $("horAlarmaTitulo").textContent = siguiente? "Siguiente clase" : "¡Hora de clase!";
-  $("horAlarmaInfo").textContent = (c.grado||"")+(c.seccion? " · Sección "+c.seccion : "")+" · "+(c.ini||"")+" a "+(c.fin||"");
-  $("horAlarmaClase").textContent = horClaseHoy? ("Clase de hoy: "+horClaseHoy.titulo) : "No hay clase diaria planificada hoy para este grupo; se abrirá tu planificación diaria.";
+function dispararClaseHorario(c, sig, tipo){
+  horActual = tipo==="fin"? (sig || null) : c;
+  const info = c || sig || {};
+  horClaseHoy = horActual? buscarClaseHoyDe(horActual.grado, horActual.seccion) : null;
+  const nom = (x)=> (x.grado||"")+(x.seccion? " · Sección "+x.seccion : "")+" · "+(x.ini||"")+" a "+(x.fin||"");
+  $("horAlarmaTitulo").textContent = tipo==="fin"? "Terminó tu clase" : "¡Hora de clase!";
+  $("horAlarmaInfo").textContent = nom(info);
+  $("horAlarmaClase").textContent = tipo==="fin"
+    ? (sig? "Sigue: "+nom(sig) : "Fin de la jornada: descansa y prepárate.")
+    : (horClaseHoy? "Clase de hoy: "+horClaseHoy.titulo : "No hay clase diaria planificada hoy para este grupo; se abrirá tu planificación diaria.");
+  $("horAlarmaBtn").textContent = tipo==="fin"? (sig? "Iniciar siguiente clase" : "Aceptar") : "Iniciar clase";
   $("horAlarmaFondo").classList.add("abierto");
   $("horAlarmaHoja").classList.add("abierta");
-  try{ if(navigator.vibrate) navigator.vibrate([200,100,200]); }catch(e){}
+  try{ if(navigator.vibrate) navigator.vibrate([250,100,250,100,250,100,600]); }catch(e){}
   detenerSonidoHorario();
   if(S.horAlerta!==false) _horAlIv = setInterval(beepFuerte, 2500);
   beepFuerte();
@@ -1227,9 +1241,27 @@ function detenerAlarmaHorario(){
 }
 function iniciarClaseHorario(){
   const clase = horClaseHoy;
+  const hor = horActual;
   detenerAlarmaHorario();
+  if(!hor) return;
   if(clase && clase.id){ abrirClaseDiaria(clase.id); }
   else { irA("diaria"); toast("No hay clase diaria de hoy para ese grado"); }
+  if(S.horCrono!==false && hor){
+    const mins = Math.max(1, minDeHora(hor.fin)-minDeHora(hor.ini));
+    activarCronoClase(mins);
+  }
+}
+function activarCronoClase(mins){
+  try{
+    setDur(mins, null);
+    T.momentoActivo = null;
+    S.cronoActivo = claseActualId || null;
+    playTimer();
+    pintarDurChips();
+    pintarTimer();
+    cronoGuarda();
+    toast("Cronómetro de clase: "+mins+" min");
+  }catch(e){}
 }
 function buscarClaseHoyDe(grado, seccion){
   try{
@@ -2327,7 +2359,7 @@ function renderClase(claseId){
     </div></div>
   </div>
   <div class="card">
-    <h2>${ic("nota")} Nota de observación del día</h2>
+    <h2>${ic("libro")} Nota de observación del día</h2>
     <textarea class="obs" id="obsTxt" placeholder="Registra aquí lo más relevante del día: logros, dificultades, situaciones del grupo...">${esc(S.obs[claseId]||"")}</textarea>
   </div>
   <div class="card hist-collap" onclick="abrirDescargas('${claseId}')">
@@ -3346,6 +3378,7 @@ function renderInfo(){
   const secs = S.docente.secciones.length? S.docente.secciones : [S.docente.seccion||"A"];
   $("scr-info").innerHTML = `
   <div class="card foto-card">
+    <div class="rf-linea"></div>
     <div style="display:flex;gap:8px;align-items:stretch">
       <span class="foto-chip">${ic("usuarios",13)} Foto de perfil</span>
       <button class="foto-chip" style="padding:7px 6px;font-size:12px;white-space:nowrap" onclick="$('inpFoto').click()">${ic("refrescar",13)} ${S.docente.foto? "Cambiar foto":"Subir foto"}</button>

@@ -74,6 +74,32 @@ function misSeccionesDe(g){
   const ss = [...new Set((S.docente.gradosSecciones||[]).filter(x=>normalizaGrado(String(x).split("|")[0])===gN).map(x=>String(x).split("|")[1]))].filter(Boolean);
   return ss.length? ss : SECCIONES;
 }
+/* v36: solo las secciones EXACTAMENTE configuradas en Perfil (con respaldo del perfil base) */
+function seccionesConfiguradasDe(g){
+  const gN = normalizaGrado(g);
+  const ss = [...new Set((S.docente.gradosSecciones||[]).filter(x=>normalizaGrado(String(x).split("|")[0])===gN).map(x=>String(x).split("|")[1]))].filter(Boolean);
+  return ss.length? ss : [S.docente.seccion||"A"].filter(Boolean);
+}
+function gradosConfigurados(){
+  const nivel = S.docente.nivel;
+  const mis = [...new Set(misGradosDocente())].filter(x=>GRADOS_POR_NIVEL[nivel].includes(normalizaGrado(x)));
+  return mis.length? mis : [S.docente.grado||GRADOS_POR_NIVEL[nivel][0]];
+}
+/* v36: tras cambiar el perfil, las selecciones de grupo (Progreso y Registro del día)
+   se actualizan automáticamente a los grupos configurados */
+function normalizarGruposPerfil(){
+  const mis = gradosConfigurados();
+  if(mis.length){
+    if(!mis.includes(normalizaGrado(S.ui.progGrado))) S.ui.progGrado = mis[0];
+    if(!mis.includes(normalizaGrado(S.ui.regGrado))) S.ui.regGrado = mis[0];
+    [["progGrado","progSec"],["regGrado","regSec"]].forEach(par=>{
+      const g = normalizaGrado(S.ui[par[0]]) || mis[0];
+      const ss = seccionesConfiguradasDe(g);
+      if(ss.length && !ss.includes(S.ui[par[1]])) S.ui[par[1]] = ss[0];
+    });
+  }
+  guardar();
+}
 function asigsDisponibles(){
   const nivel = S.docente.nivel;
   if(nivel==="Primaria"){
@@ -1791,31 +1817,111 @@ function guiaClase(){
 }
 
 /* ---------- RENDER: AÑO (plan anual del nivel del docente) ---------- */
+/* v36: anuales por asignatura (biblioteca), filtrados por el perfil del docente */
+function anualesDeBiblioteca(){
+  const nivel = S.docente.nivel;
+  if(nivel==="Inicial") return [];
+  return (S.listaPlanes||[]).filter(p=>esAnualPlan(p) && (!p.nivel || p.nivel===nivel));
+}
 function renderAnio(){
   const nivel = S.docente.nivel;
   const info = PLANES_ANUALES[nivel];
   const A = ANUAL_MINERD[nivel];
+  const anuales = anualesDeBiblioteca();
   let html = `
   <div class="hero">
     <h2>Planificación anual</h2>
     <p class="eslogan">El plan anual de tu nivel educativo</p>
     <p>Nivel ${esc(nivel)} · Año escolar ${ANIO_ESCOLAR}</p>
     <div class="row">
-      <div class="ringbox">${ring(100,56,7,"#fff","1")}<small>Anual</small></div>
-      <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(info.temas.length))}<small>Unidad</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String(anuales.length||1))}<small>Anual</small></div>
+      <div class="ringbox">${ring(100,56,7,"#FFD6DB",String(info.temas.length))}<small>Mes</small></div>
       <div class="ringbox">${ring(100,56,7,"#fff",String(info.temas.length*4))}<small>Semana</small></div>
     </div>
   </div>
-  <h2 class="mini">Tus planes anuales</h2>
-  <div class="item" onclick="irA('anio-detalle','${esc(nivel)}')">
-    <div class="ic">${ic("calAnual")}</div>
-    <div class="tx"><b>${esc(info.titulo)} ${ANIO_ESCOLAR}</b><span>${esc(A.descripcion)}</span></div>
-  </div>`;
+  <h2 class="mini">Tus planes anuales</h2>`;
+  if(anuales.length){
+    anuales.forEach(p=>{
+      const asig = p.asig || asigDeTitulo(p.titulo) || "Plan anual";
+      const g = p.grado||"";
+      html += `<div class="item" onclick="irA('anio-detalle','lib:${esc(p.id)}')">
+        <div class="ic">${ic("calAnual")}</div>
+        <div class="tx"><b>${esc(asig)} · ${esc(g)}</b><span>${esc(p.titulo)}</span></div>
+      </div>`;
+    });
+  } else {
+    html += `<div class="item" onclick="irA('anio-detalle','${esc(nivel)}')">
+      <div class="ic">${ic("calAnual")}</div>
+      <div class="tx"><b>${esc(info.titulo)} ${ANIO_ESCOLAR}</b><span>${esc(A.descripcion)}</span></div>
+    </div>`;
+  }
   $("scr-anio").innerHTML = html;
 }
 
 /* ---------- RENDER: AÑO DETALLE (estructura MINERD completa) ---------- */
+/* v36: detalle de un plan anual de la biblioteca (por asignatura) */
+async function renderAnioDetalleLib(id){
+  guiaActual = { titulo:"Guía técnica · Planificación anual", html: guiaAnual() };
+  $("scr-anio-detalle").innerHTML = `<div class="card"><h2>${ic("refrescar")} Cargando plan anual…</h2></div>`;
+  let plan = null;
+  try{
+    const r = await apiAccion("plan", { id });
+    if(r && r.success) plan = r.plan;
+  }catch(e){}
+  if(!plan){ $("scr-anio-detalle").innerHTML = `<div class="card"><h2>${ic("nota")} No se pudo cargar el plan anual</h2><p class="muted">Revisa tu conexión e inténtalo de nuevo.</p></div>`; return; }
+  const nivel = plan.nivel || S.docente.nivel;
+  const A = ANUAL_MINERD[nivel] || ANUAL_MINERD["Primaria"];
+  const asig = asigDeTitulo(plan.titulo) || plan.tema || "Plan anual";
+  const etapas = (plan.ciclo && Array.isArray(plan.ciclo.etapas))? plan.ciclo.etapas : [];
+  const comps = Array.isArray(plan.competencias)? plan.competencias : [];
+  const tiempo = {};
+  etapas.forEach(t=>{ const k=String(t.sem||"Mes"); tiempo[k]=(tiempo[k]||0)+1; });
+  let html = `
+  <div class="hero">
+    <h2>${esc(asig)} · ${esc(plan.grado)}</h2>
+    <p>Nivel ${esc(nivel)} · Año escolar ${esc(plan.anio_escolar||ANIO_ESCOLAR)} · Docente: ${esc(S.docente.nombre)}</p>
+    <div class="row">
+      <div class="ringbox">${ring(100,56,7,"#fff",String(etapas.length||11))}<small>Mes</small></div>
+      <div class="ringbox">${ring(100,56,7,"#FFD6DB",String((etapas.length||11)*4))}<small>Semana</small></div>
+      <div class="ringbox">${ring(100,56,7,"#fff",String((etapas.length||11)*4*4))}<small>Clases</small></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>${ic("nota")} 1. Identificación y contexto</h2>
+    <div class="mcard">
+      <div class="kv"><b>Centro</b><span>${esc(S.docente.colegio||"—")}</span></div>
+      <div class="kv"><b>Asignatura</b><span>${esc(asig)}</span></div>
+      <div class="kv"><b>Nivel / Grado</b><span>${esc(nivel)} · ${esc(plan.grado||S.docente.grado)}</span></div>
+      <div class="kv"><b>Sección(es)</b><span>${esc((S.docente.secciones.length?S.docente.secciones:[S.docente.seccion||"A"]).join(", "))}</span></div>
+      <div class="kv"><b>Año escolar</b><span>${esc(plan.anio_escolar||ANIO_ESCOLAR)} (agosto–junio)</span></div>
+      <div class="kv"><b>Docente</b><span>${esc(S.docente.nombre||"—")}</span></div>
+      <div class="kv"><b>Jornada</b><span>${esc(S.docente.jornada||"—")}</span></div>
+    </div>
+    <h3>Tiempo estimado</h3>
+    <div class="mcard">${Object.keys(tiempo).map(t=>`<div class="kv"><b>${esc(t)}</b><span>${tiempo[t]} unidad(es)</span></div>`).join("")}</div>
+  </div>
+  <div class="card">
+    <h2>${ic("objetivo")} 2. Componentes curriculares</h2>
+    <h3>Competencias fundamentales (transversales)</h3>
+    ${COMPETENCIAS.map((c,i)=>`<p style="font-size:12.5px;margin-bottom:6px"><b style="color:var(--azul)">C${i+1} · ${esc(c.n)}:</b> <span class="muted">${esc(c.d)}</span></p>`).join("")}
+    <h3>Competencias específicas del grado y la asignatura</h3>
+    <div class="mcard"><ul>${(comps.length? comps : [{n:"Adecuación Curricular vigente", d:"Competencias específicas según la malla del grado."}]).map(c=>`<li>${esc(c.n||c.d||"")}${c.d && c.n? " — "+esc(c.d) : ""}</li>`).join("")}</ul></div>
+    <p class="muted" style="font-size:12px">${esc(plan.descripcion||"")}</p>
+  </div>
+  <div class="card">
+    <h2>${ic("bombilla")} 3. Dosificación mensual (con efemérides y valores)</h2>
+    ${etapas.map((t,i)=>`<div class="mcard">
+      <div class="m-tit"><div class="n">${i+1}</div><b>${esc(t.sem||("Mes "+(i+1)))} · ${esc(t.n||"")}</b></div>
+      <div class="kv"><b>Enfoque</b><span>${esc(t.d||"")}</span></div>
+    </div>`).join("") || `<p class="vacio">Sin dosificación registrada.</p>`}
+  </div>
+  <div class="card"><h2>${ic("calAnual")} Efemérides y valores del año escolar</h2>${tablaEfemeridesAnual()}</div>
+  <button class="dl grande" onclick="descargarPlanAnualDocxLib('${esc(id)}')">${ic("descarga")} Descargar plan anual en Word</button>
+  <div style="height:14px"></div>`;
+  $("scr-anio-detalle").innerHTML = html;
+}
 function renderAnioDetalle(nivel){
+  if(typeof nivel==="string" && nivel.indexOf("lib:")===0){ renderAnioDetalleLib(nivel.slice(4)); return; }
   nivel = (nivel && PLANES_ANUALES[nivel])? nivel : S.docente.nivel;
   guiaActual = { titulo:"Guía técnica · Planificación anual", html: guiaAnual() };
   const info = PLANES_ANUALES[nivel];
@@ -2345,10 +2451,10 @@ function renderClase(claseId){
       ${puedeElegirGrado()? `
       <div class="grid-2col" style="margin-top:6px">
         <select class="inp" id="regGrado" onchange="regSel('g')">
-          ${misGradosDocente().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
+          ${gradosConfigurados().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
         </select>
         <select class="inp" id="regSec" onchange="regSel('s')">
-          ${misSeccionesDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
+          ${seccionesConfiguradasDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
         </select>
       </div>`:""}
       <div class="tabs" style="margin-top:10px">
@@ -2370,6 +2476,7 @@ function renderClase(claseId){
   <div style="height:6px"></div>
   <div style="height:14px"></div>`;
   $("scr-clase").innerHTML = html;
+  normalizarGruposPerfil();
   pintarCronoFlotante(durs.length? durs : null);
   sincronizarCrono(durs.length? durs : null);
   $("obsTxt").addEventListener("input", ()=>{
@@ -3058,6 +3165,7 @@ function abrirHistorial(n, fuente){
   $("histSub").textContent = "Promedios por asignatura y periodo · desliza hacia los lados";
   const esInicial = nivelUsaEvaluacionCualitativa();
   const asigs = asignaturasVista();
+  const unaAsigEsp = !esInicial && ((S.docente.asignaturasSel||[]).filter(Boolean).length===1);
   let rings;
   if(esInicial){
     const ev = evalsAlumno(n);
@@ -3067,6 +3175,17 @@ function abrirHistorial(n, fuente){
       ["En proceso", ev.pEP, "#f59e0b"],
       ["Iniciado", ev.pI, "#CE1126"]
     ].map(([etq, p, col])=>`<div class="ringbox2">${ring(p||0,64,7, p===null? "#94a3b8":col, p===null? "—":String(p))}<small>${etq}</small></div>`).join("");
+  } else if(unaAsigEsp){
+    /* v36: especialista con una única asignatura: desglose Participación / Trabajos / Exámenes.
+       El promedio general se mantiene en el gráfico Promedio de la tarjeta del alumno. */
+    const a = (S.docente.asignaturasSel||[]).filter(Boolean)[0];
+    const v = valoresDe(puntosDe(grupo, n), periodoSel, a);
+    $("histSub").textContent = "Trabajos · Participación · Exámenes · el promedio general está en el gráfico Promedio de tu tarjeta de alumno";
+    rings = [
+      ["Participación", v? v.p : null, "#f59e0b"],
+      ["Trabajos", v? v.t : null, "#0033A0"],
+      ["Exámenes", v? v.e : null, "#CE1126"]
+    ].map(([etq, p, col])=>`<div class="ringbox2">${ring(p===null?0:p,64,7, p===null? "#94a3b8":col, p===null? "—":String(p))}<small>${etq}</small></div>`).join("");
   } else {
     rings = asigs.map(a=>{
       const v = notaAsig(n, a, periodoSel);
@@ -3268,9 +3387,8 @@ function htmlProgresoPanel(){
   const nivel = S.docente.nivel;
   const g = S.ui.progGrado || S.docente.grado;
   const sc = S.ui.progSec || S.docente.seccion || "A";
-  const gradosOpts = [...new Set(misGradosDocente().filter(x=>GRADOS_POR_NIVEL[nivel].includes(normalizaGrado(x))))];
-  const gOpts = gradosOpts.length? gradosOpts : GRADOS_POR_NIVEL[nivel];
-  const sOpts = misSeccionesDe(g).length? misSeccionesDe(g) : SECCIONES;
+  const gOpts = gradosConfigurados();
+  const sOpts = seccionesConfiguradasDe(g);
   const N = alumnosDe(sc, g);
   let html = `
   ${puedeElegirGrado()? `
@@ -3322,6 +3440,7 @@ function htmlProgresoPanel(){
   return html;
 }
 function renderProgreso(){
+  normalizarGruposPerfil();
   let html = htmlProgresoHero();
   html += htmlProgresoPanel();
   $("scr-progreso").innerHTML = html;
@@ -3516,18 +3635,22 @@ function agregarGS(){
   if(S.docente.gradosSecciones.includes(g+"|"+s)){ toast("Ese grupo ya está agregado"); return; }
   S.docente.gradosSecciones.push(g+"|"+s);
   S.docente.secciones = [...new Set(S.docente.gradosSecciones.map(x=>x.split("|")[1]))];
+  normalizarGruposPerfil();
   guardar();
   apiAccion("actualizar-perfil", { id:S.docente.id, secciones:S.docente.secciones.join(", ") }).catch(()=>{});
   renderInfo();
-  toast("Grupo agregado: "+g+" · "+s);
+  if(pantallaActual==="progreso") renderProgreso();
+  toast("Grupo agregado: "+g+" · "+s+" · Progreso actualizado");
 }
 function quitarGS(gs){
   S.docente.gradosSecciones = (S.docente.gradosSecciones||[]).filter(x=>x!==gs);
   S.docente.secciones = [...new Set(S.docente.gradosSecciones.map(x=>x.split("|")[1]))];
+  normalizarGruposPerfil();
   guardar();
   apiAccion("actualizar-perfil", { id:S.docente.id, secciones:S.docente.secciones.join(", ") }).catch(()=>{});
   renderInfo();
-  toast("Grupo eliminado");
+  if(pantallaActual==="progreso") renderProgreso();
+  toast("Grupo eliminado · Progreso actualizado");
 }
 function guardarAcademicos(){
   S.docente.secciones = [...new Set((S.docente.gradosSecciones||[]).map(x=>x.split("|")[1]))];
@@ -3593,9 +3716,11 @@ function guardarAlumnosPorSeccion(){
     if(primero===null) primero = n;
   });
   if(primero) S.docente.alumnos = primero;
+  normalizarGruposPerfil();
   guardar();
   apiAccion("actualizar-perfil", { id:S.docente.id, alumnos_por_seccion: JSON.stringify(S.docente.alumnosPorSeccion) }).catch(()=>{});
-  toast("Alumnos por grado y sección guardados");
+  if(pantallaActual==="progreso") renderProgreso();
+  toast("Alumnos por grado y sección guardados · Progreso actualizado");
   renderInfo();
 }
 function borrarTodo(){
@@ -3730,6 +3855,60 @@ function cabeceraPdf(doc, titulo, subtitulo){
 }
 
 /* ---------- DESCARGAS: WORD (MINERD) ---------- */
+/* v36: descarga Word de un plan anual por asignatura (biblioteca) */
+async function descargarPlanAnualDocxLib(id){
+  try{
+    let plan = null;
+    try{ const r = await apiAccion("plan", { id }); if(r && r.success) plan = r.plan; }catch(e){}
+    if(!plan){ toast("No se pudo descargar el plan anual"); return; }
+    const D = docx;
+    const nivel = plan.nivel || S.docente.nivel;
+    const A = ANUAL_MINERD[nivel] || ANUAL_MINERD["Primaria"];
+    const asig = asigDeTitulo(plan.titulo) || plan.tema || "Plan anual";
+    const etapas = (plan.ciclo && Array.isArray(plan.ciclo.etapas))? plan.ciclo.etapas : [];
+    const comps = Array.isArray(plan.competencias)? plan.competencias : [];
+    const doc = new D.Document({ sections:[{ properties:{ page:{ size:{ width:16838, height:11906, orientation:D.PageOrientation.LANDSCAPE }, margin:{ top:1134, right:1134, bottom:1134, left:1134 } } }, children:[
+      new D.Paragraph({ text:S.docente.colegio||"Colegio Reformado la Esperanza", heading:D.HeadingLevel.HEADING_1, alignment:D.AlignmentType.CENTER }),
+      new D.Paragraph({ text:"Plan Anual "+ANIO_ESCOLAR+" · "+asig+" · Grado "+(plan.grado||S.docente.grado)+" · Nivel "+nivel, heading:D.HeadingLevel.HEADING_2, alignment:D.AlignmentType.CENTER }),
+      new D.Paragraph({ text:"Adecuación Curricular vigente (Ordenanza 2023) · MINERD · República Dominicana", alignment:D.AlignmentType.CENTER }),
+      new D.Paragraph({ text:"", spacing:{after:200} }),
+      h2docx(D, "1. Identificación y contexto"),
+      tblDocx(D, ["Dato","Descripción"], [
+        ["Centro educativo", S.docente.colegio||"—"],
+        ["Distrito", "Distrito "+(S.docente.distrito||"—")],
+        ["Nivel / Grado", nivel+" · "+(plan.grado||S.docente.grado)],
+        ["Sección(es)", (S.docente.secciones.length?S.docente.secciones:[S.docente.seccion||"A"]).join(", ")],
+        ["Asignatura", asig],
+        ["Docente", S.docente.nombre||"—"],
+        ["Jornada", S.docente.jornada||"—"],
+        ["Año escolar", (plan.anio_escolar||ANIO_ESCOLAR)+" (agosto–junio, 3 trimestres)"],
+      ]),
+      h2docx(D, "2. Competencias"),
+      h2docx(D, "2.1 Competencias fundamentales"),
+      tblDocx(D, ["#","Competencia","Descripción"], COMPETENCIAS.map((c,i)=>[ "C"+(i+1), c.n, c.d ])),
+      h2docx(D, "2.2 Competencias específicas del grado y la asignatura"),
+      tblDocx(D, ["Competencia","Descripción"], (comps.length? comps : [{n:"Adecuación Curricular vigente", d:"Según la malla del grado"}]).map(c=>[ c.n||"", c.d||""])),
+      h2docx(D, "3. Dosificación mensual · Efemérides y valores del año escolar"),
+      tblDocx(D, ["Mes","Unidad / Tema","Enfoque y efemérides"], etapas.map(t=>[ t.sem||"", t.n||"", t.d||""])),
+      h2docx(D, "4. Efemérides y valores del año escolar"),
+      tblDocx(D, ["Mes","Lema","Valor","Conmemoraciones"], Object.keys(EFEMERIDES_RD).map(k=>{
+        const e = EFEMERIDES_RD[k];
+        const nom = MESES_ES[parseInt(k)-1]||k;
+        return [nom, e.lema, e.valor, e.lista.join(" · ")];
+      })),
+      h2docx(D, "5. Estrategias, ejes y evaluación"),
+      tblDocx(D, ["Componente","Detalle"], [
+        ["Estrategias de enseñanza y aprendizaje", A.estrategias.join(" · ")],
+        ["Ejes transversales", A.ejes.join(" · ")],
+        ["Técnicas e instrumentos", A.tecnicas.join(" · ")],
+        ["Recursos físicos", A.recursosFis],
+        ["Recursos digitales", A.recursosDig],
+      ]),
+    ]}]});
+    await docxDe(await doc.Packer.toBlob(doc), "plan-anual-"+asig.replace(/[^\w]+/g,"-").toLowerCase()+"-"+(plan.grado||S.docente.grado).toLowerCase()+".docx");
+    toast("Plan anual descargado");
+  }catch(e){ toast("No se pudo generar el documento"); }
+}
 async function descargarPlanAnualDocx(nivel){
   try{
     const D = docx;

@@ -1,0 +1,362 @@
+[
+ {
+  "numero": 1,
+  "tema": "Acondicionamiento físico con estaciones",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre acondicionamiento físico con estaciones y su relación con La Navidad?",
+  "desarrollo": "Acondicionamiento físico con estaciones en el marco de la unidad «Circuito de fin de año».",
+  "cierre": "Evidencia esperada: el estudiante practica «Acondicionamiento físico con estaciones» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos acondicionamiento físico con estaciones",
+    "desempenos": [
+     "Practica y disfruta «Acondicionamiento físico con estaciones».",
+     "Participa con autonomía en la actividad «Investigamos acondicionamiento físico con estaciones»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Acondicionamiento físico con estaciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Acondicionamiento físico con estaciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Acondicionamiento físico con estaciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Acondicionamiento físico con estaciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Acondicionamiento físico con estaciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Acondicionamiento físico con estaciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos acondicionamiento físico con estaciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-04",
+    "etiqueta": "vie 4 dic",
+    "titulo": "Practicamos acondicionamiento físico con estaciones",
+    "desempenos": [
+     "Practica y disfruta «Acondicionamiento físico con estaciones».",
+     "Participa con autonomía en la actividad «Practicamos acondicionamiento físico con estaciones»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Acondicionamiento físico con estaciones» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Acondicionamiento físico con estaciones».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Acondicionamiento físico con estaciones» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Acondicionamiento físico con estaciones» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Acondicionamiento físico con estaciones, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Acondicionamiento físico con estaciones» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos acondicionamiento físico con estaciones»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Juegos de persecución y agilidad",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre juegos de persecución y agilidad y su relación con La Navidad?",
+  "desarrollo": "Juegos de persecución y agilidad en el marco de la unidad «Circuito de fin de año».",
+  "cierre": "Evidencia esperada: el estudiante practica «Juegos de persecución y agilidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Investigamos juegos de persecución y agilidad",
+    "desempenos": [
+     "Practica y disfruta «Juegos de persecución y agilidad».",
+     "Participa con autonomía en la actividad «Investigamos juegos de persecución y agilidad»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Juegos de persecución y agilidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos de persecución y agilidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos de persecución y agilidad» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Juegos de persecución y agilidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos de persecución y agilidad, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Juegos de persecución y agilidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos juegos de persecución y agilidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-11",
+    "etiqueta": "vie 11 dic",
+    "titulo": "Practicamos juegos de persecución y agilidad",
+    "desempenos": [
+     "Practica y disfruta «Juegos de persecución y agilidad».",
+     "Participa con autonomía en la actividad «Practicamos juegos de persecución y agilidad»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Juegos de persecución y agilidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Juegos de persecución y agilidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Juegos de persecución y agilidad» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Juegos de persecución y agilidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Juegos de persecución y agilidad, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Juegos de persecución y agilidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos juegos de persecución y agilidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Bailes tradicionales de Navidad",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre bailes tradicionales de Navidad y su relación con La Navidad?",
+  "desarrollo": "Bailes tradicionales de Navidad en el marco de la unidad «Circuito de fin de año».",
+  "cierre": "Evidencia esperada: el estudiante practica «Bailes tradicionales de Navidad» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Investigamos bailes tradicionales de Navidad",
+    "desempenos": [
+     "Practica y disfruta «Bailes tradicionales de Navidad».",
+     "Participa con autonomía en la actividad «Investigamos bailes tradicionales de Navidad»."
+    ],
+    "recursos": [
+     "Balones y conos",
+     "Aros y cintas rítmicas",
+     "Silbato y cronómetro",
+     "Espacio deportivo"
+    ],
+    "orientacion": "Contextualizar «Bailes tradicionales de Navidad» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Bailes tradicionales de Navidad».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Bailes tradicionales de Navidad» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Bailes tradicionales de Navidad» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Bailes tradicionales de Navidad, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Bailes tradicionales de Navidad» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos bailes tradicionales de Navidad»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

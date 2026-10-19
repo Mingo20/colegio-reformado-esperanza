@@ -1,7 +1,7 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.31';
 
 // v8: carga ADITIVA por título — elimina solo los registros huérfanos y crea solo los faltantes.
-// La biblioteca completa está en planapp_records_v8.json (GitHub Pages).
+// La biblioteca completa está en planapp_records_v9.json (GitHub Pages).
 const JSON_HEADERS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -15,9 +15,9 @@ Deno.serve(async (req: Request) => {
   try {
     const base44 = createClientFromRequest(req) as any;
     const db = base44.asServiceRole ?? base44;
-    const url = "https://raw.githubusercontent.com/Mingo20/colegio-reformado-esperanza/main/planapp_records_v8.json";
+    const url = "https://raw.githubusercontent.com/Mingo20/colegio-reformado-esperanza/main/planapp_records_v9.json";
     const resp = await fetch(url, { cache: "no-store" });
-    if (!resp.ok) return new Response(JSON.stringify({ success: false, error: "No se pudo descargar planapp_records_v8.json (" + resp.status + ")" }), { status: 502, headers: JSON_HEADERS });
+    if (!resp.ok) return new Response(JSON.stringify({ success: false, error: "No se pudo descargar planapp_records_v9.json (" + resp.status + ")" }), { status: 502, headers: JSON_HEADERS });
     const registros: any[] = await resp.json();
 
     let planesRes: any = await db.entities.PlanApp.list({});

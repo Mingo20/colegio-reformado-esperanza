@@ -1,0 +1,428 @@
+[
+ {
+  "numero": 1,
+  "tema": "Écouter et chanter des chants de Noël",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre écouter et chanter des chants de Noël y su relación con La Navidad?",
+  "desarrollo": "Écouter et chanter des chants de Noël en el marco de la unidad «Chansons de Noël».",
+  "cierre": "Evidencia esperada: el estudiante uses «Écouter et chanter des chants de Noël» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos écouter et chanter des chants de Noël",
+    "desempenos": [
+     "Utilise le français pour parler de: Écouter et chanter des chants de Noël.",
+     "Participa con autonomía en la actividad «Investigamos écouter et chanter des chants de Noël»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Écouter et chanter des chants de Noël» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Écouter et chanter des chants de Noël».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Écouter et chanter des chants de Noël» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Écouter et chanter des chants de Noël» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Écouter et chanter des chants de Noël, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Écouter et chanter des chants de Noël» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos écouter et chanter des chants de Noël»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Practicamos écouter et chanter des chants de Noël",
+    "desempenos": [
+     "Utilise le français pour parler de: Écouter et chanter des chants de Noël.",
+     "Participa con autonomía en la actividad «Practicamos écouter et chanter des chants de Noël»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Écouter et chanter des chants de Noël» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Écouter et chanter des chants de Noël».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Écouter et chanter des chants de Noël» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Écouter et chanter des chants de Noël» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Écouter et chanter des chants de Noël, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Écouter et chanter des chants de Noël» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos écouter et chanter des chants de Noël»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "L'imparfait: description des fêtes d'autrefois",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre l'imparfait: description des fêtes d'autrefois y su relación con La Navidad?",
+  "desarrollo": "L'imparfait: description des fêtes d'autrefois en el marco de la unidad «Chansons de Noël».",
+  "cierre": "Evidencia esperada: el estudiante uses «L'imparfait: description des fêtes d'autrefois» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "L'imparfait: description des fêtes d'autrefois",
+    "desempenos": [
+     "Utilise le français pour parler de: L'imparfait: description des fêtes d'autrefois.",
+     "Participa con autonomía en la actividad «L'imparfait: description des fêtes d'autrefois»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «L'imparfait: description des fêtes d'autrefois» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «L'imparfait: description des fêtes d'autrefois».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «L'imparfait: description des fêtes d'autrefois» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «L'imparfait: description des fêtes d'autrefois» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: L'imparfait: description des fêtes d'autrefois, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «L'imparfait: description des fêtes d'autrefois» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «L'imparfait: description des fêtes d'autrefois»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "L'imparfait: description des fêtes d'autrefois",
+    "desempenos": [
+     "Utilise le français pour parler de: L'imparfait: description des fêtes d'autrefois.",
+     "Participa con autonomía en la actividad «L'imparfait: description des fêtes d'autrefois»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «L'imparfait: description des fêtes d'autrefois» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «L'imparfait: description des fêtes d'autrefois».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «L'imparfait: description des fêtes d'autrefois» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «L'imparfait: description des fêtes d'autrefois» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: L'imparfait: description des fêtes d'autrefois, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «L'imparfait: description des fêtes d'autrefois» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «L'imparfait: description des fêtes d'autrefois»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Le récit: un souvenir de Noël",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre le récit: un souvenir de Noël y su relación con La Navidad?",
+  "desarrollo": "Le récit: un souvenir de Noël en el marco de la unidad «Chansons de Noël».",
+  "cierre": "Evidencia esperada: el estudiante uses «Le récit: un souvenir de Noël» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Investigamos le récit: un souvenir de Noël",
+    "desempenos": [
+     "Utilise le français pour parler de: Le récit: un souvenir de Noël.",
+     "Participa con autonomía en la actividad «Investigamos le récit: un souvenir de Noël»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Le récit: un souvenir de Noël» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Le récit: un souvenir de Noël».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Le récit: un souvenir de Noël» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Le récit: un souvenir de Noël» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Le récit: un souvenir de Noël, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Le récit: un souvenir de Noël» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos le récit: un souvenir de Noël»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Practicamos le récit: un souvenir de Noël",
+    "desempenos": [
+     "Utilise le français pour parler de: Le récit: un souvenir de Noël.",
+     "Participa con autonomía en la actividad «Practicamos le récit: un souvenir de Noël»."
+    ],
+    "recursos": [
+     "Manuel de classe",
+     "Fiches de vocabulaire",
+     "Enregistrements audio",
+     "Affiches illustrées"
+    ],
+    "orientacion": "Contextualizar «Le récit: un souvenir de Noël» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Le récit: un souvenir de Noël».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Le récit: un souvenir de Noël» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Le récit: un souvenir de Noël» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Le récit: un souvenir de Noël, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Le récit: un souvenir de Noël» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos le récit: un souvenir de Noël»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

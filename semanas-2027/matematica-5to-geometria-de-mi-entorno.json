@@ -1,0 +1,1032 @@
+[
+ {
+  "numero": 1,
+  "tema": "Operaciones con vectores",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre operaciones con vectores y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Operaciones con vectores en el marco de la unidad «Geometría de mi entorno».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Operaciones con vectores» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-02",
+    "etiqueta": "lun 2 nov",
+    "titulo": "Investigamos operaciones con vectores",
+    "desempenos": [
+     "Comprende y aplica «Operaciones con vectores».",
+     "Participa con autonomía en la actividad «Investigamos operaciones con vectores»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Operaciones con vectores» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones con vectores».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones con vectores» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Operaciones con vectores» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones con vectores, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Operaciones con vectores» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos operaciones con vectores»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Practicamos operaciones con vectores",
+    "desempenos": [
+     "Comprende y aplica «Operaciones con vectores».",
+     "Participa con autonomía en la actividad «Practicamos operaciones con vectores»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Operaciones con vectores» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones con vectores».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones con vectores» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Operaciones con vectores» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones con vectores, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Operaciones con vectores» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos operaciones con vectores»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Aplicamos operaciones con vectores",
+    "desempenos": [
+     "Comprende y aplica «Operaciones con vectores».",
+     "Participa con autonomía en la actividad «Aplicamos operaciones con vectores»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Operaciones con vectores» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones con vectores».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones con vectores» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Operaciones con vectores» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones con vectores, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Operaciones con vectores» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos operaciones con vectores»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Creamos con operaciones con vectores",
+    "desempenos": [
+     "Comprende y aplica «Operaciones con vectores».",
+     "Participa con autonomía en la actividad «Creamos con operaciones con vectores»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Operaciones con vectores» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones con vectores».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones con vectores» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Operaciones con vectores» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones con vectores, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Operaciones con vectores» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Creamos con operaciones con vectores»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Operaciones con matrices",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre operaciones con matrices y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Operaciones con matrices en el marco de la unidad «Geometría de mi entorno».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Operaciones con matrices» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "Investigamos operaciones con matrices",
+    "desempenos": [
+     "Comprende y aplica «Operaciones con matrices».",
+     "Participa con autonomía en la actividad «Investigamos operaciones con matrices»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Operaciones con matrices» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones con matrices».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones con matrices» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Operaciones con matrices» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones con matrices, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Operaciones con matrices» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos operaciones con matrices»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Practicamos operaciones con matrices",
+    "desempenos": [
+     "Comprende y aplica «Operaciones con matrices».",
+     "Participa con autonomía en la actividad «Practicamos operaciones con matrices»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Operaciones con matrices» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones con matrices».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones con matrices» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Operaciones con matrices» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones con matrices, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Operaciones con matrices» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos operaciones con matrices»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "Aplicamos operaciones con matrices",
+    "desempenos": [
+     "Comprende y aplica «Operaciones con matrices».",
+     "Participa con autonomía en la actividad «Aplicamos operaciones con matrices»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Operaciones con matrices» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Operaciones con matrices».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Operaciones con matrices» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Operaciones con matrices» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Operaciones con matrices, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Operaciones con matrices» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicamos operaciones con matrices»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos en el marco de la unidad «Geometría de mi entorno».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-16",
+    "etiqueta": "lun 16 nov",
+    "titulo": "Aplicación de la ley del seno y ley del coseno, Resolución",
+    "desempenos": [
+     "Comprende y aplica «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+     "Participa con autonomía en la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Aplicación de la ley del seno y ley del coseno, Resolución",
+    "desempenos": [
+     "Comprende y aplica «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+     "Participa con autonomía en la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Aplicación de la ley del seno y ley del coseno, Resolución",
+    "desempenos": [
+     "Comprende y aplica «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+     "Participa con autonomía en la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Aplicación de la ley del seno y ley del coseno, Resolución",
+    "desempenos": [
+     "Comprende y aplica «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+     "Participa con autonomía en la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Aplicación de la ley del seno y ley del coseno, Resolución de triángulos rectángulos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Aplicación de la ley del seno y ley del coseno, Resolución»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas en el marco de la unidad «Geometría de mi entorno».",
+  "cierre": "Evidencia esperada: el estudiante comprende «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-23",
+    "etiqueta": "lun 23 nov",
+    "titulo": "Cálculo de y resolución de triángulos oblicuángulos, Demos",
+    "desempenos": [
+     "Comprende y aplica «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+     "Participa con autonomía en la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Cálculo de y resolución de triángulos oblicuángulos, Demos",
+    "desempenos": [
+     "Comprende y aplica «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+     "Participa con autonomía en la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Cálculo de y resolución de triángulos oblicuángulos, Demos",
+    "desempenos": [
+     "Comprende y aplica «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+     "Participa con autonomía en la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Cálculo de y resolución de triángulos oblicuángulos, Demos",
+    "desempenos": [
+     "Comprende y aplica «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+     "Participa con autonomía en la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»."
+    ],
+    "recursos": [
+     "Calculadora científica",
+     "Cuaderno de matemática",
+     "Material concreto y didáctico",
+     "Regla y compás"
+    ],
+    "orientacion": "Contextualizar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Cálculo de y resolución de triángulos oblicuángulos, Demostración de las funciones trigonométricas» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Cálculo de y resolución de triángulos oblicuángulos, Demos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

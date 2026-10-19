@@ -1,0 +1,428 @@
+[
+ {
+  "numero": 1,
+  "tema": "Reacciones de oxidación y reducción",
+  "fechas": "1–4 dic 2026",
+  "inicio": "¿Qué sabemos sobre reacciones de oxidación y reducción y su relación con La Navidad?",
+  "desarrollo": "Reacciones de oxidación y reducción en el marco de la unidad «La química de la mesa navideña».",
+  "cierre": "Evidencia esperada: el estudiante explica «Reacciones de oxidación y reducción» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-01",
+    "etiqueta": "mar 1 dic",
+    "titulo": "Investigamos reacciones de oxidación y reducción",
+    "desempenos": [
+     "Explica y experimenta «Reacciones de oxidación y reducción».",
+     "Participa con autonomía en la actividad «Investigamos reacciones de oxidación y reducción»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Reacciones de oxidación y reducción» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Reacciones de oxidación y reducción».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Reacciones de oxidación y reducción» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Reacciones de oxidación y reducción» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Reacciones de oxidación y reducción, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Reacciones de oxidación y reducción» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos reacciones de oxidación y reducción»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-03",
+    "etiqueta": "jue 3 dic",
+    "titulo": "Practicamos reacciones de oxidación y reducción",
+    "desempenos": [
+     "Explica y experimenta «Reacciones de oxidación y reducción».",
+     "Participa con autonomía en la actividad «Practicamos reacciones de oxidación y reducción»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Reacciones de oxidación y reducción» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Reacciones de oxidación y reducción».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Reacciones de oxidación y reducción» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Reacciones de oxidación y reducción» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Reacciones de oxidación y reducción, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Reacciones de oxidación y reducción» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos reacciones de oxidación y reducción»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Los alimentos: macronutrientes y química",
+  "fechas": "7–11 dic 2026",
+  "inicio": "¿Qué sabemos sobre los alimentos: macronutrientes y química y su relación con La Navidad?",
+  "desarrollo": "Los alimentos: macronutrientes y química en el marco de la unidad «La química de la mesa navideña».",
+  "cierre": "Evidencia esperada: el estudiante explica «Los alimentos: macronutrientes y química» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-08",
+    "etiqueta": "mar 8 dic",
+    "titulo": "Investigamos los alimentos: macronutrientes y química",
+    "desempenos": [
+     "Explica y experimenta «Los alimentos: macronutrientes y química».",
+     "Participa con autonomía en la actividad «Investigamos los alimentos: macronutrientes y química»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Los alimentos: macronutrientes y química» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los alimentos: macronutrientes y química».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los alimentos: macronutrientes y química» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Los alimentos: macronutrientes y química» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los alimentos: macronutrientes y química, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Los alimentos: macronutrientes y química» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos los alimentos: macronutrientes y química»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-10",
+    "etiqueta": "jue 10 dic",
+    "titulo": "Practicamos los alimentos: macronutrientes y química",
+    "desempenos": [
+     "Explica y experimenta «Los alimentos: macronutrientes y química».",
+     "Participa con autonomía en la actividad «Practicamos los alimentos: macronutrientes y química»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Los alimentos: macronutrientes y química» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Los alimentos: macronutrientes y química».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Los alimentos: macronutrientes y química» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Los alimentos: macronutrientes y química» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Los alimentos: macronutrientes y química, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Los alimentos: macronutrientes y química» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos los alimentos: macronutrientes y química»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Conservación de los alimentos",
+  "fechas": "14–17 dic 2026",
+  "inicio": "¿Qué sabemos sobre conservación de los alimentos y su relación con La Navidad?",
+  "desarrollo": "Conservación de los alimentos en el marco de la unidad «La química de la mesa navideña».",
+  "cierre": "Evidencia esperada: el estudiante explica «Conservación de los alimentos» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-12-15",
+    "etiqueta": "mar 15 dic",
+    "titulo": "Investigamos conservación de los alimentos",
+    "desempenos": [
+     "Explica y experimenta «Conservación de los alimentos».",
+     "Participa con autonomía en la actividad «Investigamos conservación de los alimentos»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Conservación de los alimentos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Conservación de los alimentos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Conservación de los alimentos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Conservación de los alimentos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Conservación de los alimentos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Conservación de los alimentos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos conservación de los alimentos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-12-17",
+    "etiqueta": "jue 17 dic",
+    "titulo": "Practicamos conservación de los alimentos",
+    "desempenos": [
+     "Explica y experimenta «Conservación de los alimentos».",
+     "Participa con autonomía en la actividad «Practicamos conservación de los alimentos»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Conservación de los alimentos» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Conservación de los alimentos».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Conservación de los alimentos» con la Navidad dominicana?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Conservación de los alimentos» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Conservación de los alimentos, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Navidad."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Conservación de los alimentos» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos conservación de los alimentos»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Navidad dominicana.",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

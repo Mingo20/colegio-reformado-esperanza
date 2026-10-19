@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "La Constitución y los derechos de la niñez",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre la Constitución y los derechos de la niñez y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "La Constitución y los derechos de la niñez en el marco de la unidad «Democracia y buen trato».",
+  "cierre": "Evidencia esperada: el estudiante analiza «La Constitución y los derechos de la niñez» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-04",
+    "etiqueta": "mié 4 nov",
+    "titulo": "Investigamos la Constitución y los derechos de la niñez",
+    "desempenos": [
+     "Analiza y valora «La Constitución y los derechos de la niñez».",
+     "Participa con autonomía en la actividad «Investigamos la Constitución y los derechos de la niñez»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La Constitución y los derechos de la niñez» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La Constitución y los derechos de la niñez».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La Constitución y los derechos de la niñez» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La Constitución y los derechos de la niñez» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La Constitución y los derechos de la niñez, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La Constitución y los derechos de la niñez» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos la Constitución y los derechos de la niñez»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-06",
+    "etiqueta": "vie 6 nov",
+    "titulo": "Practicamos la Constitución y los derechos de la niñez",
+    "desempenos": [
+     "Analiza y valora «La Constitución y los derechos de la niñez».",
+     "Participa con autonomía en la actividad «Practicamos la Constitución y los derechos de la niñez»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La Constitución y los derechos de la niñez» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La Constitución y los derechos de la niñez».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La Constitución y los derechos de la niñez» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La Constitución y los derechos de la niñez» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La Constitución y los derechos de la niñez, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La Constitución y los derechos de la niñez» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos la Constitución y los derechos de la niñez»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "La convivencia democrática en la escuela y el hogar",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre la convivencia democrática en la escuela y el hogar y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "La convivencia democrática en la escuela y el hogar en el marco de la unidad «Democracia y buen trato».",
+  "cierre": "Evidencia esperada: el estudiante analiza «La convivencia democrática en la escuela y el hogar» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-11",
+    "etiqueta": "mié 11 nov",
+    "titulo": "La convivencia democrática en la escuela y el hogar",
+    "desempenos": [
+     "Analiza y valora «La convivencia democrática en la escuela y el hogar».",
+     "Participa con autonomía en la actividad «La convivencia democrática en la escuela y el hogar»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La convivencia democrática en la escuela y el hogar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La convivencia democrática en la escuela y el hogar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La convivencia democrática en la escuela y el hogar» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La convivencia democrática en la escuela y el hogar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La convivencia democrática en la escuela y el hogar, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La convivencia democrática en la escuela y el hogar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «La convivencia democrática en la escuela y el hogar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-13",
+    "etiqueta": "vie 13 nov",
+    "titulo": "La convivencia democrática en la escuela y el hogar",
+    "desempenos": [
+     "Analiza y valora «La convivencia democrática en la escuela y el hogar».",
+     "Participa con autonomía en la actividad «La convivencia democrática en la escuela y el hogar»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «La convivencia democrática en la escuela y el hogar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «La convivencia democrática en la escuela y el hogar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «La convivencia democrática en la escuela y el hogar» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «La convivencia democrática en la escuela y el hogar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: La convivencia democrática en la escuela y el hogar, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «La convivencia democrática en la escuela y el hogar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «La convivencia democrática en la escuela y el hogar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Instituciones que protegen a la familia",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre instituciones que protegen a la familia y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Instituciones que protegen a la familia en el marco de la unidad «Democracia y buen trato».",
+  "cierre": "Evidencia esperada: el estudiante analiza «Instituciones que protegen a la familia» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-18",
+    "etiqueta": "mié 18 nov",
+    "titulo": "Investigamos instituciones que protegen a la familia",
+    "desempenos": [
+     "Analiza y valora «Instituciones que protegen a la familia».",
+     "Participa con autonomía en la actividad «Investigamos instituciones que protegen a la familia»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Instituciones que protegen a la familia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Instituciones que protegen a la familia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Instituciones que protegen a la familia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Instituciones que protegen a la familia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Instituciones que protegen a la familia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Instituciones que protegen a la familia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos instituciones que protegen a la familia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-20",
+    "etiqueta": "vie 20 nov",
+    "titulo": "Practicamos instituciones que protegen a la familia",
+    "desempenos": [
+     "Analiza y valora «Instituciones que protegen a la familia».",
+     "Participa con autonomía en la actividad «Practicamos instituciones que protegen a la familia»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Instituciones que protegen a la familia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Instituciones que protegen a la familia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Instituciones que protegen a la familia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Instituciones que protegen a la familia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Instituciones que protegen a la familia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Instituciones que protegen a la familia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos instituciones que protegen a la familia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Panel: buenos tratos, buena ciudadanía",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre panel: buenos tratos, buena ciudadanía y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Panel: buenos tratos, buena ciudadanía en el marco de la unidad «Democracia y buen trato».",
+  "cierre": "Evidencia esperada: el estudiante analiza «Panel: buenos tratos, buena ciudadanía» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-25",
+    "etiqueta": "mié 25 nov",
+    "titulo": "Investigamos panel: buenos tratos, buena ciudadanía",
+    "desempenos": [
+     "Analiza y valora «Panel: buenos tratos, buena ciudadanía».",
+     "Participa con autonomía en la actividad «Investigamos panel: buenos tratos, buena ciudadanía»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Panel: buenos tratos, buena ciudadanía» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Panel: buenos tratos, buena ciudadanía».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Panel: buenos tratos, buena ciudadanía» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Panel: buenos tratos, buena ciudadanía» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Panel: buenos tratos, buena ciudadanía, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Panel: buenos tratos, buena ciudadanía» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos panel: buenos tratos, buena ciudadanía»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-27",
+    "etiqueta": "vie 27 nov",
+    "titulo": "Practicamos panel: buenos tratos, buena ciudadanía",
+    "desempenos": [
+     "Analiza y valora «Panel: buenos tratos, buena ciudadanía».",
+     "Participa con autonomía en la actividad «Practicamos panel: buenos tratos, buena ciudadanía»."
+    ],
+    "recursos": [
+     "Mapa de la República Dominicana",
+     "Atlas escolar",
+     "Documentos históricos adaptados",
+     "Cuaderno del estudiante"
+    ],
+    "orientacion": "Contextualizar «Panel: buenos tratos, buena ciudadanía» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Panel: buenos tratos, buena ciudadanía».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Panel: buenos tratos, buena ciudadanía» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Panel: buenos tratos, buena ciudadanía» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Panel: buenos tratos, buena ciudadanía, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Panel: buenos tratos, buena ciudadanía» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos panel: buenos tratos, buena ciudadanía»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

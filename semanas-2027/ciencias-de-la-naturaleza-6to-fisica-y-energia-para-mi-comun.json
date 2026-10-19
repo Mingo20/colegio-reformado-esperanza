@@ -1,0 +1,570 @@
+[
+ {
+  "numero": 1,
+  "tema": "Movimiento y fuerzas en la vida diaria",
+  "fechas": "2–6 nov 2026",
+  "inicio": "¿Qué sabemos sobre movimiento y fuerzas en la vida diaria y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Movimiento y fuerzas en la vida diaria en el marco de la unidad «Física y energía para mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante explica «Movimiento y fuerzas en la vida diaria» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-03",
+    "etiqueta": "mar 3 nov",
+    "titulo": "Investigamos movimiento y fuerzas en la vida diaria",
+    "desempenos": [
+     "Explica y experimenta «Movimiento y fuerzas en la vida diaria».",
+     "Participa con autonomía en la actividad «Investigamos movimiento y fuerzas en la vida diaria»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Movimiento y fuerzas en la vida diaria» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Movimiento y fuerzas en la vida diaria».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Movimiento y fuerzas en la vida diaria» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Movimiento y fuerzas en la vida diaria» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Movimiento y fuerzas en la vida diaria, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Movimiento y fuerzas en la vida diaria» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos movimiento y fuerzas en la vida diaria»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-05",
+    "etiqueta": "jue 5 nov",
+    "titulo": "Practicamos movimiento y fuerzas en la vida diaria",
+    "desempenos": [
+     "Explica y experimenta «Movimiento y fuerzas en la vida diaria».",
+     "Participa con autonomía en la actividad «Practicamos movimiento y fuerzas en la vida diaria»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Movimiento y fuerzas en la vida diaria» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Movimiento y fuerzas en la vida diaria».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Movimiento y fuerzas en la vida diaria» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Movimiento y fuerzas en la vida diaria» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Movimiento y fuerzas en la vida diaria, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Movimiento y fuerzas en la vida diaria» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos movimiento y fuerzas en la vida diaria»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 2,
+  "tema": "Energía, trabajo y potencia",
+  "fechas": "10–13 nov 2026",
+  "inicio": "¿Qué sabemos sobre energía, trabajo y potencia y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Energía, trabajo y potencia en el marco de la unidad «Física y energía para mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante explica «Energía, trabajo y potencia» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-10",
+    "etiqueta": "mar 10 nov",
+    "titulo": "Investigamos energía, trabajo y potencia",
+    "desempenos": [
+     "Explica y experimenta «Energía, trabajo y potencia».",
+     "Participa con autonomía en la actividad «Investigamos energía, trabajo y potencia»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Energía, trabajo y potencia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Energía, trabajo y potencia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Energía, trabajo y potencia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Energía, trabajo y potencia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Energía, trabajo y potencia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Energía, trabajo y potencia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos energía, trabajo y potencia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-12",
+    "etiqueta": "jue 12 nov",
+    "titulo": "Practicamos energía, trabajo y potencia",
+    "desempenos": [
+     "Explica y experimenta «Energía, trabajo y potencia».",
+     "Participa con autonomía en la actividad «Practicamos energía, trabajo y potencia»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Energía, trabajo y potencia» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Energía, trabajo y potencia».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Energía, trabajo y potencia» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Energía, trabajo y potencia» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Energía, trabajo y potencia, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Energía, trabajo y potencia» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos energía, trabajo y potencia»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 3,
+  "tema": "Electricidad segura en el hogar",
+  "fechas": "16–20 nov 2026",
+  "inicio": "¿Qué sabemos sobre electricidad segura en el hogar y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Electricidad segura en el hogar en el marco de la unidad «Física y energía para mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante explica «Electricidad segura en el hogar» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-17",
+    "etiqueta": "mar 17 nov",
+    "titulo": "Investigamos electricidad segura en el hogar",
+    "desempenos": [
+     "Explica y experimenta «Electricidad segura en el hogar».",
+     "Participa con autonomía en la actividad «Investigamos electricidad segura en el hogar»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Electricidad segura en el hogar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Electricidad segura en el hogar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Electricidad segura en el hogar» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Electricidad segura en el hogar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Electricidad segura en el hogar, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Electricidad segura en el hogar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos electricidad segura en el hogar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-19",
+    "etiqueta": "jue 19 nov",
+    "titulo": "Practicamos electricidad segura en el hogar",
+    "desempenos": [
+     "Explica y experimenta «Electricidad segura en el hogar».",
+     "Participa con autonomía en la actividad «Practicamos electricidad segura en el hogar»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Electricidad segura en el hogar» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Electricidad segura en el hogar».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Electricidad segura en el hogar» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Electricidad segura en el hogar» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Electricidad segura en el hogar, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Electricidad segura en el hogar» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos electricidad segura en el hogar»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "numero": 4,
+  "tema": "Proyecto: auditoría energética de mi casa",
+  "fechas": "23–27 nov 2026",
+  "inicio": "¿Qué sabemos sobre proyecto: auditoría energética de mi casa y su relación con La Familia y el Buen Trato?",
+  "desarrollo": "Proyecto: auditoría energética de mi casa en el marco de la unidad «Física y energía para mi comunidad».",
+  "cierre": "Evidencia esperada: el estudiante explica «Proyecto: auditoría energética de mi casa» en su cuaderno o producto de la semana.",
+  "dias": [
+   {
+    "id": "2026-11-24",
+    "etiqueta": "mar 24 nov",
+    "titulo": "Investigamos proyecto: auditoría energética de mi casa",
+    "desempenos": [
+     "Explica y experimenta «Proyecto: auditoría energética de mi casa».",
+     "Participa con autonomía en la actividad «Investigamos proyecto: auditoría energética de mi casa»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Proyecto: auditoría energética de mi casa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: auditoría energética de mi casa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: auditoría energética de mi casa» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: auditoría energética de mi casa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: auditoría energética de mi casa, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Proyecto: auditoría energética de mi casa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Investigamos proyecto: auditoría energética de mi casa»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2026-11-26",
+    "etiqueta": "jue 26 nov",
+    "titulo": "Practicamos proyecto: auditoría energética de mi casa",
+    "desempenos": [
+     "Explica y experimenta «Proyecto: auditoría energética de mi casa».",
+     "Participa con autonomía en la actividad «Practicamos proyecto: auditoría energética de mi casa»."
+    ],
+    "recursos": [
+     "Kit de laboratorio básico",
+     "Láminas científicas",
+     "Muestras del entorno",
+     "Cuaderno de ciencias"
+    ],
+    "orientacion": "Contextualizar «Proyecto: auditoría energética de mi casa» con la realidad del grupo y el entorno dominicano.",
+    "momentos": [
+     {
+      "nombre": "Inicio",
+      "icono": "✨",
+      "duracion": "10 min",
+      "proposito": "Activar la curiosidad y los saberes previos sobre «Proyecto: auditoría energética de mi casa».",
+      "pasos": [
+       "Saludo, pase de lista y retroalimentación breve de la clase anterior.",
+       "Pregunta problematizadora: ¿Cómo se relaciona «Proyecto: auditoría energética de mi casa» con la Familia y el Buen Trato (20 nov: Día del Niño)?",
+       "Comparte el objetivo de hoy y su relevancia para la vida.",
+       "Acuerda con el grupo las normas de convivencia para la actividad."
+      ]
+     },
+     {
+      "nombre": "Desarrollo",
+      "icono": "📖",
+      "duracion": "20 min",
+      "proposito": "Construir el aprendizaje de «Proyecto: auditoría energética de mi casa» con acompañamiento.",
+      "pasos": [
+       "Presenta y explica: Proyecto: auditoría energética de mi casa, con ejemplos del contexto dominicano.",
+       "Promueve la participación: preguntas dirigidas, turnos de palabra y trabajo en equipos.",
+       "Modela la destreza paso a paso y acompaña los distintos ritmos de aprendizaje.",
+       "Vincula cada paso con la vida cotidiana y el tema del mes: La Familia y el Buen Trato."
+      ]
+     },
+     {
+      "nombre": "Práctica",
+      "icono": "✏️",
+      "duracion": "18 min",
+      "proposito": "Ejercitar «Proyecto: auditoría energética de mi casa» con autonomía creciente.",
+      "pasos": [
+       "Organiza la actividad «Practicamos proyecto: auditoría energética de mi casa»: trabajo individual, en parejas o equipos.",
+       "Acompaña de cerca, con preguntas que guían sin resolver la tarea.",
+       "Observa y registra los avances del grupo.",
+       "Invita a algunos equipos a mostrar su trabajo y explicarlo con sus palabras."
+      ]
+     },
+     {
+      "nombre": "Cierre",
+      "icono": "🌟",
+      "duracion": "7 min",
+      "proposito": "Valorar lo aprendido y conectarlo con la vida.",
+      "pasos": [
+       "Pregunta de metacognición: ¿Qué aprendimos hoy y cómo lo aprendimos?",
+       "Conecta el aprendizaje con la Familia y el Buen Trato (20 nov: Día del Niño).",
+       "Anticipa el próximo encuentro con una pregunta abierta.",
+       "Felicita el esfuerzo y cierra con la rutina de despedida."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

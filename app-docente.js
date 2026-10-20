@@ -157,9 +157,9 @@ function puedeElegirGrado(){
   if(nivel==="Secundaria") return true;
   if(nivel==="Primaria"){
     const asigs = (S.docente.asignaturasSel||[]).filter(Boolean);
-    return asigs.some(a=> ASIG_ESP_PRIM.indexOf(a)>=0);
+    if(asigs.some(a=> ASIG_ESP_PRIM.indexOf(a)>=0)) return true;
   }
-  return false;
+  return (S.docente.gradosSecciones||[]).filter(Boolean).length > 1;
 }
 function nivelUsaEvaluacionCualitativa(){ return S.docente.nivel==="Inicial"; }
 const ESTRATEGIAS_RD = {
@@ -2155,7 +2155,7 @@ function renderMesDetalle(plan){
       `}
     </div>
   </div>
-  ${(plan.anticipacion)? `
+  ${((plan.anticipacion && (plan.nivel||S.docente.nivel)==="Inicial"))? `
   <div class="card">
     <h2>${ic("nota")} Cuadro de anticipación</h2>
     <p class="muted" style="margin:0 0 8px">Generada automáticamente con los datos de tu perfil y tu grupo de estudiantes.</p>
@@ -2444,23 +2444,18 @@ function renderClase(claseId){
     </div>`).join("")}
   <div class="momento m-exp ${S.ui.regAbierto? "abierta":""}" id="regCard">
     <div class="m-head" onclick="toggleRegistroDia('${claseId}')">
-      <div class="m-num">${ic("usuarios",15)}</div><b>Registro del día · ${alumnosDe(grupoReg().s, grupoReg().g)} alumnos</b>
+      <div class="m-num">${ic("usuarios",15)}</div><b id="regTitB">Registro del día · ${alumnosDe(grupoReg().s, grupoReg().g)} alumnos</b>
       <span class="m-chevron" title="Toca para registrar asistencia y evaluación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
     </div>
     <div class="m-cuerpo"><div class="m-scroll">
       ${puedeElegirGrado()? `
-      <div class="grid-2col" style="margin-top:6px">
-        <select class="inp" id="regGrado" onchange="regSel('g')">
-          ${gradosConfigurados().map(x=>`<option value="${esc(x)}" ${x===grupoReg().g?"selected":""}>${esc(x)}</option>`).join("")}
-        </select>
-        <select class="inp" id="regSec" onchange="regSel('s')">
-          ${seccionesConfiguradasDe(grupoReg().g).map(x=>`<option value="${esc(x)}" ${x===grupoReg().s?"selected":""}>Sección ${esc(x)}</option>`).join("")}
-        </select>
+      <div class="gchips" style="margin-top:6px">
+        ${gradosConfigurados().flatMap(x=> seccionesConfiguradasDe(x).map(y=>`<button class="gchip ${(x===grupoReg().g&&y===grupoReg().s)? "sel":""}" data-g="${esc(x)}" data-s="${esc(y)}" onclick="regChip('${esc(x)}','${esc(y)}')">${esc(x)} - ${esc(y)}</button>`)).join("")}
       </div>`:""}
-      <div class="tabs" style="margin-top:10px">
+      ${puedeElegirGrado()? (nivelUsaEvaluacionCualitativa()? `<div class="tabs" style="margin-top:10px"><div class="tab" id="tabE" onclick="tabChipE()">Evaluación</div></div>`:"") : `<div class="tabs" style="margin-top:10px">
         <div class="tab sel" id="tabA" onclick="tabClase('A')">Asistencia</div>
         ${nivelUsaEvaluacionCualitativa()? `<div class="tab" id="tabE" onclick="tabClase('E')">Evaluación</div>`:""}
-      </div>
+      </div>`}
       <div id="zonaA">${alumnosHTML(claseId,"A")}</div>
       ${nivelUsaEvaluacionCualitativa()? `<div id="zonaE" style="display:none">${alumnosHTML(claseId,"E")}</div>`:""}
     </div></div>
@@ -2486,13 +2481,24 @@ function renderClase(claseId){
     window._obsT = setTimeout(()=>{ encolar("observacion", claseId, null, S.obs[claseId]); toast("Observación sincronizada"); }, 1500);
   });
 }
-function regSel(q){
-  if(q==="g") S.ui.regGrado = $("regGrado").value;
-  if(q==="s") S.ui.regSec = $("regSec").value;
+function regChip(g, s){
+  S.ui.regGrado = g; S.ui.regSec = s;
   guardar();
   const c = $("regCuenta"); if(c) c.textContent = alumnosDe(grupoReg().s, grupoReg().g);
+  const tb = $("regTitB"); if(tb) tb.textContent = "Registro del día · "+alumnosDe(grupoReg().s, grupoReg().g)+" alumnos";
+  document.querySelectorAll("#regCard .gchip").forEach(b=>{
+    b.classList.toggle("sel", b.getAttribute && b.getAttribute("data-g")===g && b.getAttribute("data-s")===s);
+  });
   $("zonaA").innerHTML = alumnosHTML(claseAbiertaId,"A");
   if($("zonaE")) $("zonaE").innerHTML = alumnosHTML(claseAbiertaId,"E");
+}
+function tabChipE(){
+  const a = $("zonaA"), e = $("zonaE"), t = $("tabE");
+  if(!a || !e) return;
+  const irE = a.style.display !== "none";
+  if(t) t.classList.toggle("sel", irE);
+  a.style.display = irE? "none" : "";
+  e.style.display = irE? "" : "none";
 }
 function alumnosHTML(claseId, tipo){
   const N = alumnosDe(grupoReg().s, grupoReg().g);
@@ -2565,10 +2571,10 @@ function toggleRegistroDia(claseId){
 }
 function tabClase(t){
   if(t==="E" && !nivelUsaEvaluacionCualitativa()) return;
-  $("tabA").classList.toggle("sel", t==="A");
-  $("tabE").classList.toggle("sel", t==="E");
-  $("zonaA").style.display = t==="A"?"":"none";
-  $("zonaE").style.display = t==="E"?"":"none";
+  if($("tabA")) $("tabA").classList.toggle("sel", t==="A");
+  if($("tabE")) $("tabE").classList.toggle("sel", t==="E");
+  if($("zonaA")) $("zonaA").style.display = t==="A"?"":"none";
+  if($("zonaE")) $("zonaE").style.display = t==="E"?"":"none";
 }
 
 /* ---------- TEMPORIZADOR ---------- */
@@ -3389,20 +3395,14 @@ function htmlProgresoPanel(){
   const sc = S.ui.progSec || S.docente.seccion || "A";
   const gOpts = gradosConfigurados();
   const sOpts = seccionesConfiguradasDe(g);
+  const sOptsCache = {};
   const N = alumnosDe(sc, g);
   let html = `
   ${puedeElegirGrado()? `
   <div class="card">
     <h2>${ic("boletin")} Filtrar por grupos</h2>
-    <div class="grid-2col">
-      <div><label class="lbl">Grado</label>
-        <select class="inp" id="progGrado" onchange="progSel('grado')">
-          ${gOpts.map(x=>`<option value="${esc(x)}" ${x===g?"selected":""}>${esc(x)}</option>`).join("")}
-        </select></div>
-      <div><label class="lbl">Sección</label>
-        <select class="inp" id="progSec" onchange="progSel('sec')">
-          ${sOpts.map(x=>`<option value="${esc(x)}" ${x===sc?"selected":""}>Sección ${esc(x)}</option>`).join("")}
-        </select></div>
+    <div class="gchips">
+      ${gOpts.flatMap(x=> (sOptsCache[x] = sOptsCache[x] || seccionesConfiguradasDe(x), sOptsCache[x]).map(y=>`<button class="gchip ${(x===g&&y===sc)? "sel":""}" data-g="${esc(x)}" data-s="${esc(y)}" onclick="progChip('${esc(x)}','${esc(y)}')">${esc(x)} - ${esc(y)}</button>`)).join("")}
     </div>
   </div>`:""}
   <h2 class="mini">${esc(g).toUpperCase()} · SECCIÓN ${esc(sc)}</h2>`;
@@ -3445,9 +3445,8 @@ function renderProgreso(){
   html += htmlProgresoPanel();
   $("scr-progreso").innerHTML = html;
 }
-function progSel(q){
-  if(q==="grado" && $("progGrado")) S.ui.progGrado = $("progGrado").value;
-  if(q==="sec" && $("progSec")) S.ui.progSec = $("progSec").value;
+function progChip(g, s){
+  S.ui.progGrado = g; S.ui.progSec = s;
   guardar();
   renderProgreso();
 }
@@ -4021,6 +4020,7 @@ async function descargarUnidadDocx(){
         );
       });
     };
+    const anticAplica = (plan.nivel || S.docente.nivel) === "Inicial";
     const efemeridesDocx = ()=> children.push(
       h2docx(D, "Efemérides del mes"),
       tblDocx(D, ["Mes","Lema oficial","Conmemoraciones","Valor del mes"], [
@@ -4035,7 +4035,7 @@ async function descargarUnidadDocx(){
         ["Producto final", plan.situacion.producto],
       ]));
       efemeridesDocx();
-      anticipacionDocx();
+      if(anticAplica) anticipacionDocx();
       children.push(h2docx(D, "3. Componentes curriculares (tabla de coherencia)"));
       children.push(tblDocx(D, ["Componente","Contenido"], [
         ["Competencias fundamentales", COMPETENCIAS.slice(0,4).map(c=>c.n).join(" · ")],
@@ -4054,7 +4054,7 @@ async function descargarUnidadDocx(){
       children.push(tblDocx(D, ["Físicos","Digitales"], [[plan.recursosFis, plan.recursosDig]]));
     } else {
       efemeridesDocx();
-      anticipacionDocx();
+      if(anticAplica) anticipacionDocx();
       children.push(tblDocx(D, ["Componente","Descripción"], [
         ["Descripción de la unidad", plan.descripcion||"—"],
         ["Tema", plan.tema||"—"],

@@ -513,6 +513,10 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 .crono-flotante .timer-ring svg{width:88px;height:88px;display:block}
 .crono-flotante .t-txt b{font-size:16px;letter-spacing:0}
 .crono-flotante .t-txt small{display:block;font-size:8.5px;line-height:1.1;color:#1D4ED8;font-weight:800;letter-spacing:0}
+.gchips{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;padding:4px 2px 8px;scrollbar-width:none}
+.gchips::-webkit-scrollbar{display:none}
+.gchip{flex:0 0 auto;scroll-snap-align:start;border:1.5px solid #d5dbe7;background:#fff;color:var(--azul);font-weight:700;font-size:12.5px;padding:9px 14px;border-radius:999px;white-space:nowrap;transition:none;font-family:inherit}
+.gchip.sel{background:var(--azul);color:#fff;border-color:var(--azul)}
 </style>
 </head>
 <body>
@@ -685,7 +689,7 @@ h2.mini{font-size:13px;color:var(--tinta-suave);font-weight:800;letter-spacing:1
 
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="app-docente.js?v=36"></script>
+<script src="app-docente.js?v=37"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol==='https:'){
   navigator.serviceWorker.register('sw-docente.js').catch(()=>{});

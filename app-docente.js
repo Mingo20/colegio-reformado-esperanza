@@ -171,10 +171,10 @@ function estrategiaDe(gs, asig, periodo){
   const e = S.docente.estrategias||{};
   return e[gs+"|"+(asig||"—")+"|"+periodo] || null;
 }
-function evalsAlumno(n){
+function evalsAlumno(n, g, s){
+  if(g===undefined){ const p = grupoVista(); g = p.g; s = p.s; }
   let L=0, EP=0, I=0;
-  Object.keys(S.evaluacion||{}).forEach(f=>{
-    if(!/^\d{4}-\d{2}-\d{2}$/.test(f)) return;
+  fechasRegistradas("eval", g, s).forEach(f=>{
     const v = (S.evaluacion[f]||{})[n];
     if(v==="Logrado") L++; else if(v==="En proceso") EP++; else if(v==="Iniciado") I++;
   });
@@ -185,6 +185,35 @@ function evalsAlumno(n){
     pI: t? Math.round(I*100/t) : null };
 }
 function grupoReg(){ return { g: S.ui.regGrado||S.docente.grado||"", s: S.ui.regSec||S.docente.seccion||"A" }; }
+function grupoVista(){ return { g: S.ui.progGrado||S.docente.grado||"", s: S.ui.progSec||S.docente.seccion||"A" }; }
+function regFecha(k){ return String(k).split("@")[0]; }
+function regGrupoDe(k){ const p = String(k).split("@"); return p.length>1? p[1] : null; }
+function regK(id, g, s){ if(g===undefined){ const r = grupoReg(); g = r.g; s = r.s; } return id+"@"+g+"-"+s; }
+function regDe(map, id, g, s){ return map[regK(id,g,s)]||{}; }
+function regCualq(map, id){ let r = null; Object.keys(map||{}).forEach(k=>{ if(!r && regFecha(k)===id && map[k] && Object.keys(map[k]).length) r = map[k]; }); return r; }
+function evKey(claseId, n, g, s){ return regK(claseId,g,s)+"|"+n; }
+function migrarRegistros(maps, gs0){
+  const parts = String(gs0||"").split("|");
+  const g0 = parts[0]||"", s0 = parts[1]||"A";
+  const out = {};
+  ["asistencia","evaluacion"].forEach(t=>{
+    const m = maps[t]||{}; const o = {};
+    Object.keys(m).forEach(k=>{
+      const f = String(k).split("@")[0];
+      o[/^\d{4}-\d{2}-\d{2}$/.test(f)? f+"@"+g0+"-"+s0 : k] = m[k];
+    });
+    out[t] = o;
+  });
+  ["evalsCom","evalsEvid"].forEach(t=>{
+    const m = maps[t]||{}; const o = {};
+    Object.keys(m).forEach(k=>{
+      const mm = k.match(/^(\d{4}-\d{2}-\d{2})\|(.+)$/);
+      o[mm? mm[1]+"@"+g0+"-"+s0+"|"+mm[2] : k] = m[k];
+    });
+    out[t] = o;
+  });
+  return out;
+}
 const ASIGNATURAS_RD = {
   Inicial: ["Identidad y Autonomía","Convivencia y Ciudadanía","Comprensión del Lenguaje","Comprensión del Mundo Físico y Natural","Expresión Artística y Corporal"],
   Primaria: ["Lengua Española","Matemática","Ciencias Sociales","Ciencias de la Naturaleza","Inglés","Francés","Formación Integral Humana y Religiosa","Educación Física","Educación Artística"],
@@ -708,9 +737,11 @@ function normalizar(d){
   if(!Array.isArray(doc.asignaturasSel)) doc.asignaturasSel = Array.isArray(doc.asignaturas)? doc.asignaturas : [];
   if(typeof doc.secciones === "string") doc.secciones = doc.secciones? doc.secciones.split(/,\s*/).filter(Boolean) : [];
   if(!Array.isArray(doc.secciones)) doc.secciones = [];
+  const _mig = migrarRegistros({ asistencia: d.asistencia||{}, evaluacion: d.evaluacion||{}, evalsCom: d.evalsCom||{}, evalsEvid: d.evalsEvid||{} }, (doc.gradosSecciones||[""])[0]);
   return {
     docente: doc,
-    asistencia: d.asistencia||{}, evaluacion: d.evaluacion||{}, obs: d.obs||{},
+    asistencia: _mig.asistencia, evaluacion: _mig.evaluacion, obs: d.obs||{},
+    evalsCom: _mig.evalsCom, evalsEvid: _mig.evalsEvid,
     calificaciones: d.calificaciones||{}, libreta: d.libreta||{},
     tiempoClase: d.tiempoClase||{}, crono: d.crono||{},
     cola: d.cola||[], lastSync: d.lastSync||null,
@@ -891,10 +922,12 @@ async function obtenerPlan(id, forzar){
 }
 function todasClases(plan){ const arr=[]; (plan.semanas||[]).forEach(s=>(s.dias||[]).forEach(d=>arr.push(d))); return arr; }
 function clasePorId(plan, id){ return todasClases(plan).find(d=>d.id===id); }
-function pctDia(claseId, tipo){
-  const N = alumnosDe(grupoReg().s, grupoReg().g);
+function pctDia(claseId, tipo, g, s){
+  claseId = regFecha(claseId);
+  const gr = (g!==undefined)? {g, s} : grupoReg();
+  const N = alumnosDe(gr.s, gr.g);
   const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
-  const reg = mapa[claseId]||{};
+  const reg = regDe(mapa, claseId, gr.g, gr.s);
   let n=0;
   for(let i=1;i<=N;i++){
     if(tipo==="asis"){ if(reg[i]==="Presente"||reg[i]==="Tarde") n++; }
@@ -902,10 +935,12 @@ function pctDia(claseId, tipo){
   }
   return Math.round(n*100/N);
 }
-function pctMes(plan, tipo){
-  const clases = todasClases(plan).filter(d=>{ const m=(tipo==="asis"?S.asistencia:S.evaluacion)[d.id]; return m&&Object.keys(m).length; });
+function pctMes(plan, tipo, g, s){
+  if(g===undefined){ const p = grupoVista(); g = p.g; s = p.s; }
+  const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
+  const clases = todasClases(plan).filter(d=>Object.keys(regDe(mapa, d.id, g, s)).length);
   if(!clases.length) return 0;
-  let sum=0; clases.forEach(c=>sum+=pctDia(c.id,tipo));
+  let sum=0; clases.forEach(c=>sum+=pctDia(c.id,tipo,g,s));
   return Math.round(sum/clases.length);
 }
 function parseMes(txt){
@@ -916,7 +951,7 @@ function parseMes(txt){
 }
 function avanceAnual(){
   const mesesConReg = new Set();
-  Object.keys(S.asistencia).forEach(f=>{ if(/^\d{4}-\d{2}-\d{2}$/.test(f)) mesesConReg.add(f.slice(0,7)); });
+  Object.keys(S.asistencia).forEach(f=>{ const fe = regFecha(f); if(/^\d{4}-\d{2}-\d{2}$/.test(fe)) mesesConReg.add(fe.slice(0,7)); });
   const temas = PLANES_ANUALES[S.docente.nivel].temas;
   let hechas = 0;
   temas.forEach(t=>{ const mes = parseMes(t.mes); if(mes && mesesConReg.has(mes)) hechas++; });
@@ -926,13 +961,13 @@ function avanceSemanas(plan){
   const sems = (plan||planActivo()).semanas||[];
   if(!sems.length) return 0;
   let con=0;
-  sems.forEach(s=>{ if((s.dias||[]).some(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; })) con++; });
+  sems.forEach(s=>{ if((s.dias||[]).some(d=>{ const r=regCualq(S.asistencia, d.id); return r&&Object.keys(r).length; })) con++; });
   return Math.round(con*100/sems.length);
 }
 function avanceClases(plan){
   const clases = todasClases(plan||planActivo());
   if(!clases.length) return 0;
-  const con = clases.filter(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; }).length;
+  const con = clases.filter(d=>{ const r=regCualq(S.asistencia, d.id); return r&&Object.keys(r).length; }).length;
   return Math.round(con*100/clases.length);
 }
 function semestreDe(mes){
@@ -1337,7 +1372,7 @@ function generarNotificaciones(){
   if(S.cola.length) pushNotif("Tienes "+S.cola.length+" registro(s) pendiente(s) de sincronización.","refrescar");
   const claseHoy = todasClases(planActivo()).find(d=>d.id===HOY);
   if(claseHoy){
-    const reg = S.asistencia[HOY]||{};
+    const reg = regCualq(S.asistencia, HOY)||{};
     if(Object.keys(reg).length===0) pushNotif("Recuerda registrar la asistencia de la clase de hoy.","calendario");
   }
   const num = (S.listaPlanes||[]).length;
@@ -1727,6 +1762,8 @@ async function entrarConCodigo(){
       ["asistencia","evaluacion","evalsCom","evalsEvid","puntos","crono","tiempoClase","obs","notificaciones","vistosPlanes","lastSync"].forEach(k=>{
         if(remoto[k]!==undefined) S[k] = remoto[k];
       });
+      const _mig2 = migrarRegistros({ asistencia: S.asistencia||{}, evaluacion: S.evaluacion||{}, evalsCom: S.evalsCom||{}, evalsEvid: S.evalsEvid||{} }, (S.docente.gradosSecciones||[""])[0]);
+      ["asistencia","evaluacion","evalsCom","evalsEvid"].forEach(k=>{ S[k] = _mig2[k]; });
       if(remoto.ui) S.ui = Object.assign({}, S.ui, remoto.ui);
       if(remoto.docente){
         ["foto","recursos","estGuarda","gradosSecciones","alumnosPorSeccion","asignaturasSel","secciones","duracionMin","duracionOn","grado","seccion","jornada","especialidad","alumnos","whatsapp","distrito","periodo"].forEach(k=>{
@@ -2276,7 +2313,7 @@ function promedioLib(){
 }
 function asistenciaAnio(){
   let sum=0, cont=0;
-  Object.keys(S.asistencia).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f)).forEach(f=>{ sum += pctDia(f,"asis"); cont++; });
+  Object.keys(S.asistencia).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(regFecha(f))).forEach(f=>{ sum += pctDia(f,"asis"); cont++; });
   return cont? Math.round(sum/cont) : 0;
 }
 function horasSemana(){
@@ -2345,7 +2382,7 @@ function renderDiaria(){
   const plan = w.plan;
   const dias = (plan && plan.semanas||[]).reduce((a,s)=>a.concat((s&&s.dias)||[]),[]);
   const totalPlan = dias.length;
-  const conReg = dias.filter(d=>{ const r=S.asistencia[d.id]; return r&&Object.keys(r).length; }).length;
+  const conReg = dias.filter(d=>{ const r=regCualq(S.asistencia, d.id); return r&&Object.keys(r).length; }).length;
   const ordenados = ordenarClases(dias);
   let html = `
   <div class="hero">
@@ -2503,7 +2540,7 @@ function tabChipE(){
 function alumnosHTML(claseId, tipo){
   const N = alumnosDe(grupoReg().s, grupoReg().g);
   if(N<=0) return `<p class="vacio" style="padding:8px 0">No tienes alumnos registrados en este grupo. Añádelos desde tu perfil, en «Grados y secciones a tu cargo».</p>`;
-  const reg = (tipo==="A"? S.asistencia : S.evaluacion)[claseId]||{};
+  const reg = regDe(tipo==="A"? S.asistencia : S.evaluacion, claseId);
   let html = "";
   for(let i=1;i<=N;i++){
     const st = reg[i]||null;
@@ -2528,9 +2565,10 @@ function ringDuo(claseId){
 }
 function marcar(tipo, claseId, n, valor){
   const mapa = tipo==="A"? S.asistencia : S.evaluacion;
-  if(!mapa[claseId]) mapa[claseId] = {};
-  mapa[claseId][n] = valor;
-  if(valor===null) delete mapa[claseId][n];
+  const k = regK(claseId);
+  if(!mapa[k]) mapa[k] = {};
+  mapa[k][n] = valor;
+  if(valor===null) delete mapa[k][n];
   guardar();
   encolar(tipo==="A"?"asistencia":"evaluacion", claseId, { alumno:"Alumno "+n, estado: valor||"Sin registrar" });
   syncAhora();
@@ -2560,7 +2598,7 @@ function marcarDesdeHoja(valor){
   marcar('A', c.claseId, c.n, valor);
 }
 function cuentaReg(claseId, tipo){
-  const reg = (tipo==="A"? S.asistencia : S.evaluacion)[claseId]||{};
+  const reg = regDe(tipo==="A"? S.asistencia : S.evaluacion, claseId);
   return Object.keys(reg).filter(k=>reg[k]).length;
 }
 function toggleRegistroDia(claseId){
@@ -2679,7 +2717,7 @@ function guardarEvalCom(){
   if(!evalPend) return;
   const com = ($("evalCom").value||"").trim();
   if(!S.evalsCom) S.evalsCom = {};
-  const k = evalPend.claseId+"|"+evalPend.n;
+  const k = evKey(evalPend.claseId, evalPend.n);
   if(com) S.evalsCom[k] = com; else delete S.evalsCom[k];
   guardar();
   const p = evalPend; cerrarEvalModal();
@@ -2703,9 +2741,9 @@ function cotejoDe(claseId){
 }
 function abrirEvalAlumno(claseId, n){
   if(!S.evalsEvid) S.evalsEvid = {};
-  const guardado = S.evalsEvid[claseId+"|"+n]||null;
+  const guardado = S.evalsEvid[evKey(claseId, n)]||null;
   eval2 = { claseId, n, estado:null, evid:{} };
-  const prev = (S.evaluacion[claseId]||{})[n];
+  const prev = regDe(S.evaluacion, claseId)[n];
   if(prev) eval2.estado = prev;
   if(guardado && guardado.estado){
     eval2.estado = guardado.estado;
@@ -2733,11 +2771,12 @@ function autoGuardarEval2(){
   if(!eval2 || !eval2.estado) return;
   try{
     const claseId = eval2.claseId, n = eval2.n, estado = eval2.estado;
-    if(!S.evaluacion[claseId]) S.evaluacion[claseId] = {};
-    S.evaluacion[claseId][n] = estado;
+    const k2 = regK(claseId);
+    if(!S.evaluacion[k2]) S.evaluacion[k2] = {};
+    S.evaluacion[k2][n] = estado;
     if(!S.evalsEvid) S.evalsEvid = {};
     if(!S.evalsCom) S.evalsCom = {};
-    const k = claseId+"|"+n;
+    const k = evKey(claseId, n);
     const obsEl = $("eval2Obs");
     const obs = obsEl? (obsEl.value||"").trim() : "";
     if(obs) S.evalsCom[k] = obs; else delete S.evalsCom[k];
@@ -2751,7 +2790,7 @@ function autoGuardarEval2(){
 }
 function notaGrupoDeClase(claseId){
   const listas = cotejoDe(claseId);
-  const reg = (S.evaluacion||{})[claseId]||{};
+  const reg = regDe(S.evaluacion||{}, claseId);
   const N = alumnosDe(grupoReg().s, grupoReg().g);
   const partes = [];
   for(let i=1;i<=N;i++){
@@ -2773,8 +2812,9 @@ function selEval2Estado(e){
   eval2.estado = e;
   if(!eval2.evid[e]) eval2.evid[e] = {};
   try{
-    if(!S.evaluacion[eval2.claseId]) S.evaluacion[eval2.claseId] = {};
-    S.evaluacion[eval2.claseId][eval2.n] = e;
+    const _k3 = regK(eval2.claseId);
+    if(!S.evaluacion[_k3]) S.evaluacion[_k3] = {};
+    S.evaluacion[_k3][eval2.n] = e;
     S.obs[eval2.claseId] = notaGrupoDeClase(eval2.claseId);
     guardar();
     const t = $("obsTxt"); if(t) t.value = S.obs[eval2.claseId];
@@ -3138,7 +3178,7 @@ function toggleRegCal(){
   const c = $("collapReg"); if(c) c.classList.toggle("abierto", histRegAbierto);
 }
 function filasEval(n){
-  const fechas = Object.keys(S.evaluacion||{}).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f)).sort().reverse();
+  const fechas = fechasRegistradas("eval").reverse();
   if(!fechas.length) return `<p class="g-intro">Sin evaluaciones registradas todavía. Regístralas en Planificación diaria → Registro del día → Evaluación.</p>`;
   return fechas.map(f=>{
     const v = (S.evaluacion[f]||{})[n];
@@ -3149,7 +3189,7 @@ function filasEval(n){
 }
 function histEvalsHTML(n){
   try{
-    const keys = Object.keys(S.evaluacion||{}).filter(k=>/^\d{4}-\d{2}-\d{2}$/.test(k) && S.evaluacion[k] && S.evaluacion[k][n]).sort();
+    const keys = fechasRegistradas("eval").filter(k=> (S.evaluacion[k]||{})[n]);
     if(!keys.length) return "";
     const cols = { "Logrado":"background:#0033A0;color:#fff", "En proceso":"background:#f59e0b;color:#fff", "Iniciado":"background:#CE1126;color:#fff" };
     const filas = keys.map(k=>{
@@ -3308,16 +3348,18 @@ function notaAsig(n, asig, periodo){
   const v = valoresDe(puntos, periodo, asig);
   return v? notaFinalDe(v.p, v.t, v.e) : null;
 }
-function pctTardeAlumno(n){
-  const fechas = fechasRegistradas("asis");
+function pctTardeAlumno(n, g, s){
+  if(g===undefined){ const p = grupoVista(); g = p.g; s = p.s; }
+  const fechas = fechasRegistradas("asis", g, s);
   if(!fechas.length) return null;
   let t = 0, marcados = 0;
   fechas.forEach(f=>{ const v = (S.asistencia[f]||{})[n]; if(v){ marcados++; if(v==="Tarde") t++; } });
   return marcados? Math.round(t*100/marcados) : null;
 }
 function pctTardeGrupo(){
-  const N = alumnosDe(S.ui.progSec || S.docente.seccion || "A", S.ui.progGrado || S.docente.grado);
-  const fechas = fechasRegistradas("asis");
+  const p = grupoVista();
+  const N = alumnosDe(p.s, p.g);
+  const fechas = fechasRegistradas("asis", p.g, p.s);
   if(!N || !fechas.length) return null;
   let t = 0, marks = 0;
   fechas.forEach(f=>{
@@ -3326,8 +3368,9 @@ function pctTardeGrupo(){
   });
   return marks? Math.round(t*100/marks) : null;
 }
-function asistenciaDe(n){
-  const fechas = fechasRegistradas("asis");
+function asistenciaDe(n, g, s){
+  if(g===undefined){ const p = grupoVista(); g = p.g; s = p.s; }
+  const fechas = fechasRegistradas("asis", g, s);
   if(!fechas.length) return null;
   let p = 0;
   fechas.forEach(f=>{ const v = (S.asistencia[f]||{})[n]; if(v==="Presente"||v==="Tarde") p++; });
@@ -3383,9 +3426,9 @@ function htmlProgresoHero(){
     <p>${esc(g)} · Sección ${esc(sc)} · Periodo ${esc(S.docente.periodo)}</p>
     <div class="row">
       ${nivelUsaEvaluacionCualitativa()? "" : `<div class="ringbox">${ring(promedioGrupo(),56,7,"#fff",promedioGrupo()+"★")}<small>Promedio</small></div>`}
-      <div class="ringbox">${ring(pctMes(plan,"asis"),56,7,"#FFD6DB")}<small>Asistencia</small></div>
+      <div class="ringbox">${ring(pctMes(plan,"asis",g,sc),56,7,"#FFD6DB")}<small>Asistencia</small></div>
       <div class="ringbox">${ring(pctTardeGrupo()===null?0:pctTardeGrupo(),56,7,"#fff",pctTardeGrupo()===null? "—":String(pctTardeGrupo())+"%")}<small>Tarde</small></div>
-      ${nivelUsaEvaluacionCualitativa()? `<div class="ringbox">${ring(pctMes(plan,"eval"),56,7,"#fff")}<small>Logrado</small></div>` : ""}
+      ${nivelUsaEvaluacionCualitativa()? `<div class="ringbox">${ring(pctMes(plan,"eval",g,sc),56,7,"#fff")}<small>Logrado</small></div>` : ""}
     </div>
   </div>`;
 }
@@ -3515,11 +3558,20 @@ function renderInfo(){
     <div class="stat-row"><span>Distrito</span><b>${esc(S.docente.distrito||"—")}</b></div>
     <div class="stat-row"><span>Colegio</span><b>${esc(S.docente.colegio)}</b></div>
     <div class="stat-row"><span>WhatsApp</span><b>${esc(S.docente.whatsapp||"—")}</b></div>
-    <div class="stat-row"><span>Nivel / Grado</span><b>${esc(nivel)} · ${esc(S.docente.grado)}</b></div>
+    <div class="stat-row"><span>Nivel</span><b>${esc(nivel)}</b></div>
     <div class="stat-row"><span>Jornada</span><b>${esc(S.docente.jornada||"—")}</b></div>
     <div class="codigo-box"><span class="muted" style="font-weight:800;letter-spacing:1px">TU CÓDIGO</span>
       <div class="cod">${esc(S.docente.codigo)}</div>
       <p class="muted">Úsalo para entrar desde otro dispositivo</p></div>
+  </div>
+  <div class="card">
+    <h2>${ic("usuarios")} Alumnos por grado y sección</h2>
+    <p class="muted" style="margin-bottom:10px">Define cuántos alumnos tiene cada grupo agregado arriba.</p>
+    ${(S.docente.gradosSecciones||[]).map(gs=>{ const [g,s] = gs.split("|");
+      return `
+    <label class="lbl">${esc(g)} · Sección ${esc(s)}</label>
+    <input class="inp inpAlum" data-sec="${esc(gs)}" type="number" min="1" max="60" value="${alumnosDe(s, g)}" style="text-align:center;font-weight:800">`; }).join("")}
+    <button class="dl" onclick="guardarAlumnosPorSeccion()">Guardar</button>
   </div>
   ${nivel==="Inicial"? "" : `
   <div class="card">
@@ -3585,15 +3637,6 @@ function renderInfo(){
       ${JORNADAS.map(j=>`<option value="${esc(j)}" ${j===S.docente.jornada?"selected":""}>${esc(j)}</option>`).join("")}
     </select>
     <button class="dl" onclick="guardarJornada()">Guardar jornada</button>
-  </div>
-  <div class="card">
-    <h2>${ic("usuarios")} Alumnos por grado y sección</h2>
-    <p class="muted" style="margin-bottom:10px">Define cuántos alumnos tiene cada grupo agregado arriba.</p>
-    ${(S.docente.gradosSecciones||[]).map(gs=>{ const [g,s] = gs.split("|");
-      return `
-    <label class="lbl">${esc(g)} · Sección ${esc(s)}</label>
-    <input class="inp inpAlum" data-sec="${esc(gs)}" type="number" min="1" max="60" value="${alumnosDe(s, g)}" style="text-align:center;font-weight:800">`; }).join("")}
-    <button class="dl" onclick="guardarAlumnosPorSeccion()">Guardar</button>
   </div>
   <div class="card">
     <h2>${ic("plan")} Alineación curricular</h2>
@@ -4126,9 +4169,14 @@ async function descargarPlanDiarioDocx(claseId){
 }
 
 /* ---------- DESCARGAS: PDF ---------- */
-function fechasRegistradas(tipo){
+function fechasRegistradas(tipo, g, s){
+  if(g===undefined){ const p = grupoVista(); g = p.g; s = p.s; }
   const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
-  return Object.keys(mapa).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f) && Object.keys(mapa[f]).length).sort();
+  return Object.keys(mapa).filter(k=>{
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(regFecha(k))) return false;
+    if(regGrupoDe(k)!==g+"-"+s) return false;
+    return Object.keys(mapa[k]).length>0;
+  }).sort();
 }
 function trimestreDeMes(m){ return periodoDeMes(m); }
 function trimDePeriodo(t){ return numDePeriodo(t); }
@@ -4138,7 +4186,8 @@ function pdfResumen(tipo, titulo, sub, fechas, conClases, nombre){
   try{
     const doc = new jspdf.jsPDF();
     cabeceraPdf(doc, titulo, sub);
-    const N = alumnosDe(S.ui.progSec||S.docente.seccion||"A", S.ui.progGrado||S.docente.grado);
+    const _gp = grupoVista();
+    const N = alumnosDe(_gp.s, _gp.g);
     const mapa = tipo==="asis"? S.asistencia : S.evaluacion;
     let y = 50;
     const aseg = s=>{ if(y+s>282){ doc.addPage(); y=20; } };
@@ -4190,7 +4239,7 @@ function pdfResumen(tipo, titulo, sub, fechas, conClases, nombre){
         const regA = S.asistencia[f]||{}, regE = S.evaluacion[f]||{};
         let pres=0, logr=0;
         for(let i=1;i<=N;i++){ if(regA[i]==="Presente"||regA[i]==="Tarde")pres++; if(regE[i]==="Logrado")logr++; }
-        doc.text(f, 16, y); doc.text(pctDia(f,"asis")+"%", 64, y); doc.text(pctDia(f,"eval")+"%", 96, y);
+        doc.text(regFecha(f), 16, y); doc.text(pctDia(f,"asis",_gp.g,_gp.s)+"%", 64, y); doc.text(pctDia(f,"eval",_gp.g,_gp.s)+"%", 96, y);
         doc.text(String(logr), 132, y); doc.text(String(pres), 168, y);
         y += 6;
       });
@@ -4286,9 +4335,9 @@ function descargarAsistenciaDiaPdf(claseId){
     const N = S.docente.alumnos;
     const doc = new jspdf.jsPDF();
     cabeceraPdf(doc, "Asistencia del día · "+d.etiqueta,
-      plan.mes+" · Nivel "+S.docente.nivel+" · Grado "+S.docente.grado+" · Sección "+S.docente.seccion+" · Docente: "+(S.docente.nombre||"—"));
+      plan.mes+" · Nivel "+S.docente.nivel+" · Grado "+grupoReg().g+" · Sección "+grupoReg().s+" · Docente: "+(S.docente.nombre||"—"));
     let y = 50;
-    const reg = S.asistencia[claseId]||{};
+    const reg = regDe(S.asistencia, claseId);
     for(let i=1;i<=N;i++){
       if(y>275){ doc.addPage(); y=20; }
       const st = reg[i]||"Sin registrar";
@@ -4447,7 +4496,7 @@ function boletinFechaDesdeModal(){
 function letraEscala(nf){ return nf>=90? "A":nf>=80? "B":nf>=70? "C":nf>=60? "D":"F"; }
 function textoEscala(l){ return l==="A"?"Excelente":l==="B"?"Muy bueno":l==="C"?"Bueno":l==="D"?"Suficiente":"Insuficiente"; }
 function bloqueCualitativoPdf(doc, i, enRango, y){
-  const evs = Object.keys(S.evaluacion||{}).filter(k=>/^\d{4}-\d{2}-\d{2}$/.test(k) && (S.evaluacion[k]||{})[i] && enRango(k)).sort();
+  const evs = fechasRegistradas("eval").filter(k=> (S.evaluacion[k]||{})[i] && enRango(regFecha(k)));
   const cuenta = { "Logrado":0, "En proceso":0, "Iniciado":0 };
   evs.forEach(k=>{ const e=S.evaluacion[k][i]; if(cuenta[e]!=null) cuenta[e]++; });
   doc.setFillColor("#F0F5FF"); doc.roundedRect(14, y-4, 182, 9, 2, 2, "F");
@@ -4550,10 +4599,10 @@ function boletinDetallePdf(modo, periodo, desde, hasta){
       y += 4;
       }
       if(y>250){ doc.addPage(); y=20; }
-      const fechasA = fechasRegistradas("asis").filter(enRango);
+      const fechasA = fechasRegistradas("asis").filter(k=>enRango(regFecha(k)));
       let pres=0, tar=0, aus=0, marc=0;
       fechasA.forEach(f=>{ const v=(S.asistencia[f]||{})[i]; if(v){ marc++; if(v==="Presente")pres++; else if(v==="Tarde")tar++; else if(v==="Ausente")aus++; } });
-      const evFe = Object.keys(S.evaluacion||{}).filter(f=>/^\d{4}-\d{2}-\d{2}$/.test(f) && Object.keys(S.evaluacion[f]||{}).length).filter(enRango);
+      const evFe = fechasRegistradas("eval").filter(k=>enRango(regFecha(k)));
       let log=0, ep=0, ini=0, evTot=0;
       evFe.forEach(f=>{ const v=(S.evaluacion[f]||{})[i]; if(v){ evTot++; if(v==="Logrado")log++; else if(v==="En proceso")ep++; else if(v==="Iniciado")ini++; } });
       doc.setTextColor(0,51,160); doc.setFontSize(10); doc.setFont(undefined,"bold");
@@ -4596,7 +4645,7 @@ function descargarBoletinGrupo(fuente){
     for(let i=1;i<=N;i++){
       if(y>280){ doc.addPage(); y=25; }
       if(nivelUsaEvaluacionCualitativa()){
-        const ev = evalsAlumno(i);
+        const ev = evalsAlumno(i, dt.grado, dt.seccion);
         const ordenEv = [["Logrado",ev.pL],["En proceso",ev.pEP],["Iniciado",ev.pI]].filter(x=>x[1]);
         ordenEv.sort((a,b)=>b[1]-a[1]);
         doc.setTextColor(30); doc.setFontSize(9.5);
@@ -4645,17 +4694,17 @@ function descargarBoletinIndividual(n, fuente){
       "Nivel "+S.docente.nivel+" · Grado "+dt.grado+" · Sección "+dt.seccion+" · Docente: "+(S.docente.nombre||"—"));
     const plan = planAbierto || planActivo();
     const filas = nivelUsaEvaluacionCualitativa()? (function(){
-      const ev = evalsAlumno(n);
+      const ev = evalsAlumno(n, dt.grado, dt.seccion);
       const ordenEv = [["Logrado",ev.pL],["En proceso",ev.pEP],["Iniciado",ev.pI]].filter(x=>x[1]);
       ordenEv.sort((a,b)=>b[1]-a[1]);
       let cot = 0;
-      Object.keys(S.evalsEvid||{}).forEach(k=>{ if(k.endsWith("|"+n)){ const g = S.evalsEvid[k]; cot += g.sel? Object.keys(g.sel).filter(x=>g.sel[x]).length : 0; } });
+      Object.keys(S.evalsEvid||{}).forEach(k=>{ if(k.endsWith("@"+dt.grado+"-"+dt.seccion+"|"+n)){ const g = S.evalsEvid[k]; cot += g.sel? Object.keys(g.sel).filter(x=>g.sel[x]).length : 0; } });
       return [
         ["Evaluación cualitativa", "Logrado "+(ev.pL||0)+" · En proceso "+(ev.pEP||0)+" · Iniciado "+(ev.pI||0)],
         ["Escala dominante", ordenEv.length? ordenEv[0][0] : "Sin evaluar"],
         ["Logros marcados en cotejo", String(cot)],
-        ["Asistencia del plan activo", pctMes(plan,"asis")+"%"],
-        ["Logros del plan activo", pctMes(plan,"eval")+"%"],
+        ["Asistencia del plan activo", pctMes(plan,"asis",dt.grado,dt.seccion)+"%"],
+        ["Logros del plan activo", pctMes(plan,"eval",dt.grado,dt.seccion)+"%"],
       ];
     })() : [
       ["Participación", c.p!==undefined? c.p : "—"],
@@ -4663,8 +4712,8 @@ function descargarBoletinIndividual(n, fuente){
       ["Examen", c.e!==undefined? c.e : "—"],
       ["Nota final (ponderada)", nf===null? "—" : nf+" / 100"],
       ["Escala de calificaciones", nf===null? "—" : letraEscala(nf)+" ("+textoEscala(letraEscala(nf))+")"],
-      ["Asistencia del plan activo", pctMes(plan,"asis")+"%"],
-      ["Logros del plan activo", pctMes(plan,"eval")+"%"],
+      ["Asistencia del plan activo", pctMes(plan,"asis",dt.grado,dt.seccion)+"%"],
+      ["Logros del plan activo", pctMes(plan,"eval",dt.grado,dt.seccion)+"%"],
     ];
     let y = 52;
     doc.setFillColor(0,51,160); doc.rect(14, y-5, 182, 7, "F");

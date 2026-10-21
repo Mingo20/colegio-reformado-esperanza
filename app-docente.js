@@ -881,7 +881,12 @@ async function apiAccion(accion, datos){
 async function cargarPlanes(){
   try{
     const r = await apiAccion("planes", { nivel: S.docente.nivel, docente_id: S.docente.id });
-    if(r.success) S.listaPlanes = (r.planes||[]).filter(planParaDocente);
+    if(r.success){
+      S.listaPlanes = (r.planes||[]).filter(planParaDocente);
+      if(r.permisos) S.docente.permisos = r.permisos;
+      if(typeof aplicarPermisosClase === "function" && pantallaActual === "clase") aplicarPermisosClase();
+    }
+    else if(r.error && /suspendida/i.test(String(r.error))){ toast(r.error); }
   }catch(e){ /* offline */ }
   guardar();
 }
@@ -1208,24 +1213,27 @@ function renderHorarios(){
   <div class="card">
     <h2>${ic("reloj",16)} Horarios de clase</h2>
     <p class="muted">Programa hasta una semana de clases con su hora de entrada y salida. Al llegar la hora, sonará una alerta y podrás iniciar la clase de una sola vez.</p>
+    ${permiso("horarios_alerta")? `
     <label style="display:flex;align-items:center;gap:8px;margin-top:10px;cursor:pointer">
       <input type="checkbox" ${S.horAlerta!==false? "checked":""} onchange="toggleAlarmaHor(this.checked)" style="width:18px;height:18px">
       <b>Activar alerta sonora</b>
-    </label>
+    </label>`:""}
+    ${permiso("horarios_crono")? `
     <label style="display:flex;align-items:center;gap:8px;margin-top:8px;cursor:pointer">
       <input type="checkbox" ${S.horCrono!==false? "checked":""} onchange="toggleCronoHor(this.checked)" style="width:18px;height:18px">
       <b>Mostrar cronómetro</b>
-    </label>
+    </label>`:""}
     <p class="muted" style="margin:6px 0 0;font-size:11.5px">Con «Mostrar cronómetro» activo, al pulsar «Iniciar clase» aparece el cronómetro circular flotante con el tiempo de la clase en retroceso; arrástralo a cualquier lado de la pantalla.</p>
     <div class="g-chips hscroll" style="margin-top:12px">${dias}</div>
     <p class="muted" style="margin:8px 0 0">${totalSem} clases programadas esta semana${lista.length? " · "+lista.length+" el "+DIAS_HOR_TXT[d].toLowerCase():""}</p>
   </div>
   ${filas}
-  <button class="dl grande" style="width:100%;margin-top:4px" onclick="agregarClaseHorario()">+ Agregar clase del ${esc(DIAS_HOR_TXT[d].toLowerCase())}</button>
+  ${permiso("horarios_agregar")? `<button class="dl grande" style="width:100%;margin-top:4px" onclick="agregarClaseHorario()">+ Agregar clase del ${esc(DIAS_HOR_TXT[d].toLowerCase())}</button>`:""}
   <div style="height:26px"></div>`;
 }
 function selectDiaHor(d){ S.ui.horDia = d; guardar(); renderHorarios(); }
 function agregarClaseHorario(){
+  if(!permiso("horarios_agregar")){ toast(bloqueadoMsg()); return; }
   const d = S.ui.horDia || diaHoy();
   if(!S.horarios) S.horarios = {};
   if(!Array.isArray(S.horarios[d])) S.horarios[d] = [];
@@ -1244,8 +1252,8 @@ function cambiarHorario(d, i, campo, val){
   S.horarios[d][i][campo] = val;
   guardar();
 }
-function toggleAlarmaHor(on){ S.horAlerta = !!on; guardar(); }
-function toggleCronoHor(on){ S.horCrono = !!on; guardar(); }
+function toggleAlarmaHor(on){ if(!permiso("horarios_alerta")){ renderHorarios(); return; } S.horAlerta = !!on; guardar(); }
+function toggleCronoHor(on){ if(!permiso("horarios_crono")){ renderHorarios(); return; } S.horCrono = !!on; guardar(); }
 
 let _horIv = null, _horAlIv = null, _horKeys = new Set(), horActual = null, horClaseHoy = null;
 function iniciarVigilanteHorarios(){
@@ -1751,6 +1759,7 @@ async function entrarConCodigo(){
     S.docente.asignaturasSel = (p.asignaturas||"").split(/,\s*/).filter(Boolean);
     S.docente.secciones = (p.secciones||"").split(/,\s*/).filter(Boolean);
     S.docente.duracionMin = +p.duracion_min || 0;
+    if(r.permisos) S.docente.permisos = r.permisos;
     try{ S.docente.alumnosPorSeccion = JSON.parse(p.alumnos_por_seccion||"{}")||{}; }catch(e){ S.docente.alumnosPorSeccion = {}; }
     const fotoPerfilActual = S.docente.foto||"";
     let remoto = null;
@@ -2430,12 +2439,40 @@ function duracionAjustada(m, baseTotal){
   return "~"+Math.max(2, Math.round(b*factor))+" min";
 }
 let claseAbiertaId = null;
+let clasePlanActual = null;
+function permiso(k){ const p = (S.docente && S.docente.permisos) || {}; return p[k]!==false; }
+function bloqueadoMsg(){ return "Esta función fue bloqueada temporalmente por el administrador"; }
+function slugPlanDe(plan){
+  const t = String((plan && plan.titulo) || "");
+  const segs = t.split("·").map(s=>s.trim()).filter(Boolean);
+  const mesAnio = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|plan)\b/i;
+  const seg = (segs.find(s=>!mesAnio.test(s)) || plan.tema || plan.grado || plan.titulo || "plan");
+  return String(seg).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,48) || "plan";
+}
+function planDeClase(claseId){
+  if(clasePlanActual && clasePorId(clasePlanActual, claseId)) return clasePlanActual;
+  if(planAbierto && clasePorId(planAbierto, claseId)) return planAbierto;
+  try{ const w = planDiario(); if(w && w.plan && clasePorId(w.plan, claseId)) return w.plan; }catch(e){}
+  const cands = (S.listaPlanes||[]);
+  for(const c of cands){ try{ const p = S.planesCache[c.id]; if(p && clasePorId(p, claseId)) return p; }catch(e){} }
+  return planActivo();
+}
+function aplicarPermisosClase(){
+  const cc = $("compCard"); if(cc) cc.style.display = permiso("competencias_dia")? "" : "none";
+  const okM = permiso("momentos_clase");
+  for(let i=0;i<12;i++){ const el = $("mexp-"+i); if(el) el.style.display = okM? "" : "none"; }
+  const hm = $("hMomentosClase"); if(hm) hm.style.display = okM? "" : "none";
+  const bh = $("bolHintClase"); if(bh) bh.style.display = okM? "" : "none";
+  const tb = $("tabE"); if(tb) tb.style.display = permiso("registro_evaluacion")? "" : "none";
+}
 function renderClase(claseId){
   claseAbiertaId = claseId;
   const plan = planAbierto || planActivo();
   const d = clasePorId(plan, claseId);
   if(!d){ irA("mes"); return; }
   claseActualId = claseId;
+  clasePlanActual = plan;
   if(S.ui._claseVista !== claseId){ S.ui.momentoAbierto = 0; S.ui._claseVista = claseId; }
   if(S.ui.momentoAbierto==null) S.ui.momentoAbierto = 0;
 
@@ -2468,8 +2505,8 @@ function renderClase(claseId){
       ${(plan.competencias&&plan.competencias.length? plan.competencias : COMPETENCIAS.slice(0,4)).map(c=>`<p class="mg-t">${esc(c.n||c)}</p><p class="mg-d">${esc(c.d||"")}</p>`).join("")}
     </div></div>
   </div>
-  <h2 class="mini">Momentos de la clase</h2>
-  ${(S.docente.duracionMin || !duracionActiva())? "" : `<p class="bol-hint">Configura la duración de tu clase en Perfil para activar el temporizador de cada momento</p>`}
+  <h2 class="mini" id="hMomentosClase">Momentos de la clase</h2>
+  ${(S.docente.duracionMin || !duracionActiva())? "" : `<p class="bol-hint" id="bolHintClase">Configura la duración de tu clase en Perfil para activar el temporizador de cada momento</p>`}
   ${momentos.map((m,i)=>`
     <div class="momento m-exp ${(S.ui.momentoAbierto===i)? "abierta":""}" id="mexp-${i}" onclick="toggleMomentoCard(${i})">
       <div class="m-head">
@@ -2508,6 +2545,7 @@ function renderClase(claseId){
   <div style="height:6px"></div>
   <div style="height:14px"></div>`;
   $("scr-clase").innerHTML = html;
+  aplicarPermisosClase();
   normalizarGruposPerfil();
   pintarCronoFlotante(durs.length? durs : null);
   sincronizarCrono(durs.length? durs : null);
@@ -2538,6 +2576,8 @@ function tabChipE(){
   e.style.display = irE? "" : "none";
 }
 function alumnosHTML(claseId, tipo){
+  if(tipo==="A" && !permiso("registro_asistencia")) return `<p class="vacio" style="padding:8px 0">${esc(bloqueadoMsg())}</p>`;
+  if(tipo==="E" && !permiso("registro_evaluacion")) return `<p class="vacio" style="padding:8px 0">${esc(bloqueadoMsg())}</p>`;
   const N = alumnosDe(grupoReg().s, grupoReg().g);
   if(N<=0) return `<p class="vacio" style="padding:8px 0">No tienes alumnos registrados en este grupo. Añádelos desde tu perfil, en «Grados y secciones a tu cargo».</p>`;
   const reg = regDe(tipo==="A"? S.asistencia : S.evaluacion, claseId);
@@ -2564,6 +2604,8 @@ function ringDuo(claseId){
   return html;
 }
 function marcar(tipo, claseId, n, valor){
+  if(tipo==="A" && !permiso("registro_asistencia")){ toast(bloqueadoMsg()); return; }
+  if(tipo==="E" && !permiso("registro_evaluacion")){ toast(bloqueadoMsg()); return; }
   const mapa = tipo==="A"? S.asistencia : S.evaluacion;
   const k = regK(claseId);
   if(!mapa[k]) mapa[k] = {};
@@ -2581,6 +2623,7 @@ function marcar(tipo, claseId, n, valor){
 }
 let _asisSel = null;
 function abrirAsistencia(claseId, n){
+  if(!permiso("registro_asistencia")){ toast(bloqueadoMsg()); return; }
   _asisSel = { claseId, n };
   const t = $("asisTitulo"); if(t) t.textContent = "Alumno "+n+" · toca su estado de asistencia";
   $("asisFondo").classList.add("abierto");
@@ -2740,6 +2783,7 @@ function cotejoDe(claseId){
   return COTEJO_BASE;
 }
 function abrirEvalAlumno(claseId, n){
+  if(!permiso("registro_evaluacion")){ toast(bloqueadoMsg()); return; }
   if(!S.evalsEvid) S.evalsEvid = {};
   const guardado = S.evalsEvid[evKey(claseId, n)]||null;
   eval2 = { claseId, n, estado:null, evid:{} };
@@ -3173,6 +3217,7 @@ function upsertPunto(grupo, n, f, tipo, pts, com, asig){
 }
 let histRegAbierto = false;
 function toggleRegCal(){
+  if(!permiso("calificar_alumno")){ toast(bloqueadoMsg()); return; }
   histRegAbierto = !histRegAbierto;
   const z = $("zonaRegCal"); if(z) z.style.display = histRegAbierto? "" : "none";
   const c = $("collapReg"); if(c) c.classList.toggle("abierto", histRegAbierto);
@@ -3207,7 +3252,7 @@ function abrirHistorial(n, fuente){
   histRegAbierto = false;
   const grupo = grupoProg();
   const periodoSel = PERIODOS[(parseInt(S.ui.histFiltro)||numDePeriodo(S.docente.periodo))-1] || S.docente.periodo;
-  $("histTitulo").textContent = ((nivelUsaEvaluacionCualitativa()? "Evaluación":"Calificar")+" · Alumno "+n).toUpperCase();
+  $("histTitulo").textContent = ((nivelUsaEvaluacionCualitativa()? "Evaluación":"Calificación")+" · Alumno "+n).toUpperCase();
   $("histSub").textContent = "Promedios por asignatura y periodo · desliza hacia los lados";
   const esInicial = nivelUsaEvaluacionCualitativa();
   const asigs = asignaturasVista();
@@ -3276,6 +3321,10 @@ function abrirHistorial(n, fuente){
   </div>`}
   ${esInicial? "" : `<h3 class="hist-sep">Historial de calificaciones · ${esc(periodoSel)}</h3>${filas}`}
   <div style="height:26px"></div>`;
+  if(!permiso("calificar_alumno")){
+    const c = $("collapReg"); if(c) c.style.display = "none";
+    const z = $("zonaRegCal"); if(z) z.style.display = "none";
+  }
   $("modalHistFondo").classList.add("abierto");
   $("modalHistHoja").classList.add("abierta");
 }
@@ -3295,6 +3344,7 @@ function cerrarHistorial(){
   $("modalHistHoja").classList.remove("abierta");
 }
 function registrarPunto(){
+  if(!permiso("calificar_alumno")){ toast(bloqueadoMsg()); return; }
   if(!histActual) return;
   const n = histActual.n;
   const f = HOY;
@@ -3478,7 +3528,7 @@ function htmlProgresoPanel(){
       </div>
     </div>`;
   }
-  html += `<button class="dl grande" onclick="abrirModalBoletines()">${ic("descarga")} Descargar boletines</button>
+  html += `${permiso("boletines")? `<button class="dl grande" onclick="abrirModalBoletines()">${ic("descarga")} Descargar boletines</button>`:""}
   <div style="height:14px"></div>`;
   return html;
 }
@@ -3899,6 +3949,7 @@ function cabeceraPdf(doc, titulo, subtitulo){
 /* ---------- DESCARGAS: WORD (MINERD) ---------- */
 /* v36: descarga Word de un plan anual por asignatura (biblioteca) */
 async function descargarPlanAnualDocxLib(id){
+  if(!permiso("descarga_anual")){ toast(bloqueadoMsg()); return; }
   try{
     let plan = null;
     try{ const r = await apiAccion("plan", { id }); if(r && r.success) plan = r.plan; }catch(e){}
@@ -3952,6 +4003,7 @@ async function descargarPlanAnualDocxLib(id){
   }catch(e){ toast("No se pudo generar el documento"); }
 }
 async function descargarPlanAnualDocx(nivel){
+  if(!permiso("descarga_anual")){ toast(bloqueadoMsg()); return; }
   try{
     const D = docx;
     nivel = (nivel && PLANES_ANUALES[nivel])? nivel : S.docente.nivel;
@@ -4020,6 +4072,7 @@ async function descargarPlanAnualDocx(nivel){
   }catch(e){ toast("Se necesita conexión para descargar"); }
 }
 async function descargarUnidadDocx(){
+  if(!permiso("descarga_mensual")){ toast(bloqueadoMsg()); return; }
   try{
     const D = docx;
     const plan = planAbierto || planActivo();
@@ -4126,8 +4179,9 @@ async function descargarUnidadDocx(){
 async function descargarPlanDiarioDocx(claseId){
   try{
     const D = docx;
-    const plan = planAbierto || planActivo();
+    const plan = planDeClase(claseId);
     const d = clasePorId(plan, claseId);
+    if(!d){ toast("Clase no encontrada"); return; }
     const s = (plan.semanas||[]).find(w=>w.dias.some(x=>x.id===claseId));
     const momentos = d.momentos||[];
     const baseTotal = momentos.reduce((a,m)=>a+(minsDe(m.duracion)||0),0);
@@ -4163,7 +4217,7 @@ async function descargarPlanDiarioDocx(claseId){
       h2docx(D, "4. Nota de observación del día"),
       par(D, S.obs[claseId]||"—"),
     ]}]});
-    await docxDe(await D.Packer.toBlob(doc), "clase-"+claseId+".docx");
+    await docxDe(await D.Packer.toBlob(doc), "clase-"+claseId+"-"+slugPlanDe(plan)+".docx");
     toast("Plan diario descargado");
   }catch(e){ toast("Se necesita conexión para descargar"); }
 }
@@ -4399,8 +4453,9 @@ function descargarEvaluacionPdf(claseId){
 
 function descargarPlanDiarioPdf(claseId){
   try{
-    const plan = planAbierto || planActivo();
+    const plan = planDeClase(claseId);
     const d = clasePorId(plan, claseId);
+    if(!d){ toast("Clase no encontrada"); return; }
     const momentos = d.momentos||[];
     const baseTotal = momentos.reduce((a,m)=>a+(minsDe(m.duracion)||0),0);
     const doc = new jspdf.jsPDF();
@@ -4452,7 +4507,7 @@ function descargarPlanDiarioPdf(claseId){
     doc.text(doc.splitTextToSize("Recursos: "+((d.recursos||[]).join(" · ")||"—"), 180), 16, y); y += 6;
     doc.text(doc.splitTextToSize("Evaluación: formativa diaria · Instrumento: lista de cotejo, observación y registro de logros.", 180), 16, y); y += 6;
     doc.text(doc.splitTextToSize("Observación del día: "+(S.obs[claseId]||"—"), 180), 16, y);
-    doc.save("plan-diario-"+claseId+".pdf");
+    doc.save("plan-diario-"+claseId+"-"+slugPlanDe(plan)+".pdf");
     toast("Plan diario descargado");
   }catch(e){ toast("Se necesita conexión para descargar"); }
 }
@@ -4466,6 +4521,7 @@ function datosBoletin(fuente){
 }
 
 function abrirModalBoletines(){
+  if(!permiso("boletines")){ toast(bloqueadoMsg()); return; }
   const contenido = $("bolContenido"); if(!contenido) return;
   const grado = S.ui.progGrado||S.docente.grado, seccion = S.ui.progSec||S.docente.seccion||"A";
   const sub = $("bolSub"); if(sub) sub.textContent = "Nivel "+S.docente.nivel+" · Grado "+grado+" · Sección "+seccion+" · "+(nivelUsaEvaluacionCualitativa()? "Evaluación cualitativa":"Calificaciones numéricas");

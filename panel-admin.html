@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel Administrativo · PlanApp</title>
+<style>
+:root{
+  --azul:#0033A0; --azul-osc:#00227a; --azul-suave:#e8eefc; --rojo:#CE1126;
+  --fondo:#f2f4fa; --card:#ffffff; --borde:#d5dbe7; --texto:#1b2437; --muted:#67718a;
+  --verde:#16a34a; --ambar:#d97706; --radio:14px;
+  --sombra:0 6px 18px rgba(0,35,110,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,'Helvetica Neue',sans-serif;background:var(--fondo);color:var(--texto);font-size:15px;line-height:1.45}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,select{font-family:inherit;font-size:15px}
+.oculto{display:none!important}
+
+/* ===== LOGIN ===== */
+#login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;
+  background:linear-gradient(160deg,var(--azul) 0%,var(--azul-osc) 60%,#00133f 100%)}
+.login-card{background:#fff;border-radius:20px;padding:34px 26px;max-width:400px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.35);text-align:center}
+.login-card .logo{width:64px;height:64px;border-radius:16px;background:var(--azul);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.login-card h1{font-size:21px;color:var(--azul-osc)}
+.login-card p{color:var(--muted);font-size:13.5px;margin-top:4px}
+.login-card .inp{width:100%;margin-top:18px;padding:13px 14px;border:1.5px solid var(--borde);border-radius:12px;font-size:16px;text-align:center;letter-spacing:1px;outline:none}
+.login-card .inp:focus{border-color:var(--azul)}
+.login-card .btn{width:100%;margin-top:14px;padding:13px;background:var(--azul);color:#fff;font-weight:700;font-size:15.5px;border-radius:12px}
+.login-card .btn:active{transform:scale(.98)}
+.login-error{color:var(--rojo);font-size:13px;margin-top:12px;min-height:18px}
+.login-nota{margin-top:16px;font-size:11.5px;color:var(--muted)}
+.chk-recordar{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:12px;font-size:13px;color:var(--muted);cursor:pointer}
+.chk-recordar input{width:16px;height:16px}
+
+/* ===== SHELL ===== */
+#app{display:none;min-height:100vh}
+.topbar{position:sticky;top:0;z-index:40;background:var(--azul);color:#fff;display:flex;align-items:center;gap:10px;padding:12px 16px;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.topbar .logo-chico{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;flex:none}
+.topbar h1{font-size:16px;font-weight:800;letter-spacing:.3px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar .badge-adm{background:rgba(255,255,255,.18);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap}
+.topbar .btn-salir{background:rgba(255,255,255,.14);color:#fff;padding:7px 12px;border-radius:10px;font-size:12.5px;font-weight:700}
+.layout{display:grid;grid-template-columns:1fr;gap:16px;padding:16px;max-width:1400px;margin:0 auto}
+.contenido{min-width:0}
+
+/* sidebar / menú */
+.menu{background:var(--card);border-radius:var(--radio);box-shadow:var(--sombra);padding:10px;display:flex;gap:8px;overflow-x:auto;position:sticky;top:62px;z-index:30}
+.menu button{flex:none;display:flex;align-items:center;gap:7px;padding:10px 16px;border-radius:11px;font-weight:700;font-size:13.5px;color:var(--muted);white-space:nowrap}
+.menu button.sel{background:var(--azul);color:#fff}
+.menu button .kpi-mini{background:var(--azul-suave);color:var(--azul);border-radius:14px;font-size:11px;padding:1px 8px;font-weight:800}
+.menu button.sel .kpi-mini{background:rgba(255,255,255,.25);color:#fff}
+
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.kpi{background:var(--card);border-radius:var(--radio);box-shadow:var(--sombra);padding:14px 14px 12px;position:relative;overflow:hidden}
+.kpi .k-ico{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.kpi .k-val{font-size:24px;font-weight:800;color:var(--azul-osc);line-height:1.1}
+.kpi .k-lbl{font-size:11.5px;color:var(--muted);font-weight:600;margin-top:2px}
+.kpi .k-det{font-size:10.5px;color:var(--muted);margin-top:3px}
+.kpi.rojo .k-val{color:var(--rojo)}
+.kpi.ambar .k-val{color:var(--ambar)}
+
+/* tarjetas y gráficos */
+.card{background:var(--card);border-radius:var(--radio);box-shadow:var(--sombra);padding:16px;min-width:0}
+.card h2{font-size:14.5px;color:var(--azul-osc);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card h2 svg{flex:none}
+.grid-charts{display:grid;grid-template-columns:1fr;gap:16px}
+.chart-wrap{width:100%;overflow-x:auto}
+.leyenda{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.leyenda span{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);font-weight:600}
+.leyenda i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.muted{color:var(--muted);font-size:12.5px}
+
+/* filtros */
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.filtros input[type=text],.filtros select{padding:10px 12px;border:1.5px solid var(--borde);border-radius:11px;background:#fff;outline:none;min-width:0;flex:1;font-size:13.5px}
+.filtros input[type=text]:focus,.filtros select:focus{border-color:var(--azul)}
+.filtros .f-busca{flex:2 1 180px}
+.filtros .btn-refrescar{background:var(--azul-suave);color:var(--azul);border-radius:11px;padding:10px 14px;font-weight:700;font-size:13px;flex:none}
+
+/* tarjetas de docentes */
+.doc-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.doc-card{background:var(--card);border-radius:var(--radio);box-shadow:var(--sombra);padding:14px;display:flex;gap:12px;align-items:center;cursor:pointer;border:2px solid transparent;transition:transform .12s}
+.doc-card:active{transform:scale(.985)}
+.doc-card.suspendida{border-color:#f5c2c7;background:#fffafa}
+.doc-foto{width:52px;height:52px;border-radius:50%;background:var(--azul-suave);color:var(--azul);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:none;overflow:hidden}
+.doc-foto img{width:100%;height:100%;object-fit:cover}
+.doc-info{flex:1;min-width:0}
+.doc-info b{font-size:14.5px;color:var(--azul-osc);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.doc-info small{color:var(--muted);font-size:11.5px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chips{margin-top:6px;display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-size:10px;font-weight:800;padding:2px 8px;border-radius:12px;background:var(--azul-suave);color:var(--azul);white-space:nowrap}
+.chip.rojo{background:#fee2e2;color:var(--rojo)}
+.chip.ambar{background:#fef3c7;color:#92400e}
+.chip.verde{background:#dcfce7;color:#15803d}
+.doc-flecha{color:#b6bfd2;flex:none}
+
+/* ===== SUBPANTALLA DOCENTE ===== */
+.sub-head{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.btn-atras{background:var(--azul-suave);color:var(--azul);padding:9px 14px;border-radius:11px;font-weight:800;font-size:13px}
+.sub-titulo{flex:1;min-width:0}
+.sub-titulo b{font-size:17px;color:var(--azul-osc);display:block}
+.sub-titulo small{color:var(--muted);font-size:12px}
+.perfil-grid{display:grid;grid-template-columns:1fr;gap:0}
+.fila{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #eef1f7;align-items:baseline}
+.fila:last-child{border-bottom:none}
+.fila span:first-child{font-weight:700;font-size:12.5px;color:var(--muted);flex:1}
+.fila span:last-child{font-size:13.5px;font-weight:600;text-align:right;word-break:break-word}
+.btn-wa{width:100%;margin-top:12px;background:#25d366;color:#fff;font-weight:800;font-size:14.5px;padding:13px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}
+.btn-wa:active{transform:scale(.98)}
+
+/* interruptores */
+.switch-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #eef1f7}
+.switch-row:last-child{border-bottom:none}
+.switch-txt{flex:1;min-width:0}
+.switch-txt b{font-size:13.5px;display:block}
+.switch-txt small{font-size:11.5px;color:var(--muted)}
+.switch{position:relative;width:48px;height:28px;flex:none}
+.switch input{opacity:0;width:100%;height:100%;position:absolute;cursor:pointer;z-index:2;margin:0}
+.switch .pista{position:absolute;inset:0;background:#cdd5e3;border-radius:20px;transition:background .18s}
+.switch .bolita{position:absolute;top:3px;left:3px;width:22px;height:22px;background:#fff;border-radius:50%;box-shadow:0 2px 5px rgba(0,0,0,.25);transition:left .18s}
+.switch input:checked + .pista{background:var(--verde)}
+.switch input:checked ~ .bolita{left:23px}
+.switch.input-off .pista{background:#e5e9f2}
+.grupo-perm{margin-top:14px}
+.grupo-perm h3{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+.estado-cuenta{display:flex;align-items:center;gap:12px;padding:12px 0}
+.estado-cuenta .switch-txt b .suspendida-tag{color:var(--rojo)}
+.guardando{font-size:11px;color:var(--muted);min-height:15px;margin-top:8px}
+
+/* toast */
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(90px);background:var(--azul-osc);color:#fff;padding:11px 20px;border-radius:30px;font-size:13.5px;font-weight:700;box-shadow:0 8px 25px rgba(0,0,0,.3);transition:transform .25s;z-index:99;max-width:90vw;text-align:center}
+#toast.show{transform:translateX(-50%) translateY(0)}
+.vacio-panel{text-align:center;color:var(--muted);padding:34px 10px;font-size:13.5px}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width:640px){
+  .kpis{grid-template-columns:repeat(4,1fr)}
+  .doc-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:1024px){
+  .layout{grid-template-columns:220px 1fr;padding:20px;gap:20px}
+  .menu{flex-direction:column;overflow:visible;position:sticky;top:76px;align-self:start}
+  .menu button{width:100%;justify-content:flex-start}
+  .kpis{grid-template-columns:repeat(4,1fr)}
+  .doc-grid{grid-template-columns:repeat(3,1fr)}
+  .grid-charts{grid-template-columns:1fr 1fr}
+  .perfil-grid{grid-template-columns:1fr 1fr;column-gap:26px}
+}
+@media (min-width:1280px){
+  .kpis{grid-template-columns:repeat(8,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== LOGIN ===== -->
+<div id="login">
+  <div class="login-card">
+    <div class="logo">
+      <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5v6"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+    </div>
+    <h1>Panel Administrativo</h1>
+    <p>PlanApp · Acceso exclusivo del administrador</p>
+    <input class="inp" id="clave" type="password" placeholder="Clave de administrador" autocomplete="off">
+    <label class="chk-recordar"><input type="checkbox" id="recordar"> Recordar en este dispositivo</label>
+    <button class="btn" onclick="entrar()">Entrar al panel</button>
+    <div class="login-error" id="loginError"></div>
+    <div class="login-nota">Verificación de credenciales en el servidor. Solo personal autorizado.</div>
+  </div>
+</div>
+
+<!-- ===== APP ===== -->
+<div id="app">
+  <div class="topbar">
+    <div class="logo-chico">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5v6"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+    </div>
+    <h1>Panel Administrativo · PlanApp</h1>
+    <span class="badge-adm">Administrador</span>
+    <button class="btn-salir" onclick="salir()">Salir</button>
+  </div>
+
+  <div class="layout">
+    <div class="menu" id="menu">
+      <button id="m-dash" class="sel" onclick="verVista('dash')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+        Dashboard
+      </button>
+      <button id="m-docs" onclick="verVista('docs')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Docentes <span class="kpi-mini" id="kpiDocs">0</span>
+      </button>
+    </div>
+
+    <div class="contenido" id="contenido"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+const APP_URL = "https://ca-68f01a11.base44.app/functions/appDocentes";
+const GRUPOS_PERMISOS = [
+  { titulo:"Planificaciones", items:[
+    { k:"descarga_anual",  t:"Descargar plan anual",   d:"Descarga del plan anual en Word" },
+    { k:"descarga_mensual",t:"Descargar plan mensual", d:"Descarga de la unidad en Word" },
+  ]},
+  { titulo:"Planificación diaria", items:[
+    { k:"momentos_clase",      t:"Tarjetas de momentos de clase", d:"Acceso a los momentos: Inicio, Desarrollo, Práctica y Cierre" },
+    { k:"competencias_dia",    t:"Competencias del día",           d:"Tarjeta de competencias de la clase diaria" },
+    { k:"registro_asistencia", t:"Registro de asistencia",        d:"Marcar presente, tarde o ausente" },
+    { k:"registro_evaluacion", t:"Registro de evaluaciones",      d:"Evaluación cualitativa por alumno" },
+  ]},
+  { titulo:"Progreso", items:[
+    { k:"calificar_alumno", t:"Registrar calificación",  d:"Botón Registrar calificación en el modal del alumno" },
+    { k:"boletines",        t:"Descargar boletines",      d:"Descarga de boletines desde la pantalla Progreso" },
+  ]},
+  { titulo:"Programación de horarios", items:[
+    { k:"horarios_agregar", t:"Botón Agregar clases",     d:"Añadir clases al horario semanal" },
+    { k:"horarios_alerta",  t:"Activar alerta sonora",   d:"Alerta al llegar la hora de clase" },
+    { k:"horarios_crono",   t:"Mostrar cronómetro",       d:"Cronómetro flotante de la clase" },
+  ]},
+];
+const COLORES = ["#0033A0","#CE1126","#f59e0b","#16a34a","#7c3aed","#0891b2","#db2777","#475569"];
+
+let CLAVE = "";
+let DOCENTES = [];
+let VISTA = "dash";
+let DOC = null;
+let FILTRO = { texto:"", nivel:"", distrito:"", colegio:"" };
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s||"").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(window._tt); window._tt=setTimeout(()=>t.classList.remove("show"),2600); }
+
+async function api(accion, datos){
+  const r = await fetch(APP_URL, { method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({ accion, clave: CLAVE, ...(datos||{}) }) });
+  return await r.json();
+}
+
+/* ===== LOGIN ===== */
+async function entrar(){
+  const c = $("clave").value.trim();
+  $("loginError").textContent = "";
+  if(!c){ $("loginError").textContent = "Escribe la clave de administrador"; return; }
+  try{
+    const r = await api("admin-login", {});
+    if(c !== $("clave").value.trim()) return;
+    if(!r.success){ $("loginError").textContent = r.error || "Clave incorrecta"; return; }
+    CLAVE = c;
+    if($("recordar").checked) localStorage.setItem("pa_admin_clave", c);
+    else sessionStorage.setItem("pa_admin_clave", c);
+    $("login").classList.add("oculto");
+    $("app").style.display = "block";
+    await cargarDocentes();
+    verVista("dash");
+  }catch(e){ $("loginError").textContent = "No se pudo conectar con el servidor"; }
+}
+function salir(){
+  localStorage.removeItem("pa_admin_clave");
+  sessionStorage.removeItem("pa_admin_clave");
+  location.reload();
+}
+$("clave").addEventListener("keydown", e=>{ if(e.key==="Enter") entrar(); });
+
+/* ===== CARGA ===== */
+async function cargarDocentes(){
+  const r = await api("admin-docentes", {});
+  if(!r.success){ toast(r.error || "No se pudo cargar"); if(/incorrecta/i.test(r.error||"")) salir(); return false; }
+  DOCENTES = r.docentes||[];
+  $("kpiDocs").textContent = DOCENTES.length;
+  return true;
+}
+
+/* ===== FILTRO ===== */
+function docentesFiltrados(){
+  const q = FILTRO.texto.trim().toLowerCase();
+  return DOCENTES.filter(d=>{
+    if(q && !( (d.nombre||"").toLowerCase().includes(q) || (d.colegio||"").toLowerCase().includes(q) || (d.whatsapp||"").includes(q) )) return false;
+    if(FILTRO.nivel && d.nivel !== FILTRO.nivel) return false;
+    if(FILTRO.distrito && d.distrito !== FILTRO.distrito) return false;
+    if(FILTRO.colegio && d.colegio !== FILTRO.colegio) return false;
+    return true;
+  });
+}
+function setFiltro(campo, val){ FILTRO[campo] = val; if(VISTA==="docs") renderDocs(); }
+
+/* ===== VISTAS ===== */
+function verVista(v, doc){
+  VISTA = v;
+  DOC = doc||null;
+  $("m-dash").classList.toggle("sel", v==="dash");
+  $("m-docs").classList.toggle("sel", v==="docs" || v==="docente");
+  if(v==="dash") renderDash();
+  else if(v==="docs") renderDocs();
+  else if(v==="docente" && doc) renderDocente(doc);
+  window.scrollTo({top:0});
+}
+function refrescar(){ toast("Actualizando..."); cargarDocentes().then(ok=>{ if(ok){ verVista(VISTA, DOC); toast("Datos actualizados"); } }); }
+
+/* ===== DASHBOARD ===== */
+function iniciales(n){ return String(n||"?").split(/\s+/).map(x=>x[0]).slice(0,2).join("").toUpperCase(); }
+function kpiCard(val, lbl, det, cls, ico){
+  return `<div class="kpi ${cls||""}">
+    <div class="k-ico" style="background:var(--azul-suave);color:var(--azul)">${ico}</div>
+    <div class="k-val">${esc(val)}</div><div class="k-lbl">${esc(lbl)}</div>
+    ${det? `<div class="k-det">${esc(det)}</div>`:""}
+  </div>`;
+}
+function donut(datos, id){
+  const total = datos.reduce((a,x)=>a+x.v,0)||1;
+  let off = 0; const r = 15.9;
+  const segs = datos.map((x,i)=>{
+    const pct = x.v/total*100;
+    const s = `<circle cx="21" cy="21" r="${r}" fill="none" stroke="${x.c}" stroke-width="6.5" stroke-dasharray="${pct} ${100-pct}" stroke-dashoffset="${25-off}" stroke-linecap="butt"/>`;
+    off += pct; return s;
+  }).join("");
+  return `<div class="chart-wrap"><svg viewBox="0 0 42 42" style="width:100%;max-width:190px;display:block;margin:0 auto">${segs}
+    <text x="21" y="20" text-anchor="middle" font-size="8" font-weight="800" fill="#1b2437">${total}</text>
+    <text x="21" y="25.5" text-anchor="middle" font-size="3.2" fill="#67718a">docentes</text></svg></div>
+    <div class="leyenda">${datos.map(x=>`<span><i style="background:${x.c}"></i>${esc(x.l)} · ${x.v}</span>`).join("")}</div>`;
+}
+function barras(datos){
+  const max = Math.max(...datos.map(x=>x.v), 1);
+  return `<div class="chart-wrap"><svg viewBox="0 0 320 ${Math.max(datos.length*26+6,60)}" style="width:100%;height:auto">
+    ${datos.map((x,i)=>{
+      const w = x.v/max*250;
+      return `<text x="0" y="${i*26+15}" font-size="10.5" fill="#67718a" font-weight="600">${esc(x.l).slice(0,16)}</text>
+        <rect x="0" y="${i*26+19}" width="${Math.max(w,1.5)}" height="9" rx="4.5" fill="${x.c||"#0033A0"}"/>
+        <text x="${Math.max(w,1.5)+6}" y="${i*26+27}" font-size="10.5" fill="#1b2437" font-weight="800">${x.v}</text>`;
+    }).join("")}
+  </svg></div>`;
+}
+function renderDash(){
+  const ds = DOCENTES;
+  const semana = 7*24*3600*1000;
+  const ahora = Date.now();
+  const nuevos = ds.filter(d=>{ const f = d.fecha_registro? new Date(d.fecha_registro+"T12:00").getTime() : 0; return f && ahora-f <= semana; }).length;
+  const susp = ds.filter(d=>d.suspendido).length;
+  const restr = ds.filter(d=>(d.restricciones||[]).length>0).length;
+  const niveles = {}; ds.forEach(d=>{ niveles[d.nivel||"—"] = (niveles[d.nivel||"—"]||0)+1; });
+  const distritos = {}; ds.forEach(d=>{ const k=d.distrito||"—"; distritos[k]=(distritos[k]||0)+1; });
+  const colegios = {}; ds.forEach(d=>{ const k=d.colegio||"—"; colegios[k]=(colegios[k]||0)+1; });
+
+  // evolución: registros por semana (últimas 8)
+  const semanas = [];
+  for(let i=7;i>=0;i--){
+    const ini = ahora - (i+1)*semana, fin = ahora - i*semana;
+    const n = ds.filter(d=>{ const f = d.fecha_registro? new Date(d.fecha_registro+"T12:00").getTime() : 0; return f>ini && f<=fin; }).length;
+    semanas.push({ l:"S-"+(8-i), v:n });
+  }
+  const hayEvol = semanas.some(s=>s.v>0) && ds.length>3;
+
+  const pNiveles = Object.entries(niveles).sort((a,b)=>b[1]-a[1]).map(([l,v],i)=>({ l, v, c:COLORES[i%COLORES.length] }));
+  const pDistritos = Object.entries(distritos).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([l,v])=>({ l, v }));
+  const pColegios = Object.entries(colegios).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([l,v])=>({ l, v }));
+
+  $("contenido").innerHTML = `
+  <div class="kpis" style="margin-bottom:16px">
+    ${kpiCard(ds.length, "Docentes registrados", "en el sistema", "", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>`)}
+    ${kpiCard(nuevos, "Nuevos registros", "últimos 7 días", "ambar", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>`)}
+    ${kpiCard(ds.length-susp, "Cuentas activas", "funcionando con normalidad", "", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>`)}
+    ${kpiCard(susp, "Suspendidas", "temporalmente inactivas", susp? "rojo":"", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93l14.14 14.14"/></svg>`)}
+    ${kpiCard(restr, "Con restricciones", "funciones bloqueadas", restr? "ambar":"", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`)}
+    ${kpiCard(Object.keys(niveles).length, "Niveles", "educativos activos", "", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7l10-4 10 4-10 4z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>`)}
+    ${kpiCard(Object.keys(distritos).length, "Distritos", "educativos", "", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`)}
+    ${kpiCard(Object.keys(colegios).length, "Centros", "educativos", "", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>`)}
+  </div>
+
+  <div class="grid-charts">
+    <div class="card"><h2><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>Docentes por nivel educativo</h2>
+      ${donut(pNiveles)}</div>
+    <div class="card"><h2><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Docentes por distrito</h2>
+      ${barras(pDistritos)}</div>
+    <div class="card"><h2><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2"><path d="M2 7l10-4 10 4-10 4z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>Docentes por centro educativo</h2>
+      ${barras(pColegios)}</div>
+    <div class="card"><h2><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Cuentas activas vs suspendidas</h2>
+      ${donut([{l:"Activas", v:ds.length-susp, c:"#16a34a"},{l:"Suspendidas", v:susp, c:"#CE1126"}])}</div>
+    ${hayEvol? `<div class="card"><h2><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2"><polyline points="3 17 9 11 13 14 21 6"/><polyline points="15 6 21 6 21 12"/></svg>Evolución de registros · últimas 8 semanas</h2>
+      ${barras(semanas)}</div>`:""}
+  </div>`;
+}
+
+/* ===== LISTA DOCENTES ===== */
+function selector(id, val, opciones, ph){
+  return `<select id="${id}" onchange="setFiltro('${id===\"fNivel\"?\"nivel\":id===\"fDistrito\"?\"distrito\":\"colegio\"}', this.value)">
+    <option value="">${esc(ph)}</option>
+    ${opciones.map(o=>`<option value="${esc(o)}" ${o===val? "selected":""}>${esc(o)}</option>`).join("")}
+  </select>`;
+}
+function renderDocs(){
+  const ds = docentesFiltrados();
+  const niveles = [...new Set(DOCENTES.map(d=>d.nivel).filter(Boolean))];
+  const distritos = [...new Set(DOCENTES.map(d=>d.distrito).filter(Boolean))];
+  const colegios = [...new Set(DOCENTES.map(d=>d.colegio).filter(Boolean))];
+  $("contenido").innerHTML = `
+  <div class="filtros">
+    <input type="text" class="f-busca" placeholder="Buscar por nombre, colegio o WhatsApp..." value="${esc(FILTRO.texto)}" oninput="setFiltro('texto', this.value)">
+    ${selector("fNivel", FILTRO.nivel, niveles, "Todos los niveles")}
+    ${selector("fDistrito", FILTRO.distrito, distritos, "Todos los distritos")}
+    ${selector("fColegio", FILTRO.colegio, colegios, "Todos los centros")}
+    <button class="btn-refrescar" onclick="refrescar()">Actualizar</button>
+  </div>
+  <div class="doc-grid">
+    ${ds.length? ds.map(d=>docCard(d)).join("") : `<div class="card"><div class="vacio-panel">No hay docentes que coincidan con la búsqueda.</div></div>`}
+  </div>`;
+}
+function docCard(d){
+  return `<div class="doc-card ${d.suspendido? "suspendida":""}" onclick="verVista('docente', buscarDoc('${d.id}'))">
+    <div class="doc-foto">${d.foto? `<img src="${d.foto}" alt="">` : esc(iniciales(d.nombre))}</div>
+    <div class="doc-info">
+      <b>${esc(d.nombre)}</b>
+      <small>${esc(d.nivel||"—")}${d.grado? " · "+esc(d.grado):""} · ${esc(d.colegio||"—")}</small>
+      <small>${esc(d.distrito||"")}${d.fecha_registro? " · Desde "+esc(d.fecha_registro):""}</small>
+      <div class="chips">
+        ${d.suspendido? `<span class="chip rojo">Suspendida</span>` : `<span class="chip verde">Activa</span>`}
+        ${(d.restricciones||[]).length? `<span class="chip ambar">${(d.restricciones||[]).length} funciones bloqueadas</span>`:""}
+      </div>
+    </div>
+    <svg class="doc-flecha" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </div>`;
+}
+function buscarDoc(id){ return DOCENTES.find(d=>d.id===id)||null; }
+
+/* ===== SUBPANTALLA DOCENTE ===== */
+function waNormalizado(num){
+  let n = String(num||"").replace(/\D/g,"");
+  if(!n) return null;
+  if(n.length===10) n = "1"+n;
+  if(n.length===11 && n.startsWith("1")) n = n;
+  else if(n.length<11) n = "1"+n;
+  return n;
+}
+function fila(k, v){ return `<div class="fila"><span>${esc(k)}</span><span>${esc(v||"—")}</span></div>`; }
+function switchRow(k, t, d, on, handler){
+  return `<div class="switch-row">
+    <div class="switch-txt"><b>${esc(t)}</b><small>${esc(d)}</small></div>
+    <label class="switch"><input type="checkbox" ${on? "checked":""} onchange="${handler}('${k}', this.checked)"><span class="pista"></span><span class="bolita"></span></label>
+  </div>`;
+}
+function renderDocente(d){
+  if(!d){ verVista("docs"); return; }
+  const wa = waNormalizado(d.whatsapp);
+  const restr = (d.restricciones||[]).length;
+  const TOTAL = GRUPOS_PERMISOS.flatMap(g=>g.items).length;
+  $("contenido").innerHTML = `
+  <div class="sub-head">
+    <button class="btn-atras" onclick="verVista('docs')">← Docentes</button>
+    <div class="sub-titulo"><b>${esc(d.nombre)}</b><small>${esc(d.nivel||"—")}${d.grado? " · "+esc(d.grado):""} · ${esc(d.colegio||"")}</small></div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <div style="display:flex;gap:14px;align-items:center;margin-bottom:8px">
+      <div class="doc-foto" style="width:64px;height:64px;font-size:20px">${d.foto? `<img src="${d.foto}" alt="">` : esc(iniciales(d.nombre))}</div>
+      <div>
+        <div class="chips">
+          ${d.suspendido? `<span class="chip rojo">Cuenta suspendida</span>` : `<span class="chip verde">Cuenta activa</span>`}
+          ${restr? `<span class="chip ambar">${restr} de ${TOTAL} funciones bloqueadas</span>` : `<span class="chip">Todas las funciones habilitadas</span>`}
+        </div>
+      </div>
+    </div>
+    <div class="perfil-grid">
+      ${fila("Nombre completo", d.nombre)}
+      ${fila("WhatsApp", d.whatsapp)}
+      ${fila("Nivel educativo", d.nivel)}
+      ${fila("Grado", d.grado)}
+      ${fila("Sección", d.seccion || d.secciones)}
+      ${fila("Asignaturas", d.asignaturas)}
+      ${fila("Distrito", d.distrito)}
+      ${fila("Centro educativo", d.colegio)}
+      ${fila("Fecha de registro", d.fecha_registro)}
+      ${fila("Última sincronización", d.lastSync? d.lastSync.slice(0,16).replace("T"," · ") : "—")}
+    </div>
+    ${wa? `<a class="btn-wa" href="https://wa.me/${wa}" target="_blank" rel="noopener">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.12c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.4.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.77-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.3-.22.24-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.29z"/></svg>
+      Contactar por WhatsApp</a>` : ""}
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h2><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93l14.14 14.14"/></svg>Control general de la cuenta</h2>
+    <div class="estado-cuenta">
+      <div class="switch-txt"><b>${d.suspendido? "<span class='suspendida-tag'>Cuenta suspendida</span>" : "Cuenta habilitada"}</b>
+      <small>${d.suspendido? "El docente no puede iniciar sesión ni sincronizar. Sus datos académicos se conservan intactos." : "Al suspender, el docente pierde el acceso temporalmente sin borrar sus datos, planificaciones ni registros."}</small></div>
+      <label class="switch ${d.suspendido? "":"input-off"}"><input type="checkbox" ${d.suspendido? "checked":""} onchange="toggleSuspender(this.checked)"><span class="pista"></span><span class="bolita"></span></label>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0033A0" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Permisos individuales</h2>
+    <p class="muted" style="margin-bottom:6px">Cada interruptor afecta exclusivamente a ${esc((d.nombre||"").split(" ")[0])}. Los cambios se aplican de inmediato y se guardan en el servidor.</p>
+    ${GRUPOS_PERMISOS.map(g=>`
+      <div class="grupo-perm"><h3>${esc(g.titulo)}</h3>
+        ${g.items.map(it=> switchRow(it.k, it.t, it.d, d.permisos[it.k]!==false, "togglePermiso")).join("")}
+      </div>`).join("")}
+    <div class="guardando" id="guardando"></div>
+  </div>`;
+}
+
+async function togglePermiso(k, valor){
+  const d = DOC; if(!d) return;
+  d.permisos[k] = valor;
+  d.restricciones = Object.keys(d.permisos).filter(x=>!d.permisos[x]);
+  const g = $("guardando"); if(g) g.textContent = "Guardando...";
+  try{
+    const r = await api("admin-permiso", { id: d.id, permiso: k, valor });
+    if(!r.success){ d.permisos[k] = !valor; d.restricciones = Object.keys(d.permisos).filter(x=>!d.permisos[x]); verVista("docente", d); toast(r.error||"No se pudo guardar"); return; }
+    d.permisos = r.permisos;
+    d.restricciones = Object.keys(d.permisos).filter(x=>!d.permisos[x]);
+    if(g) g.textContent = valor? "Permiso habilitado ✓" : "Permiso bloqueado ✓";
+    const chips = document.querySelector(".sub-titulo");
+    toast(valor? "Función habilitada" : "Función bloqueada");
+  }catch(e){ d.permisos[k] = !valor; verVista("docente", d); toast("Error de conexión"); }
+}
+async function toggleSuspender(valor){
+  const d = DOC; if(!d) return;
+  const g = $("guardando"); if(g) g.textContent = "Guardando...";
+  try{
+    const r = await api("admin-suspender", { id: d.id, suspendido: valor });
+    if(!r.success){ verVista("docente", d); toast(r.error||"No se pudo cambiar"); return; }
+    d.suspendido = valor;
+    const i = DOCENTES.findIndex(x=>x.id===d.id); if(i>=0) DOCENTES[i] = d;
+    verVista("docente", d);
+    toast(valor? "Cuenta suspendida (datos conservados)" : "Cuenta reactivada");
+  }catch(e){ verVista("docente", d); toast("Error de conexión"); }
+}
+
+/* ===== INICIO ===== */
+(async function(){
+  const c = sessionStorage.getItem("pa_admin_clave") || localStorage.getItem("pa_admin_clave");
+  if(c){
+    CLAVE = c;
+    try{
+      const r = await api("admin-login", {});
+      if(r.success){
+        $("login").classList.add("oculto");
+        $("app").style.display = "block";
+        await cargarDocentes();
+        verVista("dash");
+        return;
+      }
+    }catch(e){}
+    CLAVE = "";
+    sessionStorage.removeItem("pa_admin_clave"); localStorage.removeItem("pa_admin_clave");
+  }
+})();
+</script>
+</body>
+</html>

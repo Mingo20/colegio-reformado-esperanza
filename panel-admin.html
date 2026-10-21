@@ -180,7 +180,7 @@ input,select{font-family:inherit;font-size:15px}
     </div>
     <h1>Panel Administrativo · PlanApp</h1>
     <span class="badge-adm">Administrador</span>
-    <button class="btn-salir" onclick="salir()">Salir</button>
+    <button class="btn-salir" id="btnSalir" onclick="salir()">Salir</button>
   </div>
 
   <div class="layout">
@@ -226,6 +226,8 @@ const GRUPOS_PERMISOS = [
 ];
 const COLORES = ["#0033A0","#CE1126","#f59e0b","#16a34a","#7c3aed","#0891b2","#db2777","#475569"];
 
+const CLAVE_PANEL = "PlanApp-aCg5-cOH1-OCIG";   // acceso libre: embebida en la página privada
+const ACCESO_LIBRE = true;                      // false = volver a pedir clave de administrador
 let CLAVE = "";
 let DOCENTES = [];
 let VISTA = "dash";
@@ -248,10 +250,10 @@ async function entrar(){
   $("loginError").textContent = "";
   if(!c){ $("loginError").textContent = "Escribe la clave de administrador"; return; }
   try{
-    const r = await api("admin-login", {});
-    if(c !== $("clave").value.trim()) return;
-    if(!r.success){ $("loginError").textContent = r.error || "Clave incorrecta"; return; }
     CLAVE = c;
+    const r = await api("admin-login", {});
+    if(c !== $("clave").value.trim()){ CLAVE = ""; return; }
+    if(!r.success){ CLAVE = ""; $("loginError").textContent = r.error || "Clave incorrecta"; return; }
     if($("recordar").checked) localStorage.setItem("pa_admin_clave", c);
     else sessionStorage.setItem("pa_admin_clave", c);
     $("login").classList.add("oculto");
@@ -387,7 +389,8 @@ function renderDash(){
 
 /* ===== LISTA DOCENTES ===== */
 function selector(id, val, opciones, ph){
-  return `<select id="${id}" onchange="setFiltro('${id===\"fNivel\"?\"nivel\":id===\"fDistrito\"?\"distrito\":\"colegio\"}', this.value)">
+  const campo = id==="fNivel"? "nivel" : id==="fDistrito"? "distrito" : "colegio";
+  return `<select id="${id}" onchange="setFiltro('${campo}', this.value)">
     <option value="">${esc(ph)}</option>
     ${opciones.map(o=>`<option value="${esc(o)}" ${o===val? "selected":""}>${esc(o)}</option>`).join("")}
   </select>`;
@@ -530,6 +533,15 @@ async function toggleSuspender(valor){
 
 /* ===== INICIO ===== */
 (async function(){
+  if(ACCESO_LIBRE){
+    CLAVE = CLAVE_PANEL;
+    $("btnSalir").style.display = "none";
+    $("login").classList.add("oculto");
+    $("app").style.display = "block";
+    const ok = await cargarDocentes();
+    if(ok) verVista("dash");
+    return;
+  }
   const c = sessionStorage.getItem("pa_admin_clave") || localStorage.getItem("pa_admin_clave");
   if(c){
     CLAVE = c;
